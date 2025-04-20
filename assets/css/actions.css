@@ -1,0 +1,5 @@
+/* Action button styles */
+.action-btn {
+    background: #009736;
+    transition: background 0.3s;
+}

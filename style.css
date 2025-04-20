@@ -1,230 +1,270 @@
-html, body {
-    height: 100%;
-    margin: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-*{
-    box-sizing: border-box;
-}
-body {
-    display: flex;
-    flex-direction: column;
-}
-
-/* Header section */
-.header {
-    padding: 0 90px 60px 90px;
-    background: linear-gradient(135deg, #009736 0%, #000000 50%, #FFFFFF 50%, #CE1126 100%);
-}
-
-.header-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
-}
-
-.header-logo {
-    font-size: 24px;
-    color: #ffffff;
-    font-weight: bold;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
-}
-
-.header-links {
-    display: flex;
-    list-style-type: none;
-    gap: 30px;
+/* Global Styles */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.header-links li a {
-    color: #ffffff;
+body {
+    background: #111;
+    color: #fff;
+    line-height: 1.6;
+}
+
+a {
     text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    padding: 5px 10px;
-    border-radius: 4px;
+    color: #fff;
 }
 
-.header-links li a:hover {
-    background-color: rgba(255,255,255,0.2);
-}
-
-.header-main {
-    display: flex;
-    margin-top: 50px;
-}
-
-.text-container {
-    color: #ffffff;
-    flex: 1;
-}
-
-.header-main h3 {
-    font-size: 48px;
-    font-weight: 900;
-    margin: 0;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-}
-
-.text-container p {
-    font-size: 18px;
-    margin: 15px 0 25px;
-}
-
-.header-main button {
-    background: #CE1126;
-    color: white;
-    border: none;
-    padding: 10px 30px;
-    font-size: 18px;
+.btn {
+    display: inline-block;
+    background: #ce1126;
+    color: #fff;
+    padding: 10px 25px;
     border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
+    margin-top: 15px;
+    transition: 0.3s;
 }
 
-.header-main button:hover {
+.btn:hover {
     background: #a50d1e;
 }
 
-.image-container {
-    flex: 1;
-    background-color: rgba(255,255,255,0.2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    margin-left: 30px;
-    border-radius: 5px;
-}
-/* header section done */
-
-/* Random Info section */
-.random-container {
-    padding: 50px 90px;
-    background: white;
+.btn-small {
+    background: #009736;
+    padding: 8px 15px;
+    font-size: 14px;
 }
 
-.random-container h3 {
-    text-align: center;
-    font-size: 36px;
-    font-weight: 900;
-    color: #000000;
-    margin-bottom: 50px;
-}
-
-.symbols-list {
-    display: flex;
-    list-style-type: none;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    gap: 40px;
-    flex-wrap: wrap;
-}
-
-.symbols-list li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 150px;
-}
-
-.symbol-box {
-    height: 120px;
-    width: 120px;
-    border-radius: 15px;
-    margin-bottom: 15px;
-}
-
-.symbols-list span {
-    text-align: center;
-    font-weight: 500;
-}
-/* Random Info section done */
-
-/* Quote section */
-.quote-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: #f5f5f5;
-    padding: 80px 120px;
-}
-
-.quote-container q {
-    font-size: 32px;
-    font-style: italic;
-    color: #000000;
-    text-align: center;
-    max-width: 800px;
-    line-height: 1.4;
-}
-
-.quote-container cite {
-    margin-top: 20px;
-    font-size: 20px;
-    font-weight: bold;
-    color: #CE1126;
-}
-/* Quote section End */
-
-/* Action section */
-.action-container {
-    padding: 80px 90px;
-    background: white;
-}
-
-.action-mid {
+/* Navigation */
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 80px;
-    background: #009736;
-    border-radius: 8px;
-    color: white;
+    padding: 20px 5%;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
 }
 
-.action-text h4 {
-    font-size: 24px;
-    margin: 0 0 5px 0;
+.logo span {
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
-.action-text p {
-    margin: 0;
-    opacity: 0.9;
-}
-
-.action-mid button {
-    background: #009736;
-    color: white;
-    border: 2px solid white;
-    padding: 10px 30px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-
-.action-mid button:hover {
-    background: white;
+.logo span span {
     color: #009736;
 }
-/* Action section End */
 
-/* Footer section */
-.footer {
-    padding: 20px;
-    color: #ffffff;
-    background: #000000;
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a:hover {
+    color: #ce1126;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(135deg, #009736 0%, #000000 50%, #FFFFFF 50%, #CE1126 100%);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    max-width: 600px;
+}
+
+/* Timeline */
+.timeline {
+    padding: 100px 5%;
+}
+
+.timeline h2, .resistance h2, .betrayals h2, .action h2 {
     text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    color: #009736;
 }
 
-.footer p {
-    margin: 0;
+.timeline-container {
+    max-width: 800px;
+    margin: 0 auto;
 }
-/* Footer section End */
+
+.timeline-event {
+    display: flex;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.timeline-event::before {
+    content: '';
+    position: absolute;
+    left: 50px;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background: #ce1126;
+}
+
+.event-date {
+    width: 100px;
+    font-weight: bold;
+    color: #ce1126;
+}
+
+.event-content {
+    flex: 1;
+    padding-left: 30px;
+}
+
+.event-content h3 {
+    margin-bottom: 10px;
+}
+
+/* Resistance Section */
+.resistance {
+    padding: 80px 5%;
+    background: #1a1a1a;
+}
+
+.resistance-methods {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.method {
+    background: #222;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    transition: 0.3s;
+}
+
+.method:hover {
+    transform: translateY(-10px);
+}
+
+.method i {
+    font-size: 2.5rem;
+    color: #009736;
+    margin-bottom: 20px;
+}
+
+/* Betrayals Section */
+.betrayals {
+    padding: 80px 5%;
+}
+
+.betrayal-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.betrayal-item {
+    background: #222;
+    padding: 30px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    border-left: 5px solid #ce1126;
+}
+
+/* Action Section */
+.action {
+    padding: 80px 5%;
+    background: #1a1a1a;
+}
+
+.action-options {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.option {
+    background: #222;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+}
+
+.option i {
+    font-size: 2.5rem;
+    color: #009736;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #000;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    color: #009736;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    .timeline-event {
+        flex-direction: column;
+    }
+    .timeline-event::before {
+        display: none;
+    }
+    .event-date {
+        margin-bottom: 10px;
+    }
+}

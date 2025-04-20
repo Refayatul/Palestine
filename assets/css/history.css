@@ -1,0 +1,406 @@
+ /* Base Styles */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #111;
+    color: #fff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo span {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.logo span span {
+    color: #009736;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a:hover {
+    color: #ce1126;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+/* Timeline Section */
+.timeline {
+    padding: 150px 5% 50px;
+}
+
+.timeline h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    color: #009736;
+}
+
+.timeline-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline-event {
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.event-date {
+    font-weight: bold;
+    color: #ce1126;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.event-content {
+    background: rgba(30, 30, 30, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    border-left: 3px solid #009736;
+}
+
+.event-content h3 {
+    margin-bottom: 15px;
+    color: #ce1126;
+}
+
+/* Survivor Testimonies */
+.survivor-testimony {
+    margin: 30px 0;
+}
+
+.survivor-testimony h4 {
+    margin-bottom: 15px;
+    color: #009736;
+}
+
+.testimony-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.testimony {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    gap: 15px;
+}
+
+.testimony img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+blockquote {
+    font-style: italic;
+    flex: 1;
+}
+
+blockquote footer {
+    margin-top: 10px;
+    font-style: normal;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+/* UN Documents Section */
+.un-documents {
+    padding: 80px 5%;
+    background: #1a1a1a;
+}
+
+.un-documents h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #009736;
+}
+
+.document-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.doc-card {
+    background: rgba(0, 151, 54, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 3px solid #009736;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.doc-card:hover {
+    transform: translateY(-5px);
+}
+
+.doc-card h3 {
+    margin-bottom: 10px;
+}
+
+/* Massacre Details Section */
+.massacre-details {
+    padding: 80px 5%;
+}
+
+.massacre-details h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #ce1126;
+}
+
+.massacre-accordion {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.massacre-item {
+    margin-bottom: 15px;
+}
+
+.accordion-btn {
+    width: 100%;
+    padding: 20px;
+    background: #222;
+    border: none;
+    color: white;
+    text-align: left;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.accordion-btn:hover {
+    background: #333;
+}
+
+.panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background: #1a1a1a;
+    border-radius: 0 0 5px 5px;
+}
+
+.massacre-content {
+    display: flex;
+    padding: 30px;
+    gap: 30px;
+}
+
+.massacre-content img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.massacre-text {
+    flex: 1;
+}
+
+.massacre-text h4 {
+    margin-bottom: 15px;
+    color: #ce1126;
+}
+
+/* Interactive Map Section */
+.land-loss {
+    padding: 80px 5%;
+    background: #1a1a1a;
+}
+
+.land-loss h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #009736;
+}
+
+.map-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.map-controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.map-controls button {
+    padding: 10px 20px;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.map-controls button:hover {
+    background: #444;
+}
+
+.map-display {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+#dynamic-map {
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid #555;
+}
+
+.map-legend {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.map-legend div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.color-palestinian {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #009736;
+    border-radius: 3px;
+}
+
+.color-israeli {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #ce1126;
+    border-radius: 3px;
+}
+
+.color-settlements {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #ffcc00;
+    border-radius: 3px;
+}
+
+.land-stats {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat h3 {
+    font-size: 2.5rem;
+    color: #ce1126;
+    margin-bottom: 10px;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    background: #111;
+    margin: 5% auto;
+    padding: 30px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
+    position: relative;
+}
+
+.close {
+    color: #fff;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+    .massacre-content {
+        flex-direction: column;
+    }
+    .massacre-content img {
+        width: 100%;
+    }
+    .map-controls {
+        flex-wrap: wrap;
+    }
+    .land-stats {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
