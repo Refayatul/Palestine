@@ -47,6 +47,9 @@
 
 .random-container h3{
     text-align: center;
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
 }
 .random-container ul{
     display: flex;
@@ -73,3 +76,29 @@
 
 
 /* Quote section End */
+
+/* Action section start */
+.action-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 120px 50px 120px;
+
+}
+
+/* Action section End */
+
+
+/* Footer section start */
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #f9faf8;
+    background: #1f2937;
+}
+
+
+/* Footer section End */
