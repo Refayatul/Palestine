@@ -85,13 +85,17 @@ nav {
 }
 
 .hero-content h1 {
-    font-size: 3.5rem;
-    margin-bottom: 20px;
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 1.5rem;
+    color: var(--palestine-white);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
 .hero-content p {
-    font-size: 1.2rem;
-    max-width: 600px;
+    font-size: clamp(1rem, 2.5vw, 1.3rem);
+    max-width: 800px;
+    margin: 0 auto;
+    color: var(--text-light);
 }
 
 /* Timeline */

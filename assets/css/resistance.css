@@ -96,16 +96,13 @@ nav {
 
 /* Hero Section */
 .resistance-hero {
-    min-height: 100vh;
+    height: 100vh;
+    background: linear-gradient(135deg, #009736 0%, #000000 50%, #FFFFFF 50%, #CE1126 100%);
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
-    justify-content: center;
-    text-align: center;
     padding: 0 5%;
-    background: 
-        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-        url('../assets/img/resistance/resistance-hero.jpg') no-repeat center center/cover;
-    position: relative;
 }
 
 .resistance-hero h1 {
