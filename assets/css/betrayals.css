@@ -1,4 +1,447 @@
-/* Betrayals card styling */
-.betrayal-card {
-    border-left: 5px solid #ce1126;
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    /* Enhanced Color Scheme */
+    --palestine-red: #d10000;  /* More vibrant red */
+    --palestine-green: #008a3b; /* Deeper green */
+    --palestine-black: #0a0a0a; /* Richer black */
+    --palestine-white: #f5f5f5; /* Soft white */
+    --accent-gold: #d4af37;    /* New accent color */
+    --dark-bg: #1e1e1e;
+    --card-bg: rgba(40, 40, 40, 0.9);
+    --text-light: #e0e0e0;
+    --header-height: 80px;
+}
+body {
+    background: #111;
+    color: #fff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn {
+    display: inline-block;
+    background: #ce1126;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #a50d1e;
+}
+
+.btn-small {
+    background: #009736;
+    padding: 8px 15px;
+    font-size: 14px;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.logo span {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.logo span span {
+    color: #009736;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a:hover {
+    color: #ce1126;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+
+
+/* Modern Betrayals Section */
+.betrayals {
+    padding: 6rem 0;
+    background: 
+        linear-gradient(rgba(10, 10, 10, 0.9), rgba(10, 10, 10, 0.9)),
+        url('../assets/img/betrayals/bg-texture.jpg') center/cover fixed;
+    position: relative;
+    overflow: hidden;
+}
+
+.betrayals::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, 
+        var(--palestine-red), 
+        var(--palestine-green), 
+        var(--accent-gold));
+}
+
+.betrayals h2 {
+    text-align: center;
+    margin-bottom: 4rem;
+    color: var(--palestine-white);
+    font-size: clamp(2rem, 5vw, 3rem);
+    position: relative;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.betrayals h2::after {
+    content: '✻';
+    color: var(--accent-gold);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -2rem;
+    font-size: 2rem;
+}
+
+/* Enhanced Grid Layout */
+.betrayal-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2.5rem;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Modern Card Design */
+.betrayal-item {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 2.5rem;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    border-top: 3px solid var(--palestine-red);
+}
+
+.betrayal-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, 
+        rgba(206, 17, 38, 0.1) 0%, 
+        rgba(0, 151, 58, 0.1) 100%);
+    z-index: 0;
+}
+
+.betrayal-item:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 40px rgba(206, 17, 38, 0.4);
+}
+
+.betrayal-item h3 {
+    color: var(--palestine-white);
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 1rem;
+    font-weight: 600;
+    z-index: 1;
+}
+
+.betrayal-item h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: var(--accent-gold);
+}
+
+.betrayal-item h3 i {
+    margin-right: 12px;
+    color: var(--accent-gold);
+}
+
+.betrayal-item p {
+    color: var(--text-light);
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    z-index: 1;
+    position: relative;
+}
+
+/* Enhanced Evidence Toggle */
+.evidence-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 0.8rem 1.8rem;
+    background: var(--palestine-red);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-top: 1rem;
+    z-index: 1;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(206, 17, 38, 0.4);
+}
+
+.evidence-btn:hover {
+    background: var(--palestine-green);
+    transform: translateY(-3px);
+    box-shadow: 0 7px 20px rgba(0, 151, 58, 0.4);
+}
+
+.evidence-btn i {
+    transition: transform 0.3s;
+}
+
+.betrayal-item.active .evidence-btn i {
+    transform: rotate(180deg);
+}
+
+/* Advanced Evidence Panel */
+.betrayal-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.betrayal-item.active .betrayal-details {
+    max-height: 1500px;
+    padding-top: 1.5rem;
+    border-top: 1px dashed rgba(212, 175, 55, 0.3);
+}
+
+.betrayal-details h4 {
+    color: var(--accent-gold);
+    font-size: 1.3rem;
+    margin: 1.5rem 0 1rem;
+    font-weight: 500;
+}
+
+.betrayal-details ul {
+    padding-left: 1.2rem;
+    margin: 1.2rem 0;
+    list-style-type: none;
+}
+
+.betrayal-details li {
+    margin-bottom: 1rem;
+    color: var(--text-light);
+    position: relative;
+    padding-left: 1.8rem;
+    line-height: 1.6;
+}
+
+.betrayal-details li::before {
+    content: '•';
+    color: var(--palestine-red);
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: -3px;
+}
+
+/* Interactive Evidence Gallery */
+.evidence-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+    margin: 2rem 0;
+}
+
+.evidence-gallery img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+.evidence-gallery img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+    border-color: var(--accent-gold);
+}
+
+/* Premium Modal Design */
+.evidence-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.95);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s;
+    backdrop-filter: blur(5px);
+}
+
+.evidence-modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    background: var(--palestine-black);
+    width: 90%;
+    max-width: 900px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    transform: scale(0.8);
+    transition: transform 0.4s;
+    border: 1px solid var(--accent-gold);
+    box-shadow: 0 10px 50px rgba(0,0,0,0.6);
+}
+
+.evidence-modal.active .modal-content {
+    transform: scale(1);
+}
+
+.modal-header {
+    padding: 1.8rem;
+    background: linear-gradient(90deg, 
+        var(--palestine-red), 
+        var(--palestine-green));
+    color: white;
+    position: relative;
+}
+
+.modal-header h3 {
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: 600;
+}
+
+.modal-body {
+    padding: 2rem;
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.modal-body img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.modal-body p {
+    color: var(--text-light);
+    line-height: 1.7;
+    margin-top: 1rem;
+}
+
+.close-modal {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: var(--palestine-red);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border: none;
+    transition: all 0.3s;
+    z-index: 10;
+}
+
+.close-modal:hover {
+    background: var(--palestine-green);
+    transform: rotate(90deg);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .betrayal-list {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .betrayals {
+        padding: 4rem 0;
+    }
+    
+    .betrayal-item {
+        padding: 2rem;
+    }
+    
+    .evidence-gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .betrayal-list {
+        grid-template-columns: 1fr;
+        padding: 0 1.5rem;
+    }
+    
+    .betrayal-item {
+        padding: 1.8rem;
+    }
+    
+    .modal-content {
+        width: 95%;
+    }
 }

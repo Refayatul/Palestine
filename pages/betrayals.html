@@ -5,8 +5,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Betrayals of Palestine | Free Palestine</title>
     <link rel="stylesheet" href="../assets/css/betrayals.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
 </head>
 <body>
-    <!-- Page-specific content -->   
+        <!-- Navigation -->
+        <nav>
+            <div class="logo">
+                <span>Free<span>Palestine</span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/betrayals.html">History</a></li>
+                <li><a href="../pages/resistance.html">Resistance</a></li>
+                <!-- <li><a href="../pages/betrayals.html">Betrayals</a></li> -->
+                <li><a href="../pages/action.html">Take Action</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+
+    <!-- Betrayals Section -->
+    <section id="betrayal" class="betrayals">
+        <div class="container">
+            <h2>Systematic Betrayals of Palestine</h2>
+            <div class="betrayal-list">
+                <!-- Western Governments -->
+                <div class="betrayal-item">
+                    <h3><i class="fas fa-flag-usa"></i> Western Governments</h3>
+                    <p>Political and military support for Israeli occupation despite human rights violations.</p>
+                    
+                    <button class="evidence-btn">
+                        <span>View Evidence</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    
+                    <div class="betrayal-details">
+                        <h4>Documented Complicity:</h4>
+                        <ul>
+                            <li>US has used veto power 46 times to block UN resolutions against Israel (as of 2023)</li>
+                            <li>$158 billion in total US military aid to Israel since 1948 (adjusted for inflation)</li>
+                            <li>UK approved £472 million in arms sales to Israel during 2023 Gaza assault</li>
+                            <li>Germany provides Israel with submarines capable of nuclear weapons delivery</li>
+                        </ul>
+                        
+                        <h4>Key Evidence:</h4>
+                        <div class="evidence-gallery">
+                            <img src="../assets/img/betrayals/us-veto.jpg" 
+                                 alt="US Ambassador vetoing UN resolution"
+                                 data-caption="US vetoes UN ceasefire resolution, 2023">
+                            <img src="../assets/img/betrayals/uk-arms.jpg" 
+                                 alt="UK arms export documents"
+                                 data-caption="UK arms export licenses to Israel">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Arab Regimes -->
+                <div class="betrayal-item">
+                    <h3><i class="fas fa-mosque"></i> Arab Regimes</h3>
+                    <p>Normalization and security cooperation while Palestinians suffer under occupation.</p>
+                    
+                    <button class="evidence-btn">
+                        <span>View Evidence</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    
+                    <div class="betrayal-details">
+                        <h4>Documented Complicity:</h4>
+                        <ul>
+                            <li>Abraham Accords: UAE, Bahrain, Morocco, Sudan normalized relations (2020-2021)</li>
+                            <li>Egypt maintains Gaza blockade since 2007, destroying smuggling tunnels</li>
+                            <li>Jordan signed $10 billion gas deal with Israel in 2016</li>
+                            <li>Saudi Arabia allows Israeli flights through its airspace since 2022</li>
+                        </ul>
+                        
+                        <h4>Key Evidence:</h4>
+                        <div class="evidence-gallery">
+                            <img src="../assets/img/betrayals/uae-normalization.jpg" 
+                                 alt="UAE and Israeli officials signing agreement"
+                                 data-caption="Signing of Abraham Accords, 2020">
+                            <img src="../assets/img/betrayals/egypt-blockade.jpg" 
+                                 alt="Egyptian border with Gaza"
+                                 data-caption="Egypt maintains Gaza blockade">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Corporate Media -->
+                <div class="betrayal-item">
+                    <h3><i class="fas fa-newspaper"></i> Corporate Media</h3>
+                    <p>Systematic bias, dehumanization of Palestinians, and suppression of Palestinian voices.</p>
+                    
+                    <button class="evidence-btn">
+                        <span>View Evidence</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    
+                    <div class="betrayal-details">
+                        <h4>Documented Complicity:</h4>
+                        <ul>
+                            <li>CNN fired Marc Lamont Hill for supporting Palestinian rights in 2018</li>
+                            <li>BBC refuses to call Israeli killings "terrorism" while labeling Palestinian resistance as such</li>
+                            <li>New York Times published 3 pro-Israel op-eds for every pro-Palestinian one (2021 analysis)</li>
+                            <li>Facebook admitted to censoring Palestinian content at Israel's request</li>
+                        </ul>
+                        
+                        <h4>Key Evidence:</h4>
+                        <div class="evidence-gallery">
+                            <img src="../assets/img/betrayals/media-bias.jpg" 
+                                 alt="Media bias chart"
+                                 data-caption="Study showing media bias in Israel-Palestine coverage">
+                            <img src="../assets/img/betrayals/facebook-censorship.jpg" 
+                                 alt="Facebook internal documents"
+                                 data-caption="Facebook admits censoring Palestinian content">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Evidence Modal -->
+    <div class="evidence-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title">Evidence Documentation</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <img id="modal-image" src="" alt="">
+                <p id="modal-caption"></p>
+                <div id="modal-details"></div>
+            </div>
+        </div>
+    </div>
+
+
 </body>
 </html>

@@ -7,36 +7,104 @@
     --dark-bg: #1a1a1a;
     --card-bg: rgba(30, 30, 30, 0.8);
     --text-light: #ccc;
+    --nav-height: 70px;
 }
 
-/* Base Styles */
+/* Base Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
     background-color: var(--palestine-black);
     color: var(--palestine-white);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
+    padding-top: var(--nav-height); /* Critical fix for fixed nav */
+}
+
+/* Fixed Navigation */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--nav-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(206, 17, 38, 0.2);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo span {
+    color: var(--palestine-green);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: var(--palestine-white);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+    position: relative;
+}
+
+.nav-links a:hover {
+    color: var(--palestine-red);
+}
+
+.nav-links a.active {
+    color: var(--palestine-green);
+}
+
+.nav-links a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--palestine-green);
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    color: var(--palestine-white);
+    font-size: 1.5rem;
 }
 
 /* Hero Section */
 .resistance-hero {
-    min-height: 60vh;
-    height: auto;
-    background: 
-        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-        url('../assets/img/resistance/resistance-hero.jpg') no-repeat center center;
-    background-size: cover;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 5%;
-    margin-top: 80px;
+    padding: 0 5%;
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+        url('../assets/img/resistance/resistance-hero.jpg') no-repeat center center/cover;
     position: relative;
 }
 
@@ -44,7 +112,7 @@ body {
     font-size: clamp(2rem, 5vw, 3rem);
     margin-bottom: 1.5rem;
     color: var(--palestine-white);
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
 .resistance-hero p {
@@ -119,12 +187,12 @@ body {
     border-radius: 10px;
     overflow: hidden;
     transition: all 0.3s ease;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .method-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
 }
 
 .method-card h4 {
@@ -143,7 +211,7 @@ body {
 
 .method-details {
     padding: 0 1.5rem 1.5rem;
-    display: none; /* Initially hidden, shown via JS */
+    display: none;
 }
 
 .method-card.active .method-details {
@@ -156,7 +224,7 @@ body {
     object-fit: cover;
     margin-bottom: 1rem;
     border-radius: 5px;
-    border: 1px solid rgba(255,255,255,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .method-details ul {
@@ -206,12 +274,12 @@ body {
     overflow: hidden;
     text-align: center;
     transition: all 0.3s ease;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 
 .martyr-card:hover {
     transform: scale(1.03);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 .martyr-card img {
@@ -262,14 +330,14 @@ body {
     transform: translateY(-2px);
 }
 
-/* Modal Styles (for martyr details) */
+/* Modal Styles */
 .martyr-modal {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.9);
+    background: rgba(0, 0, 0, 0.9);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -333,18 +401,39 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    :root {
+        --nav-height: 60px;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: var(--nav-height);
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.95);
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 0;
+        gap: 1.5rem;
+        clip-path: circle(0px at 90% -10%);
+        transition: clip-path 0.5s ease-in-out;
+    }
+
+    .nav-links.active {
+        clip-path: circle(1000px at 90% -10%);
+    }
+
+    .hamburger {
+        display: block;
+    }
+
     .resistance-hero {
-        min-height: 50vh;
-        padding-top: 80px;
+        min-height: calc(100vh - var(--nav-height));
     }
 
     .method-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
-    }
-
-    .method-card {
-        margin-bottom: 1rem;
     }
 
     .martyrs-grid {
@@ -358,6 +447,10 @@ body {
 }
 
 @media (max-width: 480px) {
+    :root {
+        --nav-height: 55px;
+    }
+
     .resistance-hero h1 {
         font-size: 1.8rem;
     }
