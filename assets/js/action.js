@@ -5,12 +5,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const options = document.querySelectorAll('.option');
     
     options.forEach(option => {
-        option.addEventListener('click', function() {
-            // Example: Open the link when clicking anywhere on the option
-            const link = this.querySelector('a');
-            if (link) {
-                window.location.href = link.href;
-            }
-        });
+        // Skip the donate option (has donateTrigger link)
+        if (!option.querySelector('#donateTrigger')) {
+            option.addEventListener('click', function() {
+                const link = this.querySelector('a');
+                if (link && link.href && !link.href.includes('#')) {
+                    window.location.href = link.href;
+                }
+            });
+        }
     });
 });

@@ -25,6 +25,7 @@ a {
     border-radius: 5px;
     margin-top: 15px;
     transition: 0.3s;
+    
 }
 
 .btn:hover {
@@ -249,6 +250,61 @@ footer {
     margin: 0 10px;
     font-size: 1.5rem;
     color: #009736;
+}
+
+/* Donate Pop-up Menu Styles */
+#donateMenu {
+    display: none; /* Hide by default */
+    position: fixed; /* Keep in view */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); /* Center it */
+    background-color: #2a2a2a; /* Dark background */
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    z-index: 1001; /* Above other elements */
+    min-width: 300px;
+    max-width: 90%;
+}
+
+#donateMenu .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.8rem;
+    color: #aaa;
+    text-decoration: none;
+    line-height: 1;
+    cursor: pointer; /* Add pointer cursor */
+}
+#donateMenu .close:hover {
+    color: #fff;
+}
+
+#donateMenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0; /* Add some top margin */
+}
+#donateMenu li {
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+    color: #ccc; /* Color for non-link items */
+}
+#donateMenu li:last-child {
+    margin-bottom: 0;
+}
+#donateMenu li a {
+    color: #00e676; /* Bright green for links */
+    text-decoration: underline;
+}
+#donateMenu li a:hover {
+    color: #fff;
+}
+
+#donateMenu.active {
+    display: block; /* Show the menu */
 }
 
 /* Responsive Design */
