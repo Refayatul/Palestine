@@ -463,3 +463,81 @@ footer {
         margin-bottom: 10px;
     }
 }
+
+/* Timeline Popup Styles */
+.timeline-button {
+    /* Inherits .btn styles, can add specifics here if needed */
+    font-size: 1.1rem;
+    padding: 12px 30px;
+}
+
+.timeline-popup {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1001; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+.timeline-popup-content {
+    background-color: #222; /* Dark background for content */
+    color: #fff; /* White text */
+    margin: 10% auto; /* 10% from the top and centered */
+    padding: 30px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 900px; /* Max width */
+    border-radius: 10px;
+    position: relative;
+}
+
+/* Style the close button */
+.close-timeline {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close-timeline:hover,
+.close-timeline:focus {
+    color: #ce1126; /* Red on hover */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Style the timeline inside the popup */
+.timeline-popup .timeline-container {
+    max-width: 100%; /* Use full width of popup */
+    margin-top: 20px;
+}
+
+.timeline-popup h2 {
+    color: #009736; /* Green heading */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.timeline-popup .timeline-event::before {
+    background: #ce1126; /* Red line */
+    left: 20px; /* Adjust position */
+}
+
+.timeline-popup .event-date {
+    width: 80px; /* Adjust width */
+    color: #ce1126; /* Red date */
+}
+
+.timeline-popup .event-content {
+    padding-left: 40px; /* Adjust padding */
+}
+
+.timeline-popup .event-content h3 {
+    color: #009736; /* Green event title */
+}

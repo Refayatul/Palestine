@@ -30,3 +30,32 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
   });
 });
+
+// Timeline Popup Logic
+const timelineBtn = document.getElementById('timelineBtn');
+const timelinePopup = document.getElementById('timelinePopup');
+const closeTimelineBtn = document.querySelector('.close-timeline');
+
+if (timelineBtn && timelinePopup && closeTimelineBtn) {
+    // Open popup when button is clicked
+    timelineBtn.addEventListener('click', () => {
+        timelinePopup.style.display = 'block';
+        document.body.style.overflow = 'hidden'; // Prevent background scroll
+    });
+
+    // Close popup when close button is clicked
+    closeTimelineBtn.addEventListener('click', () => {
+        timelinePopup.style.display = 'none';
+        document.body.style.overflow = ''; // Restore background scroll
+    });
+
+    // Close popup when clicking outside the content area
+    window.addEventListener('click', (event) => {
+        if (event.target == timelinePopup) {
+            timelinePopup.style.display = 'none';
+            document.body.style.overflow = ''; // Restore background scroll
+        }
+    });
+} else {
+    console.error("Timeline popup elements not found. Check IDs and classes.");
+}
