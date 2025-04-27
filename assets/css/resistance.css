@@ -97,7 +97,8 @@ nav {
 /* Hero Section */
 .resistance-hero {
     height: 100vh;
-    background: linear-gradient(135deg, #009736 0%, #000000 50%, #FFFFFF 50%, #CE1126 100%);
+    /* background: linear-gradient(135deg, #009736 0%, #000000 50%, #FFFFFF 50%, #CE1126 100%); */
+    background-image: url(../images/Resistance/ISRAEL-PALESTINIANS-PROTESTS-FLAG-1920x776.jpg);
     background-size: cover;
     background-position: center;
     display: flex;

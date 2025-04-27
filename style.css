@@ -77,7 +77,8 @@ nav {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: linear-gradient(135deg, #009736 0%, #000000 50%, #FFFFFF 50%, #CE1126 100%);
+    /* background: linear-gradient(135deg, #009736 0%, #000000 50%, #FFFFFF 50%, #CE1126 100%); */
+    background-image: url(./assets/images/Homepage/Fawzi_al_Juneidi_2017OWB.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
