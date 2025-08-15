@@ -61,11 +61,11 @@ if (timelineBtn && timelinePopup && closeTimelineBtn) {
 }
 document.addEventListener('DOMContentLoaded', function() {
   // Get the button by its ID
-  const joinButton = document.getElementById('joinmovementbtn');
+const joinButton = document.getElementById('joinmovementbtn');
   
   // Add click event listener
   joinButton.addEventListener('click', function() {
       // Redirect to the "Take Action" page
-      window.location.href = './pages/action.html';
+    window.location.href = './pages/action.html';
   });
 });

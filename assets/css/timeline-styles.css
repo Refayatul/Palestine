@@ -1,0 +1,102 @@
+/* assets/css/timeline-styles.css */
+
+/* Styles for the main history hub page (pages/history.html) */
+.history-overview {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.history-overview h1 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.history-overview p {
+    color: #666;
+    font-size: 1.1em;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.historical-periods-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.period-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 25px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.period-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.period-card h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.period-card h3 a {
+    color: #0056b3; /* A shade of blue for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.period-card h3 a:hover {
+    text-decoration: underline;
+}
+
+.period-card p {
+    color: #555;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .history-overview h1 {
+        font-size: 2em;
+    }
+
+    .historical-periods-grid {
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+
+    .period-card {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .history-overview h1 {
+        font-size: 1.8em;
+    }
+
+    .history-overview p {
+        font-size: 0.95em;
+    }
+
+    .period-card h3 {
+        font-size: 1.5em;
+    }
+}

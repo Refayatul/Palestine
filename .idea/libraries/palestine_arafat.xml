@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="palestine-arafat">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/palestine-arafat.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

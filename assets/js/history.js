@@ -37,7 +37,67 @@ const unDocs = {
             </ul>
             <a href="../assets/docs/UNSC242.pdf" class="btn" target="_blank">Read Full Document</a>
         `
-    }
+    },
+    "UNSC338": {
+        title: "UN Security Council Resolution 338 (1973)",
+        content: `
+            <h3>Key Provisions:</h3>
+            <ul>
+                <li>Calls for implementation of 242</li>
+                <li>Demands ceasefire and negotiations</li>
+            </ul>
+        `
+    },
+    "UNGA3236": {
+        title: "UN General Assembly Resolution 3236 (1974)",
+        content: `
+            <h3>Key Provisions:</h3>
+            <ul>
+                <li>Reaffirms Palestinian right to self-determination</li>
+                <li>Recognizes PLO as representative of Palestinian people</li>
+            </ul>
+        `
+    },
+    "UNSC465": {
+        title: "UN Security Council Resolution 465 (1980)",
+        content: `
+            <h3>Key Provisions:</h3>
+            <ul>
+                <li>Condemns Israeli settlements as illegal</li>
+                <li>Calls for dismantling existing settlements</li>
+            </ul>
+        `
+    },
+    "UNGAES10L22": {
+         title: "UN General Assembly ES-10/L.22 (2017)",
+         content: `
+             <h3>Key Provisions:</h3>
+             <ul>
+                 <li>Condemns US Jerusalem recognition</li>
+                 <li>Affirms Jerusalem as final status issue</li>
+             </ul>
+         `
+     },
+     "UNHRC43": {
+         title: "Human Rights Council 43 (2020)",
+         content: `
+             <h3>Key Provisions:</h3>
+             <ul>
+                 <li>Documents war crimes in Gaza</li>
+                 <li>Calls for accountability</li>
+             </ul>
+         `
+     },
+     "UNGAES10L25": {
+         title: "UN General Assembly ES-10/L.25 (2023)",
+         content: `
+             <h3>Key Provisions:</h3>
+             <ul>
+                 <li>Calls for immediate ceasefire in Gaza</li>
+                 <li>Demands humanitarian access</li>
+             </ul>
+         `
+     }
     // Additional documents can be added
 };
 

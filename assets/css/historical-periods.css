@@ -1,0 +1,168 @@
+/* assets/css/historical-periods.css */
+
+.period-header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 30px 20px;
+    background-color: #e0f7fa; /* Light blue background */
+    border-bottom: 3px solid #00796b; /* Darker teal border */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.period-header h1 {
+    color: #004d40; /* Dark teal */
+    font-size: 3em;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+}
+
+.period-header p {
+    color: #333;
+    font-size: 1.2em;
+    line-height: 1.7;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.period-content {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.period-content h2 {
+    color: #00796b; /* Darker teal */
+    font-size: 2.2em;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #b2dfdb; /* Light teal underline */
+    padding-bottom: 10px;
+}
+
+.period-content h3 {
+    color: #00695c; /* Even darker teal */
+    font-size: 1.8em;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+.period-content p {
+    color: #444;
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.period-content ul {
+    list-style: disc;
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+
+.period-content ul li {
+    color: #444;
+    font-size: 1.05em;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.period-content ul li strong {
+    color: #004d40;
+}
+
+/* Specific styles for quotes, testimonies, etc. */
+.quote, .survivor-testimony, .historical-document, .military-order, .statistic, .un-report, .evidence {
+    background-color: #f0f4c3; /* Light yellow/green */
+    border-left: 5px solid #cddc39; /* Lime green border */
+    padding: 15px 20px;
+    margin: 25px 0;
+    border-radius: 5px;
+    font-style: italic;
+    color: #555;
+}
+
+.quote footer, .survivor-testimony footer {
+    display: block;
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: bold;
+    color: #333;
+}
+
+.survivor-testimony .testimony-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.survivor-testimony .testimony {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.survivor-testimony .testimony img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #cddc39;
+    flex-shrink: 0;
+}
+
+.survivor-testimony blockquote {
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .period-header h1 {
+        font-size: 2.5em;
+    }
+
+    .period-header p {
+        font-size: 1.1em;
+    }
+
+    .period-content h2 {
+        font-size: 1.8em;
+    }
+
+    .period-content h3 {
+        font-size: 1.5em;
+    }
+
+    .period-content p, .period-content ul li {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .period-header h1 {
+        font-size: 2em;
+    }
+
+    .period-header p {
+        font-size: 1em;
+    }
+
+    .period-content h2 {
+        font-size: 1.6em;
+    }
+
+    .period-content h3 {
+        font-size: 1.3em;
+    }
+
+    .survivor-testimony .testimony {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .survivor-testimony .testimony img {
+        margin-bottom: 10px;
+    }
+}
