@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Free Palestine | Justice & Resistance</title>
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="script.js"></script>
 </head>
 <body>
     <!-- Navigation -->
@@ -14,151 +13,199 @@
         <div class="logo">
             <a href="index.html"><span>Free<span>Palestine</span></span></a>
         </div>
-<ul class="nav-links">
+        <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="./pages/history.html">History</a></li>
-            <li><a href="./pages/resistance.html">Resistance</a></li>
-            <li><a href="./pages/betrayals.html">Betrayals</a></li>
-            <li><a href="./pages/action.html">Take Action</a></li>
+            <li><a href="#history">History</a></li>
+            <li><a href="#resistance">Resistance</a></li>
+            <li><a href="#betrayal">Betrayals</a></li>
+            <li><a href="#act">Take Action</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#culture">Culture</a></li>
+            <li><a href="#future">Future</a></li>
         </ul>
         <div class="hamburger">
             <i class="fas fa-bars"></i>
         </div>
     </nav>
 
-<!-- Hero Section -->
-    <section class="hero" style="background-image: url('assets/images/Homepage/Fawzi_al_Juneidi_2017OWB.jpg');">
-        <div class="hero-content"> 
-            <h1 style="font-size: 3rem; color: white; text-shadow: 2px 2px 4px #000000;">From the River to the Sea,<br>Palestine Will Be Free</h1>
-            <p style="font-size: 1.5rem; color: white; text-shadow: 2px 2px 4px #000000;">76+ years of occupation. Millions displaced. Still resisting.</p>
-            <button id="timelineBtn" class="timeline-button btn">View Timeline</button>
-            <!-- <a href="#act" class="btn">Join the Movement</a> -->
-            <button id="joinmovementbtn" class="timeline-button joinmovement-button btn">Join the Movement</button>
+    <!-- Mobile Menu -->
+    <div class="mobile-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#history">History</a></li>
+            <li><a href="#resistance">Resistance</a></li>
+            <li><a href="#betrayal">Betrayals</a></li>
+            <li><a href="#act">Take Action</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#culture">Culture</a></li>
+            <li><a href="#future">Future</a></li>
+        </ul>
+    </div>
 
-            
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content"> 
+            <div class="hero-text">
+                <h1>From the River to the Sea,<br>Palestine Will Be Free</h1>
+                <p>76+ years of occupation. Millions displaced. Still resisting.</p>
+            </div>
+            <div class="hero-buttons">
+                <button id="timelineBtn" class="timeline-button btn">View Timeline</button>
+                <button id="joinmovementbtn" class="timeline-button joinmovement-button btn">Join the Movement</button>
+            </div>
         </div>
     </section>
 
-<!-- Timeline Popup -->
-<div id="timelinePopup" class="timeline-popup">
-    <div class="timeline-popup-content">
-        <span class="close-timeline">&times;</span>
-        <h2>Timeline of Palestinian Struggle</h2>
-<div class="timeline-container">
-            <a href="./pages/history_pages/peel-commission.html" class="timeline-event">
-                <div class="event-date">1937</div>
-                <div class="event-content">
-                    <h3>Peel Commission Partition Plan</h3>
-                    <p>First proposal to partition Palestine, giving Jews 33% of land despite being only 30% of population.</p>
+    <!-- Timeline Popup -->
+    <div id="timelinePopup" class="timeline-popup">
+        <div class="timeline-popup-content">
+            <span class="close-timeline">&times;</span>
+            <h2>Timeline of Palestinian Struggle</h2>
+            <div class="timeline-container">
+                <div class="timeline-event" data-url="./pages/history_pages/peel-commission.html">
+                    <div class="event-date">1937</div>
+                    <div class="event-content">
+                        <h3>Peel Commission Partition Plan</h3>
+                        <p>First proposal to partition Palestine, giving Jews 33% of land despite being only 30% of population.</p>
+                    </div>
                 </div>
-            </a>
-            <a href="./pages/history_pages/un-partition.html" class="timeline-event">
-                <div class="event-date">1947</div>
-                <div class="event-content">
-                    <h3>UN Partition Plan (Resolution 181)</h3>
-                    <p>UN gave 55% of Palestine to Jewish state despite Jews owning only 7% of land and being 33% of population.</p>
+                <div class="timeline-event" data-url="./pages/history_pages/un-partition.html">
+                    <div class="event-date">1947</div>
+                    <div class="event-content">
+                        <h3>UN Partition Plan (Resolution 181)</h3>
+                        <p>UN gave 55% of Palestine to Jewish state despite Jews owning only 7% of land and being 33% of population.</p>
+                    </div>
                 </div>
-            </a>
-            <a href="./pages/history_pages/nakba.html" class="timeline-event">
-                <div class="event-date">1948</div>
-                <div class="event-content">
-                    <h3>The Nakba ("Catastrophe")</h3>
-                    <p>750,000+ Palestinians forcibly expelled from their homes. Over 500 villages destroyed. Israel established on 78% of historic Palestine.</p>
+                <div class="timeline-event" data-url="./pages/history_pages/nakba.html">
+                    <div class="event-date">1948</div>
+                    <div class="event-content">
+                        <h3>The Nakba ("Catastrophe")</h3>
+                        <p>750,000+ Palestinians forcibly expelled from their homes. Over 500 villages destroyed. Israel established on 78% of historic Palestine.</p>
+                    </div>
                 </div>
-            </a>
-            <a href="./pages/history_pages/naksa.html" class="timeline-event">
-                <div class="event-date">1967</div>
-                <div class="event-content">
-                    <h3>Naksa (Six-Day War)</h3>
-                    <p>Israel occupies remaining 22% of Palestine (West Bank, Gaza, East Jerusalem) and Syrian Golan Heights. 300,000 more Palestinians displaced.</p>
+                <div class="timeline-event" data-url="./pages/history_pages/naksa.html">
+                    <div class="event-date">1967</div>
+                    <div class="event-content">
+                        <h3>Naksa (Six-Day War)</h3>
+                        <p>Israel occupies remaining 22% of Palestine (West Bank, Gaza, East Jerusalem) and Syrian Golan Heights. 300,000 more Palestinians displaced.</p>
+                    </div>
                 </div>
-            </a>
-            <a href="./pages/history_pages/sabra-shatila.html" class="timeline-event">
-                <div class="event-date">1982</div>
-                <div class="event-content">
-                    <h3>Sabra and Shatila Massacre</h3>
-                    <p>Israeli-backed Phalange militia kills 3,500 Palestinian refugees in Lebanon under Israeli military supervision.</p>
+                <div class="timeline-event" data-url="./pages/history_pages/sabra-shatila.html">
+                    <div class="event-date">1982</div>
+                    <div class="event-content">
+                        <h3>Sabra and Shatila Massacre</h3>
+                        <p>Israeli-backed Phalange militia kills 3,500 Palestinian refugees in Lebanon under Israeli military supervision.</p>
+                    </div>
                 </div>
-            </a>
-            <a href="./pages/history_pages/first-intifada.html" class="timeline-event">
-                <div class="event-date">1987</div>
-                <div class="event-content">
-                    <h3>First Intifada</h3>
-                    <p>Mass popular uprising against occupation. Over 1,200 Palestinians killed, mostly unarmed protesters.</p>
+                <div class="timeline-event" data-url="./pages/history_pages/first-intifada.html">
+                    <div class="event-date">1987</div>
+                    <div class="event-content">
+                        <h3>First Intifada</h3>
+                        <p>Mass popular uprising against occupation. Over 1,200 Palestinians killed, mostly unarmed protesters.</p>
+                    </div>
                 </div>
-            </a>
-            <a href="./pages/history_pages/second-intifada.html" class="timeline-event">
-                <div class="event-date">2000</div>
-                <div class="event-content">
-                    <h3>Second Intifada</h3>
-                    <p>Uprising after Ariel Sharon's provocative visit to Al-Aqsa. 3,000+ Palestinians killed, extensive destruction.</p>
+                <div class="timeline-event" data-url="./pages/history_pages/second-intifada.html">
+                    <div class="event-date">2000</div>
+                    <div class="event-content">
+                        <h3>Second Intifada</h3>
+                        <p>Uprising after Ariel Sharon's provocative visit to Al-Aqsa. 3,000+ Palestinians killed, extensive destruction.</p>
+                    </div>
                 </div>
-            </a>
-            <a href="./pages/history_pages/gaza-blockade.html" class="timeline-event">
-                <div class="event-date">2005</div>
-                <div class="event-content">
-                    <h3>Gaza Blockade Begins</h3>
-                    <p>Israel imposes land, sea and air siege after Hamas election victory, creating world's largest open-air prison for 2.3 million Gazans.</p>
+                <div class="timeline-event" data-url="./pages/history_pages/gaza-blockade.html">
+                    <div class="event-date">2005</div>
+                    <div class="event-content">
+                        <h3>Gaza Blockade Begins</h3>
+                        <p>Israel imposes land, sea and air siege after Hamas election victory, creating world's largest open-air prison for 2.3 million Gazans.</p>
+                    </div>
                 </div>
-            </a>
-            <a href="./pages/history_pages/cast-lead.html" class="timeline-event">
-                <div class="event-date">2008</div>
-                <div class="event-content">
-                    <h3>Cast Lead Operation</h3>
-                    <p>22-day Israeli assault kills 1,400+ Gazans, including 300+ children. White phosphorus used on civilians.</p>
+                <div class="timeline-event" data-url="./pages/history_pages/cast-lead.html">
+                    <div class="event-date">2008</div>
+                    <div class="event-content">
+                        <h3>Cast Lead Operation</h3>
+                        <p>22-day Israeli assault kills 1,400+ Gazans, including 300+ children. White phosphorus used on civilians.</p>
+                    </div>
                 </div>
-            </a>
-            <a href="./pages/history_pages/protective-edge.html" class="timeline-event">
-                <div class="event-date">2014</div>
-                <div class="event-content">
-                    <h3>Protective Edge Operation</h3>
-                    <p>51-day attack kills 2,200+ Gazans (70% civilians), destroys 18,000 homes. UN schools bombed.</p>
+                <div class="timeline-event" data-url="./pages/history_pages/protective-edge.html">
+                    <div class="event-date">2014</div>
+                    <div class="event-content">
+                        <h3>Protective Edge Operation</h3>
+                        <p>51-day attack kills 2,200+ Gazans (70% civilians), destroys 18,000 homes. UN schools bombed.</p>
+                    </div>
                 </div>
-            </a>
-            <a href="./pages/history_pages/great-march.html" class="timeline-event">
-                <div class="event-date">2018</div>
-                <div class="event-content">
-                    <h3>Great March of Return</h3>
-                    <p>Peaceful protests at Gaza fence. 223 protesters killed by snipers, including medics and journalists.</p>
+                <div class="timeline-event" data-url="./pages/history_pages/great-march.html">
+                    <div class="event-date">2018</div>
+                    <div class="event-content">
+                        <h3>Great March of Return</h3>
+                        <p>Peaceful protests at Gaza fence. 223 protesters killed by snipers, including medics and journalists.</p>
+                    </div>
                 </div>
-            </a>
-            <a href="./pages/history_pages/unity-intifada.html" class="timeline-event">
-                <div class="event-date">2021</div>
-                <div class="event-content">
-                    <h3>Unity Intifada & Sheikh Jarrah</h3>
-                    <p>Nationwide uprising against ethnic cleansing in Jerusalem. 256 Palestinians killed in Gaza bombing.</p>
+                <div class="timeline-event" data-url="./pages/history_pages/unity-intifada.html">
+                    <div class="event-date">2021</div>
+                    <div class="event-content">
+                        <h3>Unity Intifada & Sheikh Jarrah</h3>
+                        <p>Nationwide uprising against ethnic cleansing in Jerusalem. 256 Palestinians killed in Gaza bombing.</p>
+                    </div>
                 </div>
-            </a>
-            <a href="./pages/history_pages/al-aqsa-flood.html" class="timeline-event">
-                <div class="event-date">2023</div>
-                <div class="event-content">
-                    <h3>Al-Aqsa Flood & Gaza Genocide</h3>
-                    <p>After Hamas operation, Israel kills 35,000+ Gazans (70% women/children), destroys all universities and hospitals.</p>
+                <div class="timeline-event" data-url="./pages/history_pages/al-aqsa-flood.html">
+                    <div class="event-date">2023</div>
+                    <div class="event-content">
+                        <h3>Al-Aqsa Flood & Gaza Genocide</h3>
+                        <p>After Hamas operation, Israel kills 35,000+ Gazans (70% women/children), destroys all universities and hospitals.</p>
+                    </div>
                 </div>
-            </a>
-            <a href="./pages/history_pages/icj-genocide.html" class="timeline-event">
-                <div class="event-date">2024</div>
-                <div class="event-content">
-                    <h3>ICJ Genocide Case</h3>
-                    <p>South Africa brings case against Israel at International Court of Justice for genocide in Gaza.</p>
+                <div class="timeline-event" data-url="./pages/history_pages/icj-genocide.html">
+                    <div class="event-date">2024</div>
+                    <div class="event-content">
+                        <h3>ICJ Genocide Case</h3>
+                        <p>South Africa brings case against Israel at International Court of Justice for genocide in Gaza.</p>
+                    </div>
                 </div>
-            </a>
-            <a href="./pages/history_pages/ongoing-resistance.html" class="timeline-event">
-                <div class="event-date">2025</div>
-                <div class="event-content">
-                    <h3>Ongoing Resistance</h3>
-                    <p>Despite 76+ years of ethnic cleansing, Palestinians continue their struggle for liberation and return.</p>
+                <div class="timeline-event" data-url="./pages/history_pages/ongoing-resistance.html">
+                    <div class="event-date">2025</div>
+                    <div class="event-content">
+                        <h3>Ongoing Resistance</h3>
+                        <p>Despite 76+ years of ethnic cleansing, Palestinians continue their struggle for liberation and return.</p>
+                    </div>
                 </div>
-            </a>
+            </div>
         </div>
     </div>
-</div>
+
+    <!-- History Section -->
+    <section id="history" class="history">
+        <div class="container">
+            <h2>Palestinian History</h2>
+            <div class="history-content">
+                <div class="history-text">
+                    <p>Palestine has a rich history spanning thousands of years, with diverse cultures and civilizations contributing to its heritage. The region has been home to various peoples including Canaanites, Israelites, Philistines, Romans, Byzantines, and Arabs.</p>
+                    <p>Modern Palestinian history begins with the Ottoman Empire's rule (1517-1917), followed by the British Mandate (1917-1948). The establishment of Israel in 1948 marked the beginning of the Palestinian Nakba (Catastrophe), leading to displacement and ongoing conflict.</p>
+                </div>
+                <div class="history-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">76+</div>
+                        <div class="stat-label">Years of Occupation</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">7M+</div>
+                        <div class="stat-label">Palestinians Worldwide</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Destroyed Villages</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Resistance Section -->
     <section id="resistance" class="resistance">
         <h2>Palestinian Resistance</h2>
         <div class="resistance-methods">
-<div class="method">
+            <div class="method">
                 <i class="fas fa-hand-holding-heart"></i>
                 <h3>Peaceful Protests</h3>
                 <p>Great March of Return (2018-2019) – 223 protesters killed by snipers.</p>
@@ -217,24 +264,19 @@
                 <h3>Donate</h3>
                 <br>
                 <a href="#" id="donateTrigger" class="btn-small">Donate Now</a>
-                 <!-- Trigger link -->
-
-
-    <!-- Pop-up menu (hidden by default) -->
-        <div id="donateMenu">
-          <a href="#" class="close">&times;</a>
-        <ul>
-              <li><a href="https://pcrf1.app.neoncrm.com/forms/gaza-recovery" target="_blank" rel="noopener noreferrer">Palestine Children's Relief Fund (PCRF)</a></li>
-              <li><a href="https://www.islamicreliefcanada.org/emergencies/palestine-appeal" target="_blank" rel="noopener noreferrer">Islamic Relief</a></li>
-              <li><a href="https://www.unrwa.org/donate" target="_blank" rel="noopener noreferrer">UNRWA</a></li>
-              <li><a href="https://www.palestinercs.org/en/Donation "target="_blank" rel="noopener noreferrer">Palestine Red Crescent Society</a></li>
-               <li><a href="https://donate.doctorswithoutborders.org/secure/rr-donate-web" target="_blank" rel="noopener noreferrer">Doctors Without Borders</a></li>
-                <li><a href="https://www.amnesty.org.uk/giving/donate/help-protect-civilians-gaza" target="_blank" rel="noopener noreferrer">Amnesty International</a></li>
-                <li><a href="https://www.oxfamamerica.org/explore/emergencies/gaza-and-israel-emergency-appeal/" target="_blank" rel="noopener noreferrer">OXFAM</a></li>
-        </ul>
-        </div>
-
-
+                <!-- Pop-up menu (hidden by default) -->
+                <div id="donateMenu">
+                    <a href="#" class="close">&times;</a>
+                    <ul>
+                        <li><a href="https://pcrf1.app.neoncrm.com/forms/gaza-recovery" target="_blank" rel="noopener noreferrer">Palestine Children's Relief Fund (PCRF)</a></li>
+                        <li><a href="https://www.islamicreliefcanada.org/emergencies/palestine-appeal" target="_blank" rel="noopener noreferrer">Islamic Relief</a></li>
+                        <li><a href="https://www.unrwa.org/donate" target="_blank" rel="noopener noreferrer">UNRWA</a></li>
+                        <li><a href="https://www.palestinercs.org/en/Donation "target="_blank" rel="noopener noreferrer">Palestine Red Crescent Society</a></li>
+                        <li><a href="https://donate.doctorswithoutborders.org/secure/rr-donate-web" target="_blank" rel="noopener noreferrer">Doctors Without Borders</a></li>
+                        <li><a href="https://www.amnesty.org.uk/giving/donate/help-protect-civilians-gaza" target="_blank" rel="noopener noreferrer">Amnesty International</a></li>
+                        <li><a href="https://www.oxfamamerica.org/explore/emergencies/gaza-and-israel-emergency-appeal/" target="_blank" rel="noopener noreferrer">OXFAM</a></li>
+                    </ul>
+                </div>
             </div>
             <div class="option">
                 <i class="fas fa-microphone"></i>
@@ -243,28 +285,364 @@
                 <a href="#" class="btn-small">Share</a>
                 <p>Share information and resources about Palestine on social media and in your community.</p>
             </div>
-             <div class="option">
+            <div class="option">
                 <i class="fas fa-bullhorn"></i>
                 <h3>Contact Representatives</h3>
                 <br>
                 <a href="#" class="btn-small">Contact</a>
                 <p>Urge your elected officials to support Palestinian rights and hold Israel accountable.</p>
             </div>
-
-
-
         </div>
     </section>
 
+    <!-- Resources Section -->
+    <section id="resources" class="resources">
+        <div class="container">
+            <h2>Educational Resources</h2>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Books</h3>
+                    <p>Essential readings on Palestinian history and the ongoing struggle for justice.</p>
+                    <a href="#" class="resource-link">Explore Books</a>
+                </div>
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <h3>Documentaries</h3>
+                    <p>Powerful films that tell the Palestinian story from authentic perspectives.</p>
+                    <a href="#" class="resource-link">Watch Now</a>
+                </div>
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Academic Papers</h3>
+                    <p>Research and scholarly articles on the Palestinian-Israeli conflict.</p>
+                    <a href="#" class="resource-link">Read Papers</a>
+                </div>
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>Interactive Maps</h3>
+                    <p>Visualize the history of Palestinian displacement and land loss.</p>
+                    <a href="#" class="resource-link">View Maps</a>
+                </div>
+                <!-- <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-flag"></i>
+                    </div>
+                    <h3>Germany</h3>
+                    <p>Statements from German officials regarding Palestine.</p>
+                    <a href="countries/germany.html" class="resource-link">View Statements</a>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section
+    <section id="news" class="news">
+        <div class="container">
+            <h2>Latest News</h2>
+            <div class="news-grid">
+                <div class="news-card">
+                    <div class="news-date">June 15, 2023</div>
+                    <h3>International Court of Justice Hears Genocide Case</h3>
+                    <p>South Africa presents evidence of Israeli genocide against Palestinians in Gaza.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="news-card">
+                    <div class="news-date">May 28, 2023</div>
+                    <h3>UN Report Condemns Israeli Settlement Expansion</h3>
+                    <p>UN Human Rights Council finds Israel's settlement policies violate international law.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="news-card">
+                    <div class="news-date">April 10, 2023</div>
+                    <h3>Global Protests Demand Ceasefire in Gaza</h3>
+                    <p>Millions march worldwide calling for an end to Israeli aggression in Gaza.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    News Section
+    <section id="news" class="news">
+        <div class="container">
+            <h2>Latest News from Palestine</h2>
+            <div id="rss-feed">
+                <!-- RSS feed content will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Culture Section -->
+    <section id="culture" class="culture">
+        <div class="container">
+            <h2>Palestinian Culture & Heritage</h2>
+            <div class="culture-content">
+                <div class="culture-text">
+                    <p>Palestinian culture is rich and diverse, with traditions that span centuries. From traditional embroidery (tatreez) to olive harvesting, Palestinian heritage is deeply connected to the land.</p>
+                    <p>Music, poetry, and storytelling play vital roles in preserving Palestinian identity. The dabke dance, traditional foods like maqluba and musakhan, and hospitality are central to Palestinian social life.</p>
+                </div>
+                <div class="culture-highlights">
+                    <div class="highlight">
+                        <i class="fas fa-music"></i>
+                        <h3>Traditional Music</h3>
+                        <p>Explore the rich musical heritage of Palestine</p>
+                    </div>
+                    <div class="highlight">
+                        <i class="fas fa-utensils"></i>
+                        <h3>Cuisine</h3>
+                        <p>Discover authentic Palestinian dishes and recipes</p>
+                    </div>
+                    <div class="highlight">
+                        <i class="fas fa-theater-masks"></i>
+                        <h3>Arts & Crafts</h3>
+                        <p>Learn about traditional Palestinian crafts and art</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Future Section -->
+    <section id="future" class="future">
+        <div class="container">
+            <h2>The Future of Palestine</h2>
+            <div class="future-content">
+                <div class="future-vision">
+                    <h3>Vision for a Free Palestine</h3>
+                    <p>A future where Palestinians can live with dignity, freedom, and justice. Where refugees can return to their ancestral homes and where all people in the region can coexist peacefully.</p>
+                </div>
+                <div class="future-goals">
+                    <div class="goal-card">
+                        <i class="fas fa-handshake"></i>
+                        <h3>Peaceful Coexistence</h3>
+                        <p>Building bridges between communities through dialogue and understanding</p>
+                    </div>
+                    <div class="goal-card">
+                        <i class="fas fa-seedling"></i>
+                        <h3>Environmental Justice</h3>
+                        <p>Protecting Palestinian land and natural resources from destruction</p>
+                    </div>
+                    <div class="goal-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Education & Empowerment</h3>
+                        <p>Supporting Palestinian youth through education and leadership development</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- To-Do List Section -->
+    <section class="todo">
+        <div class="container">
+            <h2>Future Development Roadmap</h2>
+            <div class="todo-content">
+                <div class="todo-column">
+                    <h3>Content Development</h3>
+                    <ul>
+                        <li>Add detailed historical articles for each timeline event</li>
+                        <li>Create comprehensive profiles of key Palestinian figures</li>
+                        <li>Develop interactive maps showing land loss over time</li>
+                        <li>Compile database of Palestinian villages destroyed in 1948</li>
+                        <li>Create multimedia galleries with historical photos</li>
+                        <li>Develop educational modules for schools and universities</li>
+                        <li>Add testimonies from Palestinian refugees</li>
+                        <li>Create virtual museum exhibitions</li>
+                    </ul>
+                </div>
+                <div class="todo-column">
+                    <h3>Technical Features</h3>
+                    <ul>
+                        <li>Implement multilingual support (Arabic, English, Spanish, French)</li>
+                        <li>Add search functionality for all content</li>
+                        <li>Create user accounts for personalized experiences</li>
+                        <li>Develop mobile app for iOS and Android</li>
+                        <li>Integrate social media sharing features</li>
+                        <li>Add newsletter subscription system</li>
+                        <li>Implement content management system (CMS)</li>
+                        <li>Create API for external developers</li>
+                    </ul>
+                </div>
+                <div class="todo-column">
+                    <h3>Community Engagement</h3>
+                    <ul>
+                        <li>Launch petition platform for political action</li>
+                        <li>Create volunteer coordination system</li>
+                        <li>Develop event calendar with global actions</li>
+                        <li>Add discussion forums for community dialogue</li>
+                        <li>Implement donation tracking and transparency reports</li>
+                        <li>Create advocacy toolkit for activists</li>
+                        <li>Develop educational workshops and webinars</li>
+                        <li>Launch ambassador program for global outreach</li>
+                    </ul>
+                </div>
+                <div class="todo-column">
+                    <h3>Advanced Features</h3>
+                    <ul>
+                        <li>Build interactive timeline with multimedia content</li>
+                        <li>Create virtual reality experiences of historical sites</li>
+                        <li>Develop augmented reality museum exhibits</li>
+                        <li>Add live news feed from Palestinian sources</li>
+                        <li>Implement AI-powered translation services</li>
+                        <li>Create podcast series with Palestinian voices</li>
+                        <li>Develop documentary film library</li>
+                        <li>Build research collaboration platform</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>Voices of Resistance</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"The Palestinian people have shown incredible resilience in the face of occupation. Their struggle for justice and dignity continues to inspire the world."</p>
+                        <div class="testimonial-author">
+                            <div class="author-name">Dr. Leila Khaled</div>
+                            <div class="author-title">Palestinian Activist</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <div class="container">
+            <h2>Historical Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1592665785026-6b33c3e9e0ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="Historical Palestine">
+                    <div class="gallery-overlay">
+                        <div class="gallery-text">Historical Palestine</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1592665785026-6b33c3e9e0ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="Nakba Refugees">
+                    <div class="gallery-overlay">
+                        <div class="gallery-text">Nakba Refugees</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1592665785026-6b33c3e9e0ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="Great March of Return">
+                    <div class="gallery-overlay">
+                        <div class="gallery-text">Great March of Return</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1592665785026-6b33c3e9e0ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="Children of Gaza">
+                    <div class="gallery-overlay">
+                        <div class="gallery-text">Children of Gaza</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section
+    <section class="events">
+        <div class="container">
+            <h2>Upcoming Events</h2>
+            <div class="events-list">
+                <div class="event-card">
+                    <div class="event-date">
+                        <div class="event-day">15</div>
+                        <div class="event-month">JUN</div>
+                    </div>
+                    <div class="event-details">
+                        <h3>Global Day of Solidarity</h3>
+                        <p>Worldwide demonstrations calling for Palestinian rights and an end to occupation.</p>
+                        <div class="event-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Worldwide</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">
+                        <div class="event-day">22</div>
+                        <div class="event-month">JUN</div>
+                    </div>
+                    <div class="event-details">
+                        <h3>Palestinian Cultural Festival</h3>
+                        <p>Celebrating Palestinian heritage through music, dance, and traditional arts.</p>
+                        <div class="event-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Community Center</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">
+                        <div class="event-day">30</div>
+                        <div class="event-month">JUN</div>
+                    </div>
+                    <div class="event-details">
+                        <h3>Educational Workshop: Understanding the Conflict</h3>
+                        <p>Interactive session with Palestinian scholars and activists.</p>
+                        <div class="event-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>University Campus</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
     <!-- Footer -->
     <footer>
-        <p>Free Palestine | Justice & Resistance</p>
-        <div class="social-links">
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-telegram"></i></a>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Free Palestine</h3>
+                    <p>Dedicated to providing information and resources about the history of Palestine and the ongoing struggle for justice and liberation.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#history">History</a></li>
+                        <li><a href="#resistance">Resistance</a></li>
+                        <li><a href="#betrayal">Betrayals</a></li>
+                        <li><a href="#act">Take Action</a></li>
+                        <li><a href="#resources">Resources</a></li>
+                        <li><a href="#culture">Culture</a></li>
+                        <li><a href="#future">Future</a></li>
+                    </ul>
+                </div>
+                <!-- <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to receive updates on Palestinian rights and resistance.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit" class="btn-small">Subscribe</button>
+                    </form>
+                </div> -->
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Free Palestine. All rights reserved.</p>
+            </div>
         </div>
-        <p>This website is dedicated to providing information and resources about the history of Palestine and the ongoing struggle for justice and liberation.</p>
     </footer>
 
     <script src="script.js"></script>
