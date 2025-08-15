@@ -30,6 +30,42 @@ document.querySelectorAll('.mobile-nav a').forEach(link => {
     });
 });
 
+// Function to fetch and display RSS feed
+function fetchRSSFeed() {
+    const rssFeedUrl = 'https://palinfo.com/feed';
+    const rssFeedContainer = document.getElementById('rss-feed');
+
+    fetch(rssFeedUrl)
+        .then(response => response.text())
+        .then(data => {
+            const parser = new DOMParser();
+            const xml = parser.parseFromString(data, "application/xml");
+            const items = xml.querySelectorAll("item");
+
+            let rssContent = '';
+            items.forEach(item => {
+                const title = item.querySelector("title").textContent;
+                const link = item.querySelector("link").textContent;
+                const description = item.querySelector("description").textContent;
+                rssContent += `
+                    <div class="news-card">
+                        <h3><a href="${link}" target="_blank">${title}</a></h3>
+                        <p>${description}</p>
+                    </div>
+                `;
+            });
+
+            rssFeedContainer.innerHTML = rssContent;
+        })
+        .catch(error => {
+            console.error("Error fetching RSS feed:", error);
+            rssFeedContainer.innerHTML = '<p>Error fetching RSS feed. Please try again later.</p>';
+        });
+}
+
+// Call the function when the page loads
+window.addEventListener('load', fetchRSSFeed);
+
 // Navbar scroll effect
 window.addEventListener('scroll', () => {
     const nav = document.querySelector('nav');

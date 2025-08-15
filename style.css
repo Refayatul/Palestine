@@ -1528,3 +1528,39 @@ footer {
 ::-webkit-scrollbar-thumb:hover {
     background: #a50d1e;
 }
+
+/* News Section */
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.news-card {
+    background: var(--card-bg);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: var(--transition);
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.news-card h3 {
+    padding: 15px 20px 10px;
+    color: var(--primary-green);
+    font-size: 1.3rem;
+}
+
+.news-card h3 a {
+    color: var(--primary-green);
+}
+
+.news-card p {
+    padding: 0 20px 20px;
+    color: var(--text-light);
+}

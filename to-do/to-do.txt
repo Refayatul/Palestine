@@ -16,3 +16,1735 @@ To-Do List for Website Updates
 -->Add Links to Journalists' Social Media
 -->Gather social media links for journalists covering the situation, such as Bisan.
 -->Create a section on the website to feature these links.
+
+
+Extensive To-Do List:
+Content Development
+Add detailed historical articles for each timeline event
+Create comprehensive profiles of key Palestinian figures
+Develop interactive maps showing land loss over time
+Compile database of Palestinian villages destroyed in 1948
+Create multimedia galleries with historical photos
+Develop educational modules for schools and universities
+Add testimonies from Palestinian refugees
+Create virtual museum exhibitions
+Technical Features
+Implement multilingual support (Arabic, English, Spanish, French)
+Add search functionality for all content
+Create user accounts for personalized experiences
+Develop mobile app for iOS and Android
+Integrate social media sharing features
+Add newsletter subscription system
+Implement content management system (CMS)
+Create API for external developers
+Community Engagement
+Launch petition platform for political action
+Create volunteer coordination system
+Develop event calendar with global actions
+Add discussion forums for community dialogue
+Implement donation tracking and transparency reports
+Create advocacy toolkit for activists
+Develop educational workshops and webinars
+Launch ambassador program for global outreach
+Advanced Features
+Build interactive timeline with multimedia content
+Create virtual reality experiences of historical sites
+Develop augmented reality museum exhibits
+Add live news feed from Palestinian sources
+Implement AI-powered translation services
+Create podcast series with Palestinian voices
+Develop documentary film library
+Build research collaboration platform
+Additional Ideas:
+Add legal resources section with international law documents
+Create a resource library for journalists and researchers
+Develop a database of Palestinian prisoners
+Add section on environmental destruction in Palestine
+Create interactive infographics about the conflict
+Add section on Palestinian contributions to science and arts
+Develop a mentorship program connecting activists globally
+Create a scholarship fund tracking system
+Add section on Palestinian diaspora communities worldwide
+Develop a cultural exchange program platform
+Create a memorial section for Palestinian martyrs
+Add section on Palestinian women's resistance
+Develop a resource hub for Palestinian students
+Create a section on Palestinian innovations and startups
+Add a directory of Palestinian-owned businesses
+Develop a section on Palestinian sports achievements
+Create a section on Palestinian literature and poetry
+Add a section on Palestinian architectural heritage
+Develop a section on Palestinian religious sites
+Create a section on Palestinian culinary traditions
+Add a section on Palestinian folk traditions and customs
+This extensive roadmap provides a clear path for continuous development and expansion of the platform to serve the Palestinian cause more effectively.
+
+
+
+
+
+static-site-first guide tailored for Cloudflare Pages, plus a deep, prioritized to-do list you can actually execute. It stays strictly static (HTML/CSS/JS, JSON/Markdown data, client-side libraries), with optional Cloudflare enhancements at the end.
+
+Part 1 — Project structure and conventions
+
+Folder layout (works perfectly on Cloudflare Pages)
+
+Root
+index.html
+/assets
+/css
+style.css
+/js
+main.js
+search.js
+render-country.js
+render-boycotts.js
+render-abductions.js
+render-journalists.js
+utils.js
+/images
+hero/
+countries/
+journalists/
+gallery/
+/data
+updates.json
+search-index.json
+journalists.json
+abductions-2008-2023.json
+boycotts-supporting.json
+boycotts-supportive.json
+/countries
+germany.json
+france.json
+…
+/countries
+index.html (hub with filters)
+view.html (single template rendering ?slug=)
+/boycott
+supporting.html (companies to boycott)
+supportive.html (companies to support)
+/features
+abductions-2008-2023.html
+/journalists
+index.html
+/legal
+sources.html
+policies.html
+/_headers (HTTP headers: caching, security)
+/robots.txt
+/sitemap.xml (generate once per release or maintain manually)
+/README.md (edit workflow and content rules)
+Static data conventions
+
+All content that changes often goes in /assets/data/*.json (auditable).
+Every data item includes sources[] with: { title, url, publisher, date_accessed }.
+Every page shows “Last updated” (either from JSON date_updated or hard-coded in page).
+Part 2 — JSON schemas (copy-paste-ready)
+
+Country file (/assets/data/countries/germany.json)
+{
+"slug": "germany",
+"name": "Germany",
+"flag": "/assets/images/countries/germany.png",
+"summary": "Summary of Germany's public stance and policy on Palestine/Israel.",
+"last_updated": "2025-08-10",
+"official_positions": [
+{
+"date": "2024-01-20",
+"statement": "Official statement excerpt or summary.",
+"source": {
+"title": "Federal Foreign Office statement",
+"url": "https://www.auswaertiges-amt.de/",
+"publisher": "Auswärtiges Amt",
+"date_accessed": "2025-08-10"
+}
+}
+],
+"un_voting_record": [
+{
+"resolution": "UNGA ES-10/20",
+"date": "2023-10-27",
+"vote": "Abstain",
+"source": {
+"title": "UN Digital Library",
+"url": "https://digitallibrary.un.org/",
+"publisher": "UN",
+"date_accessed": "2025-08-10"
+}
+}
+],
+"arms_trade": [
+{
+"year": 2022,
+"category": "dual-use export",
+"notes": "If applicable",
+"source": {
+"title": "Official export report",
+"url": "https://example.gov/report",
+"publisher": "Gov",
+"date_accessed": "2025-08-10"
+}
+}
+],
+"aid_and_relief": [
+{
+"amount_eur": 50000000,
+"program": "UNRWA support",
+"date": "2024-03-15",
+"source": {
+"title": "Ministry press release",
+"url": "https://example.gov/pr",
+"publisher": "Gov",
+"date_accessed": "2025-08-10"
+}
+}
+],
+"civil_society": [
+{ "org": "IG Metall", "position": "Statement on ceasefire", "date": "2023-11-10", "source": { "title": "IG Metall", "url": "https://igm.de", "publisher": "IG Metall", "date_accessed": "2025-08-10" } }
+],
+"take_action": [
+{ "title": "Embassy Contact", "url": "https://www.auswaertiges-amt.de/en/aamt/auslandsvertretungen-node" },
+{ "title": "Local solidarity groups", "url": "https://example.org/groups" }
+]
+}
+
+Journalists file (/assets/data/journalists.json)
+[
+{
+"name": "Bisan Owda",
+"photo": "/assets/images/journalists/bisan.jpg",
+"bio": "Journalist documenting conditions in Gaza.",
+"region": "Gaza",
+"links": [
+{ "platform": "YouTube", "url": "https://youtube.com/@..." },
+{ "platform": "Instagram", "url": "https://instagram.com/..." }
+]
+}
+]
+
+Boycotts files
+/assets/data/boycotts-supporting.json
+[
+{
+"name": "Company A",
+"sector": "Tech",
+"rationale": "Contracts with military operations.",
+"status": "active",
+"region": "EU",
+"parent_company": "Parent PLC",
+"sources": [
+{ "title": "Report", "url": "https://link", "publisher": "NGO", "date_accessed": "2025-08-10" }
+],
+"last_reviewed": "2025-08-10"
+}
+]
+
+/assets/data/boycotts-supportive.json
+[
+{
+"name": "Company B",
+"sector": "Retail",
+"rationale": "Publicly supports Palestinian rights.",
+"status": "active",
+"region": "MENA",
+"sources": [ { "title": "News", "url": "https://news", "publisher": "Media", "date_accessed": "2025-08-10" } ],
+"last_reviewed": "2025-08-10"
+}
+]
+
+Abductions dataset (/assets/data/abductions-2008-2023.json)
+{
+"meta": {
+"title": "Children abducted/detained 2008–2023",
+"methodology": "Definitions, scope, sources included DCI, Save the Children.",
+"last_updated": "2025-08-10",
+"sources": [
+{"title": "DCI", "url": "https://www.dci-palestine.org", "publisher": "DCI", "date_accessed": "2025-08-10"}
+]
+},
+"by_year": [
+{"year": 2008, "children": 340},
+{"year": 2009, "children": 410}
+],
+"by_region": [
+{"region": "West Bank", "children": 5200},
+{"region": "Gaza", "children": 300}
+],
+"by_gender": [
+{"gender": "Boys", "children": 4900},
+{"gender": "Girls", "children": 600}
+]
+}
+
+Updates file (/assets/data/updates.json)
+[
+{
+"date": "2025-08-10T12:00:00Z",
+"headline": "UN OCHA releases new situation update",
+"summary": "Key aid corridor status, casualties update.",
+"sources": [{ "title": "OCHA", "url": "https://ocha.org", "publisher": "UN OCHA", "date_accessed": "2025-08-10" }]
+}
+]
+
+Part 3 — Page templates and scripts (static)
+
+A) Countries hub (/countries/index.html)
+
+Purpose: Filterable/searchable list of countries from a static JSON inventory.
+HTML (countries/index.html)
+
+<link rel="stylesheet" href="/assets/css/style.css"> <section class="container"> <h1>Countries: Official Positions</h1> <input id="countrySearch" type="search" placeholder="Search countries..." aria-label="Search countries"> <div id="countryGrid" class="grid"></div> </section> <script src="/assets/js/utils.js"></script> <script> (async function(){ // Option 1: Inventory JSON listing all countries (recommended) const list = await fetchJSON('/assets/data/countries/_index.json'); // [{slug, name, flag, summary}] const grid = document.getElementById('countryGrid'); const input = document.getElementById('countrySearch');
+function render(items){
+grid.innerHTML = items.map(c => <a class="card" href="/countries/view.html?slug=${encodeURIComponent(c.slug)}"> <img src="${c.flag}" alt="${c.name} flag" loading="lazy"> <h3>${c.name}</h3> <p>${c.summary || ''}</p> </a> ).join('');
+}
+render(list);
+
+input.addEventListener('input', e => {
+const q = e.target.value.toLowerCase().trim();
+render(list.filter(c => c.name.toLowerCase().includes(q)));
+});
+})();
+</script>
+
+B) Country view (single template) (/countries/view.html)
+HTML
+
+<link rel="stylesheet" href="/assets/css/style.css"> <section class="container" id="country"></section> <script src="/assets/js/render-country.js"></script>
+JS (assets/js/render-country.js)
+(async function(){
+const params = new URLSearchParams(location.search);
+const slug = params.get('slug');
+const container = document.getElementById('country');
+if(!slug){ container.innerHTML = '<p>Missing country slug.</p>'; return; }
+
+const data = await fetch(/assets/data/countries/${slug}.json).then(r => r.json()).catch(()=>null);
+if(!data){ container.innerHTML = '<p>Country not found.</p>'; return; }
+
+const list = (items, fields) => items?.length ? <ul>${items.map(i =><li>${fields(i)}</li>).join('')}</ul> : '<p>No data available.</p>';
+
+container.innerHTML = `
+<header>
+<img src="${data.flag}" alt="${data.name} flag" width="64" height="42">
+<h1>${data.name}</h1>
+<p class="muted">Last updated: ${data.last_updated || '—'}</p>
+<p>${data.summary || ''}</p>
+</header>
+
+text
+
+<section>
+  <h2>Official Statements</h2>
+  ${list(data.official_positions, i => `
+    <strong>${i.date}</strong> — ${i.statement}
+    <span class="sources">${sourceLink(i.source)}</span>
+  `)}
+</section>
+
+<section>
+  <h2>UN Voting Record</h2>
+  ${list(data.un_voting_record, i => `
+    <strong>${i.date}</strong> — ${i.resolution} — <em>${i.vote}</em>
+    <span class="sources">${sourceLink(i.source)}</span>
+  `)}
+</section>
+
+<section>
+  <h2>Arms Trade</h2>
+  ${list(data.arms_trade, i => `
+    <strong>${i.year}</strong> — ${i.category} — ${i.notes || ''}
+    <span class="sources">${sourceLink(i.source)}</span>
+  `)}
+</section>
+
+<section>
+  <h2>Humanitarian Aid</h2>
+  ${list(data.aid_and_relief, i => `
+    <strong>${i.date}</strong> — €${formatNumber(i.amount_eur)} — ${i.program}
+    <span class="sources">${sourceLink(i.source)}</span>
+  `)}
+</section>
+
+<section>
+  <h2>Civil Society</h2>
+  ${list(data.civil_society, i => `
+    <strong>${i.date}</strong> — ${i.org}: ${i.position}
+    <span class="sources">${sourceLink(i.source)}</span>
+  `)}
+</section>
+
+<section>
+  <h2>Take Action</h2>
+  <ul>
+    ${data.take_action?.map(a => `<li><a target="_blank" rel="noopener" href="${a.url}">${a.title}</a></li>`).join('') || '<li>No links yet.</li>'}
+  </ul>
+</section>
+`;
+})();
+
+function formatNumber(n){ return (n||0).toLocaleString(); }
+function sourceLink(s){ return s ? [<a target="_blank" rel="noopener" href="${s.url}">${s.publisher || s.title}</a>] : ''; }
+
+C) Boycott pages (/boycott/supporting.html and /boycott/supportive.html)
+HTML (boycott/supporting.html)
+
+<link rel="stylesheet" href="/assets/css/style.css"> <section class="container"> <h1>Companies to Boycott</h1> <div class="toolbar"> <input id="q" type="search" placeholder="Search company or sector"> <select id="sector"><option value="">All sectors</option></select> <select id="region"><option value="">All regions</option></select> </div> <table id="tbl" class="table"> <thead><tr><th>Name</th><th>Sector</th><th>Region</th><th>Status</th><th>Sources</th></tr></thead> <tbody></tbody> </table> <p class="muted" id="lastReviewed"></p> </section> <script src="/assets/js/render-boycotts.js"></script>
+JS (assets/js/render-boycotts.js)
+(async function(){
+const file = location.pathname.includes('supportive') ? 'boycotts-supportive.json' : 'boycotts-supporting.json';
+const data = await fetch(/assets/data/${file}).then(r=>r.json());
+const body = document.querySelector('#tbl tbody');
+const q = document.getElementById('q');
+const sector = document.getElementById('sector');
+const region = document.getElementById('region');
+const lastReviewed = document.getElementById('lastReviewed');
+
+// Populate filters
+[...new Set(data.map(d=>d.sector))].filter(Boolean).forEach(s=> sector.insertAdjacentHTML('beforeend', <option>${s}</option>));
+[...new Set(data.map(d=>d.region))].filter(Boolean).forEach(r=> region.insertAdjacentHTML('beforeend', <option>${r}</option>));
+
+function render(items){
+body.innerHTML = items.map(d => <tr> <td>${d.name}</td> <td>${d.sector || '—'}</td> <td>${d.region || '—'}</td> <td>${d.status}</td> <td>${(d.sources||[]).map(s=><a target="_blank" rel="noopener" href="${s.url}">${s.publisher||s.title}</a>).join(', ')||'—'}</td> </tr> ).join('');
+const latest = items.reduce((acc, i)=> acc > (i.last_reviewed||'') ? acc : (i.last_reviewed||''), '');
+lastReviewed.textContent = latest ? List last reviewed: ${latest} : '';
+}
+
+function apply(){
+const query = q.value.toLowerCase().trim();
+let items = data;
+if(sector.value) items = items.filter(i=>i.sector===sector.value);
+if(region.value) items = items.filter(i=>i.region===region.value);
+if(query) items = items.filter(i =>
+i.name.toLowerCase().includes(query) ||
+(i.sector||'').toLowerCase().includes(query) ||
+(i.rationale||'').toLowerCase().includes(query)
+);
+render(items);
+}
+[q, sector, region].forEach(el=> el.addEventListener('input', apply));
+render(data);
+})();
+
+D) Abductions feature (/features/abductions-2008-2023.html)
+HTML
+
+<link rel="stylesheet" href="/assets/css/style.css"> <section class="container"> <h1>Abductions and Detentions of Children (2008–2023)</h1> <p class="muted">Methodology and sources are provided below. Last updated: <span id="lu"></span></p> <canvas id="byYear" height="120"></canvas> <div class="grid"> <canvas id="byRegion" height="120"></canvas> <canvas id="byGender" height="120"></canvas> </div> <h2>Methodology</h2> <p id="method"></p> <h3>Sources</h3> <ul id="sources"></ul> </section> <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <script src="/assets/js/render-abductions.js"></script>
+JS (assets/js/render-abductions.js)
+(async function(){
+const d = await fetch('/assets/data/abductions-2008-2023.json').then(r=>r.json());
+document.getElementById('lu').textContent = d.meta.last_updated || '—';
+document.getElementById('method').textContent = d.meta.methodology || '';
+document.getElementById('sources').innerHTML = d.meta.sources.map(s => <li><a target="_blank" rel="noopener" href="${s.url}">${s.title}</a> — ${s.publisher}</li>).join('');
+
+const ctx1 = document.getElementById('byYear').getContext('2d');
+new Chart(ctx1, {
+type: 'line',
+data: {
+labels: d.by_year.map(i=>i.year),
+datasets: [{ label: 'Children', data: d.by_year.map(i=>i.children), borderColor:'#ce1126', fill:false }]
+},
+options: { scales: { y: { beginAtZero: true }}, plugins: { legend: { display:false } } }
+});
+
+const ctx2 = document.getElementById('byRegion').getContext('2d');
+new Chart(ctx2, {
+type: 'bar',
+data: {
+labels: d.by_region.map(i=>i.region),
+datasets: [{ label: 'Children', data: d.by_region.map(i=>i.children), backgroundColor:'#009736' }]
+},
+options: { indexAxis: 'y', plugins: { legend: { display:false } } }
+});
+
+const ctx3 = document.getElementById('byGender').getContext('2d');
+new Chart(ctx3, {
+type: 'doughnut',
+data: {
+labels: d.by_gender.map(i=>i.gender),
+datasets: [{ data: d.by_gender.map(i=>i.children), backgroundColor: ['#ce1126','#00643a'] }]
+},
+options: { plugins: { legend: { position:'bottom' } } }
+});
+})();
+
+E) Journalists page (/journalists/index.html)
+HTML
+
+<link rel="stylesheet" href="/assets/css/style.css"> <section class="container"> <h1>Journalists to Follow</h1> <div id="journalists" class="grid cards"></div> </section> <script src="/assets/js/render-journalists.js"></script>
+JS (assets/js/render-journalists.js)
+(async function(){
+const data = await fetch('/assets/data/journalists.json').then(r=>r.json());
+const wrap = document.getElementById('journalists');
+wrap.innerHTML = data.map(j => <article class="card"> <img src="${j.photo}" alt="${j.name}" loading="lazy"> <h3>${j.name}</h3> <p class="muted">${j.region || ''}</p> <p>${j.bio || ''}</p> <p>${(j.links||[]).map(l=><a target="_blank" rel="noopener" href="${l.url}">${l.platform}</a>).join(' · ')}</p> </article> ).join('');
+})();
+
+F) Latest updates widget (drop into homepage)
+HTML snippet
+
+<section class="container"> <h2>Latest Updates</h2> <ul id="latestUpdates" class="updates"></ul> <p class="muted" id="lastUpdated"></p> </section> <script> (async function(){ const items = await fetch('/assets/data/updates.json').then(r=>r.json()); const list = document.getElementById('latestUpdates'); const last = document.getElementById('lastUpdated'); list.innerHTML = items.slice(0,5).map(u => ` <li> <strong>${new Date(u.date).toLocaleString()}</strong> — ${u.headline} ${u.summary ? ` — <em>${u.summary}</em>`:''} ${u.sources?.length ? ` [<a target="_blank" rel="noopener" href="${u.sources[0].url}">${u.sources[0].publisher||u.sources[0].title}</a>]`:''} </li> `).join(''); last.textContent = items[0] ? `Last updated: ${new Date(items[0].date).toLocaleString()}` : ''; })(); </script>
+G) Utilities (assets/js/utils.js)
+async function fetchJSON(url){ const r = await fetch(url); if(!r.ok) throw new Error('fetch error '+url); return r.json(); }
+
+Part 4 — Search (100% static)
+
+Use Fuse.js (client-only fuzzy search) with a single aggregated search-index.json.
+
+search-index.json structure:
+[
+{"type":"country","slug":"germany","title":"Germany — Country Profile","summary":"..."},
+{"type":"boycott","slug":"company-a","title":"Company A — Boycott Rationale","summary":"..."},
+{"type":"article","slug":"abductions-2008-2023","title":"Abductions 2008–2023","summary":"..."}
+]
+
+search.js (basic)
+
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script><script> (async function(){ const idx = await fetch('/assets/data/search-index.json').then(r=>r.json()); const fuse = new Fuse(idx, { keys: ['title','summary'], threshold: 0.35 }); const input = document.getElementById('siteSearch'); const out = document.getElementById('searchResults'); input.addEventListener('input', e => { const q = e.target.value.trim(); if(!q){ out.innerHTML=''; return; } const results = fuse.search(q).slice(0,10).map(r=>r.item); out.innerHTML = results.map(i => ` <li><a href="${route(i)}">${i.title}</a><p class="muted">${i.summary||''}</p></li> `).join(''); }); function route(i){ if(i.type==='country') return `/countries/view.html?slug=${i.slug}`; if(i.type==='boycott') return `/boycott/supporting.html#${i.slug}`; if(i.type==='article') return `/features/${i.slug}.html`; return '#'; } })(); </script>
+How to maintain search-index.json
+Either hand-maintain (simple for small sites), or
+Add a tiny Node build script locally that aggregates /assets/data/* into a single index (run before committing). Cloudflare Pages will just host the result.
+Part 5 — Cloudflare Pages setup
+
+_headers (at project root)
+Cache static assets aggressively
+/assets/js/*
+Cache-Control: public, max-age=31536000, immutable
+/assets/css/*
+Cache-Control: public, max-age=31536000, immutable
+/assets/images/*
+Cache-Control: public, max-age=31536000, immutable
+/assets/data/*
+Cache-Control: public, max-age=300
+
+Basic security headers (adjust CSP if you add more CDNs)
+/
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Referrer-Policy: strict-origin-when-cross-origin
+Permissions-Policy: geolocation=(), microphone=(), camera=()
+Content-Security-Policy: default-src 'self'; img-src 'self' data: https:; script-src 'self' https://cdn.jsdelivr.net https://cdn.jsdelivr.net/npm/chart.js https://cdn.jsdelivr.net/npm/fuse.js; style-src 'self' 'unsafe-inline'; connect-src 'self'; font-src 'self' data:
+
+robots.txt
+User-agent: *
+Allow: /
+Sitemap: https://your-domain/sitemap.xml
+
+sitemap.xml
+Maintain manually or export via a small script once in a while. Include: index.html, countries/, boycott/, journalists/, features/.
+
+Analytics
+Add Cloudflare Web Analytics (privacy-friendly) by inserting their script snippet in your global footer.
+
+Part 6 — Performance, SEO, a11y
+
+Performance
+
+Compress all images (WebP/AVIF preferred); provide srcset for hero/gallery.
+Defer non-critical JS; inline tiny bootstraps only when helpful.
+Use loading="lazy" on images; decoding="async".
+SEO
+
+Unique <title>, <meta name="description"> per page.
+Open Graph/Twitter cards for shareable pages (countries, features).
+JSON-LD for Article (features), Organization (site), BreadcrumbList (deep pages).
+Accessibility
+
+Sufficient color contrast (respect WCAG).
+Keyboard focus styles; skip-to-content links.
+Alt text for all non-decorative images.
+Respect prefers-reduced-motion.
+Part 7 — Editorial workflow (static-friendly)
+
+Working branch (content-updates) with PR checklist:
+Sources included and reputable.
+Dates and stats double-checked.
+Links open in new tabs with rel="noopener".
+Data JSON validates and has last_updated fields.
+Use Deploy Previews in Cloudflare Pages to review content visually.
+Changelog: append date and summary to /assets/data/updates.json and a /changelog.md.
+Part 8 — The Better (and Bigger) To‑Do List for Cloudflare Pages
+
+Top priorities (P0)
+
+Gaza updates
+Build a “Latest Updates” homepage widget pulling /assets/data/updates.json.
+Add “Last updated” timestamp visible in hero or just under “Latest Updates”.
+Establish a weekly/bi-weekly editorial cadence and source list page (/legal/sources.html).
+Country pages
+Create /countries/index.html hub + /countries/view.html.
+Add initial countries: Germany, USA, UK, France, Canada, Egypt, South Africa, Turkey.
+For each: official statements, UN votes, aid, arms trade (if any), civil society, take action.
+Build /assets/data/countries/_index.json for the hub.
+Boycott lists
+Create /boycott/supporting.html and /boycott/supportive.html.
+Populate with at least 20 entries per list, each with sources and last_reviewed.
+Add client-side filters (sector, region, status) + search.
+Abductions & kidnappings (2008–2023)
+Complete /features/abductions-2008-2023.html with charts and clear methodology.
+Provide downloadable CSV in /assets/data/.
+Journalists page
+Launch /journalists/index.html with 10+ verified accounts; add disclaimer on volatility.
+Include direct platform links (open in new tabs).
+High-value enhancements (P1)
+
+Search experience
+Add site-wide search box (Fuse.js) using /assets/data/search-index.json.
+Index countries, boycott entries, features, journalists.
+“Start Here” primer
+Simple page explaining key terms, chronology, and recommended reading.
+Legal resources library
+/legal/sources.html: index of all sources used across the site (generated manually or aggregated).
+Add UN resolutions, ICJ/ICC documents, human rights legal frameworks (links with summaries).
+Humanitarian situation briefs
+Health, education, water, electricity: 4 short pages with updated stats + sources.
+Design/UX (P1)
+
+Theme toggle (dark/light) with localStorage.
+Improve hero readability and non-obstruction: side-aligned text, gradient overlay (done).
+Add breadcrumb on deep pages (country view, features).
+Add “copy link to section” anchors on h2/h3.
+Localization plan (P1)
+
+Directory-based i18n: /en, /ar, /fr, /es with shared assets.
+Start with AR + EN for the most critical pages (home, updates, countries hub).
+Use JSON translation files for nav/footer repeated strings; pages can be duplicated initially.
+Data governance (P1)
+
+All JSON files include last_updated and full sources arrays.
+Create /assets/data/README.md with data validation rules and field definitions.
+Introduce a simple schema validator (optional, local-only using a small Node script).
+SEO & metadata (P1)
+
+Add unique OG/Twitter cards for features and country pages (hero image per country optional).
+Implement JSON-LD for Article (features), BreadcrumbList for country view.
+Build /sitemap.xml update cadence (after significant changes).
+Performance & quality (P2)
+
+Convert large PNGs to WebP/AVIF; add srcset/sizes for responsive images.
+Preload critical fonts or swap to system fonts to reduce CLS.
+Defer all non-critical JS; split JS per page.
+Lighthouse pass for performance, accessibility, best practices, SEO.
+Content expansion (P2)
+
+Timeline deep pages: Nakba (1948), Naksa (1967), First/Second Intifada, 2008/2014/2021/2023 wars.
+Culture section expansion: tatreez, cuisine, literature, poetry, music.
+Diaspora section (by region): notable organizations, history, contributions.
+Women’s resistance, youth, labor: create subpages with verified sources.
+Environmental impact case studies with photos and maps (static Leaflet + GeoJSON).
+Engagement (P2, static-only)
+
+Newsletter embed (Mailchimp/Beehiiv/Buttondown).
+Share buttons (Web Share API + custom links for X/FB/WhatsApp/Telegram).
+“Support local groups” page linking to external directories.
+Cloudflare-specific (P2)
+
+Add _headers for caching and security (done above).
+Enable Cloudflare Web Analytics and set goals for content engagement.
+Consider Cloudflare Images for automatic resizing (optional; not required).
+Documentation & workflow (P2)
+
+Contributing guide explaining how to add a country, journalist, or boycott entry.
+Issue templates: Content update, Data addition, Bug, Design tweak.
+PR checklist for verifying sources and dates.
+Stretch/static-friendly ideas (P3)
+
+Interactive maps using Leaflet + static GeoJSON (no backend).
+Interactive multimedia timeline (TimelineJS embed or custom).
+Audio/podcast page aggregating trusted audio content (static embeds).
+“Myths vs Facts” evidence-based page with collapsible panels and citations.
+Student resources hub: scholarship links, reading lists, global orgs.
+Optional (later, if you add CF Pages Functions / Workers)
+
+RSS aggregator to compile selected feeds to /assets/data/news.json daily.
+Contact form via Formspree or a Worker with Turnstile.
+KV/R2 for versioned datasets (if scale grows).
+Part 9 — Practical examples for prioritized tasks
+
+Add Germany country entry
+
+Create /assets/data/countries/germany.json (follow schema).
+Add to /assets/data/countries/_index.json:
+{ "slug":"germany", "name":"Germany", "flag":"/assets/images/countries/germany.png", "summary":"…" }
+Test /countries/view.html?slug=germany.
+Add boycott item
+
+Edit /assets/data/boycotts-supporting.json, append object with status, rationale, sources.
+Verify shows up in /boycott/supporting.html and filters work.
+Add journalist
+
+Append to /assets/data/journalists.json (name, photo, region, links).
+Confirm it renders in /journalists/index.html.
+Add updates
+
+Append newest item to /assets/data/updates.json at the top.
+Check homepage widget shows new data and “Last updated”.
+Part 10 — Content quality checklist (use every time)
+
+Each claim has a source with title, url, publisher, date_accessed.
+Dates in ISO format where possible (YYYY-MM-DD).
+Plain, accessible language; define terms on first use.
+Images have alt text and credits (if required).
+Pages have unique titles and meta descriptions.
+Test small screens and prefers-reduced-motion.
+
+
+ here are the ready-to-paste assets you asked for: a starter countries index, placeholder country JSON files (10+), and a small Node script to build a static search index. I’ve kept everything fully static-site friendly for Cloudflare Pages.
+
+How to use
+
+Create the folders if they don’t exist: /assets/data/countries
+Drop the JSON files into those folders.
+Add the build script (scripts/build-search-index.mjs).
+Run the build script locally (Node 18+): node scripts/build-search-index.mjs
+Commit the generated /assets/data/search-index.json so Cloudflare Pages can host it statically.
+Countries hub index
+File: /assets/data/countries/_index.json
+[
+{
+"slug": "germany",
+"name": "Germany",
+"flag": "/assets/images/countries/germany.png",
+"summary": "Overview of Germany’s official positions, UN votes, aid, and civil society actions."
+},
+{
+"slug": "united-states",
+"name": "United States",
+"flag": "/assets/images/countries/united-states.png",
+"summary": "Overview of U.S. policy stances, aid, military cooperation, and UN voting record."
+},
+{
+"slug": "united-kingdom",
+"name": "United Kingdom",
+"flag": "/assets/images/countries/united-kingdom.png",
+"summary": "Overview of UK government statements, parliamentary debates, and UN votes."
+},
+{
+"slug": "france",
+"name": "France",
+"flag": "/assets/images/countries/france.png",
+"summary": "Overview of France’s foreign ministry statements, UN positions, and aid."
+},
+{
+"slug": "canada",
+"name": "Canada",
+"flag": "/assets/images/countries/canada.png",
+"summary": "Overview of Canada’s policy, UN voting behavior, aid, and civil society actions."
+},
+{
+"slug": "ireland",
+"name": "Ireland",
+"flag": "/assets/images/countries/ireland.png",
+"summary": "Overview of Ireland’s official statements, Oireachtas debates, and votes."
+},
+{
+"slug": "spain",
+"name": "Spain",
+"flag": "/assets/images/countries/spain.png",
+"summary": "Overview of Spain’s official statements, EU-level positions, and UN votes."
+},
+{
+"slug": "south-africa",
+"name": "South Africa",
+"flag": "/assets/images/countries/south-africa.png",
+"summary": "Overview of South Africa’s ICJ actions, statements, and UN positions."
+},
+{
+"slug": "turkey",
+"name": "Turkey",
+"flag": "/assets/images/countries/turkey.png",
+"summary": "Overview of Turkey’s public stance, diplomatic actions, and UN votes."
+},
+{
+"slug": "egypt",
+"name": "Egypt",
+"flag": "/assets/images/countries/egypt.png",
+"summary": "Overview of Egypt’s mediation role, border policies, and official statements."
+}
+]
+
+Placeholder country JSON files (10)
+Use these as skeletons. Replace placeholders with verified content + sources. Date fields use ISO (YYYY-MM-DD). Update last_updated as you edit.
+
+File: /assets/data/countries/germany.json
+{
+"slug": "germany",
+"name": "Germany",
+"flag": "/assets/images/countries/germany.png",
+"summary": "Summary of Germany’s public stance and policy on Palestine/Israel.",
+"last_updated": "2025-08-15",
+"official_positions": [
+{
+"date": "2024-01-20",
+"statement": "TODO: add verified statement excerpt and stance.",
+"source": {
+"title": "Federal Foreign Office statement",
+"url": "https://www.auswaertiges-amt.de/",
+"publisher": "Auswärtiges Amt",
+"date_accessed": "2025-08-15"
+}
+}
+],
+"un_voting_record": [
+{
+"resolution": "TODO: UN resolution code",
+"date": "2023-10-27",
+"vote": "TODO: For/Against/Abstain",
+"source": {
+"title": "UN Digital Library",
+"url": "https://digitallibrary.un.org/",
+"publisher": "UN",
+"date_accessed": "2025-08-15"
+}
+}
+],
+"arms_trade": [],
+"aid_and_relief": [],
+"civil_society": [],
+"take_action": [
+{ "title": "Embassy/consulates", "url": "https://www.auswaertiges-amt.de/en/aamt/auslandsvertretungen-node" }
+]
+}
+
+File: /assets/data/countries/united-states.json
+{
+"slug": "united-states",
+"name": "United States",
+"flag": "/assets/images/countries/united-states.png",
+"summary": "Overview of U.S. policy stances, aid flows, and UN voting behavior.",
+"last_updated": "2025-08-15",
+"official_positions": [
+{
+"date": "2024-02-01",
+"statement": "TODO: add verified White House/State Department statement.",
+"source": {
+"title": "U.S. State Department",
+"url": "https://www.state.gov/",
+"publisher": "U.S. Gov",
+"date_accessed": "2025-08-15"
+}
+}
+],
+"un_voting_record": [],
+"arms_trade": [],
+"aid_and_relief": [],
+"civil_society": [],
+"take_action": [
+{ "title": "Contact Congress", "url": "https://www.house.gov/representatives/find-your-representative" },
+{ "title": "Contact Senators", "url": "https://www.senate.gov/senators/senators-contact.htm" }
+]
+}
+
+File: /assets/data/countries/united-kingdom.json
+{
+"slug": "united-kingdom",
+"name": "United Kingdom",
+"flag": "/assets/images/countries/united-kingdom.png",
+"summary": "Overview of UK government statements, parliamentary debates, and UN votes.",
+"last_updated": "2025-08-15",
+"official_positions": [],
+"un_voting_record": [],
+"arms_trade": [],
+"aid_and_relief": [],
+"civil_society": [],
+"take_action": [
+{ "title": "Write to your MP", "url": "https://www.writetothem.com/" }
+]
+}
+
+File: /assets/data/countries/france.json
+{
+"slug": "france",
+"name": "France",
+"flag": "/assets/images/countries/france.png",
+"summary": "Overview of France’s foreign ministry statements, UN positions, and aid.",
+"last_updated": "2025-08-15",
+"official_positions": [],
+"un_voting_record": [],
+"arms_trade": [],
+"aid_and_relief": [],
+"civil_society": [],
+"take_action": [
+{ "title": "Assemblée nationale", "url": "https://www.assemblee-nationale.fr/" },
+{ "title": "Sénat", "url": "https://www.senat.fr/" }
+]
+}
+
+File: /assets/data/countries/canada.json
+{
+"slug": "canada",
+"name": "Canada",
+"flag": "/assets/images/countries/canada.png",
+"summary": "Overview of Canada’s policy, UN voting, and civil society actions.",
+"last_updated": "2025-08-15",
+"official_positions": [],
+"un_voting_record": [],
+"arms_trade": [],
+"aid_and_relief": [],
+"civil_society": [],
+"take_action": [
+{ "title": "Contact MPs", "url": "https://www.ourcommons.ca/members/en" }
+]
+}
+
+File: /assets/data/countries/ireland.json
+{
+"slug": "ireland",
+"name": "Ireland",
+"flag": "/assets/images/countries/ireland.png",
+"summary": "Overview of Ireland’s official statements and votes.",
+"last_updated": "2025-08-15",
+"official_positions": [],
+"un_voting_record": [],
+"arms_trade": [],
+"aid_and_relief": [],
+"civil_society": [],
+"take_action": [
+{ "title": "Oireachtas members", "url": "https://www.oireachtas.ie/en/members/" }
+]
+}
+
+File: /assets/data/countries/spain.json
+{
+"slug": "spain",
+"name": "Spain",
+"flag": "/assets/images/countries/spain.png",
+"summary": "Overview of Spain’s official statements, EU-level positions, and UN votes.",
+"last_updated": "2025-08-15",
+"official_positions": [],
+"un_voting_record": [],
+"arms_trade": [],
+"aid_and_relief": [],
+"civil_society": [],
+"take_action": [
+{ "title": "Cortes Generales", "url": "https://www.congreso.es/" }
+]
+}
+
+File: /assets/data/countries/south-africa.json
+{
+"slug": "south-africa",
+"name": "South Africa",
+"flag": "/assets/images/countries/south-africa.png",
+"summary": "Overview of South Africa’s statements and ICJ/UN actions.",
+"last_updated": "2025-08-15",
+"official_positions": [],
+"un_voting_record": [],
+"arms_trade": [],
+"aid_and_relief": [],
+"civil_society": [],
+"take_action": [
+{ "title": "Parliament of South Africa", "url": "https://www.parliament.gov.za/" }
+]
+}
+
+File: /assets/data/countries/turkey.json
+{
+"slug": "turkey",
+"name": "Turkey",
+"flag": "/assets/images/countries/turkey.png",
+"summary": "Overview of Turkey’s public stance, diplomatic actions, and votes.",
+"last_updated": "2025-08-15",
+"official_positions": [],
+"un_voting_record": [],
+"arms_trade": [],
+"aid_and_relief": [],
+"civil_society": [],
+"take_action": [
+{ "title": "Ministry of Foreign Affairs", "url": "https://www.mfa.gov.tr/" }
+]
+}
+
+File: /assets/data/countries/egypt.json
+{
+"slug": "egypt",
+"name": "Egypt",
+"flag": "/assets/images/countries/egypt.png",
+"summary": "Overview of Egypt’s mediation role, border policies, and statements.",
+"last_updated": "2025-08-15",
+"official_positions": [],
+"un_voting_record": [],
+"arms_trade": [],
+"aid_and_relief": [],
+"civil_society": [],
+"take_action": [
+{ "title": "Ministry of Foreign Affairs", "url": "https://mfa.gov.eg/" }
+]
+}
+
+Minimal Node script to build the static search index
+Reads your static data and emits /assets/data/search-index.json
+Safe to run locally; commit the output so Cloudflare just serves the file.
+Gracefully skips datasets you haven’t created yet.
+File: /scripts/build-search-index.mjs
+import { promises as fs } from 'node:fs';
+import path from 'node:path';
+
+const root = process.cwd();
+const dataDir = path.join(root, 'assets', 'data');
+const countriesDir = path.join(dataDir, 'countries');
+const outFile = path.join(dataDir, 'search-index.json');
+
+function slugify(s='') {
+return s.toLowerCase()
+.replace(/&/g, 'and')
+.replace(/[^a-z0-9]+/g, '-')
+.replace(/^-+|-+$/g, '');
+}
+
+async function readJSON(file, fallback=null) {
+try {
+const raw = await fs.readFile(file, 'utf8');
+return JSON.parse(raw);
+} catch {
+return fallback;
+}
+}
+
+async function exists(p) {
+try { await fs.stat(p); return true; } catch { return false; }
+}
+
+async function buildCountries() {
+const idxFile = path.join(countriesDir, '_index.json');
+const list = await readJSON(idxFile, []);
+return list.map(c => ({
+type: 'country',
+slug: c.slug,
+title: ${c.name} — Country Profile,
+summary: c.summary || '',
+url: /countries/view.html?slug=${encodeURIComponent(c.slug)}
+}));
+}
+
+async function buildBoycotts() {
+const files = ['boycotts-supporting.json', 'boycotts-supportive.json'];
+const items = [];
+for (const f of files) {
+const p = path.join(dataDir, f);
+const arr = await readJSON(p, []);
+for (const entry of arr) {
+const slug = slugify(entry.name);
+items.push({
+type: f.includes('supportive') ? 'boycott-supportive' : 'boycott-supporting',
+slug,
+title: entry.name,
+summary: entry.rationale || '',
+url: f.includes('supportive') ? /boycott/supportive.html#${slug} : /boycott/supporting.html#${slug}
+});
+}
+}
+return items;
+}
+
+async function buildJournalists() {
+const file = path.join(dataDir, 'journalists.json');
+const arr = await readJSON(file, []);
+return arr.map(j => {
+const slug = slugify(j.name);
+return {
+type: 'journalist',
+slug,
+title: j.name,
+summary: j.bio || '',
+url: /journalists/index.html#${slug}
+};
+});
+}
+
+async function buildFeatures() {
+// Add feature articles you want searchable here:
+const items = [];
+const abductions = await readJSON(path.join(dataDir, 'abductions-2008-2023.json'), null);
+if (abductions) {
+items.push({
+type: 'article',
+slug: 'abductions-2008-2023',
+title: 'Abductions & Detentions of Children (2008–2023)',
+summary: (abductions.meta && abductions.meta.title) ? abductions.meta.title : 'Dataset and charts (2008–2023)',
+url: '/features/abductions-2008-2023.html'
+});
+}
+return items;
+}
+
+async function main() {
+const parts = [];
+if (await exists(countriesDir)) parts.push(...await buildCountries());
+parts.push(...await buildBoycotts());
+parts.push(...await buildJournalists());
+parts.push(...await buildFeatures());
+
+const index = parts;
+await fs.mkdir(path.dirname(outFile), { recursive: true });
+await fs.writeFile(outFile, JSON.stringify(index, null, 2), 'utf8');
+console.log(Wrote ${index.length} records -> ${path.relative(root, outFile)});
+}
+
+main().catch(err => {
+console.error(err);
+process.exit(1);
+});
+
+Optional: tiny anchors for hash links
+
+If you want boycott/journalist hash links (…#company-a, …#bisan-owda) to scroll to the card, give each row/card an id attribute equal to the slug:
+In your renderers (example for journalists):
+const id = (j.name || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+
+<article class="card" id="${id}">…</article
+
+ere are the ready-to-paste starter datasets and templates you asked for. Everything is static-site friendly (no backend), perfect for Cloudflare Pages. Replace placeholder text and INSERT_URL with verified info as you populate.
+
+What’s included
+
+Data files: countries index + 10 country JSONs, journalists (12),
+boycotts-supporting (12), boycotts-supportive (12), abductions dataset scaffold, updates stub.
+HTML templates: countries hub + country view, boycott pages, journalists, abductions feature.
+JS renderers: utilities + country, boycotts, journalists.
+You already have the search-index build script from before; use it after adding these.
+Data files
+File: /assets/data/countries/_index.json
+[
+{ "slug": "germany", "name": "Germany", "flag": "/assets/images/countries/germany.png", "summary": "Overview of Germany’s official positions, UN votes, aid, and civil society actions." },
+{ "slug": "united-states", "name": "United States", "flag": "/assets/images/countries/united-states.png", "summary": "Overview of U.S. policy stances, aid, military cooperation, and UN voting record." },
+{ "slug": "united-kingdom", "name": "United Kingdom", "flag": "/assets/images/countries/united-kingdom.png", "summary": "Overview of UK government statements, parliamentary debates, and UN votes." },
+{ "slug": "france", "name": "France", "flag": "/assets/images/countries/france.png", "summary": "Overview of France’s foreign ministry statements, UN positions, and aid." },
+{ "slug": "canada", "name": "Canada", "flag": "/assets/images/countries/canada.png", "summary": "Overview of Canada’s policy, UN voting behavior, aid, and civil society actions." },
+{ "slug": "ireland", "name": "Ireland", "flag": "/assets/images/countries/ireland.png", "summary": "Overview of Ireland’s official statements, Oireachtas debates, and votes." },
+{ "slug": "spain", "name": "Spain", "flag": "/assets/images/countries/spain.png", "summary": "Overview of Spain’s official statements, EU-level positions, and UN votes." },
+{ "slug": "south-africa", "name": "South Africa", "flag": "/assets/images/countries/south-africa.png", "summary": "Overview of South Africa’s ICJ actions, statements, and UN positions." },
+{ "slug": "turkey", "name": "Turkey", "flag": "/assets/images/countries/turkey.png", "summary": "Overview of Turkey’s public stance, diplomatic actions, and UN votes." },
+{ "slug": "egypt", "name": "Egypt", "flag": "/assets/images/countries/egypt.png", "summary": "Overview of Egypt’s mediation role, border policies, and official statements." }
+]
+
+Country skeletons (10). Replace TODOs and INSERT_URL with real data and sources.
+
+File: /assets/data/countries/germany.json
+{
+"slug": "germany",
+"name": "Germany",
+"flag": "/assets/images/countries/germany.png",
+"summary": "Summary of Germany’s public stance and policy on Palestine/Israel.",
+"last_updated": "2025-08-15",
+"official_positions": [
+{
+"date": "2024-01-20",
+"statement": "TODO: add verified statement excerpt and stance.",
+"source": { "title": "Federal Foreign Office", "url": "https://www.auswaertiges-amt.de/", "publisher": "Auswärtiges Amt", "date_accessed": "2025-08-15" }
+}
+],
+"un_voting_record": [],
+"arms_trade": [],
+"aid_and_relief": [],
+"civil_society": [],
+"take_action": [
+{ "title": "Embassy/consulates", "url": "https://www.auswaertiges-amt.de/en/aamt/auslandsvertretungen-node" }
+]
+}
+
+File: /assets/data/countries/united-states.json
+{
+"slug": "united-states",
+"name": "United States",
+"flag": "/assets/images/countries/united-states.png",
+"summary": "Overview of U.S. policy stances, aid flows, and UN voting behavior.",
+"last_updated": "2025-08-15",
+"official_positions": [
+{
+"date": "2024-02-01",
+"statement": "TODO: verified White House/State Department statement.",
+"source": { "title": "U.S. State Department", "url": "https://www.state.gov/", "publisher": "U.S. Gov", "date_accessed": "2025-08-15" }
+}
+],
+"un_voting_record": [],
+"arms_trade": [],
+"aid_and_relief": [],
+"civil_society": [],
+"take_action": [
+{ "title": "Contact Congress", "url": "https://www.house.gov/representatives/find-your-representative" },
+{ "title": "Contact Senators", "url": "https://www.senate.gov/senators/senators-contact.htm" }
+]
+}
+
+File: /assets/data/countries/united-kingdom.json
+{
+"slug": "united-kingdom",
+"name": "United Kingdom",
+"flag": "/assets/images/countries/united-kingdom.png",
+"summary": "Overview of UK government statements, parliamentary debates, and UN votes.",
+"last_updated": "2025-08-15",
+"official_positions": [],
+"un_voting_record": [],
+"arms_trade": [],
+"aid_and_relief": [],
+"civil_society": [],
+"take_action": [
+{ "title": "Write to your MP", "url": "https://www.writetothem.com/" }
+]
+}
+
+File: /assets/data/countries/france.json
+{
+"slug": "france",
+"name": "France",
+"flag": "/assets/images/countries/france.png",
+"summary": "Overview of France’s foreign ministry statements, UN positions, and aid.",
+"last_updated": "2025-08-15",
+"official_positions": [],
+"un_voting_record": [],
+"arms_trade": [],
+"aid_and_relief": [],
+"civil_society": [],
+"take_action": [
+{ "title": "Assemblée nationale", "url": "https://www.assemblee-nationale.fr/" },
+{ "title": "Sénat", "url": "https://www.senat.fr/" }
+]
+}
+
+File: /assets/data/countries/canada.json
+{
+"slug": "canada",
+"name": "Canada",
+"flag": "/assets/images/countries/canada.png",
+"summary": "Overview of Canada’s policy, UN voting, and civil society actions.",
+"last_updated": "2025-08-15",
+"official_positions": [],
+"un_voting_record": [],
+"arms_trade": [],
+"aid_and_relief": [],
+"civil_society": [],
+"take_action": [
+{ "title": "Contact MPs", "url": "https://www.ourcommons.ca/members/en" }
+]
+}
+
+File: /assets/data/countries/ireland.json
+{
+"slug": "ireland",
+"name": "Ireland",
+"flag": "/assets/images/countries/ireland.png",
+"summary": "Overview of Ireland’s official statements and votes.",
+"last_updated": "2025-08-15",
+"official_positions": [],
+"un_voting_record": [],
+"arms_trade": [],
+"aid_and_relief": [],
+"civil_society": [],
+"take_action": [
+{ "title": "Oireachtas members", "url": "https://www.oireachtas.ie/en/members/" }
+]
+}
+
+File: /assets/data/countries/spain.json
+{
+"slug": "spain",
+"name": "Spain",
+"flag": "/assets/images/countries/spain.png",
+"summary": "Overview of Spain’s official statements, EU-level positions, and UN votes.",
+"last_updated": "2025-08-15",
+"official_positions": [],
+"un_voting_record": [],
+"arms_trade": [],
+"aid_and_relief": [],
+"civil_society": [],
+"take_action": [
+{ "title": "Cortes Generales", "url": "https://www.congreso.es/" }
+]
+}
+
+File: /assets/data/countries/south-africa.json
+{
+"slug": "south-africa",
+"name": "South Africa",
+"flag": "/assets/images/countries/south-africa.png",
+"summary": "Overview of South Africa’s statements and ICJ/UN actions.",
+"last_updated": "2025-08-15",
+"official_positions": [],
+"un_voting_record": [],
+"arms_trade": [],
+"aid_and_relief": [],
+"civil_society": [],
+"take_action": [
+{ "title": "Parliament of South Africa", "url": "https://www.parliament.gov.za/" }
+]
+}
+
+File: /assets/data/countries/turkey.json
+{
+"slug": "turkey",
+"name": "Turkey",
+"flag": "/assets/images/countries/turkey.png",
+"summary": "Overview of Turkey’s public stance, diplomatic actions, and votes.",
+"last_updated": "2025-08-15",
+"official_positions": [],
+"un_voting_record": [],
+"arms_trade": [],
+"aid_and_relief": [],
+"civil_society": [],
+"take_action": [
+{ "title": "Ministry of Foreign Affairs", "url": "https://www.mfa.gov.tr/" }
+]
+}
+
+File: /assets/data/countries/egypt.json
+{
+"slug": "egypt",
+"name": "Egypt",
+"flag": "/assets/images/countries/egypt.png",
+"summary": "Overview of Egypt’s mediation role, border policies, and statements.",
+"last_updated": "2025-08-15",
+"official_positions": [],
+"un_voting_record": [],
+"arms_trade": [],
+"aid_and_relief": [],
+"civil_society": [],
+"take_action": [
+{ "title": "Ministry of Foreign Affairs", "url": "https://mfa.gov.eg/" }
+]
+}
+
+File: /assets/data/journalists.json (12 sample entries; replace INSERT_URL)
+[
+{
+"id": "bisan-owda",
+"name": "Bisan Owda",
+"photo": "/assets/images/journalists/bisan-owda.jpg",
+"bio": "Journalist documenting conditions in Gaza.",
+"region": "Gaza",
+"links": [
+{ "platform": "YouTube", "url": "INSERT_URL" },
+{ "platform": "Instagram", "url": "INSERT_URL" }
+]
+},
+{
+"id": "motaz-azaiza",
+"name": "Motaz Azaiza",
+"photo": "/assets/images/journalists/motaz-azaiza.jpg",
+"bio": "Photojournalist covering the humanitarian situation.",
+"region": "Gaza",
+"links": [
+{ "platform": "Instagram", "url": "INSERT_URL" },
+{ "platform": "X/Twitter", "url": "INSERT_URL" }
+]
+},
+{
+"id": "hind-khoudary",
+"name": "Hind Khoudary",
+"photo": "/assets/images/journalists/hind-khoudary.jpg",
+"bio": "Reporter focusing on civilian impact and aid access.",
+"region": "Gaza",
+"links": [
+{ "platform": "Instagram", "url": "INSERT_URL" },
+{ "platform": "X/Twitter", "url": "INSERT_URL" }
+]
+},
+{
+"id": "wael-al-dahdouh",
+"name": "Wael Al-Dahdouh",
+"photo": "/assets/images/journalists/wael-al-dahdouh.jpg",
+"bio": "Veteran correspondent reporting from Gaza.",
+"region": "Gaza",
+"links": [
+{ "platform": "Network Page", "url": "INSERT_URL" }
+]
+},
+{
+"id": "plestia-alaqad",
+"name": "Plestia Alaqad",
+"photo": "/assets/images/journalists/plestia-alaqad.jpg",
+"bio": "Journalist sharing daily life and resilience.",
+"region": "Gaza",
+"links": [
+{ "platform": "Instagram", "url": "INSERT_URL" }
+]
+},
+{
+"id": "youmna-elsayed",
+"name": "Youmna ElSayed",
+"photo": "/assets/images/journalists/youmna-elsayed.jpg",
+"bio": "Field reporter covering humanitarian developments.",
+"region": "Gaza",
+"links": [
+{ "platform": "Network Page", "url": "INSERT_URL" }
+]
+},
+{
+"id": "ismail-alghoul",
+"name": "Ismail Alghoul",
+"photo": "/assets/images/journalists/ismail-alghoul.jpg",
+"bio": "Journalist and video producer from Gaza.",
+"region": "Gaza",
+"links": [
+{ "platform": "X/Twitter", "url": "INSERT_URL" }
+]
+},
+{
+"id": "nour-elden-atiyya",
+"name": "Nour Elden Atiyya",
+"photo": "/assets/images/journalists/nour-elden-atiyya.jpg",
+"bio": "Covers on-the-ground updates and community stories.",
+"region": "Gaza",
+"links": [
+{ "platform": "Instagram", "url": "INSERT_URL" }
+]
+},
+{
+"id": "yara-eid",
+"name": "Yara Eid",
+"photo": "/assets/images/journalists/yara-eid.jpg",
+"bio": "Palestinian journalist and speaker.",
+"region": "Diaspora",
+"links": [
+{ "platform": "Website", "url": "INSERT_URL" }
+]
+},
+{
+"id": "mariam-barghouti",
+"name": "Mariam Barghouti",
+"photo": "/assets/images/journalists/mariam-barghouti.jpg",
+"bio": "Journalist and researcher covering Palestine.",
+"region": "West Bank",
+"links": [
+{ "platform": "X/Twitter", "url": "INSERT_URL" }
+]
+},
+{
+"id": "saleh-hijazi",
+"name": "Saleh Hijazi",
+"photo": "/assets/images/journalists/saleh-hijazi.jpg",
+"bio": "Analyst and commentator on Palestinian issues.",
+"region": "Diaspora",
+"links": [
+{ "platform": "X/Twitter", "url": "INSERT_URL" }
+]
+},
+{
+"id": "diala-j",
+"name": "Diala J.",
+"photo": "/assets/images/journalists/diala-j.jpg",
+"bio": "Journalist amplifying voices from Gaza and the West Bank.",
+"region": "MENA",
+"links": [
+{ "platform": "Instagram", "url": "INSERT_URL" }
+]
+}
+]
+
+File: /assets/data/boycotts-supporting.json (12 placeholders; replace with verified, sourced data)
+[
+{
+"name": "Placeholder Holdings A",
+"sector": "Technology",
+"rationale": "PLACEHOLDER — replace with a verified, cited rationale.",
+"status": "active",
+"region": "Global",
+"parent_company": "Placeholder Group",
+"sources": [{ "title": "Source name", "url": "INSERT_URL", "publisher": "Publisher", "date_accessed": "2025-08-15" }],
+"last_reviewed": "2025-08-15"
+},
+{ "name": "Placeholder Industries B", "sector": "Defense", "rationale": "PLACEHOLDER", "status": "active", "region": "EU", "parent_company": "", "sources": [{ "title": "Report", "url": "INSERT_URL", "publisher": "NGO", "date_accessed": "2025-08-15" }], "last_reviewed": "2025-08-15" },
+{ "name": "Example Logistics C", "sector": "Logistics", "rationale": "PLACEHOLDER", "status": "active", "region": "US", "parent_company": "", "sources": [{ "title": "News", "url": "INSERT_URL", "publisher": "Media", "date_accessed": "2025-08-15" }], "last_reviewed": "2025-08-15" },
+{ "name": "Global Retail D", "sector": "Retail", "rationale": "PLACEHOLDER", "status": "active", "region": "MENA", "parent_company": "Global Group", "sources": [{ "title": "Filing", "url": "INSERT_URL", "publisher": "Company", "date_accessed": "2025-08-15" }], "last_reviewed": "2025-08-15" },
+{ "name": "Supply Chain E", "sector": "Industrial", "rationale": "PLACEHOLDER", "status": "active", "region": "EU", "parent_company": "", "sources": [{ "title": "NGO Report", "url": "INSERT_URL", "publisher": "NGO", "date_accessed": "2025-08-15" }], "last_reviewed": "2025-08-15" },
+{ "name": "Aero Systems F", "sector": "Aerospace", "rationale": "PLACEHOLDER", "status": "active", "region": "US", "parent_company": "", "sources": [{ "title": "Gov data", "url": "INSERT_URL", "publisher": "Gov", "date_accessed": "2025-08-15" }], "last_reviewed": "2025-08-15" },
+{ "name": "Fintech G", "sector": "Finance", "rationale": "PLACEHOLDER", "status": "active", "region": "Global", "parent_company": "", "sources": [{ "title": "Investigation", "url": "INSERT_URL", "publisher": "Media", "date_accessed": "2025-08-15" }], "last_reviewed": "2025-08-15" },
+{ "name": "Telecom H", "sector": "Telecom", "rationale": "PLACEHOLDER", "status": "active", "region": "EU", "parent_company": "", "sources": [{ "title": "Report", "url": "INSERT_URL", "publisher": "NGO", "date_accessed": "2025-08-15" }], "last_reviewed": "2025-08-15" },
+{ "name": "Energy I", "sector": "Energy", "rationale": "PLACEHOLDER", "status": "active", "region": "Global", "parent_company": "", "sources": [{ "title": "Study", "url": "INSERT_URL", "publisher": "Institute", "date_accessed": "2025-08-15" }], "last_reviewed": "2025-08-15" },
+{ "name": "Catering J", "sector": "Food Service", "rationale": "PLACEHOLDER", "status": "active", "region": "MENA", "parent_company": "", "sources": [{ "title": "News", "url": "INSERT_URL", "publisher": "Media", "date_accessed": "2025-08-15" }], "last_reviewed": "2025-08-15" },
+{ "name": "Security K", "sector": "Security", "rationale": "PLACEHOLDER", "status": "active", "region": "EU", "parent_company": "", "sources": [{ "title": "Report", "url": "INSERT_URL", "publisher": "NGO", "date_accessed": "2025-08-15" }], "last_reviewed": "2025-08-15" },
+{ "name": "Shipping L", "sector": "Shipping", "rationale": "PLACEHOLDER", "status": "active", "region": "US", "parent_company": "", "sources": [{ "title": "Filing", "url": "INSERT_URL", "publisher": "Company", "date_accessed": "2025-08-15" }], "last_reviewed": "2025-08-15" }
+]
+
+File: /assets/data/boycotts-supportive.json (12 placeholders; replace with verified, sourced data)
+[
+{
+"name": "Supportive Co A",
+"sector": "Retail",
+"rationale": "PLACEHOLDER — replace with verified examples of support/donations/statements.",
+"status": "active",
+"region": "Global",
+"parent_company": "",
+"sources": [{ "title": "Announcement", "url": "INSERT_URL", "publisher": "Company", "date_accessed": "2025-08-15" }],
+"last_reviewed": "2025-08-15"
+},
+{ "name": "Solidarity Foods B", "sector": "Food", "rationale": "PLACEHOLDER", "status": "active", "region": "EU", "parent_company": "", "sources": [{ "title": "Press", "url": "INSERT_URL", "publisher": "Media", "date_accessed": "2025-08-15" }], "last_reviewed": "2025-08-15" },
+{ "name": "Humanity Tech C", "sector": "Technology", "rationale": "PLACEHOLDER", "status": "active", "region": "US", "parent_company": "", "sources": [{ "title": "Post", "url": "INSERT_URL", "publisher": "Official social", "date_accessed": "2025-08-15" }], "last_reviewed": "2025-08-15" },
+{ "name": "Culture Arts D", "sector": "Arts", "rationale": "PLACEHOLDER", "status": "active", "region": "MENA", "parent_company": "", "sources": [{ "title": "Donation page", "url": "INSERT_URL", "publisher": "Org", "date_accessed": "2025-08-15" }], "last_reviewed": "2025-08-15" },
+{ "name": "Books & Co E", "sector": "Publishing", "rationale": "PLACEHOLDER", "status": "active", "region": "Global", "parent_company": "", "sources": [{ "title": "Press", "url": "INSERT_URL", "publisher": "Media", "date_accessed": "2025-08-15" }], "last_reviewed": "2025-08-15" },
+{ "name": "Care Health F", "sector": "Healthcare", "rationale": "PLACEHOLDER", "status": "active", "region": "EU", "parent_company": "", "sources": [{ "title": "Report", "url": "INSERT_URL", "publisher": "NGO", "date_accessed": "2025-08-15" }], "last_reviewed": "2025-08-15" },
+{ "name": "Student Gear G", "sector": "Education", "rationale": "PLACEHOLDER", "status": "active", "region": "US", "parent_company": "", "sources": [{ "title": "Statement", "url": "INSERT_URL", "publisher": "Company", "date_accessed": "2025-08-15" }], "last_reviewed": "2025-08-15" },
+{ "name": "Green Energy H", "sector": "Energy", "rationale": "PLACEHOLDER", "status": "active", "region": "Global", "parent_company": "", "sources": [{ "title": "Press", "url": "INSERT_URL", "publisher": "Media", "date_accessed": "2025-08-15" }], "last_reviewed": "2025-08-15" },
+{ "name": "Local Market I", "sector": "Retail", "rationale": "PLACEHOLDER", "status": "active", "region": "MENA", "parent_company": "", "sources": [{ "title": "Post", "url": "INSERT_URL", "publisher": "Official social", "date_accessed": "2025-08-15" }], "last_reviewed": "2025-08-15" },
+{ "name": "Fair Trade J", "sector": "Supply Chain", "rationale": "PLACEHOLDER", "status": "active", "region": "EU", "parent_company": "", "sources": [{ "title": "Partner list", "url": "INSERT_URL", "publisher": "Org", "date_accessed": "2025-08-15" }], "last_reviewed": "2025-08-15" },
+{ "name": "Solidarity Media K", "sector": "Media", "rationale": "PLACEHOLDER", "status": "active", "region": "US", "parent_company": "", "sources": [{ "title": "Coverage", "url": "INSERT_URL", "publisher": "Media", "date_accessed": "2025-08-15" }], "last_reviewed": "2025-08-15" },
+{ "name": "Community Bank L", "sector": "Finance", "rationale": "PLACEHOLDER", "status": "active", "region": "Global", "parent_company": "", "sources": [{ "title": "CSR report", "url": "INSERT_URL", "publisher": "Company", "date_accessed": "2025-08-15" }], "last_reviewed": "2025-08-15" }
+]
+
+File: /assets/data/abductions-2008-2023.json (scaffold)
+{
+"meta": {
+"title": "Children abducted/detained 2008–2023",
+"methodology": "Insert definitions, scope (who/what included), counting method, and limitations. Cite DCI-Palestine, Save the Children, UNICEF, OHCHR.",
+"last_updated": "2025-08-15",
+"sources": [
+{ "title": "DCI-Palestine", "url": "https://www.dci-palestine.org", "publisher": "Defense for Children International", "date_accessed": "2025-08-15" },
+{ "title": "Save the Children", "url": "https://www.savethechildren.net", "publisher": "Save the Children", "date_accessed": "2025-08-15" }
+]
+},
+"by_year": [
+{ "year": 2008, "children": null },
+{ "year": 2009, "children": null },
+{ "year": 2010, "children": null },
+{ "year": 2011, "children": null },
+{ "year": 2012, "children": null },
+{ "year": 2013, "children": null },
+{ "year": 2014, "children": null },
+{ "year": 2015, "children": null },
+{ "year": 2016, "children": null },
+{ "year": 2017, "children": null },
+{ "year": 2018, "children": null },
+{ "year": 2019, "children": null },
+{ "year": 2020, "children": null },
+{ "year": 2021, "children": null },
+{ "year": 2022, "children": null },
+{ "year": 2023, "children": null }
+],
+"by_region": [
+{ "region": "West Bank", "children": null },
+{ "region": "Gaza", "children": null },
+{ "region": "East Jerusalem", "children": null }
+],
+"by_gender": [
+{ "gender": "Boys", "children": null },
+{ "gender": "Girls", "children": null }
+]
+}
+
+File: /assets/data/updates.json (stub entries)
+[
+{
+"date": "2025-08-15T12:00:00Z",
+"headline": "Update title here",
+"summary": "One-line summary of the development.",
+"sources": [{ "title": "UN OCHA", "url": "INSERT_URL", "publisher": "OCHA", "date_accessed": "2025-08-15" }]
+},
+{
+"date": "2025-08-14T18:30:00Z",
+"headline": "Another update headline",
+"summary": "Brief context of the event.",
+"sources": [{ "title": "Amnesty International", "url": "INSERT_URL", "publisher": "Amnesty", "date_accessed": "2025-08-15" }]
+},
+{
+"date": "2025-08-13T09:00:00Z",
+"headline": "Humanitarian corridor status",
+"summary": "Access, aid deliveries, constraints.",
+"sources": [{ "title": "ICRC", "url": "INSERT_URL", "publisher": "ICRC", "date_accessed": "2025-08-15" }]
+}
+]
+
+HTML templates
+File: /countries/index.html
+
+<!DOCTYPE html><html lang="en"> <head> <meta charset="utf-8"> <title>Countries — Official Positions</title> <meta name="viewport" content="width=device-width, initial-scale=1"> <link rel="stylesheet" href="/assets/css/style.css"> </head> <body> <main class="container"> <h1>Countries: Official Positions</h1> <input id="countrySearch" type="search" placeholder="Search countries…" aria-label="Search countries"> <div id="countryGrid" class="grid cards"></div> </main> <script src="/assets/js/utils.js"></script> <script> (async function(){ const list = await fetchJSON('/assets/data/countries/_index.json'); const grid = document.getElementById('countryGrid'); const input = document.getElementById('countrySearch'); function render(items){ grid.innerHTML = items.map(c => ` <a class="card" href="/countries/view.html?slug=${encodeURIComponent(c.slug)}"> <img src="${c.flag}" alt="${c.name} flag" loading="lazy"> <h3>${c.name}</h3> <p>${c.summary||''}</p> </a> `).join(''); } render(list); input.addEventListener('input', e => { const q = e.target.value.toLowerCase().trim(); render(list.filter(c => c.name.toLowerCase().includes(q))); }); })(); </script> </body> </html>
+File: /countries/view.html
+
+<!DOCTYPE html><html lang="en"> <head> <meta charset="utf-8"> <title>Country Profile</title> <meta name="viewport" content="width=device-width, initial-scale=1"> <link rel="stylesheet" href="/assets/css/style.css"> </head> <body> <main class="container" id="country"></main> <script src="/assets/js/render-country.js"></script> </body> </html>
+File: /boycott/supporting.html
+
+<!DOCTYPE html><html lang="en"> <head> <meta charset="utf-8"> <title>Companies to Boycott</title> <meta name="viewport" content="width=device-width, initial-scale=1"> <link rel="stylesheet" href="/assets/css/style.css"> </head> <body> <main class="container"> <h1>Companies to Boycott</h1> <div class="toolbar"> <input id="q" type="search" placeholder="Search company or sector"> <select id="sector"><option value="">All sectors</option></select> <select id="region"><option value="">All regions</option></select> </div> <table id="tbl" class="table"> <thead><tr><th>Name</th><th>Sector</th><th>Region</th><th>Status</th><th>Sources</th></tr></thead> <tbody></tbody> </table> <p class="muted" id="lastReviewed"></p> </main> <script src="/assets/js/render-boycotts.js"></script> </body> </html>
+File: /boycott/supportive.html
+
+<!DOCTYPE html><html lang="en"> <head> <meta charset="utf-8"> <title>Companies Supporting Palestine</title> <meta name="viewport" content="width=device-width, initial-scale=1"> <link rel="stylesheet" href="/assets/css/style.css"> </head> <body> <main class="container"> <h1>Companies Supporting Palestine</h1> <div class="toolbar"> <input id="q" type="search" placeholder="Search company or sector"> <select id="sector"><option value="">All sectors</option></select> <select id="region"><option value="">All regions</option></select> </div> <table id="tbl" class="table"> <thead><tr><th>Name</th><th>Sector</th><th>Region</th><th>Status</th><th>Sources</th></tr></thead> <tbody></tbody> </table> <p class="muted" id="lastReviewed"></p> </main> <script src="/assets/js/render-boycotts.js"></script> </body> </html>
+File: /journalists/index.html
+
+<!DOCTYPE html><html lang="en"> <head> <meta charset="utf-8"> <title>Journalists to Follow</title> <meta name="viewport" content="width=device-width, initial-scale=1"> <link rel="stylesheet" href="/assets/css/style.css"> </head> <body> <main class="container"> <h1>Journalists to Follow</h1> <div id="journalists" class="grid cards"></div> </main> <script src="/assets/js/render-journalists.js"></script> </body> </html>
+File: /features/abductions-2008-2023.html
+
+<!DOCTYPE html><html lang="en"> <head> <meta charset="utf-8"> <title>Abductions & Detentions of Children (2008–2023)</title> <meta name="viewport" content="width=device-width, initial-scale=1"> <link rel="stylesheet" href="/assets/css/style.css"> </head> <body> <main class="container"> <h1>Abductions & Detentions of Children (2008–2023)</h1> <p class="muted">Methodology and sources below. Last updated: <span id="lu"></span></p> <canvas id="byYear" height="120"></canvas> <div class="grid"> <canvas id="byRegion" height="120"></canvas> <canvas id="byGender" height="120"></canvas> </div> <h2>Methodology</h2> <p id="method"></p> <h3>Sources</h3> <ul id="sources"></ul> </main> <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <script src="/assets/js/render-abductions.js"></script> </body> </html>
+JS renderers
+File: /assets/js/utils.js
+async function fetchJSON(url){
+const r = await fetch(url);
+if(!r.ok) throw new Error('Fetch error: '+url);
+return r.json();
+}
+function formatNumber(n){ return (n||0).toLocaleString(); }
+function slugify(s=''){ return s.toLowerCase().replace(/&/g,'and').replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,''); }
+function sourceLink(s){ return s ? [<a target="_blank" rel="noopener" href="${s.url}">${s.publisher || s.title}</a>] : ''; }
+
+File: /assets/js/render-country.js
+(async function(){
+const params = new URLSearchParams(location.search);
+const slug = params.get('slug');
+const container = document.getElementById('country');
+if(!slug){ container.innerHTML = '<p>Missing country slug.</p>'; return; }
+
+let data = null;
+try { data = await fetchJSON(/assets/data/countries/${slug}.json); } catch(e){}
+if(!data){ container.innerHTML = '<p>Country not found.</p>'; return; }
+
+const list = (items, fields) => items?.length ? <ul>${items.map(i => <li>${fields(i)}</li>).join('')}</ul> : '<p>No data available.</p>';
+
+container.innerHTML = `
+<header>
+<img src="${data.flag}" alt="${data.name} flag" width="64" height="42">
+<h1>${data.name}</h1>
+<p class="muted">Last updated: ${data.last_updated || '—'}</p>
+<p>${data.summary || ''}</p>
+</header>
+
+text
+
+<section>
+  <h2>Official Statements</h2>
+  ${list(data.official_positions, i => `
+    <strong>${i.date}</strong> — ${i.statement}
+    <span class="sources">${sourceLink(i.source)}</span>
+  `)}
+</section>
+
+<section>
+  <h2>UN Voting Record</h2>
+  ${list(data.un_voting_record, i => `
+    <strong>${i.date}</strong> — ${i.resolution} — <em>${i.vote}</em>
+    <span class="sources">${sourceLink(i.source)}</span>
+  `)}
+</section>
+
+<section>
+  <h2>Arms Trade</h2>
+  ${list(data.arms_trade, i => `
+    <strong>${i.year}</strong> — ${i.category || ''} ${i.notes ? '— '+i.notes : ''}
+    <span class="sources">${sourceLink(i.source)}</span>
+  `)}
+</section>
+
+<section>
+  <h2>Humanitarian Aid</h2>
+  ${list(data.aid_and_relief, i => `
+    <strong>${i.date}</strong> — €${formatNumber(i.amount_eur)} — ${i.program}
+    <span class="sources">${sourceLink(i.source)}</span>
+  `)}
+</section>
+
+<section>
+  <h2>Civil Society</h2>
+  ${list(data.civil_society, i => `
+    <strong>${i.date}</strong> — ${i.org}: ${i.position}
+    <span class="sources">${sourceLink(i.source)}</span>
+  `)}
+</section>
+
+<section>
+  <h2>Take Action</h2>
+  <ul>
+    ${data.take_action?.map(a => `<li><a target="_blank" rel="noopener" href="${a.url}">${a.title}</a></li>`).join('') || '<li>No links yet.</li>'}
+  </ul>
+</section>
+`;
+})();
+
+File: /assets/js/render-boycotts.js
+(async function(){
+const file = location.pathname.includes('supportive') ? 'boycotts-supportive.json' : 'boycotts-supporting.json';
+const data = await fetchJSON(/assets/data/${file});
+const body = document.querySelector('#tbl tbody');
+const q = document.getElementById('q');
+const sector = document.getElementById('sector');
+const region = document.getElementById('region');
+const lastReviewed = document.getElementById('lastReviewed');
+
+// Populate filters
+[...new Set(data.map(d=>d.sector).filter(Boolean))].sort().forEach(s=> sector.insertAdjacentHTML('beforeend', <option>${s}</option>));
+[...new Set(data.map(d=>d.region).filter(Boolean))].sort().forEach(r=> region.insertAdjacentHTML('beforeend', <option>${r}</option>));
+
+function row(d){
+const id = slugify(d.name);
+return <tr id="${id}"> <td>${d.name}</td> <td>${d.sector || '—'}</td> <td>${d.region || '—'}</td> <td>${d.status}</td> <td>${(d.sources||[]).map(s=><a target="_blank" rel="noopener" href="${s.url}">${s.publisher||s.title}</a>).join(', ')||'—'}</td> </tr> ;
+}
+
+function render(items){
+body.innerHTML = items.map(row).join('');
+const latest = items.reduce((acc, i)=> acc > (i.last_reviewed||'') ? acc : (i.last_reviewed||''), '');
+lastReviewed.textContent = latest ? List last reviewed: ${latest} : '';
+}
+
+function apply(){
+const query = q.value.toLowerCase().trim();
+let items = data.slice();
+if(sector.value) items = items.filter(i=>i.sector===sector.value);
+if(region.value) items = items.filter(i=>i.region===region.value);
+if(query) items = items.filter(i =>
+i.name.toLowerCase().includes(query) ||
+(i.sector||'').toLowerCase().includes(query) ||
+(i.rationale||'').toLowerCase().includes(query)
+);
+render(items);
+}
+
+[q, sector, region].forEach(el=> el.addEventListener('input', apply));
+render(data);
+
+// Jump to hash if present
+if(location.hash){
+const target = document.querySelector(location.hash);
+if(target){ target.scrollIntoView({behavior:'smooth'}); }
+}
+})();
+
+File: /assets/js/render-journalists.js
+(async function(){
+const data = await fetchJSON('/assets/data/journalists.json');
+const wrap = document.getElementById('journalists');
+wrap.innerHTML = data.map(j => <article class="card" id="${j.id || slugify(j.name)}"> <img src="${j.photo}" alt="${j.name}" loading="lazy"> <h3>${j.name}</h3> <p class="muted">${j.region || ''}</p> <p>${j.bio || ''}</p> <p>${(j.links||[]).map(l=><a target="_blank" rel="noopener" href="${l.url}">${l.platform}</a>).join(' · ')}</p> </article> ).join('');
+
+if(location.hash){
+const target = document.querySelector(location.hash);
+if(target){ target.scrollIntoView({behavior:'smooth'}); }
+}
+})();
+
+File: /assets/js/render-abductions.js
+(async function(){
+const d = await fetchJSON('/assets/data/abductions-2008-2023.json');
+document.getElementById('lu').textContent = d.meta.last_updated || '—';
+document.getElementById('method').textContent = d.meta.methodology || '';
+document.getElementById('sources').innerHTML = (d.meta.sources||[]).map(s => <li><a target="_blank" rel="noopener" href="${s.url}">${s.title}</a> — ${s.publisher}</li>).join('');
+
+const ctx1 = document.getElementById('byYear').getContext('2d');
+new Chart(ctx1, {
+type: 'line',
+data: {
+labels: d.by_year.map(i=>i.year),
+datasets: [{ label: 'Children', data: d.by_year.map(i=>i.children), borderColor:'#ce1126', fill:false, tension:0.25 }]
+},
+options: { scales: { y: { beginAtZero: true }}, plugins: { legend: { display:false } } }
+});
+
+const ctx2 = document.getElementById('byRegion').getContext('2d');
+new Chart(ctx2, {
+type: 'bar',
+data: {
+labels: d.by_region.map(i=>i.region),
+datasets: [{ label: 'Children', data: d.by_region.map(i=>i.children), backgroundColor:'#009736' }]
+},
+options: { indexAxis: 'y', plugins: { legend: { display:false } } }
+});
+
+const ctx3 = document.getElementById('byGender').getContext('2d');
+new Chart(ctx3, {
+type: 'doughnut',
+data: {
+labels: d.by_gender.map(i=>i.gender),
+datasets: [{ data: d.by_gender.map(i=>i.children), backgroundColor: ['#ce1126','#00643a'] }]
+},
+options: { plugins: { legend: { position:'bottom' } } }
+});
+})();
+
+Next steps
+
+Commit these files.
+If you’re using the build-search-index.mjs I gave you earlier, run:
+node scripts/build-search-index.mjs
+Commit the generated /assets/data/search-index.json
+Push to Cloudflare Pages; use Deploy Preview to verify.
