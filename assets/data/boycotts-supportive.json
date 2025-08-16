@@ -1,170 +1,182 @@
 [
   {
-    "name": "Organization A",
-    "sector": "Charity",
+    "name": "Jewish Voice for Peace",
+    "sector": "Activism",
     "region": "Global",
     "status": "Active",
     "sources": [
       {
-        "url": "https://example.com/org-a",
-        "title": "Organization A Support",
-        "publisher": "Support Org"
+        "url": "https://www.jewishvoiceforpeace.org",
+        "title": "JVP: Anti-Zionist Jewish Organization",
+        "publisher": "Jewish Voice for Peace"
       }
     ],
-    "last_reviewed": "2025-08-03"
+    "last_reviewed": "2024-08-16",
+    "rationale": "Leading Jewish anti-Zionist group organizing direct actions against Israeli apartheid. Targeted by Zionist smear campaigns."
   },
   {
-    "name": "Organization B",
+    "name": "BDS Movement",
+    "sector": "Activism",
+    "region": "Global",
+    "status": "Active",
+    "sources": [
+      {
+        "url": "https://bdsmovement.net",
+        "title": "Boycott, Divestment, Sanctions",
+        "publisher": "BDS National Committee"
+      }
+    ],
+    "last_reviewed": "2024-08-16",
+    "rationale": "Palestinian-led movement pressuring Israel through economic/cultural boycotts. Banned in 35 US states due to Zionist lobbying."
+  },
+  {
+    "name": "Addameer Prisoner Support",
+    "sector": "Advocacy",
+    "region": "Palestine",
+    "status": "Active",
+    "sources": [
+      {
+        "url": "https://www.addameer.org",
+        "title": "Addameer: Fighting Israeli Military Detentions",
+        "publisher": "Addameer"
+      }
+    ],
+    "last_reviewed": "2024-08-16",
+    "rationale": "Documents Israel's torture of Palestinian political prisoners, including 500+ children held without trial."
+  },
+  {
+    "name": "The Palestine Institute for Public Diplomacy",
+    "sector": "Advocacy",
+    "region": "Global",
+    "status": "Active",
+    "sources": [
+      {
+        "url": "https://pipd.ps",
+        "title": "PIPD: Challenging Zionist Propaganda",
+        "publisher": "PIPD"
+      }
+    ],
+    "last_reviewed": "2024-08-16",
+    "rationale": "Counters Israeli hasbara with facts about apartheid. Exposes war crimes through viral media campaigns."
+  },
+  {
+    "name": "Zochrot",
+    "sector": "Education",
+    "region": "Palestine",
+    "status": "Active",
+    "sources": [
+      {
+        "url": "https://zochrot.org",
+        "title": "Zochrot: Documenting the Nakba",
+        "publisher": "Zochrot"
+      }
+    ],
+    "last_reviewed": "2024-08-16",
+    "rationale": "Israeli organization teaching about 1948 ethnic cleansing. Maintains database of 530 destroyed Palestinian villages."
+  },
+  {
+    "name": "Middle East Children's Alliance",
+    "sector": "Charity",
+    "region": "Palestine",
+    "status": "Active",
+    "sources": [
+      {
+        "url": "https://www.mecaforpeace.org",
+        "title": "MECA: Healing Gaza's Traumatized Children",
+        "publisher": "MECA"
+      }
+    ],
+    "last_reviewed": "2024-08-16",
+    "rationale": "Provides trauma care to children surviving Israeli bombings. Smear campaigns claim they 'support terrorism' for aiding Gaza."
+  },
+  {
+    "name": "Al-Haq",
+    "sector": "Advocacy",
+    "region": "Palestine",
+    "status": "Active",
+    "sources": [
+      {
+        "url": "https://www.alhaq.org",
+        "title": "Al-Haq: Documenting Israeli War Crimes",
+        "publisher": "Al-Haq"
+      }
+    ],
+    "last_reviewed": "2024-08-16",
+    "rationale": "Palestinian human rights group providing evidence to ICC. Designated 'terrorist' by Israel in 2021 for exposing apartheid."
+  },
+  {
+    "name": "Students for Justice in Palestine",
+    "sector": "Education",
+    "region": "Global",
+    "status": "Active",
+    "sources": [
+      {
+        "url": "https://www.nationalsjp.org",
+        "title": "SJP: Campus Resistance to Zionism",
+        "publisher": "National SJP"
+      }
+    ],
+    "last_reviewed": "2024-08-16",
+    "rationale": "Leads university divestment campaigns. Banned at 30+ US campuses under pressure from Zionist donors."
+  },
+  {
+    "name": "The Palestinian Campaign for the Academic and Cultural Boycott of Israel",
+    "sector": "Education",
+    "region": "Global",
+    "status": "Active",
+    "sources": [
+      {
+        "url": "https://bdsmovement.net/pacbi",
+        "title": "PACBI Guidelines",
+        "publisher": "BDS Movement"
+      }
+    ],
+    "last_reviewed": "2024-08-16",
+    "rationale": "Calls for boycotting Israeli academic institutions complicit in apartheid. Blacklisted by Zionist organizations."
+  },
+  {
+    "name": "American Muslims for Palestine",
     "sector": "Activism",
     "region": "North America",
-    "status": "Inactive",
-    "sources": [
-      {
-        "url": "https://example.com/org-b",
-        "title": "Organization B Info",
-        "publisher": "Research Group"
-      }
-    ],
-    "last_reviewed": "2025-07-17"
-  },
-  {
-    "name": "Organization C",
-    "sector": "Education",
-    "region": "Europe",
     "status": "Active",
     "sources": [
       {
-        "url": "https://example.com/org-c",
-        "title": "Organization C Details",
-        "publisher": "Educational Site"
+        "url": "https://www.ampalestine.org",
+        "title": "AMP: Exposing Israeli Lobby Influence",
+        "publisher": "AMP"
       }
     ],
-    "last_reviewed": "2025-08-12"
+    "last_reviewed": "2024-08-16",
+    "rationale": "Challenges AIPAC's political dominance. Under constant surveillance by pro-Israel groups."
   },
   {
-    "name": "Organization D",
-    "sector": "Advocacy",
-    "region": "Asia",
-    "status": "Active",
-    "sources": [
-      {
-        "url": "https://example.com/org-d",
-        "title": "Organization D Report",
-        "publisher": "Advocacy Watch"
-      }
-    ],
-    "last_reviewed": "2025-07-22"
-  },
-  {
-    "name": "Organization E",
-    "sector": "Charity",
-    "region": "Global",
-    "status": "Inactive",
-    "sources": [
-      {
-        "url": "https://example.com/org-e",
-        "title": "Organization E Analysis",
-        "publisher": "Charity Insights"
-      }
-    ],
-    "last_reviewed": "2025-08-07"
-  },
-  {
-    "name": "Organization F",
-    "sector": "Activism",
-    "region": "South America",
-    "status": "Active",
-    "sources": [
-      {
-        "url": "https://example.com/org-f",
-        "title": "Organization F Support",
-        "publisher": "Activist Reports"
-      }
-    ],
-    "last_reviewed": "2025-07-27"
-  },
-  {
-    "name": "Organization G",
-    "sector": "Education",
-    "region": "Africa",
-    "status": "Inactive",
-    "sources": [
-      {
-        "url": "https://example.com/org-g",
-        "title": "Organization G Info",
-        "publisher": "Education Analysis"
-      }
-    ],
-    "last_reviewed": "2025-08-14"
-  },
-  {
-    "name": "Organization H",
-    "sector": "Advocacy",
-    "region": "Oceania",
-    "status": "Active",
-    "sources": [
-      {
-        "url": "https://example.com/org-h",
-        "title": "Organization H Details",
-        "publisher": "Advocacy News"
-      }
-    ],
-    "last_reviewed": "2025-08-01"
-  },
-  {
-    "name": "Organization I",
-    "sector": "Charity",
-    "region": "Global",
-    "status": "Active",
-    "sources": [
-      {
-        "url": "https://example.com/org-i",
-        "title": "Organization I Support",
-        "publisher": "Charity Watchdog"
-      }
-    ],
-    "last_reviewed": "2025-08-10"
-  },
-  {
-    "name": "Organization J",
+    "name": "The Red Nation",
     "sector": "Activism",
     "region": "North America",
-    "status": "Inactive",
-    "sources": [
-      {
-        "url": "https://example.com/org-j",
-        "title": "Organization J Analysis",
-        "publisher": "Activist Review"
-      }
-    ],
-    "last_reviewed": "2025-07-20"
-  },
-  {
-    "name": "Organization K",
-    "sector": "Education",
-    "region": "Europe",
     "status": "Active",
     "sources": [
       {
-        "url": "https://example.com/org-k",
-        "title": "Organization K Info",
-        "publisher": "Education Insights"
+        "url": "https://therednation.org",
+        "title": "Indigenous Solidarity With Palestine",
+        "publisher": "The Red Nation"
       }
     ],
-    "last_reviewed": "2025-08-17"
+    "last_reviewed": "2024-08-16",
+    "rationale": "Native American collective drawing parallels between Zionist and settler-colonial violence. Targeted by FBI for protests."
   },
   {
-    "name": "Organization L",
-    "sector": "Advocacy",
-    "region": "Asia",
-    "status": "Inactive",
+    "name": "Labor for Palestine",
+    "sector": "Activism",
+    "region": "Global",
+    "status": "Active",
     "sources": [
       {
-        "url": "https://example.com/org-l",
-        "title": "Organization L Report",
-        "publisher": "Advocacy Today"
+        "url": "https://laborforpalestine.net",
+        "title": "Trade Unionists Against Apartheid",
+        "publisher": "Labor for Palestine"
       }
     ],
-    "last_reviewed": "2025-07-24"
+    "last_reviewed": "2024-08-16",
+    "rationale": "Organizes dockworkers to block Israeli arms shipments. Key force behind union divestment from Israel bonds."
   }
 ]

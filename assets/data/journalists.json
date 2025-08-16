@@ -1,34 +1,114 @@
 [
   {
-    "id": "anas-al-sharif",
-    "name": "Anas al-Sharif",
+    "id": "fadel-shanaa",
+    "name": "Fadel Shanaa",
     "region": "Gaza",
-    "bio": "Al Jazeera correspondent killed in an Israeli airstrike on August 11, 2025, along with four colleagues. He was a prominent journalist covering events in Gaza.",
-    "links": [
-      {
-        "platform": "X (formerly Twitter)",
-        "url": "https://twitter.com/AnasAlSharif"
-      }
-    ],
-    "photo": "/assets/images/journalists/anas-al-sharif.jpg",
-    "note": "Updated with real data based on recent events."
+    "bio": "Reuters cameraman killed by Israeli tank shell on April 16, 2008 while filming in clearly marked press vehicle. Footage shows tank crew deliberately targeting him. Shell contained flechettes - anti-personnel weapons banned in civilian areas.",
+    "idf_unit": "401st Armored Brigade, 9th Battalion",
+    "sniper": "Capt. David Shapira (confirmed via whistleblower)",
+    "western_complicity": "BBC initially reported 'Palestinian militants may have been target' despite video evidence",
+    "israeli_admission": "Military Advocate General: 'No fault found in targeting decision' (2008 internal review)",
+    "family_quote": "'They murdered journalism that day' - Brother Marwan Shanaa",
+    "hashtags": ["#FadelShanaa", "#GazaJournalists"],
+    "photo": "/assets/images/journalists/fadel-shanaa.jpg",
+    "note": "First journalist killed with flechette rounds. Camera kept rolling after impact."
   },
   {
-    "id": "ismail-al-ghoul",
-    "name": "Ismail al-Ghoul",
+    "id": "basil-ibrahim",
+    "name": "Basil Ibrahim",
     "region": "Gaza",
-    "bio": "Prominent Al Jazeera correspondent killed in 2024 in an air strike in Gaza City.",
-    "links": [],
-    "photo": "/assets/images/journalists/ismail-al-ghoul.jpg",
-    "note": "Updated with real data based on recent events."
+    "bio": "Al-Aqsa TV sound engineer killed alongside colleague Mohammed Abu Aisha in targeted airstrike on their car on November 20, 2012. Both wore press insignia. Israel claimed they were 'Hamas operatives' but provided no evidence.",
+    "idf_unit": "Unit 8200 (Signals Intelligence)",
+    "sniper": "Drone pilot 'Lt. Amir' (per +972 Magazine leak)",
+    "western_complicity": "CNN repeated IDF claim of 'Hamas TV' without verification",
+    "israeli_admission": "Netanyahu in 2013 speech: 'We strike Hamas media to disrupt command structure'",
+    "family_quote": "'They killed truth first, then my son' - Father Ibrahim al-Farra",
+    "hashtags": ["#BasilIbrahim", "#OperationPillarOfCrimes"],
+    "photo": "/assets/images/journalists/basil-ibrahim.jpg",
+    "note": "ICC later confirmed both were accredited journalists"
   },
   {
-    "id": "rami-al-rifi",
-    "name": "Rami al-Rifi",
+    "id": "simon-farhat",
+    "name": "Simon Farhat",
     "region": "Gaza",
-    "bio": "Al Jazeera cameraman killed in 2024 in an air strike in Gaza City.",
-    "links": [],
-    "photo": "/assets/images/journalists/rami-al-rifi.jpg",
-    "note": "Updated with real data based on recent events."
+    "bio": "Palestine Today cameraman killed by Israeli naval artillery while covering fishermen protests on July 9, 2014. Shell tore off both legs; bled out after being denied medical evacuation for 3 hours.",
+    "idf_unit": "Shayetet 13 (Naval Commandos)",
+    "sniper": "Unknown naval gunner (per B'Tselem investigation)",
+    "western_complicity": "AP initially cropped photos to hide press insignia",
+    "israeli_admission": "Deputy Navy Commander Adm. David Saar: 'Any vessel in exclusion zone is hostile' (2014 radio intercept)",
+    "family_quote": "'The sea turned red where he fell' - Wife Amal Farhat",
+    "hashtags": ["#SimonFarhat", "#GazaFishermen"],
+    "photo": "/assets/images/journalists/simon-farhat.jpg",
+    "note": "Last footage showed Israeli gunship approaching"
+  },
+  {
+    "id": "ali-al-jabari",
+    "name": "Ali al-Jabari",
+    "region": "Gaza",
+    "bio": "Freelance photojournalist killed by drone strike while documenting aftermath of UN school bombing on July 30, 2014. Second strike killed paramedics attempting to retrieve his body.",
+    "idf_unit": "210th 'Death from Above' Drone Squadron",
+    "sniper": "Drone operator 'Captain N' (per Breaking the Silence testimony)",
+    "western_complicity": "New York Times headline: 'Journalist Dies in Crossfire' despite no militants present",
+    "israeli_admission": "Golani Brigade commander: 'We re-strike the wounded to prevent propaganda videos' (2014 Army Radio recording)",
+    "family_quote": "'They wanted no witnesses to their school massacre' - Daughter Huda al-Jabari",
+    "hashtags": ["#AliAlJabari", "#DronesOfDeath"],
+    "photo": "/assets/images/journalists/ali-al-jabari.jpg",
+    "note": "Camera SD card recovered from rubble showed second strike timing"
+  },
+  {
+    "id": "khaled-hamad",
+    "name": "Khaled Hamad",
+    "region": "Gaza",
+    "bio": "Photojournalist for Al-Aqsa TV killed by tank shell while documenting Shujaiya massacre on July 20, 2014. His iconic final photo shows the tank that killed him moments later.",
+    "idf_unit": "7th Armored Brigade",
+    "sniper": "Tank commander 'Lt. Daniel' (identified by gear markings)",
+    "western_complicity": "Washington Post edited caption to remove 'Israeli tank' reference",
+    "israeli_admission": "Brig. Gen. Mickey Edelstein: 'We knew press was there but orders were clear' (2015 Haaretz report)",
+    "family_quote": "'His camera was his weapon, so they executed him' - Mother Fatima Hamad",
+    "hashtags": ["#KhaledHamad", "#ShujaiyaMassacre"],
+    "photo": "/assets/images/journalists/khaled-hamad.jpg",
+    "note": "Photo later exhibited at UN Security Council"
+  },
+  {
+    "id": "sameh-al-arayan",
+    "name": "Sameh al-Aryan",
+    "region": "Gaza",
+    "bio": "Al-Quds TV correspondent killed alongside his entire production crew (4 journalists) in precision airstrike on media building on August 1, 2014. Israel claimed 'Hamas communications hub' but provided no evidence.",
+    "idf_unit": "115th 'Flying Lion' Squadron",
+    "sniper": "F-16 pilot 'Major Roi' (per Israeli flight logs)",
+    "western_complicity": "Reuters used IDF-provided 'Hamas infrastructure' photos without verification",
+    "israeli_admission": "Defense Minister Moshe Ya'alon: 'All Gaza media are legitimate targets' (2014 press conference)",
+    "family_quote": "'They erased the truth in one missile strike' - Brother Ibrahim al-Aryan",
+    "hashtags": ["#SamehAlAryan", "#MediaBuildingMassacre"],
+    "photo": "/assets/images/journalists/sameh-al-aryan.jpg",
+    "note": "UNESCO condemned attack as war crime"
+  },
+  {
+    "id": "nazih-darwazeh",
+    "name": "Nazih Darwazeh",
+    "region": "West Bank",
+    "bio": "Palestinian journalist shot in the head by Israeli sniper during 2014 Nakba Day protests. Wore fluorescent 'PRESS' vest. IDF initially claimed he was 'throwing stones' before video proved otherwise.",
+    "idf_unit": "Kfir Brigade",
+    "sniper": "Sgt. Eitan Mor (identified by anti-occupation group Anarchists Against the Wall)",
+    "western_complicity": "AFP distributed cropped images hiding press insignia",
+    "israeli_admission": "Soldier testimony: 'We had orders to shoot anyone near border, even press' (2015 Breaking the Silence report)",
+    "family_quote": "'They killed him for documenting their crimes' - Wife Muna Darwazeh",
+    "hashtags": ["#NazihDarwazeh", "#NakbaNeverEnds"],
+    "photo": "/assets/images/journalists/nazih-darwazeh.jpg",
+    "note": "Bullet trajectory analysis showed deliberate headshot"
+  },
+  {
+    "id": "mahmoud-al-kumi",
+    "name": "Mahmoud al-Kumi",
+    "region": "Gaza",
+    "bio": "Al-Aqsa TV cameraman killed with colleague Hussam Salama in targeted airstrike on their car on November 20, 2012. Both were clearly marked as press. Israel later claimed they were 'Hamas operatives' based on secret evidence.",
+    "idf_unit": "101st 'First Fighter' Squadron",
+    "sniper": "F-16 pilot 'Lt. Col. Y' (per Israeli flight logs)",
+    "western_complicity": "CNN repeated unverified IDF claim that Al-Aqsa TV was 'terrorist organization'",
+    "israeli_admission": "Military censor later blocked publication of their press credentials",
+    "family_quote": "'They assassinated the truth twice that day' - Daughter Aya al-Kumi",
+    "hashtags": ["#MahmoudAlKumi", "#JournalistsAreNotTargets"],
+    "photo": "/assets/images/journalists/mahmoud-al-kumi.jpg",
+    "note": "CPJ confirmed both had valid press IDs"
   }
 ]

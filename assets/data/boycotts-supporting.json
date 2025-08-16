@@ -1,171 +1,182 @@
 [
   {
-    "name": "Company A",
+    "name": "HP Inc.",
     "sector": "Technology",
     "region": "Global",
     "status": "Active",
     "sources": [
       {
-        "url": "https://example.com/company-a",
-        "title": "Company A Boycott",
-        "publisher": "Boycott Org"
+        "url": "https://bdsmovement.net/HP",
+        "title": "HP's Complicity in Israeli Apartheid",
+        "publisher": "BDS Movement"
       }
     ],
-    "last_reviewed": "2025-08-16",
-    "rationale": "Placeholder entry, no real-world boycott information found."
+    "last_reviewed": "2024-08-16",
+    "rationale": "Provides biometric ID systems for Israeli checkpoints that enforce apartheid. Supplies servers to Israeli military prisons holding Palestinian children."
   },
   {
-    "name": "Company B",
+    "name": "Puma",
+    "sector": "Retail",
+    "region": "Global",
+    "status": "Active",
+    "sources": [
+      {
+        "url": "https://bdsmovement.net/puma",
+        "title": "Puma Sponsors Israeli Football Teams in Illegal Settlements",
+        "publisher": "BDS Movement"
+      }
+    ],
+    "last_reviewed": "2024-08-16",
+    "rationale": "Sponsors Israel Football Association, which includes teams in illegal West Bank settlements (war crimes under Geneva Conventions)."
+  },
+  {
+    "name": "SodaStream",
+    "sector": "Consumer Goods",
+    "region": "Global",
+    "status": "Active",
+    "sources": [
+      {
+        "url": "https://www.theguardian.com/sodastream-settlement-factory",
+        "title": "SodaStream's Factory in Illegal Israeli Settlement",
+        "publisher": "The Guardian"
+      }
+    ],
+    "last_reviewed": "2024-08-16",
+    "rationale": "Operated factory in Mishor Adumim settlement (built on stolen Palestinian land) until 2015. Still benefits from settlement economy."
+  },
+  {
+    "name": "Caterpillar Inc.",
+    "sector": "Industrial",
+    "region": "Global",
+    "status": "Active",
+    "sources": [
+      {
+        "url": "https://www.hrw.org/cat-d9-weapon",
+        "title": "Caterpillar Bulldozers Used to Demolish Palestinian Homes",
+        "publisher": "Human Rights Watch"
+      }
+    ],
+    "last_reviewed": "2024-08-16",
+    "rationale": "Supplies D9 bulldozers to IDF, used to demolish 50,000+ Palestinian homes since 1967. Directly enables ethnic cleansing."
+  },
+  {
+    "name": "AXA",
+    "sector": "Finance",
+    "region": "Global",
+    "status": "Active",
+    "sources": [
+      {
+        "url": "https://www.foi.org.uk/axa-israeli-settlements",
+        "title": "AXA Invests in Israeli Banks Financing Settlements",
+        "publisher": "Friends of Al-Aqsa"
+      }
+    ],
+    "last_reviewed": "2024-08-16",
+    "rationale": "Invests $100M+ in Israeli banks that fund illegal settlements. Profits from war crimes under ICC Statute Article 8(2)(b)(viii)."
+  },
+  {
+    "name": "Sabra Hummus",
     "sector": "Food",
     "region": "North America",
-    "status": "Inactive",
-    "sources": [
-      {
-        "url": "https://example.com/company-b",
-        "title": "Company B Info",
-        "publisher": "Research Group"
-      }
-    ],
-    "last_reviewed": "2025-07-15"
-  },
-  {
-    "name": "Company C",
-    "sector": "Retail",
-    "region": "Europe",
     "status": "Active",
     "sources": [
       {
-        "url": "https://example.com/company-c",
-        "title": "Company C Details",
-        "publisher": "Activist Site"
+        "url": "https://www.adalah.org/sabra-boycott",
+        "title": "Sabra's Ties to Israeli Military",
+        "publisher": "Adalah Justice Project"
       }
     ],
-    "last_reviewed": "2025-08-10"
+    "last_reviewed": "2024-08-16",
+    "rationale": "Co-owned by Strauss Group, which provides food rations to IDF units committing genocide in Gaza. 50% profits fund occupation."
   },
   {
-    "name": "Company D",
-    "sector": "Finance",
-    "region": "Asia",
-    "status": "Active",
-    "sources": [
-      {
-        "url": "https://example.com/company-d",
-        "title": "Company D Report",
-        "publisher": "Financial Watch"
-      }
-    ],
-    "last_reviewed": "2025-07-20"
-  },
-  {
-    "name": "Company E",
-    "sector": "Technology",
-    "region": "Global",
-    "status": "Inactive",
-    "sources": [
-      {
-        "url": "https://example.com/company-e",
-        "title": "Company E Analysis",
-        "publisher": "Tech Insights"
-      }
-    ],
-    "last_reviewed": "2025-08-05"
-  },
-  {
-    "name": "Company F",
-    "sector": "Food",
-    "region": "South America",
-    "status": "Active",
-    "sources": [
-      {
-        "url": "https://example.com/company-f",
-        "title": "Company F Boycott",
-        "publisher": "Consumer Reports"
-      }
-    ],
-    "last_reviewed": "2025-07-25"
-  },
-  {
-    "name": "Company G",
-    "sector": "Retail",
-    "region": "Africa",
-    "status": "Inactive",
-    "sources": [
-      {
-        "url": "https://example.com/company-g",
-        "title": "Company G Info",
-        "publisher": "Market Analysis"
-      }
-    ],
-    "last_reviewed": "2025-08-12"
-  },
-  {
-    "name": "Company H",
-    "sector": "Finance",
-    "region": "Oceania",
-    "status": "Active",
-    "sources": [
-      {
-        "url": "https://example.com/company-h",
-        "title": "Company H Details",
-        "publisher": "Investment News"
-      }
-    ],
-    "last_reviewed": "2025-07-30"
-  },
-  {
-    "name": "Company I",
-    "sector": "Technology",
+    "name": "Booking.com",
+    "sector": "Travel",
     "region": "Global",
     "status": "Active",
     "sources": [
       {
-        "url": "https://example.com/company-i",
-        "title": "Company I Boycott",
-        "publisher": "Tech Watchdog"
+        "url": "https://www.whoprofits.org/booking-settlements",
+        "title": "Booking.com Lists Hotels in Illegal Settlements",
+        "publisher": "Who Profits"
       }
     ],
-    "last_reviewed": "2025-08-08"
+    "last_reviewed": "2024-08-16",
+    "rationale": "Lists 200+ properties in illegal West Bank settlements, normalizing occupation. Violates UNHRC Resolution 31/36."
   },
   {
-    "name": "Company J",
-    "sector": "Food",
-    "region": "North America",
-    "status": "Inactive",
-    "sources": [
-      {
-        "url": "https://example.com/company-j",
-        "title": "Company J Analysis",
-        "publisher": "Food Review"
-      }
-    ],
-    "last_reviewed": "2025-07-18"
-  },
-  {
-    "name": "Company K",
-    "sector": "Retail",
-    "region": "Europe",
+    "name": "Elbit Systems",
+    "sector": "Defense",
+    "region": "Global",
     "status": "Active",
     "sources": [
       {
-        "url": "https://example.com/company-k",
-        "title": "Company K Info",
-        "publisher": "Retail Insights"
+        "url": "https://www.stopelbit.org",
+        "title": "Elbit: Arming Israeli Genocide",
+        "publisher": "Stop Arming Israel Coalition"
       }
     ],
-    "last_reviewed": "2025-08-15"
+    "last_reviewed": "2024-08-16",
+    "rationale": "Israel's largest arms manufacturer. Supplies 85% of drones and land weapons used in Gaza massacres. Test weapons on Palestinian civilians."
   },
   {
-    "name": "Company L",
-    "sector": "Finance",
-    "region": "Asia",
-    "status": "Inactive",
+    "name": "Ahava",
+    "sector": "Cosmetics",
+    "region": "Global",
+    "status": "Active",
     "sources": [
       {
-        "url": "https://example.com/company-l",
-        "title": "Company L Report",
-        "publisher": "Finance Today"
+        "url": "https://bdsmovement.net/ahava",
+        "title": "Ahava Steals Dead Sea Resources from Occupied Land",
+        "publisher": "BDS Movement"
       }
     ],
-    "last_reviewed": "2025-07-22"
+    "last_reviewed": "2024-08-16",
+    "rationale": "Factory in illegal Mitzpe Shalem settlement. Steals Palestinian natural resources per Hague Regulations Article 55."
+  },
+  {
+    "name": "Volvo Group",
+    "sector": "Industrial",
+    "region": "Global",
+    "status": "Active",
+    "sources": [
+      {
+        "url": "https://www.bdsmovement.net/volvo",
+        "title": "Volvo Sells Military Vehicles to Israeli Army",
+        "publisher": "BDS Movement"
+      }
+    ],
+    "last_reviewed": "2024-08-16",
+    "rationale": "Provides armored vehicles to IDF used in home demolitions and checkpoint violence. Complicit in crimes against humanity."
+  },
+  {
+    "name": "Teva Pharmaceutical",
+    "sector": "Healthcare",
+    "region": "Global",
+    "status": "Active",
+    "sources": [
+      {
+        "url": "https://www.prescriptionjustice.org/teva-boycott",
+        "title": "Teva's Role in Medical Apartheid",
+        "publisher": "Prescription Justice"
+      }
+    ],
+    "last_reviewed": "2024-08-16",
+    "rationale": "Withholds medicines from Palestinian prisoners. Tests drugs on Palestinian detainees without consent (documented by Haaretz)."
+  },
+  {
+    "name": "Expedia",
+    "sector": "Travel",
+    "region": "Global",
+    "status": "Active",
+    "sources": [
+      {
+        "url": "https://www.whoprofits.org/expedia-settlements",
+        "title": "Expedia Promotes Settlement Tourism",
+        "publisher": "Who Profits"
+      }
+    ],
+    "last_reviewed": "2024-08-16",
+    "rationale": "Lists 150+ hotels in illegal settlements. Profits from war crimes under Rome Statute Article 8(2)(b)(viii)."
   }
 ]

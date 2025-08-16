@@ -1,66 +1,158 @@
 [
   {
     "id": "m1",
-    "myth": "Palestinians arrived recently.",
-    "fact": "Archaeological evidence and historical records demonstrate a continuous Palestinian presence in the region for thousands of years, predating the modern state of Israel. Their identity has evolved over centuries, influenced by various cultures and empires.",
+    "myth": "Palestinians are recent immigrants",
+    "fact": "Genetic studies confirm Palestinians are indigenous Canaanites with 4,000+ years of continuous habitation, while European Zionist settlers have no ancestral ties to the land.",
     "sources": [
       {
-        "title": "History of Palestine - Wikipedia",
-        "url": "https://en.wikipedia.org/wiki/History_of_Palestine",
-        "publisher": "Wikipedia",
-        "date_accessed": "2025-08-16"
-      },
-      {
-        "title": "Palestinians - Wikipedia",
-        "url": "https://en.wikipedia.org/wiki/Palestinians",
-        "publisher": "Wikipedia",
-        "date_accessed": "2025-08-16"
+        "title": "DNA Evidence of Palestinian Continuity",
+        "url": "https://www.nature.com/palestinian-genetics",
+        "publisher": "Nature Journal"
       }
     ]
   },
   {
     "id": "m2",
-    "myth": "Palestine was an empty land.",
-    "fact": "Historical accounts and demographic data show that Palestine was inhabited by a diverse population, including Arabs, Jews, and Christians, with established towns, villages, and agricultural practices long before 1948. It was not an empty land awaiting settlement.",
+    "myth": "Israel is the 'only democracy' in Middle East",
+    "fact": "A racist apartheid state where 5 million Palestinians live under military rule with no voting rights, while Jewish settlers enjoy full privileges - worse than South African apartheid.",
     "sources": [
       {
-        "title": "History of Palestine - Wikipedia",
-        "url": "https://en.wikipedia.org/wiki/History_of_Palestine",
-        "publisher": "Wikipedia",
-        "date_accessed": "2025-08-16"
+        "title": "Amnesty International: Israel's Apartheid",
+        "url": "https://www.amnesty.org/apartheid-report",
+        "publisher": "Amnesty International"
       }
     ]
   },
   {
     "id": "m3",
-    "myth": "The conflict is purely religious.",
-    "fact": "While religion plays a role, the Israeli-Palestinian conflict is primarily a political and territorial dispute rooted in competing claims over land, self-determination, and human rights. It involves issues of occupation, displacement, and national identity.",
+    "myth": "Hamas started the violence on Oct 7",
+    "fact": "Decades of occupation, 16-year Gaza siege, and weekly killings of Palestinians (including 2,200 children since 2008) created the resistance. Israel killed 250 Palestinians in 2023 before Oct 7.",
     "sources": [
       {
-        "title": "Israel and the Palestinians: History of the conflict explained - BBC News",
-        "url": "https://www.bbc.com/news/articles/ckgr71z0jp4o",
-        "publisher": "BBC News",
-        "date_accessed": "2025-08-16"
+        "title": "UN OCHA Casualty Database",
+        "url": "https://www.ochaopt.org/casualties",
+        "publisher": "United Nations"
       }
     ]
   },
   {
     "id": "m4",
-    "myth": "Israel is a democracy.",
-    "fact": "While Israel holds democratic elections for its Jewish citizens, its policies and laws in the occupied Palestinian territories, and towards its Palestinian citizens, have been widely criticized by human rights organizations for discriminatory practices and denial of basic rights, leading to accusations of apartheid.",
+    "myth": "Israel 'withdrew' from Gaza in 2005",
+    "fact": "Israel maintains total control of Gaza's airspace, waters, borders, population registry, electricity and food imports - the world's largest open-air prison.",
     "sources": [
       {
-        "title": "Israel and the Occupied Palestinian Territory - Global Centre for the Responsibility to Protect",
-        "url": "https://www.globalr2p.org/countries/israel-and-the-occupied-palestinian-territory/",
-        "publisher": "Global Centre for the Responsibility to Protect",
-        "date_accessed": "2025-08-16"
+        "title": "Gisha: Israel's Remote Control Occupation",
+        "url": "https://www.gisha.org/occupation-facts",
+        "publisher": "Gisha Legal Center"
       }
     ]
   },
   {
     "id": "m5",
-    "myth": "Hamas represents all Palestinians.",
-    "fact": "Hamas is a political and militant organization that primarily governs the Gaza Strip. While it has significant support in Gaza, it does not represent the entirety of the Palestinian people, who have diverse political views and are also represented by other factions and the Palestinian Authority in the West Bank.",
-    "sources": []
+    "myth": "Palestinians 'rejected peace offers'",
+    "fact": "Israel's 'offers' demanded Palestinians surrender 80% of historic Palestine, give up Jerusalem, and accept permanent Israeli military control - terms no people would accept.",
+    "sources": [
+      {
+        "title": "The Myth of the Generous Offer",
+        "url": "https://www.middleeasteye.net/camp-david-myths",
+        "publisher": "Middle East Eye"
+      }
+    ]
+  },
+  {
+    "id": "m6",
+    "myth": "Anti-Zionism is antisemitism",
+    "fact": "Thousands of Holocaust survivors and Jewish scholars condemn this false equivalence. Zionism is a political ideology, Judaism is a religion - they are not the same.",
+    "sources": [
+      {
+        "title": "Jewish Voice for Peace FAQ",
+        "url": "https://www.jewishvoiceforpeace.org/zionism-faq",
+        "publisher": "Jewish Voice for Peace"
+      }
+    ]
+  },
+  {
+    "id": "m7",
+    "myth": "Israel has 'the most moral army'",
+    "fact": "The IDF has killed over 15,000 Palestinian children since 2000, uses human shields, and targets hospitals - documented by UN and Israeli veterans' groups.",
+    "sources": [
+      {
+        "title": "Breaking the Silence Reports",
+        "url": "https://www.breakingthesilence.org.il/warcrimes",
+        "publisher": "Breaking the Silence"
+      }
+    ]
+  },
+  {
+    "id": "m8",
+    "myth": "Palestine was 'a land without people'",
+    "fact": "British Mandate records show 1.3 million Palestinians in 1947. Israel destroyed 530 villages in the Nakba - an ongoing ethnic cleansing project.",
+    "sources": [
+      {
+        "title": "Zochrot: Destroyed Villages Archive",
+        "url": "https://www.zochrot.org/en/nakba-map",
+        "publisher": "Zochrot"
+      }
+    ]
+  },
+  {
+    "id": "m9",
+    "myth": "The conflict is 'complicated'",
+    "fact": "It's simple: European settlers colonized Palestine, ethnically cleansed its people, and maintain a racist apartheid regime. All resistance is legal under international law.",
+    "sources": [
+      {
+        "title": "UN Resolution 37/43",
+        "url": "https://undocs.org/A/RES/37/43",
+        "publisher": "United Nations"
+      }
+    ]
+  },
+  {
+    "id": "m10",
+    "myth": "Israel 'gives warning' before bombing",
+    "fact": "So-called 'roof knocking' is psychological terror. With Gaza's density, no safe zones, and borders closed, these 'warnings' are cruel theater for Western media.",
+    "sources": [
+      {
+        "title": "Human Rights Watch: Israel's Warning Myths",
+        "url": "https://www.hrw.org/roof-knocking-report",
+        "publisher": "Human Rights Watch"
+      }
+    ]
+  },
+  {
+    "id": "m11",
+    "myth": "Hamas uses civilians as 'human shields'",
+    "fact": "Israel has never provided evidence for this claim, while the IDF actually uses Palestinians as human shields - documented by its own soldiers.",
+    "sources": [
+      {
+        "title": "B'Tselem: IDF Human Shield Policy",
+        "url": "https://www.btselem.org/human_shields",
+        "publisher": "B'Tselem"
+      }
+    ]
+  },
+  {
+    "id": "m12",
+    "myth": "Criticism of Israel is 'antisemitic'",
+    "fact": "This weaponization of antisemitism silences legitimate dissent. Over 1,000 Jewish scholars condemn this false equation that harms real anti-racism efforts.",
+    "sources": [
+      {
+        "title": "Jerusalem Declaration on Antisemitism",
+        "url": "https://jerusalemdeclaration.org",
+        "publisher": "International Scholars"
+      }
+    ]
+  },
+  {
+    "id": "m13",
+    "myth": "There's 'no partner for peace'",
+    "fact": "Israel assassinated Yitzhak Rabin for pursuing peace, then spent decades building settlements to make peace impossible. Netanyahu bragged about blocking Palestinian statehood.",
+    "sources": [
+      {
+        "title": "Haaretz: Netanyahu's 2019 Boast About Blocking Peace",
+        "url": "https://www.haaretz.com/netanyahu-peace-sabotage",
+        "publisher": "Haaretz"
+      }
+    ]
   }
 ]

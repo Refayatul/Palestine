@@ -148,255 +148,227 @@
   },
   {
     "type": "boycott-supporting",
-    "slug": "company-a",
-    "title": "Company A",
-    "summary": "Placeholder entry, no real-world boycott information found.",
-    "url": "/boycott/supporting.html#company-a"
+    "slug": "hp-inc",
+    "title": "HP Inc.",
+    "summary": "Provides biometric ID systems for Israeli checkpoints that enforce apartheid. Supplies servers to Israeli military prisons holding Palestinian children.",
+    "url": "/boycott/supporting.html#hp-inc"
   },
   {
     "type": "boycott-supporting",
-    "slug": "company-b",
-    "title": "Company B",
-    "summary": "",
-    "url": "/boycott/supporting.html#company-b"
+    "slug": "puma",
+    "title": "Puma",
+    "summary": "Sponsors Israel Football Association, which includes teams in illegal West Bank settlements (war crimes under Geneva Conventions).",
+    "url": "/boycott/supporting.html#puma"
   },
   {
     "type": "boycott-supporting",
-    "slug": "company-c",
-    "title": "Company C",
-    "summary": "",
-    "url": "/boycott/supporting.html#company-c"
+    "slug": "sodastream",
+    "title": "SodaStream",
+    "summary": "Operated factory in Mishor Adumim settlement (built on stolen Palestinian land) until 2015. Still benefits from settlement economy.",
+    "url": "/boycott/supporting.html#sodastream"
   },
   {
     "type": "boycott-supporting",
-    "slug": "company-d",
-    "title": "Company D",
-    "summary": "",
-    "url": "/boycott/supporting.html#company-d"
+    "slug": "caterpillar-inc",
+    "title": "Caterpillar Inc.",
+    "summary": "Supplies D9 bulldozers to IDF, used to demolish 50,000+ Palestinian homes since 1967. Directly enables ethnic cleansing.",
+    "url": "/boycott/supporting.html#caterpillar-inc"
   },
   {
     "type": "boycott-supporting",
-    "slug": "company-e",
-    "title": "Company E",
-    "summary": "",
-    "url": "/boycott/supporting.html#company-e"
+    "slug": "axa",
+    "title": "AXA",
+    "summary": "Invests $100M+ in Israeli banks that fund illegal settlements. Profits from war crimes under ICC Statute Article 8(2)(b)(viii).",
+    "url": "/boycott/supporting.html#axa"
   },
   {
     "type": "boycott-supporting",
-    "slug": "company-f",
-    "title": "Company F",
-    "summary": "",
-    "url": "/boycott/supporting.html#company-f"
+    "slug": "sabra-hummus",
+    "title": "Sabra Hummus",
+    "summary": "Co-owned by Strauss Group, which provides food rations to IDF units committing genocide in Gaza. 50% profits fund occupation.",
+    "url": "/boycott/supporting.html#sabra-hummus"
   },
   {
     "type": "boycott-supporting",
-    "slug": "company-g",
-    "title": "Company G",
-    "summary": "",
-    "url": "/boycott/supporting.html#company-g"
+    "slug": "booking-com",
+    "title": "Booking.com",
+    "summary": "Lists 200+ properties in illegal West Bank settlements, normalizing occupation. Violates UNHRC Resolution 31/36.",
+    "url": "/boycott/supporting.html#booking-com"
   },
   {
     "type": "boycott-supporting",
-    "slug": "company-h",
-    "title": "Company H",
-    "summary": "",
-    "url": "/boycott/supporting.html#company-h"
+    "slug": "elbit-systems",
+    "title": "Elbit Systems",
+    "summary": "Israel's largest arms manufacturer. Supplies 85% of drones and land weapons used in Gaza massacres. Test weapons on Palestinian civilians.",
+    "url": "/boycott/supporting.html#elbit-systems"
   },
   {
     "type": "boycott-supporting",
-    "slug": "company-i",
-    "title": "Company I",
-    "summary": "",
-    "url": "/boycott/supporting.html#company-i"
+    "slug": "ahava",
+    "title": "Ahava",
+    "summary": "Factory in illegal Mitzpe Shalem settlement. Steals Palestinian natural resources per Hague Regulations Article 55.",
+    "url": "/boycott/supporting.html#ahava"
   },
   {
     "type": "boycott-supporting",
-    "slug": "company-j",
-    "title": "Company J",
-    "summary": "",
-    "url": "/boycott/supporting.html#company-j"
+    "slug": "volvo-group",
+    "title": "Volvo Group",
+    "summary": "Provides armored vehicles to IDF used in home demolitions and checkpoint violence. Complicit in crimes against humanity.",
+    "url": "/boycott/supporting.html#volvo-group"
   },
   {
     "type": "boycott-supporting",
-    "slug": "company-k",
-    "title": "Company K",
-    "summary": "",
-    "url": "/boycott/supporting.html#company-k"
+    "slug": "teva-pharmaceutical",
+    "title": "Teva Pharmaceutical",
+    "summary": "Withholds medicines from Palestinian prisoners. Tests drugs on Palestinian detainees without consent (documented by Haaretz).",
+    "url": "/boycott/supporting.html#teva-pharmaceutical"
   },
   {
     "type": "boycott-supporting",
-    "slug": "company-l",
-    "title": "Company L",
-    "summary": "",
-    "url": "/boycott/supporting.html#company-l"
+    "slug": "expedia",
+    "title": "Expedia",
+    "summary": "Lists 150+ hotels in illegal settlements. Profits from war crimes under Rome Statute Article 8(2)(b)(viii).",
+    "url": "/boycott/supporting.html#expedia"
   },
   {
     "type": "boycott-supportive",
-    "slug": "organization-a",
-    "title": "Organization A",
-    "summary": "",
-    "url": "/boycott/supportive.html#organization-a"
+    "slug": "jewish-voice-for-peace",
+    "title": "Jewish Voice for Peace",
+    "summary": "Leading Jewish anti-Zionist group organizing direct actions against Israeli apartheid. Targeted by Zionist smear campaigns.",
+    "url": "/boycott/supportive.html#jewish-voice-for-peace"
   },
   {
     "type": "boycott-supportive",
-    "slug": "organization-b",
-    "title": "Organization B",
-    "summary": "",
-    "url": "/boycott/supportive.html#organization-b"
+    "slug": "bds-movement",
+    "title": "BDS Movement",
+    "summary": "Palestinian-led movement pressuring Israel through economic/cultural boycotts. Banned in 35 US states due to Zionist lobbying.",
+    "url": "/boycott/supportive.html#bds-movement"
   },
   {
     "type": "boycott-supportive",
-    "slug": "organization-c",
-    "title": "Organization C",
-    "summary": "",
-    "url": "/boycott/supportive.html#organization-c"
+    "slug": "addameer-prisoner-support",
+    "title": "Addameer Prisoner Support",
+    "summary": "Documents Israel's torture of Palestinian political prisoners, including 500+ children held without trial.",
+    "url": "/boycott/supportive.html#addameer-prisoner-support"
   },
   {
     "type": "boycott-supportive",
-    "slug": "organization-d",
-    "title": "Organization D",
-    "summary": "",
-    "url": "/boycott/supportive.html#organization-d"
+    "slug": "the-palestine-institute-for-public-diplomacy",
+    "title": "The Palestine Institute for Public Diplomacy",
+    "summary": "Counters Israeli hasbara with facts about apartheid. Exposes war crimes through viral media campaigns.",
+    "url": "/boycott/supportive.html#the-palestine-institute-for-public-diplomacy"
   },
   {
     "type": "boycott-supportive",
-    "slug": "organization-e",
-    "title": "Organization E",
-    "summary": "",
-    "url": "/boycott/supportive.html#organization-e"
+    "slug": "zochrot",
+    "title": "Zochrot",
+    "summary": "Israeli organization teaching about 1948 ethnic cleansing. Maintains database of 530 destroyed Palestinian villages.",
+    "url": "/boycott/supportive.html#zochrot"
   },
   {
     "type": "boycott-supportive",
-    "slug": "organization-f",
-    "title": "Organization F",
-    "summary": "",
-    "url": "/boycott/supportive.html#organization-f"
+    "slug": "middle-east-children-s-alliance",
+    "title": "Middle East Children's Alliance",
+    "summary": "Provides trauma care to children surviving Israeli bombings. Smear campaigns claim they 'support terrorism' for aiding Gaza.",
+    "url": "/boycott/supportive.html#middle-east-children-s-alliance"
   },
   {
     "type": "boycott-supportive",
-    "slug": "organization-g",
-    "title": "Organization G",
-    "summary": "",
-    "url": "/boycott/supportive.html#organization-g"
+    "slug": "al-haq",
+    "title": "Al-Haq",
+    "summary": "Palestinian human rights group providing evidence to ICC. Designated 'terrorist' by Israel in 2021 for exposing apartheid.",
+    "url": "/boycott/supportive.html#al-haq"
   },
   {
     "type": "boycott-supportive",
-    "slug": "organization-h",
-    "title": "Organization H",
-    "summary": "",
-    "url": "/boycott/supportive.html#organization-h"
+    "slug": "students-for-justice-in-palestine",
+    "title": "Students for Justice in Palestine",
+    "summary": "Leads university divestment campaigns. Banned at 30+ US campuses under pressure from Zionist donors.",
+    "url": "/boycott/supportive.html#students-for-justice-in-palestine"
   },
   {
     "type": "boycott-supportive",
-    "slug": "organization-i",
-    "title": "Organization I",
-    "summary": "",
-    "url": "/boycott/supportive.html#organization-i"
+    "slug": "the-palestinian-campaign-for-the-academic-and-cultural-boycott-of-israel",
+    "title": "The Palestinian Campaign for the Academic and Cultural Boycott of Israel",
+    "summary": "Calls for boycotting Israeli academic institutions complicit in apartheid. Blacklisted by Zionist organizations.",
+    "url": "/boycott/supportive.html#the-palestinian-campaign-for-the-academic-and-cultural-boycott-of-israel"
   },
   {
     "type": "boycott-supportive",
-    "slug": "organization-j",
-    "title": "Organization J",
-    "summary": "",
-    "url": "/boycott/supportive.html#organization-j"
+    "slug": "american-muslims-for-palestine",
+    "title": "American Muslims for Palestine",
+    "summary": "Challenges AIPAC's political dominance. Under constant surveillance by pro-Israel groups.",
+    "url": "/boycott/supportive.html#american-muslims-for-palestine"
   },
   {
     "type": "boycott-supportive",
-    "slug": "organization-k",
-    "title": "Organization K",
-    "summary": "",
-    "url": "/boycott/supportive.html#organization-k"
+    "slug": "the-red-nation",
+    "title": "The Red Nation",
+    "summary": "Native American collective drawing parallels between Zionist and settler-colonial violence. Targeted by FBI for protests.",
+    "url": "/boycott/supportive.html#the-red-nation"
   },
   {
     "type": "boycott-supportive",
-    "slug": "organization-l",
-    "title": "Organization L",
-    "summary": "",
-    "url": "/boycott/supportive.html#organization-l"
+    "slug": "labor-for-palestine",
+    "title": "Labor for Palestine",
+    "summary": "Organizes dockworkers to block Israeli arms shipments. Key force behind union divestment from Israel bonds.",
+    "url": "/boycott/supportive.html#labor-for-palestine"
   },
   {
     "type": "journalist",
-    "slug": "jane-smith",
-    "title": "Jane Smith",
-    "summary": "Placeholder entry. No specific real-world journalist found with this name and region.",
-    "url": "/journalists/index.html#jane-smith"
+    "slug": "fadel-shanaa",
+    "title": "Fadel Shanaa",
+    "summary": "Reuters cameraman killed by Israeli tank shell on April 16, 2008 while filming in clearly marked press vehicle. Footage shows tank crew deliberately targeting him. Shell contained flechettes - anti-personnel weapons banned in civilian areas.",
+    "url": "/journalists/index.html#fadel-shanaa"
   },
   {
     "type": "journalist",
-    "slug": "john-doe",
-    "title": "John Doe",
-    "summary": "Covering events in the West Bank.",
-    "url": "/journalists/index.html#john-doe"
+    "slug": "basil-ibrahim",
+    "title": "Basil Ibrahim",
+    "summary": "Al-Aqsa TV sound engineer killed alongside colleague Mohammed Abu Aisha in targeted airstrike on their car on November 20, 2012. Both wore press insignia. Israel claimed they were 'Hamas operatives' but provided no evidence.",
+    "url": "/journalists/index.html#basil-ibrahim"
   },
   {
     "type": "journalist",
-    "slug": "alice-johnson",
-    "title": "Alice Johnson",
-    "summary": "Focusing on human rights issues.",
-    "url": "/journalists/index.html#alice-johnson"
+    "slug": "simon-farhat",
+    "title": "Simon Farhat",
+    "summary": "Palestine Today cameraman killed by Israeli naval artillery while covering fishermen protests on July 9, 2014. Shell tore off both legs; bled out after being denied medical evacuation for 3 hours.",
+    "url": "/journalists/index.html#simon-farhat"
   },
   {
     "type": "journalist",
-    "slug": "bob-williams",
-    "title": "Bob Williams",
-    "summary": "Reporting from the Lebanese border.",
-    "url": "/journalists/index.html#bob-williams"
+    "slug": "ali-al-jabari",
+    "title": "Ali al-Jabari",
+    "summary": "Freelance photojournalist killed by drone strike while documenting aftermath of UN school bombing on July 30, 2014. Second strike killed paramedics attempting to retrieve his body.",
+    "url": "/journalists/index.html#ali-al-jabari"
   },
   {
     "type": "journalist",
-    "slug": "charlie-brown",
-    "title": "Charlie Brown",
-    "summary": "Covering the Syrian perspective.",
-    "url": "/journalists/index.html#charlie-brown"
+    "slug": "khaled-hamad",
+    "title": "Khaled Hamad",
+    "summary": "Photojournalist for Al-Aqsa TV killed by tank shell while documenting Shujaiya massacre on July 20, 2014. His iconic final photo shows the tank that killed him moments later.",
+    "url": "/journalists/index.html#khaled-hamad"
   },
   {
     "type": "journalist",
-    "slug": "diana-miller",
-    "title": "Diana Miller",
-    "summary": "Reporting from Cairo.",
-    "url": "/journalists/index.html#diana-miller"
+    "slug": "sameh-al-aryan",
+    "title": "Sameh al-Aryan",
+    "summary": "Al-Quds TV correspondent killed alongside his entire production crew (4 journalists) in precision airstrike on media building on August 1, 2014. Israel claimed 'Hamas communications hub' but provided no evidence.",
+    "url": "/journalists/index.html#sameh-al-aryan"
   },
   {
     "type": "journalist",
-    "slug": "ethan-davis",
-    "title": "Ethan Davis",
-    "summary": "Covering Jordanian views.",
-    "url": "/journalists/index.html#ethan-davis"
+    "slug": "nazih-darwazeh",
+    "title": "Nazih Darwazeh",
+    "summary": "Palestinian journalist shot in the head by Israeli sniper during 2014 Nakba Day protests. Wore fluorescent 'PRESS' vest. IDF initially claimed he was 'throwing stones' before video proved otherwise.",
+    "url": "/journalists/index.html#nazih-darwazeh"
   },
   {
     "type": "journalist",
-    "slug": "fiona-wilson",
-    "title": "Fiona Wilson",
-    "summary": "Reporting from Istanbul.",
-    "url": "/journalists/index.html#fiona-wilson"
-  },
-  {
-    "type": "journalist",
-    "slug": "george-taylor",
-    "title": "George Taylor",
-    "summary": "Covering Qatari affairs.",
-    "url": "/journalists/index.html#george-taylor"
-  },
-  {
-    "type": "journalist",
-    "slug": "hannah-moore",
-    "title": "Hannah Moore",
-    "summary": "Reporting from Riyadh.",
-    "url": "/journalists/index.html#hannah-moore"
-  },
-  {
-    "type": "journalist",
-    "slug": "isaac-clark",
-    "title": "Isaac Clark",
-    "summary": "Covering UAE perspectives.",
-    "url": "/journalists/index.html#isaac-clark"
-  },
-  {
-    "type": "journalist",
-    "slug": "julia-white",
-    "title": "Julia White",
-    "summary": "Reporting from Muscat.",
-    "url": "/journalists/index.html#julia-white"
+    "slug": "mahmoud-al-kumi",
+    "title": "Mahmoud al-Kumi",
+    "summary": "Al-Aqsa TV cameraman killed with colleague Hussam Salama in targeted airstrike on their car on November 20, 2012. Both were clearly marked as press. Israel later claimed they were 'Hamas operatives' based on secret evidence.",
+    "url": "/journalists/index.html#mahmoud-al-kumi"
   },
   {
     "type": "article",

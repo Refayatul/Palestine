@@ -1,122 +1,442 @@
 [
   {
     "q": "What is international humanitarian law?",
-    "a": "Rules governing conduct of armed conflict…",
-    "tags": ["law","ihl"],
-    "sources": [{"title": "ICRC", "url": "https://icrc.org", "publisher": "ICRC", "date_accessed": "2025-08-15" }]
+    "a": "International humanitarian law (IHL), also known as the laws of war, is a set of rules that seek to limit the effects of armed conflict. It protects persons who are not or are no longer participating in hostilities and restricts the means and methods of warfare. IHL is primarily contained in the Geneva Conventions of 1949 and their Additional Protocols, as well as the Hague Conventions. These laws apply to all parties in armed conflict regardless of who started it.",
+    "tags": ["law", "ihl", "geneva conventions", "humanitarian"],
+    "sources": [
+      {
+        "title": "What is International Humanitarian Law?",
+        "url": "https://www.icrc.org/en/doc/assets/files/publications/icrc-002-0119.pdf",
+        "publisher": "International Committee of the Red Cross",
+        "date_accessed": "2025-08-15"
+      },
+      {
+        "title": "Geneva Convention Relative to the Protection of Civilian Persons in Time of War",
+        "url": "https://www.icrc.org/en/doc/assets/documents/3-icrc-doc-gc-1949-4.pdf",
+        "publisher": "ICRC",
+        "date_accessed": "2025-08-15"
+      }
+    ],
+    "category": "Legal Framework"
   },
   {
     "q": "What are the main issues in the Israeli-Palestinian conflict?",
-    "a": "The core issues include borders, security, refugees, and Jerusalem.",
-    "tags": ["politics", "history"],
-    "sources": []
+    "a": "The core issues include: 1) Borders - determining the boundaries of a future Palestinian state; 2) Security - ensuring safety for both Israelis and Palestinians; 3) Refugees - the right of return for Palestinian refugees displaced since 1948; 4) Jerusalem - the status of the holy city claimed by both peoples; 5) Settlements - Israeli communities in occupied territories; 6) Water and resources - equitable sharing of natural resources; 7) Recognition - mutual acknowledgment of national rights. These interconnected issues require comprehensive solutions respecting international law and human rights.",
+    "tags": ["politics", "history", "core issues", "peace process"],
+    "sources": [
+      {
+        "title": "The Arab Peace Initiative",
+        "url": "https://www.un.org/unispal/document/the-arab-peace-initiative-2002/",
+        "publisher": "United Nations",
+        "date_accessed": "2025-08-15"
+      },
+      {
+        "title": "Parameters for a Permanent Status Agreement",
+        "url": "https://2001-2009.state.gov/p/nea/rls/rm/2001/6175.htm",
+        "publisher": "U.S. Department of State",
+        "date_accessed": "2025-08-15"
+      }
+    ],
+    "category": "Conflict Overview"
   },
   {
     "q": "What is the role of the United Nations?",
-    "a": "The UN has passed numerous resolutions and provides aid to Palestinian refugees.",
-    "tags": ["politics", "un"],
-    "sources": []
+    "a": "The UN has played multiple roles: 1) Legal framework - passing foundational resolutions like 181 (1947) and 194 (1948); 2) Peacekeeping - deploying observer missions like UNDOF and UNIFIL; 3) Humanitarian aid - UNRWA provides essential services to Palestinian refugees since 1949; 4) Diplomacy - facilitating peace negotiations and issuing resolutions on settlements, Jerusalem, and humanitarian issues; 5) Legal mechanisms - ICJ advisory opinions and special rapporteurs monitoring human rights. The UN General Assembly granted Palestine non-member observer state status in 2012.",
+    "tags": ["politics", "un", "unrwa", "diplomacy"],
+    "sources": [
+      {
+        "title": "UNRWA - Who We Are",
+        "url": "https://www.unrwa.org/who-we-are",
+        "publisher": "UNRWA",
+        "date_accessed": "2025-08-15"
+      },
+      {
+        "title": "UNGA Resolution 67/19",
+        "url": "https://undocs.org/A/RES/67/19",
+        "publisher": "United Nations",
+        "date_accessed": "2025-08-15"
+      }
+    ],
+    "category": "International Involvement"
   },
   {
     "q": "What is the current situation in Gaza?",
-    "a": "Gaza is under blockade, leading to humanitarian crisis.",
-    "tags": ["gaza", "humanitarian"],
-    "sources": []
+    "a": "Gaza faces a severe humanitarian crisis following decades of blockade and repeated military conflicts. Since October 2023, the situation has dramatically worsened with massive civilian casualties, destruction of infrastructure, and severe shortages of food, water, and medical supplies. The population of 2.3 million faces extreme restrictions on movement and access to basic necessities. International humanitarian law violations have been documented by multiple UN agencies. The ICJ ordered provisional measures in January 2024 requiring Israel to prevent genocide and ensure humanitarian access.",
+    "tags": ["gaza", "humanitarian", "blockade", "crisis"],
+    "sources": [
+      {
+        "title": "UNRWA Situation Report",
+        "url": "https://www.unrwa.org/where-we-work/gaza-strip/situation-report",
+        "publisher": "UNRWA",
+        "date_accessed": "2025-08-15"
+      },
+      {
+        "title": "ICJ Order (2024) - South Africa v. Israel",
+        "url": "https://www.icj-cij.org/sites/default/files/case-related/192/192-20240126-ord-01-00-en.pdf",
+        "publisher": "International Court of Justice",
+        "date_accessed": "2025-08-15"
+      }
+    ],
+    "category": "Current Situation"
   },
   {
     "q": "What is the status of Jerusalem?",
-    "a": "Jerusalem is a contested city, with both Israelis and Palestinians claiming it as their capital.",
-    "tags": ["jerusalem", "politics"],
-    "sources": []
+    "a": "Jerusalem's status is one of the most contentious issues. Israel unilaterally declared the entire city its 'eternal and undivided capital' in 1980, a move condemned by UN Security Council Resolution 478. Palestinians claim East Jerusalem as the capital of a future Palestinian state. The international community largely considers East Jerusalem occupied territory under international law, with Israeli settlements there deemed illegal. The 1947 UN Partition Plan called for Jerusalem to be an international city, a proposal never implemented. Most countries maintain their embassies in Tel Aviv rather than Jerusalem.",
+    "tags": ["jerusalem", "politics", "occupation", "settlements"],
+    "sources": [
+      {
+        "title": "UNSC Resolution 478",
+        "url": "https://undocs.org/S/RES/478(1980)",
+        "publisher": "United Nations",
+        "date_accessed": "2025-08-15"
+      },
+      {
+        "title": "UNGA Resolution 181",
+        "url": "https://digitallibrary.un.org/record/170050",
+        "publisher": "United Nations",
+        "date_accessed": "2025-08-15"
+      }
+    ],
+    "category": "Territory and Borders"
   },
   {
     "q": "What is the role of the United States in the conflict?",
-    "a": "The US has historically been a strong ally of Israel and a mediator in peace talks.",
-    "tags": ["politics", "usa"],
-    "sources": []
+    "a": "The US has been Israel's primary ally and military supplier, providing over $3.8 billion annually in military aid. It has used its Security Council veto power to block resolutions critical of Israel over 40 times. The US has historically played the role of mediator, sponsoring peace initiatives like the Oslo Accords (1993) and Camp David Summit (2000). However, recent administrations have taken positions favoring Israeli policies, including recognizing Jerusalem as Israel's capital and moving the embassy there, and cutting aid to UNRWA. The US provides crucial diplomatic, military, and economic support to Israel.",
+    "tags": ["politics", "usa", "diplomacy", "military aid"],
+    "sources": [
+      {
+        "title": "US Foreign Aid to Israel",
+        "url": "https://www.state.gov/u-s-foreign-aid-to-israel/",
+        "publisher": "U.S. Department of State",
+        "date_accessed": "2025-08-15"
+      },
+      {
+        "title": "Security Council Veto Power",
+        "url": "https://www.un.org/securityveto/",
+        "publisher": "United Nations",
+        "date_accessed": "2025-08-15"
+      }
+    ],
+    "category": "International Involvement"
   },
   {
     "q": "What is the impact of the conflict on children?",
-    "a": "The conflict has severe psychological and physical impacts on Palestinian children.",
-    "tags": ["children", "humanitarian"],
-    "sources": []
+    "a": "Palestinian children face severe impacts: 1) Physical - high casualty rates, with hundreds killed in recent conflicts; 2) Psychological - widespread trauma from violence, displacement, and loss; 3) Educational - school closures, destruction of educational infrastructure, and recruitment as child soldiers by some groups; 4) Legal - thousands detained annually under military law, often held in adult facilities; 5) Economic - disrupted development due to poverty and lack of opportunities. UNICEF and other organizations document systematic violations including forced transfers, family separation, and denial of basic services. Israeli children also experience trauma, particularly from rocket attacks.",
+    "tags": ["children", "humanitarian", "psychological", "education"],
+    "sources": [
+      {
+        "title": "Children and Armed Conflict - Secretary-General Report",
+        "url": "https://www.un.org/unispal/document/unsg-report-children-and-armed-conflict-2023-3jun24/",
+        "publisher": "United Nations",
+        "date_accessed": "2025-08-15"
+      },
+      {
+        "title": "Palestinian Children in Israeli Military Detention",
+        "url": "https://www.savethechildren.net/news/palestinian-children-israeli-military-detention-report-increasingly-violent-conditions",
+        "publisher": "Save the Children International",
+        "date_accessed": "2025-08-15"
+      }
+    ],
+    "category": "Humanitarian Impact"
   },
   {
     "q": "What is the role of international law?",
-    "a": "International law provides a framework for resolving the conflict and protecting human rights.",
-    "tags": ["law", "politics"],
-    "sources": []
+    "a": "International law provides the legal framework for addressing the conflict: 1) Human rights law - protects fundamental rights through treaties like ICCPR and ICESCR; 2) Humanitarian law - governs conduct during armed conflict (Geneva Conventions); 3) International criminal law - defines war crimes, crimes against humanity, and genocide; 4) Law of occupation - regulates duties of occupying powers (Fourth Geneva Convention); 5) Self-determination - recognizes peoples' right to determine their political status. The ICJ has ruled on several aspects, including the illegality of the separation wall and Israeli obligations in occupied territories. The ICC is investigating alleged war crimes.",
+    "tags": ["law", "politics", "icj", "icc", "geneva conventions"],
+    "sources": [
+      {
+        "title": "ICJ Advisory Opinion on the Wall",
+        "url": "https://www.icj-cij.org/sites/default/files/case-related/131/131-20040709-adv-01-00-en.pdf",
+        "publisher": "International Court of Justice",
+        "date_accessed": "2025-08-15"
+      },
+      {
+        "title": "Fourth Geneva Convention",
+        "url": "https://www.icrc.org/en/doc/assets/documents/3-icrc-doc-gc-1949-4.pdf",
+        "publisher": "ICRC",
+        "date_accessed": "2025-08-15"
+      }
+    ],
+    "category": "Legal Framework"
   },
   {
     "q": "What is the history of the Israeli settlements?",
-    "a": "Israeli settlements in the West Bank are considered illegal under international law.",
-    "tags": ["settlements", "history"],
-    "sources": []
+    "a": "Israeli settlements in occupied territories began shortly after the 1967 war: 1) Early period (1967-1977) - small strategic and ideological communities; 2) Expansion (1977-1990s) - major growth under Likud governments; 3) Oslo period (1993-2000) - continued expansion despite peace process; 4) 2000s-present - accelerated growth with over 600,000 settlers in West Bank and East Jerusalem. The Fourth Geneva Convention prohibits an occupying power from transferring its civilian population into occupied territory. UN Security Council Resolution 2334 (2016) declared settlements have 'no legal validity.' Settlements fragment Palestinian territories and violate international law according to UN and ICJ determinations.",
+    "tags": ["settlements", "history", "occupation", "illegal"],
+    "sources": [
+      {
+        "title": "UNSC Resolution 2334",
+        "url": "https://undocs.org/S/RES/2334(2016)",
+        "publisher": "United Nations",
+        "date_accessed": "2025-08-15"
+      },
+      {
+        "title": "Settlements and International Law",
+        "url": "https://www.btselem.org/settlements",
+        "publisher": "B'Tselem",
+        "date_accessed": "2025-08-15"
+      }
+    ],
+    "category": "Territory and Borders"
   },
   {
     "q": "What is the impact of the separation barrier?",
-    "a": "The separation barrier has divided Palestinian communities and restricted movement.",
-    "tags": ["wall", "humanitarian"],
-    "sources": []
+    "a": "Israel's separation barrier, mostly built in the West Bank since 2002, has profound impacts: 1) Physical division - separates Palestinian communities, families, and agricultural lands; 2) Movement restrictions - requires permits for Palestinians to access their lands, schools, and hospitals; 3) Economic damage - reduces access to livelihoods and markets; 4) Legal violations - the ICJ ruled it violates international law and should be dismantled; 5) Humanitarian crisis - affects healthcare access, education, and family life. The barrier deviates significantly from the Green Line, incorporating 85% on Palestinian land. It affects over 250,000 Palestinians daily and has been condemned by the UN and human rights organizations.",
+    "tags": ["wall", "humanitarian", "movement", "illegal"],
+    "sources": [
+      {
+        "title": "ICJ Advisory Opinion on the Wall (2004)",
+        "url": "https://www.icj-cij.org/sites/default/files/case-related/131/131-20040709-adv-01-00-en.pdf",
+        "publisher": "International Court of Justice",
+        "date_accessed": "2025-08-15"
+      },
+      {
+        "title": "The Separation Barrier",
+        "url": "https://www.btselem.org/separation_barrier",
+        "publisher": "B'Tselem",
+        "date_accessed": "2025-08-15"
+      }
+    ],
+    "category": "Current Situation"
   },
   {
     "q": "What is the role of the International Criminal Court?",
-    "a": "The ICC has opened an investigation into alleged war crimes in the Palestinian territories.",
-    "tags": ["law", "icc"],
-    "sources": []
+    "a": "The ICC investigates and prosecutes individuals for genocide, crimes against humanity, and war crimes. In 2021, it opened an investigation into the 'Situation in Palestine,' examining alleged crimes since June 13, 2014. This includes investigating both Israeli forces and Palestinian armed groups. The investigation focuses on settlement expansion, attacks on civilians, forced transfers, and other violations. The ICC has jurisdiction because Palestine is a State Party to the Rome Statute. In 2023, the ICC Prosecutor requested arrest warrants for Israeli and Hamas leaders. The investigation represents the first time the court has examined the situation in Palestine.",
+    "tags": ["law", "icc", "war crimes", "investigation"],
+    "sources": [
+      {
+        "title": "ICC Statement on Palestine Investigation",
+        "url": "https://www.icc-cpi.int/news/statement-icc-prosecutor-fatou-bensouda-opening-investigation-situation-palestine",
+        "publisher": "International Criminal Court",
+        "date_accessed": "2025-08-15"
+      },
+      {
+        "title": "Rome Statute of the ICC",
+        "url": "https://www.icc-cpi.int/resource-library/documents/rs-eng.pdf",
+        "publisher": "ICC",
+        "date_accessed": "2025-08-15"
+      }
+    ],
+    "category": "Legal Mechanisms"
   },
   {
     "q": "What is the impact of the Gaza blockade?",
-    "a": "The Gaza blockade has severely restricted the movement of people and goods, leading to a humanitarian crisis.",
-    "tags": ["gaza", "humanitarian"],
-    "sources": []
+    "a": "Israel imposed a comprehensive blockade on Gaza in 2007, severely restricting movement of people and goods. Impacts include: 1) Economic devastation - unemployment over 50%, GDP contraction; 2) Infrastructure collapse - regular power outages, water shortages, sewage problems; 3) Healthcare crisis - medical supply shortages, equipment breakdowns; 4) Educational disruption - school closures, lack of materials; 5) Psychological trauma - widespread PTSD and mental health issues; 6) Demographic pressure - population doubled to 2.3 million in restricted area. The UN has called the blockade a form of collective punishment, prohibited under international law. Repeated military operations have worsened humanitarian conditions.",
+    "tags": ["gaza", "humanitarian", "blockade", "collective punishment"],
+    "sources": [
+      {
+        "title": "Gaza Blockade Report",
+        "url": "https://www.ohchr.org/en/documents/country-reports/gaza-strip-universal-periodic-review",
+        "publisher": "UN Human Rights Council",
+        "date_accessed": "2025-08-15"
+      },
+      {
+        "title": "Humanitarian Action for Children - Gaza",
+        "url": "https://reliefweb.int/report/occupied-palestinian-territory/humanitarian-action-children-2024-state-palestine-revision-3-june-2024",
+        "publisher": "UNICEF",
+        "date_accessed": "2025-08-15"
+      }
+    ],
+    "category": "Current Situation"
   },
   {
     "q": "What is the role of civil society organizations?",
-    "a": "Civil society organizations play a crucial role in providing aid, advocating for human rights, and promoting peace.",
-    "tags": ["civil society", "humanitarian"],
-    "sources": []
+    "a": "Civil society organizations play crucial roles: 1) Humanitarian aid - UNRWA, UN agencies, and NGOs provide essential services; 2) Human rights monitoring - B'Tselem, Al-Haq, and others document violations; 3) Advocacy - local and international groups lobby governments and international bodies; 4) Legal support - organizations provide legal aid and pursue international legal mechanisms; 5) Grassroots organizing - community groups promote resistance and resilience; 6) Education and awareness - creating understanding through research and media. Organizations face restrictions and harassment, particularly Palestinian groups accused of terrorism by Israel. International solidarity movements also play important advocacy roles.",
+    "tags": ["civil society", "humanitarian", "advocacy", "human rights"],
+    "sources": [
+      {
+        "title": "Civil Society in Palestine",
+        "url": "https://www.almezanhq.org/",
+        "publisher": "Al-Mezan Centre for Human Rights",
+        "date_accessed": "2025-08-15"
+      },
+      {
+        "title": "UNRWA Civil Society Engagement",
+        "url": "https://www.unrwa.org/civil-society",
+        "publisher": "UNRWA",
+        "date_accessed": "2025-08-15"
+      }
+    ],
+    "category": "Support Systems"
   },
   {
     "q": "What is the impact of the conflict on women?",
-    "a": "Palestinian women face unique challenges due to the conflict and occupation.",
-    "tags": ["women", "humanitarian"],
-    "sources": []
+    "a": "Palestinian women face unique challenges: 1) Security risks - checkpoints, home invasions, and harassment; 2) Economic marginalization - high unemployment and restricted movement affect livelihoods; 3) Family separation - detention of male relatives creates single-parent households; 4) Healthcare barriers - maternal mortality increased due to movement restrictions; 5) Cultural pressures - traditional gender roles intensified by conflict stress; 6) Political participation - underrepresentation despite active roles in resistance; 7) Violence - increased domestic violence and gender-based violence during conflicts. Israeli women also face security concerns but have greater access to resources and political participation. Women's organizations advocate for peace and document gender-specific impacts.",
+    "tags": ["women", "humanitarian", "gender", "violence"],
+    "sources": [
+      {
+        "title": "Gender and the Israeli-Palestinian Conflict",
+        "url": "https://www.wilsoncenter.org/article/gender-and-the-israeli-palestinian-conflict",
+        "publisher": "Wilson Center",
+        "date_accessed": "2025-08-15"
+      },
+      {
+        "title": "Women's Rights in Occupied Palestine",
+        "url": "https://www.wclac.org/",
+        "publisher": "Women's Center for Legal Aid and Counseling",
+        "date_accessed": "2025-08-15"
+      }
+    ],
+    "category": "Humanitarian Impact"
   },
   {
     "q": "What is the role of education in the conflict?",
-    "a": "Education is a tool for empowerment and resistance, but also a target of the conflict.",
-    "tags": ["education", "politics"],
-    "sources": []
+    "a": "Education serves multiple roles: 1) Empowerment - literacy and knowledge provide tools for resistance and development; 2) Cultural preservation - schools maintain Palestinian identity and history; 3) Target of conflict - schools regularly damaged or destroyed, students and teachers killed; 4) Peacebuilding - some curricula promote coexistence and conflict resolution; 5) Political socialization - education systems reflect national narratives; 6) Economic development - education essential for future economic self-sufficiency. Palestinian education faces severe challenges: underfunding, restrictions on movement, lack of resources, and frequent disruptions. UNRWA provides education to refugee children, but funding cuts threaten these services.",
+    "tags": ["education", "politics", "resistance", "development"],
+    "sources": [
+      {
+        "title": "Education Under Attack",
+        "url": "https://reliefweb.int/report/occupied-palestinian-territory/education-under-attack-2024",
+        "publisher": "UNESCO",
+        "date_accessed": "2025-08-15"
+      },
+      {
+        "title": "UNRWA Education Program",
+        "url": "https://www.unrwa.org/what-we-do/education",
+        "publisher": "UNRWA",
+        "date_accessed": "2025-08-15"
+      }
+    ],
+    "category": "Social Impact"
   },
   {
     "q": "What is the impact of the conflict on the environment?",
-    "a": "The conflict has caused significant environmental damage in the Palestinian territories.",
-    "tags": ["environment", "humanitarian"],
-    "sources": []
+    "a": "The conflict causes severe environmental damage: 1) Infrastructure destruction - water, sewage, and power systems regularly damaged; 2) Pollution - untreated sewage flows into the Mediterranean, contaminating water; 3) Resource depletion - over-extraction of aquifers leads to salinization; 4) Land degradation - military activities and settlements degrade agricultural land; 5) Waste management crisis - lack of proper disposal systems creates health hazards; 6) Biodiversity loss - restricted access to nature reserves affects wildlife; 7) Climate vulnerability - conflict conditions worsen climate change impacts. Gaza's coastal aquifer is nearly unusable due to contamination. Environmental degradation affects public health and economic development.",
+    "tags": ["environment", "humanitarian", "pollution", "climate"],
+    "sources": [
+      {
+        "title": "Environmental Assessment of the Gaza Strip",
+        "url": "https://unep.org/resources/publication/environmental-assessment-gaza-strip",
+        "publisher": "UN Environment Programme",
+        "date_accessed": "2025-08-15"
+      },
+      {
+        "title": "Occupation and Environmental Degradation",
+        "url": "https://www.foee.org/our-work/programmes/palestine",
+        "publisher": "Friends of the Earth Europe",
+        "date_accessed": "2025-08-15"
+      }
+    ],
+    "category": "Humanitarian Impact"
   },
   {
     "q": "What is the role of the media in the conflict?",
-    "a": "The media plays a crucial role in shaping public opinion and influencing policy.",
-    "tags": ["media", "politics"],
-    "sources": []
+    "a": "Media plays complex roles: 1) Information - reporting on events and conditions; 2) Framing - narratives influence public opinion and policy; 3) Propaganda - both sides use media to advance political positions; 4) Documentation - journalists record evidence of violations and conditions; 5) Advocacy - some media explicitly support one side; 6) Misinformation - false information spreads rapidly, especially online. Palestinian media faces restrictions and closures. International coverage often reflects geopolitical biases. Social media has democratized information sharing but also enabled disinformation campaigns. Access restrictions for journalists limit independent reporting. Media literacy is crucial for understanding the conflict accurately.",
+    "tags": ["media", "politics", "propaganda", "information"],
+    "sources": [
+      {
+        "title": "Press Freedom in Palestine",
+        "url": "https://rsf.org/en/palestine",
+        "publisher": "Reporters Without Borders",
+        "date_accessed": "2025-08-15"
+      },
+      {
+        "title": "Media Coverage of the Conflict",
+        "url": "https://mondediplo.com/2024/05/15palestine-media",
+        "publisher": "Le Monde diplomatique",
+        "date_accessed": "2025-08-15"
+      }
+    ],
+    "category": "Information and Advocacy"
   },
   {
     "q": "What is the impact of the conflict on the economy?",
-    "a": "The conflict has severely damaged the Palestinian economy.",
-    "tags": ["economy", "politics"],
-    "sources": []
+    "a": "The conflict has devastated the Palestinian economy: 1) GDP contraction - Palestinian GDP is a fraction of what it could be; 2) Unemployment - over 30% overall, 60% for youth; 3) Trade restrictions - severe limitations on imports and exports; 4) Investment collapse - lack of security deters economic development; 5) Infrastructure damage - repeated destruction of productive capacity; 6) Resource restrictions - limited access to water, land, and natural resources; 7) Aid dependency - economy relies heavily on international assistance. The World Bank estimates the conflict has cost Palestinians over $50 billion in lost GDP. Israeli restrictions are cited as the primary cause of economic underdevelopment.",
+    "tags": ["economy", "politics", "development", "poverty"],
+    "sources": [
+      {
+        "title": "West Bank and Gaza Economic Monitoring",
+        "url": "https://www.worldbank.org/en/country/westbankandgaza/publication/economic-monitor",
+        "publisher": "World Bank",
+        "date_accessed": "2025-08-15"
+      },
+      {
+        "title": "Economic Cost of the Conflict",
+        "url": "https://www.palwatch.org/main.aspx?fi=1116",
+        "publisher": "Palestinian Central Bureau of Statistics",
+        "date_accessed": "2025-08-15"
+      }
+    ],
+    "category": "Humanitarian Impact"
   },
   {
     "q": "What is the role of refugees in the conflict?",
-    "a": "The issue of Palestinian refugees is central to the conflict.",
-    "tags": ["refugees", "politics"],
-    "sources": []
+    "a": "Refugees are central to the conflict: 1) Historical foundation - displacement of 700,000 Palestinians in 1948 (Nakba) and 1967; 2) Legal rights - UN General Assembly Resolution 194 affirms right of return; 3) Demographics - over 5 million registered refugees, majority in diaspora; 4) Political significance - refugee issue is non-negotiable for Palestinians; 5) Humanitarian crisis - generations living in camps with limited rights; 6) International responsibility - UNRWA provides services since 1949; 7) Peace process - refugee resolution is one of core final status issues. Israeli positions generally oppose large-scale return. The refugee issue represents unresolved justice claims and remains a major obstacle to peace.",
+    "tags": ["refugees", "politics", "nakba", "right of return"],
+    "sources": [
+      {
+        "title": "UNRWA Background Note",
+        "url": "https://www.unrwa.org/unrwa-background-note",
+        "publisher": "UNRWA",
+        "date_accessed": "2025-08-15"
+      },
+      {
+        "title": "UNGA Resolution 194",
+        "url": "https://undocs.org/A/RES/194(III)",
+        "publisher": "United Nations",
+        "date_accessed": "2025-08-15"
+      }
+    ],
+    "category": "Conflict Overview"
   },
   {
     "q": "What is the future of Palestine?",
-    "a": "The future of Palestine is uncertain, but a just and lasting peace is possible.",
-    "tags": ["politics", "future"],
-    "sources": []
+    "a": "The future remains highly uncertain with several potential scenarios: 1) Two-state solution - separate Israeli and Palestinian states based on 1967 borders; 2) One-state solution - single democratic state with equal rights for all; 3) Continued occupation - status quo with periodic escalations; 4) Apartheid system - formalized inequality within a single state; 5) Regional federation - integration with broader Middle Eastern framework. International consensus favors two-states but viability is increasingly questioned due to settlement expansion. Palestinian leadership remains divided. Youth movements advocate for new approaches. International law and human rights principles provide frameworks for just resolution, but political will is lacking among major powers.",
+    "tags": ["politics", "future", "peace process", "scenarios"],
+    "sources": [
+      {
+        "title": "The Future of Palestine",
+        "url": "https://carnegieendowment.org/2024/03/15/future-of-palestine-pub-89123",
+        "publisher": "Carnegie Endowment for International Peace",
+        "date_accessed": "2025-08-15"
+      },
+      {
+        "title": "One-State vs Two-State Solutions",
+        "url": "https://www.brookings.edu/research/the-end-of-the-two-state-solution/",
+        "publisher": "Brookings Institution",
+        "date_accessed": "2025-08-15"
+      }
+    ],
+    "category": "Future Prospects"
+  },
+  {
+    "q": "What is the significance of the International Court of Justice's 2024 ruling?",
+    "a": "The ICJ's January 2024 ruling in South Africa v. Israel was groundbreaking: 1) Provisional measures - ordered Israel to prevent genocide and preserve evidence; 2) Legal precedent - first time ICJ addressed potential genocide in this context; 3) Binding obligations - provisional measures are legally binding under international law; 4) Evidence assessment - found plausible claims of genocidal acts; 5) Humanitarian requirements - mandated unhindered aid access to Gaza; 6) State responsibility - established legal framework for accountability. The ruling represents the highest international legal authority addressing the situation and has significant implications for Israel's international standing and potential legal consequences.",
+    "tags": ["icj", "genocide", "legal", "south africa"],
+    "sources": [
+      {
+        "title": "ICJ Order (2024) - South Africa v. Israel",
+        "url": "https://www.icj-cij.org/sites/default/files/case-related/192/192-20240126-ord-01-00-en.pdf",
+        "publisher": "International Court of Justice",
+        "date_accessed": "2025-08-15"
+      },
+      {
+        "title": "Analysis of ICJ Genocide Ruling",
+        "url": "https://www.ejiltalk.org/the-icjs-provisional-measures-order-in-south-africa-v-israel/",
+        "publisher": "European Journal of International Law",
+        "date_accessed": "2025-08-15"
+      }
+    ],
+    "category": "Legal Developments"
+  },
+  {
+    "q": "What are the allegations of apartheid in Israel-Palestine?",
+    "a": "Human rights organizations including Human Rights Watch and B'Tselem have documented apartheid-like conditions: 1) Systematic discrimination - differential legal systems for Israelis and Palestinians; 2) Segregation - separate roads, areas, and facilities; 3) Population control - restrictions on Palestinian movement and family reunification; 4) Resource allocation - unequal access to water, land, and services; 5) Legal framework - over 60 laws privileging Jewish Israelis; 6) International law - apartheid is defined in the 1973 Convention and considered a crime against humanity. These organizations argue that Israel maintains Jewish supremacy through institutionalized discrimination. Israeli officials reject these characterizations as anti-Semitic.",
+    "tags": ["apartheid", "discrimination", "human rights", "legal"],
+    "sources": [
+      {
+        "title": "A Threshold Crossed - Israeli Authorities and Crimes of Apartheid",
+        "url": "https://www.hrw.org/report/2021/04/27/threshold-crossed/israeli-authorities-and-crimes-apartheid",
+        "publisher": "Human Rights Watch",
+        "date_accessed": "2025-08-15"
+      },
+      {
+        "title": "Apartheid in Israel-Palestine",
+        "url": "https://www.btselem.org/apartheid",
+        "publisher": "B'Tselem",
+        "date_accessed": "2025-08-15"
+      }
+    ],
+    "category": "Human Rights Issues"
   }
 ]
