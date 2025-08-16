@@ -196,10 +196,12 @@ nav {
 .mobile-nav ul {
     list-style: none;
     text-align: center;
+    width: 100%;
 }
 
 .mobile-nav li {
     margin: 12px 0;
+    width: 100%;
 }
 
 .mobile-nav a {
@@ -207,6 +209,8 @@ nav {
     color: #fff;
     text-decoration: none;
     padding: 10px 20px;
+    display: block;
+    width: 100%;
 }
 
 /* Hero Section */
@@ -737,6 +741,20 @@ footer {
         content: " ▼";
         font-size: 0.8rem;
         margin-left: 5px;
+    }
+    
+    .mobile-nav li {
+        margin: 0;
+    }
+    
+    .mobile-nav a {
+        padding: 15px 20px;
+        border-bottom: 1px solid #333;
+    }
+    
+    .mobile-dropdown-menu a {
+        padding: 12px 30px;
+        font-size: 1.1rem;
     }
 }
 
