@@ -212,7 +212,7 @@ nav {
 /* Hero Section */
 .hero {
     height: calc(100vh - 60px);
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
                 url('https://images.pexels.com/photos/1646389/pexels-photo-1646389.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
     background-size: cover;
     background-position: center;
