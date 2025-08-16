@@ -1,0 +1,127 @@
+# Focus Chain List for Task 1755316708264
+
+<!-- Edit this markdown file to update your focus chain focusChain list -->
+<!-- Use the format: - [ ] for incomplete items and - [x] for completed items -->
+
+- [ ] **Phase P1: Core Content + Advocacy Tools Implementation**
+  - [ ] **Part A — Core Content Expansions**
+    - [x] **Legal Library hub**
+      - [x] Create `/assets/data/legal.json` with 20+ entries.
+      - [x] Create `/legal/index.html`.
+      - [x] Create `/assets/js/render-legal.js`.
+      - [x] Implement search field and filters (type, year) on `/legal/index.html`.
+      - [x] Implement rendering of legal cards (title, type badge, year, summary, “Open” link) in `render-legal.js`.
+      - [x] Ensure accessibility (semantic controls, aria labels, visible focus, aria-live for results count).
+      - [x] Add “Legal” to navigation.
+      - [x] Add entry to `/assets/data/search-index.json` for Legal Library.
+      - [x] Add `/legal/index.html` to `/sitemap.xml`.
+    - [x] **War chronologies & deep dives (timeline pages)**
+      - [x] Create page: `/history/1948.html`.
+      - [x] Create page: `/history/1967.html`.
+      - [x] Create page: `/history/1987.html`.
+      - [x] Create page: `/history/2000.html`.
+      - [x] Create page: `/history/2008.html`.
+      - [x] Create page: `/history/2014.html`.
+      - [x] Create page: `/history/2021.html`.
+      - [x] Create page: `/history/2023.html`.
+      - [x] Create data file: `/assets/data/history/1948.json`.
+      - [x] Create data file: `/assets/data/history/1967.json`.
+      - [x] Create data file: `/assets/data/history/1987.json`.
+      - [x] Create data file: `/assets/data/history/2000.json`.
+      - [x] Create data file: `/assets/data/history/2008.json`.
+      - [x] Create data file: `/assets/data/history/2014.json`.
+      - [x] Create data file: `/assets/data/history/2021.json`.
+      - [x] Create data file: `/assets/data/history/2023.json`.
+      - [x] Create shared renderer: `/assets/js/render-history.js`.
+      - [x] Implement rendering of vertical timeline with events, including deep linking and auto-scroll/expand.
+      - [x] Include “Back to History” link on each page.
+      - [x] Add each year page to `/assets/data/search-index.json`.
+      - [x] Add each year page to `/sitemap.xml`.
+    - [x] **Teacher/Student kits with print CSS**
+      - [x] Create `/education/teachers.html`.
+      - [x] Create `/education/students.html`.
+      - [x] Append `@media print` styles to `/assets/css/style.css` (hide nav/footer, remove dark backgrounds, show URL after anchors).
+      - [x] Implement sections: Objectives, Activities, Reading list, “Print this page” button.
+      - [ ] Add “Education” to nav dropdown or footer.
+      - [x] Add both pages to `/assets/data/search-index.json`.
+      - [x] Add both pages to `/sitemap.xml`.
+    - [x] **Diaspora hub**
+      - [x] Create `/assets/data/diaspora/regions.json`.
+      - [x] Create `/assets/data/diaspora/europe.json`.
+      - [x] Create `/assets/data/diaspora/north-america.json`.
+      - [ ] Create `/assets/data/diaspora/{region}.json` for example regions.
+      - [x] Create `/diaspora/index.html`.
+      - [x] Create `/assets/js/render-diaspora.js`.
+      - [x] Implement UI with region selector, search, and two grids (Communities, Organizations).
+      - [x] Ensure accessibility (aria labels, focusable elements, results count aria-live).
+      - [x] Add “Diaspora” to navigation.
+      - [x] Add `/diaspora/index.html` to `/assets/data/search-index.json`.
+      - [x] Add `/diaspora/index.html` to `/sitemap.xml`.
+    - [ ] **Women / Youth / Labor sections**
+      - [x] Create `/assets/data/movements/women.json`.
+      - [x] Create `/assets/data/movements/youth.json`.
+      - [x] Create `/assets/data/movements/labor.json`.
+      - [x] Create page: `/movements/women.html`.
+      - [ ] Create pages: `/movements/youth.html`, `/movements/labor.html`.
+      - [ ] Create shared renderer: `/assets/js/render-movements.js`.
+      - [ ] Implement rendering of intro + cards for profiles, orgs, actions, and sources.
+      - [ ] Add “Movements” to navigation.
+      - [ ] Add all three pages to `/assets/data/search-index.json`.
+      - [ ] Add all three pages to `/sitemap.xml`.
+  - [ ] **Part B — Advocacy & Action Tools (static)**
+    - [ ] **Letter/email builder (mailto)**
+      - [ ] Create `/assets/data/letters.json`.
+      - [ ] Create `/tools/letters.html`.
+      - [ ] Create `/assets/js/render-letters.js`.
+      - [ ] Implement UI with country/role selects, name/your_name inputs, preview, Copy email body, Open in email app buttons.
+      - [ ] Persist last choice in localStorage.
+      - [ ] Ensure mailto encodes correctly and copy shows feedback.
+      - [ ] Add to navigation “Tools”.
+      - [ ] Add `/tools/letters.html` to `/assets/data/search-index.json`.
+      - [ ] Add `/tools/letters.html` to `/sitemap.xml`.
+    - [ ] **Phone call scripts**
+      - [ ] Create `/assets/data/calls.json`.
+      - [ ] Create `/tools/calls.html`.
+      - [ ] Create `/assets/js/render-calls.js`.
+      - [ ] Implement filters for country/role, one-click copy, aria-live feedback, visible focus.
+      - [ ] Add to navigation “Tools”.
+      - [ ] Add `/tools/calls.html` to `/assets/data/search-index.json`.
+      - [ ] Add `/tools/calls.html` to `/sitemap.xml`.
+    - [ ] **Protest/event finder**
+      - [ ] Create `/assets/data/events.json`.
+      - [ ] Create `/events/index.html`.
+      - [ ] Create `/assets/js/render-events.js`.
+      - [ ] Implement tabs for Upcoming/Past, search by city/country, cards with details, hash deep-link.
+      - [ ] Add to navigation “Events”.
+      - [ ] Add `/events/index.html` to `/assets/data/search-index.json`.
+      - [ ] Add `/events/index.html` to `/sitemap.xml`.
+    - [ ] **Embassy/consulate directory**
+      - [ ] Create `/assets/data/embassies.json`.
+      - [ ] Create `/tools/embassies.html`.
+      - [ ] Create `/assets/js/render-embassies.js`.
+      - [ ] Implement filter by country, copy phone/email buttons, link new tab, aria-live feedback.
+      - [ ] Add to navigation “Tools”.
+      - [ ] Add `/tools/embassies.html` to `/assets/data/search-index.json`.
+      - [ ] Add `/tools/embassies.html` to `/sitemap.xml`.
+    - [ ] **Share card generator (Canvas)**
+      - [ ] Create `/tools/share-card.html`.
+      - [ ] Create `/assets/js/share-card.js`.
+      - [ ] Ensure `/assets/images/brand/*` (logo/background) are available (will assume they exist or create placeholders if needed).
+      - [ ] Implement inputs for Headline, Subtext, checkbox for logo, Canvas 1200x630, Download PNG.
+      - [ ] Add to navigation “Tools”.
+      - [ ] Add `/tools/share-card.html` to `/assets/data/search-index.json`.
+      - [ ] Add `/tools/share-card.html` to `/sitemap.xml`.
+    - [ ] **Supporter badge/embed**
+      - [ ] Create `/tools/embed.html`.
+      - [ ] Implement 2–3 badge variants with copyable HTML snippets and live preview.
+      - [ ] Add to navigation “Tools”.
+      - [ ] Add `/tools/embed.html` to `/assets/data/search-index.json`.
+      - [ ] Add `/tools/embed.html` to `/sitemap.xml`.
+  - [ ] **Cross-cutting (after P1)**
+    - [ ] Add nav links for new sections: Legal, History, Education, Diaspora, Movements, Tools, Events.
+    - [ ] Update `/assets/data/search-index.json` with all new pages.
+    - [ ] Update `/sitemap.xml` with all new URLs.
+    - [ ] Confirm accessibility (focus, aria labels, keyboard nav) and mobile layouts.
+    - [ ] Note any CDN scripts required and CSP updates for `/_headers`.
+
+<!-- Save this file and the focusChain list will be updated in the task -->

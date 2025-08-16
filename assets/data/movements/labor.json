@@ -1,0 +1,18 @@
+{
+  "section": "labor",
+  "intro": "This section explores the history and ongoing efforts of Palestinian labor movements in advocating for workers' rights, resisting occupation, and building a just society.",
+  "profiles": [
+    {"name": "George Habash", "role": "Political Leader, Activist", "bio": "A Palestinian Christian politician who founded the Popular Front for the Liberation of Palestine (PFLP). He was also a physician.", "links": [{"label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/George_Habash"}]}
+  ],
+  "orgs": [
+    {"name": "Palestinian General Federation of Trade Unions (PGFTU)", "url": "https://example.com/pgftu"},
+    {"name": "Workers' Advice Center (WAC-MAAN)", "url": "https://www.maan-ctr.org/"}
+  ],
+  "actions": [
+    {"title": "International Workers' Solidarity with Palestine", "url": "https://example.com/labor-solidarity-action"},
+    {"title": "Campaign for Palestinian Workers' Rights", "url": "https://example.com/labor-rights-campaign"}
+  ],
+  "sources": [
+    {"title": "Palestinian Labor Under Occupation", "url": "https://www.palestine-studies.org/en/node/165072", "publisher": "Journal of Palestine Studies", "date_accessed": "2025-08-16"}
+  ]
+}

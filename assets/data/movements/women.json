@@ -1,0 +1,20 @@
+{
+  "section": "women",
+  "intro": "This section highlights the pivotal role of Palestinian women in resistance, community building, and preserving cultural identity amidst ongoing challenges.",
+  "profiles": [
+    {"name": "Dr. Hanan Ashrawi", "role": "Politician, Activist", "bio": "A prominent Palestinian Christian leader, legislator, activist, and scholar who served in the Palestine Liberation Organization (PLO).", "links": [{"label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Hanan_Ashrawi"}]},
+    {"name": "Leila Khaled", "role": "Activist, Member of PFLP", "bio": "A Palestinian refugee and member of the Popular Front for the Liberation of Palestine (PFLP). She gained international attention for her role in plane hijackings in 1969 and 1970.", "links": [{"label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Leila_Khaled"}]},
+    {"name": "Rasmea Odeh", "role": "Community Organizer, Activist", "bio": "A Palestinian-American activist who was a prominent figure in the Palestinian community in Chicago.", "links": [{"label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Rasmea_Odeh"}]}
+  ],
+  "orgs": [
+    {"name": "Union of Palestinian Women's Committees (UPWC)", "url": "https://www.upwc.org.ps/"},
+    {"name": "Women's Centre for Legal Aid and Counselling (WCLAC)", "url": "https://www.wclac.org/"}
+  ],
+  "actions": [
+    {"title": "International Women's Day for Palestine", "url": "https://example.com/women-day-action"},
+    {"title": "Campaign for Palestinian Women's Rights", "url": "https://example.com/women-rights-campaign"}
+  ],
+  "sources": [
+    {"title": "Palestinian Women: A Force for Change", "url": "https://www.un.org/unispal/document/auto-generated-document-10/", "publisher": "United Nations", "date_accessed": "2025-08-16"}
+  ]
+}

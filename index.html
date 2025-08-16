@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Free Palestine | Justice & Resistance</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -13,7 +13,7 @@
         <div class="logo">
             <a href="index.html"><span>Free<span>Palestine</span></span></a>
         </div>
-        <ul class="nav-links">
+    <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="#history">History</a></li>
             <li><a href="#resistance">Resistance</a></li>
@@ -23,7 +23,30 @@
             <li><a href="#news">News</a></li>
             <li><a href="#culture">Culture</a></li>
             <li><a href="#future">Future</a></li>
+            <li><a href="myths/index.html">Myths</a></li>
+            <li><a href="legal/index.html">Legal</a></li>
+            <li><a href="diaspora/index.html">Diaspora</a></li>
+            <li><a href="education/teachers.html">Education</a></li>
+            <li><a href="movements/women.html">Movements</a></li>
         </ul>
+        <form class="site-search" role="search" autocomplete="off">
+          <div class="theme-toggle">
+            <button data-theme-value="light">Light</button>
+            <button data-theme-value="dark">Dark</button>
+            <button data-theme-value="hc">High Contrast</button>
+          </div>
+          <input
+            id="siteSearch"
+            class="search-input"
+            type="search"
+            placeholder="Search countries, boycotts, journalists…"
+            aria-label="Search site"
+          />
+          <div id="searchPanel" class="search-panel" hidden>
+            <ul id="searchResults" class="search-results" role="listbox" aria-label="Search results"></ul>
+            <button type="button" class="search-close" aria-label="Close search">&times;</button>
+          </div>
+        </form>
         <div class="hamburger">
             <i class="fas fa-bars"></i>
         </div>
@@ -41,6 +64,10 @@
             <li><a href="#news">News</a></li>
             <li><a href="#culture">Culture</a></li>
             <li><a href="#future">Future</a></li>
+            <li><a href="legal/index.html">Legal</a></li>
+            <li><a href="diaspora/index.html">Diaspora</a></li>
+            <li><a href="education/teachers.html">Education</a></li>
+            <li><a href="movements/women.html">Movements</a></li>
         </ul>
     </div>
 
@@ -65,105 +92,105 @@
             <span class="close-timeline">&times;</span>
             <h2>Timeline of Palestinian Struggle</h2>
             <div class="timeline-container">
-                <div class="timeline-event" data-url="./pages/history_pages/peel-commission.html">
+                <div class="timeline-event" data-url="pages/history_pages/peel-commission.html">
                     <div class="event-date">1937</div>
                     <div class="event-content">
                         <h3>Peel Commission Partition Plan</h3>
                         <p>First proposal to partition Palestine, giving Jews 33% of land despite being only 30% of population.</p>
                     </div>
                 </div>
-                <div class="timeline-event" data-url="./pages/history_pages/un-partition.html">
+                <div class="timeline-event" data-url="pages/history_pages/un-partition.html">
                     <div class="event-date">1947</div>
                     <div class="event-content">
                         <h3>UN Partition Plan (Resolution 181)</h3>
                         <p>UN gave 55% of Palestine to Jewish state despite Jews owning only 7% of land and being 33% of population.</p>
                     </div>
                 </div>
-                <div class="timeline-event" data-url="./pages/history_pages/nakba.html">
+                <div class="timeline-event" data-url="pages/history_pages/nakba.html">
                     <div class="event-date">1948</div>
                     <div class="event-content">
                         <h3>The Nakba ("Catastrophe")</h3>
                         <p>750,000+ Palestinians forcibly expelled from their homes. Over 500 villages destroyed. Israel established on 78% of historic Palestine.</p>
                     </div>
                 </div>
-                <div class="timeline-event" data-url="./pages/history_pages/naksa.html">
+                <div class="timeline-event" data-url="pages/history_pages/naksa.html">
                     <div class="event-date">1967</div>
                     <div class="event-content">
                         <h3>Naksa (Six-Day War)</h3>
                         <p>Israel occupies remaining 22% of Palestine (West Bank, Gaza, East Jerusalem) and Syrian Golan Heights. 300,000 more Palestinians displaced.</p>
                     </div>
                 </div>
-                <div class="timeline-event" data-url="./pages/history_pages/sabra-shatila.html">
+                <div class="timeline-event" data-url="pages/history_pages/sabra-shatila.html">
                     <div class="event-date">1982</div>
                     <div class="event-content">
                         <h3>Sabra and Shatila Massacre</h3>
                         <p>Israeli-backed Phalange militia kills 3,500 Palestinian refugees in Lebanon under Israeli military supervision.</p>
                     </div>
                 </div>
-                <div class="timeline-event" data-url="./pages/history_pages/first-intifada.html">
+                <div class="timeline-event" data-url="pages/history_pages/first-intifada.html">
                     <div class="event-date">1987</div>
                     <div class="event-content">
                         <h3>First Intifada</h3>
                         <p>Mass popular uprising against occupation. Over 1,200 Palestinians killed, mostly unarmed protesters.</p>
                     </div>
                 </div>
-                <div class="timeline-event" data-url="./pages/history_pages/second-intifada.html">
+                <div class="timeline-event" data-url="pages/history_pages/second-intifada.html">
                     <div class="event-date">2000</div>
                     <div class="event-content">
                         <h3>Second Intifada</h3>
                         <p>Uprising after Ariel Sharon's provocative visit to Al-Aqsa. 3,000+ Palestinians killed, extensive destruction.</p>
                     </div>
                 </div>
-                <div class="timeline-event" data-url="./pages/history_pages/gaza-blockade.html">
+                <div class="timeline-event" data-url="pages/history_pages/gaza-blockade.html">
                     <div class="event-date">2005</div>
                     <div class="event-content">
                         <h3>Gaza Blockade Begins</h3>
                         <p>Israel imposes land, sea and air siege after Hamas election victory, creating world's largest open-air prison for 2.3 million Gazans.</p>
                     </div>
                 </div>
-                <div class="timeline-event" data-url="./pages/history_pages/cast-lead.html">
+                <div class="timeline-event" data-url="pages/history_pages/cast-lead.html">
                     <div class="event-date">2008</div>
                     <div class="event-content">
                         <h3>Cast Lead Operation</h3>
                         <p>22-day Israeli assault kills 1,400+ Gazans, including 300+ children. White phosphorus used on civilians.</p>
                     </div>
                 </div>
-                <div class="timeline-event" data-url="./pages/history_pages/protective-edge.html">
+                <div class="timeline-event" data-url="pages/history_pages/protective-edge.html">
                     <div class="event-date">2014</div>
                     <div class="event-content">
                         <h3>Protective Edge Operation</h3>
                         <p>51-day attack kills 2,200+ Gazans (70% civilians), destroys 18,000 homes. UN schools bombed.</p>
                     </div>
                 </div>
-                <div class="timeline-event" data-url="./pages/history_pages/great-march.html">
+                <div class="timeline-event" data-url="pages/history_pages/great-march.html">
                     <div class="event-date">2018</div>
                     <div class="event-content">
                         <h3>Great March of Return</h3>
                         <p>Peaceful protests at Gaza fence. 223 protesters killed by snipers, including medics and journalists.</p>
                     </div>
                 </div>
-                <div class="timeline-event" data-url="./pages/history_pages/unity-intifada.html">
+                <div class="timeline-event" data-url="pages/history_pages/unity-intifada.html">
                     <div class="event-date">2021</div>
                     <div class="event-content">
                         <h3>Unity Intifada & Sheikh Jarrah</h3>
                         <p>Nationwide uprising against ethnic cleansing in Jerusalem. 256 Palestinians killed in Gaza bombing.</p>
                     </div>
                 </div>
-                <div class="timeline-event" data-url="./pages/history_pages/al-aqsa-flood.html">
+                <div class="timeline-event" data-url="pages/history_pages/al-aqsa-flood.html">
                     <div class="event-date">2023</div>
                     <div class="event-content">
                         <h3>Al-Aqsa Flood & Gaza Genocide</h3>
                         <p>After Hamas operation, Israel kills 35,000+ Gazans (70% women/children), destroys all universities and hospitals.</p>
                     </div>
                 </div>
-                <div class="timeline-event" data-url="./pages/history_pages/icj-genocide.html">
+                <div class="timeline-event" data-url="pages/history_pages/icj-genocide.html">
                     <div class="event-date">2024</div>
                     <div class="event-content">
                         <h3>ICJ Genocide Case</h3>
                         <p>South Africa brings case against Israel at International Court of Justice for genocide in Gaza.</p>
                     </div>
                 </div>
-                <div class="timeline-event" data-url="./pages/history_pages/ongoing-resistance.html">
+                <div class="timeline-event" data-url="pages/history_pages/ongoing-resistance.html">
                     <div class="event-date">2025</div>
                     <div class="event-content">
                         <h3>Ongoing Resistance</h3>
@@ -645,6 +672,26 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="assets/js/utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+    <script src="assets/js/search.js"></script>
+    <script src="assets/js/utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+    <script src="assets/js/search.js"></script>
+    <script src="assets/js/render-myths.js"></script>
+    <script src="assets/js/utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+    <script src="assets/js/search.js"></script>
+    <script src="assets/js/render-myths.js"></script>
+    <script src="assets/js/utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+    <script src="assets/js/search.js"></script>
+    <script src="assets/js/render-myths.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+        // Theme Toggle
+        const theme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+</script>
 </body>
 </html>

@@ -1,0 +1,170 @@
+[
+  {
+    "name": "Organization A",
+    "sector": "Charity",
+    "region": "Global",
+    "status": "Active",
+    "sources": [
+      {
+        "url": "https://example.com/org-a",
+        "title": "Organization A Support",
+        "publisher": "Support Org"
+      }
+    ],
+    "last_reviewed": "2025-08-03"
+  },
+  {
+    "name": "Organization B",
+    "sector": "Activism",
+    "region": "North America",
+    "status": "Inactive",
+    "sources": [
+      {
+        "url": "https://example.com/org-b",
+        "title": "Organization B Info",
+        "publisher": "Research Group"
+      }
+    ],
+    "last_reviewed": "2025-07-17"
+  },
+  {
+    "name": "Organization C",
+    "sector": "Education",
+    "region": "Europe",
+    "status": "Active",
+    "sources": [
+      {
+        "url": "https://example.com/org-c",
+        "title": "Organization C Details",
+        "publisher": "Educational Site"
+      }
+    ],
+    "last_reviewed": "2025-08-12"
+  },
+  {
+    "name": "Organization D",
+    "sector": "Advocacy",
+    "region": "Asia",
+    "status": "Active",
+    "sources": [
+      {
+        "url": "https://example.com/org-d",
+        "title": "Organization D Report",
+        "publisher": "Advocacy Watch"
+      }
+    ],
+    "last_reviewed": "2025-07-22"
+  },
+  {
+    "name": "Organization E",
+    "sector": "Charity",
+    "region": "Global",
+    "status": "Inactive",
+    "sources": [
+      {
+        "url": "https://example.com/org-e",
+        "title": "Organization E Analysis",
+        "publisher": "Charity Insights"
+      }
+    ],
+    "last_reviewed": "2025-08-07"
+  },
+  {
+    "name": "Organization F",
+    "sector": "Activism",
+    "region": "South America",
+    "status": "Active",
+    "sources": [
+      {
+        "url": "https://example.com/org-f",
+        "title": "Organization F Support",
+        "publisher": "Activist Reports"
+      }
+    ],
+    "last_reviewed": "2025-07-27"
+  },
+  {
+    "name": "Organization G",
+    "sector": "Education",
+    "region": "Africa",
+    "status": "Inactive",
+    "sources": [
+      {
+        "url": "https://example.com/org-g",
+        "title": "Organization G Info",
+        "publisher": "Education Analysis"
+      }
+    ],
+    "last_reviewed": "2025-08-14"
+  },
+  {
+    "name": "Organization H",
+    "sector": "Advocacy",
+    "region": "Oceania",
+    "status": "Active",
+    "sources": [
+      {
+        "url": "https://example.com/org-h",
+        "title": "Organization H Details",
+        "publisher": "Advocacy News"
+      }
+    ],
+    "last_reviewed": "2025-08-01"
+  },
+  {
+    "name": "Organization I",
+    "sector": "Charity",
+    "region": "Global",
+    "status": "Active",
+    "sources": [
+      {
+        "url": "https://example.com/org-i",
+        "title": "Organization I Support",
+        "publisher": "Charity Watchdog"
+      }
+    ],
+    "last_reviewed": "2025-08-10"
+  },
+  {
+    "name": "Organization J",
+    "sector": "Activism",
+    "region": "North America",
+    "status": "Inactive",
+    "sources": [
+      {
+        "url": "https://example.com/org-j",
+        "title": "Organization J Analysis",
+        "publisher": "Activist Review"
+      }
+    ],
+    "last_reviewed": "2025-07-20"
+  },
+  {
+    "name": "Organization K",
+    "sector": "Education",
+    "region": "Europe",
+    "status": "Active",
+    "sources": [
+      {
+        "url": "https://example.com/org-k",
+        "title": "Organization K Info",
+        "publisher": "Education Insights"
+      }
+    ],
+    "last_reviewed": "2025-08-17"
+  },
+  {
+    "name": "Organization L",
+    "sector": "Advocacy",
+    "region": "Asia",
+    "status": "Inactive",
+    "sources": [
+      {
+        "url": "https://example.com/org-l",
+        "title": "Organization L Report",
+        "publisher": "Advocacy Today"
+      }
+    ],
+    "last_reviewed": "2025-07-24"
+  }
+]

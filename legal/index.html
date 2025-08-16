@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Library - Palestine</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="/assets/js/main.js" defer></script>
+    <script src="/assets/js/render-legal.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- Navigation will be dynamically loaded or manually added later -->
+        </nav>
+    </header>
+    <main>
+        <section class="legal-library-hero">
+            <h1>Legal Library</h1>
+            <p>Explore key legal documents, resolutions, and opinions related to Palestine.</p>
+        </section>
+
+        <section class="legal-filters-search">
+            <div class="search-container">
+                <label for="legal-search" class="sr-only">Search legal documents</label>
+                <input type="text" id="legal-search" placeholder="Search by title or summary..." aria-label="Search legal documents">
+            </div>
+            <div class="filters-container">
+                <div class="filter-group">
+                    <label for="type-filter" class="sr-only">Filter by Type</label>
+                    <select id="type-filter" aria-label="Filter legal documents by type">
+                        <option value="">All Types</option>
+                        <option value="UN">UN</option>
+                        <option value="ICJ">ICJ</option>
+                        <option value="ICC">ICC</option>
+                        <option value="Treaty">Treaty</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="year-filter" class="sr-only">Filter by Year</label>
+                    <select id="year-filter" aria-label="Filter legal documents by year">
+                        <option value="">All Years</option>
+                        <!-- Years will be populated by JavaScript -->
+                    </select>
+                </div>
+            </div>
+            <div class="results-info" role="status" aria-live="polite">
+                <span id="results-count"></span> results found.
+            </div>
+        </section>
+
+        <section class="legal-cards-container">
+            <div id="legal-documents-grid" class="grid-container">
+                <!-- Legal documents will be rendered here by JavaScript -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <!-- Footer will be dynamically loaded or manually added later -->
+    </footer>
+</body>
+</html>

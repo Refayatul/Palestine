@@ -1,0 +1,62 @@
+[
+  {
+    "slug": "canada",
+    "name": "Canada",
+    "flag": "/assets/images/countries/canada.png",
+    "summary": "Canada plans to recognize the State of Palestine in September 2025, subject to certain conditions."
+  },
+  {
+    "slug": "egypt",
+    "name": "Egypt",
+    "flag": "/assets/images/countries/egypt.png",
+    "summary": "Egypt's official position."
+  },
+  {
+    "slug": "france",
+    "name": "France",
+    "flag": "/assets/images/countries/france.png",
+    "summary": "France's official position."
+  },
+  {
+    "slug": "germany",
+    "name": "Germany",
+    "flag": "/assets/images/countries/germany.png",
+    "summary": "Germany's official position."
+  },
+  {
+    "slug": "ireland",
+    "name": "Ireland",
+    "flag": "/assets/images/countries/ireland.png",
+    "summary": "Ireland's official position."
+  },
+  {
+    "slug": "south-africa",
+    "name": "South Africa",
+    "flag": "/assets/images/countries/south-africa.png",
+    "summary": "South Africa's official position."
+  },
+  {
+    "slug": "spain",
+    "name": "Spain",
+    "flag": "/assets/images/countries/spain.png",
+    "summary": "Spain's official position."
+  },
+  {
+    "slug": "turkey",
+    "name": "Turkey",
+    "flag": "/assets/images/countries/turkey.png",
+    "summary": "Turkey's official position."
+  },
+  {
+    "slug": "united-kingdom",
+    "name": "United Kingdom",
+    "flag": "/assets/images/countries/united-kingdom.png",
+    "summary": "United Kingdom's official position."
+  },
+  {
+    "slug": "united-states",
+    "name": "United States",
+    "flag": "/assets/images/countries/united-states.png",
+    "summary": "United States' official position."
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "date": "2025-08-15",
+    "headline": "Recent Developments in Gaza",
+    "summary": "A summary of the recent events in Gaza.",
+    "sources": [
+      {
+        "url": "https://example.com/gaza-report",
+        "title": "Gaza Report",
+        "publisher": "Example News"
+      }
+    ]
+  },
+  {
+    "date": "2025-08-10",
+    "headline": "New Aid Initiatives",
+    "summary": "Details on the new aid initiatives for Palestine.",
+    "sources": [
+      {
+        "url": "https://example.com/aid-initiative",
+        "title": "Aid Initiative Details",
+        "publisher": "Global Aid Organization"
+      }
+    ]
+  },
+  {
+    "date": "2025-08-05",
+    "headline": "Political Updates",
+    "summary": "An overview of the latest political discussions.",
+    "sources": [
+      {
+        "url": "https://example.com/political-updates",
+        "title": "Political Updates",
+        "publisher": "International Politics News"
+      }
+    ]
+  }
+]

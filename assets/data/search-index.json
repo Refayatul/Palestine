@@ -1,0 +1,380 @@
+[
+  {
+    "type": "country",
+    "slug": "canada",
+    "title": "Canada — Country Profile",
+    "summary": "Canada plans to recognize the State of Palestine in September 2025, subject to certain conditions.",
+    "url": "/countries/view.html?slug=canada"
+  },
+  {
+    "type": "country",
+    "slug": "egypt",
+    "title": "Egypt — Country Profile",
+    "summary": "Egypt's official position.",
+    "url": "/countries/view.html?slug=egypt"
+  },
+  {
+    "type": "country",
+    "slug": "france",
+    "title": "France — Country Profile",
+    "summary": "France's official position.",
+    "url": "/countries/view.html?slug=france"
+  },
+  {
+    "type": "country",
+    "slug": "germany",
+    "title": "Germany — Country Profile",
+    "summary": "Germany's official position.",
+    "url": "/countries/view.html?slug=germany"
+  },
+  {
+    "type": "country",
+    "slug": "ireland",
+    "title": "Ireland — Country Profile",
+    "summary": "Ireland's official position.",
+    "url": "/countries/view.html?slug=ireland"
+  },
+  {
+    "type": "country",
+    "slug": "south-africa",
+    "title": "South Africa — Country Profile",
+    "summary": "South Africa's official position.",
+    "url": "/countries/view.html?slug=south-africa"
+  },
+  {
+    "type": "country",
+    "slug": "spain",
+    "title": "Spain — Country Profile",
+    "summary": "Spain's official position.",
+    "url": "/countries/view.html?slug=spain"
+  },
+  {
+    "type": "country",
+    "slug": "turkey",
+    "title": "Turkey — Country Profile",
+    "summary": "Turkey's official position.",
+    "url": "/countries/view.html?slug=turkey"
+  },
+  {
+    "type": "country",
+    "slug": "united-kingdom",
+    "title": "United Kingdom — Country Profile",
+    "summary": "United Kingdom's official position.",
+    "url": "/countries/view.html?slug=united-kingdom"
+  },
+  {
+    "type": "country",
+    "slug": "united-states",
+    "title": "United States — Country Profile",
+    "summary": "United States' official position.",
+    "url": "/countries/view.html?slug=united-states"
+  },
+  {
+    "type": "boycott-supporting",
+    "slug": "company-a",
+    "title": "Company A",
+    "summary": "Placeholder entry, no real-world boycott information found.",
+    "url": "/boycott/supporting.html#company-a"
+  },
+  {
+    "type": "boycott-supporting",
+    "slug": "company-b",
+    "title": "Company B",
+    "summary": "",
+    "url": "/boycott/supporting.html#company-b"
+  },
+  {
+    "type": "boycott-supporting",
+    "slug": "company-c",
+    "title": "Company C",
+    "summary": "",
+    "url": "/boycott/supporting.html#company-c"
+  },
+  {
+    "type": "boycott-supporting",
+    "slug": "company-d",
+    "title": "Company D",
+    "summary": "",
+    "url": "/boycott/supporting.html#company-d"
+  },
+  {
+    "type": "boycott-supporting",
+    "slug": "company-e",
+    "title": "Company E",
+    "summary": "",
+    "url": "/boycott/supporting.html#company-e"
+  },
+  {
+    "type": "boycott-supporting",
+    "slug": "company-f",
+    "title": "Company F",
+    "summary": "",
+    "url": "/boycott/supporting.html#company-f"
+  },
+  {
+    "type": "boycott-supporting",
+    "slug": "company-g",
+    "title": "Company G",
+    "summary": "",
+    "url": "/boycott/supporting.html#company-g"
+  },
+  {
+    "type": "boycott-supporting",
+    "slug": "company-h",
+    "title": "Company H",
+    "summary": "",
+    "url": "/boycott/supporting.html#company-h"
+  },
+  {
+    "type": "boycott-supporting",
+    "slug": "company-i",
+    "title": "Company I",
+    "summary": "",
+    "url": "/boycott/supporting.html#company-i"
+  },
+  {
+    "type": "boycott-supporting",
+    "slug": "company-j",
+    "title": "Company J",
+    "summary": "",
+    "url": "/boycott/supporting.html#company-j"
+  },
+  {
+    "type": "boycott-supporting",
+    "slug": "company-k",
+    "title": "Company K",
+    "summary": "",
+    "url": "/boycott/supporting.html#company-k"
+  },
+  {
+    "type": "boycott-supporting",
+    "slug": "company-l",
+    "title": "Company L",
+    "summary": "",
+    "url": "/boycott/supporting.html#company-l"
+  },
+  {
+    "type": "boycott-supportive",
+    "slug": "organization-a",
+    "title": "Organization A",
+    "summary": "",
+    "url": "/boycott/supportive.html#organization-a"
+  },
+  {
+    "type": "boycott-supportive",
+    "slug": "organization-b",
+    "title": "Organization B",
+    "summary": "",
+    "url": "/boycott/supportive.html#organization-b"
+  },
+  {
+    "type": "boycott-supportive",
+    "slug": "organization-c",
+    "title": "Organization C",
+    "summary": "",
+    "url": "/boycott/supportive.html#organization-c"
+  },
+  {
+    "type": "boycott-supportive",
+    "slug": "organization-d",
+    "title": "Organization D",
+    "summary": "",
+    "url": "/boycott/supportive.html#organization-d"
+  },
+  {
+    "type": "boycott-supportive",
+    "slug": "organization-e",
+    "title": "Organization E",
+    "summary": "",
+    "url": "/boycott/supportive.html#organization-e"
+  },
+  {
+    "type": "boycott-supportive",
+    "slug": "organization-f",
+    "title": "Organization F",
+    "summary": "",
+    "url": "/boycott/supportive.html#organization-f"
+  },
+  {
+    "type": "boycott-supportive",
+    "slug": "organization-g",
+    "title": "Organization G",
+    "summary": "",
+    "url": "/boycott/supportive.html#organization-g"
+  },
+  {
+    "type": "boycott-supportive",
+    "slug": "organization-h",
+    "title": "Organization H",
+    "summary": "",
+    "url": "/boycott/supportive.html#organization-h"
+  },
+  {
+    "type": "boycott-supportive",
+    "slug": "organization-i",
+    "title": "Organization I",
+    "summary": "",
+    "url": "/boycott/supportive.html#organization-i"
+  },
+  {
+    "type": "boycott-supportive",
+    "slug": "organization-j",
+    "title": "Organization J",
+    "summary": "",
+    "url": "/boycott/supportive.html#organization-j"
+  },
+  {
+    "type": "boycott-supportive",
+    "slug": "organization-k",
+    "title": "Organization K",
+    "summary": "",
+    "url": "/boycott/supportive.html#organization-k"
+  },
+  {
+    "type": "boycott-supportive",
+    "slug": "organization-l",
+    "title": "Organization L",
+    "summary": "",
+    "url": "/boycott/supportive.html#organization-l"
+  },
+  {
+    "type": "journalist",
+    "slug": "jane-smith",
+    "title": "Jane Smith",
+    "summary": "Placeholder entry. No specific real-world journalist found with this name and region.",
+    "url": "/journalists/index.html#jane-smith"
+  },
+  {
+    "type": "journalist",
+    "slug": "john-doe",
+    "title": "John Doe",
+    "summary": "Covering events in the West Bank.",
+    "url": "/journalists/index.html#john-doe"
+  },
+  {
+    "type": "journalist",
+    "slug": "alice-johnson",
+    "title": "Alice Johnson",
+    "summary": "Focusing on human rights issues.",
+    "url": "/journalists/index.html#alice-johnson"
+  },
+  {
+    "type": "journalist",
+    "slug": "bob-williams",
+    "title": "Bob Williams",
+    "summary": "Reporting from the Lebanese border.",
+    "url": "/journalists/index.html#bob-williams"
+  },
+  {
+    "type": "journalist",
+    "slug": "charlie-brown",
+    "title": "Charlie Brown",
+    "summary": "Covering the Syrian perspective.",
+    "url": "/journalists/index.html#charlie-brown"
+  },
+  {
+    "type": "journalist",
+    "slug": "diana-miller",
+    "title": "Diana Miller",
+    "summary": "Reporting from Cairo.",
+    "url": "/journalists/index.html#diana-miller"
+  },
+  {
+    "type": "journalist",
+    "slug": "ethan-davis",
+    "title": "Ethan Davis",
+    "summary": "Covering Jordanian views.",
+    "url": "/journalists/index.html#ethan-davis"
+  },
+  {
+    "type": "journalist",
+    "slug": "fiona-wilson",
+    "title": "Fiona Wilson",
+    "summary": "Reporting from Istanbul.",
+    "url": "/journalists/index.html#fiona-wilson"
+  },
+  {
+    "type": "journalist",
+    "slug": "george-taylor",
+    "title": "George Taylor",
+    "summary": "Covering Qatari affairs.",
+    "url": "/journalists/index.html#george-taylor"
+  },
+  {
+    "type": "journalist",
+    "slug": "hannah-moore",
+    "title": "Hannah Moore",
+    "summary": "Reporting from Riyadh.",
+    "url": "/journalists/index.html#hannah-moore"
+  },
+  {
+    "type": "journalist",
+    "slug": "isaac-clark",
+    "title": "Isaac Clark",
+    "summary": "Covering UAE perspectives.",
+    "url": "/journalists/index.html#isaac-clark"
+  },
+  {
+    "type": "journalist",
+    "slug": "julia-white",
+    "title": "Julia White",
+    "summary": "Reporting from Muscat.",
+    "url": "/journalists/index.html#julia-white"
+  },
+  {
+    "type": "article",
+    "slug": "abductions-2008-2023",
+    "title": "Abductions & Detentions of Children (2008–2023)",
+    "summary": "Dataset and charts (2008–2023)",
+    "url": "/features/abductions-2008-2023.html"
+  },
+  {
+    "type": "education",
+    "slug": "teachers",
+    "title": "Teacher Resources",
+    "summary": "Educational materials and lesson plans about Palestine for teachers.",
+    "url": "/education/teachers.html"
+  },
+  {
+    "type": "education",
+    "slug": "students",
+    "title": "Student Resources",
+    "summary": "Learning materials and activities about Palestine for students.",
+    "url": "/education/students.html"
+  },
+  {
+    "type": "movement",
+    "slug": "women",
+    "title": "Women's Movement",
+    "summary": "Profiles of Palestinian women activists and organizations.",
+    "url": "/movements/women.html"
+  },
+  {
+    "type": "movement",
+    "slug": "youth",
+    "title": "Youth Movement",
+    "summary": "Palestinian youth activism and organizations.",
+    "url": "/movements/youth.html"
+  },
+  {
+    "type": "movement",
+    "slug": "labor",
+    "title": "Labor Movement",
+    "summary": "Palestinian workers' rights and labor organizations.",
+    "url": "/movements/labor.html"
+  },
+  {
+    "type": "legal",
+    "slug": "legal-library",
+    "title": "Legal Library",
+    "summary": "Collection of legal documents and international law resources.",
+    "url": "/legal/index.html"
+  },
+  {
+    "type": "diaspora",
+    "slug": "diaspora-hub",
+    "title": "Diaspora Hub",
+    "summary": "Resources and information about Palestinian diaspora communities worldwide.",
+    "url": "/diaspora/index.html"
+  }
+]

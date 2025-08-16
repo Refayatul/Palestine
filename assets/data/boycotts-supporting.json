@@ -1,0 +1,171 @@
+[
+  {
+    "name": "Company A",
+    "sector": "Technology",
+    "region": "Global",
+    "status": "Active",
+    "sources": [
+      {
+        "url": "https://example.com/company-a",
+        "title": "Company A Boycott",
+        "publisher": "Boycott Org"
+      }
+    ],
+    "last_reviewed": "2025-08-16",
+    "rationale": "Placeholder entry, no real-world boycott information found."
+  },
+  {
+    "name": "Company B",
+    "sector": "Food",
+    "region": "North America",
+    "status": "Inactive",
+    "sources": [
+      {
+        "url": "https://example.com/company-b",
+        "title": "Company B Info",
+        "publisher": "Research Group"
+      }
+    ],
+    "last_reviewed": "2025-07-15"
+  },
+  {
+    "name": "Company C",
+    "sector": "Retail",
+    "region": "Europe",
+    "status": "Active",
+    "sources": [
+      {
+        "url": "https://example.com/company-c",
+        "title": "Company C Details",
+        "publisher": "Activist Site"
+      }
+    ],
+    "last_reviewed": "2025-08-10"
+  },
+  {
+    "name": "Company D",
+    "sector": "Finance",
+    "region": "Asia",
+    "status": "Active",
+    "sources": [
+      {
+        "url": "https://example.com/company-d",
+        "title": "Company D Report",
+        "publisher": "Financial Watch"
+      }
+    ],
+    "last_reviewed": "2025-07-20"
+  },
+  {
+    "name": "Company E",
+    "sector": "Technology",
+    "region": "Global",
+    "status": "Inactive",
+    "sources": [
+      {
+        "url": "https://example.com/company-e",
+        "title": "Company E Analysis",
+        "publisher": "Tech Insights"
+      }
+    ],
+    "last_reviewed": "2025-08-05"
+  },
+  {
+    "name": "Company F",
+    "sector": "Food",
+    "region": "South America",
+    "status": "Active",
+    "sources": [
+      {
+        "url": "https://example.com/company-f",
+        "title": "Company F Boycott",
+        "publisher": "Consumer Reports"
+      }
+    ],
+    "last_reviewed": "2025-07-25"
+  },
+  {
+    "name": "Company G",
+    "sector": "Retail",
+    "region": "Africa",
+    "status": "Inactive",
+    "sources": [
+      {
+        "url": "https://example.com/company-g",
+        "title": "Company G Info",
+        "publisher": "Market Analysis"
+      }
+    ],
+    "last_reviewed": "2025-08-12"
+  },
+  {
+    "name": "Company H",
+    "sector": "Finance",
+    "region": "Oceania",
+    "status": "Active",
+    "sources": [
+      {
+        "url": "https://example.com/company-h",
+        "title": "Company H Details",
+        "publisher": "Investment News"
+      }
+    ],
+    "last_reviewed": "2025-07-30"
+  },
+  {
+    "name": "Company I",
+    "sector": "Technology",
+    "region": "Global",
+    "status": "Active",
+    "sources": [
+      {
+        "url": "https://example.com/company-i",
+        "title": "Company I Boycott",
+        "publisher": "Tech Watchdog"
+      }
+    ],
+    "last_reviewed": "2025-08-08"
+  },
+  {
+    "name": "Company J",
+    "sector": "Food",
+    "region": "North America",
+    "status": "Inactive",
+    "sources": [
+      {
+        "url": "https://example.com/company-j",
+        "title": "Company J Analysis",
+        "publisher": "Food Review"
+      }
+    ],
+    "last_reviewed": "2025-07-18"
+  },
+  {
+    "name": "Company K",
+    "sector": "Retail",
+    "region": "Europe",
+    "status": "Active",
+    "sources": [
+      {
+        "url": "https://example.com/company-k",
+        "title": "Company K Info",
+        "publisher": "Retail Insights"
+      }
+    ],
+    "last_reviewed": "2025-08-15"
+  },
+  {
+    "name": "Company L",
+    "sector": "Finance",
+    "region": "Asia",
+    "status": "Inactive",
+    "sources": [
+      {
+        "url": "https://example.com/company-l",
+        "title": "Company L Report",
+        "publisher": "Finance Today"
+      }
+    ],
+    "last_reviewed": "2025-07-22"
+  }
+]

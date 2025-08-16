@@ -1,0 +1,15 @@
+{
+"slug": "turkey",
+"name": "Turkey",
+"flag": "/assets/images/countries/turkey.png",
+"summary": "Overview of Turkey’s public stance, diplomatic actions, and votes.",
+"last_updated": "2025-08-15",
+"official_positions": [],
+"un_voting_record": [],
+"arms_trade": [],
+"aid_and_relief": [],
+"civil_society": [],
+"take_action": [
+{ "title": "Ministry of Foreign Affairs", "url": "https://www.mfa.gov.tr/" }
+]
+}

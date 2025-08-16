@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Companies Supporting Palestine</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <nav id="siteNav" class="container" style="position:sticky;top:0;background:#000;border-bottom:1px solid #222;padding:12px 0;margin-bottom:20px">
+    <a href="/" style="color:#fff;text-decoration:none;font-weight:800">← Home</a>
+    <form class="site-search" role="search" autocomplete="off">
+      <input
+        id="siteSearch"
+        class="search-input"
+        type="search"
+        placeholder="Search countries, boycotts, journalists…"
+        aria-label="Search site"
+      />
+      <div id="searchPanel" class="search-panel" hidden>
+        <ul id="searchResults" role="listbox" aria-label="Search results"></ul>
+        <button type="button" class="search-close" aria-label="Close search">&times;</button>
+      </div>
+    </form>
+    <a href="/boycott/supporting.html" style="color:#fff;text-decoration:none">See companies to boycott →</a>
+  </nav>
+  <main class="container section">
+    <h1>Organizations Supportive of Palestine</h1>
+    <p>This is a list of organizations that are supportive of Palestine.</p>
+
+    <div class="toolbar">
+      <input type="search" id="q" placeholder="Search…">
+      <select id="sector"><option value="">All Sectors</option></select>
+      <select id="region"><option value="">All Regions</option></select>
+    </div>
+
+    <table class="table" id="tbl">
+      <thead>
+        <tr>
+          <th>Organization</th>
+          <th>Sector</th>
+          <th>Region</th>
+          <th>Status</th>
+          <th>Sources</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <p class="muted" id="lastReviewed"></p>
+  </main>
+  <script src="/assets/js/utils.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+  <script src="/assets/js/search.js"></script>
+  <script src="/assets/js/render-boycotts.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

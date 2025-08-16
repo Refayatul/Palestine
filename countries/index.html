@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Countries — Official Positions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <nav id="siteNav" class="container" style="position:sticky;top:0;background:#000;border-bottom:1px solid #222;padding:12px 0;margin-bottom:20px">
+    <a href="/" style="color:#fff;text-decoration:none;font-weight:800">← Home</a>
+    <form class="site-search" role="search" autocomplete="off">
+      <input
+        id="siteSearch"
+        class="search-input"
+        type="search"
+        placeholder="Search countries, boycotts, journalists…"
+        aria-label="Search site"
+      />
+      <div id="searchPanel" class="search-panel" hidden>
+        <ul id="searchResults" class="search-results" role="listbox" aria-label="Search results"></ul>
+        <button type="button" class="search-close" aria-label="Close search">&times;</button>
+      </div>
+    </form>
+  </nav>
+  <main class="container section">
+    <h1>Countries: Official Positions</h1>
+    <input id="countrySearch" type="search" placeholder="Search countries…" aria-label="Search countries" style="margin:10px 0">
+    <div id="countryGrid" class="grid three cards"></div>
+  </main>
+  <script src="/assets/js/utils.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+  <script src="/assets/js/search.js"></script>
+  <script>
+  (async function(){
+    const list = await fetchJSON('/assets/data/countries/_index.json');
+    const grid = document.getElementById('countryGrid');
+    const input = document.getElementById('countrySearch');
+    function render(items){
+      grid.innerHTML = items.map(c => `
+        <a class="card" href="/countries/view.html?slug=${encodeURIComponent(c.slug)}">
+          <img src="${c.flag}" alt="${c.name} flag" loading="lazy" style="width:100%;height:auto;border-radius:8px;margin-bottom:8px">
+          <h3>${c.name}</h3>
+          <p class="muted">${c.summary||''}</p>
+        </a>
+      `).join('');
+    }
+    render(list);
+    input.addEventListener('input', e => {
+      const q = e.target.value.toLowerCase().trim();
+      render(list.filter(c => c.name.toLowerCase().includes(q)));
+    });
+  })();
+  </script>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

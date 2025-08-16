@@ -1,0 +1,39 @@
+[
+  {
+    "id": "m1",
+    "myth": "Palestinians arrived recently.",
+    "fact": "Palestinians have continuous presence for centuries; modern national identity formed under Ottoman/British periods.",
+    "sources": [
+      {
+        "title": "UNESCO note",
+        "url": "https://example.org",
+        "publisher": "UNESCO",
+        "date_accessed": "2025-08-15"
+      }
+    ]
+  },
+  {
+    "id": "m2",
+    "myth": "Palestine was an empty land.",
+    "fact": "Palestine had a thriving population and culture before 1948.",
+    "sources": []
+  },
+  {
+    "id": "m3",
+    "myth": "The conflict is purely religious.",
+    "fact": "The conflict is rooted in political and territorial disputes.",
+    "sources": []
+  },
+  {
+    "id": "m4",
+    "myth": "Israel is a democracy.",
+    "fact": "While Israel has elections, its policies towards Palestinians are not democratic.",
+    "sources": []
+  },
+  {
+    "id": "m5",
+    "myth": "Hamas represents all Palestinians.",
+    "fact": "Hamas is a political organization with support in Gaza, but not all Palestinians support them.",
+    "sources": []
+  }
+]

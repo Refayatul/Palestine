@@ -1,0 +1,122 @@
+[
+  {
+    "q": "What is international humanitarian law?",
+    "a": "Rules governing conduct of armed conflict…",
+    "tags": ["law","ihl"],
+    "sources": [{"title": "ICRC", "url": "https://icrc.org", "publisher": "ICRC", "date_accessed": "2025-08-15" }]
+  },
+  {
+    "q": "What are the main issues in the Israeli-Palestinian conflict?",
+    "a": "The core issues include borders, security, refugees, and Jerusalem.",
+    "tags": ["politics", "history"],
+    "sources": []
+  },
+  {
+    "q": "What is the role of the United Nations?",
+    "a": "The UN has passed numerous resolutions and provides aid to Palestinian refugees.",
+    "tags": ["politics", "un"],
+    "sources": []
+  },
+  {
+    "q": "What is the current situation in Gaza?",
+    "a": "Gaza is under blockade, leading to humanitarian crisis.",
+    "tags": ["gaza", "humanitarian"],
+    "sources": []
+  },
+  {
+    "q": "What is the status of Jerusalem?",
+    "a": "Jerusalem is a contested city, with both Israelis and Palestinians claiming it as their capital.",
+    "tags": ["jerusalem", "politics"],
+    "sources": []
+  },
+  {
+    "q": "What is the role of the United States in the conflict?",
+    "a": "The US has historically been a strong ally of Israel and a mediator in peace talks.",
+    "tags": ["politics", "usa"],
+    "sources": []
+  },
+  {
+    "q": "What is the impact of the conflict on children?",
+    "a": "The conflict has severe psychological and physical impacts on Palestinian children.",
+    "tags": ["children", "humanitarian"],
+    "sources": []
+  },
+  {
+    "q": "What is the role of international law?",
+    "a": "International law provides a framework for resolving the conflict and protecting human rights.",
+    "tags": ["law", "politics"],
+    "sources": []
+  },
+  {
+    "q": "What is the history of the Israeli settlements?",
+    "a": "Israeli settlements in the West Bank are considered illegal under international law.",
+    "tags": ["settlements", "history"],
+    "sources": []
+  },
+  {
+    "q": "What is the impact of the separation barrier?",
+    "a": "The separation barrier has divided Palestinian communities and restricted movement.",
+    "tags": ["wall", "humanitarian"],
+    "sources": []
+  },
+  {
+    "q": "What is the role of the International Criminal Court?",
+    "a": "The ICC has opened an investigation into alleged war crimes in the Palestinian territories.",
+    "tags": ["law", "icc"],
+    "sources": []
+  },
+  {
+    "q": "What is the impact of the Gaza blockade?",
+    "a": "The Gaza blockade has severely restricted the movement of people and goods, leading to a humanitarian crisis.",
+    "tags": ["gaza", "humanitarian"],
+    "sources": []
+  },
+  {
+    "q": "What is the role of civil society organizations?",
+    "a": "Civil society organizations play a crucial role in providing aid, advocating for human rights, and promoting peace.",
+    "tags": ["civil society", "humanitarian"],
+    "sources": []
+  },
+  {
+    "q": "What is the impact of the conflict on women?",
+    "a": "Palestinian women face unique challenges due to the conflict and occupation.",
+    "tags": ["women", "humanitarian"],
+    "sources": []
+  },
+  {
+    "q": "What is the role of education in the conflict?",
+    "a": "Education is a tool for empowerment and resistance, but also a target of the conflict.",
+    "tags": ["education", "politics"],
+    "sources": []
+  },
+  {
+    "q": "What is the impact of the conflict on the environment?",
+    "a": "The conflict has caused significant environmental damage in the Palestinian territories.",
+    "tags": ["environment", "humanitarian"],
+    "sources": []
+  },
+  {
+    "q": "What is the role of the media in the conflict?",
+    "a": "The media plays a crucial role in shaping public opinion and influencing policy.",
+    "tags": ["media", "politics"],
+    "sources": []
+  },
+  {
+    "q": "What is the impact of the conflict on the economy?",
+    "a": "The conflict has severely damaged the Palestinian economy.",
+    "tags": ["economy", "politics"],
+    "sources": []
+  },
+  {
+    "q": "What is the role of refugees in the conflict?",
+    "a": "The issue of Palestinian refugees is central to the conflict.",
+    "tags": ["refugees", "politics"],
+    "sources": []
+  },
+  {
+    "q": "What is the future of Palestine?",
+    "a": "The future of Palestine is uncertain, but a just and lasting peace is possible.",
+    "tags": ["politics", "future"],
+    "sources": []
+  }
+]

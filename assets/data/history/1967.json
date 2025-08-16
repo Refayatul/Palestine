@@ -1,0 +1,33 @@
+{
+  "year": 1967,
+  "intro": "The year 1967 saw the Six-Day War, a pivotal conflict that dramatically reshaped the geopolitical landscape of the Middle East. Israel occupied the remaining Palestinian territories, leading to further displacement and the establishment of a military occupation that continues to this day.",
+  "events": [
+    {
+      "id": "1967-06-05-six-day-war",
+      "date": "1967-06-05",
+      "title": "Six-Day War Begins",
+      "text": "Israel launched a preemptive strike against Egypt, followed by attacks on Syria and Jordan. The war resulted in Israel's occupation of the West Bank, Gaza Strip, East Jerusalem, the Syrian Golan Heights, and the Egyptian Sinai Peninsula.",
+      "sources": [
+        {"title": "The Six-Day War", "url": "https://www.britannica.com/event/Six-Day-War", "publisher": "Britannica", "date_accessed": "2025-08-16"}
+      ]
+    },
+    {
+      "id": "1967-06-10-naksa",
+      "date": "1967-06-10",
+      "title": "The Naksa (The Setback)",
+      "text": "The end of the Six-Day War led to the 'Naksa', or 'The Setback', for Palestinians. Approximately 300,000 more Palestinians were displaced, many becoming refugees for a second time.",
+      "sources": [
+        {"title": "The Naksa: How Israel's 1967 victory changed the Middle East", "url": "https://www.middleeasteye.net/news/naksa-how-israels-1967-victory-changed-middle-east", "publisher": "Middle East Eye", "date_accessed": "2025-08-16"}
+      ]
+    },
+    {
+      "id": "1967-11-22-unsc-res-242",
+      "date": "1967-11-22",
+      "title": "UN Security Council Resolution 242",
+      "text": "Adopted by the UN Security Council, this resolution called for the withdrawal of Israeli armed forces from territories occupied in the recent conflict and for the termination of all claims or states of belligerency.",
+      "sources": [
+        {"title": "UNSC Resolution 242", "url": "https://undocs.org/S/RES/242(1967)", "publisher": "United Nations Digital Library", "date_accessed": "2025-08-16"}
+      ]
+    }
+  ]
+}

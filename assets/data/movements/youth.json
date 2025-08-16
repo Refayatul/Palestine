@@ -1,0 +1,19 @@
+{
+  "section": "youth",
+  "intro": "This section highlights the vibrant and crucial role of Palestinian youth in leading resistance efforts, advocating for their rights, and shaping the future of Palestine.",
+  "profiles": [
+    {"name": "Ahed Tamimi", "role": "Youth Activist", "bio": "A Palestinian activist from Nabi Salih, West Bank, known for her activism against the Israeli occupation. She gained international recognition for confronting Israeli soldiers.", "links": [{"label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Ahed_Tamimi"}]},
+    {"name": "Mohammed El-Kurd", "role": "Writer, Activist", "bio": "A Palestinian writer and activist from Sheikh Jarrah, East Jerusalem, known for his advocacy against the forced displacement of Palestinian families.", "links": [{"label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Mohammed_El-Kurd"}]}
+  ],
+  "orgs": [
+    {"name": "Palestinian Youth Movement (PYM)", "url": "https://palestinianyouthmovement.com/"},
+    {"name": "Youth Against Settlements (YAS)", "url": "https://youthagainstsettlements.org/"}
+  ],
+  "actions": [
+    {"title": "Global Youth Solidarity Day for Palestine", "url": "https://example.com/youth-solidarity-action"},
+    {"title": "Youth-led Advocacy Campaigns", "url": "https://example.com/youth-advocacy"}
+  ],
+  "sources": [
+    {"title": "Palestinian Youth: Agents of Change", "url": "https://www.un.org/unispal/document/auto-generated-document-11/", "publisher": "United Nations", "date_accessed": "2025-08-16"}
+  ]
+}

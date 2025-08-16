@@ -2,7 +2,7 @@
 
 ## Current Work Focus
 
-Organizing the project files into a logical structure and updating the memory bank.
+**Phase P1: Core Content + Advocacy Tools Implementation** - Currently implementing expanded scope from focus chain: completing Core Content Expansions (Part A) and developing Advocacy & Action Tools (Part B).
 
 ## Recent Changes
 
@@ -12,13 +12,40 @@ Organizing the project files into a logical structure and updating the memory ba
 -   Created individual HTML pages for all timeline events.
 -   Updated the links in the timeline popup in `index.html` to point to the new HTML pages.
 -   Updated `assets/js/timeline-interactive.js` to open timeline events in new tabs.
+-   Created the new folder structure as specified in the user's feedback.
+-   Created the data files and HTML templates as specified in the user's feedback.
+-   Updated country data (`assets/data/countries/_index.json`) with Canada's updated position on Palestine using Brave Search.
+-   Updated boycott data (`assets/data/boycotts-supporting.json`) with a placeholder rationale and current review date for 'Company A' after Brave Search did not yield specific real-world updates.
+-   Updated journalist data (`assets/data/journalists.json`) with a placeholder bio and empty links for 'Jane Smith' after Brave Search did not yield specific real-world updates.
+-   Updated abduction data (`assets/data/abductions-2008-2023.json`) with a 2024 entry for grave violations against children and updated meta information based on Brave Search results.
+-   Rebuilt the search index (`assets/data/search-index.json`) to incorporate the updated JSON data.
+-   Verified the updated search index.
+-   **Phase P1 Implementation Progress:**
+    -   **Legal Library hub** - COMPLETED: Created all required files and implemented search/filters.
+    -   **War chronologies & deep dives** - COMPLETED: Created all timeline pages and data files with shared renderer.
+    -   **Teacher/Student kits with print CSS** - PARTIALLY COMPLETED: Created pages and print styles, pending nav dropdown/footer addition.
+    -   **Diaspora hub** - PARTIALLY COMPLETED: Created data files and index page, pending additional region data files and nav addition.
+    -   **Women / Youth / Labor sections** - PARTIALLY COMPLETED: Created data files and women's page, pending youth/labor pages and shared renderer.
+-   Reviewed and updated all memory bank files.
 
 ## Next Steps
 
--   Review the remaining memory bank file: `progress.md`.
--   Update `progress.md` with what works, what's left to build, current status, known issues, and evolution of project decisions.
--   Create new folders and move the corresponding files into those folders.
--   Update the links in `index.html` and other relevant files to reflect the new file structure.
+-   Complete implementation of expanded scope from focus chain:
+    - **Core Content Expansions (Part A):** 
+        - Legal Library hub
+        - War chronologies
+        - Education kits with print CSS
+        - Diaspora hub
+        - Social Movements sections
+    - **Advocacy & Action Tools (Part B):**
+        - Letter/email builder
+        - Phone call scripts
+        - Protest/event finder
+        - Embassy/consulate directory
+        - Share card generator
+        - Supporter badge/embed
+-   Implement comprehensive navigation and search functionality across all new sections
+-   Update search index and sitemap with all new pages
 
 ## Active Decisions and Considerations
 
