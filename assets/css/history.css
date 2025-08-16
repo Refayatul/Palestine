@@ -1,5 +1,5 @@
- /* Base Styles */
- * {
+/* Base Styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,6 +10,7 @@ body {
     background: #111;
     color: #fff;
     line-height: 1.6;
+    padding-top: 80px;
 }
 
 a {
@@ -30,15 +31,19 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 5%;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.9);
     position: fixed;
     width: 100%;
+    top: 0;
     z-index: 1000;
+    border-bottom: 1px solid #333;
 }
 
-.logo span {
+.logo a {
     font-weight: bold;
     font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
 }
 
 .logo span span {
@@ -51,13 +56,178 @@ nav {
     gap: 30px;
 }
 
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 6px;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+    position: relative;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #ce1126, #009736, #ffffff);
+    transition: all 0.4s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
 .nav-links a:hover {
     color: #ce1126;
 }
 
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(0, 0, 0, 0.95);
+    border: 1px solid #333;
+    border-radius: 5px;
+    min-width: 200px;
+    z-index: 1001;
+    margin-top: 5px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transform: translateY(10px);
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.dropdown-menu li {
+    list-style: none;
+    margin: 0;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 12px 15px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.dropdown-menu a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(206, 17, 38, 0.2), rgba(0, 151, 54, 0.2), rgba(255, 255, 255, 0.2));
+    transition: all 0.5s ease;
+    z-index: -1;
+}
+
+.dropdown-menu a:hover::before {
+    width: 100%;
+}
+
+.dropdown-menu a:hover {
+    background: #ce1126;
+    color: #fff;
+}
+
 .hamburger {
     display: none;
+    background: none;
+    border: none;
     cursor: pointer;
+    font-size: 1.3rem;
+    color: #fff;
+    padding: 8px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.hamburger::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(206, 17, 38, 0.3), rgba(0, 151, 54, 0.3), rgba(255, 255, 255, 0.3));
+    transition: all 0.5s ease;
+    z-index: -1;
+}
+
+.hamburger:hover::before {
+    width: 100%;
+}
+
+/* Mobile nav */
+.mobile-nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.95);
+    z-index: 999;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-nav ul {
+    list-style: none;
+    text-align: center;
+    width: 100%;
+}
+
+.mobile-nav li {
+    margin: 12px 0;
+    width: 100%;
+}
+
+.mobile-nav a {
+    font-size: 1.3rem;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    width: 100%;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.mobile-nav a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(206, 17, 38, 0.2), rgba(0, 151, 54, 0.2), rgba(255, 255, 255, 0.2));
+    transition: all 0.5s ease;
+    z-index: -1;
+}
+
+.mobile-nav a:hover::before {
+    width: 100%;
 }
 
 /* Timeline Section */
@@ -70,6 +240,26 @@ nav {
     margin-bottom: 50px;
     font-size: 2.5rem;
     color: #009736;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.4s ease;
+}
+
+.timeline h2::after {
+    content: "";
+    display: block;
+    width: 72px;
+    height: 3px;
+    background: linear-gradient(90deg, #ce1126, #009736, #ffffff);
+    margin: 10px auto 0;
+    border-radius: 3px;
+    transition: all 0.4s ease;
+}
+
+.timeline h2:hover::after {
+    width: 100px;
 }
 
 .timeline-container {
@@ -80,6 +270,35 @@ nav {
 .timeline-event {
     margin-bottom: 50px;
     position: relative;
+    padding: 20px;
+    border-radius: 8px;
+    background: rgba(30, 30, 30, 0.8);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.timeline-event::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(206, 17, 38, 0.1), rgba(0, 151, 54, 0.1), rgba(255, 255, 255, 0.1));
+    transition: all 0.6s ease;
+    z-index: -1;
+}
+
+.timeline-event:hover::before {
+    width: 100%;
+}
+
+.timeline-event:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-left: 3px solid #009736;
 }
 
 .event-date {
@@ -87,10 +306,27 @@ nav {
     color: #ce1126;
     font-size: 1.5rem;
     margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.event-date::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #ce1126, #009736, #ffffff);
+    transition: all 0.4s ease;
+}
+
+.event-date:hover::after {
+    width: 100%;
 }
 
 .event-content {
-    background: rgba(30, 30, 30, 0.8);
     padding: 30px;
     border-radius: 10px;
     border-left: 3px solid #009736;
@@ -99,6 +335,24 @@ nav {
 .event-content h3 {
     margin-bottom: 15px;
     color: #ce1126;
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.event-content h3::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #ce1126, #009736, #ffffff);
+    transition: all 0.4s ease;
+}
+
+.event-content h3:hover::after {
+    width: 100%;
 }
 
 /* Survivor Testimonies */
@@ -109,6 +363,24 @@ nav {
 .survivor-testimony h4 {
     margin-bottom: 15px;
     color: #009736;
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.survivor-testimony h4::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #ce1126, #009736, #ffffff);
+    transition: all 0.4s ease;
+}
+
+.survivor-testimony h4:hover::after {
+    width: 100%;
 }
 
 .testimony-grid {
@@ -123,6 +395,31 @@ nav {
     border-radius: 8px;
     display: flex;
     gap: 15px;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.testimony::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(206, 17, 38, 0.1), rgba(0, 151, 54, 0.1), rgba(255, 255, 255, 0.1));
+    transition: all 0.6s ease;
+    z-index: -1;
+}
+
+.testimony:hover::before {
+    width: 100%;
+}
+
+.testimony:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .testimony img {
@@ -130,11 +427,29 @@ nav {
     height: 80px;
     border-radius: 50%;
     object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.testimony:hover img {
+    transform: scale(1.1);
 }
 
 blockquote {
     font-style: italic;
     flex: 1;
+    position: relative;
+    padding-left: 20px;
+}
+
+blockquote::before {
+    content: '"';
+    position: absolute;
+    left: 0;
+    top: -10px;
+    font-size: 3rem;
+    color: #ce1126;
+    opacity: 0.3;
+    transition: all 0.3s ease;
 }
 
 blockquote footer {
@@ -154,6 +469,26 @@ blockquote footer {
     text-align: center;
     margin-bottom: 50px;
     color: #009736;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.4s ease;
+}
+
+.un-documents h2::after {
+    content: "";
+    display: block;
+    width: 72px;
+    height: 3px;
+    background: linear-gradient(90deg, #ce1126, #009736, #ffffff);
+    margin: 10px auto 0;
+    border-radius: 3px;
+    transition: all 0.4s ease;
+}
+
+.un-documents h2:hover::after {
+    width: 100px;
 }
 
 .document-grid {
@@ -168,15 +503,55 @@ blockquote footer {
     border-radius: 8px;
     border-left: 3px solid #009736;
     cursor: pointer;
-    transition: transform 0.3s;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.doc-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(206, 17, 38, 0.1), rgba(0, 151, 54, 0.1), rgba(255, 255, 255, 0.1));
+    transition: all 0.6s ease;
+    z-index: -1;
+}
+
+.doc-card:hover::before {
+    width: 100%;
 }
 
 .doc-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-left: 3px solid #ce1126;
 }
 
 .doc-card h3 {
     margin-bottom: 10px;
+    color: #009736;
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.doc-card h3::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #ce1126, #009736, #ffffff);
+    transition: all 0.4s ease;
+}
+
+.doc-card:hover h3::after {
+    width: 100%;
 }
 
 /* Massacre Details Section */
@@ -188,6 +563,26 @@ blockquote footer {
     text-align: center;
     margin-bottom: 50px;
     color: #ce1126;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.4s ease;
+}
+
+.massacre-details h2::after {
+    content: "";
+    display: block;
+    width: 72px;
+    height: 3px;
+    background: linear-gradient(90deg, #ce1126, #009736, #ffffff);
+    margin: 10px auto 0;
+    border-radius: 3px;
+    transition: all 0.4s ease;
+}
+
+.massacre-details h2:hover::after {
+    width: 100px;
 }
 
 .massacre-accordion {
@@ -212,6 +607,26 @@ blockquote footer {
     align-items: center;
     cursor: pointer;
     border-radius: 5px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.accordion-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(206, 17, 38, 0.2), rgba(0, 151, 54, 0.2), rgba(255, 255, 255, 0.2));
+    transition: all 0.5s ease;
+    z-index: -1;
+}
+
+.accordion-btn:hover::before {
+    width: 100%;
 }
 
 .accordion-btn:hover {
@@ -221,7 +636,7 @@ blockquote footer {
 .panel {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease-out;
+    transition: max-height 0.6s ease-out;
     background: #1a1a1a;
     border-radius: 0 0 5px 5px;
 }
@@ -237,6 +652,11 @@ blockquote footer {
     height: auto;
     object-fit: cover;
     border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+.massacre-content:hover img {
+    transform: scale(1.05);
 }
 
 .massacre-text {
@@ -246,18 +666,194 @@ blockquote footer {
 .massacre-text h4 {
     margin-bottom: 15px;
     color: #ce1126;
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.massacre-text h4::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #ce1126, #009736, #ffffff);
+    transition: all 0.4s ease;
+}
+
+.massacre-text:hover h4::after {
+    width: 100%;
+}
+
+.quote {
+    background-color: rgba(0, 151, 54, 0.1);
+    border-left: 5px solid #cddc39;
+    padding: 15px 20px;
+    margin: 25px 0;
+    border-radius: 5px;
+    font-style: italic;
+    color: #ddd;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    z-index: 1;
+}
+
+.quote::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(206, 17, 38, 0.1), rgba(0, 151, 54, 0.1), rgba(255, 255, 255, 0.1));
+    transition: all 0.6s ease;
+    z-index: -1;
+}
+
+.quote:hover::before {
+    width: 100%;
+}
+
+.quote:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.quote footer {
+    display: block;
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* War Crimes Section */
+.war-crimes {
+    padding: 80px 5%;
+    background: #1a1a1a;
+}
+
+.war-crimes h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #ce1126;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.4s ease;
+}
+
+.war-crimes h2::after {
+    content: "";
+    display: block;
+    width: 72px;
+    height: 3px;
+    background: linear-gradient(90deg, #ce1126, #009736, #ffffff);
+    margin: 10px auto 0;
+    border-radius: 3px;
+    transition: all 0.4s ease;
+}
+
+.war-crimes h2:hover::after {
+    width: 100px;
+}
+
+.war-crimes h3 {
+    color: #009736;
+    margin: 30px 0 15px;
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.war-crimes h3::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #ce1126, #009736, #ffffff);
+    transition: all 0.4s ease;
+}
+
+.war-crimes h3:hover::after {
+    width: 100%;
+}
+
+.war-crimes ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.war-crimes li {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: rgba(30, 30, 30, 0.7);
+    border-radius: 5px;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.war-crimes li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(206, 17, 38, 0.1), rgba(0, 151, 54, 0.1), rgba(255, 255, 255, 0.1));
+    transition: all 0.6s ease;
+    z-index: -1;
+}
+
+.war-crimes li:hover::before {
+    width: 100%;
+}
+
+.war-crimes li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.war-crimes strong {
+    color: #ce1126;
 }
 
 /* Interactive Map Section */
 .land-loss {
     padding: 80px 5%;
-    background: #1a1a1a;
 }
 
 .land-loss h2 {
     text-align: center;
     margin-bottom: 50px;
     color: #009736;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.4s ease;
+}
+
+.land-loss h2::after {
+    content: "";
+    display: block;
+    width: 72px;
+    height: 3px;
+    background: linear-gradient(90deg, #ce1126, #009736, #ffffff);
+    margin: 10px auto 0;
+    border-radius: 3px;
+    transition: all 0.4s ease;
+}
+
+.land-loss h2:hover::after {
+    width: 100px;
 }
 
 .map-container {
@@ -270,6 +866,7 @@ blockquote footer {
     justify-content: center;
     gap: 15px;
     margin-bottom: 30px;
+    flex-wrap: wrap;
 }
 
 .map-controls button {
@@ -279,22 +876,55 @@ blockquote footer {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.map-controls button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(206, 17, 38, 0.3), rgba(0, 151, 54, 0.3), rgba(255, 255, 255, 0.3));
+    transition: all 0.5s ease;
+    z-index: -1;
+}
+
+.map-controls button:hover::before {
+    width: 100%;
 }
 
 .map-controls button:hover {
     background: #444;
+    transform: translateY(-3px);
+}
+
+.map-controls button.active {
+    background: #009736;
 }
 
 .map-display {
     position: relative;
     margin-bottom: 30px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: all 0.4s ease;
+}
+
+.map-display:hover {
+    transform: scale(1.02);
 }
 
 #dynamic-map {
     width: 100%;
     border-radius: 5px;
     border: 2px solid #555;
+    transition: all 0.5s ease;
 }
 
 .map-legend {
@@ -302,12 +932,18 @@ blockquote footer {
     justify-content: center;
     gap: 30px;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 .map-legend div {
     display: flex;
     align-items: center;
     gap: 5px;
+    transition: all 0.3s ease;
+}
+
+.map-legend div:hover {
+    transform: translateY(-3px);
 }
 
 .color-palestinian {
@@ -339,16 +975,62 @@ blockquote footer {
     justify-content: center;
     gap: 50px;
     margin-top: 50px;
+    flex-wrap: wrap;
 }
 
 .stat {
     text-align: center;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.stat::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(206, 17, 38, 0.1), rgba(0, 151, 54, 0.1), rgba(255, 255, 255, 0.1));
+    transition: all 0.6s ease;
+    z-index: -1;
+}
+
+.stat:hover::before {
+    width: 100%;
+}
+
+.stat:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .stat h3 {
     font-size: 2.5rem;
     color: #ce1126;
     margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.stat h3::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #ce1126, #009736, #ffffff);
+    transition: all 0.4s ease;
+}
+
+.stat:hover h3::after {
+    width: 100%;
 }
 
 /* Modal Styles */
@@ -360,7 +1042,13 @@ blockquote footer {
     top: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.9);
+    animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 .modal-content {
@@ -371,6 +1059,13 @@ blockquote footer {
     width: 80%;
     max-width: 800px;
     position: relative;
+    animation: slideIn 0.4s ease;
+    border: 1px solid #444;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
 }
 
 .close {
@@ -380,6 +1075,81 @@ blockquote footer {
     right: 25px;
     font-size: 30px;
     cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.close::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(206, 17, 38, 0.2), rgba(0, 151, 54, 0.2), rgba(255, 255, 255, 0.2));
+    transition: all 0.5s ease;
+    z-index: -1;
+}
+
+.close:hover::before {
+    width: 100%;
+}
+
+.close:hover {
+    color: #ce1126;
+}
+
+/* Footer */
+footer {
+    background: #000;
+    padding: 30px 5%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer p {
+    margin-bottom: 20px;
+    color: #aaa;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a {
+    font-size: 1.5rem;
+    color: #009736;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.social-links a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(206, 17, 38, 0.2), rgba(0, 151, 54, 0.2), rgba(255, 255, 255, 0.2));
+    transition: all 0.5s ease;
+    z-index: -1;
+}
+
+.social-links a:hover::before {
+    width: 100%;
+}
+
+.social-links a:hover {
+    color: #fff;
+    transform: translateY(-5px);
 }
 
 /* Responsive Design */
@@ -387,20 +1157,43 @@ blockquote footer {
     .nav-links {
         display: none;
     }
+    
     .hamburger {
         display: block;
     }
+    
+    body {
+        padding-top: 70px;
+    }
+    
     .massacre-content {
         flex-direction: column;
     }
+    
     .massacre-content img {
         width: 100%;
     }
+    
     .map-controls {
         flex-wrap: wrap;
     }
+    
     .land-stats {
         flex-direction: column;
         gap: 20px;
     }
+    
+    .mobile-nav li {
+        margin: 0;
+    }
+    
+    .mobile-nav a {
+        padding: 15px 20px;
+        border-bottom: 1px solid #333;
+    }
+}
+
+/* Mobile Nav Active */
+.mobile-nav.active {
+    display: flex;
 }

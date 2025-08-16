@@ -1,23 +1,59 @@
-/* assets/css/historical-periods.css */
-
 .period-header {
     text-align: center;
     margin-bottom: 40px;
     padding: 30px 20px;
-    background-color: #e0f7fa; /* Light blue background */
-    border-bottom: 3px solid #00796b; /* Darker teal border */
+    background-color: rgba(30, 30, 30, 0.8);
+    border-bottom: 3px solid #009736;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    z-index: 1;
+}
+
+.period-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(206, 17, 38, 0.1), rgba(0, 151, 54, 0.1), rgba(255, 255, 255, 0.1));
+    transition: all 0.6s ease;
+    z-index: -1;
+}
+
+.period-header:hover::before {
+    width: 100%;
 }
 
 .period-header h1 {
-    color: #004d40; /* Dark teal */
+    color: #009736;
     font-size: 3em;
     margin-bottom: 15px;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.period-header h1::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #ce1126, #009736, #ffffff);
+    transition: all 0.4s ease;
+}
+
+.period-header:hover h1::after {
+    width: 100%;
 }
 
 .period-header p {
-    color: #333;
+    color: #ddd;
     font-size: 1.2em;
     line-height: 1.7;
     max-width: 900px;
@@ -31,26 +67,67 @@
 }
 
 .period-content h2 {
-    color: #00796b; /* Darker teal */
+    color: #009736;
     font-size: 2.2em;
     margin-top: 50px;
     margin-bottom: 25px;
-    border-bottom: 2px solid #b2dfdb; /* Light teal underline */
+    border-bottom: 2px solid #009736;
     padding-bottom: 10px;
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.period-content h2::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #ce1126, #009736, #ffffff);
+    transition: all 0.4s ease;
+}
+
+.period-content:hover h2::after {
+    width: 100%;
 }
 
 .period-content h3 {
-    color: #00695c; /* Even darker teal */
+    color: #009736;
     font-size: 1.8em;
     margin-top: 35px;
     margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.period-content h3::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #ce1126, #009736, #ffffff);
+    transition: all 0.4s ease;
+}
+
+.period-content:hover h3::after {
+    width: 100%;
 }
 
 .period-content p {
-    color: #444;
+    color: #ddd;
     font-size: 1.1em;
     line-height: 1.8;
     margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.period-content p:hover {
+    color: #fff;
 }
 
 .period-content ul {
@@ -60,25 +137,58 @@
 }
 
 .period-content ul li {
-    color: #444;
+    color: #ddd;
     font-size: 1.05em;
     line-height: 1.6;
     margin-bottom: 8px;
+    transition: all 0.3s ease;
+}
+
+.period-content ul li:hover {
+    color: #fff;
 }
 
 .period-content ul li strong {
-    color: #004d40;
+    color: #ce1126;
 }
 
 /* Specific styles for quotes, testimonies, etc. */
 .quote, .survivor-testimony, .historical-document, .military-order, .statistic, .un-report, .evidence {
-    background-color: #f0f4c3; /* Light yellow/green */
-    border-left: 5px solid #cddc39; /* Lime green border */
+    background-color: rgba(0, 151, 54, 0.1);
+    border-left: 5px solid #009736;
     padding: 15px 20px;
     margin: 25px 0;
     border-radius: 5px;
     font-style: italic;
-    color: #555;
+    color: #ddd;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    z-index: 1;
+}
+
+.quote::before, .survivor-testimony::before, .historical-document::before, 
+.military-order::before, .statistic::before, .un-report::before, .evidence::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(206, 17, 38, 0.1), rgba(0, 151, 54, 0.1), rgba(255, 255, 255, 0.1));
+    transition: all 0.6s ease;
+    z-index: -1;
+}
+
+.quote:hover::before, .survivor-testimony:hover::before, .historical-document:hover::before, 
+.military-order:hover::before, .statistic:hover::before, .un-report:hover::before, .evidence:hover::before {
+    width: 100%;
+}
+
+.quote:hover, .survivor-testimony:hover, .historical-document:hover, 
+.military-order:hover, .statistic:hover, .un-report:hover, .evidence:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .quote footer, .survivor-testimony footer {
@@ -86,7 +196,7 @@
     margin-top: 10px;
     font-style: normal;
     font-weight: bold;
-    color: #333;
+    color: #fff;
 }
 
 .survivor-testimony .testimony-grid {
@@ -99,6 +209,34 @@
     display: flex;
     align-items: flex-start;
     gap: 15px;
+    background: rgba(30, 30, 30, 0.7);
+    padding: 20px;
+    border-radius: 8px;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.survivor-testimony .testimony::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(206, 17, 38, 0.1), rgba(0, 151, 54, 0.1), rgba(255, 255, 255, 0.1));
+    transition: all 0.6s ease;
+    z-index: -1;
+}
+
+.survivor-testimony .testimony:hover::before {
+    width: 100%;
+}
+
+.survivor-testimony .testimony:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .survivor-testimony .testimony img {
@@ -106,8 +244,13 @@
     height: 80px;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid #cddc39;
+    border: 2px solid #009736;
     flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.survivor-testimony .testimony:hover img {
+    transform: scale(1.1);
 }
 
 .survivor-testimony blockquote {
