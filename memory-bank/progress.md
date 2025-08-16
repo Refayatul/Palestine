@@ -25,6 +25,7 @@
     -   **Diaspora hub** - PARTIALLY COMPLETED: Created region data files, `/diaspora/index.html`, `/assets/js/render-diaspora.js`, implemented UI with region selector/search/grids, accessibility features, added "Diaspora" to navigation, page to search index and sitemap, pending additional region data files and nav addition.
     -   **Women / Youth / Labor sections** - PARTIALLY COMPLETED: Created movement data files, `/movements/women.html`, pending youth/labor pages, shared renderer, rendering implementation, nav addition, search index entries, and sitemap entries.
 -   Updated the memory bank.
+-   Updated the to-do list.
 
 ## What's Left to Build
 
@@ -43,6 +44,7 @@
 -   The search index (`assets/data/search-index.json`) has been rebuilt and verified.
 -   Phase P1 core content implementation is largely complete with major sections functional.
 -   All memory bank files have been reviewed and updated.
+-   The to-do list has been updated.
 
 ## Known Issues
 

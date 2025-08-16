@@ -2,38 +2,65 @@
   {
     "id": "m1",
     "myth": "Palestinians arrived recently.",
-    "fact": "Palestinians have continuous presence for centuries; modern national identity formed under Ottoman/British periods.",
+    "fact": "Archaeological evidence and historical records demonstrate a continuous Palestinian presence in the region for thousands of years, predating the modern state of Israel. Their identity has evolved over centuries, influenced by various cultures and empires.",
     "sources": [
       {
-        "title": "UNESCO note",
-        "url": "https://example.org",
-        "publisher": "UNESCO",
-        "date_accessed": "2025-08-15"
+        "title": "History of Palestine - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/History_of_Palestine",
+        "publisher": "Wikipedia",
+        "date_accessed": "2025-08-16"
+      },
+      {
+        "title": "Palestinians - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Palestinians",
+        "publisher": "Wikipedia",
+        "date_accessed": "2025-08-16"
       }
     ]
   },
   {
     "id": "m2",
     "myth": "Palestine was an empty land.",
-    "fact": "Palestine had a thriving population and culture before 1948.",
-    "sources": []
+    "fact": "Historical accounts and demographic data show that Palestine was inhabited by a diverse population, including Arabs, Jews, and Christians, with established towns, villages, and agricultural practices long before 1948. It was not an empty land awaiting settlement.",
+    "sources": [
+      {
+        "title": "History of Palestine - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/History_of_Palestine",
+        "publisher": "Wikipedia",
+        "date_accessed": "2025-08-16"
+      }
+    ]
   },
   {
     "id": "m3",
     "myth": "The conflict is purely religious.",
-    "fact": "The conflict is rooted in political and territorial disputes.",
-    "sources": []
+    "fact": "While religion plays a role, the Israeli-Palestinian conflict is primarily a political and territorial dispute rooted in competing claims over land, self-determination, and human rights. It involves issues of occupation, displacement, and national identity.",
+    "sources": [
+      {
+        "title": "Israel and the Palestinians: History of the conflict explained - BBC News",
+        "url": "https://www.bbc.com/news/articles/ckgr71z0jp4o",
+        "publisher": "BBC News",
+        "date_accessed": "2025-08-16"
+      }
+    ]
   },
   {
     "id": "m4",
     "myth": "Israel is a democracy.",
-    "fact": "While Israel has elections, its policies towards Palestinians are not democratic.",
-    "sources": []
+    "fact": "While Israel holds democratic elections for its Jewish citizens, its policies and laws in the occupied Palestinian territories, and towards its Palestinian citizens, have been widely criticized by human rights organizations for discriminatory practices and denial of basic rights, leading to accusations of apartheid.",
+    "sources": [
+      {
+        "title": "Israel and the Occupied Palestinian Territory - Global Centre for the Responsibility to Protect",
+        "url": "https://www.globalr2p.org/countries/israel-and-the-occupied-palestinian-territory/",
+        "publisher": "Global Centre for the Responsibility to Protect",
+        "date_accessed": "2025-08-16"
+      }
+    ]
   },
   {
     "id": "m5",
     "myth": "Hamas represents all Palestinians.",
-    "fact": "Hamas is a political organization with support in Gaza, but not all Palestinians support them.",
+    "fact": "Hamas is a political and militant organization that primarily governs the Gaza Strip. While it has significant support in Gaza, it does not represent the entirety of the Palestinian people, who have diverse political views and are also represented by other factions and the Palestinian Authority in the West Bank.",
     "sources": []
   }
 ]

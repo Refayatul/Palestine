@@ -1,5 +1,82 @@
 [
   {
+    "type": "page",
+    "slug": "history",
+    "title": "Palestinian History",
+    "summary": "Learn about the rich history of Palestine spanning thousands of years",
+    "url": "/#history"
+  },
+  {
+    "type": "page",
+    "slug": "resistance",
+    "title": "Palestinian Resistance",
+    "summary": "Explore methods of Palestinian resistance including peaceful protests and BDS movement",
+    "url": "/#resistance"
+  },
+  {
+    "type": "page",
+    "slug": "betrayal",
+    "title": "Who Betrayed Palestine",
+    "summary": "Understand who has betrayed the Palestinian cause throughout history",
+    "url": "/#betrayal"
+  },
+  {
+    "type": "page",
+    "slug": "action",
+    "title": "Take Action Now",
+    "summary": "Learn how you can support Palestine through petitions, donations, and awareness",
+    "url": "/#act"
+  },
+  {
+    "type": "page",
+    "slug": "resources",
+    "title": "Educational Resources",
+    "summary": "Access books, documentaries, academic papers, and maps about Palestine",
+    "url": "/#resources"
+  },
+  {
+    "type": "page",
+    "slug": "culture",
+    "title": "Palestinian Culture & Heritage",
+    "summary": "Discover Palestinian traditions, music, cuisine, and arts",
+    "url": "/#culture"
+  },
+  {
+    "type": "page",
+    "slug": "future",
+    "title": "The Future of Palestine",
+    "summary": "Vision for a free Palestine with justice and coexistence",
+    "url": "/#future"
+  },
+  {
+    "type": "myth",
+    "slug": "myths",
+    "title": "Debunking Myths About Palestine",
+    "summary": "Common misconceptions about Palestine and the truth behind them",
+    "url": "/myths/index.html"
+  },
+  {
+    "type": "legal",
+    "slug": "legal",
+    "title": "Legal Resources",
+    "summary": "International law and legal frameworks related to Palestine",
+    "url": "/legal/index.html"
+  },
+  {
+    "type": "diaspora",
+    "slug": "diaspora",
+    "title": "Palestinian Diaspora",
+    "summary": "Stories and resources for the Palestinian diaspora community",
+    "url": "/diaspora/index.html"
+  },
+  {
+    "type": "education",
+    "slug": "education",
+    "title": "Educational Resources",
+    "summary": "Materials for teachers and students about Palestine",
+    "url": "/education/teachers.html"
+  },
+  {
     "type": "country",
     "slug": "canada",
     "title": "Canada — Country Profile",
@@ -329,52 +406,24 @@
     "url": "/features/abductions-2008-2023.html"
   },
   {
-    "type": "education",
-    "slug": "teachers",
-    "title": "Teacher Resources",
-    "summary": "Educational materials and lesson plans about Palestine for teachers.",
-    "url": "/education/teachers.html"
-  },
-  {
-    "type": "education",
-    "slug": "students",
-    "title": "Student Resources",
-    "summary": "Learning materials and activities about Palestine for students.",
-    "url": "/education/students.html"
-  },
-  {
-    "type": "movement",
-    "slug": "women",
-    "title": "Women's Movement",
-    "summary": "Profiles of Palestinian women activists and organizations.",
-    "url": "/movements/women.html"
-  },
-  {
     "type": "movement",
     "slug": "youth",
-    "title": "Youth Movement",
-    "summary": "Palestinian youth activism and organizations.",
+    "title": "Palestinian Youth Movement",
+    "summary": "Information and resources about the Palestinian youth movement.",
     "url": "/movements/youth.html"
   },
   {
     "type": "movement",
     "slug": "labor",
-    "title": "Labor Movement",
-    "summary": "Palestinian workers' rights and labor organizations.",
+    "title": "Palestinian Labor Movement",
+    "summary": "Information and resources about the Palestinian labor movement.",
     "url": "/movements/labor.html"
   },
   {
-    "type": "legal",
-    "slug": "legal-library",
-    "title": "Legal Library",
-    "summary": "Collection of legal documents and international law resources.",
-    "url": "/legal/index.html"
-  },
-  {
-    "type": "diaspora",
-    "slug": "diaspora-hub",
-    "title": "Diaspora Hub",
-    "summary": "Resources and information about Palestinian diaspora communities worldwide.",
-    "url": "/diaspora/index.html"
+    "type": "movement",
+    "slug": "women",
+    "title": "Palestinian Women Movement",
+    "summary": "Information and resources about the Palestinian women movement.",
+    "url": "/movements/women.html"
   }
 ]

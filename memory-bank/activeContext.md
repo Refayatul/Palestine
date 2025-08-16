@@ -20,23 +20,15 @@
 -   Updated abduction data (`assets/data/abductions-2008-2023.json`) with a 2024 entry for grave violations against children and updated meta information based on Brave Search results.
 -   Rebuilt the search index (`assets/data/search-index.json`) to incorporate the updated JSON data.
 -   Verified the updated search index.
--   **Phase P1 Implementation Progress:**
-    -   **Legal Library hub** - COMPLETED: Created all required files and implemented search/filters.
-    -   **War chronologies & deep dives** - COMPLETED: Created all timeline pages and data files with shared renderer.
-    -   **Teacher/Student kits with print CSS** - PARTIALLY COMPLETED: Created pages and print styles, pending nav dropdown/footer addition.
-    -   **Diaspora hub** - PARTIALLY COMPLETED: Created data files and index page, pending additional region data files and nav addition.
-    -   **Women / Youth / Labor sections** - PARTIALLY COMPLETED: Created data files and women's page, pending youth/labor pages and shared renderer.
--   Reviewed and updated all memory bank files.
+-   Updated the to-do list.
 
 ## Next Steps
 
 -   Complete implementation of expanded scope from focus chain:
-    - **Core Content Expansions (Part A):** 
-        - Legal Library hub
-        - War chronologies
+    - **Core Content Expansions (Part A):**
         - Education kits with print CSS
-        - Diaspora hub
-        - Social Movements sections
+        - Women / Youth / Labor sections
+        - Complete remaining items in Phase P1 focus chain.
     - **Advocacy & Action Tools (Part B):**
         - Letter/email builder
         - Phone call scripts

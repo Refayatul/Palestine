@@ -1,133 +1,116 @@
-// /assets/js/search.js
-(function(){
-  const input = document.getElementById('siteSearch');
-  const panel = document.getElementById('searchPanel');
-  const list  = document.getElementById('searchResults');
-  const closeBtn = panel ? panel.querySelector('.search-close') : null;
-  if (!input || !panel || !list) return;
-
-  let fuse = null;
-  let data = [];
-  let activeIndex = -1;
-  let open = false;
-
-  // Load index once
-  fetch('/assets/data/search-index.json', { cache: 'no-store' })
-    .then(r => r.json())
-    .then(json => {
-      data = json;
-      fuse = new Fuse(json, {
-        includeScore: true,
-        threshold: 0.35,
-        ignoreLocation: true,
-        minMatchCharLength: 2,
-        keys: ['title','summary']
-      });
-    })
-    .catch(() => { /* index missing? Keep silent */ });
-
-  function openPanel(){
-    if (!open){ panel.removeAttribute('hidden'); open = true; activeIndex = -1; }
+// Search functionality using Fuse.js
+async function loadSearchIndex() {
+  try {
+    const response = await fetch('/assets/data/search-index.json');
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error('Failed to load search index:', error);
+    return [];
   }
-  function closePanel(){
-    if (open){ panel.setAttribute('hidden',''); open = false; activeIndex = -1; list.innerHTML = ''; }
-  }
+}
 
-  function kickerForType(t){
-    if (t === 'country') return 'Country';
-    if (t === 'boycott-supporting') return 'Boycott (Target)';
-    if (t === 'boycott-supportive') return 'Supportive';
-    if (t === 'journalist') return 'Journalist';
-    if (t === 'article') return 'Feature';
-    return 'Result';
+function initSearch() {
+  const searchInput = document.getElementById('siteSearch');
+  const searchPanel = document.getElementById('searchPanel');
+  const searchResults = document.getElementById('searchResults');
+  const searchClose = document.querySelector('.search-close');
+  
+  if (!searchInput || !searchPanel || !searchResults) return;
+  
+  let fuse;
+  let searchIndex = [];
+  
+  // Initialize Fuse.js with search index
+  loadSearchIndex().then(data => {
+    searchIndex = data;
+    fuse = new Fuse(data, {
+      keys: ['title', 'summary'],
+      threshold: 0.3,
+      includeScore: true
+    });
+  });
+  
+  // Show search panel
+  function showSearchPanel() {
+    searchPanel.removeAttribute('hidden');
   }
-
-  function render(results){
-    if (!results.length){
-      list.innerHTML = `<li class="muted" aria-selected="false"><span class="search-summary">No results.</span></li>`;
+  
+  // Hide search panel
+  function hideSearchPanel() {
+    searchPanel.setAttribute('hidden', '');
+  }
+  
+  // Perform search
+  function performSearch(query) {
+    if (!fuse || !query.trim()) {
+      searchResults.innerHTML = '';
       return;
     }
-    list.innerHTML = results.slice(0, 12).map((r, idx) => {
-      const i = r.item || r; // Fuse returns {item,...}; fallback if raw
+    
+    const results = fuse.search(query);
+    displayResults(results.slice(0, 10)); // Show top 10 results
+  }
+  
+  // Display search results
+  function displayResults(results) {
+    if (results.length === 0) {
+      searchResults.innerHTML = '<li class="no-results">No results found</li>';
+      return;
+    }
+    
+    searchResults.innerHTML = results.map(result => {
+      const item = result.item;
       return `
-        <li role="option" id="sr-${idx}" data-url="${i.url}" aria-selected="${idx===activeIndex}">
-          <a href="${i.url}">
-            <div class="search-kicker">${kickerForType(i.type)}</div>
-            <div class="search-title">${i.title}</div>
-            ${i.summary ? `<div class="search-summary">${i.summary}</div>` : ''}
+        <li>
+          <a href="${item.url}">
+            <div class="search-kicker">${item.type}</div>
+            <div class="search-title">${item.title}</div>
+            <div class="search-summary">${item.summary}</div>
           </a>
         </li>
       `;
     }).join('');
   }
-
-  // Debounce input
-  let t = null;
-  input.addEventListener('input', (e) => {
-    const q = e.target.value.trim();
-    if (!q) { closePanel(); return; }
-    if (!fuse){ openPanel(); render([]); return; }
-    clearTimeout(t);
-    t = setTimeout(() => {
-      const results = fuse.search(q);
-      openPanel();
-      render(results);
-    }, 120);
-  });
-
-  // Keyboard navigation
-  input.addEventListener('keydown', (e) => {
-    if (!open) return;
-    const items = [...list.querySelectorAll('li[data-url]')];
-    if (!items.length) return;
-
-    if (e.key === 'ArrowDown'){
-      e.preventDefault();
-      activeIndex = (activeIndex + 1) % items.length;
-      updateActive(items);
-    } else if (e.key === 'ArrowUp'){
-      e.preventDefault();
-      activeIndex = (activeIndex - 1 + items.length) % items.length;
-      updateActive(items);
-    } else if (e.key === 'Enter'){
-      e.preventDefault();
-      if (activeIndex >= 0){
-        const url = items[activeIndex].dataset.url;
-        if (url) window.location.href = url;
-      }
-    } else if (e.key === 'Escape'){
-      e.preventDefault();
-      closePanel();
-      input.blur();
+  
+  // Event listeners
+  searchInput.addEventListener('focus', () => {
+    if (searchInput.value.trim()) {
+      performSearch(searchInput.value);
+      showSearchPanel();
     }
   });
-
-  function updateActive(items){
-    items.forEach((li, i) => li.setAttribute('aria-selected', i === activeIndex ? 'true' : 'false'));
-    const active = items[activeIndex];
-    if (active) active.scrollIntoView({ block: 'nearest' });
+  
+  searchInput.addEventListener('input', (e) => {
+    const query = e.target.value;
+    if (query.trim()) {
+      performSearch(query);
+      showSearchPanel();
+    } else {
+      hideSearchPanel();
+    }
+  });
+  
+  // Close search panel
+  if (searchClose) {
+    searchClose.addEventListener('click', hideSearchPanel);
   }
-
-  // Mouse interactions
-  list.addEventListener('click', (e) => {
-    const li = e.target.closest('li[data-url]');
-    if (!li) return;
-    const url = li.dataset.url;
-    closePanel();
-    if (url) window.location.href = url;
-  });
-
-  // Close handlers
-  closeBtn?.addEventListener('click', closePanel);
+  
+  // Close search when clicking outside
   document.addEventListener('click', (e) => {
-    if (e.target === input || e.target.closest('.site-search')) return;
-    closePanel();
-  });
-  document.addEventListener('keydown', (e) => {
-    if (e.key === '/' && !e.target.matches('input,textarea')){
-      // Focus search with "/" like many sites
-      e.preventDefault();
-      input.focus();
+    if (!searchPanel.contains(e.target) && e.target !== searchInput) {
+      hideSearchPanel();
     }
   });
-})();
+  
+  // Keyboard navigation
+  searchInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      hideSearchPanel();
+      searchInput.blur();
+    }
+  });
+}
+
+// Initialize search when DOM is loaded
+document.addEventListener('DOMContentLoaded', initSearch);

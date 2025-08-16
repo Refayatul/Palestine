@@ -1,154 +1,34 @@
 [
   {
-    "id": "journalist-1",
-    "name": "Jane Smith",
+    "id": "anas-al-sharif",
+    "name": "Anas al-Sharif",
     "region": "Gaza",
-    "bio": "Placeholder entry. No specific real-world journalist found with this name and region.",
+    "bio": "Al Jazeera correspondent killed in an Israeli airstrike on August 11, 2025, along with four colleagues. He was a prominent journalist covering events in Gaza.",
+    "links": [
+      {
+        "platform": "X (formerly Twitter)",
+        "url": "https://twitter.com/AnasAlSharif"
+      }
+    ],
+    "photo": "/assets/images/journalists/anas-al-sharif.jpg",
+    "note": "Updated with real data based on recent events."
+  },
+  {
+    "id": "ismail-al-ghoul",
+    "name": "Ismail al-Ghoul",
+    "region": "Gaza",
+    "bio": "Prominent Al Jazeera correspondent killed in 2024 in an air strike in Gaza City.",
     "links": [],
-    "photo": "/assets/images/journalists/jane-smith.jpg",
-    "note": "This entry is a placeholder and does not represent a real journalist. Updated on 2025-08-16."
+    "photo": "/assets/images/journalists/ismail-al-ghoul.jpg",
+    "note": "Updated with real data based on recent events."
   },
   {
-    "id": "journalist-2",
-    "name": "John Doe",
-    "region": "West Bank",
-    "bio": "Covering events in the West Bank.",
-    "links": [
-      {
-        "platform": "Website",
-        "url": "https://johndoe.com"
-      }
-    ],
-    "photo": "/assets/images/journalists/john-doe.jpg"
-  },
-  {
-    "id": "journalist-3",
-    "name": "Alice Johnson",
-    "region": "East Jerusalem",
-    "bio": "Focusing on human rights issues.",
-    "links": [
-      {
-        "platform": "Blog",
-        "url": "https://alicejohnson.blog"
-      }
-    ],
-    "photo": "/assets/images/journalists/alice-johnson.jpg"
-  },
-  {
-    "id": "journalist-4",
-    "name": "Bob Williams",
-    "region": "Lebanon",
-    "bio": "Reporting from the Lebanese border.",
-    "links": [
-      {
-        "platform": "YouTube",
-        "url": "https://youtube.com/bobwilliams"
-      }
-    ],
-    "photo": "/assets/images/journalists/bob-williams.jpg"
-  },
-  {
-    "id": "journalist-5",
-    "name": "Charlie Brown",
-    "region": "Syria",
-    "bio": "Covering the Syrian perspective.",
-    "links": [
-      {
-        "platform": "Facebook",
-        "url": "https://facebook.com/charliebrown"
-      }
-    ],
-    "photo": "/assets/images/journalists/charlie-brown.jpg"
-  },
-  {
-    "id": "journalist-6",
-    "name": "Diana Miller",
-    "region": "Egypt",
-    "bio": "Reporting from Cairo.",
-    "links": [
-      {
-        "platform": "Instagram",
-        "url": "https://instagram.com/dianamiller"
-      }
-    ],
-    "photo": "/assets/images/journalists/diana-miller.jpg"
-  },
-  {
-    "id": "journalist-7",
-    "name": "Ethan Davis",
-    "region": "Jordan",
-    "bio": "Covering Jordanian views.",
-    "links": [
-      {
-        "platform": "LinkedIn",
-        "url": "https://linkedin.com/ethandavis"
-      }
-    ],
-    "photo": "/assets/images/journalists/ethan-davis.jpg"
-  },
-  {
-    "id": "journalist-8",
-    "name": "Fiona Wilson",
-    "region": "Turkey",
-    "bio": "Reporting from Istanbul.",
-    "links": [
-      {
-        "platform": "Podcast",
-        "url": "https://fionawilson.podcast"
-      }
-    ],
-    "photo": "/assets/images/journalists/fiona-wilson.jpg"
-  },
-  {
-    "id": "journalist-9",
-    "name": "George Taylor",
-    "region": "Qatar",
-    "bio": "Covering Qatari affairs.",
-    "links": [
-      {
-        "platform": "Telegram",
-        "url": "https://telegram.com/georgetaylor"
-      }
-    ],
-    "photo": "/assets/images/journalists/george-taylor.jpg"
-  },
-  {
-    "id": "journalist-10",
-    "name": "Hannah Moore",
-    "region": "Saudi Arabia",
-    "bio": "Reporting from Riyadh.",
-    "links": [
-      {
-        "platform": "TikTok",
-        "url": "https://tiktok.com/hannahmoore"
-      }
-    ],
-    "photo": "/assets/images/journalists/hannah-moore.jpg"
-  },
-  {
-    "id": "journalist-11",
-    "name": "Isaac Clark",
-    "region": "UAE",
-    "bio": "Covering UAE perspectives.",
-    "links": [
-      {
-        "platform": "Medium",
-        "url": "https://medium.com/isaacclark"
-      }
-    ],
-    "photo": "/assets/images/journalists/isaac-clark.jpg"
-  },
-  {
-    "id": "journalist-12",
-    "name": "Julia White",
-    "region": "Oman",
-    "bio": "Reporting from Muscat.",
-    "links": [
-      {
-        "platform": "Twitch",
-        "url": "https://twitch.tv/juliawhite"
-      }
-    ],
-    "photo": "/assets/images/journalists/julia-white.jpg"
+    "id": "rami-al-rifi",
+    "name": "Rami al-Rifi",
+    "region": "Gaza",
+    "bio": "Al Jazeera cameraman killed in 2024 in an air strike in Gaza City.",
+    "links": [],
+    "photo": "/assets/images/journalists/rami-al-rifi.jpg",
+    "note": "Updated with real data based on recent events."
   }
 ]
