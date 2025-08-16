@@ -4,8 +4,755 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Free Palestine | Justice & Resistance</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: #111;
+            color: #fff;
+            line-height: 1.6;
+            padding-top: 60px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .container {
+            width: min(1200px, 92%);
+            margin: 0 auto;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #ce1126;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+            margin: 8px 5px;
+        }
+
+        .btn:hover {
+            background: #a50d1e;
+            transform: translateY(-2px);
+        }
+
+        .btn-small {
+            background: #009736;
+            padding: 6px 12px;
+            font-size: 14px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-small:hover {
+            background: #007a29;
+        }
+
+        /* Navigation - COMPACT VERSION */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 5%;
+            background: rgba(0, 0, 0, 0.9);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #333;
+            min-height: 60px;
+        }
+
+        .logo a {
+            font-weight: bold;
+            font-size: 1.3rem;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .logo span span {
+            color: #009736;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 15px;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 6px;
+            transition: 0.3s;
+            font-size: 0.95rem;
+        }
+
+        .nav-links a:hover {
+            color: #ce1126;
+        }
+
+        /* Dropdown Menu - HIDDEN BY DEFAULT */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: rgba(0, 0, 0, 0.95);
+            border: 1px solid #333;
+            border-radius: 5px;
+            min-width: 200px;
+            z-index: 1001;
+            margin-top: 5px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown-menu li {
+            list-style: none;
+            margin: 0;
+        }
+
+        .dropdown-menu a {
+            display: block;
+            padding: 12px 15px;
+            color: #fff;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+
+        .dropdown-menu a:hover {
+            background: #ce1126;
+            color: #fff;
+        }
+
+        /* Mobile Dropdown */
+        .mobile-dropdown {
+            position: relative;
+        }
+
+        .mobile-dropdown-menu {
+            display: none;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+            margin: 10px 0;
+            padding: 10px 0;
+        }
+
+        .mobile-dropdown.active .mobile-dropdown-menu {
+            display: block;
+        }
+
+        .mobile-dropdown-menu li {
+            list-style: none;
+            margin: 0;
+        }
+
+        .mobile-dropdown-menu a {
+            display: block;
+            padding: 10px 20px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .hamburger {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1.3rem;
+            color: #fff;
+            padding: 8px;
+        }
+
+        /* Mobile nav */
+        .mobile-nav {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: rgba(0,0,0,0.95);
+            z-index: 999;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .mobile-nav ul {
+            list-style: none;
+            text-align: center;
+        }
+
+        .mobile-nav li {
+            margin: 12px 0;
+        }
+
+        .mobile-nav a {
+            font-size: 1.3rem;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: calc(100vh - 60px);
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url(./assets/images/Fawzi_al_Juneidi_2017OWB.jpg);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero-content h1 {
+            font-size: clamp(1.8rem, 5vw, 3rem);
+            margin-bottom: 1.2rem;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+
+        .hero-content p {
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
+            max-width: 800px;
+            margin: 0 auto 1.5rem;
+            color: #e0e0e0;
+        }
+
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        /* Sections */
+        .section {
+            padding: 60px 5%;
+        }
+
+        .section-alt {
+            background: #1a1a1a;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.2rem;
+            color: #009736;
+            position: relative;
+        }
+
+        h2::after {
+            content: "";
+            display: block;
+            width: 72px;
+            height: 3px;
+            background: #ce1126;
+            margin: 10px auto 0;
+        }
+
+        h3 {
+            color: #009736;
+            margin-bottom: 12px;
+        }
+
+        /* Stats */
+        .history-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .stat-card {
+            background: #222;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            border-left: 5px solid #ce1126;
+        }
+
+        .stat-number {
+            font-size: 2.2rem;
+            font-weight: bold;
+            color: #ce1126;
+            margin-bottom: 8px;
+        }
+
+        .stat-label {
+            color: #ccc;
+            font-size: 0.9rem;
+        }
+
+        /* Methods Grid */
+        .resistance-methods, .betrayal-list, .action-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 25px;
+        }
+
+        .method, .betrayal-item, .option {
+            background: #222;
+            padding: 25px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .method:hover, .option:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+        }
+
+        .method i, .option i {
+            font-size: 2.2rem;
+            color: #009736;
+            margin-bottom: 15px;
+        }
+
+        /* Resources */
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 25px;
+        }
+
+        .resource-card {
+            background: #222;
+            padding: 25px;
+            border-radius: 8px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .resource-card:hover {
+            transform: translateY(-3px);
+        }
+
+        .resource-icon {
+            font-size: 2.2rem;
+            color: #009736;
+            margin-bottom: 15px;
+        }
+
+        .resource-link {
+            display: inline-block;
+            margin-top: 12px;
+            color: #00e676;
+            text-decoration: underline;
+            font-size: 0.95rem;
+        }
+
+        .resource-link:hover {
+            color: #fff;
+        }
+
+        /* Culture */
+        .culture-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            align-items: start;
+        }
+
+        .culture-highlights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .highlight {
+            background: #222;
+            padding: 18px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .highlight i {
+            font-size: 1.8rem;
+            color: #009736;
+            margin-bottom: 12px;
+        }
+
+        /* Future Goals */
+        .future-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .future-goals {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .goal-card {
+            background: #222;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .goal-card i {
+            font-size: 1.8rem;
+            color: #009736;
+            margin-bottom: 12px;
+        }
+
+        /* Gallery */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0,0,0,0.7);
+            padding: 12px;
+            transform: translateY(100%);
+            transition: 0.3s;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            transform: translateY(0);
+        }
+
+        /* Testimonials */
+        .testimonial-slider {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .testimonial {
+            background: #222;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+
+        .testimonial-content p {
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+
+        .testimonial-author {
+            text-align: right;
+        }
+
+        .author-name {
+            font-weight: bold;
+            color: #009736;
+        }
+
+        /* Footer */
+        footer {
+            background: #000;
+            padding: 40px 5% 20px;
+            margin-top: 40px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 25px;
+        }
+
+        .footer-section h3 {
+            color: #009736;
+            margin-bottom: 15px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section li {
+            margin: 8px 0;
+        }
+
+        .footer-section a {
+            color: #ccc;
+            transition: 0.3s;
+            font-size: 0.95rem;
+        }
+
+        .footer-section a:hover {
+            color: #009736;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 12px;
+            margin-top: 15px;
+        }
+
+        .social-links a {
+            font-size: 1.3rem;
+            color: #009736;
+        }
+
+        .social-links a:hover {
+            color: #fff;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 15px;
+            border-top: 1px solid #333;
+            color: #ccc;
+            font-size: 0.9rem;
+        }
+
+        /* Timeline Popup */
+        .timeline-popup {
+            display: none;
+            position: fixed;
+            z-index: 1001;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.9);
+        }
+
+        .timeline-popup-content {
+            background-color: #222;
+            color: #fff;
+            margin: 5% auto;
+            padding: 25px;
+            border: 1px solid #444;
+            width: 90%;
+            max-width: 900px;
+            border-radius: 8px;
+            position: relative;
+        }
+
+        .close-timeline {
+            color: #aaa;
+            position: absolute;
+            top: 12px;
+            right: 20px;
+            font-size: 30px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close-timeline:hover {
+            color: #ce1126;
+        }
+
+        .timeline-container {
+            margin-top: 25px;
+            max-height: 70vh;
+            overflow-y: auto;
+        }
+
+        .timeline-event {
+            display: flex;
+            border-left: 3px solid #ce1126;
+            padding: 12px 15px;
+            margin: 12px 0;
+            background: #1a1a1a;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .timeline-event:hover {
+            background: #2a2a2a;
+        }
+
+        .event-date {
+            width: 70px;
+            font-weight: bold;
+            color: #ce1126;
+            font-size: 0.9rem;
+        }
+
+        .event-content h3 {
+            color: #009736;
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
+
+        .event-content p {
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+        /* Donate Menu */
+        #donateMenu {
+            display: none;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #2a2a2a;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            z-index: 1001;
+            min-width: 280px;
+            max-width: 90%;
+            border: 1px solid #444;
+        }
+
+        #donateMenu .close {
+            position: absolute;
+            top: 8px;
+            right: 12px;
+            font-size: 1.5rem;
+            color: #aaa;
+            text-decoration: none;
+            line-height: 1;
+            cursor: pointer;
+        }
+
+        #donateMenu .close:hover {
+            color: #fff;
+        }
+
+        #donateMenu ul {
+            list-style: none;
+            padding: 0;
+            margin: 25px 0 0 0;
+        }
+
+        #donateMenu li {
+            margin-bottom: 12px;
+        }
+
+        #donateMenu li a {
+            color: #00e676;
+            text-decoration: underline;
+            font-size: 0.95rem;
+        }
+
+        #donateMenu li a:hover {
+            color: #fff;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .hamburger {
+                display: block;
+            }
+            
+            body {
+                padding-top: 60px;
+            }
+            
+            .hero {
+                height: calc(100vh - 60px);
+            }
+            
+            .hero-content h1 {
+                font-size: 1.8rem;
+            }
+            
+            .hero-content p {
+                font-size: 1rem;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                gap: 8px;
+            }
+            
+            .timeline-event {
+                flex-direction: column;
+            }
+            
+            .timeline-event::before {
+                display: none;
+            }
+            
+            .event-date {
+                margin-bottom: 8px;
+                width: auto;
+            }
+            
+            .event-content {
+                padding-left: 0;
+            }
+            
+            .history-stats {
+                grid-template-columns: 1fr;
+            }
+            
+            .culture-content, .future-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .section {
+                padding: 40px 5%;
+            }
+            
+            /* Mobile dropdown toggle */
+            .mobile-dropdown > a::after {
+                content: " ▼";
+                font-size: 0.8rem;
+                margin-left: 5px;
+            }
+        }
+
+        /* Mobile Nav Active */
+        .mobile-nav.active {
+            display: flex;
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation -->
@@ -20,9 +767,19 @@
             <li><a href="#betrayal">Betrayals</a></li>
             <li><a href="#act">Take Action</a></li>
             <li><a href="#resources">Resources</a></li>
-            <li><a href="#news">News</a></li>
             <li><a href="#culture">Culture</a></li>
-            <li><a href="#future">Future</a></li>
+            <li class="dropdown">
+                <a href="#">More <i class="fas fa-caret-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="myths/index.html">Myths</a></li>
+                    <li><a href="legal/index.html">Legal</a></li>
+                    <li><a href="diaspora/index.html">Diaspora</a></li>
+                    <li><a href="education/teachers.html">Education</a></li>
+                    <li><a href="movements/women.html">Movements</a></li>
+                    <li><a href="boycott/supporting.html">Boycotts Supporting</a></li>
+                    <li><a href="boycott/supportive.html">Boycotts Supportive</a></li>
+                </ul>
+            </li>
         </ul>
         <div class="hamburger">
             <i class="fas fa-bars"></i>
@@ -38,20 +795,27 @@
             <li><a href="#betrayal">Betrayals</a></li>
             <li><a href="#act">Take Action</a></li>
             <li><a href="#resources">Resources</a></li>
-            <li><a href="#news">News</a></li>
             <li><a href="#culture">Culture</a></li>
-            <li><a href="#future">Future</a></li>
+            <li class="mobile-dropdown">
+                <a href="#">More <i class="fas fa-caret-down"></i></a>
+                <ul class="mobile-dropdown-menu">
+                    <li><a href="myths/index.html">Myths</a></li>
+                    <li><a href="legal/index.html">Legal</a></li>
+                    <li><a href="diaspora/index.html">Diaspora</a></li>
+                    <li><a href="education/teachers.html">Education</a></li>
+                    <li><a href="movements/women.html">Movements</a></li>
+                    <li><a href="boycott/supporting.html">Boycotts Supporting</a></li>
+                    <li><a href="boycott/supportive.html">Boycotts Supportive</a></li>
+                </ul>
+            </li>
         </ul>
     </div>
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-overlay"></div>
         <div class="hero-content"> 
-            <div class="hero-text">
-                <h1>From the River to the Sea,<br>Palestine Will Be Free</h1>
-                <p>76+ years of occupation. Millions displaced. Still resisting.</p>
-            </div>
+            <h1>From the River to the Sea,<br>Palestine Will Be Free</h1>
+            <p>76+ years of occupation. Millions displaced. Still resisting.</p>
             <div class="hero-buttons">
                 <button id="timelineBtn" class="timeline-button btn">View Timeline</button>
                 <button id="joinmovementbtn" class="timeline-button joinmovement-button btn">Join the Movement</button>
@@ -65,105 +829,105 @@
             <span class="close-timeline">&times;</span>
             <h2>Timeline of Palestinian Struggle</h2>
             <div class="timeline-container">
-                <div class="timeline-event" data-url="./pages/history_pages/peel-commission.html">
+                <div class="timeline-event" data-url="pages/history_pages/peel-commission.html">
                     <div class="event-date">1937</div>
                     <div class="event-content">
                         <h3>Peel Commission Partition Plan</h3>
                         <p>First proposal to partition Palestine, giving Jews 33% of land despite being only 30% of population.</p>
                     </div>
                 </div>
-                <div class="timeline-event" data-url="./pages/history_pages/un-partition.html">
+                <div class="timeline-event" data-url="pages/history_pages/un-partition.html">
                     <div class="event-date">1947</div>
                     <div class="event-content">
                         <h3>UN Partition Plan (Resolution 181)</h3>
                         <p>UN gave 55% of Palestine to Jewish state despite Jews owning only 7% of land and being 33% of population.</p>
                     </div>
                 </div>
-                <div class="timeline-event" data-url="./pages/history_pages/nakba.html">
+                <div class="timeline-event" data-url="pages/history_pages/nakba.html">
                     <div class="event-date">1948</div>
                     <div class="event-content">
                         <h3>The Nakba ("Catastrophe")</h3>
                         <p>750,000+ Palestinians forcibly expelled from their homes. Over 500 villages destroyed. Israel established on 78% of historic Palestine.</p>
                     </div>
                 </div>
-                <div class="timeline-event" data-url="./pages/history_pages/naksa.html">
+                <div class="timeline-event" data-url="pages/history_pages/naksa.html">
                     <div class="event-date">1967</div>
                     <div class="event-content">
                         <h3>Naksa (Six-Day War)</h3>
                         <p>Israel occupies remaining 22% of Palestine (West Bank, Gaza, East Jerusalem) and Syrian Golan Heights. 300,000 more Palestinians displaced.</p>
                     </div>
                 </div>
-                <div class="timeline-event" data-url="./pages/history_pages/sabra-shatila.html">
+                <div class="timeline-event" data-url="pages/history_pages/sabra-shatila.html">
                     <div class="event-date">1982</div>
                     <div class="event-content">
                         <h3>Sabra and Shatila Massacre</h3>
                         <p>Israeli-backed Phalange militia kills 3,500 Palestinian refugees in Lebanon under Israeli military supervision.</p>
                     </div>
                 </div>
-                <div class="timeline-event" data-url="./pages/history_pages/first-intifada.html">
+                <div class="timeline-event" data-url="pages/history_pages/first-intifada.html">
                     <div class="event-date">1987</div>
                     <div class="event-content">
                         <h3>First Intifada</h3>
                         <p>Mass popular uprising against occupation. Over 1,200 Palestinians killed, mostly unarmed protesters.</p>
                     </div>
                 </div>
-                <div class="timeline-event" data-url="./pages/history_pages/second-intifada.html">
+                <div class="timeline-event" data-url="pages/history_pages/second-intifada.html">
                     <div class="event-date">2000</div>
                     <div class="event-content">
                         <h3>Second Intifada</h3>
                         <p>Uprising after Ariel Sharon's provocative visit to Al-Aqsa. 3,000+ Palestinians killed, extensive destruction.</p>
                     </div>
                 </div>
-                <div class="timeline-event" data-url="./pages/history_pages/gaza-blockade.html">
+                <div class="timeline-event" data-url="pages/history_pages/gaza-blockade.html">
                     <div class="event-date">2005</div>
                     <div class="event-content">
                         <h3>Gaza Blockade Begins</h3>
                         <p>Israel imposes land, sea and air siege after Hamas election victory, creating world's largest open-air prison for 2.3 million Gazans.</p>
                     </div>
                 </div>
-                <div class="timeline-event" data-url="./pages/history_pages/cast-lead.html">
+                <div class="timeline-event" data-url="pages/history_pages/cast-lead.html">
                     <div class="event-date">2008</div>
                     <div class="event-content">
                         <h3>Cast Lead Operation</h3>
                         <p>22-day Israeli assault kills 1,400+ Gazans, including 300+ children. White phosphorus used on civilians.</p>
                     </div>
                 </div>
-                <div class="timeline-event" data-url="./pages/history_pages/protective-edge.html">
+                <div class="timeline-event" data-url="pages/history_pages/protective-edge.html">
                     <div class="event-date">2014</div>
                     <div class="event-content">
                         <h3>Protective Edge Operation</h3>
                         <p>51-day attack kills 2,200+ Gazans (70% civilians), destroys 18,000 homes. UN schools bombed.</p>
                     </div>
                 </div>
-                <div class="timeline-event" data-url="./pages/history_pages/great-march.html">
+                <div class="timeline-event" data-url="pages/history_pages/great-march.html">
                     <div class="event-date">2018</div>
                     <div class="event-content">
                         <h3>Great March of Return</h3>
                         <p>Peaceful protests at Gaza fence. 223 protesters killed by snipers, including medics and journalists.</p>
                     </div>
                 </div>
-                <div class="timeline-event" data-url="./pages/history_pages/unity-intifada.html">
+                <div class="timeline-event" data-url="pages/history_pages/unity-intifada.html">
                     <div class="event-date">2021</div>
                     <div class="event-content">
                         <h3>Unity Intifada & Sheikh Jarrah</h3>
                         <p>Nationwide uprising against ethnic cleansing in Jerusalem. 256 Palestinians killed in Gaza bombing.</p>
                     </div>
                 </div>
-                <div class="timeline-event" data-url="./pages/history_pages/al-aqsa-flood.html">
+                <div class="timeline-event" data-url="pages/history_pages/al-aqsa-flood.html">
                     <div class="event-date">2023</div>
                     <div class="event-content">
                         <h3>Al-Aqsa Flood & Gaza Genocide</h3>
                         <p>After Hamas operation, Israel kills 35,000+ Gazans (70% women/children), destroys all universities and hospitals.</p>
                     </div>
                 </div>
-                <div class="timeline-event" data-url="./pages/history_pages/icj-genocide.html">
+                <div class="timeline-event" data-url="pages/history_pages/icj-genocide.html">
                     <div class="event-date">2024</div>
                     <div class="event-content">
                         <h3>ICJ Genocide Case</h3>
                         <p>South Africa brings case against Israel at International Court of Justice for genocide in Gaza.</p>
                     </div>
                 </div>
-                <div class="timeline-event" data-url="./pages/history_pages/ongoing-resistance.html">
+                <div class="timeline-event" data-url="pages/history_pages/ongoing-resistance.html">
                     <div class="event-date">2025</div>
                     <div class="event-content">
                         <h3>Ongoing Resistance</h3>
@@ -175,7 +939,7 @@
     </div>
 
     <!-- History Section -->
-    <section id="history" class="history">
+    <section id="history" class="section">
         <div class="container">
             <h2>Palestinian History</h2>
             <div class="history-content">
@@ -202,101 +966,106 @@
     </section>
 
     <!-- Resistance Section -->
-    <section id="resistance" class="resistance">
-        <h2>Palestinian Resistance</h2>
-        <div class="resistance-methods">
-            <div class="method">
-                <i class="fas fa-hand-holding-heart"></i>
-                <h3>Peaceful Protests</h3>
-                <p>Great March of Return (2018-2019) – 223 protesters killed by snipers.</p>
-                <p>Non-violent demonstrations, sit-ins, and marches to raise awareness and demand rights.</p>
-            </div>
-            <div class="method">
-                <i class="fas fa-globe"></i>
-                <h3>BDS Movement</h3>
-                <p>Boycott, Divestment, Sanctions – Global economic resistance.</p>
-                <p>Applying economic pressure on Israel to comply with international law.</p>
-            </div>
-            <div class="method">
-                <i class="fas fa-hashtag"></i>
-                <h3>Digital Activism</h3>
-                <p>#FreePalestine trends globally, exposing Israeli war crimes.</p>
-                <p>Using social media to share information, organize campaigns, and advocate for Palestinian rights.</p>
+    <section id="resistance" class="section section-alt">
+        <div class="container">
+            <h2>Palestinian Resistance</h2>
+            <div class="resistance-methods">
+                <div class="method">
+                    <i class="fas fa-hand-holding-heart"></i>
+                    <h3>Peaceful Protests</h3>
+                    <p>Great March of Return (2018-2019) – 223 protesters killed by snipers.</p>
+                    <p>Non-violent demonstrations, sit-ins, and marches to raise awareness and demand rights.</p>
+                </div>
+                <div class="method">
+                    <i class="fas fa-globe"></i>
+                    <h3>BDS Movement</h3>
+                    <p>Boycott, Divestment, Sanctions – Global economic resistance.</p>
+                    <p>Applying economic pressure on Israel to comply with international law.</p>
+                </div>
+                <div class="method">
+                    <i class="fas fa-hashtag"></i>
+                    <h3>Digital Activism</h3>
+                    <p>#FreePalestine trends globally, exposing Israeli war crimes.</p>
+                    <p>Using social media to share information, organize campaigns, and advocate for Palestinian rights.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Betrayals Section -->
-    <section id="betrayal" class="betrayals">
-        <h2>Who Betrayed Palestine?</h2>
-        <div class="betrayal-list">
-            <div class="betrayal-item">
-                <h3>Western Governments</h3>
-                <p>US/UK veto UN resolutions, fund Israeli military.</p>
-                <p>Provide unwavering political, economic, and military support to Israel, enabling its occupation and human rights abuses.</p>
-            </div>
-            <div class="betrayal-item">
-                <h3>Arab Regimes</h3>
-                <p>Normalization deals while occupation continues.</p>
-                <p>Prioritize political and economic interests over Palestinian rights, normalizing relations with Israel despite the ongoing occupation.</p>
-            </div>
-            <div class="betrayal-item">
-                <h3>Corporate Media</h3>
-                <p>Dehumanizes Palestinians, spreads propaganda.</p>
-                <p>Bias reporting, censorship, and the spread of misinformation to justify Israeli actions and suppress Palestinian voices.</p>
+    <section id="betrayal" class="section">
+        <div class="container">
+            <h2>Who Betrayed Palestine?</h2>
+            <div class="betrayal-list">
+                <div class="betrayal-item">
+                    <h3>Western Governments</h3>
+                    <p>US/UK veto UN resolutions, fund Israeli military.</p>
+                    <p>Provide unwavering political, economic, and military support to Israel, enabling its occupation and human rights abuses.</p>
+                </div>
+                <div class="betrayal-item">
+                    <h3>Arab Regimes</h3>
+                    <p>Normalization deals while occupation continues.</p>
+                    <p>Prioritize political and economic interests over Palestinian rights, normalizing relations with Israel despite the ongoing occupation.</p>
+                </div>
+                <div class="betrayal-item">
+                    <h3>Corporate Media</h3>
+                    <p>Dehumanizes Palestinians, spreads propaganda.</p>
+                    <p>Bias reporting, censorship, and the spread of misinformation to justify Israeli actions and suppress Palestinian voices.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Take Action -->
-    <section id="act" class="action">
-        <h2>Take Action Now</h2>
-        <div class="action-options">
-            <div class="option">
-                <i class="fas fa-pen-fancy"></i>
-                <h3>Sign Petitions</h3>
-                <br>
-                <a href="https://www.amnesty.org/en/petition/demand-a-ceasefire-by-all-parties-to-end-civilian-suffering/ " target="_blank" rel="noopener noreferrer" class="btn-small">Sign Now</a>
-                <p>Demand governments to pressure Israel to end its violations of international law.</p>
-            </div>
-            <div class="option">
-                <i class="fas fa-hand-holding-usd"></i>
-                <h3>Donate</h3>
-                <br>
-                <a href="#" id="donateTrigger" class="btn-small">Donate Now</a>
-                <!-- Pop-up menu (hidden by default) -->
-                <div id="donateMenu">
-                    <a href="#" class="close">&times;</a>
-                    <ul>
-                        <li><a href="https://pcrf1.app.neoncrm.com/forms/gaza-recovery" target="_blank" rel="noopener noreferrer">Palestine Children's Relief Fund (PCRF)</a></li>
-                        <li><a href="https://www.islamicreliefcanada.org/emergencies/palestine-appeal" target="_blank" rel="noopener noreferrer">Islamic Relief</a></li>
-                        <li><a href="https://www.unrwa.org/donate" target="_blank" rel="noopener noreferrer">UNRWA</a></li>
-                        <li><a href="https://www.palestinercs.org/en/Donation "target="_blank" rel="noopener noreferrer">Palestine Red Crescent Society</a></li>
-                        <li><a href="https://donate.doctorswithoutborders.org/secure/rr-donate-web" target="_blank" rel="noopener noreferrer">Doctors Without Borders</a></li>
-                        <li><a href="https://www.amnesty.org.uk/giving/donate/help-protect-civilians-gaza" target="_blank" rel="noopener noreferrer">Amnesty International</a></li>
-                        <li><a href="https://www.oxfamamerica.org/explore/emergencies/gaza-and-israel-emergency-appeal/" target="_blank" rel="noopener noreferrer">OXFAM</a></li>
-                    </ul>
+    <section id="act" class="section section-alt">
+        <div class="container">
+            <h2>Take Action Now</h2>
+            <div class="action-options">
+                <div class="option">
+                    <i class="fas fa-pen-fancy"></i>
+                    <h3>Sign Petitions</h3>
+                    <br>
+                    <a href="https://www.amnesty.org/en/petition/demand-a-ceasefire-by-all-parties-to-end-civilian-suffering/" target="_blank" rel="noopener noreferrer" class="btn-small">Sign Now</a>
+                    <p>Demand governments to pressure Israel to end its violations of international law.</p>
                 </div>
-            </div>
-            <div class="option">
-                <i class="fas fa-microphone"></i>
-                <h3>Spread Awareness</h3>
-                <br>
-                <a href="#" class="btn-small">Share</a>
-                <p>Share information and resources about Palestine on social media and in your community.</p>
-            </div>
-            <div class="option">
-                <i class="fas fa-bullhorn"></i>
-                <h3>Contact Representatives</h3>
-                <br>
-                <a href="#" class="btn-small">Contact</a>
-                <p>Urge your elected officials to support Palestinian rights and hold Israel accountable.</p>
+                <div class="option">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    <h3>Donate</h3>
+                    <br>
+                    <a href="#" id="donateTrigger" class="btn-small">Donate Now</a>
+                    <div id="donateMenu">
+                        <a href="#" class="close">&times;</a>
+                        <ul>
+                            <li><a href="https://pcrf1.app.neoncrm.com/forms/gaza-recovery" target="_blank" rel="noopener noreferrer">Palestine Children's Relief Fund (PCRF)</a></li>
+                            <li><a href="https://www.islamicreliefcanada.org/emergencies/palestine-appeal" target="_blank" rel="noopener noreferrer">Islamic Relief</a></li>
+                            <li><a href="https://www.unrwa.org/donate" target="_blank" rel="noopener noreferrer">UNRWA</a></li>
+                            <li><a href="https://www.palestinercs.org/en/Donation" target="_blank" rel="noopener noreferrer">Palestine Red Crescent Society</a></li>
+                            <li><a href="https://donate.doctorswithoutborders.org/secure/rr-donate-web" target="_blank" rel="noopener noreferrer">Doctors Without Borders</a></li>
+                            <li><a href="https://www.amnesty.org.uk/giving/donate/help-protect-civilians-gaza" target="_blank" rel="noopener noreferrer">Amnesty International</a></li>
+                            <li><a href="https://www.oxfamamerica.org/explore/emergencies/gaza-and-israel-emergency-appeal/" target="_blank" rel="noopener noreferrer">OXFAM</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="option">
+                    <i class="fas fa-microphone"></i>
+                    <h3>Spread Awareness</h3>
+                    <br>
+                    <a href="#" class="btn-small">Share</a>
+                    <p>Share information and resources about Palestine on social media and in your community.</p>
+                </div>
+                <div class="option">
+                    <i class="fas fa-bullhorn"></i>
+                    <h3>Contact Representatives</h3>
+                    <br>
+                    <a href="#" class="btn-small">Contact</a>
+                    <p>Urge your elected officials to support Palestinian rights and hold Israel accountable.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Resources Section -->
-    <section id="resources" class="resources">
+    <section id="resources" class="section">
         <div class="container">
             <h2>Educational Resources</h2>
             <div class="resources-grid">
@@ -306,7 +1075,7 @@
                     </div>
                     <h3>Books</h3>
                     <p>Essential readings on Palestinian history and the ongoing struggle for justice.</p>
-                    <a href="#" class="resource-link">Explore Books</a>
+                    <a href="resources/books.html" class="resource-link">Explore Books</a>
                 </div>
                 <div class="resource-card">
                     <div class="resource-icon">
@@ -314,7 +1083,7 @@
                     </div>
                     <h3>Documentaries</h3>
                     <p>Powerful films that tell the Palestinian story from authentic perspectives.</p>
-                    <a href="#" class="resource-link">Watch Now</a>
+                    <a href="resources/documentaries.html" class="resource-link">Watch Now</a>
                 </div>
                 <div class="resource-card">
                     <div class="resource-icon">
@@ -322,7 +1091,7 @@
                     </div>
                     <h3>Academic Papers</h3>
                     <p>Research and scholarly articles on the Palestinian-Israeli conflict.</p>
-                    <a href="#" class="resource-link">Read Papers</a>
+                    <a href="resources/papers.html" class="resource-link">Read Papers</a>
                 </div>
                 <div class="resource-card">
                     <div class="resource-icon">
@@ -330,59 +1099,50 @@
                     </div>
                     <h3>Interactive Maps</h3>
                     <p>Visualize the history of Palestinian displacement and land loss.</p>
-                    <a href="#" class="resource-link">View Maps</a>
+                    <a href="resources/maps.html" class="resource-link">View Maps</a>
                 </div>
-                <!-- <div class="resource-card">
-                    <div class="resource-icon">
-                        <i class="fas fa-flag"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Voices of Resistance</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"The Palestinian people have shown incredible resilience in the face of occupation. Their struggle for justice and dignity continues to inspire the world."</p>
+                        <div class="testimonial-author">
+                            <div class="author-name">Dr. Leila Khaled</div>
+                            <div class="author-title">Palestinian Activist</div>
+                        </div>
                     </div>
-                    <h3>Germany</h3>
-                    <p>Statements from German officials regarding Palestine.</p>
-                    <a href="countries/germany.html" class="resource-link">View Statements</a>
-                </div> -->
-            </div>
-        </div>
-    </section>
-
-    <!-- News Section
-    <section id="news" class="news">
-        <div class="container">
-            <h2>Latest News</h2>
-            <div class="news-grid">
-                <div class="news-card">
-                    <div class="news-date">June 15, 2023</div>
-                    <h3>International Court of Justice Hears Genocide Case</h3>
-                    <p>South Africa presents evidence of Israeli genocide against Palestinians in Gaza.</p>
-                    <a href="#" class="read-more">Read More</a>
                 </div>
-                <div class="news-card">
-                    <div class="news-date">May 28, 2023</div>
-                    <h3>UN Report Condemns Israeli Settlement Expansion</h3>
-                    <p>UN Human Rights Council finds Israel's settlement policies violate international law.</p>
-                    <a href="#" class="read-more">Read More</a>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"We will not be erased. Our history, our culture, our rights - these are not negotiable. Palestine lives in every heartbeat of our people."</p>
+                        <div class="testimonial-author">
+                            <div class="author-name">Ahmed Fouad Alkhatib</div>
+                            <div class="author-title">Palestinian-American Writer</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="news-card">
-                    <div class="news-date">April 10, 2023</div>
-                    <h3>Global Protests Demand Ceasefire in Gaza</h3>
-                    <p>Millions march worldwide calling for an end to Israeli aggression in Gaza.</p>
-                    <a href="#" class="read-more">Read More</a>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"The international community must recognize that what is happening in Gaza constitutes genocide. We cannot remain silent while children are being killed."</p>
+                        <div class="testimonial-author">
+                            <div class="author-name">Dr. Randa Fahmy</div>
+                            <div class="author-title">Human Rights Advocate</div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    News Section
-    <section id="news" class="news">
-        <div class="container">
-            <h2>Latest News from Palestine</h2>
-            <div id="rss-feed">
-                <!-- RSS feed content will be loaded here -->
             </div>
         </div>
     </section>
 
     <!-- Culture Section -->
-    <section id="culture" class="culture">
+    <section id="culture" class="section">
         <div class="container">
             <h2>Palestinian Culture & Heritage</h2>
             <div class="culture-content">
@@ -412,7 +1172,7 @@
     </section>
 
     <!-- Future Section -->
-    <section id="future" class="future">
+    <section id="future" class="section section-alt">
         <div class="container">
             <h2>The Future of Palestine</h2>
             <div class="future-content">
@@ -441,110 +1201,31 @@
         </div>
     </section>
 
-    <!-- To-Do List Section -->
-    <section class="todo">
-        <div class="container">
-            <h2>Future Development Roadmap</h2>
-            <div class="todo-content">
-                <div class="todo-column">
-                    <h3>Content Development</h3>
-                    <ul>
-                        <li>Add detailed historical articles for each timeline event</li>
-                        <li>Create comprehensive profiles of key Palestinian figures</li>
-                        <li>Develop interactive maps showing land loss over time</li>
-                        <li>Compile database of Palestinian villages destroyed in 1948</li>
-                        <li>Create multimedia galleries with historical photos</li>
-                        <li>Develop educational modules for schools and universities</li>
-                        <li>Add testimonies from Palestinian refugees</li>
-                        <li>Create virtual museum exhibitions</li>
-                    </ul>
-                </div>
-                <div class="todo-column">
-                    <h3>Technical Features</h3>
-                    <ul>
-                        <li>Implement multilingual support (Arabic, English, Spanish, French)</li>
-                        <li>Add search functionality for all content</li>
-                        <li>Create user accounts for personalized experiences</li>
-                        <li>Develop mobile app for iOS and Android</li>
-                        <li>Integrate social media sharing features</li>
-                        <li>Add newsletter subscription system</li>
-                        <li>Implement content management system (CMS)</li>
-                        <li>Create API for external developers</li>
-                    </ul>
-                </div>
-                <div class="todo-column">
-                    <h3>Community Engagement</h3>
-                    <ul>
-                        <li>Launch petition platform for political action</li>
-                        <li>Create volunteer coordination system</li>
-                        <li>Develop event calendar with global actions</li>
-                        <li>Add discussion forums for community dialogue</li>
-                        <li>Implement donation tracking and transparency reports</li>
-                        <li>Create advocacy toolkit for activists</li>
-                        <li>Develop educational workshops and webinars</li>
-                        <li>Launch ambassador program for global outreach</li>
-                    </ul>
-                </div>
-                <div class="todo-column">
-                    <h3>Advanced Features</h3>
-                    <ul>
-                        <li>Build interactive timeline with multimedia content</li>
-                        <li>Create virtual reality experiences of historical sites</li>
-                        <li>Develop augmented reality museum exhibits</li>
-                        <li>Add live news feed from Palestinian sources</li>
-                        <li>Implement AI-powered translation services</li>
-                        <li>Create podcast series with Palestinian voices</li>
-                        <li>Develop documentary film library</li>
-                        <li>Build research collaboration platform</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="testimonials">
-        <div class="container">
-            <h2>Voices of Resistance</h2>
-            <div class="testimonial-slider">
-                <div class="testimonial">
-                    <div class="testimonial-content">
-                        <p>"The Palestinian people have shown incredible resilience in the face of occupation. Their struggle for justice and dignity continues to inspire the world."</p>
-                        <div class="testimonial-author">
-                            <div class="author-name">Dr. Leila Khaled</div>
-                            <div class="author-title">Palestinian Activist</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Gallery Section -->
-    <section class="gallery">
+    <section class="section">
         <div class="container">
             <h2>Historical Gallery</h2>
             <div class="gallery-grid">
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1592665785026-6b33c3e9e0ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="Historical Palestine">
+                    <img src="https://images.pexels.com/photos/1646389/pexels-photo-1646389.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Historical Palestine" loading="lazy">
                     <div class="gallery-overlay">
                         <div class="gallery-text">Historical Palestine</div>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1592665785026-6b33c3e9e0ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="Nakba Refugees">
+                    <img src="https://images.pexels.com/photos/159293/tower-of-refuge-lighthouse-rocky-coast-159293.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Nakba Refugees" loading="lazy">
                     <div class="gallery-overlay">
                         <div class="gallery-text">Nakba Refugees</div>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1592665785026-6b33c3e9e0ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="Great March of Return">
+                    <img src="https://images.pexels.com/photos/247597/pexels-photo-247597.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Great March of Return" loading="lazy">
                     <div class="gallery-overlay">
                         <div class="gallery-text">Great March of Return</div>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1592665785026-6b33c3e9e0ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="Children of Gaza">
+                    <img src="https://images.pexels.com/photos/35188/child-childrens-baby-children-s.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Children of Gaza" loading="lazy">
                     <div class="gallery-overlay">
                         <div class="gallery-text">Children of Gaza</div>
                     </div>
@@ -552,57 +1233,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Events Section
-    <section class="events">
-        <div class="container">
-            <h2>Upcoming Events</h2>
-            <div class="events-list">
-                <div class="event-card">
-                    <div class="event-date">
-                        <div class="event-day">15</div>
-                        <div class="event-month">JUN</div>
-                    </div>
-                    <div class="event-details">
-                        <h3>Global Day of Solidarity</h3>
-                        <p>Worldwide demonstrations calling for Palestinian rights and an end to occupation.</p>
-                        <div class="event-location">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Worldwide</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="event-card">
-                    <div class="event-date">
-                        <div class="event-day">22</div>
-                        <div class="event-month">JUN</div>
-                    </div>
-                    <div class="event-details">
-                        <h3>Palestinian Cultural Festival</h3>
-                        <p>Celebrating Palestinian heritage through music, dance, and traditional arts.</p>
-                        <div class="event-location">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Community Center</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="event-card">
-                    <div class="event-date">
-                        <div class="event-day">30</div>
-                        <div class="event-month">JUN</div>
-                    </div>
-                    <div class="event-details">
-                        <h3>Educational Workshop: Understanding the Conflict</h3>
-                        <p>Interactive session with Palestinian scholars and activists.</p>
-                        <div class="event-location">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>University Campus</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
 
     <!-- Footer -->
     <footer>
@@ -630,14 +1260,18 @@
                         <li><a href="#future">Future</a></li>
                     </ul>
                 </div>
-                <!-- <div class="footer-section">
-                    <h3>Newsletter</h3>
-                    <p>Subscribe to receive updates on Palestinian rights and resistance.</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Your Email" required>
-                        <button type="submit" class="btn-small">Subscribe</button>
-                    </form>
-                </div> -->
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="myths/index.html">Debunking Myths</a></li>
+                        <li><a href="legal/index.html">Legal Resources</a></li>
+                        <li><a href="diaspora/index.html">Diaspora Information</a></li>
+                        <li><a href="education/teachers.html">Educational Materials</a></li>
+                        <li><a href="movements/women.html">Women's Movement</a></li>
+                        <li><a href="boycott/supporting.html">Boycotts Supporting</a></li>
+                        <li><a href="boycott/supportive.html">Boycotts Supportive</a></li>
+                    </ul>
+                </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2025 Free Palestine. All rights reserved.</p>
@@ -645,6 +1279,87 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        // Mobile Navigation Toggle
+        const hamburger = document.querySelector('.hamburger');
+        const mobileNav = document.querySelector('.mobile-nav');
+        const mobileDropdowns = document.querySelectorAll('.mobile-dropdown > a');
+        
+        hamburger.addEventListener('click', () => {
+            mobileNav.classList.toggle('active');
+        });
+        
+        // Mobile dropdown toggle
+        mobileDropdowns.forEach(dropdown => {
+            dropdown.addEventListener('click', (e) => {
+                e.preventDefault();
+                const parent = dropdown.parentElement;
+                parent.classList.toggle('active');
+            });
+        });
+        
+        // Timeline Popup Functionality
+        const timelineBtn = document.getElementById('timelineBtn');
+        const timelinePopup = document.getElementById('timelinePopup');
+        const closeTimeline = document.querySelector('.close-timeline');
+        const timelineEvents = document.querySelectorAll('.timeline-event');
+        
+        timelineBtn.addEventListener('click', () => {
+            timelinePopup.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        });
+        
+        closeTimeline.addEventListener('click', () => {
+            timelinePopup.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        });
+        
+        // Close timeline popup when clicking outside content
+        timelinePopup.addEventListener('click', (e) => {
+            if (e.target === timelinePopup) {
+                timelinePopup.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
+        
+        // Open timeline event pages
+        timelineEvents.forEach(event => {
+            event.addEventListener('click', () => {
+                const url = event.getAttribute('data-url');
+                if (url) {
+                    window.location.href = url;
+                }
+            });
+        });
+        
+        // Close timeline with Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && timelinePopup.style.display === 'block') {
+                closeTimeline.click();
+            }
+        });
+        
+        // Donate Menu Functionality
+        const donateTrigger = document.getElementById('donateTrigger');
+        const donateMenu = document.getElementById('donateMenu');
+        const closeDonate = document.querySelector('#donateMenu .close');
+        
+        donateTrigger.addEventListener('click', (e) => {
+            e.preventDefault();
+            donateMenu.style.display = 'block';
+        });
+        
+        closeDonate.addEventListener('click', (e) => {
+            e.preventDefault();
+            donateMenu.style.display = 'none';
+        });
+        
+        // Close donate menu when clicking outside
+        window.addEventListener('click', (e) => {
+            if (e.target === donateMenu) {
+                donateMenu.style.display = 'none';
+            }
+        });
+    </script>
 </body>
 </html>

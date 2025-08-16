@@ -1,0 +1,15 @@
+{
+"slug": "south-africa",
+"name": "South Africa",
+"flag": "/assets/images/countries/south-africa.png",
+"summary": "Overview of South Africa’s statements and ICJ/UN actions.",
+"last_updated": "2025-08-15",
+"official_positions": [],
+"un_voting_record": [],
+"arms_trade": [],
+"aid_and_relief": [],
+"civil_society": [],
+"take_action": [
+{ "title": "Parliament of South Africa", "url": "https://www.parliament.gov.za/" }
+]
+}

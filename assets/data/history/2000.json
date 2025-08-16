@@ -1,0 +1,24 @@
+{
+  "year": 2000,
+  "intro": "The year 2000 witnessed the outbreak of the Second Intifada, a more intense and violent Palestinian uprising against Israeli occupation. This period was marked by significant casualties on both sides and a further deterioration of the peace process.",
+  "events": [
+    {
+      "id": "2000-09-28-second-intifada-begins",
+      "date": "2000-09-28",
+      "title": "Second Intifada Begins",
+      "text": "The Second Intifada, also known as the Al-Aqsa Intifada, began after Ariel Sharon's provocative visit to the Al-Aqsa Mosque compound in Jerusalem. It was characterized by increased armed confrontations and suicide bombings.",
+      "sources": [
+        {"title": "The Second Intifada", "url": "https://www.britannica.com/event/intifada", "publisher": "Britannica", "date_accessed": "2025-08-16"}
+      ]
+    },
+    {
+      "id": "2000-10-07-unsc-res-1322",
+      "date": "2000-10-07",
+      "title": "UN Security Council Resolution 1322",
+      "text": "The UN Security Council adopted Resolution 1322, deploring acts of violence, particularly the excessive use of force against Palestinians, and calling for an immediate cessation of violence.",
+      "sources": [
+        {"title": "UNSC Resolution 1322", "url": "https://undocs.org/S/RES/1322(2000)", "publisher": "United Nations Digital Library", "date_accessed": "2025-08-16"}
+      ]
+    }
+  ]
+}

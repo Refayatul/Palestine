@@ -1,0 +1,24 @@
+{
+  "year": 2014,
+  "intro": "The year 2014 saw Operation Protective Edge, another devastating Israeli military offensive in the Gaza Strip. This operation caused widespread destruction and a high number of civilian casualties, further deepening the humanitarian crisis in the besieged territory.",
+  "events": [
+    {
+      "id": "2014-07-08-protective-edge-begins",
+      "date": "2014-07-08",
+      "title": "Operation Protective Edge Begins",
+      "text": "Israel launched a 51-day military operation in the Gaza Strip. The offensive resulted in the deaths of over 2,200 Palestinians, including a large number of women and children, and the destruction of tens of thousands of homes.",
+      "sources": [
+        {"title": "Gaza: Operation Protective Edge", "url": "https://www.amnesty.org/en/latest/campaigns/2014/11/gaza-operation-protective-edge/", "publisher": "Amnesty International", "date_accessed": "2025-08-16"}
+      ]
+    },
+    {
+      "id": "2014-08-26-ceasefire",
+      "date": "2014-08-26",
+      "title": "Ceasefire Agreement",
+      "text": "A long-term ceasefire agreement was reached between Israel and Palestinian factions in Gaza, mediated by Egypt, ending Operation Protective Edge.",
+      "sources": [
+        {"title": "Gaza ceasefire: Israel and Palestinians agree to end 50-day conflict", "url": "https://www.theguardian.com/world/2014/aug/26/gaza-ceasefire-israel-palestinians-agree-end-50-day-conflict", "publisher": "The Guardian", "date_accessed": "2025-08-16"}
+      ]
+    }
+  ]
+}

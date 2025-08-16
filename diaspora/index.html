@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palestinian Diaspora Hub - Palestine</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="/assets/js/main.js" defer></script>
+    <script src="/assets/js/render-diaspora.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- Navigation will be dynamically loaded or manually added later -->
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Palestinian Diaspora Hub</h1>
+                <p>Connect with Palestinian communities and solidarity organizations worldwide.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="diaspora-filters-search">
+                    <div class="filter-group">
+                        <label for="region-filter" class="sr-only">Filter by Region</label>
+                        <select id="region-filter" aria-label="Filter by region">
+                            <option value="">All Regions</option>
+                            <!-- Regions will be populated by JavaScript -->
+                        </select>
+                    </div>
+                    <div class="search-container">
+                        <label for="diaspora-search" class="sr-only">Search communities or organizations</label>
+                        <input type="text" id="diaspora-search" placeholder="Search by name, city, or country..." aria-label="Search communities or organizations">
+                    </div>
+                    <div class="results-info" role="status" aria-live="polite">
+                        <span id="results-count"></span> results found.
+                    </div>
+                </div>
+
+                <h2 class="section-heading">Communities</h2>
+                <div id="communities-grid" class="grid two">
+                    <!-- Communities will be rendered here by JavaScript -->
+                </div>
+
+                <h2 class="section-heading">Organizations</h2>
+                <div id="organizations-grid" class="grid two">
+                    <!-- Organizations will be rendered here by JavaScript -->
+                </div>
+
+                <div id="diaspora-sources" class="section-alt">
+                    <h3>Sources</h3>
+                    <ul class="source-list">
+                        <!-- Sources will be rendered here by JavaScript -->
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <!-- Footer will be dynamically loaded or manually added later -->
+    </footer>
+</body>
+</html>

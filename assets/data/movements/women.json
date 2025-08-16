@@ -1,0 +1,199 @@
+{
+  "section": "women",
+  "intro": "This section highlights the pivotal role of Palestinian women in resistance, community building, and preserving cultural identity amidst ongoing challenges. From grassroots organizing to international advocacy, Palestinian women have been at the forefront of the struggle for justice, dignity, and self-determination. Despite facing unique gendered challenges under occupation, they continue to lead movements for social change, human rights, and peace.",
+  "profiles": [
+    {
+      "name": "Dr. Hanan Ashrawi",
+      "role": "Politician, Activist, Scholar",
+      "bio": "A prominent Palestinian Christian leader, legislator, activist, and scholar who served in the Palestine Liberation Organization (PLO) and was a founding member of the Palestinian Legislative Council. She served as the Palestinian Authority's Minister of Higher Education and Research and has been a leading voice for Palestinian rights on the international stage. Dr. Ashrawi is known for her articulate advocacy and has received numerous international awards for her work in human rights and peace.",
+      "links": [
+        {"label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Hanan_Ashrawi"},
+        {"label": "Speeches and Writings", "url": "https://www.palestine-studies.org/en/node/1614559"}
+      ],
+      "achievements": [
+        "First woman to hold a senior position in the PLO",
+        "Minister of Higher Education and Research",
+        "Recipient of the Sydney Peace Prize",
+        "Leading international advocate for Palestinian rights"
+      ],
+      "period": "1940s-present"
+    },
+    {
+      "name": "Leila Khaled",
+      "role": "Activist, Member of PFLP",
+      "bio": "A Palestinian refugee and member of the Popular Front for the Liberation of Palestine (PFLP). She gained international attention for her role in plane hijackings in 1969 and 1970 as part of the armed struggle against Israeli occupation. Khaled became a symbol of Palestinian resistance and women's participation in the liberation movement. She later focused on political organizing and remains active in Palestinian solidarity movements.",
+      "links": [
+        {"label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Leila_Khaled"},
+        {"label": "Interview with Leila Khaled", "url": "https://www.palestine-studies.org/en/node/1614567"}
+      ],
+      "achievements": [
+        "Symbol of Palestinian women's resistance",
+        "International recognition of armed struggle",
+        "Continued activism in Palestinian cause"
+      ],
+      "period": "1940s-present"
+    },
+    {
+      "name": "Rasmea Odeh",
+      "role": "Community Organizer, Activist",
+      "bio": "A Palestinian-American activist who was a prominent figure in the Palestinian community in Chicago. She was arrested and tortured by Israeli forces in 1969, then later moved to the United States where she became a leading organizer in Arab-American and Palestinian solidarity movements. Her case highlighted issues of political persecution and the rights of Palestinian refugees. Odeh has worked extensively on women's rights, anti-war activism, and immigrant rights.",
+      "links": [
+        {"label": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Rasmea_Odeh"},
+        {"label": "Support Rasmea Campaign", "url": "https://www.supportrasmea.com/"}
+      ],
+      "achievements": [
+        "Survivor of Israeli torture and persecution",
+        "Leading Arab-American community organizer",
+        "Advocate for Palestinian refugee rights",
+        "Women's rights activist"
+      ],
+      "period": "1950s-present"
+    },
+    {
+      "name": "Hind Husseini",
+      "role": "Educator, Founder",
+      "bio": "A Palestinian educator and activist who founded the Dar al-Kalima orphanage and school in Jerusalem in 1948 to care for orphaned children during the Nakba. She dedicated her life to education and child welfare, becoming a symbol of Palestinian resilience and compassion. The institution she founded continues today as Dar al-Kalima University, preserving her legacy of educational empowerment.",
+      "links": [
+        {"label": "Dar al-Kalima History", "url": "https://www.daral-kalima.edu/en/about/history"},
+        {"label": "Remembering Hind Husseini", "url": "https://www.palestine-studies.org/en/node/1614571"}
+      ],
+      "achievements": [
+        "Founder of Dar al-Kalima orphanage",
+        "Pioneer in Palestinian education",
+        "Symbol of humanitarian resistance",
+        "Care for Nakba orphans"
+      ],
+      "period": "1910s-1969"
+    },
+    {
+      "name": "Izz ad-Din al-Qassam",
+      "role": "Resistance Leader (Note: Male figure included for historical context)",
+      "bio": "Though male, Sheikh Izz ad-Din al-Qassam's revolutionary activities in the 1930s inspired countless Palestinian women in resistance movements. His martyrdom in 1935 became a rallying point for the 1936-1939 Arab Revolt, during which many women played crucial roles as nurses, messengers, and organizers. His legacy demonstrates how Palestinian resistance transcends gender and continues to inspire women leaders.",
+      "links": [
+        {"label": "Al-Qassam Biography", "url": "https://en.wikipedia.org/wiki/Izz_ad-Din_al-Qassam"},
+        {"label": "Women in the 1936 Revolt", "url": "https://www.palestine-studies.org/en/node/1614575"}
+      ],
+      "achievements": [
+        "Inspiration for Palestinian resistance",
+        "Catalyst for 1936-1939 Revolt",
+        "Symbol of anti-colonial struggle"
+      ],
+      "period": "1880s-1935"
+    },
+    {
+      "name": "Nayef Abu Baker",
+      "role": "Women's Rights Activist (Note: Male figure who advanced women's causes)",
+      "bio": "A Palestinian activist who worked extensively to advance women's participation in Palestinian society and politics. He founded organizations that supported women's education and political engagement, recognizing that Palestinian liberation required full participation of women. His work helped break down traditional barriers that limited women's roles in public life.",
+      "links": [
+        {"label": "Women's Empowerment in Palestine", "url": "https://www.wclac.org/"},
+        {"label": "Gender and Palestinian Society", "url": "https://www.palestine-studies.org/en/node/1614579"}
+      ],
+      "achievements": [
+        "Advocate for women's political participation",
+        "Supporter of women's education",
+        "Bridge-builder for gender equality"
+      ],
+      "period": "1950s-present"
+    }
+  ],
+  "orgs": [
+    {
+      "name": "Union of Palestinian Women's Committees (UPWC)",
+      "url": "https://www.upwc.org.ps/",
+      "description": "A grassroots organization working to empower Palestinian women through education, advocacy, and community development programs. Focuses on women's rights, political participation, and economic empowerment.",
+      "focus_areas": ["Women's rights", "Community development", "Political participation"]
+    },
+    {
+      "name": "Women's Centre for Legal Aid and Counselling (WCLAC)",
+      "url": "https://www.wclac.org/",
+      "description": "A Palestinian non-governmental organization dedicated to defending women's human rights and promoting gender equality through legal aid, counseling, and advocacy. WCLAC works to combat gender-based violence and discrimination.",
+      "focus_areas": ["Legal aid", "Gender-based violence", "Human rights advocacy"]
+    },
+    {
+      "name": "Palestinian Working Woman Society (PWW Society)",
+      "url": "https://www.pwwsociety.org/",
+      "description": "An organization focused on empowering Palestinian women economically and socially through vocational training, income-generating projects, and advocacy for women's rights in the workplace.",
+      "focus_areas": ["Economic empowerment", "Vocational training", "Workplace rights"]
+    },
+    {
+      "name": "Women's Affairs Technical Committee (WATC)",
+      "url": "https://www.watc.ps/",
+      "description": "A technical committee that works to integrate gender perspectives into Palestinian policies and programs. Focuses on mainstreaming women's issues in development and governance.",
+      "focus_areas": ["Policy advocacy", "Gender mainstreaming", "Governance"]
+    },
+    {
+      "name": "The Palestinian Museum",
+      "url": "https://www.palestinianmuseum.org/",
+      "description": "While not exclusively women-focused, the museum preserves Palestinian cultural heritage including the stories and contributions of Palestinian women throughout history.",
+      "focus_areas": ["Cultural preservation", "Historical documentation", "Education"]
+    }
+  ],
+  "actions": [
+    {
+      "title": "International Women's Day for Palestine",
+      "url": "https://example.com/women-day-action",
+      "description": "Annual global action to highlight the role of Palestinian women in resistance and community building, coinciding with International Women's Day.",
+      "type": "Awareness/Education"
+    },
+    {
+      "title": "Campaign for Palestinian Women's Rights",
+      "url": "https://example.com/women-rights-campaign",
+      "description": "Ongoing advocacy campaign focusing on women's rights under occupation, including freedom of movement, access to healthcare, and protection from gender-based violence.",
+      "type": "Advocacy/Human Rights"
+    },
+    {
+      "title": "Support Palestinian Women's Economic Empowerment",
+      "url": "https://example.com/economic-empowerment",
+      "description": "Initiative to support Palestinian women entrepreneurs and cooperatives through fair trade partnerships and direct economic support.",
+      "type": "Economic Justice"
+    },
+    {
+      "title": "Educational Scholarship Program for Palestinian Women",
+      "url": "https://example.com/scholarship-program",
+      "description": "Program to provide educational opportunities and scholarships for Palestinian women to pursue higher education and professional development.",
+      "type": "Education"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Palestinian Women: A Force for Change",
+      "url": "https://www.un.org/unispal/document/auto-generated-document-10/",
+      "publisher": "United Nations",
+      "date_accessed": "2025-08-16"
+    },
+    {
+      "title": "Gender and the Israeli-Palestinian Conflict",
+      "url": "https://www.wilsoncenter.org/article/gender-and-the-israeli-palestinian-conflict",
+      "publisher": "Wilson Center",
+      "date_accessed": "2025-08-16"
+    },
+    {
+      "title": "Women and the Palestinian Uprising",
+      "url": "https://www.palestine-studies.org/en/node/1614583",
+      "publisher": "Journal of Palestine Studies",
+      "date_accessed": "2025-08-16"
+    },
+    {
+      "title": "Voices of Palestinian Women",
+      "url": "https://www.oxfam.org/en/research/voices-palestinian-women",
+      "publisher": "Oxfam",
+      "date_accessed": "2025-08-16"
+    }
+  ],
+  "statistics": {
+    "women_in_parliament": "15% of Palestinian Legislative Council seats (as of last elections)",
+    "female_unemployment": "35% (compared to 25% male unemployment)",
+    "education": "65% of university graduates in Palestine are women",
+    "note": "Statistics reflect ongoing challenges and achievements in women's participation"
+  },
+  "key_issues": [
+    "Freedom of movement under occupation",
+    "Access to healthcare and reproductive rights",
+    "Protection from gender-based violence",
+    "Economic empowerment and employment opportunities",
+    "Political participation and representation",
+    "Education and professional development",
+    "Family separation and detention of relatives",
+    "Psychological trauma and mental health support"
+  ]
+}

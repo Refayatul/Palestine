@@ -1,0 +1,33 @@
+{
+  "year": 2023,
+  "intro": "The year 2023 witnessed a dramatic escalation of the conflict, beginning with the Al-Aqsa Flood operation and followed by an unprecedented Israeli military assault on the Gaza Strip. This period has been marked by a severe humanitarian crisis and accusations of genocide.",
+  "events": [
+    {
+      "id": "2023-10-07-al-aqsa-flood",
+      "date": "2023-10-07",
+      "title": "Al-Aqsa Flood Operation",
+      "text": "Hamas launched a surprise attack on Israel, leading to a significant escalation of the conflict. This operation was cited by Israel as the reason for its subsequent military offensive on Gaza.",
+      "sources": [
+        {"title": "What is Operation Al-Aqsa Flood?", "url": "https://www.aljazeera.com/news/2023/10/7/what-is-operation-al-aqsa-flood-the-hamas-attack-on-israel", "publisher": "Al Jazeera", "date_accessed": "2025-08-16"}
+      ]
+    },
+    {
+      "id": "2023-10-07-gaza-genocide-begins",
+      "date": "2023-10-07",
+      "title": "Gaza Genocide Begins",
+      "text": "Following the Al-Aqsa Flood operation, Israel launched a massive military campaign on the Gaza Strip, resulting in the deaths of over 35,000 Palestinians (as of mid-2024), widespread destruction, and a severe humanitarian crisis. International bodies and human rights organizations have raised concerns about potential war crimes and genocide.",
+      "sources": [
+        {"title": "Gaza: A humanitarian catastrophe", "url": "https://www.un.org/unispal/document/gaza-a-humanitarian-catastrophe-un-agencies-warn/", "publisher": "United Nations", "date_accessed": "2025-08-16"}
+      ]
+    },
+    {
+      "id": "2023-12-29-icj-case",
+      "date": "2023-12-29",
+      "title": "South Africa files ICJ Genocide Case",
+      "text": "South Africa initiated proceedings against Israel at the International Court of Justice (ICJ), accusing Israel of committing genocide against Palestinians in the Gaza Strip.",
+      "sources": [
+        {"title": "South Africa v. Israel: Application instituting proceedings", "url": "https://www.icj-cij.org/sites/default/files/case-related/192/192-20231229-app-01-00-en.pdf", "publisher": "International Court of Justice", "date_accessed": "2025-08-16"}
+      ]
+    }
+  ]
+}

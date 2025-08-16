@@ -1,0 +1,401 @@
+[
+  {
+    "type": "page",
+    "slug": "history",
+    "title": "Palestinian History",
+    "summary": "Learn about the rich history of Palestine spanning thousands of years",
+    "url": "/#history"
+  },
+  {
+    "type": "page",
+    "slug": "resistance",
+    "title": "Palestinian Resistance",
+    "summary": "Explore methods of Palestinian resistance including peaceful protests and BDS movement",
+    "url": "/#resistance"
+  },
+  {
+    "type": "page",
+    "slug": "betrayal",
+    "title": "Who Betrayed Palestine",
+    "summary": "Understand who has betrayed the Palestinian cause throughout history",
+    "url": "/#betrayal"
+  },
+  {
+    "type": "page",
+    "slug": "action",
+    "title": "Take Action Now",
+    "summary": "Learn how you can support Palestine through petitions, donations, and awareness",
+    "url": "/#act"
+  },
+  {
+    "type": "page",
+    "slug": "resources",
+    "title": "Educational Resources",
+    "summary": "Access books, documentaries, academic papers, and maps about Palestine",
+    "url": "/#resources"
+  },
+  {
+    "type": "page",
+    "slug": "culture",
+    "title": "Palestinian Culture & Heritage",
+    "summary": "Discover Palestinian traditions, music, cuisine, and arts",
+    "url": "/#culture"
+  },
+  {
+    "type": "page",
+    "slug": "future",
+    "title": "The Future of Palestine",
+    "summary": "Vision for a free Palestine with justice and coexistence",
+    "url": "/#future"
+  },
+  {
+    "type": "myth",
+    "slug": "myths",
+    "title": "Debunking Myths About Palestine",
+    "summary": "Common misconceptions about Palestine and the truth behind them",
+    "url": "/myths/index.html"
+  },
+  {
+    "type": "legal",
+    "slug": "legal",
+    "title": "Legal Resources",
+    "summary": "International law and legal frameworks related to Palestine",
+    "url": "/legal/index.html"
+  },
+  {
+    "type": "diaspora",
+    "slug": "diaspora",
+    "title": "Palestinian Diaspora",
+    "summary": "Stories and resources for the Palestinian diaspora community",
+    "url": "/diaspora/index.html"
+  },
+  {
+    "type": "education",
+    "slug": "education",
+    "title": "Educational Resources",
+    "summary": "Materials for teachers and students about Palestine",
+    "url": "/education/teachers.html"
+  },
+  {
+    "type": "country",
+    "slug": "canada",
+    "title": "Canada — Country Profile",
+    "summary": "Canada plans to recognize the State of Palestine in September 2025, subject to certain conditions.",
+    "url": "/countries/view.html?slug=canada"
+  },
+  {
+    "type": "country",
+    "slug": "egypt",
+    "title": "Egypt — Country Profile",
+    "summary": "Egypt's official position.",
+    "url": "/countries/view.html?slug=egypt"
+  },
+  {
+    "type": "country",
+    "slug": "france",
+    "title": "France — Country Profile",
+    "summary": "France's official position.",
+    "url": "/countries/view.html?slug=france"
+  },
+  {
+    "type": "country",
+    "slug": "germany",
+    "title": "Germany — Country Profile",
+    "summary": "Germany's official position.",
+    "url": "/countries/view.html?slug=germany"
+  },
+  {
+    "type": "country",
+    "slug": "ireland",
+    "title": "Ireland — Country Profile",
+    "summary": "Ireland's official position.",
+    "url": "/countries/view.html?slug=ireland"
+  },
+  {
+    "type": "country",
+    "slug": "south-africa",
+    "title": "South Africa — Country Profile",
+    "summary": "South Africa's official position.",
+    "url": "/countries/view.html?slug=south-africa"
+  },
+  {
+    "type": "country",
+    "slug": "spain",
+    "title": "Spain — Country Profile",
+    "summary": "Spain's official position.",
+    "url": "/countries/view.html?slug=spain"
+  },
+  {
+    "type": "country",
+    "slug": "turkey",
+    "title": "Turkey — Country Profile",
+    "summary": "Turkey's official position.",
+    "url": "/countries/view.html?slug=turkey"
+  },
+  {
+    "type": "country",
+    "slug": "united-kingdom",
+    "title": "United Kingdom — Country Profile",
+    "summary": "United Kingdom's official position.",
+    "url": "/countries/view.html?slug=united-kingdom"
+  },
+  {
+    "type": "country",
+    "slug": "united-states",
+    "title": "United States — Country Profile",
+    "summary": "United States' official position.",
+    "url": "/countries/view.html?slug=united-states"
+  },
+  {
+    "type": "boycott-supporting",
+    "slug": "hp-inc",
+    "title": "HP Inc.",
+    "summary": "Provides biometric ID systems for Israeli checkpoints that enforce apartheid. Supplies servers to Israeli military prisons holding Palestinian children.",
+    "url": "/boycott/supporting.html#hp-inc"
+  },
+  {
+    "type": "boycott-supporting",
+    "slug": "puma",
+    "title": "Puma",
+    "summary": "Sponsors Israel Football Association, which includes teams in illegal West Bank settlements (war crimes under Geneva Conventions).",
+    "url": "/boycott/supporting.html#puma"
+  },
+  {
+    "type": "boycott-supporting",
+    "slug": "sodastream",
+    "title": "SodaStream",
+    "summary": "Operated factory in Mishor Adumim settlement (built on stolen Palestinian land) until 2015. Still benefits from settlement economy.",
+    "url": "/boycott/supporting.html#sodastream"
+  },
+  {
+    "type": "boycott-supporting",
+    "slug": "caterpillar-inc",
+    "title": "Caterpillar Inc.",
+    "summary": "Supplies D9 bulldozers to IDF, used to demolish 50,000+ Palestinian homes since 1967. Directly enables ethnic cleansing.",
+    "url": "/boycott/supporting.html#caterpillar-inc"
+  },
+  {
+    "type": "boycott-supporting",
+    "slug": "axa",
+    "title": "AXA",
+    "summary": "Invests $100M+ in Israeli banks that fund illegal settlements. Profits from war crimes under ICC Statute Article 8(2)(b)(viii).",
+    "url": "/boycott/supporting.html#axa"
+  },
+  {
+    "type": "boycott-supporting",
+    "slug": "sabra-hummus",
+    "title": "Sabra Hummus",
+    "summary": "Co-owned by Strauss Group, which provides food rations to IDF units committing genocide in Gaza. 50% profits fund occupation.",
+    "url": "/boycott/supporting.html#sabra-hummus"
+  },
+  {
+    "type": "boycott-supporting",
+    "slug": "booking-com",
+    "title": "Booking.com",
+    "summary": "Lists 200+ properties in illegal West Bank settlements, normalizing occupation. Violates UNHRC Resolution 31/36.",
+    "url": "/boycott/supporting.html#booking-com"
+  },
+  {
+    "type": "boycott-supporting",
+    "slug": "elbit-systems",
+    "title": "Elbit Systems",
+    "summary": "Israel's largest arms manufacturer. Supplies 85% of drones and land weapons used in Gaza massacres. Test weapons on Palestinian civilians.",
+    "url": "/boycott/supporting.html#elbit-systems"
+  },
+  {
+    "type": "boycott-supporting",
+    "slug": "ahava",
+    "title": "Ahava",
+    "summary": "Factory in illegal Mitzpe Shalem settlement. Steals Palestinian natural resources per Hague Regulations Article 55.",
+    "url": "/boycott/supporting.html#ahava"
+  },
+  {
+    "type": "boycott-supporting",
+    "slug": "volvo-group",
+    "title": "Volvo Group",
+    "summary": "Provides armored vehicles to IDF used in home demolitions and checkpoint violence. Complicit in crimes against humanity.",
+    "url": "/boycott/supporting.html#volvo-group"
+  },
+  {
+    "type": "boycott-supporting",
+    "slug": "teva-pharmaceutical",
+    "title": "Teva Pharmaceutical",
+    "summary": "Withholds medicines from Palestinian prisoners. Tests drugs on Palestinian detainees without consent (documented by Haaretz).",
+    "url": "/boycott/supporting.html#teva-pharmaceutical"
+  },
+  {
+    "type": "boycott-supporting",
+    "slug": "expedia",
+    "title": "Expedia",
+    "summary": "Lists 150+ hotels in illegal settlements. Profits from war crimes under Rome Statute Article 8(2)(b)(viii).",
+    "url": "/boycott/supporting.html#expedia"
+  },
+  {
+    "type": "boycott-supportive",
+    "slug": "jewish-voice-for-peace",
+    "title": "Jewish Voice for Peace",
+    "summary": "Leading Jewish anti-Zionist group organizing direct actions against Israeli apartheid. Targeted by Zionist smear campaigns.",
+    "url": "/boycott/supportive.html#jewish-voice-for-peace"
+  },
+  {
+    "type": "boycott-supportive",
+    "slug": "bds-movement",
+    "title": "BDS Movement",
+    "summary": "Palestinian-led movement pressuring Israel through economic/cultural boycotts. Banned in 35 US states due to Zionist lobbying.",
+    "url": "/boycott/supportive.html#bds-movement"
+  },
+  {
+    "type": "boycott-supportive",
+    "slug": "addameer-prisoner-support",
+    "title": "Addameer Prisoner Support",
+    "summary": "Documents Israel's torture of Palestinian political prisoners, including 500+ children held without trial.",
+    "url": "/boycott/supportive.html#addameer-prisoner-support"
+  },
+  {
+    "type": "boycott-supportive",
+    "slug": "the-palestine-institute-for-public-diplomacy",
+    "title": "The Palestine Institute for Public Diplomacy",
+    "summary": "Counters Israeli hasbara with facts about apartheid. Exposes war crimes through viral media campaigns.",
+    "url": "/boycott/supportive.html#the-palestine-institute-for-public-diplomacy"
+  },
+  {
+    "type": "boycott-supportive",
+    "slug": "zochrot",
+    "title": "Zochrot",
+    "summary": "Israeli organization teaching about 1948 ethnic cleansing. Maintains database of 530 destroyed Palestinian villages.",
+    "url": "/boycott/supportive.html#zochrot"
+  },
+  {
+    "type": "boycott-supportive",
+    "slug": "middle-east-children-s-alliance",
+    "title": "Middle East Children's Alliance",
+    "summary": "Provides trauma care to children surviving Israeli bombings. Smear campaigns claim they 'support terrorism' for aiding Gaza.",
+    "url": "/boycott/supportive.html#middle-east-children-s-alliance"
+  },
+  {
+    "type": "boycott-supportive",
+    "slug": "al-haq",
+    "title": "Al-Haq",
+    "summary": "Palestinian human rights group providing evidence to ICC. Designated 'terrorist' by Israel in 2021 for exposing apartheid.",
+    "url": "/boycott/supportive.html#al-haq"
+  },
+  {
+    "type": "boycott-supportive",
+    "slug": "students-for-justice-in-palestine",
+    "title": "Students for Justice in Palestine",
+    "summary": "Leads university divestment campaigns. Banned at 30+ US campuses under pressure from Zionist donors.",
+    "url": "/boycott/supportive.html#students-for-justice-in-palestine"
+  },
+  {
+    "type": "boycott-supportive",
+    "slug": "the-palestinian-campaign-for-the-academic-and-cultural-boycott-of-israel",
+    "title": "The Palestinian Campaign for the Academic and Cultural Boycott of Israel",
+    "summary": "Calls for boycotting Israeli academic institutions complicit in apartheid. Blacklisted by Zionist organizations.",
+    "url": "/boycott/supportive.html#the-palestinian-campaign-for-the-academic-and-cultural-boycott-of-israel"
+  },
+  {
+    "type": "boycott-supportive",
+    "slug": "american-muslims-for-palestine",
+    "title": "American Muslims for Palestine",
+    "summary": "Challenges AIPAC's political dominance. Under constant surveillance by pro-Israel groups.",
+    "url": "/boycott/supportive.html#american-muslims-for-palestine"
+  },
+  {
+    "type": "boycott-supportive",
+    "slug": "the-red-nation",
+    "title": "The Red Nation",
+    "summary": "Native American collective drawing parallels between Zionist and settler-colonial violence. Targeted by FBI for protests.",
+    "url": "/boycott/supportive.html#the-red-nation"
+  },
+  {
+    "type": "boycott-supportive",
+    "slug": "labor-for-palestine",
+    "title": "Labor for Palestine",
+    "summary": "Organizes dockworkers to block Israeli arms shipments. Key force behind union divestment from Israel bonds.",
+    "url": "/boycott/supportive.html#labor-for-palestine"
+  },
+  {
+    "type": "journalist",
+    "slug": "fadel-shanaa",
+    "title": "Fadel Shanaa",
+    "summary": "Reuters cameraman killed by Israeli tank shell on April 16, 2008 while filming in clearly marked press vehicle. Footage shows tank crew deliberately targeting him. Shell contained flechettes - anti-personnel weapons banned in civilian areas.",
+    "url": "/journalists/index.html#fadel-shanaa"
+  },
+  {
+    "type": "journalist",
+    "slug": "basil-ibrahim",
+    "title": "Basil Ibrahim",
+    "summary": "Al-Aqsa TV sound engineer killed alongside colleague Mohammed Abu Aisha in targeted airstrike on their car on November 20, 2012. Both wore press insignia. Israel claimed they were 'Hamas operatives' but provided no evidence.",
+    "url": "/journalists/index.html#basil-ibrahim"
+  },
+  {
+    "type": "journalist",
+    "slug": "simon-farhat",
+    "title": "Simon Farhat",
+    "summary": "Palestine Today cameraman killed by Israeli naval artillery while covering fishermen protests on July 9, 2014. Shell tore off both legs; bled out after being denied medical evacuation for 3 hours.",
+    "url": "/journalists/index.html#simon-farhat"
+  },
+  {
+    "type": "journalist",
+    "slug": "ali-al-jabari",
+    "title": "Ali al-Jabari",
+    "summary": "Freelance photojournalist killed by drone strike while documenting aftermath of UN school bombing on July 30, 2014. Second strike killed paramedics attempting to retrieve his body.",
+    "url": "/journalists/index.html#ali-al-jabari"
+  },
+  {
+    "type": "journalist",
+    "slug": "khaled-hamad",
+    "title": "Khaled Hamad",
+    "summary": "Photojournalist for Al-Aqsa TV killed by tank shell while documenting Shujaiya massacre on July 20, 2014. His iconic final photo shows the tank that killed him moments later.",
+    "url": "/journalists/index.html#khaled-hamad"
+  },
+  {
+    "type": "journalist",
+    "slug": "sameh-al-aryan",
+    "title": "Sameh al-Aryan",
+    "summary": "Al-Quds TV correspondent killed alongside his entire production crew (4 journalists) in precision airstrike on media building on August 1, 2014. Israel claimed 'Hamas communications hub' but provided no evidence.",
+    "url": "/journalists/index.html#sameh-al-aryan"
+  },
+  {
+    "type": "journalist",
+    "slug": "nazih-darwazeh",
+    "title": "Nazih Darwazeh",
+    "summary": "Palestinian journalist shot in the head by Israeli sniper during 2014 Nakba Day protests. Wore fluorescent 'PRESS' vest. IDF initially claimed he was 'throwing stones' before video proved otherwise.",
+    "url": "/journalists/index.html#nazih-darwazeh"
+  },
+  {
+    "type": "journalist",
+    "slug": "mahmoud-al-kumi",
+    "title": "Mahmoud al-Kumi",
+    "summary": "Al-Aqsa TV cameraman killed with colleague Hussam Salama in targeted airstrike on their car on November 20, 2012. Both were clearly marked as press. Israel later claimed they were 'Hamas operatives' based on secret evidence.",
+    "url": "/journalists/index.html#mahmoud-al-kumi"
+  },
+  {
+    "type": "article",
+    "slug": "abductions-2008-2023",
+    "title": "Abductions & Detentions of Children (2008–2023)",
+    "summary": "Dataset and charts (2008–2023)",
+    "url": "/features/abductions-2008-2023.html"
+  },
+  {
+    "type": "movement",
+    "slug": "youth",
+    "title": "Palestinian Youth Movement",
+    "summary": "Information and resources about the Palestinian youth movement.",
+    "url": "/movements/youth.html"
+  },
+  {
+    "type": "movement",
+    "slug": "labor",
+    "title": "Palestinian Labor Movement",
+    "summary": "Information and resources about the Palestinian labor movement.",
+    "url": "/movements/labor.html"
+  },
+  {
+    "type": "movement",
+    "slug": "women",
+    "title": "Palestinian Women Movement",
+    "summary": "Information and resources about the Palestinian women movement.",
+    "url": "/movements/women.html"
+  }
+]

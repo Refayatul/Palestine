@@ -1,0 +1,158 @@
+[
+  {
+    "id": "m1",
+    "myth": "Palestinians are recent immigrants",
+    "fact": "Genetic studies confirm Palestinians are indigenous Canaanites with 4,000+ years of continuous habitation, while European Zionist settlers have no ancestral ties to the land.",
+    "sources": [
+      {
+        "title": "DNA Evidence of Palestinian Continuity",
+        "url": "https://www.nature.com/palestinian-genetics",
+        "publisher": "Nature Journal"
+      }
+    ]
+  },
+  {
+    "id": "m2",
+    "myth": "Israel is the 'only democracy' in Middle East",
+    "fact": "A racist apartheid state where 5 million Palestinians live under military rule with no voting rights, while Jewish settlers enjoy full privileges - worse than South African apartheid.",
+    "sources": [
+      {
+        "title": "Amnesty International: Israel's Apartheid",
+        "url": "https://www.amnesty.org/apartheid-report",
+        "publisher": "Amnesty International"
+      }
+    ]
+  },
+  {
+    "id": "m3",
+    "myth": "Hamas started the violence on Oct 7",
+    "fact": "Decades of occupation, 16-year Gaza siege, and weekly killings of Palestinians (including 2,200 children since 2008) created the resistance. Israel killed 250 Palestinians in 2023 before Oct 7.",
+    "sources": [
+      {
+        "title": "UN OCHA Casualty Database",
+        "url": "https://www.ochaopt.org/casualties",
+        "publisher": "United Nations"
+      }
+    ]
+  },
+  {
+    "id": "m4",
+    "myth": "Israel 'withdrew' from Gaza in 2005",
+    "fact": "Israel maintains total control of Gaza's airspace, waters, borders, population registry, electricity and food imports - the world's largest open-air prison.",
+    "sources": [
+      {
+        "title": "Gisha: Israel's Remote Control Occupation",
+        "url": "https://www.gisha.org/occupation-facts",
+        "publisher": "Gisha Legal Center"
+      }
+    ]
+  },
+  {
+    "id": "m5",
+    "myth": "Palestinians 'rejected peace offers'",
+    "fact": "Israel's 'offers' demanded Palestinians surrender 80% of historic Palestine, give up Jerusalem, and accept permanent Israeli military control - terms no people would accept.",
+    "sources": [
+      {
+        "title": "The Myth of the Generous Offer",
+        "url": "https://www.middleeasteye.net/camp-david-myths",
+        "publisher": "Middle East Eye"
+      }
+    ]
+  },
+  {
+    "id": "m6",
+    "myth": "Anti-Zionism is antisemitism",
+    "fact": "Thousands of Holocaust survivors and Jewish scholars condemn this false equivalence. Zionism is a political ideology, Judaism is a religion - they are not the same.",
+    "sources": [
+      {
+        "title": "Jewish Voice for Peace FAQ",
+        "url": "https://www.jewishvoiceforpeace.org/zionism-faq",
+        "publisher": "Jewish Voice for Peace"
+      }
+    ]
+  },
+  {
+    "id": "m7",
+    "myth": "Israel has 'the most moral army'",
+    "fact": "The IDF has killed over 15,000 Palestinian children since 2000, uses human shields, and targets hospitals - documented by UN and Israeli veterans' groups.",
+    "sources": [
+      {
+        "title": "Breaking the Silence Reports",
+        "url": "https://www.breakingthesilence.org.il/warcrimes",
+        "publisher": "Breaking the Silence"
+      }
+    ]
+  },
+  {
+    "id": "m8",
+    "myth": "Palestine was 'a land without people'",
+    "fact": "British Mandate records show 1.3 million Palestinians in 1947. Israel destroyed 530 villages in the Nakba - an ongoing ethnic cleansing project.",
+    "sources": [
+      {
+        "title": "Zochrot: Destroyed Villages Archive",
+        "url": "https://www.zochrot.org/en/nakba-map",
+        "publisher": "Zochrot"
+      }
+    ]
+  },
+  {
+    "id": "m9",
+    "myth": "The conflict is 'complicated'",
+    "fact": "It's simple: European settlers colonized Palestine, ethnically cleansed its people, and maintain a racist apartheid regime. All resistance is legal under international law.",
+    "sources": [
+      {
+        "title": "UN Resolution 37/43",
+        "url": "https://undocs.org/A/RES/37/43",
+        "publisher": "United Nations"
+      }
+    ]
+  },
+  {
+    "id": "m10",
+    "myth": "Israel 'gives warning' before bombing",
+    "fact": "So-called 'roof knocking' is psychological terror. With Gaza's density, no safe zones, and borders closed, these 'warnings' are cruel theater for Western media.",
+    "sources": [
+      {
+        "title": "Human Rights Watch: Israel's Warning Myths",
+        "url": "https://www.hrw.org/roof-knocking-report",
+        "publisher": "Human Rights Watch"
+      }
+    ]
+  },
+  {
+    "id": "m11",
+    "myth": "Hamas uses civilians as 'human shields'",
+    "fact": "Israel has never provided evidence for this claim, while the IDF actually uses Palestinians as human shields - documented by its own soldiers.",
+    "sources": [
+      {
+        "title": "B'Tselem: IDF Human Shield Policy",
+        "url": "https://www.btselem.org/human_shields",
+        "publisher": "B'Tselem"
+      }
+    ]
+  },
+  {
+    "id": "m12",
+    "myth": "Criticism of Israel is 'antisemitic'",
+    "fact": "This weaponization of antisemitism silences legitimate dissent. Over 1,000 Jewish scholars condemn this false equation that harms real anti-racism efforts.",
+    "sources": [
+      {
+        "title": "Jerusalem Declaration on Antisemitism",
+        "url": "https://jerusalemdeclaration.org",
+        "publisher": "International Scholars"
+      }
+    ]
+  },
+  {
+    "id": "m13",
+    "myth": "There's 'no partner for peace'",
+    "fact": "Israel assassinated Yitzhak Rabin for pursuing peace, then spent decades building settlements to make peace impossible. Netanyahu bragged about blocking Palestinian statehood.",
+    "sources": [
+      {
+        "title": "Haaretz: Netanyahu's 2019 Boast About Blocking Peace",
+        "url": "https://www.haaretz.com/netanyahu-peace-sabotage",
+        "publisher": "Haaretz"
+      }
+    ]
+  }
+]

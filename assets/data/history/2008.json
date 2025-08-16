@@ -1,0 +1,24 @@
+{
+  "year": 2008,
+  "intro": "The year 2008 saw the beginning of Operation Cast Lead, a major Israeli military offensive in the Gaza Strip. This operation resulted in widespread destruction and significant civilian casualties, further exacerbating the humanitarian crisis in Gaza.",
+  "events": [
+    {
+      "id": "2008-12-27-cast-lead-begins",
+      "date": "2008-12-27",
+      "title": "Operation Cast Lead Begins",
+      "text": "Israel launched a 22-day military offensive in the Gaza Strip, ostensibly to stop rocket fire from Hamas. The operation resulted in the deaths of over 1,400 Palestinians, including hundreds of children, and widespread destruction of infrastructure.",
+      "sources": [
+        {"title": "Operation Cast Lead", "url": "https://en.wikipedia.org/wiki/Operation_Cast_Lead", "publisher": "Wikipedia", "date_accessed": "2025-08-16"}
+      ]
+    },
+    {
+      "id": "2009-01-08-unsc-res-1860",
+      "date": "2009-01-08",
+      "title": "UN Security Council Resolution 1860",
+      "text": "The UN Security Council adopted Resolution 1860, calling for an immediate, durable and fully respected ceasefire in Gaza leading to the full withdrawal of Israeli forces.",
+      "sources": [
+        {"title": "UNSC Resolution 1860", "url": "https://undocs.org/S/RES/1860(2009)", "publisher": "United Nations Digital Library", "date_accessed": "2025-08-16"}
+      ]
+    }
+  ]
+}

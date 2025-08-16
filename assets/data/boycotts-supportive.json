@@ -1,0 +1,182 @@
+[
+  {
+    "name": "Jewish Voice for Peace",
+    "sector": "Activism",
+    "region": "Global",
+    "status": "Active",
+    "sources": [
+      {
+        "url": "https://www.jewishvoiceforpeace.org",
+        "title": "JVP: Anti-Zionist Jewish Organization",
+        "publisher": "Jewish Voice for Peace"
+      }
+    ],
+    "last_reviewed": "2024-08-16",
+    "rationale": "Leading Jewish anti-Zionist group organizing direct actions against Israeli apartheid. Targeted by Zionist smear campaigns."
+  },
+  {
+    "name": "BDS Movement",
+    "sector": "Activism",
+    "region": "Global",
+    "status": "Active",
+    "sources": [
+      {
+        "url": "https://bdsmovement.net",
+        "title": "Boycott, Divestment, Sanctions",
+        "publisher": "BDS National Committee"
+      }
+    ],
+    "last_reviewed": "2024-08-16",
+    "rationale": "Palestinian-led movement pressuring Israel through economic/cultural boycotts. Banned in 35 US states due to Zionist lobbying."
+  },
+  {
+    "name": "Addameer Prisoner Support",
+    "sector": "Advocacy",
+    "region": "Palestine",
+    "status": "Active",
+    "sources": [
+      {
+        "url": "https://www.addameer.org",
+        "title": "Addameer: Fighting Israeli Military Detentions",
+        "publisher": "Addameer"
+      }
+    ],
+    "last_reviewed": "2024-08-16",
+    "rationale": "Documents Israel's torture of Palestinian political prisoners, including 500+ children held without trial."
+  },
+  {
+    "name": "The Palestine Institute for Public Diplomacy",
+    "sector": "Advocacy",
+    "region": "Global",
+    "status": "Active",
+    "sources": [
+      {
+        "url": "https://pipd.ps",
+        "title": "PIPD: Challenging Zionist Propaganda",
+        "publisher": "PIPD"
+      }
+    ],
+    "last_reviewed": "2024-08-16",
+    "rationale": "Counters Israeli hasbara with facts about apartheid. Exposes war crimes through viral media campaigns."
+  },
+  {
+    "name": "Zochrot",
+    "sector": "Education",
+    "region": "Palestine",
+    "status": "Active",
+    "sources": [
+      {
+        "url": "https://zochrot.org",
+        "title": "Zochrot: Documenting the Nakba",
+        "publisher": "Zochrot"
+      }
+    ],
+    "last_reviewed": "2024-08-16",
+    "rationale": "Israeli organization teaching about 1948 ethnic cleansing. Maintains database of 530 destroyed Palestinian villages."
+  },
+  {
+    "name": "Middle East Children's Alliance",
+    "sector": "Charity",
+    "region": "Palestine",
+    "status": "Active",
+    "sources": [
+      {
+        "url": "https://www.mecaforpeace.org",
+        "title": "MECA: Healing Gaza's Traumatized Children",
+        "publisher": "MECA"
+      }
+    ],
+    "last_reviewed": "2024-08-16",
+    "rationale": "Provides trauma care to children surviving Israeli bombings. Smear campaigns claim they 'support terrorism' for aiding Gaza."
+  },
+  {
+    "name": "Al-Haq",
+    "sector": "Advocacy",
+    "region": "Palestine",
+    "status": "Active",
+    "sources": [
+      {
+        "url": "https://www.alhaq.org",
+        "title": "Al-Haq: Documenting Israeli War Crimes",
+        "publisher": "Al-Haq"
+      }
+    ],
+    "last_reviewed": "2024-08-16",
+    "rationale": "Palestinian human rights group providing evidence to ICC. Designated 'terrorist' by Israel in 2021 for exposing apartheid."
+  },
+  {
+    "name": "Students for Justice in Palestine",
+    "sector": "Education",
+    "region": "Global",
+    "status": "Active",
+    "sources": [
+      {
+        "url": "https://www.nationalsjp.org",
+        "title": "SJP: Campus Resistance to Zionism",
+        "publisher": "National SJP"
+      }
+    ],
+    "last_reviewed": "2024-08-16",
+    "rationale": "Leads university divestment campaigns. Banned at 30+ US campuses under pressure from Zionist donors."
+  },
+  {
+    "name": "The Palestinian Campaign for the Academic and Cultural Boycott of Israel",
+    "sector": "Education",
+    "region": "Global",
+    "status": "Active",
+    "sources": [
+      {
+        "url": "https://bdsmovement.net/pacbi",
+        "title": "PACBI Guidelines",
+        "publisher": "BDS Movement"
+      }
+    ],
+    "last_reviewed": "2024-08-16",
+    "rationale": "Calls for boycotting Israeli academic institutions complicit in apartheid. Blacklisted by Zionist organizations."
+  },
+  {
+    "name": "American Muslims for Palestine",
+    "sector": "Activism",
+    "region": "North America",
+    "status": "Active",
+    "sources": [
+      {
+        "url": "https://www.ampalestine.org",
+        "title": "AMP: Exposing Israeli Lobby Influence",
+        "publisher": "AMP"
+      }
+    ],
+    "last_reviewed": "2024-08-16",
+    "rationale": "Challenges AIPAC's political dominance. Under constant surveillance by pro-Israel groups."
+  },
+  {
+    "name": "The Red Nation",
+    "sector": "Activism",
+    "region": "North America",
+    "status": "Active",
+    "sources": [
+      {
+        "url": "https://therednation.org",
+        "title": "Indigenous Solidarity With Palestine",
+        "publisher": "The Red Nation"
+      }
+    ],
+    "last_reviewed": "2024-08-16",
+    "rationale": "Native American collective drawing parallels between Zionist and settler-colonial violence. Targeted by FBI for protests."
+  },
+  {
+    "name": "Labor for Palestine",
+    "sector": "Activism",
+    "region": "Global",
+    "status": "Active",
+    "sources": [
+      {
+        "url": "https://laborforpalestine.net",
+        "title": "Trade Unionists Against Apartheid",
+        "publisher": "Labor for Palestine"
+      }
+    ],
+    "last_reviewed": "2024-08-16",
+    "rationale": "Organizes dockworkers to block Israeli arms shipments. Key force behind union divestment from Israel bonds."
+  }
+]

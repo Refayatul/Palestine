@@ -1,0 +1,43 @@
+{
+  "year": 1948,
+  "intro": "The year 1948 marks the Nakba (Catastrophe) for Palestinians, a period of mass displacement and dispossession that led to the establishment of the State of Israel. This year saw the culmination of Zionist paramilitary operations, the end of the British Mandate, and the beginning of a protracted conflict.",
+  "events": [
+    {
+      "id": "1948-04-09-deir-yassin",
+      "date": "1948-04-09",
+      "title": "Deir Yassin Massacre",
+      "text": "Irregular Zionist forces (Irgun and Lehi) attacked the Palestinian Arab village of Deir Yassin, killing between 100 and 250 villagers, including women and children. The massacre caused widespread panic and contributed to the mass exodus of Palestinians.",
+      "sources": [
+        {"title": "Deir Yassin Remembered", "url": "https://www.deiryassin.org/", "publisher": "Deir Yassin Remembered", "date_accessed": "2025-08-16"},
+        {"title": "The Ethnic Cleansing of Palestine", "url": "https://www.amazon.com/Ethnic-Cleansing-Palestine-Ilan-Pappe/dp/1851685553", "publisher": "Ilan Pappé", "date_accessed": "2025-08-16"}
+      ]
+    },
+    {
+      "id": "1948-05-14-israel-declaration",
+      "date": "1948-05-14",
+      "title": "Declaration of the Establishment of the State of Israel",
+      "text": "David Ben-Gurion declared the establishment of the State of Israel, hours before the British Mandate officially ended. This declaration was followed by the 1948 Arab–Israeli War.",
+      "sources": [
+        {"title": "Israel's Declaration of Independence", "url": "https://www.jewishvirtuallibrary.org/jsource/History/Dec_of_Indep.html", "publisher": "Jewish Virtual Library", "date_accessed": "2025-08-16"}
+      ]
+    },
+    {
+      "id": "1948-05-15-nakba",
+      "date": "1948-05-15",
+      "title": "The Nakba (Catastrophe)",
+      "text": "Beginning of the mass displacement and dispossession of Palestinians. Over 750,000 Palestinians became refugees, and more than 500 villages were destroyed by Zionist forces.",
+      "sources": [
+        {"title": "The Palestinian Nakba: A History of Dispossession", "url": "https://www.aljazeera.com/features/2018/5/15/the-palestinian-nakba-a-history-of-dispossession", "publisher": "Al Jazeera", "date_accessed": "2025-08-16"}
+      ]
+    },
+    {
+      "id": "1948-12-11-unga-res-194",
+      "date": "1948-12-11",
+      "title": "UN General Assembly Resolution 194",
+      "text": "The UN General Assembly passed Resolution 194, which affirmed the right of return for Palestinian refugees and called for a peaceful settlement of the conflict.",
+      "sources": [
+        {"title": "UNGA Resolution 194", "url": "https://undocs.org/A/RES/194(III)", "publisher": "United Nations Digital Library", "date_accessed": "2025-08-16"}
+      ]
+    }
+  ]
+}

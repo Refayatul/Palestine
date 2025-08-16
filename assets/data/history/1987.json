@@ -1,0 +1,24 @@
+{
+  "year": 1987,
+  "intro": "The year 1987 marked the beginning of the First Intifada, a widespread Palestinian uprising against the Israeli occupation. This period was characterized by mass protests, civil disobedience, and a renewed focus on Palestinian self-determination.",
+  "events": [
+    {
+      "id": "1987-12-08-first-intifada-begins",
+      "date": "1987-12-08",
+      "title": "First Intifada Begins",
+      "text": "A Palestinian uprising against the Israeli occupation began in the Gaza Strip and quickly spread to the West Bank. It was largely characterized by civil disobedience, including strikes, boycotts, and stone-throwing by youth.",
+      "sources": [
+        {"title": "The First Intifada", "url": "https://www.britannica.com/event/intifada", "publisher": "Britannica", "date_accessed": "2025-08-16"}
+      ]
+    },
+    {
+      "id": "1987-12-09-unsc-res-605",
+      "date": "1987-12-09",
+      "title": "UN Security Council Resolution 605",
+      "text": "The UN Security Council adopted Resolution 605, expressing grave concern over the deteriorating situation in the occupied Palestinian territories and deploring Israeli policies and practices.",
+      "sources": [
+        {"title": "UNSC Resolution 605", "url": "https://undocs.org/S/RES/605(1987)", "publisher": "United Nations Digital Library", "date_accessed": "2025-08-16"}
+      ]
+    }
+  ]
+}

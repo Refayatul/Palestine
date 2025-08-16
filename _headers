@@ -1,0 +1,18 @@
+/assets/js/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/css/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/images/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/data/*
+  Cache-Control: public, max-age=300
+
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
+  Content-Security-Policy: default-src 'self'; img-src 'self' data: https:; script-src 'self' https://cdn.jsdelivr.net https://cdn.jsdelivr.net/npm/chart.js https://cdn.jsdelivr.net/npm/fuse.js@6.6.2; style-src 'self' 'unsafe-inline'; connect-src 'self'; font-src 'self' data:

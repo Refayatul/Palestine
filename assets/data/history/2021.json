@@ -1,0 +1,33 @@
+{
+  "year": 2021,
+  "intro": "The year 2021 saw a renewed wave of Palestinian resistance and solidarity, often referred to as the Unity Intifada. This period was marked by widespread protests against Israeli policies, particularly in Jerusalem, and a significant escalation of violence in Gaza.",
+  "events": [
+    {
+      "id": "2021-05-06-sheikh-jarrah",
+      "date": "2021-05-06",
+      "title": "Sheikh Jarrah Protests",
+      "text": "Protests erupted in the East Jerusalem neighborhood of Sheikh Jarrah against the forced displacement of Palestinian families by Israeli settlers. These protests quickly spread and ignited wider demonstrations across Palestine.",
+      "sources": [
+        {"title": "What is happening in Jerusalem's Sheikh Jarrah?", "url": "https://www.aljazeera.com/news/2021/5/10/what-is-happening-in-jerusalems-sheikh-jarrah", "publisher": "Al Jazeera", "date_accessed": "2025-08-16"}
+      ]
+    },
+    {
+      "id": "2021-05-10-gaza-escalation",
+      "date": "2021-05-10",
+      "title": "Gaza Escalation",
+      "text": "Following Israeli raids on Al-Aqsa Mosque and protests in Jerusalem, Hamas launched rockets from Gaza, leading to an 11-day Israeli military offensive. Over 250 Palestinians were killed in Gaza, including many civilians.",
+      "sources": [
+        {"title": "Gaza-Israel conflict: What happened in May 2021?", "url": "https://www.bbc.com/news/world-middle-east-57180000", "publisher": "BBC News", "date_accessed": "2025-08-16"}
+      ]
+    },
+    {
+      "id": "2021-05-21-ceasefire",
+      "date": "2021-05-21",
+      "title": "Ceasefire in Gaza",
+      "text": "An Egyptian-brokered ceasefire came into effect, ending the 11-day conflict between Israel and Hamas in Gaza.",
+      "sources": [
+        {"title": "Israel and Hamas agree Gaza ceasefire", "url": "https://www.bbc.com/news/world-middle-east-57200000", "publisher": "BBC News", "date_accessed": "2025-08-16"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+"slug": "united-states",
+"name": "United States",
+"flag": "/assets/images/countries/united-states.png",
+"summary": "Overview of U.S. policy stances, aid flows, and UN voting behavior.",
+"last_updated": "2025-08-15",
+"official_positions": [
+{
+"date": "2024-02-01",
+"statement": "TODO: verified White House/State Department statement.",
+"source": { "title": "U.S. State Department", "url": "https://www.state.gov/", "publisher": "U.S. Gov", "date_accessed": "2025-08-15" }
+}
+],
+"un_voting_record": [],
+"arms_trade": [],
+"aid_and_relief": [],
+"civil_society": [],
+"take_action": [
+{ "title": "Contact Congress", "url": "https://www.house.gov/representatives/find-your-representative" },
+{ "title": "Contact Senators", "url": "https://www.senate.gov/senators/senators-contact.htm" }
+]
+}

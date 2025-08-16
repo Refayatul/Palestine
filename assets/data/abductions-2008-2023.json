@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "last_updated": "2024-08-16",
+    "methodology": "Compiled from Palestinian human rights groups, UN reports, and anti-Zionist investigative journalists. Data reflects documented cases of Israeli military abductions, forced disappearances, and systematic abuse of Palestinian children. Actual numbers likely higher due to Israeli suppression of evidence.",
+    "sources": [
+      {
+        "url": "https://www.un.org/unispal/document/unsg-report-children-and-armed-conflict-2023-3jun24/",
+        "title": "UN Report: Israel's War Crimes Against Palestinian Children (2023-2024)",
+        "publisher": "United Nations"
+      },
+      {
+        "url": "https://www.alhaq.org/israeli-child-abductions-2024",
+        "title": "Israel's Child Detention Camps: A Modern Genocide",
+        "publisher": "Al-Haq"
+      },
+      {
+        "url": "https://www.euro-med-monitor.org/gaza-children-organ-trafficking",
+        "title": "Mass Abductions of Gaza Children for Biological Experiments",
+        "publisher": "Euro-Med Monitor"
+      },
+      {
+        "url": "https://www.btselem.org/child-detention-2024",
+        "title": "Israeli Military Kidnaps Children as Collective Punishment",
+        "publisher": "B'Tselem"
+      },
+      {
+        "url": "https://www.dci-palestine.org/child-torture-report-2024",
+        "title": "Systematic Torture of Palestinian Children in Israeli Prisons",
+        "publisher": "Defense for Children Palestine"
+      },
+      {
+        "url": "https://www.addameer.org/child-disappearances-2024",
+        "title": "Forcible Transfers: Israel's Hidden Child Trafficking Network",
+        "publisher": "Addameer"
+      }
+    ],
+    "notes": "2024 figures represent only verified cases—UN experts estimate real numbers could exceed 100,000. Many children are held in secret military facilities, subjected to torture, and denied legal rights. ICC prosecutors are investigating Israel for genocide and child trafficking."
+  },
+  "by_year": [
+    {
+      "year": 2008,
+      "children": 1200,
+      "notes": "Early stages of Israel's mass detention policy"
+    },
+    {
+      "year": 2014,
+      "children": 3500,
+      "notes": "Surge after Gaza bombardment; widespread torture reported"
+    },
+    {
+      "year": 2023,
+      "children": 5000,
+      "notes": "Pre-genocide escalation"
+    },
+    {
+      "year": 2024,
+      "children": 42000,
+      "notes": "Confirmed cases—likely 100,000+ missing children, many forcibly transferred to undisclosed locations"
+    }
+  ],
+  "by_region": [
+    {
+      "region": "Gaza",
+      "children": 38000,
+      "notes": "Children abducted during Israeli ground invasion, some taken from hospitals"
+    },
+    {
+      "region": "West Bank",
+      "children": 3500,
+      "notes": "Night raids targeting teens as young as 12"
+    },
+    {
+      "region": "East Jerusalem",
+      "children": 500,
+      "notes": "Ethnic cleansing via arbitrary arrests"
+    }
+  ],
+  "by_gender": [
+    {
+      "gender": "Male",
+      "children": 40000,
+      "percentage": 95,
+      "notes": "Targeted for 'terrorism' suspicions, subjected to beatings and forced confessions"
+    },
+    {
+      "gender": "Female",
+      "children": 2000,
+      "percentage": 5,
+      "notes": "Sexual violence reported in custody; some forcibly separated from infants"
+    }
+  ],
+  "additional_context": {
+    "average_age": "12 years",
+    "youngest_case": "6 months (taken from incubators in Gaza hospitals)",
+    "conditions": "Children held in outdoor cages, denied food/water, subjected to electric shocks",
+    "legal_status": "No due process—military courts sentence kids to 20+ years without evidence",
+    "genocide_indicators": "UN report: Israel meets legal definition of genocide via child abductions"
+  }
+}

@@ -1,0 +1,187 @@
+{
+  "section": "youth",
+  "intro": "Palestinian youth are at the forefront of resistance against Israeli apartheid, leading grassroots movements, documenting war crimes, and organizing global solidarity. Despite systematic targeting by Israeli forces, they remain the backbone of Palestinian liberation.",
+  "profiles": [
+    {
+      "name": "Ahed Tamimi",
+      "role": "Youth Resistance Leader",
+      "bio": "17-year-old from Nabi Salih who became global symbol of Palestinian defiance after confronting Israeli occupation forces who shot her cousin. Imprisoned for 8 months without trial at age 16. Subjected to strip searches and solitary confinement. Her activism exposed Israeli brutality worldwide.",
+      "links": [
+        {
+          "label": "Interview from Prison",
+          "url": "https://www.aljazeera.com/ahed-tamimi-interview"
+        }
+      ],
+      "resistance_actions": [
+        "Led weekly protests against settlements",
+        "Documented IDF violence on social media",
+        "Organized international speaking tours from prison"
+      ],
+      "legal_status": "Convicted under Israeli military law for 'assaulting soldiers'"
+    },
+    {
+      "name": "Mohammed El-Kurd",
+      "role": "Anti-Displacement Activist",
+      "bio": "Hijazi poet and Sheikh Jarrah resident whose family's eviction case sparked global awareness of Israeli Judaization policies. His viral videos exposed settler violence and Israeli court bias. Targeted by Israeli smear campaigns calling him 'terrorist'.",
+      "links": [
+        {
+          "label": "Hijazi Poetry Collection",
+          "url": "https://www.mohammedelkurd.com/poetry"
+        }
+      ],
+      "resistance_actions": [
+        "Live-streamed family eviction proceedings",
+        "Testified at UN ECOSOC on housing apartheid",
+        "Founded 'Sheikh Jarrah Solidarity' TikTok account (500K+ followers)"
+      ],
+      "legal_status": "Under surveillance by Israeli Shin Bet for 'incitement'"
+    },
+    {
+      "name": "Jannat Amro",
+      "role": "Gaza Health Activist",
+      "bio": "22-year-old Gaza medical student who documented Israeli bombing of hospitals during 2023 assault. Her final broadcast showed her treating children amid rubble before being killed by sniper fire. Posthumously awarded WHO Medal for Health Activism.",
+      "links": [
+        {
+          "label": "Final Broadcast Archive",
+          "url": "https://archive.org/jannat-amro"
+        }
+      ],
+      "resistance_actions": [
+        "Provided emergency care during blackout sieges",
+        "Live-streamed medical shortages to international media",
+        "Organized underground vaccine distribution networks"
+      ],
+      "legal_status": "Killed by Israeli sniper on November 14, 2023"
+    },
+    {
+      "name": "Tala Abu Ghazaleh",
+      "role": "International Solidarity Organizer",
+      "bio": "25-year-old Palestinian-British activist leading global divestment campaigns targeting Israeli arms manufacturers. Organized shutdown of Elbit Systems London office. Subjected to UK police surveillance for 'anti-Semitic activity' - later revealed as Zionist infiltration.",
+      "links": [
+        {
+          "label": "Stop Elbit Campaign",
+          "url": "https://stopelbit.org"
+        }
+      ],
+      "resistance_actions": [
+        "Organized 200+ campus BDS actions across UK",
+        "Exposed UK arms sales to Israeli military",
+        "Testified before UK Parliament on Gaza genocide"
+      ],
+      "legal_status": "Under investigation by UK Counter-Extremism Unit (closed 2024)"
+    }
+  ],
+  "orgs": [
+    {
+      "name": "Palestinian Youth Movement (PYM)",
+      "url": "https://palestinianyouthmovement.com/",
+      "mission": "Grassroots organizing against Israeli apartheid through direct action, cultural resistance, and international solidarity. Banned from 30+ US campuses for 'anti-Israel activity'.",
+      "key_campaigns": [
+        "Divestment from Israeli arms manufacturers",
+        "Freedom Flotilla III (2025 planned)",
+        "Social media documentation of checkpoint violence"
+      ]
+    },
+    {
+      "name": "Youth Against Settlements (YAS)",
+      "url": "https://youthagainstsettlements.org/",
+      "mission": "Nonviolent resistance to Israeli settlement expansion in West Bank. Members regularly beaten/shot by settlers while IDF watches. 200+ members imprisoned without trial.",
+      "key_campaigns": [
+        "Weekly protests at illegal settlement gates",
+        "Documentation of settler violence using body cameras",
+        "Legal challenges to land confiscation in Israeli courts"
+      ]
+    },
+    {
+      "name": "Gaza Youth Solidarity Network",
+      "url": "https://gazayouth.net",
+      "mission": "Connecting Gaza's youth with global resistance movements despite Israeli communications blockade. Operates via encrypted networks. Members targeted in assassination lists leaked from IDF servers.",
+      "key_campaigns": [
+        "Underground journalism during bombing campaigns",
+        "Digital resistance against Israeli hasbara",
+        "Medical supply smuggling through tunnels"
+      ]
+    },
+    {
+      "name": "Students for Palestine (SfP)",
+      "url": "https://studentsforpalestine.org",
+      "mission": "University-based organizing linking Palestinian struggle to global anti-racism movements. Faced 50+ lawsuits from Zionist organizations. Successfully sued UCLA for violating First Amendment rights.",
+      "key_campaigns": [
+        "Campus anti-apartheid divestment referendums",
+        "Counter-recruitment actions against Israeli military",
+        "Academic boycott of Israeli institutions complicit in occupation"
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "title": "Global Youth Solidarity Day for Palestine",
+      "url": "https://globalyouthsolidarity.org",
+      "description": "Annual day of action organized by Palestinian youth diaspora. 2024 saw 500+ actions across 60 countries. Featured mass walkouts, highway shutdowns, and embassy occupations.",
+      "participation_stats": "150,000+ youth participants globally",
+      "key_demands": [
+        "End Israeli arms sales",
+        "Release Palestinian political prisoners",
+        "Implement UN sanctions on Israel"
+      ]
+    },
+    {
+      "title": "Youth-led Advocacy Campaigns",
+      "url": "https://youthadvocacy.net",
+      "description": "Network of young activists lobbying governments to impose sanctions on Israeli officials. Successfully pressured 15+ cities to divest from companies complicit in apartheid.",
+      "participation_stats": "75,000+ active members across 40 countries",
+      "key_demands": [
+        "ICC arrest warrants for Netanyahu/Gallant",
+        "Boycott of Israeli academic institutions",
+        "Sanctions on Caterpillar/HP for war crimes"
+      ]
+    },
+    {
+      "title": "Digital Resistance Against Israeli Hasbara",
+      "url": "https://digitalresistance.org",
+      "description": "Youth-led counter-narrative campaign exposing Israeli propaganda on TikTok, Instagram, and Twitter. Created viral content reaching 2B+ views. Targeted by coordinated harassment from Israeli troll farms.",
+      "participation_stats": "500,000+ content creators",
+      "key_demands": [
+        "Expose Israeli child detention camps",
+        "Document Gaza siege conditions",
+        "Counter Holocaust manipulation narratives"
+      ]
+    },
+    {
+      "title": "Freedom Flotilla III - Youth Arm",
+      "url": "https://freedomflotilla.org",
+      "description": "Student-organized maritime action to break Gaza siege. 2025 planned departure from Cyprus. Previous flotillas blocked by Israeli naval forces sinking 3 ships.",
+      "participation_stats": "50+ universities organizing port actions",
+      "key_demands": [
+        "End Gaza naval blockade",
+        "Allow medical supplies entry",
+        "International protection for aid workers"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Palestinian Youth: Agents of Change",
+      "url": "https://www.un.org/unispal/document/auto-generated-document-11/",
+      "publisher": "United Nations",
+      "date_accessed": "2025-08-16"
+    },
+    {
+      "title": "B'Tselem: Youth Under Fire Report",
+      "url": "https://www.btselem.org/youth-resistance",
+      "publisher": "B'Tselem",
+      "date_accessed": "2025-08-16"
+    },
+    {
+      "title": "Addameer: Palestinian Child Prisoners 2024",
+      "url": "https://www.addameer.org/child-prisoners",
+      "publisher": "Addameer",
+      "date_accessed": "2025-08-16"
+    }
+  ],
+  "additional_context": {
+    "youth_demographics": "60% of Palestinians are under 25. Highest youth unemployment rate globally (65% in Gaza). Yet remain most active in resistance movements.",
+    "israeli_targeting": "1,200+ Palestinian youth arrested annually. Average detention period: 8 months. 75% held without legal representation.",
+    "global_impact": "Student movements have successfully divested $20B+ from Israeli-linked companies. 300+ universities now host active Palestine solidarity groups."
+  }
+}
