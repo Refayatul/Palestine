@@ -1,24 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student's Kit - Palestine Education</title>
     <link rel="stylesheet" href="/assets/css/style.css">
-    <script src="/assets/js/main.js" defer></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <header>
-        <nav>
-<div id="navigation"></div>
-            <!-- Navigation will be dynamically loaded or manually added later -->
-        </nav>
-    </header>
+    <div id="common-placeholder"></div>
+    
+        <script>
+            fetch('/assets/commons/commonNavFooter.html')
+                .then(res => res.text())
+                .then(text => {
+                    let oldelem = document.querySelector("div[id='common-placeholder']");
+                    let newelem = document.createElement("div");
+                    newelem.innerHTML = text;
+                    oldelem.parentNode.replaceChild(newelem, oldelem);
+                })
+        </script>
     <main>
         <section class="hero">
             <div class="hero-content">
                 <h1>Student's Kit: Learning About Palestine</h1>
-                <p>Engaging resources and activities for students to explore Palestinian history, culture, and the pursuit of justice.</p>
+                <p>Engaging resources and activities for students to explore Palestinian history, culture, and the
+                    pursuit of justice.</p>
                 <button onclick="window.print()" class="btn">Print This Page</button>
             </div>
         </section>
@@ -31,7 +40,8 @@
                     <li>Learn about the Nakba (Catastrophe) and its impact on Palestinian people.</li>
                     <li>Explore the concept of occupation and its effects on daily life.</li>
                     <li>Discover the rich cultural heritage of Palestine, including art, music, and food.</li>
-                    <li>Recognize the importance of human rights and international law in the context of the Palestinian struggle.</li>
+                    <li>Recognize the importance of human rights and international law in the context of the Palestinian
+                        struggle.</li>
                 </ul>
             </div>
         </section>
@@ -41,7 +51,8 @@
                 <h2>Activities for Students</h2>
                 <h3>Activity 1: Create a Timeline</h3>
                 <p><strong>Objective:</strong> To visualize key events in Palestinian history.</p>
-                <p><strong>Materials:</strong> Large paper, markers, historical dates and events (provided by teacher or researched).</p>
+                <p><strong>Materials:</strong> Large paper, markers, historical dates and events (provided by teacher or
+                    researched).</p>
                 <p><strong>Procedure:</strong></p>
                 <ol>
                     <li>Work in groups to select important dates and events related to Palestine.</li>
@@ -51,11 +62,14 @@
 
                 <h3>Activity 2: Cultural Exploration</h3>
                 <p><strong>Objective:</strong> To appreciate Palestinian culture through its diverse expressions.</p>
-                <p><strong>Materials:</strong> Access to online resources (videos, images), cultural artifacts (if available), recipes.</p>
+                <p><strong>Materials:</strong> Access to online resources (videos, images), cultural artifacts (if
+                    available), recipes.</p>
                 <p><strong>Procedure:</strong></p>
                 <ol>
-                    <li>Research different aspects of Palestinian culture, such as traditional clothing (tatreez), music (dabke), or cuisine.</li>
-                    <li>Prepare a short presentation or a creative project (e.g., drawing, short video, cooking a simple recipe) to share what you learned.</li>
+                    <li>Research different aspects of Palestinian culture, such as traditional clothing (tatreez), music
+                        (dabke), or cuisine.</li>
+                    <li>Prepare a short presentation or a creative project (e.g., drawing, short video, cooking a simple
+                        recipe) to share what you learned.</li>
                     <li>Discuss how culture helps preserve identity and resilience.</li>
                 </ol>
             </div>
@@ -74,9 +88,18 @@
             </div>
         </section>
     </main>
-<div id="footer"></div>
-    <footer>
-        <!-- Footer will be dynamically loaded or manually added later -->
-    </footer>
+    <div id="common-placeholder"></div>
+
+    <script>
+        fetch('/assets/commons/commonNavFooter.html')
+            .then(res => res.text())
+            .then(text => {
+                let oldelem = document.querySelector("div[id='common-placeholder']");
+                let newelem = document.createElement("div");
+                newelem.innerHTML = text;
+                oldelem.parentNode.replaceChild(newelem, oldelem);
+            })
+    </script>
 </body>
+
 </html>

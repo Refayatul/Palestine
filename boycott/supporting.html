@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Companies Supporting Palestine</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-  <nav id="siteNav" class="container" style="position:sticky;top:0;background:#000;border-bottom:1px solid #222;padding:12px 0;margin-bottom:20px">
-    <a href="/" style="color:#fff;text-decoration:none;font-weight:800">← Home</a>
-    <form class="site-search" role="search" autocomplete="off">
-      <input
-        id="siteSearch"
-        class="search-input"
-        type="search"
-        placeholder="Search countries, boycotts, journalists…"
-        aria-label="Search site"
-      />
-      <div id="searchPanel" class="search-panel" hidden>
-        <ul id="searchResults" role="listbox" aria-label="Search results"></ul>
-        <button type="button" class="search-close" aria-label="Close search">&times;</button>
-      </div>
-    </form>
-    <a href="/boycott/supportive.html" style="color:#fff;text-decoration:none">See companies to support →</a>
-  </nav>
+  <div id="common-placeholder"></div>
+  
+    <script>
+      fetch('/assets/commons/common.html')
+        .then(res => res.text())
+        .then(text => {
+          let oldelem = document.querySelector("div[id='common-placeholder']");
+          let newelem = document.createElement("div");
+          newelem.innerHTML = text;
+          oldelem.parentNode.replaceChild(newelem, oldelem);
+        })
+    </script>
   <main class="container section">
     <h1>Companies Boycotting Israel</h1>
     <p>This is a list of companies that are actively boycotting Israel.</p>
 
     <div class="toolbar">
       <input type="search" id="q" placeholder="Search…">
-      <select id="sector"><option value="">All Sectors</option></select>
-      <select id="region"><option value="">All Regions</option></select>
+      <select id="sector">
+        <option value="">All Sectors</option>
+      </select>
+      <select id="region">
+        <option value="">All Regions</option>
+      </select>
     </div>
 
     <table class="table" id="tbl">
@@ -59,5 +61,18 @@
   <script src="/assets/js/search.js"></script>
   <script src="/assets/js/render-boycotts.js"></script>
   <script src="/assets/js/main.js"></script>
+  <div id="common-placeholder"></div>
+
+  <script>
+    fetch('/assets/commons/common.html')
+      .then(res => res.text())
+      .then(text => {
+        let oldelem = document.querySelector("div[id='common-placeholder']");
+        let newelem = document.createElement("div");
+        newelem.innerHTML = text;
+        oldelem.parentNode.replaceChild(newelem, oldelem);
+      })
+  </script>
 </body>
+
 </html>

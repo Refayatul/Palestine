@@ -5,11 +5,21 @@
   <title>Glossary</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <nav id="siteNav" class="container" style="position:sticky;top:0;background:#000;border-bottom:1px solid #222;padding:12px 0;margin-bottom:20px">
-    <a href="/" style="color:#fff;text-decoration:none;font-weight:800">← Home</a>
-  </nav>
+  <div id="common-placeholder"></div>
+  
+    <script>
+      fetch('/assets/commons/commonNavFooter.html')
+        .then(res => res.text())
+        .then(text => {
+          let oldelem = document.querySelector("div[id='common-placeholder']");
+          let newelem = document.createElement("div");
+          newelem.innerHTML = text;
+          oldelem.parentNode.replaceChild(newelem, oldelem);
+        })
+    </script>
   <main class="container section">
     <h1>Glossary</h1>
     <input type="search" id="glossarySearch" placeholder="Search terms…" aria-label="Search glossary">
@@ -20,5 +30,17 @@
   <script src="/assets/js/search.js"></script>
   <script src="/assets/js/render-glossary.js"></script>
   <script src="/assets/js/main.js"></script>
+  <div id="common-placeholder"></div>
+
+  <script>
+    fetch('/assets/commons/commonNavFooter.html')
+      .then(res => res.text())
+      .then(text => {
+        let oldelem = document.querySelector("div[id='common-placeholder']");
+        let newelem = document.createElement("div");
+        newelem.innerHTML = text;
+        oldelem.parentNode.replaceChild(newelem, oldelem);
+      })
+  </script>
 </body>
 </html>

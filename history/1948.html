@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1948 - War Chronology - Palestine</title>
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/timeline-styles.css">
-    <script src="/assets/js/main.js" defer></script>
-    <script src="/assets/js/render-history.js" defer></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <!-- Navigation will be dynamically loaded or manually added later -->
-        </nav>
-    </header>
+    <div id="common-placeholder"></div>
+    
+        <script>
+            fetch('/assets/commons/commonNavFooter.html')
+                .then(res => res.text())
+                .then(text => {
+                    let oldelem = document.querySelector("div[id='common-placeholder']");
+                    let newelem = document.createElement("div");
+                    newelem.innerHTML = text;
+                    oldelem.parentNode.replaceChild(newelem, oldelem);
+                })
+        </script>
     <main>
         <section class="history-timeline-hero">
             <h1>1948</h1>
@@ -28,8 +36,18 @@
             </div>
         </section>
     </main>
-    <footer>
-        <!-- Footer will be dynamically loaded or manually added later -->
-    </footer>
+    <div id="common-placeholder"></div>
+
+    <script>
+        fetch('/assets/commons/commonNavFooter.html')
+            .then(res => res.text())
+            .then(text => {
+                let oldelem = document.querySelector("div[id='common-placeholder']");
+                let newelem = document.createElement("div");
+                newelem.innerHTML = text;
+                oldelem.parentNode.replaceChild(newelem, oldelem);
+            })
+    </script>
 </body>
+
 </html>

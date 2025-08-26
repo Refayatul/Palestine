@@ -5,64 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Free Palestine | Justice & Resistance</title>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <div class="logo">
-            <a href="index.html"><span>Free<span>Palestine</span></span></a>
-        </div>
-        <ul class="nav-links">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="/pages/history_pages/history.html">History</a></li>
-            <li><a href="/pages/resistance_pages/resistance.html">Resistance</a></li>
-            <li><a href="/pages/betrayals_pages/betrayals.html">Betrayals</a></li>
-            <li><a href="/pages/action_pages/action.html">Take Action</a></li>
-            <li><a href="#resources">Resources</a></li>
-            <li><a href="#culture">Culture</a></li>
-            <li class="dropdown">
-                <a href="#">More <i class="fas fa-caret-down"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="myths/index.html">Myths</a></li>
-                    <li><a href="legal/index.html">Legal</a></li>
-                    <li><a href="diaspora/index.html">Diaspora</a></li>
-                    <li><a href="education/teachers.html">Education</a></li>
-                    <li><a href="movements/women.html">Movements</a></li>
-                    <li><a href="boycott/supporting.html">Boycotts Supporting</a></li>
-                    <li><a href="boycott/supportive.html">Boycotts Supportive</a></li>
-                </ul>
-            </li>
-        </ul>
-        <div class="hamburger">
-            <i class="fas fa-bars"></i>
-        </div>
-    </nav>
-
-    <!-- Mobile Menu -->
-    <div class="mobile-nav">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#history">History</a></li>
-            <li><a href="#resistance">Resistance</a></li>
-            <li><a href="#betrayal">Betrayals</a></li>
-            <li><a href="#act">Take Action</a></li>
-            <li><a href="#resources">Resources</a></li>
-            <li><a href="#culture">Culture</a></li>
-            <li class="mobile-dropdown">
-                <a href="#">More <i class="fas fa-caret-down"></i></a>
-                <ul class="mobile-dropdown-menu">
-                    <li><a href="myths/index.html">Myths</a></li>
-                    <li><a href="legal/index.html">Legal</a></li>
-                    <li><a href="diaspora/index.html">Diaspora</a></li>
-                    <li><a href="education/teachers.html">Education</a></li>
-                    <li><a href="movements/women.html">Movements</a></li>
-                    <li><a href="boycott/supporting.html">Boycotts Supporting</a></li>
-                    <li><a href="boycott/supportive.html">Boycotts Supportive</a></li>
-                </ul>
-            </li>
-        </ul>
-    </div>
+    <div id="common-placeholder"></div>
+    
+        <script>
+            fetch('assets/commons/common.html')
+                .then(res => res.text())
+                .then(text => {
+                    let oldelem = document.querySelector("div[id='common-placeholder']");
+                    let newelem = document.createElement("div");
+                    newelem.innerHTML = text;
+                    oldelem.parentNode.replaceChild(newelem, oldelem);
+                })
+        </script>
 
     <!-- Hero Section -->
     <section class="hero">
@@ -488,49 +445,18 @@
     </section>
 
     <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Free Palestine</h3>
-                    <p>Dedicated to providing information and resources about the history of Palestine and the ongoing struggle for justice and liberation.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-telegram"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="#history">History</a></li>
-                        <li><a href="#resistance">Resistance</a></li>
-                        <li><a href="#betrayal">Betrayals</a></li>
-                        <li><a href="#act">Take Action</a></li>
-                        <li><a href="#resources">Resources</a></li>
-                        <li><a href="#culture">Culture</a></li>
-                        <li><a href="#future">Future</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Resources</h3>
-                    <ul>
-                        <li><a href="myths/index.html">Debunking Myths</a></li>
-                        <li><a href="legal/index.html">Legal Resources</a></li>
-                        <li><a href="diaspora/index.html">Diaspora Information</a></li>
-                        <li><a href="education/teachers.html">Educational Materials</a></li>
-                        <li><a href="movements/women.html">Women's Movement</a></li>
-                        <li><a href="boycott/supporting.html">Boycotts Supporting</a></li>
-                        <li><a href="boycott/supportive.html">Boycotts Supportive</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Free Palestine. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+    <div id="common-placeholder"></div>
+
+    <script>
+      fetch('assets/commons/common.html')
+        .then(res => res.text())
+        .then(text => {
+          let oldelem = document.querySelector("div[id='common-placeholder']");
+          let newelem = document.createElement("div");
+          newelem.innerHTML = text;
+          oldelem.parentNode.replaceChild(newelem, oldelem);
+        })
+    </script>
 
     <script src="./assets/js/main.js"></script>
 </body>

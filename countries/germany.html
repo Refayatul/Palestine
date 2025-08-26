@@ -1,30 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Germany and Palestine</title>
-    <link rel="stylesheet" href="../pages/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <header>
-        <h1>Germany and Palestine</h1>
-        <nav>
-            <ul>
-                <li><a href="../pages/index.html">Home</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div id="common-placeholder"></div>
+    
+        <script>
+            fetch('/assets/commons/common.html')
+                .then(res => res.text())
+                .then(text => {
+                    let oldelem = document.querySelector("div[id='common-placeholder']");
+                    let newelem = document.createElement("div");
+                    newelem.innerHTML = text;
+                    oldelem.parentNode.replaceChild(newelem, oldelem);
+                })
+        </script>
 
     <main>
         <section>
             <h2>Statements from German Officials</h2>
-            <p>German Chancellor Friedrich Merz said that while Berlin's support for Israel remains unchanged, the country could not supply weapons to a conflict where hundreds of thousands of civilians could be killed.</p>
+            <p>German Chancellor Friedrich Merz said that while Berlin's support for Israel remains unchanged, the
+                country could not supply weapons to a conflict where hundreds of thousands of civilians could be killed.
+            </p>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2025 Free Palestine</p>
-    </footer>
+    <div id="common-placeholder"></div>
+
+    <script>
+        fetch('/assets/commons/common.html')
+            .then(res => res.text())
+            .then(text => {
+                let oldelem = document.querySelector("div[id='common-placeholder']");
+                let newelem = document.createElement("div");
+                newelem.innerHTML = text;
+                oldelem.parentNode.replaceChild(newelem, oldelem);
+            })
+    </script>
 </body>
+
 </html>

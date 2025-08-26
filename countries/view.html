@@ -7,22 +7,18 @@
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-  <nav id="siteNav" class="container" style="position:sticky;top:0;background:#000;border-bottom:1px solid #222;padding:12px 0;margin-bottom:20px">
-    <a href="/countries/" style="color:#fff;text-decoration:none;font-weight:800">← Countries</a>
-    <form class="site-search" role="search" autocomplete="off">
-      <input
-        id="siteSearch"
-        class="search-input"
-        type="search"
-        placeholder="Search countries, boycotts, journalists…"
-        aria-label="Search site"
-      />
-      <div id="searchPanel" class="search-panel" hidden>
-        <ul id="searchResults" class="search-results" role="listbox" aria-label="Search results"></ul>
-        <button type="button" class="search-close" aria-label="Close search">&times;</button>
-      </div>
-    </form>
-  </nav>
+  <div id="common-placeholder"></div>
+  
+    <script>
+      fetch('/assets/commons/common.html')
+        .then(res => res.text())
+        .then(text => {
+          let oldelem = document.querySelector("div[id='common-placeholder']");
+          let newelem = document.createElement("div");
+          newelem.innerHTML = text;
+          oldelem.parentNode.replaceChild(newelem, oldelem);
+        })
+    </script>
   <main class="container section" id="country"></main>
   <script src="/assets/js/utils.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
