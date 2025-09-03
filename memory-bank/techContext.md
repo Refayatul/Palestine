@@ -3,12 +3,14 @@
 ## Technologies Used
 
 - **HTML5:** Semantic markup for all pages and content structure
-- **CSS3:** Modular stylesheets with responsive design, print optimization, and consistent theming
-- **Vanilla JavaScript (ES6+):** Client-side rendering, data fetching, interactive components
-- **JSON:** Data storage for countries, movements, journalists, boycotts, and other dynamic content
+- **CSS3:** Modular stylesheets with responsive design, print optimization, animations, and consistent theming
+- **Vanilla JavaScript (ES6+):** Client-side rendering, data fetching, interactive components, DOM manipulation, Canvas API for image generation, geolocation API, clipboard API
+- **JSON:** Data storage for countries, movements, journalists, boycotts, call scripts, and other dynamic content
 - **Fuse.js:** Fuzzy search library for site-wide search functionality
 - **Chart.js:** Data visualization for abductions statistics and charts
 - **Font Awesome:** Icon library for UI elements and navigation
+- **CSS Grid & Flexbox:** Advanced layout systems for responsive card grids and component alignment
+- **CSS Animations:** Keyframe animations for interactive feedback and hover effects
 
 ## Development Setup
 

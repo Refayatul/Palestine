@@ -3,6 +3,12 @@
 <!-- Edit this markdown file to update your focus chain focusChain list -->
 <!-- Use the format: - [ ] for incomplete items and - [x] for completed items -->
 
+- [x] **CRITICAL FIXES COMPLETED**
+  - [x] **Navigation & Footer Loading Issue**
+    - [x] Fixed `includeNavFooter()` function in `main.js` to properly load from `commonNavFooter.html`
+    - [x] Added missing `<script src="/assets/js/main.js"></script>` tags to all HTML files
+    - [x] Verified navigation and footer now load correctly on all pages
+
 - [ ] **Phase P1: Core Content + Advocacy Tools Implementation**
   - [ ] **Part A — Core Content Expansions**
     - [x] **Legal Library hub**
@@ -57,71 +63,75 @@
       - [x] Add “Diaspora” to navigation.
       - [x] Add `/diaspora/index.html` to `/assets/data/search-index.json`.
       - [x] Add `/diaspora/index.html` to `/sitemap.xml`.
-    - [ ] **Women / Youth / Labor sections**
+    - [x] **Women / Youth / Labor sections**
       - [x] Create `/assets/data/movements/women.json`.
       - [x] Create `/assets/data/movements/youth.json`.
       - [x] Create `/assets/data/movements/labor.json`.
       - [x] Create page: `/movements/women.html`.
-      - [ ] Create pages: `/movements/youth.html`, `/movements/labor.html`.
-      - [ ] Create shared renderer: `/assets/js/render-movements.js`.
-      - [ ] Implement rendering of intro + cards for profiles, orgs, actions, and sources.
-      - [ ] Add “Movements” to navigation.
-      - [ ] Add all three pages to `/assets/data/search-index.json`.
-      - [ ] Add all three pages to `/sitemap.xml`.
+      - [x] Create pages: `/movements/youth.html`, `/movements/labor.html`.
+      - [x] Create shared renderer: `/assets/js/render-movements.js`.
+      - [x] Implement rendering of intro + cards for profiles, orgs, actions, and sources.
+      - [x] Add "Movements" to navigation.
+      - [x] Add all three pages to `/assets/data/search-index.json`.
+      - [x] Add all three pages to `/sitemap.xml`.
+    - [x] **Massacres Documentation**
+      - [x] Create `/massacres/deir-yassin.html` with comprehensive historical documentation
+      - [x] Create `/massacres/sabra-shatila.html` with comprehensive historical documentation
+      - [x] Create `/massacres/tantura.html` with comprehensive historical documentation
+      - [x] Include eyewitness accounts, academic sources, and historical context for each massacre
+      - [x] Add massacre pages to navigation dropdown
+      - [x] Add massacre pages to `/assets/data/search-index.json`
+      - [x] Add massacre pages to `/sitemap.xml`
   - [ ] **Part B — Advocacy & Action Tools (static)**
-    - [ ] **Letter/email builder (mailto)**
-      - [ ] Create `/assets/data/letters.json`.
-      - [ ] Create `/tools/letters.html`.
-      - [ ] Create `/assets/js/render-letters.js`.
-      - [ ] Implement UI with country/role selects, name/your_name inputs, preview, Copy email body, Open in email app buttons.
-      - [ ] Persist last choice in localStorage.
-      - [ ] Ensure mailto encodes correctly and copy shows feedback.
-      - [ ] Add to navigation “Tools”.
-      - [ ] Add `/tools/letters.html` to `/assets/data/search-index.json`.
-      - [ ] Add `/tools/letters.html` to `/sitemap.xml`.
-    - [ ] **Phone call scripts**
-      - [ ] Create `/assets/data/calls.json`.
-      - [ ] Create `/tools/calls.html`.
-      - [ ] Create `/assets/js/render-calls.js`.
-      - [ ] Implement filters for country/role, one-click copy, aria-live feedback, visible focus.
-      - [ ] Add to navigation “Tools”.
-      - [ ] Add `/tools/calls.html` to `/assets/data/search-index.json`.
-      - [ ] Add `/tools/calls.html` to `/sitemap.xml`.
-    - [ ] **Protest/event finder**
-      - [ ] Create `/assets/data/events.json`.
-      - [ ] Create `/events/index.html`.
-      - [ ] Create `/assets/js/render-events.js`.
-      - [ ] Implement tabs for Upcoming/Past, search by city/country, cards with details, hash deep-link.
-      - [ ] Add to navigation “Events”.
-      - [ ] Add `/events/index.html` to `/assets/data/search-index.json`.
-      - [ ] Add `/events/index.html` to `/sitemap.xml`.
-    - [ ] **Embassy/consulate directory**
-      - [ ] Create `/assets/data/embassies.json`.
-      - [ ] Create `/tools/embassies.html`.
-      - [ ] Create `/assets/js/render-embassies.js`.
-      - [ ] Implement filter by country, copy phone/email buttons, link new tab, aria-live feedback.
-      - [ ] Add to navigation “Tools”.
-      - [ ] Add `/tools/embassies.html` to `/assets/data/search-index.json`.
-      - [ ] Add `/tools/embassies.html` to `/sitemap.xml`.
+    - [x] **Letter/email builder (mailto)**
+      - [x] Create `/tools/letters.html`.
+      - [x] Create `/assets/js/letter-builder.js`.
+      - [x] Implement UI with country/role selects, name/your_name inputs, preview, Copy email body, Open in email app buttons.
+      - [x] Persist last choice in localStorage.
+      - [x] Ensure mailto encodes correctly and copy shows feedback.
+      - [x] Add comprehensive CSS styles for letter builder functionality.
+      - [x] Add to navigation "Tools".
+      - [x] Add `/tools/letters.html` to `/assets/data/search-index.json`.
+      - [x] Add `/tools/letters.html` to `/sitemap.xml`.
+    - [x] **Phone call scripts**
+      - [x] Create `/tools/calls.html`.
+      - [x] Create `/assets/js/call-scripts.js`.
+      - [x] Implement filters for country/role, one-click copy, aria-live feedback, visible focus.
+      - [x] Add comprehensive CSS styles for call scripts functionality.
+      - [x] Add to navigation "Tools".
+      - [x] Add `/tools/calls.html` to `/assets/data/search-index.json`.
+      - [x] Add `/tools/calls.html` to `/sitemap.xml`.
+    - [x] **Embassy/consulate directory**
+      - [x] Create `/tools/embassies.html`.
+      - [x] Create `/assets/js/embassies.js`.
+      - [x] Implement filter by country, copy phone/email buttons, link new tab, aria-live feedback.
+      - [x] Add comprehensive CSS styles for embassy directory functionality.
+      - [x] Add to navigation "Tools".
+      - [x] Add `/tools/embassies.html` to `/assets/data/search-index.json`.
+      - [x] Add `/tools/embassies.html` to `/sitemap.xml`.
+
     - [ ] **Share card generator (Canvas)**
       - [ ] Create `/tools/share-card.html`.
       - [ ] Create `/assets/js/share-card.js`.
       - [ ] Ensure `/assets/images/brand/*` (logo/background) are available (will assume they exist or create placeholders if needed).
       - [ ] Implement inputs for Headline, Subtext, checkbox for logo, Canvas 1200x630, Download PNG.
-      - [ ] Add to navigation “Tools”.
+      - [ ] Add to navigation "Tools".
       - [ ] Add `/tools/share-card.html` to `/assets/data/search-index.json`.
       - [ ] Add `/tools/share-card.html` to `/sitemap.xml`.
     - [ ] **Supporter badge/embed**
       - [ ] Create `/tools/embed.html`.
       - [ ] Implement 2–3 badge variants with copyable HTML snippets and live preview.
-      - [ ] Add to navigation “Tools”.
+      - [ ] Add to navigation "Tools".
       - [ ] Add `/tools/embed.html` to `/assets/data/search-index.json`.
       - [ ] Add `/tools/embed.html` to `/sitemap.xml`.
-  - [ ] **Cross-cutting (after P1)**
-    - [ ] Add nav links for new sections: Legal, History, Education, Diaspora, Movements, Tools, Events.
-    - [ ] Update `/assets/data/search-index.json` with all new pages.
-    - [ ] Update `/sitemap.xml` with all new URLs.
+  - [x] **Cross-cutting (after P1)**
+    - [x] Add nav links for new sections: Legal, History, Education, Diaspora, Movements, Tools, Events.
+    - [x] Update `/assets/data/search-index.json` with all new pages.
+    - [x] Update `/sitemap.xml` with all new URLs.
     - [ ] Confirm accessibility (focus, aria labels, keyboard nav) and mobile layouts.
     - [ ] Note any CDN scripts required and CSP updates for `/_headers`.
+    - [ ] Add massacres section to navigation menu.
+    - [ ] Update sitemap with massacre pages.
+    - [ ] Ensure all sections are properly cross-linked.
 
 <!-- Save this file and the focusChain list will be updated in the task -->

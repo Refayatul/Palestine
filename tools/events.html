@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protest & Event Finder - Free Palestine</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header id="nav-container"></header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Protest & Event Finder</h1>
+                <p>Find local protests and events supporting Palestine</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="event-finder">
+                    <div class="search-filters">
+                        <h2>Find Events Near You</h2>
+
+                        <div class="filter-grid">
+                            <div class="filter-group">
+                                <label for="location-input">Location:</label>
+                                <input type="text" id="location-input" placeholder="Enter city or zip code">
+                            </div>
+
+                            <div class="filter-group">
+                                <label for="event-type">Event Type:</label>
+                                <select id="event-type">
+                                    <option value="all">All Events</option>
+                                    <option value="protest">Protests</option>
+                                    <option value="rally">Rallies</option>
+                                    <option value="march">Marches</option>
+                                    <option value="vigil">Vigils</option>
+                                    <option value="workshop">Workshops</option>
+                                    <option value="meeting">Meetings</option>
+                                </select>
+                            </div>
+
+                            <div class="filter-group">
+                                <label for="date-range">Date Range:</label>
+                                <select id="date-range">
+                                    <option value="today">Today</option>
+                                    <option value="week">This Week</option>
+                                    <option value="month">This Month</option>
+                                    <option value="all">All Upcoming</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="search-actions">
+                            <button id="search-events-btn" class="btn-primary">Search Events</button>
+                            <button id="use-location-btn" class="btn-secondary">
+                                <i class="fas fa-map-marker-alt"></i> Use My Location
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="events-results">
+                        <div class="results-header">
+                            <h3>Upcoming Events</h3>
+                            <div class="results-count">
+                                <span id="results-count">0</span> events found
+                            </div>
+                        </div>
+
+                        <div id="events-list" class="events-list">
+                            <!-- Events will be loaded here -->
+                            <div class="no-events">
+                                <i class="fas fa-search"></i>
+                                <h4>No events found</h4>
+                                <p>Try adjusting your search criteria or location</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="organize-section">
+                        <h3>Want to Organize an Event?</h3>
+                        <p>Connect with local Palestine solidarity groups and organizers</p>
+                        <div class="organize-actions">
+                            <a href="/tools/letters.html" class="btn-secondary">
+                                <i class="fas fa-envelope"></i> Contact Organizers
+                            </a>
+                            <a href="/tools/embassies.html" class="btn-secondary">
+                                <i class="fas fa-building"></i> Find Embassy Info
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer-container"></footer>
+
+    <script src="/assets/js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            includeNavFooter();
+        });
+    </script>
+
+    <script src="/assets/js/events.js"></script>
+</body>
+
+</html>

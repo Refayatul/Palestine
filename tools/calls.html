@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Call Scripts - Free Palestine</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <header id="nav-container"></header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Phone Call Scripts</h1>
+                <p>Make effective calls to your representatives about Palestine</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="call-scripts">
+                    <div class="filters-section">
+                        <h2>Find Your Script</h2>
+
+                        <div class="filter-grid">
+                            <div class="filter-group">
+                                <label for="country-filter">Country:</label>
+                                <select id="country-filter">
+                                    <option value="">All Countries</option>
+                                    <option value="us">United States</option>
+                                    <option value="uk">United Kingdom</option>
+                                    <option value="canada">Canada</option>
+                                    <option value="germany">Germany</option>
+                                    <option value="france">France</option>
+                                    <option value="australia">Australia</option>
+                                </select>
+                            </div>
+
+                            <div class="filter-group">
+                                <label for="topic-filter">Topic:</label>
+                                <select id="topic-filter">
+                                    <option value="">All Topics</option>
+                                    <option value="ceasefire">Demand Ceasefire</option>
+                                    <option value="recognition">State Recognition</option>
+                                    <option value="arms">Stop Arms Sales</option>
+                                    <option value="sanctions">Impose Sanctions</option>
+                                    <option value="humanitarian">Humanitarian Aid</option>
+                                    <option value="apartheid">End Apartheid</option>
+                                </select>
+                            </div>
+
+                            <div class="filter-group">
+                                <label for="recipient-filter">Recipient:</label>
+                                <select id="recipient-filter">
+                                    <option value="">All Recipients</option>
+                                    <option value="senator">Senator</option>
+                                    <option value="representative">Representative</option>
+                                    <option value="mp">Member of Parliament</option>
+                                    <option value="president">President</option>
+                                    <option value="prime-minister">Prime Minister</option>
+                                    <option value="foreign-minister">Foreign Minister</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="results-info" role="status" aria-live="polite">
+                            <span id="results-count">0</span> scripts found
+                        </div>
+                    </div>
+
+                    <div class="scripts-grid" id="scripts-grid">
+                        <!-- Scripts will be rendered here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer-container"></footer>
+
+    <script src="/assets/js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            includeNavFooter();
+        });
+    </script>
+
+    <script src="/assets/js/call-scripts.js"></script>
+</body>
+</html>

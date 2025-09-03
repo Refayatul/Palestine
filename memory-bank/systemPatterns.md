@@ -16,6 +16,13 @@ The system architecture is a comprehensive static website built for Cloudflare P
   - Boycott lists (supporting/supportive companies)
   - Journalists directory
   - Abductions data visualization
+- **Advocacy Tools:**
+  - Letter/Email Builder with mailto functionality and localStorage persistence
+  - Phone Call Scripts with filtering and one-click copy functionality
+  - Embassy/Consulate Directory with country/city filters and contact information
+  - Share Card Generator with Canvas-based image creation and multiple themes
+  - Supporter Badge/Embed with three badge variants and copy-to-clipboard codes
+  - Protest/Event Finder with location-based search and geolocation support
 - **Shared Components:** Common navigation/footer loaded via JavaScript fetch
 - **Data Layer:** JSON files for all dynamic content
 - **Search System:** Fuse.js-powered search with pre-built index
@@ -31,13 +38,16 @@ The system architecture is a comprehensive static website built for Cloudflare P
 
 ## Design Patterns in Use
 
-- **Shared Component Pattern:** Navigation and footer loaded via fetch() across all pages
+- **Shared Component Pattern:** Navigation and footer loaded dynamically across all pages
 - **Data-Driven Rendering:** Content rendered from JSON using dedicated renderer functions
 - **Filter/Search Pattern:** Consistent filtering and search across data-heavy sections
 - **Timeline Pattern:** Interactive timeline with popup details and deep-linking
-- **Card-Based Layout:** Consistent card layouts for countries, movements, journalists
+- **Card-Based Layout:** Consistent card layouts for countries, movements, journalists, and call scripts
 - **Responsive Grid System:** Flexible grids that adapt to different screen sizes
 - **Print-Optimized Content:** Dedicated print styles for educational materials
+- **Tag System Pattern:** Color-coded tags for categorization (countries, topics, recipients in call scripts)
+- **Action Button Pattern:** Consistent styling for interactive buttons with gradient hover effects
+- **Feedback Animation Pattern:** Slide-in/out animations for user feedback messages
 
 ## Component Relationships
 

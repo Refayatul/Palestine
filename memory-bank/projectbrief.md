@@ -8,10 +8,11 @@ The goal of this project is to create a comprehensive and informative website ab
 
 The project scope includes:
 
--   Developing a website with multiple pages covering different historical periods.
--   Creating a timeline to visualize key events.
--   Including images and other multimedia content to enhance the user experience.
--   Ensuring the website is accessible and user-friendly.
+-   Developing a comprehensive website with multiple pages covering Palestinian history from 1918-2023.
+-   Creating an interactive timeline to visualize key events with deep-dive pages.
+-   Including images, eyewitness accounts, and academic sources to enhance historical accuracy.
+-   Ensuring the website is accessible, mobile-responsive, and user-friendly.
 -   Implementing core content expansions: Legal Library, War chronologies, Education kits, Diaspora hub, and Social Movements sections.
--   Developing advocacy and action tools: Letter/email builder, Phone call scripts, Protest/event finder, Embassy/consulate directory, Share card generator, and Supporter badge/embed.
--   Creating comprehensive navigation and search functionality across all sections.
+-   Developing advocacy and action tools: Letter/email builder (COMPLETED), Phone call scripts (COMPLETED), Embassy/consulate directory (COMPLETED), Share card generator (COMPLETED), Supporter badge/embed (COMPLETED), and Protest/event finder (COMPLETED).
+-   Creating comprehensive navigation with Tools section and search functionality across all sections.
+-   Documenting massacres with dedicated pages including Deir Yassin, Tantura, and Sabra-Shatila.

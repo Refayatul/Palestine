@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embassy Directory - Free Palestine</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <header id="nav-container"></header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Embassy Directory</h1>
+                <p>Contact diplomatic representatives about Palestine</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="embassy-directory">
+                    <div class="filters-section">
+                        <h2>Find Embassy Contacts</h2>
+
+                        <div class="filter-grid">
+                            <div class="filter-group">
+                                <label for="country-filter">Country:</label>
+                                <select id="country-filter">
+                                    <option value="">All Countries</option>
+                                    <option value="us">United States</option>
+                                    <option value="uk">United Kingdom</option>
+                                    <option value="canada">Canada</option>
+                                    <option value="germany">Germany</option>
+                                    <option value="france">France</option>
+                                    <option value="australia">Australia</option>
+                                    <option value="italy">Italy</option>
+                                    <option value="spain">Spain</option>
+                                    <option value="netherlands">Netherlands</option>
+                                </select>
+                            </div>
+
+                            <div class="filter-group">
+                                <label for="city-filter">City:</label>
+                                <select id="city-filter">
+                                    <option value="">All Cities</option>
+                                    <option value="washington-dc">Washington DC</option>
+                                    <option value="new-york">New York</option>
+                                    <option value="london">London</option>
+                                    <option value="ottawa">Ottawa</option>
+                                    <option value="berlin">Berlin</option>
+                                    <option value="paris">Paris</option>
+                                    <option value="rome">Rome</option>
+                                    <option value="madrid">Madrid</option>
+                                    <option value="amsterdam">Amsterdam</option>
+                                    <option value="canberra">Canberra</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="results-info" role="status" aria-live="polite">
+                            <span id="results-count">0</span> embassies found
+                        </div>
+                    </div>
+
+                    <div class="embassies-grid" id="embassies-grid">
+                        <!-- Embassies will be rendered here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer-container"></footer>
+
+    <script src="/assets/js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            includeNavFooter();
+        });
+    </script>
+
+    <script src="/assets/js/embassies.js"></script>
+</body>
+</html>

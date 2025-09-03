@@ -25,21 +25,23 @@
     -   **Diaspora hub** - COMPLETED: Created region data files, `/diaspora/index.html`, `/assets/js/render-diaspora.js`, implemented UI with region selector/search/grids, accessibility features, added "Diaspora" to navigation, page to search index and sitemap.
     -   **Women / Youth / Labor sections** - COMPLETED: Created all three movement pages (`/movements/women.html`, `/movements/youth.html`, `/movements/labor.html`), movement data files, `/assets/js/render-movements.js`, comprehensive content for each movement, added to navigation dropdown, search index entries, and sitemap entries.
     -   **Massacres Documentation** - COMPLETED: Created dedicated massacre pages (`/massacres/deir-yassin.html`, `/massacres/sabra-shatila.html`, `/massacres/tantura.html`) with comprehensive historical documentation, eyewitness accounts, and academic sources.
+-   **Phase P2 Advocacy Tools Implementation:**
+    -   **Letter/Email Builder** - COMPLETED: Created `/tools/letters.html` with comprehensive form interface, `/assets/js/letter-builder.js` with full functionality including localStorage persistence, mailto encoding, clipboard copy, and CSS styles integrated into `/assets/css/style.css`.
+    -   **Phone Call Scripts** - COMPLETED: Created `/tools/calls.html` with filtering system, `/assets/js/call-scripts.js` with script rendering and copy functionality, and comprehensive CSS styles for script cards, filters, and responsive design.
+    -   **Embassy/Consulate Directory** - COMPLETED: Created `/tools/embassies.html` with country/city filters, `/assets/js/embassies.js` with dynamic rendering and contact functionality, comprehensive CSS styles for responsive design and accessibility features.
+    -   **Share Card Generator** - COMPLETED: Created `/tools/share-card.html` with customizable text and background options, `/assets/js/share-card.js` with Canvas-based image generation, download functionality, and multiple theme support.
+    -   **Supporter Badge/Embed** - COMPLETED: Created `/tools/embed.html` with three badge variants (Classic, Flag, Solidarity), `/assets/js/embed.js` with live preview and copy-to-clipboard functionality for embed codes.
+    -   **Protest/Event Finder** - COMPLETED: Created `/tools/events.html` with location-based search, event filtering, and geolocation support, `/assets/js/events.js` with mock event data and sharing functionality.
 -   Updated the memory bank.
 -   Updated the to-do list.
 
 ## What's Left to Build
 
--   Implement advocacy & action tools (Part B):
-    -   Letter/email builder
-    -   Phone call scripts
-    -   Protest/event finder
-    -   Embassy/consulate directory
-    -   Share card generator
-    -   Supporter badge/embed
--   Add missing navigation integration for massacres section
--   Update sitemap with massacre pages
--   Confirm accessibility and mobile layouts
+-   Update search index and sitemap with all new tools pages
+-   Confirm accessibility and mobile layouts across all tools
+-   Add remaining diaspora region data files
+-   Final quality assurance and testing
+-   Project deployment and launch preparation
 
 ## Current Status
 
