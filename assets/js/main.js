@@ -1,3 +1,62 @@
+// Simple include function
+async function includeHTML(file, containerId) {
+    try {
+        const response = await fetch(file);
+        if (!response.ok) throw new Error('Failed to load');
+        const html = await response.text();
+        document.getElementById(containerId).innerHTML = html;
+    } catch (error) {
+        console.error('Error loading', file, error);
+        document.getElementById(containerId).innerHTML = '<p>Navigation loading...</p>';
+    }
+}
+
+// Global include function
+window.includeNavFooter = async function() {
+    try {
+        const response = await fetch('/assets/commons/commonNavFooter.html');
+        if (!response.ok) throw new Error('Failed to load commonNavFooter.html');
+        const html = await response.text();
+
+        // Parse the HTML content
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+
+        // Extract navigation elements
+        const navElements = doc.querySelector('nav');
+        const mobileNavElements = doc.querySelector('.mobile-nav');
+
+        // Extract footer elements
+        const footerElements = doc.querySelector('footer');
+
+        // Insert navigation at the top
+        const navContainer = document.getElementById('nav-container');
+        if (navContainer && navElements) {
+            const navWrapper = document.createElement('div');
+            navWrapper.appendChild(navElements.cloneNode(true));
+            if (mobileNavElements) {
+                navWrapper.appendChild(mobileNavElements.cloneNode(true));
+            }
+            navContainer.parentNode.replaceChild(navWrapper, navContainer);
+        }
+
+        // Insert footer at the bottom
+        const footerContainer = document.getElementById('footer-container');
+        if (footerContainer && footerElements) {
+            const footerWrapper = document.createElement('div');
+            footerWrapper.appendChild(footerElements.cloneNode(true));
+            footerContainer.parentNode.replaceChild(footerWrapper, footerContainer);
+        }
+    } catch (error) {
+        console.error('Error loading navigation and footer:', error);
+        // Fallback: show error message
+        const navContainer = document.getElementById('nav-container');
+        const footerContainer = document.getElementById('footer-container');
+        if (navContainer) navContainer.innerHTML = '<p>Navigation loading...</p>';
+        if (footerContainer) footerContainer.innerHTML = '<p>Footer loading...</p>';
+    }
+};
+
 // Mobile Navigation Toggle
 const hamburger = document.querySelector('.hamburger');
 const mobileNav = document.querySelector('.mobile-nav');

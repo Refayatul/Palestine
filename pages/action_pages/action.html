@@ -4,26 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Take Action | Free Palestine</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/actions.css">
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="common-placeholder"></div>
+    <!-- Navigation -->
+    <header id="nav-container"></header>
     
-        <script>
-            fetch('/assets/commons/commonNavFooter.html')
-                .then(res => res.text())
-                .then(text => {
-                    let oldelem = document.querySelector("div[id='common-placeholder']");
-                    let newelem = document.createElement("div");
-                    newelem.innerHTML = text;
-                    oldelem.parentNode.replaceChild(newelem, oldelem);
-                })
-        </script>
-
-
-
     <!-- Take Action Section -->
     <section id="act" class="action">
         <div class="container">
@@ -58,18 +46,15 @@
         </div>
     </section>
 
-    <div id="common-placeholder"></div>
+    <!-- Footer -->
+    <footer id="footer-container"></footer>
 
     <script>
-        fetch('/assets/commons/commonNavFooter.html')
-            .then(res => res.text())
-            .then(text => {
-                let oldelem = document.querySelector("div[id='common-placeholder']");
-                let newelem = document.createElement("div");
-                newelem.innerHTML = text;
-                oldelem.parentNode.replaceChild(newelem, oldelem);
-            })
+        document.addEventListener('DOMContentLoaded', function() {
+            includeNavFooter();
+        });
     </script>
+
     <script src="../assets/js/action.js"></script>
     <script src="../script.js"></script>
 </body>

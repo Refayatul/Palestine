@@ -4,24 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Betrayals of Palestine | Free Palestine</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/betrayals.css">
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
-    
 </head>
 <body>
-    <div id="common-placeholder"></div>
+    <!-- Navigation -->
+    <header id="nav-container"></header>
     
-        <script>
-            fetch('/assets/commons/commonNavFooter.html')
-                .then(res => res.text())
-                .then(text => {
-                    let oldelem = document.querySelector("div[id='common-placeholder']");
-                    let newelem = document.createElement("div");
-                    newelem.innerHTML = text;
-                    oldelem.parentNode.replaceChild(newelem, oldelem);
-                })
-        </script>
-
     <!-- Betrayals Section -->
     <section id="betrayal" class="betrayals">
         <div class="container">
@@ -138,18 +128,13 @@
         </div>
     </div>
 
+    <!-- Footer -->
+    <footer id="footer-container"></footer>
 
-    <div id="common-placeholder"></div>
-    
-        <script>
-            fetch('/assets/commons/commonNavFooter.html')
-                .then(res => res.text())
-                .then(text => {
-                    let oldelem = document.querySelector("div[id='common-placeholder']");
-                    let newelem = document.createElement("div");
-                    newelem.innerHTML = text;
-                    oldelem.parentNode.replaceChild(newelem, oldelem);
-                })
-        </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            includeNavFooter();
+        });
+    </script>
 </body>
 </html>

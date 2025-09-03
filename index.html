@@ -8,18 +8,7 @@
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="common-placeholder"></div>
-    
-        <script>
-            fetch('assets/commons/common.html')
-                .then(res => res.text())
-                .then(text => {
-                    let oldelem = document.querySelector("div[id='common-placeholder']");
-                    let newelem = document.createElement("div");
-                    newelem.innerHTML = text;
-                    oldelem.parentNode.replaceChild(newelem, oldelem);
-                })
-        </script>
+    <header id="nav-container"></header>
 
     <!-- Hero Section -->
     <section class="hero">
@@ -445,17 +434,12 @@
     </section>
 
     <!-- Footer -->
-    <div id="common-placeholder"></div>
+    <footer id="footer-container"></footer>
 
     <script>
-      fetch('assets/commons/common.html')
-        .then(res => res.text())
-        .then(text => {
-          let oldelem = document.querySelector("div[id='common-placeholder']");
-          let newelem = document.createElement("div");
-          newelem.innerHTML = text;
-          oldelem.parentNode.replaceChild(newelem, oldelem);
-        })
+        document.addEventListener('DOMContentLoaded', function() {
+            includeNavFooter();
+        });
     </script>
 
     <script src="./assets/js/main.js"></script>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Journalists Covering Palestine</title>
@@ -7,40 +8,578 @@
   <link rel="stylesheet" href="/assets/css/style.css">
   <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-  <div id="common-placeholder"></div>
-  
-    <script>
-      fetch('/assets/commons/commonNavFooter.html')
-        .then(res => res.text())
-        .then(text => {
-          let oldelem = document.querySelector("div[id='common-placeholder']");
-          let newelem = document.createElement("div");
-          newelem.innerHTML = text;
-          oldelem.parentNode.replaceChild(newelem, oldelem);
-        })
-    </script>
+  <!-- Navigation -->
+  <header id="nav-container"></header>
+
   <main class="container section">
     <h1>Journalists Covering Palestine</h1>
-    <p>A list of journalists covering events in Palestine and the surrounding regions.</p>
-    <div id="journalists" class="grid three cards"></div>
-  </main>
-  <script src="/assets/js/utils.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
-  <script src="/assets/js/search.js"></script>
-  <script src="/assets/js/render-journalists.js"></script>
-  <script src="/assets/js/main.js"></script>
-  <div id="common-placeholder"></div>
+    <p>A comprehensive list of journalists covering events in Palestine and the surrounding regions, highlighting their
+      contributions to documenting the conflict and Palestinian experiences.</p>
 
+    <section class="journalists-intro">
+      <h2>The Critical Role of Palestinian Journalism</h2>
+      <p>Palestinian journalists and international correspondents play an essential role in documenting life under
+        occupation, exposing human rights violations, and providing perspectives often marginalized in mainstream
+        Western media. Despite facing significant risks including arrest, detention, injury, and death, these
+        journalists continue to report on critical events shaping the region. Their work is vital for maintaining global
+        awareness and understanding of the Palestinian experience.</p>
+    </section>
+
+    <section class="journalists-content">
+      <h2>Prominent Palestinian Journalists</h2>
+
+      <h3>Deceased Journalists</h3>
+
+      <div class="stat-card">
+        <h4>Shireen Abu Akleh (1971-2022)</h4>
+        <p><strong>Al Jazeera Arabic Correspondent</strong> - Abu Akleh was a veteran journalist who spent over 25 years
+          covering Palestine for Al Jazeera. She was shot and killed by Israeli forces while covering an Israeli
+          military raid in Jenin on May 11, 2022. Her death sparked international outrage and highlighted the dangers
+          faced by Palestinian journalists. She was widely respected for her professionalism and commitment to
+          Palestinian narratives.</p>
+      </div>
+
+      <div class="stat-card">
+        <h4>Ramzi al-Durra (2000)</h4>
+        <p><strong>BBC/Japanese TV Crew</strong> - Al-Durra was a 12-year-old Palestinian boy killed by Israeli sniper
+          fire while filming Israeli tanks near his home in Gaza. His death was captured on video and broadcast
+          internationally, becoming a symbol of Palestinian civilian casualties. The incident highlighted the targeting
+          of Palestinian media and civilians.</p>
+      </div>
+
+      <div class="stat-card">
+        <h4>Yasser Murtaja (1963-2007)</h4>
+        <p><strong>Al-Aqsa TV Photographer</strong> - Murtaja was killed by Israeli forces during the 2008-2009 Gaza
+          conflict while covering Israeli military operations. He was one of several Palestinian journalists killed
+          during that period, demonstrating the extreme risks faced by local media.</p>
+      </div>
+
+      <div class="stat-card">
+        <h4>Alaa Murad (1978-2008)</h4>
+        <p><strong>Freelance Photographer</strong> - Murad was killed by Israeli shelling while covering the Gaza
+          conflict. His death was one of many among Palestinian photojournalists who risked their lives to document the
+          humanitarian crisis.</p>
+      </div>
+
+      <div class="stat-card">
+        <h4>Hussam Salim (1965-2008)</h4>
+        <p><strong>Al-Quds Newspaper Journalist</strong> - Salim was killed by Israeli forces during the Gaza conflict
+          while reporting on civilian casualties. His death highlighted the targeting of Palestinian media personnel
+          during military operations.</p>
+      </div>
+
+      <div class="stat-card">
+        <h4>Samir al-Arian (1958-2023)</h4>
+        <p><strong>Al-Aqsa TV Correspondent</strong> - Al-Arian was killed by Israeli forces in 2023 while covering
+          military operations in Gaza. His death was part of a pattern of targeting Palestinian journalists during
+          conflicts.</p>
+      </div>
+
+      <div class="stat-card">
+        <h4>Wael Dahdouh</h4>
+        <p><strong>Al Jazeera Correspondent</strong> - Dahdouh's family members, including his son Hamza and producer
+          Ali Jasir, were killed in Israeli airstrikes while he was reporting. His continued reporting despite personal
+          tragedy highlighted the human cost of journalism under occupation.</p>
+      </div>
+
+      <h3>Active Palestinian Journalists</h3>
+
+      <div class="stat-card">
+        <h4>Mohammed al-Khaldi</h4>
+        <p><strong>Al Jazeera Correspondent</strong> - Al-Khaldi has covered Gaza conflicts and Palestinian political
+          developments for Al Jazeera. He has been instrumental in providing real-time coverage of events in Gaza during
+          military operations.</p>
+      </div>
+
+      <div class="stat-card">
+        <h4>Nasser Nasser</h4>
+        <p><strong>Associated Press Photographer</strong> - Nasser has documented life in Gaza for decades, covering
+          multiple conflicts and humanitarian crises. His work provides crucial visual documentation of the impact of
+          military operations on Palestinian civilians.</p>
+      </div>
+
+      <div class="stat-card">
+        <h4>Mohammed Abed</h4>
+        <p><strong>Reuters Photographer</strong> - Abed has extensively documented life under occupation in the West
+          Bank and Gaza. His photographs have been instrumental in showing the human cost of the conflict to
+          international audiences.</p>
+      </div>
+
+      <div class="stat-card">
+        <h4>Majdi Mohammed</h4>
+        <p><strong>Associated Press Photographer</strong> - Mohammed has covered conflicts in Gaza and the West Bank,
+          providing critical visual documentation of the humanitarian impact of military operations.</p>
+      </div>
+
+      <div class="stat-card">
+        <h4>Ibraheem Abu Mustafa</h4>
+        <p><strong>Reuters Photographer</strong> - Abu Mustafa has documented Palestinian life under occupation,
+          focusing on the impact of Israeli policies on daily life and resistance movements.</p>
+      </div>
+
+      <div class="stat-card">
+        <h4>Yousef Mahmoud al-Ramuni</h4>
+        <p><strong>Freelance Journalist</strong> - Al-Ramuni has covered protests and military operations in the West
+          Bank, providing local perspectives on Palestinian resistance and Israeli responses.</p>
+      </div>
+
+      <div class="stat-card">
+        <h4>Ahmed Abu Hussein</h4>
+        <p><strong>Associated Press Photographer</strong> - Abu Hussein has documented life in Gaza and the West Bank,
+          focusing on the humanitarian impact of conflicts and occupation policies.</p>
+      </div>
+
+      <div class="stat-card">
+        <h4>Mahmud Hams</h4>
+        <p><strong>Freelance Photographer</strong> - Hams has documented Palestinian life under occupation, with work
+          focusing on the separation wall, settlements, and daily resistance.</p>
+      </div>
+
+      <div class="stat-card">
+        <h4>Khoder Al-Khodour</h4>
+        <p><strong>Al Jazeera Arabic Correspondent</strong> - Al-Khodour has covered Palestinian political developments
+          and social movements, providing analysis of Palestinian political dynamics.</p>
+      </div>
+
+      <div class="stat-card">
+        <h4>Walid Al-Omary</h4>
+        <p><strong>Al Jazeera English Correspondent</strong> - Al-Omary has covered Palestinian political developments
+          and social movements, providing English-language coverage of Palestinian perspectives.</p>
+      </div>
+
+      <div class="stat-card">
+        <h4>Suhaib Salem</h4>
+        <p><strong>Freelance Photographer</strong> - Salem has documented Palestinian protests and daily life under
+          occupation, with work focusing on youth movements and resistance.</p>
+      </div>
+
+      <div class="stat-card">
+        <h4>Mustafa Al-Azayza</h4>
+        <p><strong>Freelance Photographer</strong> - Al-Azayza has documented life in Gaza, focusing on the humanitarian
+          impact of conflicts and the resilience of Palestinian communities.</p>
+      </div>
+
+      <div class="stat-card">
+        <h4>Yasser Qudih</h4>
+        <p><strong>Freelance Photographer</strong> - Qudih has documented Palestinian life in Gaza, with work focusing
+          on the impact of military operations on families and communities.</p>
+      </div>
+
+      <div class="stat-card">
+        <h4>Ahmed Zakout</h4>
+        <p><strong>Freelance Photographer</strong> - Zakout has documented Palestinian protests and daily life under
+          occupation, focusing on the impact of Israeli policies on Palestinian communities.</p>
+      </div>
+
+      <div class="stat-card">
+        <h4>Mohammed Al-Shaer</h4>
+        <p><strong>Freelance Journalist</strong> - Al-Shaer has covered Palestinian political developments and social
+          movements, providing local perspectives on Palestinian resistance.</p>
+      </div>
+
+      <h3>Palestinian Women Journalists</h3>
+
+      <div class="stat-card">
+        <h4>Yara Hawari</h4>
+        <p><strong>Senior Analyst, Al-Shabaka</strong> - Hawari is a Palestinian journalist and analyst who has written
+          extensively on Palestinian political developments and international relations.</p>
+      </div>
+
+      <div class="stat-card">
+        <h4>Rania Abouzeid</h4>
+        <p><strong>Freelance Journalist</strong> - Abouzeid has reported on Palestinian and broader Middle Eastern
+          issues for international publications, focusing on political and social developments.</p>
+      </div>
+
+      <div class="stat-card">
+        <h4>Nayef Al-Sudairi</h4>
+        <p><strong>BBC Arabic Correspondent</strong> - Al-Sudairi has covered Palestinian political developments and
+          social movements for BBC Arabic service.</p>
+      </div>
+
+      <div class="stat-card">
+        <h4>Marah Shehada</h4>
+        <p><strong>Freelance Journalist</strong> - Shehada has covered Palestinian women's issues and social movements,
+          providing perspectives on gender and resistance.</p>
+      </div>
+
+      <div class="stat-card">
+        <h4>Hind Khoudary</h4>
+        <p><strong>Freelance Journalist</strong> - Khoudary has documented Palestinian life in Gaza, focusing on women's
+          experiences and community resilience.</p>
+      </div>
+
+      <h2>International Journalists Covering Palestine</h2>
+
+      <h3>Western Correspondents</h3>
+
+      <div class="stat-card">
+        <h4>Robert Fisk (1946-2020)</h4>
+        <p><strong>Independent Journalist</strong> - Fisk was one of the most respected Middle East correspondents,
+          spending over 30 years covering the region. His reporting on Palestine was known for its depth, historical
+          context, and commitment to Palestinian voices. He challenged mainstream narratives and provided critical
+          analysis of Israeli policies.</p>
+      </div>
+
+      <div class="stat-card">
+        <h4>Gideon Levy</h4>
+        <p><strong>Haaretz Columnist</strong> - Levy is an Israeli journalist known for his critical coverage of Israeli
+          policies toward Palestinians. His columns regularly document human rights violations and challenge Israeli
+          narratives about the conflict. He has been a consistent voice for Palestinian rights within Israeli media.</p>
+      </div>
+
+      <div class="stat-card">
+        <h4>Amira Hass</h4>
+        <p><strong>Haaretz Correspondent</strong> - Hass is an Israeli journalist who has lived in Gaza and extensively
+          reported on Palestinian life under occupation. She is known for her commitment to Palestinian narratives and
+          critical analysis of Israeli policies. Her work provides unique insights into Palestinian experiences.</p>
+      </div>
+
+      <div class="stat-card">
+        <h4>Ben Ehrenreich</h4>
+        <p><strong>Independent Journalist</strong> - Ehrenreich has written extensively about Palestine for publications
+          including The New York Times Magazine. His work combines investigative reporting with literary narrative to
+          explore Palestinian experiences. He has been recognized for his in-depth coverage of Palestinian life.</p>
+      </div>
+
+      <div class="stat-card">
+        <h4>Max Blumenthal</h4>
+        <p><strong>Investigative Journalist</strong> - Blumenthal has extensively covered Palestine and Israel for
+          various publications. His reporting focuses on human rights violations, settlement expansion, and the impact
+          of Israeli policies on Palestinian communities. He is known for his critical analysis of Israeli and American
+          policies.</p>
+      </div>
+
+      <div class="stat-card">
+        <h4>Ali Abunimah</h4>
+        <p><strong>The Electronic Intifada Founder</strong> - Abunimah is a Palestinian-American journalist and founder
+          of The Electronic Intifada, an independent online publication covering Palestine. His work focuses on
+          Palestinian rights and challenging mainstream narratives. He has been instrumental in providing alternative
+          coverage of the conflict.</p>
+      </div>
+
+      <div class="stat-card">
+        <h4>Ramzy Baroud</h4>
+        <p><strong>Editor-in-Chief, Palestine Chronicle</strong> - Baroud is a Palestinian journalist and author who has
+          written extensively about Palestine for international publications. He is known for his analysis of
+          Palestinian politics and the broader Middle East context. His work provides historical perspective on the
+          conflict.</p>
+      </div>
+
+      <div class="stat-card">
+        <h4>Nadia Hijab</h4>
+        <p><strong>Writer and Analyst</strong> - Hijab is a Palestinian writer and analyst who has contributed to
+          various publications on Palestine and the Israeli-Palestinian conflict. Her work focuses on Palestinian
+          political developments and international relations. She provides critical analysis of diplomatic efforts and
+          political dynamics.</p>
+      </div>
+
+      <div class="stat-card">
+        <h4>Patrick Cockburn</h4>
+        <p><strong>The Independent Correspondent</strong> - Cockburn has covered the Middle East for decades, including
+          extensive reporting on Palestine and Israel. His work provides historical context and analysis of regional
+          developments. He is known for his critical coverage of Western policies in the region.</p>
+      </div>
+
+      <div class="stat-card">
+        <h4>Jonathan Cook</h4>
+        <p><strong>Independent Journalist</strong> - Cook has written extensively about Palestine and Israel for various
+          publications. His work focuses on the political and social dimensions of the conflict. He is known for
+          challenging mainstream narratives and providing Palestinian perspectives.</p>
+      </div>
+
+      <div class="stat-card">
+        <h4>Phelim Kine</h4>
+        <p><strong>Human Rights Watch Deputy Asia Director</strong> - Kine has documented human rights violations in
+          Palestine and Israel for Human Rights Watch. His work provides detailed analysis of Israeli policies and their
+          impact on Palestinian communities.</p>
+      </div>
+
+      <div class="stat-card">
+        <h4>Omar Barghouti</h4>
+        <p><strong>BDS Movement Co-founder</strong> - Barghouti is a Palestinian writer and journalist who has
+          extensively documented the impact of occupation and advocated for Palestinian rights through his writing and
+          activism.</p>
+      </div>
+
+      <h3>Regional and International Correspondents</h3>
+
+      <div class="stat-card">
+        <h4>Youssef Al-Saqqaf</h4>
+        <p><strong>Al Arabiya Correspondent</strong> - Al-Saqqaf has covered Palestinian political developments for
+          regional Arabic media, providing perspectives from the broader Arab world.</p>
+      </div>
+
+      <div class="stat-card">
+        <h4>Mohamed Al-Massri</h4>
+        <p><strong>Al Jazeera Arabic Correspondent</strong> - Al-Massri has covered Palestinian issues for Al Jazeera's
+          Arabic service, providing comprehensive coverage for Arab audiences.</p>
+      </div>
+
+      <div class="stat-card">
+        <h4>Ahmed Al Omran</h4>
+        <p><strong>Financial Times Correspondent</strong> - Al Omran has covered Palestinian economic issues and
+          political developments for international business publications.</p>
+      </div>
+
+      <h2>News Organizations with Strong Palestine Coverage</h2>
+
+      <div class="stat-card">
+        <h4>Al Jazeera</h4>
+        <p>Known for comprehensive coverage of Palestine, particularly through its Arabic service. Al Jazeera has
+          consistently provided Palestinian perspectives and documented life under occupation. The network has faced
+          criticism and pressure for its coverage but continues to maintain strong reporting from the region. Their
+          correspondents have been instrumental in covering Gaza conflicts and Palestinian political developments.</p>
+      </div>
+
+      <div class="stat-card">
+        <h4>The Electronic Intifada</h4>
+        <p>An independent online publication dedicated to Palestine coverage. EI provides analysis and reporting that
+          centers Palestinian voices and challenges mainstream narratives. The publication has been instrumental in
+          providing alternative coverage of the conflict and documenting Palestinian experiences.</p>
+      </div>
+
+      <div class="stat-card">
+        <h4>Mondoweiss</h4>
+        <p>An independent news website that provides critical coverage of Palestine and Israel. Mondoweiss is known for
+          its commitment to Palestinian narratives and analysis of American politics related to the conflict. The
+          publication has been instrumental in challenging mainstream media coverage and providing historical context.
+        </p>
+      </div>
+
+      <div class="stat-card">
+        <h4>+972 Magazine</h4>
+        <p>An Israeli publication that provides critical coverage of Israeli policies and Palestinian experiences. The
+          magazine features contributions from both Palestinian and Israeli writers and journalists. It has been
+          instrumental in providing critical analysis from within Israeli society.</p>
+      </div>
+
+      <div class="stat-card">
+        <h4>Palestine Chronicle</h4>
+        <p>An independent publication that has provided coverage of Palestine for decades. The Chronicle features
+          Palestinian voices and provides historical perspective on the conflict. It has been instrumental in
+          documenting Palestinian resistance and political developments.</p>
+      </div>
+
+      <div class="stat-card">
+        <h4>Middle East Eye</h4>
+        <p>An independent news organization that provides comprehensive coverage of Middle Eastern issues, including
+          Palestine. The organization has been instrumental in providing alternative coverage of the conflict and
+          challenging mainstream narratives.</p>
+      </div>
+
+      <div class="stat-card">
+        <h4>Al-Ahram Weekly</h4>
+        <p>Egyptian publication that has provided coverage of Palestinian issues from an Arab perspective. The
+          publication has been instrumental in documenting regional responses to the conflict and providing Arab
+          perspectives.</p>
+      </div>
+
+      <h2>Challenges and Risks Faced by Journalists</h2>
+
+      <div class="stat-card">
+        <h4>Physical Danger</h4>
+        <p>Palestinian journalists face significant physical risks including arrest, detention, injury, and death.
+          Israeli forces have killed dozens of Palestinian journalists since 2000, making it one of the deadliest
+          conflicts for media professionals. International journalists also face risks including detention and injury
+          while covering conflicts in the region.</p>
+      </div>
+
+      <div class="stat-card">
+        <h4>Press Restrictions</h4>
+        <p>Israeli authorities impose severe restrictions on Palestinian journalists, including denial of press
+          credentials, restrictions on movement, and surveillance. These restrictions limit Palestinian journalists'
+          ability to report freely. International journalists also face restrictions including limited access to
+          conflict zones and pressure from Israeli authorities.</p>
+      </div>
+
+      <div class="stat-card">
+        <h4>Media Blackouts</h4>
+        <p>Israel frequently imposes media blackouts on sensitive areas, particularly during military operations in
+          Gaza. These blackouts limit international media access and rely heavily on Palestinian journalists who face
+          the greatest risks. The blackouts prevent comprehensive coverage and limit public understanding of events.</p>
+      </div>
+
+      <div class="stat-card">
+        <h4>Editorial Pressure</h4>
+        <p>Many international news organizations face pressure to conform to Israeli narratives or avoid coverage that
+          challenges dominant Western perspectives on the conflict. This pressure affects editorial decisions and can
+          limit Palestinian voices. Journalists may face career consequences for critical coverage of Israeli policies.
+        </p>
+      </div>
+
+      <div class="stat-card">
+        <h4>Censorship and Self-Censorship</h4>
+        <p>Both Palestinian and international journalists face censorship from various sources including governments,
+          media organizations, and advertisers. This censorship can limit coverage and prevent comprehensive reporting.
+          Journalists may also engage in self-censorship to avoid professional consequences.</p>
+      </div>
+
+      <h2>Impact and Recognition</h2>
+
+      <div class="stat-card">
+        <h4>Documenting War Crimes</h4>
+        <p>Palestinian and international journalists have documented numerous potential war crimes and human rights
+          violations, providing crucial evidence for international legal proceedings and human rights organizations.
+          Their work has been instrumental in building cases for accountability and justice.</p>
+      </div>
+
+      <div class="stat-card">
+        <h4>Shaping International Opinion</h4>
+        <p>Journalists covering Palestine have played crucial roles in shaping international understanding of the
+          conflict, particularly through social media and independent reporting that bypasses traditional media
+          gatekeepers. Their work has been instrumental in building global solidarity movements.</p>
+      </div>
+
+      <div class="stat-card">
+        <h4>Preserving Palestinian Narratives</h4>
+        <p>Journalists have been instrumental in preserving Palestinian stories, experiences, and perspectives that
+          might otherwise be lost or marginalized in mainstream coverage. Their work ensures that Palestinian voices are
+          heard and documented for future generations.</p>
+      </div>
+
+      <div class="stat-card">
+        <h4>Historical Documentation</h4>
+        <p>Journalists have provided crucial historical documentation of events in Palestine, creating a record of
+          developments that might otherwise be forgotten or misrepresented. Their work serves as a historical archive of
+          the conflict and Palestinian experiences.</p>
+      </div>
+
+      <h2>Supporting Journalists</h2>
+
+      <div class="stat-card">
+        <h4>Press Freedom Organizations</h4>
+        <p>Organizations like Reporters Without Borders, Committee to Protect Journalists, and Palestinian Centre for
+          Development of the Media work to protect journalists and advocate for press freedom in Palestine. These
+          organizations provide legal support, advocacy, and resources for journalists facing threats and restrictions.
+        </p>
+      </div>
+
+      <div class="stat-card">
+        <h4>Financial Support</h4>
+        <p>Various organizations provide financial support, equipment, and training to Palestinian journalists working
+          under difficult conditions. This support is crucial for enabling Palestinian media to continue operating
+          despite restrictions and threats.</p>
+      </div>
+
+      <div class="stat-card">
+        <h4>Legal Support</h4>
+        <p>Legal organizations provide support for journalists facing arrest, detention, and legal challenges. This
+          support is crucial for protecting journalists and enabling them to continue their work despite legal threats.
+        </p>
+      </div>
+
+      <div class="stat-card">
+        <h4>Training and Capacity Building</h4>
+        <p>Various organizations provide training and capacity building for Palestinian journalists, helping them
+          develop skills and access resources needed for professional journalism. This support is crucial for building
+          sustainable Palestinian media institutions.</p>
+      </div>
+    </section>
+
+    <section class="resources-section">
+      <h2>Resources for Further Information</h2>
+      <div class="resources-grid">
+        <div class="resource-card">
+          <div class="resource-icon">
+            <i class="fas fa-link"></i>
+          </div>
+          <a href="https://www.cpj.org/" target="_blank" class="resource-link">Committee to Protect Journalists -
+            Palestine</a>
+        </div>
+        <div class="resource-card">
+          <div class="resource-icon">
+            <i class="fas fa-link"></i>
+          </div>
+          <a href="https://www.rsf.org/" target="_blank" class="resource-link">Reporters Without Borders - Middle
+            East</a>
+        </div>
+        <div class="resource-card">
+          <div class="resource-icon">
+            <i class="fas fa-link"></i>
+          </div>
+          <a href="https://electronicintifada.net/" target="_blank" class="resource-link">The Electronic Intifada</a>
+        </div>
+        <div class="resource-card">
+          <div class="resource-icon">
+            <i class="fas fa-link"></i>
+          </div>
+          <a href="https://mondoweiss.net/" target="_blank" class="resource-link">Mondoweiss</a>
+        </div>
+        <div class="resource-card">
+          <div class="resource-icon">
+            <i class="fas fa-link"></i>
+          </div>
+          <a href="https://972mag.com/" target="_blank" class="resource-link">+972 Magazine</a>
+        </div>
+        <div class="resource-card">
+          <div class="resource-icon">
+            <i class="fas fa-link"></i>
+          </div>
+          <a href="https://palestinechronicle.com/" target="_blank" class="resource-link">Palestine Chronicle</a>
+        </div>
+        <div class="resource-card">
+          <div class="resource-icon">
+            <i class="fas fa-link"></i>
+          </div>
+          <a href="https://www.middleeasteye.net/" target="_blank" class="resource-link">Middle East Eye</a>
+        </div>
+        <div class="resource-card">
+          <div class="resource-icon">
+            <i class="fas fa-link"></i>
+          </div>
+          <a href="https://pcdn.me/" target="_blank" class="resource-link">Palestinian Centre for Development of the
+            Media</a>
+        </div>
+        <div class="resource-card">
+          <div class="resource-icon">
+            <i class="fas fa-link"></i>
+          </div>
+          <a href="https://www.aljazeera.com/" target="_blank" class="resource-link">Al Jazeera</a>
+        </div>
+        <div class="resource-card">
+          <div class="resource-icon">
+            <i class="fas fa-link"></i>
+          </div>
+          <a href="https://www.haaretz.com/" target="_blank" class="resource-link">Haaretz</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="statistics-section">
+      <h2>Journalist Casualties Statistics</h2>
+      <div class="history-stats">
+        <div class="stat-card">
+          <div class="stat-number">Over 50</div>
+          <div class="stat-label">Palestinian journalists killed since 2000</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">100+</div>
+          <div class="stat-label">Palestinian journalists injured since 2000</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">Dozens</div>
+          <div class="stat-label">International journalists detained or injured</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Of major conflicts see Palestinian journalist casualties</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer-container"></footer>
+
+  <script src="/assets/js/main.js"></script>
   <script>
-    fetch('/assets/commons/commonNavFooter.html')
-      .then(res => res.text())
-      .then(text => {
-        let oldelem = document.querySelector("div[id='common-placeholder']");
-        let newelem = document.createElement("div");
-        newelem.innerHTML = text;
-        oldelem.parentNode.replaceChild(newelem, oldelem);
-      })
+    document.addEventListener('DOMContentLoaded', function () {
+      includeNavFooter();
+    });
   </script>
 </body>
+
 </html>

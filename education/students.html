@@ -10,95 +10,246 @@
 </head>
 
 <body>
-    <div id="common-placeholder"></div>
-    
-        <script>
-            fetch('/assets/commons/commonNavFooter.html')
-                .then(res => res.text())
-                .then(text => {
-                    let oldelem = document.querySelector("div[id='common-placeholder']");
-                    let newelem = document.createElement("div");
-                    newelem.innerHTML = text;
-                    oldelem.parentNode.replaceChild(newelem, oldelem);
-                })
-        </script>
+    <!-- Navigation -->
+    <header id="nav-container"></header>
+
     <main>
         <section class="hero">
             <div class="hero-content">
                 <h1>Student's Kit: Learning About Palestine</h1>
                 <p>Engaging resources and activities for students to explore Palestinian history, culture, and the
                     pursuit of justice.</p>
-                <button onclick="window.print()" class="btn">Print This Page</button>
+                <div class="hero-buttons">
+                    <button onclick="window.print()" class="btn">Print This Page</button>
+                </div>
             </div>
         </section>
 
         <section class="section">
             <div class="container">
                 <h2>Key Learning Points</h2>
-                <ul>
-                    <li>Understand the historical timeline of Palestine, from ancient times to the present.</li>
-                    <li>Learn about the Nakba (Catastrophe) and its impact on Palestinian people.</li>
-                    <li>Explore the concept of occupation and its effects on daily life.</li>
-                    <li>Discover the rich cultural heritage of Palestine, including art, music, and food.</li>
-                    <li>Recognize the importance of human rights and international law in the context of the Palestinian
-                        struggle.</li>
-                </ul>
+                <div class="history-stats">
+                    <div class="stat-card">
+                        <div class="stat-number"><i class="fas fa-history"></i></div>
+                        <div class="stat-label">Historical Timeline</div>
+                        <p>Understand the historical timeline of Palestine, from ancient times to the present, including
+                            key periods of civilization, conquest, and resistance.</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-number"><i class="fas fa-exclamation-triangle"></i></div>
+                        <div class="stat-label">The Nakba</div>
+                        <p>Learn about the Nakba (Catastrophe) of 1948 and its ongoing impact on Palestinian people,
+                            families, and communities worldwide.</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-number"><i class="fas fa-shield-alt"></i></div>
+                        <div class="stat-label">Occupation & Resistance</div>
+                        <p>Explore the concept of military occupation and its effects on daily life, as well as various
+                            forms of Palestinian resistance and resilience.</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-number"><i class="fas fa-music"></i></div>
+                        <div class="stat-label">Cultural Heritage</div>
+                        <p>Discover the rich cultural heritage of Palestine, including art, music, literature, food, and
+                            traditional crafts that preserve identity.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section class="section section-alt">
             <div class="container">
                 <h2>Activities for Students</h2>
-                <h3>Activity 1: Create a Timeline</h3>
-                <p><strong>Objective:</strong> To visualize key events in Palestinian history.</p>
-                <p><strong>Materials:</strong> Large paper, markers, historical dates and events (provided by teacher or
-                    researched).</p>
-                <p><strong>Procedure:</strong></p>
-                <ol>
-                    <li>Work in groups to select important dates and events related to Palestine.</li>
-                    <li>Create a visual timeline, including brief descriptions and illustrations for each event.</li>
-                    <li>Present your timeline to the class, explaining the significance of each event.</li>
-                </ol>
 
-                <h3>Activity 2: Cultural Exploration</h3>
-                <p><strong>Objective:</strong> To appreciate Palestinian culture through its diverse expressions.</p>
-                <p><strong>Materials:</strong> Access to online resources (videos, images), cultural artifacts (if
-                    available), recipes.</p>
-                <p><strong>Procedure:</strong></p>
-                <ol>
-                    <li>Research different aspects of Palestinian culture, such as traditional clothing (tatreez), music
-                        (dabke), or cuisine.</li>
-                    <li>Prepare a short presentation or a creative project (e.g., drawing, short video, cooking a simple
-                        recipe) to share what you learned.</li>
-                    <li>Discuss how culture helps preserve identity and resilience.</li>
-                </ol>
+                <div class="resistance-methods">
+                    <div class="method">
+                        <i class="fas fa-calendar-alt"></i>
+                        <h3>Activity 1: Create a Timeline</h3>
+                        <p><strong>Objective:</strong> To visualize key events in Palestinian history and understand
+                            historical context.</p>
+                        <p><strong>Materials:</strong> Large paper or digital presentation software, markers, historical
+                            dates and events (provided by teacher or researched).</p>
+                        <p><strong>Procedure:</strong></p>
+                        <ol>
+                            <li>Work in groups to select 10-15 important dates and events related to Palestine from
+                                different historical periods.</li>
+                            <li>Create a visual timeline, including brief descriptions, illustrations, and significance
+                                for each event.</li>
+                            <li>Present your timeline to the class, explaining the connections between events and their
+                                historical impact.</li>
+                            <li>Reflect on how historical events continue to shape current realities.</li>
+                        </ol>
+                        <div style="background: #1a1a1a; padding: 15px; border-radius: 5px; margin-top: 15px;">
+                            <p><strong>Extension:</strong> Compare your timeline with timelines of other regions to
+                                understand global historical contexts.</p>
+                        </div>
+                    </div>
+
+                    <div class="method">
+                        <i class="fas fa-palette"></i>
+                        <h3>Activity 2: Cultural Exploration</h3>
+                        <p><strong>Objective:</strong> To appreciate Palestinian culture through its diverse expressions
+                            and understand its role in identity preservation.</p>
+                        <p><strong>Materials:</strong> Access to online resources (videos, images), cultural artifacts
+                            (if available), recipes, art supplies.</p>
+                        <p><strong>Procedure:</strong></p>
+                        <ol>
+                            <li>Research different aspects of Palestinian culture, such as traditional clothing
+                                (tatreez), music (dabke), or cuisine.</li>
+                            <li>Choose one cultural element to explore in depth through research, interviews, or
+                                creative recreation.</li>
+                            <li>Prepare a short presentation or a creative project (e.g., drawing, short video, cooking
+                                a simple recipe) to share what you learned.</li>
+                            <li>Discuss how culture helps preserve identity and resilience, especially in diaspora
+                                communities.</li>
+                        </ol>
+                        <div style="background: #1a1a1a; padding: 15px; border-radius: 5px; margin-top: 15px;">
+                            <p><strong>Extension:</strong> Invite community members to share their cultural traditions
+                                or organize a cultural fair.</p>
+                        </div>
+                    </div>
+
+                    <div class="method">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <h3>Activity 3: Geography and Maps</h3>
+                        <p><strong>Objective:</strong> To understand the geography of historic Palestine and how it has
+                            changed over time.</p>
+                        <p><strong>Materials:</strong> Historical maps of Palestine, current maps, colored pencils,
+                            graph paper.</p>
+                        <p><strong>Procedure:</strong></p>
+                        <ol>
+                            <li>Examine historical maps of Palestine from different time periods (Ottoman, British
+                                Mandate, 1948, 1967, present).</li>
+                            <li>Identify major cities, geographic features, and borders on each map.</li>
+                            <li>Create an overlay showing how the geography has changed and what areas are currently
+                                under different controls.</li>
+                            <li>Research how geographic changes have affected Palestinian communities.</li>
+                        </ol>
+                        <div style="background: #1a1a1a; padding: 15px; border-radius: 5px; margin-top: 15px;">
+                            <p><strong>Extension:</strong> Interview people from different regions about how geography
+                                affects their daily lives.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section class="section">
             <div class="container">
                 <h2>Recommended Readings & Videos</h2>
-                <p>A list of accessible books, articles, and documentaries for students (links to /library later).</p>
-                <ul>
-                    <li><strong>P is for Palestine: A Palestine Alphabet Book</strong> by Dr. Golbarg Bashi</li>
-                    <li><strong>The Little Book of Palestine</strong> by Ashley Remer</li>
-                    <li><strong>Born in Gaza</strong> (documentary)</li>
-                    <li><strong>5 Broken Cameras</strong> (documentary)</li>
-                </ul>
+                <div class="resources-grid">
+                    <div class="resource-card">
+                        <div class="resource-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h3>Books for Young Readers</h3>
+                        <ul style="text-align: left; padding-left: 20px;">
+                            <li><strong>P is for Palestine: A Palestine Alphabet Book</strong> by Dr. Golbarg Bashi</li>
+                            <li><strong>The Little Book of Palestine</strong> by Ashley Remer</li>
+                            <li><strong>Mirror</strong> by Suzy Lee</li>
+                            <li><strong>The Name Jar</strong> by Yangsook Choi</li>
+                            <li><strong>King for a Day</strong> by Rukhsana Khan</li>
+                        </ul>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="resource-icon">
+                            <i class="fas fa-film"></i>
+                        </div>
+                        <h3>Documentaries</h3>
+                        <ul style="text-align: left; padding-left: 20px;">
+                            <li><strong>Born in Gaza</strong> (documentary series)</li>
+                            <li><strong>5 Broken Cameras</strong> by Emad Burnat</li>
+                            <li><strong>The Gatekeepers</strong> by Dror Moreh</li>
+                            <li><strong>Death in Gaza</strong> by James Miller</li>
+                            <li><strong>Occupation: Dreamland</strong> by Ian Olds</li>
+                        </ul>
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="resource-icon">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <h3>Online Resources</h3>
+                        <ul style="text-align: left; padding-left: 20px;">
+                            <li><strong>Palestine Remembered</strong> - Interactive maps</li>
+                            <li><strong>Electronic Intifada</strong> - Educational articles</li>
+                            <li><strong>Institute for Palestine Studies</strong> - Academic resources</li>
+                            <li><strong>UNRWA Education</strong> - Educational materials</li>
+                            <li><strong>Al Jazeera Documentary</strong> - "The Book of Gaza"</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt">
+            <div class="container">
+                <h2>Discussion Questions</h2>
+                <div class="culture-content">
+                    <div class="culture-highlights">
+                        <div class="highlight">
+                            <i class="fas fa-landmark"></i>
+                            <h3>Historical Understanding</h3>
+                            <ul style="text-align: left; padding-left: 15px; font-size: 0.9rem;">
+                                <li>How does understanding history help us understand current events?</li>
+                                <li>What are different ways people preserve their cultural identity during displacement?
+                                </li>
+                                <li>How do historical narratives differ, and why is it important to hear multiple
+                                    perspectives?</li>
+                            </ul>
+                        </div>
+
+                        <div class="highlight">
+                            <i class="fas fa-balance-scale"></i>
+                            <h3>Ethical Considerations</h3>
+                            <ul style="text-align: left; padding-left: 15px; font-size: 0.9rem;">
+                                <li>What responsibilities do we have as global citizens regarding human rights issues?
+                                </li>
+                                <li>How can we learn about complex conflicts without taking sides?</li>
+                                <li>What role does education play in promoting justice and understanding?</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="culture-highlights">
+                        <div class="highlight">
+                            <i class="fas fa-user-graduate"></i>
+                            <h3>Personal Reflection</h3>
+                            <ul style="text-align: left; padding-left: 15px; font-size: 0.9rem;">
+                                <li>How does learning about other cultures enrich our own understanding?</li>
+                                <li>What actions can students take to promote understanding and justice in their
+                                    communities?</li>
+                                <li>How can we be respectful allies while avoiding savior complex?</li>
+                            </ul>
+                        </div>
+
+                        <div class="highlight">
+                            <i class="fas fa-globe-americas"></i>
+                            <h3>Global Perspectives</h3>
+                            <ul style="text-align: left; padding-left: 15px; font-size: 0.9rem;">
+                                <li>How does the Palestinian experience connect to broader themes of colonialism and
+                                    displacement?</li>
+                                <li>What can we learn from other solidarity movements around the world?</li>
+                                <li>How do international law and human rights frameworks apply to this situation?</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
-    <div id="common-placeholder"></div>
+
+    <!-- Footer -->
+    <footer id="footer-container"></footer>
 
     <script>
-        fetch('/assets/commons/commonNavFooter.html')
-            .then(res => res.text())
-            .then(text => {
-                let oldelem = document.querySelector("div[id='common-placeholder']");
-                let newelem = document.createElement("div");
-                newelem.innerHTML = text;
-                oldelem.parentNode.replaceChild(newelem, oldelem);
-            })
+        document.addEventListener('DOMContentLoaded', function () {
+            includeNavFooter();
+        });
     </script>
 </body>
 

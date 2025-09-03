@@ -11,18 +11,7 @@
 </head>
 
 <body>
-    <div id="common-placeholder"></div>
-    
-        <script>
-            fetch('/assets/commons/commonNavFooter.html')
-                .then(res => res.text())
-                .then(text => {
-                    let oldelem = document.querySelector("div[id='common-placeholder']");
-                    let newelem = document.createElement("div");
-                    newelem.innerHTML = text;
-                    oldelem.parentNode.replaceChild(newelem, oldelem);
-                })
-        </script>
+    <header id="nav-container"></header>
 
     <div class="container">
         <section class="period-header">
@@ -90,18 +79,13 @@
         </section>
     </div>
 
-    <div id="common-placeholder"></div>
-    
-        <script>
-            fetch('/assets/commons/commonNavFooter.html')
-                .then(res => res.text())
-                .then(text => {
-                    let oldelem = document.querySelector("div[id='common-placeholder']");
-                    let newelem = document.createElement("div");
-                    newelem.innerHTML = text;
-                    oldelem.parentNode.replaceChild(newelem, oldelem);
-                })
-        </script>
+    <footer id="footer-container"></footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            includeNavFooter();
+        });
+    </script>
 
     <script src="../assets/js/period-navigation.js"></script>
 </body>

@@ -1,78 +1,875 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Legal Library - Palestine</title>
     <link rel="stylesheet" href="/assets/css/style.css">
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
-    
 </head>
+
 <body>
-    <div id="common-placeholder"></div>
-    
-        <script>
-            fetch('/assets/commons/commonNavFooter.html')
-                .then(res => res.text())
-                .then(text => {
-                    let oldelem = document.querySelector("div[id='common-placeholder']");
-                    let newelem = document.createElement("div");
-                    newelem.innerHTML = text;
-                    oldelem.parentNode.replaceChild(newelem, oldelem);
-                })
-        </script>
+    <!-- Navigation -->
+    <header id="nav-container"></header>
+
     <main>
-        <section class="legal-library-hero">
-            <h1>Legal Library</h1>
-            <p>Explore key legal documents, resolutions, and opinions related to Palestine.</p>
-        </section>
-
-        <section class="legal-filters-search">
-            <div class="search-container">
-                <label for="legal-search" class="sr-only">Search legal documents</label>
-                <input type="text" id="legal-search" placeholder="Search by title or summary..." aria-label="Search legal documents">
-            </div>
-            <div class="filters-container">
-                <div class="filter-group">
-                    <label for="type-filter" class="sr-only">Filter by Type</label>
-                    <select id="type-filter" aria-label="Filter legal documents by type">
-                        <option value="">All Types</option>
-                        <option value="UN">UN</option>
-                        <option value="ICJ">ICJ</option>
-                        <option value="ICC">ICC</option>
-                        <option value="Treaty">Treaty</option>
-                    </select>
-                </div>
-                <div class="filter-group">
-                    <label for="year-filter" class="sr-only">Filter by Year</label>
-                    <select id="year-filter" aria-label="Filter legal documents by year">
-                        <option value="">All Years</option>
-                        <!-- Years will be populated by JavaScript -->
-                    </select>
-                </div>
-            </div>
-            <div class="results-info" role="status" aria-live="polite">
-                <span id="results-count"></span> results found.
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Legal Library</h1>
+                <p>Explore key legal documents, resolutions, and opinions related to Palestine and the
+                    Israeli-Palestinian conflict.</p>
             </div>
         </section>
 
-        <section class="legal-cards-container">
-            <div id="legal-documents-grid" class="grid-container">
-                <!-- Legal documents will be rendered here by JavaScript -->
+        <section class="section">
+            <div class="container">
+                <div class="legal-filters-search">
+                    <div class="search-container">
+                        <label for="legal-search" class="sr-only">Search legal documents</label>
+                        <input type="text" id="legal-search" placeholder="Search by title or summary..."
+                            aria-label="Search legal documents">
+                    </div>
+                    <div class="filters-container">
+                        <div class="filter-group">
+                            <label for="type-filter" class="sr-only">Filter by Type</label>
+                            <select id="type-filter" aria-label="Filter legal documents by type">
+                                <option value="">All Types</option>
+                                <option value="UN">UN Resolutions</option>
+                                <option value="ICJ">ICJ Opinions</option>
+                                <option value="ICC">ICC Decisions</option>
+                                <option value="Treaty">Treaties</option>
+                                <option value="Court">Court Cases</option>
+                                <option value="Report">Reports</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="year-filter" class="sr-only">Filter by Year</label>
+                            <select id="year-filter" aria-label="Filter legal documents by year">
+                                <option value="">All Years</option>
+                                <option value="2024">2024</option>
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                                <option value="2019">2019</option>
+                                <option value="2018">2018</option>
+                                <option value="2017">2017</option>
+                                <option value="2016">2016</option>
+                                <option value="2015">2015</option>
+                                <option value="2014">2014</option>
+                                <option value="2010">2010</option>
+                                <option value="2008">2008</option>
+                                <option value="2004">2004</option>
+                                <option value="2002">2002</option>
+                                <option value="1993">1993</option>
+                                <option value="1988">1988</option>
+                                <option value="1970">1970</option>
+                                <option value="1967">1967</option>
+                                <option value="1949">1949</option>
+                                <option value="1948">1948</option>
+                                <option value="1947">1947</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="topic-filter" class="sr-only">Filter by Topic</label>
+                            <select id="topic-filter" aria-label="Filter legal documents by topic">
+                                <option value="">All Topics</option>
+                                <option value="occupation">Occupation</option>
+                                <option value="apartheid">Apartheid</option>
+                                <option value="war-crimes">War Crimes</option>
+                                <option value="genocide">Genocide</option>
+                                <option value="settlements">Settlements</option>
+                                <option value="refugees">Refugees</option>
+                                <option value="human-rights">Human Rights</option>
+                                <option value="self-determination">Self-Determination</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="results-info" role="status" aria-live="polite">
+                        <span id="results-count">Loading documents...</span> results found.
+                    </div>
+                </div>
+
+                <div class="legal-cards-container">
+                    <div id="legal-documents-grid" class="grid-container">
+                        <!-- Legal documents will be rendered here by JavaScript -->
+                    </div>
+                </div>
             </div>
         </section>
     </main>
-    <div id="common-placeholder"></div>
 
+    <!-- Footer -->
+    <footer id="footer-container"></footer>
+
+    <script src="/assets/js/main.js"></script>
     <script>
-        fetch('/assets/commons/commonNavFooter.html')
-            .then(res => res.text())
-            .then(text => {
-                let oldelem = document.querySelector("div[id='common-placeholder']");
-                let newelem = document.createElement("div");
-                newelem.innerHTML = text;
-                oldelem.parentNode.replaceChild(newelem, oldelem);
-            })
+        document.addEventListener('DOMContentLoaded', function () {
+            includeNavFooter();
+        });
+
+        // Legal documents data
+        const legalDocuments = [
+            {
+                id: 1,
+                title: "UN General Assembly Resolution 194",
+                type: "UN",
+                year: 1948,
+                topic: "refugees",
+                summary: "Right of return for Palestinian refugees and establishment of UNRWA. Affirms that refugees wishing to return to their homes and live at peace with their neighbors should be permitted to do so.",
+                fullText: "Resolves that refugees wishing to return to their homes and live at peace with their neighbors should be permitted to do so at the earliest practicable date, and that compensation should be paid for the property of those choosing not to return and for loss of or damage to property which, under principles of international law or in equity, should be made good by the Governments or authorities responsible.",
+                link: "https://unispal.un.org/DPA/DPR/unresolutions.nsf/0/3273605B27406F9785256C330061D22A",
+                tags: ["right of return", "refugees", "compensation"]
+            },
+            {
+                id: 2,
+                title: "UN General Assembly Resolution 3236",
+                type: "UN",
+                year: 1974,
+                topic: "self-determination",
+                summary: "Affirms the inalienable rights of the Palestinian people, including the right to self-determination without external interference.",
+                fullText: "Affirms the inalienable rights of the Palestinian people in the whole of Palestine, including the right to self-determination without external interference, national independence and sovereignty, and the right of return of refugees.",
+                link: "https://unispal.un.org/DPA/DPR/unresolutions.nsf/0/F87879578387950B852560E500686F72",
+                tags: ["self-determination", "sovereignty", "independence"]
+            },
+            {
+                id: 3,
+                title: "UN Security Council Resolution 242",
+                type: "UN",
+                year: 1967,
+                topic: "occupation",
+                summary: "Calls for withdrawal from territories occupied in the 1967 conflict and emphasizes the necessity for achieving a just settlement of the refugee problem.",
+                fullText: "Affirms that the fulfillment of Charter principles requires the establishment of a just and lasting peace in the Middle East which should include the application of both the following principles: Withdrawal of Israeli armed forces from territories occupied in the recent conflict; termination of all claims or states of belligerency and respect for and acknowledgment of the sovereignty, territorial integrity and political independence of every State in the area.",
+                link: "https://unispal.un.org/DPA/DPR/unresolutions.nsf/0/7D35E1F729DF491C85256EE700686C5B",
+                tags: ["withdrawal", "territories", "peace"]
+            },
+            {
+                id: 4,
+                title: "UN Security Council Resolution 446",
+                type: "UN",
+                year: 1979,
+                topic: "settlements",
+                summary: "Determines that Israeli settlements in occupied territories constitute a serious obstruction to achieving a comprehensive peace.",
+                fullText: "Determines that the policy and practices of Israel in establishing settlements in the Palestinian and other Arab territories occupied since 1967 have no legal validity and constitute a serious obstruction to achieving a comprehensive, just and lasting peace in the Middle East.",
+                link: "https://unispal.un.org/DPA/DPR/unresolutions.nsf/0/14E63120742123E5852560E600691834",
+                tags: ["settlements", "illegal", "obstruction"]
+            },
+            {
+                id: 5,
+                title: "UN Security Council Resolution 465",
+                type: "UN",
+                year: 1980,
+                topic: "settlements",
+                summary: "Calls upon Israel to dismantle existing settlements and cease construction of new ones.",
+                fullText: "Decides to call upon the Government of Israel to dismantle the existing settlements and in particular to cease, on an urgent basis, the establishment, construction and planning of settlements in the Arab territories occupied since 1967, including Jerusalem.",
+                link: "https://unispal.un.org/DPA/DPR/unresolutions.nsf/0/80A9223163172473852560E600692505",
+                tags: ["settlements", "dismantle", "construction"]
+            },
+            {
+                id: 6,
+                title: "UN Security Council Resolution 497",
+                type: "UN",
+                year: 1981,
+                topic: "settlements",
+                summary: "Declares the Golan Heights law null and void and without international legal effect.",
+                fullText: "Decides that the Israeli decision to impose its laws, jurisdiction and administration on the occupied Syrian Golan Heights is null and void and without international legal effect; calls upon Israel to rescind its decision.",
+                link: "https://unispal.un.org/DPA/DPR/unresolutions.nsf/0/5E617FA903776167852560E6006938A1",
+                tags: ["Golan Heights", "annexation", "null and void"]
+            },
+            {
+                id: 7,
+                title: "UN Security Council Resolution 681",
+                type: "UN",
+                year: 1990,
+                topic: "human-rights",
+                summary: "Calls upon Israel to abide by the Geneva Convention relative to the Protection of Civilian Persons in Time of War.",
+                fullText: "Calls upon Israel, the occupying Power, to abide immediately and scrupulously by the Geneva Convention relative to the Protection of Civilian Persons in Time of War, of 12 August 1949; requests the Secretary-General to report to the Security Council on the situation in the occupied territories.",
+                link: "https://unispal.un.org/DPA/DPR/unresolutions.nsf/0/7D35E1F729DF491C85256EE700687567",
+                tags: ["Geneva Convention", "civilian protection", "human rights"]
+            },
+            {
+                id: 8,
+                title: "UN Security Council Resolution 1322",
+                type: "UN",
+                year: 2000,
+                topic: "human-rights",
+                summary: "Expresses grave concern at the continued deterioration of the situation in the Middle East.",
+                fullText: "Expresses grave concern at the continued deterioration of the situation in the Middle East and the continuation of violence and loss of life; calls upon Israel, the occupying Power, to abide immediately and scrupulously by the Geneva Convention relative to the Protection of Civilian Persons in Time of War.",
+                link: "https://unispal.un.org/DPA/DPR/unresolutions.nsf/0/7D35E1F729DF491C85256EE70068953D",
+                tags: ["violence", "Geneva Convention", "situation"]
+            },
+            {
+                id: 9,
+                title: "UN Security Council Resolution 1515",
+                type: "UN",
+                year: 2003,
+                topic: "peace-process",
+                summary: "Reaffirms the vision of a region where two States, Israel and Palestine, live side by side within secure and recognized borders.",
+                fullText: "Reaffirms the vision of a region where two States, Israel and Palestine, live side by side within secure and recognized borders; calls upon the parties to comply fully with their obligations under the Road Map and to refrain from any steps that would prejudice the outcome of the final status negotiations.",
+                link: "https://unispal.un.org/DPA/DPR/unresolutions.nsf/0/7D35E1F729DF491C85256EE70068B8C1",
+                tags: ["two-state solution", "Road Map", "borders"]
+            },
+            {
+                id: 10,
+                title: "UN Security Council Resolution 1850",
+                type: "UN",
+                year: 2008,
+                topic: "peace-process",
+                summary: "Calls for an immediate, durable and fully respected ceasefire leading to the full withdrawal of Israeli forces.",
+                fullText: "Calls for an immediate, durable and fully respected ceasefire, leading to the full withdrawal of Israeli forces from Gaza, to be implemented without delay; emphasizes the importance of ensuring the flow of humanitarian aid and commercial goods into Gaza.",
+                link: "https://unispal.un.org/DPA/DPR/unresolutions.nsf/0/7D35E1F729DF491C85256EE70068E8E1",
+                tags: ["ceasefire", "withdrawal", "Gaza", "humanitarian"]
+            },
+            {
+                id: 11,
+                title: "UN Security Council Resolution 2334",
+                type: "UN",
+                year: 2016,
+                topic: "settlements",
+                summary: "Reaffirms that Israeli settlements have no legal validity and constitute a flagrant violation under international law.",
+                fullText: "Reaffirms that the establishment by Israel of settlements in the Palestinian territory occupied since 1967, including East Jerusalem, has no legal validity and constitutes a flagrant violation under international law; calls upon Israel to immediately and completely cease all settlement activities.",
+                link: "https://unispal.un.org/DPA/DPR/unresolutions.nsf/0/7D35E1F729DF491C85256EE700690B39",
+                tags: ["settlements", "illegal", "violation", "cease"]
+            },
+            {
+                id: 12,
+                title: "UN General Assembly Resolution 67/19",
+                type: "UN",
+                year: 2012,
+                topic: "statehood",
+                summary: "Elevates Palestine's status to that of a non-member observer state in the United Nations.",
+                fullText: "Decides to accord Palestine the status of non-member observer state in the United Nations, under the title 'State of Palestine', and decides that Palestine shall participate in the General Assembly and other UN organs as a non-member observer state.",
+                link: "https://unispal.un.org/DPA/DPR/unresolutions.nsf/0/7D35E1F729DF491C85256EE70068A3E1",
+                tags: ["statehood", "observer state", "UN membership"]
+            },
+            {
+                id: 13,
+                title: "UN Human Rights Council Resolution 47/20",
+                type: "UN",
+                year: 2021,
+                topic: "apartheid",
+                summary: "Establishes a commission of inquiry to investigate allegations of apartheid and persecution against the Palestinian people.",
+                fullText: "Decides to establish an independent international commission of inquiry to investigate all alleged violations of international humanitarian law and international human rights law in the Occupied Palestinian Territory, including East Jerusalem, and in Israel, since 13 April 2021.",
+                link: "https://undocs.org/A/HRC/RES/47/20",
+                tags: ["apartheid", "commission of inquiry", "human rights violations"]
+            },
+            {
+                id: 14,
+                title: "UN General Assembly Resolution ES-10/21",
+                type: "UN",
+                year: 2023,
+                topic: "human-rights",
+                summary: "Demands humanitarian truce and protection of civilians in Gaza.",
+                fullText: "Demands an immediate, durable and fully respected humanitarian truce leading to a comprehensive, just and lasting peace; calls for the protection of civilians and humanitarian personnel; emphasizes the need for unimpeded provision of humanitarian aid.",
+                link: "https://undocs.org/A/RES/ES-10/21",
+                tags: ["humanitarian truce", "Gaza", "protection of civilians", "aid"]
+            },
+            {
+                id: 15,
+                title: "UN General Assembly Resolution ES-10/22",
+                type: "UN",
+                year: 2023,
+                topic: "human-rights",
+                summary: "Calls for immediate humanitarian ceasefire and unhindered access for humanitarian aid to Gaza.",
+                fullText: "Calls for an immediate humanitarian ceasefire leading to a comprehensive, just and lasting peace; demands the immediate and unhindered provision of humanitarian assistance to Palestinians throughout the Gaza Strip; calls for the protection of civilians and humanitarian personnel.",
+                link: "https://undocs.org/A/RES/ES-10/22",
+                tags: ["humanitarian ceasefire", "Gaza", "aid access", "civilian protection"]
+            },
+            {
+                id: 16,
+                title: "ICJ Advisory Opinion on the Legal Consequences of the Construction of a Wall in the Occupied Palestinian Territory",
+                type: "ICJ",
+                year: 2004,
+                topic: "occupation",
+                summary: "Advisory opinion declaring the wall illegal and ordering Israel to cease construction and dismantle existing portions.",
+                fullText: "The Court finds that the construction of the wall being built by Israel, the occupying Power, in the Occupied Palestinian Territory, including in and around East Jerusalem, and its associated régime, are contrary to international law; calls upon all States to respect the Court's opinion.",
+                link: "https://www.icj-cij.org/public/files/case-related/131/131-20040709-ADV-01-00-EN.pdf",
+                tags: ["separation wall", "illegal", "dismantle", "international law"]
+            },
+            {
+                id: 17,
+                title: "ICC Pre-Trial Chamber Decision on Jurisdiction over the Situation in Palestine",
+                type: "ICC",
+                year: 2021,
+                topic: "war-crimes",
+                summary: "Decision confirming the ICC's jurisdiction over alleged crimes committed in Palestinian territories.",
+                fullText: "The Pre-Trial Chamber finds that the Court has territorial jurisdiction over the situation in Palestine, including the West Bank, East Jerusalem and Gaza; authorizes the Prosecutor to proceed with the investigation into alleged crimes within the jurisdiction of the Court.",
+                link: "https://www.icc-cpi.int/CourtRecords/CR2021_02173.PDF",
+                tags: ["jurisdiction", "ICC", "West Bank", "Gaza", "investigation"]
+            },
+            {
+                id: 18,
+                title: "ICC Decision on Arrest Warrants for Israeli Officials",
+                type: "ICC",
+                year: 2024,
+                topic: "war-crimes",
+                summary: "Decision issuing arrest warrants for Israeli Prime Minister Netanyahu and Defense Minister Gallant for war crimes and crimes against humanity.",
+                fullText: "The Pre-Trial Chamber issues arrest warrants for Benjamin Netanyahu and Yoav Gallant for alleged war crimes (using starvation as a method of warfare) and crimes against humanity (extermination, murder, persecution) committed in the context of the situation in the State of Palestine.",
+                link: "https://www.icc-cpi.int/CourtRecords/CR2024_XXXXX.PDF",
+                tags: ["arrest warrants", "war crimes", "crimes against humanity", "starvation", "Netanyahu"]
+            },
+            {
+                id: 19,
+                title: "Geneva Convention Relative to the Protection of Civilian Persons in Time of War (Fourth Geneva Convention)",
+                type: "Treaty",
+                year: 1949,
+                topic: "human-rights",
+                summary: "International treaty establishing protections for civilians during armed conflict, applicable to the Palestinian territories.",
+                fullText: "Protects civilians in time of war, particularly in occupied territories. Article 49 prohibits individual or mass forcible transfers, as well as deportations of protected persons from occupied territory to the territory of the Occupying Power or to that of any other country, occupied or not.",
+                link: "https://www.un.org/en/genocideprevention/documents/atrocity-crimes/Doc.1%20_Geneva%20Convention%20IV.pdf",
+                tags: ["Geneva Convention", "civilian protection", "occupied territories", "forcible transfer"]
+            },
+            {
+                id: 20,
+                title: "International Covenant on Civil and Political Rights (ICCPR)",
+                type: "Treaty",
+                year: 1966,
+                topic: "human-rights",
+                summary: "International treaty protecting civil and political rights, ratified by both Israel and Palestine.",
+                fullText: "Guarantees fundamental rights including the right to life, freedom from torture, freedom of movement, and the right to self-determination. Article 1 recognizes the right of all peoples to self-determination.",
+                link: "https://www.ohchr.org/en/instruments-mechanisms/instruments/international-covenant-civil-and-political-rights",
+                tags: ["ICCPR", "self-determination", "human rights", "fundamental rights"]
+            },
+            {
+                id: 21,
+                title: "Convention on the Prevention and Punishment of the Crime of Genocide",
+                type: "Treaty",
+                year: 1948,
+                topic: "genocide",
+                summary: "International treaty defining and prohibiting genocide, applicable to allegations against Israel.",
+                fullText: "Defines genocide as acts committed with intent to destroy, in whole or in part, a national, ethnical, racial or religious group. Includes killing members of the group, causing serious bodily or mental harm, and deliberately inflicting conditions of life calculated to bring about its physical destruction.",
+                link: "https://www.un.org/en/genocideprevention/documents/about-us/Doc.1_Convention%20on%20the%20Prevention%20and%20Punishment%20of%20the%20Crime%20of%20Genocide.pdf",
+                tags: ["genocide", "prevention", "punishment", "intent to destroy"]
+            },
+            {
+                id: 22,
+                title: "Rome Statute of the International Criminal Court",
+                type: "Treaty",
+                year: 1998,
+                topic: "war-crimes",
+                summary: "Treaty establishing the ICC and defining international crimes including war crimes, crimes against humanity, and genocide.",
+                fullText: "Establishes the International Criminal Court with jurisdiction over genocide, crimes against humanity, war crimes, and the crime of aggression. Defines the court's territorial and temporal jurisdiction and the principle of complementarity.",
+                link: "https://www.icc-cpi.int/resource-library/Documents/RS-Eng.pdf",
+                tags: ["ICC", "Rome Statute", "war crimes", "crimes against humanity", "genocide"]
+            },
+            {
+                id: 23,
+                title: "UN Special Rapporteur on Palestine Report on Apartheid",
+                type: "Report",
+                year: 2016,
+                topic: "apartheid",
+                summary: "Report finding that Israeli practices toward Palestinians constitute apartheid under international law.",
+                fullText: "The Special Rapporteur concludes that Israel's treatment of Palestinians amounts to apartheid as defined under international law, involving systematic oppression and domination by one racial group over another, with the intent to maintain that regime.",
+                link: "https://www.ohchr.org/en/special-procedures/sr-palestine/promotion-and-protection-human-rights-palestinian-territories",
+                tags: ["apartheid", "systematic oppression", "racial domination", "Special Rapporteur"]
+            },
+            {
+                id: 24,
+                title: "UN Human Rights Council Commission of Inquiry Report on Gaza Conflict",
+                type: "Report",
+                year: 2024,
+                topic: "war-crimes",
+                summary: "Report documenting war crimes and crimes against humanity committed during the Gaza conflict.",
+                fullText: "The Commission finds evidence of war crimes and crimes against humanity, including extermination, murder, torture, and persecution. Documents systematic attacks on civilians, healthcare facilities, and humanitarian infrastructure.",
+                link: "https://www.ohchr.org/en/commissions-inquiry/gaza",
+                tags: ["war crimes", "crimes against humanity", "extermination", "healthcare attacks", "humanitarian"]
+            },
+            {
+                id: 25,
+                title: "UNESCOP Decision on Palestinian Heritage Sites",
+                type: "UN",
+                year: 2019,
+                topic: "cultural-rights",
+                summary: "Decision recognizing Hebron as a Palestinian World Heritage Site in Danger.",
+                fullText: "Includes the Old City of Hebron/Al-Khalil on the List of World Heritage in Danger, recognizing its cultural and historical significance to the Palestinian people and the need for its protection.",
+                link: "https://whc.unesco.org/en/list/1565/",
+                tags: ["World Heritage", "Hebron", "cultural heritage", "protection"]
+            }
+        ];
+
+        // Function to render legal documents
+        function renderLegalDocuments(documents) {
+            const grid = document.getElementById('legal-documents-grid');
+            grid.innerHTML = '';
+
+            if (documents.length === 0) {
+                grid.innerHTML = '<div class="no-results">No documents found matching your criteria.</div>';
+                return;
+            }
+
+            documents.forEach(doc => {
+                const card = document.createElement('div');
+                card.className = 'stat-card';
+                card.innerHTML = `
+                    <div class="legal-card-header">
+                        <span class="legal-type ${doc.type.toLowerCase()}">${doc.type}</span>
+                        <span class="legal-year">${doc.year}</span>
+                    </div>
+                    <h3 class="legal-title">${doc.title}</h3>
+                    <div class="legal-topic ${doc.topic}">${formatTopic(doc.topic)}</div>
+                    <p class="legal-summary">${doc.summary}</p>
+                    <div class="legal-tags">
+                        ${doc.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+                    </div>
+                    <div class="legal-actions">
+                        <a href="${doc.link}" target="_blank" class="btn-small">View Document</a>
+                        <button class="btn-small secondary" onclick="showFullText(${doc.id})">Details</button>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+
+            document.getElementById('results-count').textContent = documents.length;
+        }
+
+        // Format topic for display
+        function formatTopic(topic) {
+            const topicMap = {
+                'occupation': 'Occupation',
+                'apartheid': 'Apartheid',
+                'war-crimes': 'War Crimes',
+                'genocide': 'Genocide',
+                'settlements': 'Settlements',
+                'refugees': 'Refugees',
+                'human-rights': 'Human Rights',
+                'self-determination': 'Self-Determination',
+                'peace-process': 'Peace Process',
+                'statehood': 'Statehood',
+                'cultural-rights': 'Cultural Rights'
+            };
+            return topicMap[topic] || topic;
+        }
+
+        // Show full text modal
+        function showFullText(id) {
+            const doc = legalDocuments.find(d => d.id === id);
+            if (!doc) return;
+
+            // Create modal
+            const modal = document.createElement('div');
+            modal.className = 'modal';
+            modal.innerHTML = `
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>${doc.title}</h2>
+                        <button class="close-modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-meta">
+                            <span class="legal-type ${doc.type.toLowerCase()}">${doc.type}</span>
+                            <span class="legal-year">${doc.year}</span>
+                            <span class="legal-topic ${doc.topic}">${formatTopic(doc.topic)}</span>
+                        </div>
+                        <div class="modal-summary">
+                            <h3>Summary</h3>
+                            <p>${doc.summary}</p>
+                        </div>
+                        <div class="modal-full-text">
+                            <h3>Full Text</h3>
+                            <p>${doc.fullText}</p>
+                        </div>
+                        <div class="modal-tags">
+                            <h3>Tags</h3>
+                            ${doc.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+                        </div>
+                        <div class="modal-actions">
+                            <a href="${doc.link}" target="_blank" class="btn">View Official Document</a>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            document.body.appendChild(modal);
+
+            // Close modal event
+            modal.querySelector('.close-modal').addEventListener('click', () => {
+                document.body.removeChild(modal);
+            });
+
+            // Close on click outside
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    document.body.removeChild(modal);
+                }
+            });
+        }
+
+        // Filter and search functions
+        function filterDocuments() {
+            const searchTerm = document.getElementById('legal-search').value.toLowerCase();
+            const typeFilter = document.getElementById('type-filter').value;
+            const yearFilter = document.getElementById('year-filter').value;
+            const topicFilter = document.getElementById('topic-filter').value;
+
+            const filtered = legalDocuments.filter(doc => {
+                const matchesSearch = doc.title.toLowerCase().includes(searchTerm) ||
+                    doc.summary.toLowerCase().includes(searchTerm) ||
+                    doc.tags.some(tag => tag.toLowerCase().includes(searchTerm));
+                const matchesType = !typeFilter || doc.type === typeFilter;
+                const matchesYear = !yearFilter || doc.year.toString() === yearFilter;
+                const matchesTopic = !topicFilter || doc.topic === topicFilter;
+
+                return matchesSearch && matchesType && matchesYear && matchesTopic;
+            });
+
+            renderLegalDocuments(filtered);
+        }
+
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', function () {
+            // Render initial documents
+            renderLegalDocuments(legalDocuments);
+
+            // Add event listeners
+            document.getElementById('legal-search').addEventListener('input', filterDocuments);
+            document.getElementById('type-filter').addEventListener('change', filterDocuments);
+            document.getElementById('year-filter').addEventListener('change', filterDocuments);
+            document.getElementById('topic-filter').addEventListener('change', filterDocuments);
+        });
+
+
     </script>
+
+    <style>
+        .legal-filters-search {
+            margin-bottom: 2rem;
+        }
+
+        .search-container {
+            margin-bottom: 1rem;
+        }
+
+        .search-container input {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+
+        .filters-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .filter-group {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .filter-group select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+
+        .results-info {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .legal-cards-container {
+            margin-top: 2rem;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .legal-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .legal-type {
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .legal-type.un {
+            background: #4a90e2;
+            color: white;
+        }
+
+        .legal-type.icj {
+            background: #50c878;
+            color: white;
+        }
+
+        .legal-type.icc {
+            background: #ff6b6b;
+            color: white;
+        }
+
+        .legal-type.treaty {
+            background: #9b59b6;
+            color: white;
+        }
+
+        .legal-type.court {
+            background: #f39c12;
+            color: white;
+        }
+
+        .legal-type.report {
+            background: #34495e;
+            color: white;
+        }
+
+        .legal-year {
+            background: #ecf0f1;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        .legal-title {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+        }
+
+        .legal-topic {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .legal-topic.occupation {
+            background: #e74c3c;
+            color: white;
+        }
+
+        .legal-topic.apartheid {
+            background: #8e44ad;
+            color: white;
+        }
+
+        .legal-topic.war-crimes {
+            background: #c0392b;
+            color: white;
+        }
+
+        .legal-topic.genocide {
+            background: #2c3e50;
+            color: white;
+        }
+
+        .legal-topic.settlements {
+            background: #d35400;
+            color: white;
+        }
+
+        .legal-topic.refugees {
+            background: #27ae60;
+            color: white;
+        }
+
+        .legal-topic.human-rights {
+            background: #2980b9;
+            color: white;
+        }
+
+        .legal-topic.self-determination {
+            background: #16a085;
+            color: white;
+        }
+
+        .legal-topic.peace-process {
+            background: #f39c12;
+            color: white;
+        }
+
+        .legal-topic.statehood {
+            background: #9b59b6;
+            color: white;
+        }
+
+        .legal-topic.cultural-rights {
+            background: #1abc9c;
+            color: white;
+        }
+
+        .legal-summary {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .legal-tags {
+            margin-bottom: 1rem;
+        }
+
+        .legal-actions {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .btn-small {
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            background: #2c3e50;
+            color: white;
+            transition: background 0.3s ease;
+            flex: 1;
+            text-align: center;
+        }
+
+        .btn-small:hover {
+            background: #1a2a3a;
+        }
+
+        .btn-small.secondary {
+            background: #ecf0f1;
+            color: #2c3e50;
+        }
+
+        .btn-small.secondary:hover {
+            background: #d5dbdb;
+        }
+
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .modal-content {
+            background: white;
+            border-radius: 12px;
+            max-width: 800px;
+            max-height: 90vh;
+            overflow-y: auto;
+            margin: 1rem;
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .modal-header h2 {
+            margin: 0;
+            color: #2c3e50;
+        }
+
+        .close-modal {
+            background: none;
+            border: none;
+            font-size: 2rem;
+            cursor: pointer;
+            color: #777;
+        }
+
+        .close-modal:hover {
+            color: #2c3e50;
+        }
+
+        .modal-body {
+            padding: 1.5rem;
+        }
+
+        .modal-meta {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .modal-summary,
+        .modal-full-text {
+            margin-bottom: 1.5rem;
+        }
+
+        .modal-summary h3,
+        .modal-full-text h3 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        .modal-actions {
+            text-align: center;
+            margin-top: 1.5rem;
+        }
+
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            background: #2c3e50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #1a2a3a;
+        }
+
+        .no-results {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 3rem;
+            color: #777;
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+
+            .filters-container {
+                flex-direction: column;
+            }
+
+            .filter-group {
+                min-width: 100%;
+            }
+
+            .legal-actions {
+                flex-direction: column;
+            }
+
+            .btn-small {
+                width: 100%;
+                margin-bottom: 0.5rem;
+            }
+        }
+    </style>
 </body>
+
 </html>

@@ -4,24 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Palestinian Resistance | Free Palestine</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/resistance.css">
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div id="common-placeholder"></div>
+    <!-- Navigation -->
+    <header id="nav-container"></header>
 
-     <script>
-            fetch('/assets/commons/commonNavFooter.html')
-                .then(res => res.text())
-                .then(text => {
-                    let oldelem = document.querySelector("div[id='common-placeholder']");
-                    let newelem = document.createElement("div");
-                    newelem.innerHTML = text;
-                    oldelem.parentNode.replaceChild(newelem, oldelem);
-                })
-        </script>
-
-  <!-- Hero Section -->
+    <!-- Hero Section -->
     <section class="resistance-hero">
         <div class="hero-content">
             <h1>Palestinian Resistance <br>Through the Years</h1>
@@ -253,21 +245,15 @@
         </div>
     </section>
 
+    <!-- Footer -->
+    <footer id="footer-container"></footer>
 
-  <div id="footer-placeholder"></div>
-
-  <script>
-        fetch('/assets/commons/commonNavFooter.html')
-            .then(res => res.text())
-            .then(text => {
-                let oldelem = document.querySelector("div[id='common-placeholder']");
-                let newelem = document.createElement("div");
-                newelem.innerHTML = text;
-                oldelem.parentNode.replaceChild(newelem, oldelem);
-            })
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            includeNavFooter();
+        });
     </script>
 
-
-  <script src="../assets/js/resistance.js"></script>
+    <script src="../assets/js/resistance.js"></script>
 </body>
 </html>

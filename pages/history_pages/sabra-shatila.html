@@ -8,18 +8,7 @@
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="common-placeholder"></div>
-    
-        <script>
-            fetch('/assets/commons/commonNavFooter.html')
-                .then(res => res.text())
-                .then(text => {
-                    let oldelem = document.querySelector("div[id='common-placeholder']");
-                    let newelem = document.createElement("div");
-                    newelem.innerHTML = text;
-                    oldelem.parentNode.replaceChild(newelem, oldelem);
-                })
-        </script>
+    <header id="nav-container"></header>
 
     <!-- Main Content -->
     <div class="container">
@@ -27,17 +16,12 @@
         <p>The Sabra and Shatila massacre was the killing of between 460 and 3,500 civilians, mostly Palestinians and Lebanese Shiites, by the Phalange militia under the command of the Israeli Defense Forces (IDF) in the Sabra and Shatila refugee camps in Beirut, Lebanon, from 16 to 18 September 1982.</p>
     </div>
 
-    <div id="common-placeholder"></div>
+    <footer id="footer-container"></footer>
 
     <script>
-        fetch('/assets/commons/commonNavFooter.html')
-            .then(res => res.text())
-            .then(text => {
-                let oldelem = document.querySelector("div[id='common-placeholder']");
-                let newelem = document.createElement("div");
-                newelem.innerHTML = text;
-                oldelem.parentNode.replaceChild(newelem, oldelem);
-            })
+        document.addEventListener('DOMContentLoaded', function() {
+            includeNavFooter();
+        });
     </script>
 </body>
 </html>

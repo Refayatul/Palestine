@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction - Palestine Throughout History (9000 BCE - 1918)</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/timeline-styles.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="nav-container">
+        <!-- Navigation will be loaded here -->
+    </header>
+    
+    <main>
+        <section class="history-timeline-hero">
+            <h1>Palestine Throughout History</h1>
+            <p id="intro-text">From ancient civilizations to Ottoman rule, Palestine has been home to diverse cultures and peoples for over 9,000 years. This introduction explores the rich historical context that shaped Palestinian society before the modern era, including the region's ancient heritage, Ottoman administration, and the emergence of the Zionist movement that would fundamentally alter the course of Palestinian history.</p>
+            <a href="/pages/history.html" class="btn-small">Back to History Overview</a>
+        </section>
+
+        <section class="timeline-section">
+            <div id="timeline-container" class="timeline-container">
+                <!-- Timeline events will be rendered here by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer-container">
+        <!-- Footer will be loaded here -->
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            includeNavFooter();
+
+            // Comprehensive timeline data for Palestine's ancient and Ottoman history
+            const timelineData = [
+                {
+                    date: "9000 BCE - 3000 BCE",
+                    title: "Ancient Origins and Early Civilizations",
+                    description: "Palestine and the fertile crescent become home to the Natufians, one of the peoples credited with inventing agriculture. Palestinian agricultural practices can be traced back to this period. The region between the Mediterranean and the Jordan River develops into a crossroads of civilizations, with early settlements establishing the foundation for millennia of cultural exchange and development.",
+                    category: "ancient"
+                },
+                {
+                    date: "3000 BCE - 1516 CE",
+                    title: "Ancient Kingdoms and Empires",
+                    description: "Palestine becomes home to dozens of cultures, kingdoms, and empires including Assyrian, Nabataean, Persian, and Roman civilizations. Each influences and is influenced by the rich cultural and civilizational mélange that defines the area. Ancient influences persist in modern Palestinian idioms, vocabulary, and toponymy. The region's strategic location makes it a crucial crossroads for trade, culture, and religion throughout antiquity.",
+                    category: "ancient"
+                },
+                {
+                    date: "1516 - 1917",
+                    title: "Ottoman Rule and Administration",
+                    description: "Following the decisive defeat of the Mamluks in the Battle of Marj Dabiq (1516), Ottoman armies conquer the Levant. Jerusalem holds special importance due to its religious and historic significance. Sweeping construction projects are carried out, including the striking walls of Jerusalem erected by Suleiman the Magnificent. Palestine is divided into various political configurations, with the final division in 1887 creating three districts (Sanjaks): Jerusalem, Nablus, and Acre. The Sanjak of Jerusalem is governed directly by Constantinople (later Istanbul).",
+                    category: "ottoman"
+                },
+                {
+                    date: "1887 - 1917",
+                    title: "Late Ottoman Palestine Demographics",
+                    description: "The population of Ottoman Palestine amounts to approximately 600,000, with the vast majority being Sunni Muslim. Palestinian Christians make up around 10 percent of the population, while Jewish Palestinians number around 25,000, mainly situated in Jerusalem, Hebron, Safad, and Tiberius. The Ottoman Millet system provides a degree of autonomy to minority religious and ethnic communities, superior to the persecution faced by religious groups in Europe. Relations between religious groups are generally stable and peaceful, nurtured by over a millennium of coexistence.",
+                    category: "ottoman"
+                },
+                {
+                    date: "1800s - 1917",
+                    title: "Ottoman Decline and Rising Tensions",
+                    description: "As the Ottoman Empire weakens, relations between various ethnic groups fray. Rebellions against Ottoman rule occur, including Palestinian autonomy under Daher al-'Umar. The Young Turk Revolution and increasing efforts to Turkify provinces create additional tensions. Towards the end of Ottoman rule, periods of peace and prosperity become less common than hardship and war. The empire's collapse after World War I leaves the peoples of the region vulnerable to new forms of domination.",
+                    category: "ottoman"
+                },
+                {
+                    date: "1897",
+                    title: "First Zionist Congress and Political Zionism",
+                    description: "Theodor Herzl convenes the first Zionist Congress in Basel, Switzerland, with over 200 delegates from across Europe. The congress program calls for establishing a Jewish state in Palestine and coordinating Zionist settlement there. This becomes the foundation of political Zionism, which Herzl positions as a 'solution for the Jewish question' to emancipate Jewish people from persecution. Earlier movements like Hibbat Zion existed but lacked the centralized organization of the Zionist congress.",
+                    category: "zionism"
+                },
+                {
+                    date: "1897 - 1917",
+                    title: "Zionist Colonial Framework",
+                    description: "Zionism emerges as a settler-colonial political movement calling for a Jewish nation-state in Palestine with a Jewish majority. Early Zionist discussions acknowledge the native Palestinian Arab population and consensus forms around removal either by agreement or force. Zionist leaders are honest about colonial nature - Herzl writes to Cecil Rhodes calling it a 'colonial adventure.' Vladimir Jabotinsky states colonization requires armed force. The first Zionist bank is named the 'Jewish Colonial Trust' and efforts are supported by the 'Palestine Jewish Colonization Association.'",
+                    category: "zionism"
+                },
+                {
+                    date: "1917",
+                    title: "Balfour Declaration and British Entry",
+                    description: "Britain issues the Balfour Declaration, stating: 'His Majesty's government view with favour the establishment in Palestine of a national home for the Jewish people, and will use their best endeavours to facilitate the achievement of this object.' British forces enter Jerusalem. The declaration claims to protect 'civil and religious rights of existing non-Jewish communities' but British colonial interests, not altruism, motivate support for Zionism. The British see the Zionist movement as a mechanism to realize interests in the Levant and Suez.",
+                    category: "mandate"
+                },
+                {
+                    date: "1918 - 1922",
+                    title: "Transition to British Mandate",
+                    description: "Following Ottoman defeat in WWI, the empire dissolves and its regions are carved up among European colonial powers. In the Levant, Palestine and Jordan fall under British mandate while Syria and Lebanon fall under French mandate. Palestine officially becomes a British mandate in 1922. Classified as a 'Class A' mandate, Palestine is considered provisionally independent but remains under Allied control until deemed ready for full independence - a status that never materializes.",
+                    category: "mandate"
+                },
+                {
+                    date: "1922 - 1948",
+                    title: "British Mandate and Zionist Expansion",
+                    description: "The British mandate provides a golden opportunity for Zionist movement to achieve its aims. Emboldened by the Balfour Declaration, Zionists ramp up colonization efforts and establish the Yishuv - a provisional proto-state within Palestine. British provide explicit and tacit sponsorship allowing Zionists to thrive while harshly repressing Palestinian movements. Zionist expansion leads to conquest and mass destruction of hundreds of Palestinian villages and neighborhoods, setting the stage for the 1948 Nakba.",
+                    category: "mandate"
+                }
+            ];
+
+            // Render timeline
+            const timelineContainer = document.getElementById('timeline-container');
+            if (timelineContainer) {
+                timelineData.forEach((event, index) => {
+                    const eventElement = document.createElement('div');
+                    eventElement.className = `timeline-event ${index % 2 === 0 ? 'left' : 'right'}`;
+                    eventElement.innerHTML = `
+                        <div class="timeline-content">
+                            <span class="timeline-date">${event.date}</span>
+                            <h3 class="timeline-title">${event.title}</h3>
+                            <p class="timeline-description">${event.description}</p>
+                            <span class="timeline-category ${event.category}">${event.category.toUpperCase()}</span>
+                        </div>
+                    `;
+                    timelineContainer.appendChild(eventElement);
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

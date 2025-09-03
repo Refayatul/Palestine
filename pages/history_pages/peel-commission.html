@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,37 +8,26 @@
     <link rel="stylesheet" href="../style.css">
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <div id="common-placeholder"></div>
-    
-        <script>
-            fetch('/assets/commons/commonNavFooter.html')
-                .then(res => res.text())
-                .then(text => {
-                    let oldelem = document.querySelector("div[id='common-placeholder']");
-                    let newelem = document.createElement("div");
-                    newelem.innerHTML = text;
-                    oldelem.parentNode.replaceChild(newelem, oldelem);
-                })
-        </script>
+    <header id="nav-container"></header>
 
     <!-- Main Content -->
     <div class="container">
         <h1>Peel Commission Partition Plan (1937)</h1>
-        <p>The Peel Commission Partition Plan was the first formal proposal to partition Palestine. It was put forth by the British government in 1937, recommending that Palestine be divided into separate Arab and Jewish states. The plan proposed giving the Jewish state 33% of the land, despite Jews owning only 7% of the land and comprising only 30% of the population.</p>
+        <p>The Peel Commission Partition Plan was the first formal proposal to partition Palestine. It was put forth by
+            the British government in 1937, recommending that Palestine be divided into separate Arab and Jewish states.
+            The plan proposed giving the Jewish state 33% of the land, despite Jews owning only 7% of the land and
+            comprising only 30% of the population.</p>
     </div>
 
-    <div id="common-placeholder"></div>
+    <footer id="footer-container"></footer>
 
     <script>
-        fetch('/assets/commons/commonNavFooter.html')
-            .then(res => res.text())
-            .then(text => {
-                let oldelem = document.querySelector("div[id='common-placeholder']");
-                let newelem = document.createElement("div");
-                newelem.innerHTML = text;
-                oldelem.parentNode.replaceChild(newelem, oldelem);
-            })
+        document.addEventListener('DOMContentLoaded', function () {
+            includeNavFooter();
+        });
     </script>
 </body>
+
 </html>

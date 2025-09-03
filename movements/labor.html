@@ -10,45 +10,109 @@
 </head>
 
 <body>
-    <div id="common-placeholder"></div>
+    <!-- Navigation -->
+    <header id="nav-container"></header>
     
-        <script>
-            fetch('/assets/commons/commonNavFooter.html')
-                .then(res => res.text())
-                .then(text => {
-                    let oldelem = document.querySelector("div[id='common-placeholder']");
-                    let newelem = document.createElement("div");
-                    newelem.innerHTML = text;
-                    oldelem.parentNode.replaceChild(newelem, oldelem);
-                })
-        </script>
     <main>
         <section class="hero">
             <div class="hero-content">
                 <h1>Palestinian Labor Movement</h1>
-                <p>Information and resources about the Palestinian labor movement.</p>
+                <p>Information and resources about the Palestinian labor movement and workers' rights under occupation.</p>
             </div>
         </section>
 
         <section class="section">
             <div class="container">
-                <h2>Overview</h2>
-                <p>This section will provide an overview of the Palestinian labor movement, its history, goals, and
-                    activities.</p>
+                <h2>Historical Overview</h2>
+                <p>The Palestinian labor movement has deep roots dating back to the early 20th century, evolving through various phases of resistance, organization, and struggle for workers' rights under colonial and occupation conditions.</p>
+                
+                <h3>Early Labor Organization (1900s-1948)</h3>
+                <p>Palestinian workers began organizing during the Ottoman and British Mandate periods. The first labor unions emerged in the 1920s and 1930s, primarily among Arab workers employed in construction, agriculture, and port activities. These early unions faced severe repression from colonial authorities and Zionist organizations who viewed organized Palestinian labor as a threat to their economic interests.</p>
+                <p>During the 1936-1939 Arab Revolt, labor strikes became a key form of resistance against British colonial rule and Zionist settlement. Workers in Jerusalem, Jaffa, and Haifa organized general strikes that paralyzed the colonial economy, demonstrating the political power of organized labor.</p>
+                
+                <h3>Post-1948 Displacement and Diaspora Labor</h3>
+                <p>Following the Nakba in 1948, hundreds of thousands of Palestinian workers were displaced from their lands and workplaces. Those who remained in Israel faced discriminatory labor laws and systematic exclusion from many sectors. Palestinian refugees in neighboring countries established new labor organizations, often within broader Palestinian political movements.</p>
+                <p>In the occupied territories after 1967, Palestinian workers were integrated into the Israeli economy as a source of cheap labor, creating complex dynamics of economic dependency and exploitation that persist today.</p>
+                
+                <h3>Occupation Era Labor Struggles (1967-Present)</h3>
+                <p>Under Israeli military occupation, Palestinian workers have faced systematic discrimination, restricted movement, and harsh working conditions. The Israeli permit system has been used as a tool of control, determining who can work where and when. Palestinian labor unions have operated under severe restrictions, with many leaders arrested or deported.</p>
+                <p>The Palestinian General Federation of Trade Unions (PGFTU), established in 1997, became the primary representative body for Palestinian workers in the occupied territories. However, it has faced constant challenges including Israeli restrictions on organizing, financial constraints, and political divisions.</p>
+                
+                <h2>Key Issues and Challenges</h2>
+                
+                <h3>Discriminatory Labor Practices</h3>
+                <p>Palestinian workers in Israel face significant wage gaps compared to their Jewish counterparts, with studies showing Palestinian workers earn 20-30% less for equivalent work. They are also excluded from many high-paying sectors and face systematic barriers to advancement.</p>
+                <p>The Knesset has passed laws specifically targeting Palestinian workers, including the 2017 law allowing the confiscation of wages from Palestinian workers accused of security offenses without due process.</p>
+                
+                <h3>Permit System and Movement Restrictions</h3>
+                <p>The Israeli permit system controls Palestinian access to work inside Israel and Israeli settlements. Workers must apply for permits that can be revoked at any time, creating a vulnerable workforce subject to arbitrary dismissal and deportation.</p>
+                <p>Checkpoints and the separation wall severely restrict Palestinian movement, making it difficult for workers to reach their workplaces and preventing the development of a unified Palestinian labor market.</p>
+                
+                <h3>Settlement Labor and Exploitation</h3>
+                <p>Palestinian workers employed in Israeli settlements face particularly harsh conditions, including lack of labor protections, wage theft, and exposure to violence. International law prohibits the transfer of occupied population to work in occupied territory, but Israel continues this practice with impunity.</p>
+                <p>Many Palestinian workers in settlements are not covered by Israeli labor law despite working on Israeli-owned enterprises, leaving them without basic protections like minimum wage, overtime pay, or workplace safety standards.</p>
+                
+                <h3>Gaza Workers Under Siege</h3>
+                <p>The blockade of Gaza has devastated the local labor market, with unemployment rates exceeding 50% and youth unemployment reaching 70%. The few remaining jobs are in humanitarian organizations or reconstruction projects heavily controlled by international actors.</p>
+                <p>Gaza workers face unique challenges including restrictions on movement of goods and people, making it nearly impossible to organize independent labor activities or access international labor solidarity networks.</p>
+                
+                <h2>Resistance and Solidarity</h2>
+                
+                <h3>General Strikes and Mass Action</h3>
+                <p>Palestinian workers have used general strikes as a powerful tool of resistance. Notable examples include the 1936 general strike during the Arab Revolt, the 1987-1993 Intifada strikes, and the 2018-2019 Great March of Return, where workers joined mass demonstrations despite severe economic consequences.</p>
+                <p>During the First Intifada, Palestinian workers refused to work in Israeli settlements and factories, significantly impacting the Israeli economy and demonstrating the strategic importance of Palestinian labor.</p>
+                
+                <h3>International Solidarity and Boycotts</h3>
+                <p>The Palestinian labor movement has been a key advocate for the Boycott, Divestment, and Sanctions (BDS) movement, calling for international pressure on Israeli companies that exploit Palestinian workers or operate in settlements.</p>
+                <p>Palestinian trade unions have worked with international labor organizations to document violations and pressure multinational corporations to respect workers' rights. The International Trade Union Confederation has repeatedly condemned Israel's treatment of Palestinian workers.</p>
+                
+                <h3>Women Workers and Labor Rights</h3>
+                <p>Palestinian women workers face triple discrimination based on gender, nationality, and occupation status. They are often concentrated in low-wage sectors like agriculture and domestic work, with limited access to labor protections.</p>
+                <p>Women's labor organizations have emerged to address these specific challenges, including groups focused on agricultural workers, domestic workers, and women in the informal economy.</p>
+                
+                <h2>Current Status and Future Challenges</h2>
+                
+                <h3>Digital Age and New Forms of Organization</h3>
+                <p>Social media and digital platforms have enabled new forms of labor organizing among Palestinian workers, particularly younger generations. Online campaigns have successfully raised awareness about labor violations and built international solidarity.</p>
+                <p>Gig economy workers and those in the informal sector are finding new ways to organize despite traditional union structures being weakened by occupation restrictions.</p>
+                
+                <h3>Climate Change and Agricultural Labor</h3>
+                <p>Climate change is severely impacting Palestinian agricultural workers, with water scarcity and land degradation reducing employment opportunities in farming. Israeli restrictions on water access and land use exacerbate these challenges.</p>
+                <p>Palestinian agricultural workers are at the forefront of climate justice struggles, connecting labor rights with environmental justice and food sovereignty.</p>
+                
+                <h3>Youth Unemployment and Economic Crisis</h3>
+                <p>Palestinian youth face unemployment rates exceeding 60% in some areas, creating a generation of educated young people unable to find meaningful work. This crisis is driving migration and social instability.</p>
+                <p>The economic crisis in the occupied territories, worsened by Israeli restrictions and the Palestinian Authority's financial dependence, has severely limited job creation and economic development.</p>
+                
+                <h2>Resources and Further Reading</h2>
+                <ul>
+                    <li>Palestinian General Federation of Trade Unions (PGFTU) - Official website and reports</li>
+                    <li>"Workers in the Shadow: Labor Conditions in the Occupied Palestinian Territory" - Human Rights Watch</li>
+                    <li>"The Political Economy of Palestine: Capital, Class and the Colonial Process" - Yezid Sayigh</li>
+                    <li>"Palestinian Workers in Israel: A Study in Contemporary Labor Relations" - various academic studies</li>
+                    <li>International labor organizations' reports on Palestinian worker conditions</li>
+                    <li>BDS movement resources on labor boycotts and corporate accountability</li>
+                </ul>
+                
+                <p><strong>Key Statistics:</strong></p>
+                <ul>
+                    <li>Over 120,000 Palestinian workers employed in Israel and settlements (pre-2023)</li>
+                    <li>Palestinian unemployment rate: 27% in West Bank, 47% in Gaza (2022)</li>
+                    <li>Palestinian youth unemployment: 57% in West Bank, 70% in Gaza</li>
+                    <li>Wage gap: Palestinian workers earn 20-30% less than Jewish workers for equivalent work</li>
+                    <li>Over 60% of Palestinian workers in informal economy with no labor protections</li>
+                </ul>
             </div>
         </section>
     </main>
-    <div id="common-placeholder"></div>
+
+    <!-- Footer -->
+    <footer id="footer-container"></footer>
 
     <script>
-        fetch('/assets/commons/commonNavFooter.html')
-            .then(res => res.text())
-            .then(text => {
-                let oldelem = document.querySelector("div[id='common-placeholder']");
-                let newelem = document.createElement("div");
-                newelem.innerHTML = text;
-                oldelem.parentNode.replaceChild(newelem, oldelem);
-            })
+        document.addEventListener('DOMContentLoaded', function() {
+            includeNavFooter();
+        });
     </script>
 </body>
 
