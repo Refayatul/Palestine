@@ -12,7 +12,7 @@ async function includeHTML(file, containerId) {
 }
 
 // Global include function
-window.includeNavFooter = async function() {
+window.includeNavFooter = async function () {
     try {
         const response = await fetch('/assets/commons/commonNavFooter.html');
         if (!response.ok) throw new Error('Failed to load commonNavFooter.html');
@@ -116,32 +116,12 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
-// Donate Menu Functionality
-const donateTrigger = document.getElementById('donateTrigger');
-const donateMenu = document.getElementById('donateMenu');
-const closeDonate = document.querySelector('#donateMenu .close');
-
-donateTrigger.addEventListener('click', (e) => {
-    e.preventDefault();
-    donateMenu.style.display = 'block';
-});
-
-closeDonate.addEventListener('click', (e) => {
-    e.preventDefault();
-    donateMenu.style.display = 'none';
-});
-
-// Close donate menu when clicking outside
-window.addEventListener('click', (e) => {
-    if (e.target === donateMenu) {
-        donateMenu.style.display = 'none';
-    }
-});
+// Donate Menu Functionality - moved to DOMContentLoaded
 
 // Close mobile menu when clicking outside
 document.addEventListener('click', (e) => {
-    if (mobileNav.classList.contains('active') && 
-        !mobileNav.contains(e.target) && 
+    if (mobileNav.classList.contains('active') &&
+        !mobileNav.contains(e.target) &&
         !hamburger.contains(e.target)) {
         mobileNav.classList.remove('active');
     }
@@ -151,21 +131,76 @@ document.addEventListener('click', (e) => {
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        
+
         const targetId = this.getAttribute('href');
         if (targetId === '#') return;
-        
+
         const targetElement = document.querySelector(targetId);
         if (targetElement) {
             window.scrollTo({
                 top: targetElement.offsetTop - 70,
                 behavior: 'smooth'
             });
-            
+
             // Close mobile menu if open
             if (mobileNav.classList.contains('active')) {
                 mobileNav.classList.remove('active');
             }
         }
     });
+});
+
+// Index page specific functionality
+document.addEventListener('DOMContentLoaded', function () {
+    // Only run on index page
+    if (!document.querySelector('.hero')) return;
+
+    // Smooth scroll for hero scroll indicator
+    const heroScroll = document.querySelector('.hero-scroll');
+    if (heroScroll) {
+        heroScroll.addEventListener('click', function () {
+            const nextSection = document.querySelector('#history');
+            if (nextSection) {
+                nextSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    }
+
+    // Add hover effects for action cards
+    const actionOptions = document.querySelectorAll('.option');
+    actionOptions.forEach(option => {
+        option.addEventListener('mouseenter', function () {
+            this.style.transform = 'translateY(-5px)';
+            this.style.transition = 'transform 0.3s ease';
+        });
+        option.addEventListener('mouseleave', function () {
+            this.style.transform = 'translateY(0)';
+        });
+    });
+
+    // Donate menu functionality
+    const donateTrigger = document.getElementById('donateTrigger');
+    const donateMenu = document.getElementById('donateMenu');
+    const closeDonate = document.querySelector('#donateMenu .close');
+
+    if (donateTrigger && donateMenu) {
+        donateTrigger.addEventListener('click', function (e) {
+            e.preventDefault();
+            donateMenu.style.display = donateMenu.style.display === 'block' ? 'none' : 'block';
+        });
+
+        if (closeDonate) {
+            closeDonate.addEventListener('click', function (e) {
+                e.preventDefault();
+                donateMenu.style.display = 'none';
+            });
+        }
+
+        // Close donate menu when clicking outside
+        document.addEventListener('click', function (e) {
+            if (!donateTrigger.contains(e.target) && !donateMenu.contains(e.target)) {
+                donateMenu.style.display = 'none';
+            }
+        });
+    }
 });

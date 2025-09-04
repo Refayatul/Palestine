@@ -22,7 +22,21 @@ The system architecture is a comprehensive static website built for Cloudflare P
   - Embassy/Consulate Directory with country/city filters and contact information
   - Share Card Generator with Canvas-based image creation and multiple themes
   - Supporter Badge/Embed with three badge variants and copy-to-clipboard codes
-  - Protest/Event Finder with location-based search and geolocation support
+  - Protest/Event Finder: REMOVED - Would require ongoing maintenance
+- **Navigation & Discovery:**
+  - Redesigned navigation with 5 logical categories (History, Learn, Take Action, Community, More)
+  - Advanced search system with content filtering and real-time results
+  - Comprehensive site map with 50+ pages overview and statistics
+  - Mobile-responsive navigation with matching desktop structure
+- **Diaspora Data System:**
+  - Complete global diaspora coverage with 29 communities across 7 regions
+  - Europe: 6 communities (UK, Germany, France, Sweden, Netherlands, Denmark)
+  - North America: 7 communities (USA: Chicago, Dearborn, LA, NYC; Canada: Toronto, Montreal, Vancouver)
+  - South America: 6 communities (Chile, Brazil, Argentina, Colombia, Peru, Ecuador)
+  - Middle East: 6 communities (Jordan, Lebanon, Syria, Egypt, Kuwait, UAE)
+  - Africa: 6 communities (South Africa, Kenya, Tanzania, Uganda, Ghana, Nigeria)
+  - Asia: 6 communities (Malaysia, Indonesia, Pakistan, Bangladesh, Japan, South Korea)
+  - Oceania: 4 communities (Australia: Sydney, Melbourne; New Zealand: Auckland, Wellington)
 - **Shared Components:** Common navigation/footer loaded via JavaScript fetch
 - **Data Layer:** JSON files for all dynamic content
 - **Search System:** Fuse.js-powered search with pre-built index

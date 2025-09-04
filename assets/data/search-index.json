@@ -1,0 +1,344 @@
+[
+  {
+    "id": "index",
+    "title": "Home - Free Palestine",
+    "content": "Palestine history resistance advocacy tools education legal diaspora movements massacres boycott BDS Nakba Intifada occupation liberation justice Palestinian people armed struggle nonviolent",
+    "url": "/index.html",
+    "type": "page",
+    "category": "home",
+    "date": "2025-01-01"
+  },
+  {
+    "id": "search",
+    "title": "Search - Free Palestine",
+    "content": "search find content pages articles history tools education legal diaspora movements massacres boycott BDS discover explore",
+    "url": "/search.html",
+    "type": "page",
+    "category": "navigation",
+    "date": "2025-01-01"
+  },
+  {
+    "id": "site-map",
+    "title": "Site Map - Free Palestine",
+    "content": "site map navigation directory content overview pages sections tools history education legal diaspora movements massacres boycott",
+    "url": "/site-map.html",
+    "type": "page",
+    "category": "navigation",
+    "date": "2025-01-01"
+  },
+  {
+    "id": "history-timeline",
+    "title": "History Timeline - Free Palestine",
+    "content": "history timeline Palestinian events 1918 1948 1967 1987 2000 2008 2014 2021 2023 Nakba Intifada occupation resistance liberation",
+    "url": "/pages/history_pages/history.html",
+    "type": "page",
+    "category": "history",
+    "date": "2025-01-01"
+  },
+  {
+    "id": "history-1918",
+    "title": "1918 - End of Ottoman Rule",
+    "content": "1918 Ottoman Empire end World War I Palestine Mandate British control Middle East history",
+    "url": "/history/1918.html",
+    "type": "page",
+    "category": "history",
+    "date": "2025-01-01"
+  },
+  {
+    "id": "history-1948",
+    "title": "1948 - The Nakba",
+    "content": "1948 Nakba Palestinian catastrophe displacement refugee crisis Zionist occupation Deir Yassin Tantura massacres",
+    "url": "/history/1948.html",
+    "type": "page",
+    "category": "history",
+    "date": "2025-01-01"
+  },
+  {
+    "id": "history-1967",
+    "title": "1967 - The Naksa",
+    "content": "1967 Naksa Six Day War occupation West Bank Gaza Jerusalem Golan Heights Sinai Peninsula",
+    "url": "/history/1967.html",
+    "type": "page",
+    "category": "history",
+    "date": "2025-01-01"
+  },
+  {
+    "id": "history-1987",
+    "title": "1987 - First Intifada",
+    "content": "1987 First Intifada uprising stones resistance occupation Palestinian youth movement",
+    "url": "/history/1987.html",
+    "type": "page",
+    "category": "history",
+    "date": "2025-01-01"
+  },
+  {
+    "id": "history-2000",
+    "title": "2000 - Second Intifada",
+    "content": "2000 Second Intifada Al Aqsa Intifada Camp David failure suicide bombings military operations",
+    "url": "/history/2000.html",
+    "type": "page",
+    "category": "history",
+    "date": "2025-01-01"
+  },
+  {
+    "id": "history-2008",
+    "title": "2008 - Operation Cast Lead",
+    "content": "2008 Operation Cast Lead Gaza war blockade humanitarian crisis military operation",
+    "url": "/history/2008.html",
+    "type": "page",
+    "category": "history",
+    "date": "2025-01-01"
+  },
+  {
+    "id": "history-2014",
+    "title": "2014 - Operation Protective Edge",
+    "content": "2014 Operation Protective Edge Gaza war tunnels rockets ceasefire humanitarian disaster",
+    "url": "/history/2014.html",
+    "type": "page",
+    "category": "history",
+    "date": "2025-01-01"
+  },
+  {
+    "id": "history-2021",
+    "title": "2021 - Unity Intifada",
+    "content": "2021 Unity Intifada Jerusalem Al Aqsa Mosque Sheikh Jarrah evictions protests",
+    "url": "/history/2021.html",
+    "type": "page",
+    "category": "history",
+    "date": "2025-01-01"
+  },
+  {
+    "id": "history-2023",
+    "title": "2023 - Al-Aqsa Flood",
+    "content": "2023 Al Aqsa Flood Operation Swords of Iron Hamas resistance Gaza invasion",
+    "url": "/history/2023.html",
+    "type": "page",
+    "category": "history",
+    "date": "2025-01-01"
+  },
+  {
+    "id": "resistance",
+    "title": "Palestinian Resistance",
+    "content": "resistance struggle liberation freedom justice Palestinian people armed struggle nonviolent BDS boycott international solidarity",
+    "url": "/pages/resistance_pages/resistance.html",
+    "type": "page",
+    "category": "resistance",
+    "date": "2025-01-01"
+  },
+  {
+    "id": "betrayals",
+    "title": "Betrayals & Alliances",
+    "content": "betrayals alliances political relations international diplomacy UN Oslo Accords Camp David Arab states",
+    "url": "/pages/betrayals_pages/betrayals.html",
+    "type": "page",
+    "category": "politics",
+    "date": "2025-01-01"
+  },
+  {
+    "id": "take-action",
+    "title": "Take Action",
+    "content": "action advocacy activism participate solidarity protest boycott contact representatives",
+    "url": "/pages/action_pages/action.html",
+    "type": "page",
+    "category": "activism",
+    "date": "2025-01-01"
+  },
+  {
+    "id": "education-teachers",
+    "title": "Teacher Resources",
+    "content": "education teachers curriculum materials lesson plans classroom resources Palestinian history teaching",
+    "url": "/education/teachers.html",
+    "type": "page",
+    "category": "education",
+    "date": "2025-01-01"
+  },
+  {
+    "id": "education-students",
+    "title": "Student Resources",
+    "content": "education students learning materials Palestinian history youth curriculum classroom",
+    "url": "/education/students.html",
+    "type": "page",
+    "category": "education",
+    "date": "2025-01-01"
+  },
+  {
+    "id": "faq",
+    "title": "Frequently Asked Questions",
+    "content": "FAQ questions answers common queries Palestine Israel conflict history politics",
+    "url": "/faq/index.html",
+    "type": "page",
+    "category": "reference",
+    "date": "2025-01-01"
+  },
+  {
+    "id": "glossary",
+    "title": "Glossary",
+    "content": "glossary terms definitions vocabulary Palestinian history politics culture",
+    "url": "/glossary/index.html",
+    "type": "page",
+    "category": "reference",
+    "date": "2025-01-01"
+  },
+  {
+    "id": "myths",
+    "title": "Debunking Myths",
+    "content": "myths misconceptions facts truth Palestinian narrative media bias propaganda",
+    "url": "/myths/index.html",
+    "type": "page",
+    "category": "education",
+    "date": "2025-01-01"
+  },
+  {
+    "id": "legal",
+    "title": "Legal Resources",
+    "content": "legal international law UN resolutions war crimes apartheid genocide ICJ ICC human rights",
+    "url": "/legal/index.html",
+    "type": "page",
+    "category": "legal",
+    "date": "2025-01-01"
+  },
+  {
+    "id": "diaspora",
+    "title": "Palestinian Diaspora",
+    "content": "diaspora refugees communities worldwide Palestinian exile displacement refugee camps",
+    "url": "/diaspora/index.html",
+    "type": "page",
+    "category": "diaspora",
+    "date": "2025-01-01"
+  },
+  {
+    "id": "movements-women",
+    "title": "Women's Movement",
+    "content": "women feminist movement Palestinian women resistance activism equality gender roles",
+    "url": "/movements/women.html",
+    "type": "page",
+    "category": "movements",
+    "date": "2025-01-01"
+  },
+  {
+    "id": "movements-youth",
+    "title": "Youth Movement",
+    "content": "youth young activists students Palestinian youth resistance education activism",
+    "url": "/movements/youth.html",
+    "type": "page",
+    "category": "movements",
+    "date": "2025-01-01"
+  },
+  {
+    "id": "movements-labor",
+    "title": "Labor Movement",
+    "content": "labor workers unions trade unions Palestinian labor movement workers rights occupation",
+    "url": "/movements/labor.html",
+    "type": "page",
+    "category": "movements",
+    "date": "2025-01-01"
+  },
+  {
+    "id": "massacres-deir-yassin",
+    "title": "Deir Yassin Massacre",
+    "content": "Deir Yassin massacre 1948 Palestinian civilians Zionist forces atrocities war crimes",
+    "url": "/massacres/deir-yassin.html",
+    "type": "page",
+    "category": "massacres",
+    "date": "2025-01-01"
+  },
+  {
+    "id": "massacres-tantura",
+    "title": "Tantura Massacre",
+    "content": "Tantura massacre 1948 Palestinian village Alexandroni Brigade atrocities war crimes",
+    "url": "/massacres/tantura.html",
+    "type": "page",
+    "category": "massacres",
+    "date": "2025-01-01"
+  },
+  {
+    "id": "massacres-sabra-shatila",
+    "title": "Sabra and Shatila Massacre",
+    "content": "Sabra Shatila massacre 1982 Lebanon Palestinian refugees Phalangist militia atrocities",
+    "url": "/massacres/sabra-shatila.html",
+    "type": "page",
+    "category": "massacres",
+    "date": "2025-01-01"
+  },
+  {
+    "id": "countries",
+    "title": "Country Profiles",
+    "content": "countries international relations positions Palestine UN voting diplomatic relations",
+    "url": "/countries/index.html",
+    "type": "page",
+    "category": "international",
+    "date": "2025-01-01"
+  },
+  {
+    "id": "journalists",
+    "title": "Journalists Directory",
+    "content": "journalists media reporters Palestine coverage news sources press freedom",
+    "url": "/journalists/index.html",
+    "type": "page",
+    "category": "media",
+    "date": "2025-01-01"
+  },
+  {
+    "id": "boycott-supporting",
+    "title": "Companies Supporting Israel",
+    "content": "boycott companies supporting Israel BDS movement divestment economic pressure",
+    "url": "/boycott/supporting.html",
+    "type": "page",
+    "category": "boycott",
+    "date": "2025-01-01"
+  },
+  {
+    "id": "boycott-supportive",
+    "title": "Companies Supporting Palestine",
+    "content": "companies supporting Palestine BDS friendly businesses ethical investment",
+    "url": "/boycott/supportive.html",
+    "type": "page",
+    "category": "boycott",
+    "date": "2025-01-01"
+  },
+  {
+    "id": "letter-builder",
+    "title": "Letter Builder Tool",
+    "content": "letter builder email contact representatives politicians advocacy write letters Palestine",
+    "url": "/tools/letters.html",
+    "type": "tool",
+    "category": "tools",
+    "date": "2025-01-01"
+  },
+  {
+    "id": "call-scripts",
+    "title": "Call Scripts Tool",
+    "content": "call scripts phone contact officials representatives advocacy telephone campaigning",
+    "url": "/tools/calls.html",
+    "type": "tool",
+    "category": "tools",
+    "date": "2025-01-01"
+  },
+  {
+    "id": "embassy-directory",
+    "title": "Embassy Directory Tool",
+    "content": "embassy directory contact diplomatic representatives find embassies consulates locations",
+    "url": "/tools/embassies.html",
+    "type": "tool",
+    "category": "tools",
+    "date": "2025-01-01"
+  },
+  {
+    "id": "share-card-generator",
+    "title": "Share Card Generator Tool",
+    "content": "share card generator social media graphics Palestine create images download posters",
+    "url": "/tools/share-card.html",
+    "type": "tool",
+    "category": "tools",
+    "date": "2025-01-01"
+  },
+  {
+    "id": "supporter-badge",
+    "title": "Supporter Badge Tool",
+    "content": "supporter badge embed website show support Palestine HTML code copy paste",
+    "url": "/tools/embed.html",
+    "type": "tool",
+    "category": "tools",
+    "date": "2025-01-01"
+  }
+]

@@ -31,15 +31,14 @@
     -   **Embassy/Consulate Directory** - COMPLETED: Created `/tools/embassies.html` with country/city filters, `/assets/js/embassies.js` with dynamic rendering and contact functionality, comprehensive CSS styles for responsive design and accessibility features.
     -   **Share Card Generator** - COMPLETED: Created `/tools/share-card.html` with customizable text and background options, `/assets/js/share-card.js` with Canvas-based image generation, download functionality, and multiple theme support.
     -   **Supporter Badge/Embed** - COMPLETED: Created `/tools/embed.html` with three badge variants (Classic, Flag, Solidarity), `/assets/js/embed.js` with live preview and copy-to-clipboard functionality for embed codes.
-    -   **Protest/Event Finder** - COMPLETED: Created `/tools/events.html` with location-based search, event filtering, and geolocation support, `/assets/js/events.js` with mock event data and sharing functionality.
+    -   **Protest/Event Finder** - REMOVED: Would require ongoing maintenance for event data updates. Removed to keep site maintenance-free.
 -   Updated the memory bank.
 -   Updated the to-do list.
 
 ## What's Left to Build
 
--   Update search index and sitemap with all new tools pages
+-   Update search index with all new tools pages ✅ COMPLETED
 -   Confirm accessibility and mobile layouts across all tools
--   Add remaining diaspora region data files
 -   Final quality assurance and testing
 -   Project deployment and launch preparation
 

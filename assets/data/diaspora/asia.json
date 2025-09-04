@@ -1,1 +1,152 @@
-[]
+[
+  {
+    "id": "malaysia-palestine",
+    "name": "Palestinian Community Malaysia",
+    "country": "Malaysia",
+    "city": "Kuala Lumpur",
+    "description": "Strong solidarity community with significant political influence and cultural presence in Southeast Asia.",
+    "population": 15000,
+    "organizations": [
+      "Palestine Malaysia Solidarity",
+      " BDS Malaysia",
+      "Palestinian Students Association Malaysia"
+    ],
+    "key_figures": [
+      "Mahathir Mohamad (former Prime Minister, strong supporter)",
+      "Academic leaders",
+      "Community activists"
+    ],
+    "established": "1970s",
+    "notable_events": [
+      "Kuala Lumpur Palestine conferences",
+      "Student activism campaigns",
+      "Cultural festivals and exhibitions",
+      "BDS campaigns in universities"
+    ]
+  },
+  {
+    "id": "indonesia-palestine",
+    "name": "Palestinian Community Indonesia",
+    "country": "Indonesia",
+    "city": "Jakarta",
+    "description": "Largest Muslim-majority country with strong Palestine solidarity movement.",
+    "population": 8000,
+    "organizations": [
+      "Indonesia Palestine Solidarity",
+      " BDS Indonesia",
+      "Palestinian Community Jakarta"
+    ],
+    "key_figures": [
+      "Community leaders",
+      "Student activists",
+      "Cultural organizers"
+    ],
+    "established": "1980s",
+    "notable_events": [
+      "Jakarta Palestine solidarity rallies",
+      "Student BDS campaigns",
+      "Cultural exchange programs",
+      "Educational initiatives"
+    ]
+  },
+  {
+    "id": "pakistan-palestine",
+    "name": "Palestinian Community Pakistan",
+    "country": "Pakistan",
+    "city": "Islamabad",
+    "description": "Strong solidarity community with deep cultural and religious connections.",
+    "population": 10000,
+    "organizations": [
+      "Pakistan Palestine Friendship Association",
+      " BDS Pakistan",
+      "Palestinian Community Islamabad"
+    ],
+    "key_figures": [
+      "Imran Khan (former Prime Minister, strong supporter)",
+      "Religious leaders",
+      "Community activists"
+    ],
+    "established": "1948",
+    "notable_events": [
+      "Islamabad Palestine solidarity events",
+      "Religious gatherings for Palestine",
+      "Educational programs",
+      "Cultural preservation initiatives"
+    ]
+  },
+  {
+    "id": "bangladesh-palestine",
+    "name": "Palestinian Community Bangladesh",
+    "country": "Bangladesh",
+    "city": "Dhaka",
+    "description": "Growing community with strong solidarity movement and educational focus.",
+    "population": 5000,
+    "organizations": [
+      "Bangladesh Palestine Solidarity",
+      " BDS Bangladesh",
+      "Palestinian Students Association Dhaka"
+    ],
+    "key_figures": [
+      "Sheikh Hasina (Prime Minister, strong supporter)",
+      "Student leaders",
+      "Community organizers"
+    ],
+    "established": "1970s",
+    "notable_events": [
+      "Dhaka Palestine solidarity rallies",
+      "University BDS campaigns",
+      "Cultural festivals",
+      "Educational exchange programs"
+    ]
+  },
+  {
+    "id": "japan-palestine",
+    "name": "Palestinian Community Japan",
+    "country": "Japan",
+    "city": "Tokyo",
+    "description": "Small but active community with focus on cultural exchange and solidarity.",
+    "population": 2000,
+    "organizations": [
+      "Japan Palestine Solidarity",
+      " BDS Japan",
+      "Palestinian Cultural Association Tokyo"
+    ],
+    "key_figures": [
+      "Cultural ambassadors",
+      "Academic researchers",
+      "Community activists"
+    ],
+    "established": "1980s",
+    "notable_events": [
+      "Tokyo Palestine film festivals",
+      "Cultural exchange events",
+      "Academic conferences",
+      "Solidarity demonstrations"
+    ]
+  },
+  {
+    "id": "south-korea-palestine",
+    "name": "Palestinian Community South Korea",
+    "country": "South Korea",
+    "city": "Seoul",
+    "description": "Emerging community with focus on education and cultural exchange.",
+    "population": 1500,
+    "organizations": [
+      "Korea Palestine Solidarity",
+      " BDS South Korea",
+      "Palestinian Students Association Seoul"
+    ],
+    "key_figures": [
+      "Student activists",
+      "Cultural organizers",
+      "Academic researchers"
+    ],
+    "established": "1990s",
+    "notable_events": [
+      "Seoul Palestine solidarity events",
+      "University BDS campaigns",
+      "Cultural exchange programs",
+      "Educational initiatives"
+    ]
+  }
+]

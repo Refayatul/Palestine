@@ -1,1 +1,140 @@
-[]
+[
+  {
+    "id": "uk-palestine",
+    "name": "Palestinian Community UK",
+    "country": "United Kingdom",
+    "city": "London",
+    "description": "One of the largest Palestinian communities in Europe, with strong political activism and cultural presence.",
+    "population": 25000,
+    "organizations": [
+      "Palestine Solidarity Campaign",
+      "Palestinian Forum in Britain",
+      "Palestinian Return Centre"
+    ],
+    "key_figures": [
+      "Leila Khaled",
+      "George Habash"
+    ],
+    "established": "1940s",
+    "notable_events": [
+      "Anti-apartheid movement connections",
+      "Academic boycott campaigns",
+      "Cultural festivals and exhibitions"
+    ]
+  },
+  {
+    "id": "germany-palestine",
+    "name": "Palestinian Community Germany",
+    "country": "Germany",
+    "city": "Berlin",
+    "description": "Growing community with significant political influence and academic presence.",
+    "population": 80000,
+    "organizations": [
+      "Palästina Spricht",
+      "Palestinian Community Germany",
+      " BDS Germany"
+    ],
+    "key_figures": [
+      "Rashid Khalidi",
+      "Edward Said"
+    ],
+    "established": "1960s",
+    "notable_events": [
+      "Berlin International Film Festival participation",
+      "Academic conferences on Palestine",
+      "Youth activism and BDS campaigns"
+    ]
+  },
+  {
+    "id": "france-palestine",
+    "name": "Palestinian Community France",
+    "country": "France",
+    "city": "Paris",
+    "description": "Historic community with deep cultural roots and political influence.",
+    "population": 60000,
+    "organizations": [
+      "Association France Palestine Solidarité",
+      "Palestinian Cultural Center Paris",
+      " BDS France"
+    ],
+    "key_figures": [
+      "Mahmoud Darwish",
+      "Ghassan Kanafani"
+    ],
+    "established": "1950s",
+    "notable_events": [
+      "Paris demonstrations against occupation",
+      "Cultural festivals and art exhibitions",
+      "Academic and intellectual contributions"
+    ]
+  },
+  {
+    "id": "sweden-palestine",
+    "name": "Palestinian Community Sweden",
+    "country": "Sweden",
+    "city": "Stockholm",
+    "description": "Progressive community with strong solidarity movement and political influence.",
+    "population": 15000,
+    "organizations": [
+      "Palestinegruppen i Sverige",
+      "Palestinian Youth Association Sweden",
+      " BDS Sweden"
+    ],
+    "key_figures": [
+      "Ilhan Omar (Swedish-Palestinian descent)",
+      "Rashida Tlaib (Swedish-Palestinian descent)"
+    ],
+    "established": "1970s",
+    "notable_events": [
+      "Stockholm Palestine conferences",
+      "Youth-led BDS campaigns",
+      "Cultural preservation initiatives"
+    ]
+  },
+  {
+    "id": "netherlands-palestine",
+    "name": "Palestinian Community Netherlands",
+    "country": "Netherlands",
+    "city": "Amsterdam",
+    "description": "Active community with strong international law focus and solidarity work.",
+    "population": 12000,
+    "organizations": [
+      "Palestine Solidariteit Nederland",
+      "Palestinian Dutch Network",
+      " BDS Netherlands"
+    ],
+    "key_figures": [
+      "Francesca Albanese (UN Special Rapporteur)",
+      "Craig Mokhiber (former director of New York office of UN High Commissioner for Human Rights)"
+    ],
+    "established": "1980s",
+    "notable_events": [
+      "Amsterdam Palestine Film Festival",
+      "Legal advocacy for Palestinian rights",
+      "Academic research and publications"
+    ]
+  },
+  {
+    "id": "denmark-palestine",
+    "name": "Palestinian Community Denmark",
+    "country": "Denmark",
+    "city": "Copenhagen",
+    "description": "Growing community with focus on cultural preservation and political activism.",
+    "population": 8000,
+    "organizations": [
+      "Palestine Vennerne Danmark",
+      "Palestinian Cultural Association Denmark",
+      " BDS Denmark"
+    ],
+    "key_figures": [
+      "Local community leaders",
+      "Cultural preservation activists"
+    ],
+    "established": "1990s",
+    "notable_events": [
+      "Copenhagen cultural festivals",
+      "Youth education programs",
+      "Interfaith dialogue initiatives"
+    ]
+  }
+]

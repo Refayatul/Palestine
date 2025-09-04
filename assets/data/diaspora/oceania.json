@@ -1,1 +1,102 @@
-[]
+[
+  {
+    "id": "australia-palestine",
+    "name": "Palestinian Community Australia",
+    "country": "Australia",
+    "city": "Sydney",
+    "description": "Growing community with strong political activism and cultural presence, particularly in major cities.",
+    "population": 35000,
+    "organizations": [
+      "Palestine Action Group",
+      " BDS Australia",
+      "Palestinian Australian Community Council"
+    ],
+    "key_figures": [
+      "Bob Brown (former Greens leader, strong supporter)",
+      "Academic leaders",
+      "Community activists"
+    ],
+    "established": "1970s",
+    "notable_events": [
+      "Sydney Palestine Film Festival",
+      "Melbourne BDS campaigns",
+      "Student activism on campuses",
+      "Cultural festivals and exhibitions"
+    ]
+  },
+  {
+    "id": "australia-melbourne",
+    "name": "Palestinian Community Melbourne",
+    "country": "Australia",
+    "city": "Melbourne",
+    "description": "Active community with strong academic presence and political influence.",
+    "population": 20000,
+    "organizations": [
+      "Melbourne Palestine Action Coalition",
+      " BDS Melbourne",
+      "Palestinian Cultural Association Victoria"
+    ],
+    "key_figures": [
+      "University professors",
+      "Student leaders",
+      "Cultural organizers"
+    ],
+    "established": "1980s",
+    "notable_events": [
+      "Melbourne Palestine conferences",
+      "University BDS campaigns",
+      "Cultural festivals",
+      "Community education programs"
+    ]
+  },
+  {
+    "id": "new-zealand-palestine",
+    "name": "Palestinian Community New Zealand",
+    "country": "New Zealand",
+    "city": "Auckland",
+    "description": "Emerging community with focus on solidarity and cultural preservation.",
+    "population": 5000,
+    "organizations": [
+      "Palestine Solidarity Network Aotearoa",
+      " BDS New Zealand",
+      "Palestinian Community Auckland"
+    ],
+    "key_figures": [
+      "Jacinda Ardern (former Prime Minister, expressed support)",
+      "Community leaders",
+      "Student activists"
+    ],
+    "established": "1990s",
+    "notable_events": [
+      "Auckland Palestine solidarity events",
+      "University BDS campaigns",
+      "Cultural exchange programs",
+      "Educational initiatives"
+    ]
+  },
+  {
+    "id": "new-zealand-wellington",
+    "name": "Palestinian Community Wellington",
+    "country": "New Zealand",
+    "city": "Wellington",
+    "description": "Small but politically active community with government connections.",
+    "population": 2000,
+    "organizations": [
+      "Wellington Palestine Group",
+      " BDS Wellington",
+      "Palestinian Cultural Association NZ"
+    ],
+    "key_figures": [
+      "Political activists",
+      "Academic researchers",
+      "Cultural ambassadors"
+    ],
+    "established": "2000s",
+    "notable_events": [
+      "Wellington solidarity demonstrations",
+      "Parliamentary advocacy",
+      "Cultural events",
+      "Educational workshops"
+    ]
+  }
+]
