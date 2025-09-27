@@ -1,37 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
-  <title>Companies Supporting Palestine</title>
+  <title>Organizations Supporting Palestine</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-  <nav id="siteNav" class="container" style="position:sticky;top:0;background:#000;border-bottom:1px solid #222;padding:12px 0;margin-bottom:20px">
-    <a href="/" style="color:#fff;text-decoration:none;font-weight:800">← Home</a>
-    <form class="site-search" role="search" autocomplete="off">
-      <input
-        id="siteSearch"
-        class="search-input"
-        type="search"
-        placeholder="Search countries, boycotts, journalists…"
-        aria-label="Search site"
-      />
-      <div id="searchPanel" class="search-panel" hidden>
-        <ul id="searchResults" role="listbox" aria-label="Search results"></ul>
-        <button type="button" class="search-close" aria-label="Close search">&times;</button>
-      </div>
-    </form>
-    <a href="/boycott/supporting.html" style="color:#fff;text-decoration:none">See companies to boycott →</a>
-  </nav>
+  <!-- Navigation -->
+  <header id="nav-container"></header>
+
   <main class="container section">
     <h1>Organizations Supportive of Palestine</h1>
     <p>This is a list of organizations that are supportive of Palestine.</p>
 
     <div class="toolbar">
       <input type="search" id="q" placeholder="Search…">
-      <select id="sector"><option value="">All Sectors</option></select>
-      <select id="region"><option value="">All Regions</option></select>
+      <select id="sector">
+        <option value="">All Sectors</option>
+        <option value="Human Rights">Human Rights</option>
+        <option value="Academic">Academic</option>
+        <option value="Religious">Religious</option>
+        <option value="Legal">Legal</option>
+        <option value="Cultural">Cultural</option>
+        <option value="Political">Political</option>
+        <option value="Medical">Medical</option>
+        <option value="Environmental">Environmental</option>
+      </select>
+      <select id="region">
+        <option value="">All Regions</option>
+        <option value="Global">Global</option>
+        <option value="North America">North America</option>
+        <option value="Europe">Europe</option>
+        <option value="Middle East">Middle East</option>
+        <option value="Asia">Asia</option>
+        <option value="South America">South America</option>
+        <option value="Africa">Africa</option>
+        <option value="Oceania">Oceania</option>
+      </select>
     </div>
 
     <table class="table" id="tbl">
@@ -44,14 +53,443 @@
           <th>Sources</th>
         </tr>
       </thead>
-      <tbody></tbody>
+      <tbody id="organizations-data">
+        <!-- Data will be loaded here -->
+      </tbody>
     </table>
     <p class="muted" id="lastReviewed"></p>
   </main>
+
+  <!-- Footer -->
+  <footer id="footer-container"></footer>
+
   <script src="/assets/js/utils.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
   <script src="/assets/js/search.js"></script>
   <script src="/assets/js/render-boycotts.js"></script>
   <script src="/assets/js/main.js"></script>
+
+  <script>
+    // Sample data for Palestine-supportive organizations
+    const organizationsData = [
+      {
+        organization: "Palestine Solidarity Campaign (UK)",
+        sector: "Political",
+        region: "Europe",
+        status: "Active",
+        sources: [
+          { url: "https://www.palestine solidarity.org.uk", text: "Official Website" },
+          { url: "https://en.wikipedia.org/wiki/Palestine_Solidarity_Campaign", text: "Wikipedia" }
+        ]
+      },
+      {
+        organization: "US Campaign for Palestinian Rights",
+        sector: "Political",
+        region: "North America",
+        status: "Active",
+        sources: [
+          { url: "https://www.palestinecampaign.org", text: "Official Website" },
+          { url: "https://en.wikipedia.org/wiki/US_Campaign_for_Palestinian_Rights", text: "Wikipedia" }
+        ]
+      },
+      {
+        organization: "BDS National Committee",
+        sector: "Political",
+        region: "Global",
+        status: "Active",
+        sources: [
+          { url: "https://www.bdsmovement.net", text: "BDS Movement" },
+          { url: "https://en.wikipedia.org/wiki/Boycott,_Divestment_and_Sanctions", text: "Wikipedia" }
+        ]
+      },
+      {
+        organization: "Institute for Palestine Studies",
+        sector: "Academic",
+        region: "North America",
+        status: "Active",
+        sources: [
+          { url: "https://www.palestine-studies.org", text: "Official Website" },
+          { url: "https://en.wikipedia.org/wiki/Institute_for_Palestine_Studies", text: "Wikipedia" }
+        ]
+      },
+      {
+        organization: "Al-Shabaka: The Palestinian Policy Network",
+        sector: "Policy",
+        region: "Global",
+        status: "Active",
+        sources: [
+          { url: "https://www.al-shabaka.org", text: "Official Website" },
+          { url: "https://en.wikipedia.org/wiki/Al-Shabaka", text: "Wikipedia" }
+        ]
+      },
+      {
+        organization: "International Solidarity Movement",
+        sector: "Human Rights",
+        region: "Middle East",
+        status: "Active",
+        sources: [
+          { url: "https://www.palwatch.org", text: "Official Website" },
+          { url: "https://en.wikipedia.org/wiki/International_Solidarity_Movement", text: "Wikipedia" }
+        ]
+      },
+      {
+        organization: "European Coordination in Support of Palestinian Rights",
+        sector: "Political",
+        region: "Europe",
+        status: "Active",
+        sources: [
+          { url: "https://www.euro-palestine.org", text: "Official Website" },
+          { url: "https://en.wikipedia.org/wiki/European_Coordination_in_Support_of_Palestinian_Rights", text: "Wikipedia" }
+        ]
+      },
+      {
+        organization: "Canadian Boat to Gaza",
+        sector: "Activism",
+        region: "North America",
+        status: "Active",
+        sources: [
+          { url: "https://www.canadianboat.org", text: "Official Website" },
+          { url: "https://en.wikipedia.org/wiki/Canadian_Boat_to_Gaza", text: "Wikipedia" }
+        ]
+      },
+      {
+        organization: "Australia Palestine Advocacy Network",
+        sector: "Political",
+        region: "Oceania",
+        status: "Active",
+        sources: [
+          { url: "https://www.apan.org.au", text: "Official Website" },
+          { url: "https://en.wikipedia.org/wiki/Australia_Palestine_Advocacy_Network", text: "Wikipedia" }
+        ]
+      },
+      {
+        organization: "South Africa Palestine Solidarity Alliance",
+        sector: "Political",
+        region: "Africa",
+        status: "Active",
+        sources: [
+          { url: "https://www.sapsa.org.za", text: "Official Website" },
+          { url: "https://en.wikipedia.org/wiki/South_Africa_Palestine_Solidarity_Alliance", text: "Wikipedia" }
+        ]
+      },
+      {
+        organization: "Union of Palestinian Women",
+        sector: "Women's Rights",
+        region: "Middle East",
+        status: "Active",
+        sources: [
+          { url: "https://www.upwjordan.org", text: "Official Website" },
+          { url: "https://en.wikipedia.org/wiki/Union_of_Palestinian_Women", text: "Wikipedia" }
+        ]
+      },
+      {
+        organization: "Palestinian Youth Movement",
+        sector: "Youth",
+        region: "Global",
+        status: "Active",
+        sources: [
+          { url: "https://www.pym.ps", text: "Official Website" },
+          { url: "https://en.wikipedia.org/wiki/Palestinian_Youth_Movement", text: "Wikipedia" }
+        ]
+      },
+      {
+        organization: "Electronic Intifada",
+        sector: "Media",
+        region: "Global",
+        status: "Active",
+        sources: [
+          { url: "https://electronicintifada.net", text: "Official Website" },
+          { url: "https://en.wikipedia.org/wiki/The_Electronic_Intifada", text: "Wikipedia" }
+        ]
+      },
+      {
+        organization: "Mondoweiss",
+        sector: "Media",
+        region: "North America",
+        status: "Active",
+        sources: [
+          { url: "https://mondoweiss.net", text: "Official Website" },
+          { url: "https://en.wikipedia.org/wiki/Mondoweiss", text: "Wikipedia" }
+        ]
+      },
+      {
+        organization: "+972 Magazine",
+        sector: "Media",
+        region: "Middle East",
+        status: "Active",
+        sources: [
+          { url: "https://972mag.com", text: "Official Website" },
+          { url: "https://en.wikipedia.org/wiki/%2B972_Mag", text: "Wikipedia" }
+        ]
+      },
+      {
+        organization: "Palestine Chronicle",
+        sector: "Media",
+        region: "Global",
+        status: "Active",
+        sources: [
+          { url: "https://palestinechronicle.com", text: "Official Website" },
+          { url: "https://en.wikipedia.org/wiki/Palestine_Chronicle", text: "Wikipedia" }
+        ]
+      },
+      {
+        organization: "Middle East Eye",
+        sector: "Media",
+        region: "Global",
+        status: "Active",
+        sources: [
+          { url: "https://www.middleeasteye.net", text: "Official Website" },
+          { url: "https://en.wikipedia.org/wiki/Middle_East_Eye", text: "Wikipedia" }
+        ]
+      },
+      {
+        organization: "Jewish Voice for Peace",
+        sector: "Religious",
+        region: "North America",
+        status: "Active",
+        sources: [
+          { url: "https://www.jewishvoiceforpeace.org", text: "Official Website" },
+          { url: "https://en.wikipedia.org/wiki/Jewish_Voice_for_Peace", text: "Wikipedia" }
+        ]
+      },
+      {
+        organization: "Christians for Palestine",
+        sector: "Religious",
+        region: "Global",
+        status: "Active",
+        sources: [
+          { url: "https://www.christiansforpalestine.com", text: "Official Website" },
+          { url: "https://en.wikipedia.org/wiki/Christians_for_Palestine", text: "Wikipedia" }
+        ]
+      },
+      {
+        organization: "Muslim American Society",
+        sector: "Religious",
+        region: "North America",
+        status: "Active",
+        sources: [
+          { url: "https://www.masnet.org", text: "Official Website" },
+          { url: "https://en.wikipedia.org/wiki/Muslim_American_Society", text: "Wikipedia" }
+        ]
+      }
+    ];
+
+    // Function to render organizations data
+    function renderOrganizations(data) {
+      const tbody = document.getElementById('organizations-data');
+      tbody.innerHTML = '';
+
+      if (data.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="5" style="text-align: center;">No organizations found matching your criteria.</td></tr>';
+        return;
+      }
+
+      data.forEach(org => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+          <td><strong>${org.organization}</strong></td>
+          <td>${org.sector}</td>
+          <td>${org.region}</td>
+          <td><span class="status ${org.status.toLowerCase()}">${org.status}</span></td>
+          <td>
+            <div class="sources">
+              ${org.sources.map(source =>
+          `<a href="${source.url}" target="_blank" class="source-link">${source.text}</a>`
+        ).join('')}
+            </div>
+          </td>
+        `;
+        tbody.appendChild(row);
+      });
+    }
+
+    // Filter function
+    function filterData() {
+      const searchTerm = document.getElementById('q').value.toLowerCase();
+      const sectorFilter = document.getElementById('sector').value;
+      const regionFilter = document.getElementById('region').value;
+
+      const filtered = organizationsData.filter(org => {
+        const matchesSearch = org.organization.toLowerCase().includes(searchTerm) ||
+          org.sector.toLowerCase().includes(searchTerm) ||
+          org.region.toLowerCase().includes(searchTerm);
+        const matchesSector = !sectorFilter || org.sector === sectorFilter;
+        const matchesRegion = !regionFilter || org.region === regionFilter;
+
+        return matchesSearch && matchesSector && matchesRegion;
+      });
+
+      renderOrganizations(filtered);
+    }
+
+    // Initialize the page
+    document.addEventListener('DOMContentLoaded', function () {
+      // Render initial data
+      renderOrganizations(organizationsData);
+
+      // Set review date
+      document.getElementById('lastReviewed').innerHTML = 'Last reviewed: <span id="review-date">' + new Date().toLocaleDateString() + '</span>';
+
+      // Add event listeners
+      document.getElementById('q').addEventListener('input', filterData);
+      document.getElementById('sector').addEventListener('change', filterData);
+      document.getElementById('region').addEventListener('change', filterData);
+
+      // Load navigation and footer
+      includeNavFooter();
+    });
+  </script>
+
+  <style>
+    .container.section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    h1 {
+      color: #2c3e50;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      text-align: center;
+      color: #555;
+      margin-bottom: 2rem;
+    }
+
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 2rem;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .toolbar input,
+    .toolbar select {
+      padding: 0.75rem;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    .toolbar input {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .toolbar select {
+      min-width: 150px;
+    }
+
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 2rem;
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .table th,
+    .table td {
+      padding: 1rem;
+      text-align: left;
+      border-bottom: 1px solid #eee;
+    }
+
+    .table th {
+      background: #2c3e50;
+      color: white;
+      font-weight: bold;
+    }
+
+    .table tbody tr:hover {
+      background: #f8f9fa;
+    }
+
+    .table a {
+      color: #2980b9;
+      text-decoration: none;
+    }
+
+    .table a:hover {
+      text-decoration: underline;
+    }
+
+    .status {
+      padding: 0.25rem 0.75rem;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .status.active {
+      background: #27ae60;
+      color: white;
+    }
+
+    .status.supporting {
+      background: #3498db;
+      color: white;
+    }
+
+    .status.advocating {
+      background: #9b59b6;
+      color: white;
+    }
+
+    .sources {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .source-link {
+      display: inline-block;
+      padding: 0.25rem 0.5rem;
+      background: #ecf0f1;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      text-decoration: none;
+    }
+
+    .source-link:hover {
+      background: #d5dbdb;
+    }
+
+    .muted {
+      text-align: center;
+      color: #7f8c8d;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .toolbar {
+        flex-direction: column;
+      }
+
+      .toolbar input,
+      .toolbar select {
+        width: 100%;
+      }
+
+      .table {
+        display: block;
+        overflow-x: auto;
+      }
+
+      .table th,
+      .table td {
+        min-width: 120px;
+      }
+    }
+  </style>
 </body>
+
 </html>

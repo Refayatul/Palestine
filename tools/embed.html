@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supporter Badge - Free Palestine</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header id="nav-container"></header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Supporter Badge</h1>
+                <p>Add a badge to your website to show support for Palestine</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="badge-generator">
+                    <div class="badge-options">
+                        <h2>Choose Your Badge Style</h2>
+
+                        <div class="badge-variants">
+                            <div class="badge-variant" data-variant="classic">
+                                <div class="badge-preview classic-badge">
+                                    <span>Free Palestine</span>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="variant-info">
+                                    <h3>Classic</h3>
+                                    <p>Simple and elegant design</p>
+                                    <button class="select-variant btn-primary" data-variant="classic">Select</button>
+                                </div>
+                            </div>
+
+                            <div class="badge-variant" data-variant="flag">
+                                <div class="badge-preview flag-badge">
+                                    <div class="flag-colors">
+                                        <div class="black"></div>
+                                        <div class="white"></div>
+                                        <div class="green"></div>
+                                    </div>
+                                    <span>Palestine</span>
+                                </div>
+                                <div class="variant-info">
+                                    <h3>Flag</h3>
+                                    <p>Palestinian flag colors</p>
+                                    <button class="select-variant btn-primary" data-variant="flag">Select</button>
+                                </div>
+                            </div>
+
+                            <div class="badge-variant" data-variant="solidarity">
+                                <div class="badge-preview solidarity-badge">
+                                    <i class="fas fa-hand-holding-heart"></i>
+                                    <span>Stand with Palestine</span>
+                                </div>
+                                <div class="variant-info">
+                                    <h3>Solidarity</h3>
+                                    <p>Heartfelt support message</p>
+                                    <button class="select-variant btn-primary" data-variant="solidarity">Select</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="embed-code">
+                        <h2>Get Your Embed Code</h2>
+
+                        <div class="code-display">
+                            <label for="embed-code-textarea">Copy this code to your website:</label>
+                            <textarea id="embed-code-textarea" readonly rows="6"
+                                placeholder="Select a badge style to generate embed code"></textarea>
+                            <button id="copy-code-btn" class="btn-secondary" disabled>Copy Code</button>
+                        </div>
+
+                        <div class="preview-section">
+                            <h3>Preview</h3>
+                            <div id="badge-preview-container">
+                                <p>Select a badge style to see preview</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="usage-instructions">
+                    <h3>How to Add to Your Website</h3>
+                    <ol>
+                        <li>Choose your preferred badge style</li>
+                        <li>Copy the embed code</li>
+                        <li>Paste it into your website's HTML</li>
+                        <li>The badge will display on your site</li>
+                    </ol>
+
+                    <div class="embed-tips">
+                        <h4>Tips:</h4>
+                        <ul>
+                            <li>Place the code where you want the badge to appear</li>
+                            <li>The badge is responsive and will adapt to your site's design</li>
+                            <li>You can customize the styling further with your own CSS</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer-container"></footer>
+
+    <script src="/assets/js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            includeNavFooter();
+        });
+    </script>
+
+    <script src="/assets/js/embed.js"></script>
+</body>
+
+</html>

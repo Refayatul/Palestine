@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Card Generator - Free Palestine</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <header id="nav-container"></header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Share Card Generator</h1>
+                <p>Create custom social media cards to spread awareness about Palestine</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="share-card-generator">
+                    <div class="generator-form">
+                        <h2>Create Your Share Card</h2>
+
+                        <div class="form-group">
+                            <label for="headline">Headline:</label>
+                            <input type="text" id="headline" placeholder="Enter your headline" maxlength="50">
+                            <small>Max 50 characters</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subtext">Subtext:</label>
+                            <textarea id="subtext" placeholder="Enter supporting text" maxlength="100" rows="3"></textarea>
+                            <small>Max 100 characters</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="background-select">Background:</label>
+                            <select id="background-select">
+                                <option value="default">Default (Blue)</option>
+                                <option value="dark">Dark Theme</option>
+                                <option value="light">Light Theme</option>
+                                <option value="flag">Palestinian Flag</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label for="logo-toggle">
+                                <input type="checkbox" id="logo-toggle" checked>
+                                Include Free Palestine logo
+                            </label>
+                        </div>
+
+                        <div class="form-actions">
+                            <button id="generate-btn" class="btn-primary">Generate Card</button>
+                            <button id="download-btn" class="btn-secondary" disabled>Download PNG</button>
+                        </div>
+                    </div>
+
+                    <div class="card-preview">
+                        <h3>Preview</h3>
+                        <div class="preview-container">
+                            <canvas id="share-canvas" width="1200" height="630"></canvas>
+                        </div>
+                        <div class="preview-info">
+                            <small>1200x630 pixels (optimal for social media sharing)</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="usage-instructions">
+                    <h3>How to Use</h3>
+                    <ol>
+                        <li>Enter your headline and subtext</li>
+                        <li>Choose a background theme</li>
+                        <li>Toggle the logo on/off as desired</li>
+                        <li>Click "Generate Card" to preview</li>
+                        <li>Click "Download PNG" to save your card</li>
+                        <li>Share on social media platforms</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer-container"></footer>
+
+    <script src="/assets/js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            includeNavFooter();
+        });
+    </script>
+
+    <script src="/assets/js/share-card.js"></script>
+</body>
+</html>

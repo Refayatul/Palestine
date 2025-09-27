@@ -1,29 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Palestinian Resistance | Free Palestine</title>
-    <link rel="stylesheet" href="../assets/css/resistance.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/resistance.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-      <!-- Navigation -->
-    <nav>
-        <div class="logo">
-            <a href="../index.html"><span>Free<span>Palestine</span></span></a>
-        </div>
-        <ul class="nav-links">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../pages/history.html">History</a></li>
-            <!-- <li><a href="../pages/resistance.html">Resistance</a></li> -->
-            <li><a href="../pages/betrayals.html">Betrayals</a></li>
-            <li><a href="../pages/action.html">Take Action</a></li>
-        </ul>
-        <div class="hamburger">
-            <i class="fas fa-bars"></i>
-        </div>
-    </nav>
+    <!-- Navigation -->
+    <header id="nav-container"></header>
 
     <!-- Hero Section -->
     <section class="resistance-hero">
@@ -37,7 +26,7 @@
     <section class="resistance-timeline">
         <div class="container">
             <h2><i class="fas fa-history"></i> Forms of Palestinian Resistance</h2>
-            
+
             <div class="timeline-methods">
                 <!-- Armed Resistance -->
                 <div class="method-category">
@@ -224,7 +213,7 @@
     <section class="martyrs">
         <div class="container">
             <h2><i class="fas fa-star"></i> Symbols of Resistance</h2>
-            
+
             <div class="martyrs-grid">
                 <div class="martyr-card">
                     <img src="../assets/img/martyrs/ghassan-kanafani.jpg" alt="Ghassan Kanafani">
@@ -258,15 +247,16 @@
     </section>
 
     <!-- Footer -->
-    <footer>
-        <p>Free Palestine | From the River to the Sea</p>
-        <div class="social-links">
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-telegram"></i></a>
-        </div>
-    </footer>
+    <footer id="footer-container"></footer>
+
+    <script src="/assets/js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            includeNavFooter();
+        });
+    </script>
 
     <script src="../assets/js/resistance.js"></script>
 </body>
+
 </html>

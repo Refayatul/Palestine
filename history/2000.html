@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2000 - War Chronology - Palestine</title>
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/timeline-styles.css">
-    <script src="/assets/js/main.js" defer></script>
-    <script src="/assets/js/render-history.js" defer></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <!-- Navigation will be dynamically loaded or manually added later -->
-        </nav>
-    </header>
+    <header id="nav-container"></header>
     <main>
         <section class="history-timeline-hero">
             <h1>2000</h1>
@@ -28,8 +25,14 @@
             </div>
         </section>
     </main>
-    <footer>
-        <!-- Footer will be dynamically loaded or manually added later -->
-    </footer>
+    <footer id="footer-container"></footer>
+
+    <script src="/assets/js/main.js"></script><script>
+        document.addEventListener('DOMContentLoaded', function() {
+            includeNavFooter();
+        });
+    </script>
 </body>
+
 </html>
+

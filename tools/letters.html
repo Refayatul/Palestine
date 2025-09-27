@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letter Builder - Free Palestine</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <header id="nav-container"></header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Letter Builder</h1>
+                <p>Contact your representatives about Palestine</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="letter-builder">
+                    <div class="builder-form">
+                        <h2>Build Your Letter</h2>
+
+                        <div class="form-group">
+                            <label for="country-select">Select Country:</label>
+                            <select id="country-select">
+                                <option value="">Choose your country...</option>
+                                <option value="us">United States</option>
+                                <option value="uk">United Kingdom</option>
+                                <option value="canada">Canada</option>
+                                <option value="germany">Germany</option>
+                                <option value="france">France</option>
+                                <option value="australia">Australia</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="recipient-select">Recipient Type:</label>
+                            <select id="recipient-select">
+                                <option value="">Choose recipient...</option>
+                                <option value="senator">Senator</option>
+                                <option value="representative">Representative</option>
+                                <option value="mp">Member of Parliament</option>
+                                <option value="president">President</option>
+                                <option value="prime-minister">Prime Minister</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="topic-select">Topic:</label>
+                            <select id="topic-select">
+                                <option value="">Choose topic...</option>
+                                <option value="ceasefire">Demand Immediate Ceasefire</option>
+                                <option value="recognition">Recognize Palestine</option>
+                                <option value="arms">Stop Arms Sales to Israel</option>
+                                <option value="sanctions">Impose Sanctions</option>
+                                <option value="humanitarian">Humanitarian Aid</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="your-name">Your Name:</label>
+                            <input type="text" id="your-name" placeholder="Enter your full name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="your-address">Your Address:</label>
+                            <textarea id="your-address" placeholder="Enter your address for formal letters"></textarea>
+                        </div>
+
+                        <button id="generate-letter" class="btn">Generate Letter</button>
+                    </div>
+
+                    <div class="letter-preview">
+                        <h2>Letter Preview</h2>
+                        <div id="letter-content">
+                            <p class="placeholder-text">Select your options above to generate a letter...</p>
+                        </div>
+
+                        <div class="letter-actions">
+                            <button id="copy-letter" class="btn" disabled>Copy Letter</button>
+                            <button id="email-letter" class="btn" disabled>Open in Email</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer-container"></footer>
+
+    <script src="/assets/js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            includeNavFooter();
+        });
+    </script>
+
+    <script src="/assets/js/letter-builder.js"></script>
+</body>
+</html>

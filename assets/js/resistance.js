@@ -1,20 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Mobile Menu Toggle
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('.nav-links');
-    
-    hamburger.addEventListener('click', function() {
-        navLinks.classList.toggle('active');
-    });
-
     // Method Card Expansion
     const methodCards = document.querySelectorAll('.method-card');
-    
+
     methodCards.forEach(card => {
         card.addEventListener('click', function(e) {
             // Don't trigger if clicking on a link or button
             if (e.target.tagName === 'A' || e.target.tagName === 'BUTTON') return;
-            
+
             const details = this.querySelector('.method-details');
             details.style.display = details.style.display === 'block' ? 'none' : 'block';
         });

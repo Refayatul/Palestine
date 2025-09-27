@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2008 - War Chronology - Palestine</title>
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/timeline-styles.css">
-    <script src="/assets/js/main.js" defer></script>
-    <script src="/assets/js/render-history.js" defer></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <!-- Navigation will be dynamically loaded or manually added later -->
-        </nav>
+    <header id="nav-container">
+        <!-- Navigation will be loaded here -->
     </header>
+    
     <main>
         <section class="history-timeline-hero">
             <h1>2008</h1>
-            <p id="intro-text">Loading introduction...</p>
+            <p id="intro-text">The year 2008 marked the beginning of Israel's devastating Operation Cast Lead against the Gaza Strip, a 22-day military assault that killed over 1,400 Palestinians, including hundreds of children. This operation was part of a broader pattern of escalation following the Second Intifada, Hamas's electoral victory in 2006, and the political division between Hamas in Gaza and Fatah in the West Bank. The assault represented the culmination of Israel's siege warfare tactics and systematic collective punishment of the Palestinian population in Gaza.</p>
             <a href="/pages/history.html" class="btn-small">Back to History Overview</a>
         </section>
 
@@ -28,8 +28,145 @@
             </div>
         </section>
     </main>
-    <footer>
-        <!-- Footer will be dynamically loaded or manually added later -->
+
+    <footer id="footer-container">
+        <!-- Footer will be loaded here -->
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            <script src="/assets/js/main.js"></script>
+    <script>
+        includeNavFooter();
+
+            // Comprehensive timeline data for 2008 and context
+            const timelineData = [
+                {
+                    date: "2000-2005 - Background Context",
+                    title: "Second Intifada and Escalation",
+                    description: "The Second (Al-Aqsa) Intifada erupts in September 2000 following Ariel Sharon's provocative visit to Temple Mount. Israeli military responds with live ammunition and targeted assassinations. Large-scale operations like Operation Defensive Shield (2002) reoccupy major Palestinian cities. Israel begins constructing the separation barrier through the West Bank, confiscating Palestinian land. The Intifada demolishes much of what the Palestinian Authority had built, leading to increased militarization of resistance.",
+                    category: "background"
+                },
+                {
+                    date: "2005",
+                    title: "Unilateral Gaza Disengagement",
+                    description: "Israel unilaterally withdraws settlers and military forces from Gaza Strip in August 2005. However, Israel maintains control of borders, airspace, and coastline, effectively continuing occupation. Immediately following withdrawal in September 2005, Israel imposes comprehensive blockade on Gaza Strip, controlling all borders, airspace, and maritime access. This creates the world's largest open-air prison.",
+                    category: "political"
+                },
+                {
+                    date: "2006",
+                    title: "Hamas Victory and Political Division",
+                    description: "Hamas wins majority in Palestinian Legislative Council elections in January 2006, ending Fatah's decades-long dominance. International community and Israel impose sanctions on Hamas. In June 2006, Hamas militants capture Israeli soldier Gilad Shalit, leading to Israeli military response. Political tensions escalate between Hamas and Fatah, leading to armed conflict and eventual division of Palestinian territories.",
+                    category: "political"
+                },
+                {
+                    date: "2007",
+                    title: "Gaza Siege and Political Split",
+                    description: "In June 2007, Hamas seizes control of Gaza Strip in armed conflict with Fatah, leading to Palestinian political division. Israel tightens Gaza blockade following Hamas takeover. Egypt cooperates in maintaining siege from its border. West Bank and Gaza Strip become politically separated for the first time since establishment of Palestinian Authority. Gaza becomes increasingly isolated and impoverished.",
+                    category: "political"
+                },
+                {
+                    date: "2008 - Pre-War Context",
+                    title: "Escalating Tensions and Rocket Fire",
+                    description: "Throughout 2008, rocket exchanges between Palestinian resistance groups and Israel intensify. Israel cites rocket attacks from Gaza as justification for military action. Hamas continues holding Israeli soldier Gilad Shalit captive. Israel accumulates intelligence and prepares for major military operation. Palestinian population in Gaza faces severe humanitarian crisis under blockade with shortages of food, medicine, and basic supplies.",
+                    category: "military"
+                },
+                {
+                    date: "December 19, 2008",
+                    title: "Ceasefire Collapse",
+                    description: "Six-month ceasefire between Israel and Hamas expires. Israel refuses to extend ceasefire or ease blockade restrictions. Hamas warns that it will not renew ceasefire unless blockade is lifted. Tensions escalate with increased rocket fire from Gaza and Israeli airstrikes. Israel uses these incidents as pretext for launching major military operation.",
+                    category: "diplomacy"
+                },
+                {
+                    date: "December 27, 2008",
+                    title: "Operation Cast Lead Begins",
+                    description: "Israel launches Operation Cast Lead with massive aerial bombardment of Gaza Strip at 11:30 AM. Over 100 sites targeted simultaneously including government buildings, police stations, and suspected weapons storage facilities. Israeli Air Force conducts over 100 sorties in first hours. Hamas and other resistance groups caught off-guard by scale of attack. No formal declaration of war issued by Israel.",
+                    category: "military"
+                },
+                {
+                    date: "December 27-29, 2008",
+                    title: "Intensive Aerial Campaign",
+                    description: "Israeli air campaign targets over 450 sites in first three days. Strikes hit government ministries, police stations, prisons, universities, mosques, and media offices. Civilian infrastructure including schools, hospitals, and factories destroyed. Power plant damaged, affecting 80% of Gaza's electricity supply. Water treatment facilities bombed, contaminating water supply. Over 400 Palestinians killed in aerial phase.",
+                    category: "military"
+                },
+                {
+                    date: "December 30, 2008",
+                    title: "Targeting of Civilian Infrastructure",
+                    description: "Israeli strikes increasingly target civilian infrastructure including flour mills, food storage facilities, and manufacturing plants. UN facilities and humanitarian organizations targeted, including UNRWA warehouse storing food supplies. Strikes on government buildings and administrative centers aim to destroy Hamas's governing capacity. Media offices and communication centers bombed, limiting information flow.",
+                    category: "warcrimes"
+                },
+                {
+                    date: "January 1-3, 2009",
+                    title: "Escalation and International Response",
+                    description: "Casualties mount as aerial bombardment intensifies. International community calls for ceasefire as humanitarian crisis worsens. UN Security Council passes resolution calling for immediate ceasefire on January 3. Israel ignores international calls and prepares for ground invasion. Hamas continues rocket fire but with limited capacity due to destruction of infrastructure.",
+                    category: "international"
+                },
+                {
+                    date: "January 3, 2009",
+                    title: "Ground Invasion Begins",
+                    description: "Israeli forces begin ground invasion of Gaza Strip, entering from multiple directions. Over 27,000 troops deployed including special forces units. Armored vehicles and tanks enter densely populated areas. Ground operations target tunnels used for smuggling goods and weapons. Israeli forces establish buffer zones along border by destroying homes and infrastructure.",
+                    category: "military"
+                },
+                {
+                    date: "January 4-10, 2009",
+                    title: "Urban Warfare and Massacres",
+                    description: "Intensive house-to-house fighting in densely populated areas including Jabalia, Beit Hanoun, and Rafah. Israeli forces use white phosphorus munitions in populated areas, causing severe burns and civilian casualties. Reports of summary executions and extrajudicial killings of civilians. Massacres in schools and homes, including killing of entire families. Over 800 Palestinians killed during ground phase.",
+                    category: "warcrimes"
+                },
+                {
+                    date: "January 8-12, 2009",
+                    title: "Humanitarian Catastrophe",
+                    description: "Medical facilities overwhelmed with casualties. Shortage of medical supplies, blood, and equipment. Hospitals forced to operate without electricity or clean water. UN humanitarian convoys blocked or delayed by Israeli forces. Over 70,000 Palestinians displaced from homes. Food and water supplies critically low. Sanitation systems collapse due to infrastructure damage.",
+                    category: "humanitarian"
+                },
+                {
+                    date: "January 12-15, 2009",
+                    title: "International Pressure Intensifies",
+                    description: "UN Security Council emergency meetings held as casualties mount. International humanitarian organizations document war crimes and violations of international law. Goldstone Report preparation begins with evidence collection. Arab League and Muslim countries increase diplomatic pressure. Egypt mediates ceasefire negotiations as humanitarian situation becomes catastrophic.",
+                    category: "international"
+                },
+                {
+                    date: "January 15-18, 2009",
+                    title: "Final Assault and Ceasefire",
+                    description: "Israeli forces intensify operations in final days before ceasefire. Last major ground operations in Rafah and southern Gaza. Hamas declares readiness for long-term ceasefire. International pressure for ceasefire becomes overwhelming. Egyptian-mediated ceasefire agreement reached on January 18. Israel announces unilateral ceasefire but maintains blockade on Gaza.",
+                    category: "diplomacy"
+                },
+                {
+                    date: "January 18, 2009",
+                    title: "Ceasefire and Aftermath",
+                    description: "22-day assault ends with Egyptian-brokered ceasefire. Over 1,400 Palestinians killed, including over 400 children. 5,000+ injured and 20,000+ displaced. 80% of Gaza's population affected by conflict. Massive destruction of infrastructure, homes, and civilian facilities. Gilad Shalit remains captive until 2011. Goldstone Report later documents war crimes and crimes against humanity.",
+                    category: "aftermath"
+                },
+                {
+                    date: "Post-2008",
+                    title: "Long-term Consequences",
+                    description: "Gaza blockade continues with severe restrictions on movement of people and goods. Reconstruction efforts severely limited by Israeli restrictions on building materials. Palestinian political division between Hamas and Fatah persists. International community largely fails to hold Israel accountable for war crimes. Gaza remains under siege with periodic military escalations. Humanitarian crisis deepens with poverty, unemployment, and lack of basic services.",
+                    category: "legacy"
+                }
+            ];
+
+            // Render timeline
+            const timelineContainer = document.getElementById('timeline-container');
+            if (timelineContainer) {
+                timelineData.forEach((event, index) => {
+                    const eventElement = document.createElement('div');
+                    eventElement.className = `timeline-event ${index % 2 === 0 ? 'left' : 'right'}`;
+                    eventElement.innerHTML = `
+                        <div class="timeline-content">
+                            <span class="timeline-date">${event.date}</span>
+                            <h3 class="timeline-title">${event.title}</h3>
+                            <p class="timeline-description">${event.description}</p>
+                            <span class="timeline-category ${event.category}">${event.category.toUpperCase()}</span>
+                        </div>
+                    `;
+                    timelineContainer.appendChild(eventElement);
+                });
+            }
+        });
+    </script>
 </body>
+
 </html>
+
+
+

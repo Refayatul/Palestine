@@ -1,3 +1,62 @@
+// Simple include function
+async function includeHTML(file, containerId) {
+    try {
+        const response = await fetch(file);
+        if (!response.ok) throw new Error('Failed to load');
+        const html = await response.text();
+        document.getElementById(containerId).innerHTML = html;
+    } catch (error) {
+        console.error('Error loading', file, error);
+        document.getElementById(containerId).innerHTML = '<p>Navigation loading...</p>';
+    }
+}
+
+// Global include function
+window.includeNavFooter = async function () {
+    try {
+        const response = await fetch('/assets/commons/commonNavFooter.html');
+        if (!response.ok) throw new Error('Failed to load commonNavFooter.html');
+        const html = await response.text();
+
+        // Parse the HTML content
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+
+        // Extract navigation elements
+        const navElements = doc.querySelector('nav');
+        const mobileNavElements = doc.querySelector('.mobile-nav');
+
+        // Extract footer elements
+        const footerElements = doc.querySelector('footer');
+
+        // Insert navigation at the top
+        const navContainer = document.getElementById('nav-container');
+        if (navContainer && navElements) {
+            const navWrapper = document.createElement('div');
+            navWrapper.appendChild(navElements.cloneNode(true));
+            if (mobileNavElements) {
+                navWrapper.appendChild(mobileNavElements.cloneNode(true));
+            }
+            navContainer.parentNode.replaceChild(navWrapper, navContainer);
+        }
+
+        // Insert footer at the bottom
+        const footerContainer = document.getElementById('footer-container');
+        if (footerContainer && footerElements) {
+            const footerWrapper = document.createElement('div');
+            footerWrapper.appendChild(footerElements.cloneNode(true));
+            footerContainer.parentNode.replaceChild(footerWrapper, footerContainer);
+        }
+    } catch (error) {
+        console.error('Error loading navigation and footer:', error);
+        // Fallback: show error message
+        const navContainer = document.getElementById('nav-container');
+        const footerContainer = document.getElementById('footer-container');
+        if (navContainer) navContainer.innerHTML = '<p>Navigation loading...</p>';
+        if (footerContainer) footerContainer.innerHTML = '<p>Footer loading...</p>';
+    }
+};
+
 // Mobile Navigation Toggle
 const hamburger = document.querySelector('.hamburger');
 const mobileNav = document.querySelector('.mobile-nav');
@@ -57,32 +116,12 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
-// Donate Menu Functionality
-const donateTrigger = document.getElementById('donateTrigger');
-const donateMenu = document.getElementById('donateMenu');
-const closeDonate = document.querySelector('#donateMenu .close');
-
-donateTrigger.addEventListener('click', (e) => {
-    e.preventDefault();
-    donateMenu.style.display = 'block';
-});
-
-closeDonate.addEventListener('click', (e) => {
-    e.preventDefault();
-    donateMenu.style.display = 'none';
-});
-
-// Close donate menu when clicking outside
-window.addEventListener('click', (e) => {
-    if (e.target === donateMenu) {
-        donateMenu.style.display = 'none';
-    }
-});
+// Donate Menu Functionality - moved to DOMContentLoaded
 
 // Close mobile menu when clicking outside
 document.addEventListener('click', (e) => {
-    if (mobileNav.classList.contains('active') && 
-        !mobileNav.contains(e.target) && 
+    if (mobileNav.classList.contains('active') &&
+        !mobileNav.contains(e.target) &&
         !hamburger.contains(e.target)) {
         mobileNav.classList.remove('active');
     }
@@ -92,21 +131,76 @@ document.addEventListener('click', (e) => {
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        
+
         const targetId = this.getAttribute('href');
         if (targetId === '#') return;
-        
+
         const targetElement = document.querySelector(targetId);
         if (targetElement) {
             window.scrollTo({
                 top: targetElement.offsetTop - 70,
                 behavior: 'smooth'
             });
-            
+
             // Close mobile menu if open
             if (mobileNav.classList.contains('active')) {
                 mobileNav.classList.remove('active');
             }
         }
     });
+});
+
+// Index page specific functionality
+document.addEventListener('DOMContentLoaded', function () {
+    // Only run on index page
+    if (!document.querySelector('.hero')) return;
+
+    // Smooth scroll for hero scroll indicator
+    const heroScroll = document.querySelector('.hero-scroll');
+    if (heroScroll) {
+        heroScroll.addEventListener('click', function () {
+            const nextSection = document.querySelector('#history');
+            if (nextSection) {
+                nextSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    }
+
+    // Add hover effects for action cards
+    const actionOptions = document.querySelectorAll('.option');
+    actionOptions.forEach(option => {
+        option.addEventListener('mouseenter', function () {
+            this.style.transform = 'translateY(-5px)';
+            this.style.transition = 'transform 0.3s ease';
+        });
+        option.addEventListener('mouseleave', function () {
+            this.style.transform = 'translateY(0)';
+        });
+    });
+
+    // Donate menu functionality
+    const donateTrigger = document.getElementById('donateTrigger');
+    const donateMenu = document.getElementById('donateMenu');
+    const closeDonate = document.querySelector('#donateMenu .close');
+
+    if (donateTrigger && donateMenu) {
+        donateTrigger.addEventListener('click', function (e) {
+            e.preventDefault();
+            donateMenu.style.display = donateMenu.style.display === 'block' ? 'none' : 'block';
+        });
+
+        if (closeDonate) {
+            closeDonate.addEventListener('click', function (e) {
+                e.preventDefault();
+                donateMenu.style.display = 'none';
+            });
+        }
+
+        // Close donate menu when clicking outside
+        document.addEventListener('click', function (e) {
+            if (!donateTrigger.contains(e.target) && !donateMenu.contains(e.target)) {
+                donateMenu.style.display = 'none';
+            }
+        });
+    }
 });

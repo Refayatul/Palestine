@@ -21,19 +21,26 @@
 -   **Phase P1 Core Content Implementation:**
     -   **Legal Library hub** - COMPLETED: Created `/assets/data/legal.json` with 20+ entries, `/legal/index.html`, `/assets/js/render-legal.js`, implemented search field and filters, rendering of legal cards, accessibility features, added "Legal" to navigation, entry to search index, and sitemap entry.
     -   **War chronologies & deep dives** - COMPLETED: Created all timeline pages (1948-2023), data files, shared renderer, vertical timeline implementation with deep linking, back links, search index entries, and sitemap entries.
-    -   **Teacher/Student kits with print CSS** - PARTIALLY COMPLETED: Created `/education/teachers.html`, `/education/students.html`, appended `@media print` styles, implemented sections with print button, pending nav dropdown/footer addition, added pages to search index and sitemap.
-    -   **Diaspora hub** - PARTIALLY COMPLETED: Created region data files, `/diaspora/index.html`, `/assets/js/render-diaspora.js`, implemented UI with region selector/search/grids, accessibility features, added "Diaspora" to navigation, page to search index and sitemap, pending additional region data files and nav addition.
-    -   **Women / Youth / Labor sections** - PARTIALLY COMPLETED: Created movement data files, `/movements/women.html`, pending youth/labor pages, shared renderer, rendering implementation, nav addition, search index entries, and sitemap entries.
+    -   **Teacher/Student kits with print CSS** - COMPLETED: Created `/education/teachers.html`, `/education/students.html`, appended `@media print` styles, implemented sections with print button, added pages to search index and sitemap.
+    -   **Diaspora hub** - COMPLETED: Created region data files, `/diaspora/index.html`, `/assets/js/render-diaspora.js`, implemented UI with region selector/search/grids, accessibility features, added "Diaspora" to navigation, page to search index and sitemap.
+    -   **Women / Youth / Labor sections** - COMPLETED: Created all three movement pages (`/movements/women.html`, `/movements/youth.html`, `/movements/labor.html`), movement data files, `/assets/js/render-movements.js`, comprehensive content for each movement, added to navigation dropdown, search index entries, and sitemap entries.
+    -   **Massacres Documentation** - COMPLETED: Created dedicated massacre pages (`/massacres/deir-yassin.html`, `/massacres/sabra-shatila.html`, `/massacres/tantura.html`) with comprehensive historical documentation, eyewitness accounts, and academic sources.
+-   **Phase P2 Advocacy Tools Implementation:**
+    -   **Letter/Email Builder** - COMPLETED: Created `/tools/letters.html` with comprehensive form interface, `/assets/js/letter-builder.js` with full functionality including localStorage persistence, mailto encoding, clipboard copy, and CSS styles integrated into `/assets/css/style.css`.
+    -   **Phone Call Scripts** - COMPLETED: Created `/tools/calls.html` with filtering system, `/assets/js/call-scripts.js` with script rendering and copy functionality, and comprehensive CSS styles for script cards, filters, and responsive design.
+    -   **Embassy/Consulate Directory** - COMPLETED: Created `/tools/embassies.html` with country/city filters, `/assets/js/embassies.js` with dynamic rendering and contact functionality, comprehensive CSS styles for responsive design and accessibility features.
+    -   **Share Card Generator** - COMPLETED: Created `/tools/share-card.html` with customizable text and background options, `/assets/js/share-card.js` with Canvas-based image generation, download functionality, and multiple theme support.
+    -   **Supporter Badge/Embed** - COMPLETED: Created `/tools/embed.html` with three badge variants (Classic, Flag, Solidarity), `/assets/js/embed.js` with live preview and copy-to-clipboard functionality for embed codes.
+    -   **Protest/Event Finder** - REMOVED: Would require ongoing maintenance for event data updates. Removed to keep site maintenance-free.
 -   Updated the memory bank.
 -   Updated the to-do list.
 
 ## What's Left to Build
 
--   Complete remaining items in Phase P1 focus chain.
--   Implement advocacy & action tools (Part B).
--   Add navigation links for all new sections: Legal, History, Education, Diaspora, Movements, Tools, Events.
--   Update search index and sitemap with all new pages.
--   Confirm accessibility and mobile layouts.
+-   Update search index with all new tools pages ✅ COMPLETED
+-   Confirm accessibility and mobile layouts across all tools
+-   Final quality assurance and testing
+-   Project deployment and launch preparation
 
 ## Current Status
 

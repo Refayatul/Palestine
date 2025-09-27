@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Glossary</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-  <nav id="siteNav" class="container" style="position:sticky;top:0;background:#000;border-bottom:1px solid #222;padding:12px 0;margin-bottom:20px">
-    <a href="/" style="color:#fff;text-decoration:none;font-weight:800">← Home</a>
-  </nav>
+  <header id="nav-container"></header>
   <main class="container section">
     <h1>Glossary</h1>
     <input type="search" id="glossarySearch" placeholder="Search terms…" aria-label="Search glossary">
@@ -20,5 +21,13 @@
   <script src="/assets/js/search.js"></script>
   <script src="/assets/js/render-glossary.js"></script>
   <script src="/assets/js/main.js"></script>
+  <footer id="footer-container"></footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      includeNavFooter();
+    });
+  </script>
 </body>
+
 </html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search - Free Palestine</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <header id="nav-container"></header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Search</h1>
+                <p>Find information about Palestine's history, resistance, and advocacy resources</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="search-interface">
+                    <div class="search-input-section">
+                        <div class="search-box">
+                            <input type="text" id="search-input" placeholder="Search for articles, events, tools, or topics..." autocomplete="off">
+                            <button id="search-button" class="btn-primary">
+                                <i class="fas fa-search"></i> Search
+                            </button>
+                        </div>
+
+                        <div class="search-filters">
+                            <div class="filter-group">
+                                <label for="content-type">Content Type:</label>
+                                <select id="content-type">
+                                    <option value="all">All Content</option>
+                                    <option value="history">History</option>
+                                    <option value="resistance">Resistance</option>
+                                    <option value="education">Education</option>
+                                    <option value="tools">Tools</option>
+                                    <option value="legal">Legal</option>
+                                    <option value="diaspora">Diaspora</option>
+                                    <option value="movements">Movements</option>
+                                    <option value="massacres">Massacres</option>
+                                </select>
+                            </div>
+
+                            <div class="filter-group">
+                                <label for="date-range">Date Range:</label>
+                                <select id="date-range">
+                                    <option value="all">All Time</option>
+                                    <option value="year">Past Year</option>
+                                    <option value="month">Past Month</option>
+                                    <option value="week">Past Week</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="search-results">
+                        <div class="results-header">
+                            <h3>Search Results</h3>
+                            <div class="results-meta">
+                                <span id="results-count">0</span> results found
+                                <span id="search-time"></span>
+                            </div>
+                        </div>
+
+                        <div id="results-container" class="results-container">
+                            <div class="no-results">
+                                <i class="fas fa-search"></i>
+                                <h4>Start your search</h4>
+                                <p>Enter keywords to find relevant content about Palestine</p>
+                            </div>
+                        </div>
+
+                        <div class="search-suggestions">
+                            <h4>Popular Searches:</h4>
+                            <div class="suggestion-tags">
+                                <span class="suggestion-tag" data-query="Nakba">Nakba</span>
+                                <span class="suggestion-tag" data-query="Intifada">Intifada</span>
+                                <span class="suggestion-tag" data-query="BDS">BDS</span>
+                                <span class="suggestion-tag" data-query="Gaza">Gaza</span>
+                                <span class="suggestion-tag" data-query="Jerusalem">Jerusalem</span>
+                                <span class="suggestion-tag" data-query="Palestinian resistance">Palestinian resistance</span>
+                                <span class="suggestion-tag" data-query="occupation">occupation</span>
+                                <span class="suggestion-tag" data-query="apartheid">apartheid</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer-container"></footer>
+
+    <script src="/assets/js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            includeNavFooter();
+        });
+    </script>
+
+    <script src="/assets/js/search.js"></script>
+</body>
+</html>

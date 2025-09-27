@@ -1,1 +1,152 @@
-[]
+[
+  {
+    "id": "south-africa-palestine",
+    "name": "Palestinian Community South Africa",
+    "country": "South Africa",
+    "city": "Johannesburg",
+    "description": "Strong solidarity community with deep connections to anti-apartheid movement and BDS campaigns.",
+    "population": 12000,
+    "organizations": [
+      "Palestine Solidarity Committee South Africa",
+      " BDS South Africa",
+      "Palestinian Community Johannesburg"
+    ],
+    "key_figures": [
+      "Desmond Tutu (Nobel Peace Prize winner, strong supporter)",
+      "Nelson Mandela (expressed solidarity)",
+      "Local activists and academics"
+    ],
+    "established": "1990s",
+    "notable_events": [
+      "Anti-apartheid solidarity connections",
+      "Johannesburg Palestine conferences",
+      "BDS campaigns and academic boycotts",
+      "Cultural exchange programs"
+    ]
+  },
+  {
+    "id": "kenya-palestine",
+    "name": "Palestinian Community Kenya",
+    "country": "Kenya",
+    "city": "Nairobi",
+    "description": "Growing community with focus on business, education, and regional solidarity.",
+    "population": 8000,
+    "organizations": [
+      "Palestinian Community Nairobi",
+      "East African Palestine Solidarity",
+      " BDS Kenya"
+    ],
+    "key_figures": [
+      "Business leaders",
+      "Educational professionals",
+      "Community organizers"
+    ],
+    "established": "1970s",
+    "notable_events": [
+      "Nairobi cultural festivals",
+      "Educational exchange programs",
+      "Business networking events",
+      "Regional solidarity initiatives"
+    ]
+  },
+  {
+    "id": "tanzania-palestine",
+    "name": "Palestinian Community Tanzania",
+    "country": "Tanzania",
+    "city": "Dar es Salaam",
+    "description": "Historic community with strong cultural preservation and educational focus.",
+    "population": 5000,
+    "organizations": [
+      "Palestinian Community Dar es Salaam",
+      "Tanzania Palestine Friendship Association",
+      " BDS Tanzania"
+    ],
+    "key_figures": [
+      "Julius Nyerere (former President, strong supporter)",
+      "Educational leaders",
+      "Cultural preservationists"
+    ],
+    "established": "1960s",
+    "notable_events": [
+      "Dar es Salaam Palestine solidarity events",
+      "Educational partnerships",
+      "Cultural heritage programs",
+      "Youth education initiatives"
+    ]
+  },
+  {
+    "id": "uganda-palestine",
+    "name": "Palestinian Community Uganda",
+    "country": "Uganda",
+    "city": "Kampala",
+    "description": "Emerging community with focus on integration and cultural exchange.",
+    "population": 3000,
+    "organizations": [
+      "Palestinian Community Kampala",
+      "Uganda Palestine Solidarity Network",
+      " BDS Uganda"
+    ],
+    "key_figures": [
+      "Local community leaders",
+      "Business professionals",
+      "Cultural ambassadors"
+    ],
+    "established": "1980s",
+    "notable_events": [
+      "Kampala cultural events",
+      "Community integration programs",
+      "Educational workshops",
+      "Interfaith dialogues"
+    ]
+  },
+  {
+    "id": "ghana-palestine",
+    "name": "Palestinian Community Ghana",
+    "country": "Ghana",
+    "city": "Accra",
+    "description": "Small but active community with focus on education and solidarity.",
+    "population": 2000,
+    "organizations": [
+      "Palestinian Community Accra",
+      "Ghana Palestine Solidarity",
+      " BDS Ghana"
+    ],
+    "key_figures": [
+      "Educational leaders",
+      "Community activists",
+      "Cultural organizers"
+    ],
+    "established": "1990s",
+    "notable_events": [
+      "Accra solidarity events",
+      "Educational programs",
+      "Cultural exchange initiatives",
+      "Youth engagement activities"
+    ]
+  },
+  {
+    "id": "nigeria-palestine",
+    "name": "Palestinian Community Nigeria",
+    "country": "Nigeria",
+    "city": "Lagos",
+    "description": "Growing community with business focus and cultural preservation efforts.",
+    "population": 4000,
+    "organizations": [
+      "Palestinian Community Lagos",
+      "Nigeria Palestine Business Council",
+      " BDS Nigeria"
+    ],
+    "key_figures": [
+      "Business entrepreneurs",
+      "Community leaders",
+      "Cultural preservationists"
+    ],
+    "established": "1980s",
+    "notable_events": [
+      "Lagos business forums",
+      "Cultural festivals",
+      "Educational initiatives",
+      "Community networking events"
+    ]
+  }
+]

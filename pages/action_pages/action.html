@@ -4,30 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Take Action | Free Palestine</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/actions.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 </head>
 <body>
-         <!-- Navigation -->
-         <nav>
-            <div class="logo">
-                <a href="../index.html"><span>Free<span>Palestine</span></span></a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../pages/betrayals.html">History</a></li>
-                <li><a href="../pages/resistance.html">Resistance</a></li>
-                <li><a href="../pages/betrayals.html">Betrayals</a></li>
-                <!-- <li><a href="../pages/action.html">Take Action</a></li> -->
-            </ul>
-            <div class="hamburger">
-                <i class="fas fa-bars"></i>
-            </div>
-        </nav>
-
-
-
+    <!-- Navigation -->
+    <header id="nav-container"></header>
+    
     <!-- Take Action Section -->
     <section id="act" class="action">
         <div class="container">
@@ -62,7 +46,17 @@
         </div>
     </section>
 
+    <!-- Footer -->
+    <footer id="footer-container"></footer>
+
+    <script src="/assets/js/main.js"></script><script>
+        document.addEventListener('DOMContentLoaded', function() {
+            includeNavFooter();
+        });
+    </script>
+
     <script src="../assets/js/action.js"></script>
     <script src="../script.js"></script>
 </body>
 </html>
+

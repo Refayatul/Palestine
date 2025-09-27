@@ -1,401 +1,344 @@
 [
   {
+    "id": "index",
+    "title": "Home - Free Palestine",
+    "content": "Palestine history resistance advocacy tools education legal diaspora movements massacres boycott BDS Nakba Intifada occupation liberation justice Palestinian people armed struggle nonviolent",
+    "url": "/index.html",
     "type": "page",
-    "slug": "history",
-    "title": "Palestinian History",
-    "summary": "Learn about the rich history of Palestine spanning thousands of years",
-    "url": "/#history"
+    "category": "home",
+    "date": "2025-01-01"
   },
   {
+    "id": "search",
+    "title": "Search - Free Palestine",
+    "content": "search find content pages articles history tools education legal diaspora movements massacres boycott BDS discover explore",
+    "url": "/search.html",
     "type": "page",
-    "slug": "resistance",
+    "category": "navigation",
+    "date": "2025-01-01"
+  },
+  {
+    "id": "site-map",
+    "title": "Site Map - Free Palestine",
+    "content": "site map navigation directory content overview pages sections tools history education legal diaspora movements massacres boycott",
+    "url": "/site-map.html",
+    "type": "page",
+    "category": "navigation",
+    "date": "2025-01-01"
+  },
+  {
+    "id": "history-timeline",
+    "title": "History Timeline - Free Palestine",
+    "content": "history timeline Palestinian events 1918 1948 1967 1987 2000 2008 2014 2021 2023 Nakba Intifada occupation resistance liberation",
+    "url": "/pages/history_pages/history.html",
+    "type": "page",
+    "category": "history",
+    "date": "2025-01-01"
+  },
+  {
+    "id": "history-1918",
+    "title": "1918 - End of Ottoman Rule",
+    "content": "1918 Ottoman Empire end World War I Palestine Mandate British control Middle East history",
+    "url": "/history/1918.html",
+    "type": "page",
+    "category": "history",
+    "date": "2025-01-01"
+  },
+  {
+    "id": "history-1948",
+    "title": "1948 - The Nakba",
+    "content": "1948 Nakba Palestinian catastrophe displacement refugee crisis Zionist occupation Deir Yassin Tantura massacres",
+    "url": "/history/1948.html",
+    "type": "page",
+    "category": "history",
+    "date": "2025-01-01"
+  },
+  {
+    "id": "history-1967",
+    "title": "1967 - The Naksa",
+    "content": "1967 Naksa Six Day War occupation West Bank Gaza Jerusalem Golan Heights Sinai Peninsula",
+    "url": "/history/1967.html",
+    "type": "page",
+    "category": "history",
+    "date": "2025-01-01"
+  },
+  {
+    "id": "history-1987",
+    "title": "1987 - First Intifada",
+    "content": "1987 First Intifada uprising stones resistance occupation Palestinian youth movement",
+    "url": "/history/1987.html",
+    "type": "page",
+    "category": "history",
+    "date": "2025-01-01"
+  },
+  {
+    "id": "history-2000",
+    "title": "2000 - Second Intifada",
+    "content": "2000 Second Intifada Al Aqsa Intifada Camp David failure suicide bombings military operations",
+    "url": "/history/2000.html",
+    "type": "page",
+    "category": "history",
+    "date": "2025-01-01"
+  },
+  {
+    "id": "history-2008",
+    "title": "2008 - Operation Cast Lead",
+    "content": "2008 Operation Cast Lead Gaza war blockade humanitarian crisis military operation",
+    "url": "/history/2008.html",
+    "type": "page",
+    "category": "history",
+    "date": "2025-01-01"
+  },
+  {
+    "id": "history-2014",
+    "title": "2014 - Operation Protective Edge",
+    "content": "2014 Operation Protective Edge Gaza war tunnels rockets ceasefire humanitarian disaster",
+    "url": "/history/2014.html",
+    "type": "page",
+    "category": "history",
+    "date": "2025-01-01"
+  },
+  {
+    "id": "history-2021",
+    "title": "2021 - Unity Intifada",
+    "content": "2021 Unity Intifada Jerusalem Al Aqsa Mosque Sheikh Jarrah evictions protests",
+    "url": "/history/2021.html",
+    "type": "page",
+    "category": "history",
+    "date": "2025-01-01"
+  },
+  {
+    "id": "history-2023",
+    "title": "2023 - Al-Aqsa Flood",
+    "content": "2023 Al Aqsa Flood Operation Swords of Iron Hamas resistance Gaza invasion",
+    "url": "/history/2023.html",
+    "type": "page",
+    "category": "history",
+    "date": "2025-01-01"
+  },
+  {
+    "id": "resistance",
     "title": "Palestinian Resistance",
-    "summary": "Explore methods of Palestinian resistance including peaceful protests and BDS movement",
-    "url": "/#resistance"
-  },
-  {
+    "content": "resistance struggle liberation freedom justice Palestinian people armed struggle nonviolent BDS boycott international solidarity",
+    "url": "/pages/resistance_pages/resistance.html",
     "type": "page",
-    "slug": "betrayal",
-    "title": "Who Betrayed Palestine",
-    "summary": "Understand who has betrayed the Palestinian cause throughout history",
-    "url": "/#betrayal"
+    "category": "resistance",
+    "date": "2025-01-01"
   },
   {
+    "id": "betrayals",
+    "title": "Betrayals & Alliances",
+    "content": "betrayals alliances political relations international diplomacy UN Oslo Accords Camp David Arab states",
+    "url": "/pages/betrayals_pages/betrayals.html",
     "type": "page",
-    "slug": "action",
-    "title": "Take Action Now",
-    "summary": "Learn how you can support Palestine through petitions, donations, and awareness",
-    "url": "/#act"
+    "category": "politics",
+    "date": "2025-01-01"
   },
   {
+    "id": "take-action",
+    "title": "Take Action",
+    "content": "action advocacy activism participate solidarity protest boycott contact representatives",
+    "url": "/pages/action_pages/action.html",
     "type": "page",
-    "slug": "resources",
-    "title": "Educational Resources",
-    "summary": "Access books, documentaries, academic papers, and maps about Palestine",
-    "url": "/#resources"
+    "category": "activism",
+    "date": "2025-01-01"
   },
   {
+    "id": "education-teachers",
+    "title": "Teacher Resources",
+    "content": "education teachers curriculum materials lesson plans classroom resources Palestinian history teaching",
+    "url": "/education/teachers.html",
     "type": "page",
-    "slug": "culture",
-    "title": "Palestinian Culture & Heritage",
-    "summary": "Discover Palestinian traditions, music, cuisine, and arts",
-    "url": "/#culture"
+    "category": "education",
+    "date": "2025-01-01"
   },
   {
+    "id": "education-students",
+    "title": "Student Resources",
+    "content": "education students learning materials Palestinian history youth curriculum classroom",
+    "url": "/education/students.html",
     "type": "page",
-    "slug": "future",
-    "title": "The Future of Palestine",
-    "summary": "Vision for a free Palestine with justice and coexistence",
-    "url": "/#future"
+    "category": "education",
+    "date": "2025-01-01"
   },
   {
-    "type": "myth",
-    "slug": "myths",
-    "title": "Debunking Myths About Palestine",
-    "summary": "Common misconceptions about Palestine and the truth behind them",
-    "url": "/myths/index.html"
+    "id": "faq",
+    "title": "Frequently Asked Questions",
+    "content": "FAQ questions answers common queries Palestine Israel conflict history politics",
+    "url": "/faq/index.html",
+    "type": "page",
+    "category": "reference",
+    "date": "2025-01-01"
   },
   {
-    "type": "legal",
-    "slug": "legal",
+    "id": "glossary",
+    "title": "Glossary",
+    "content": "glossary terms definitions vocabulary Palestinian history politics culture",
+    "url": "/glossary/index.html",
+    "type": "page",
+    "category": "reference",
+    "date": "2025-01-01"
+  },
+  {
+    "id": "myths",
+    "title": "Debunking Myths",
+    "content": "myths misconceptions facts truth Palestinian narrative media bias propaganda",
+    "url": "/myths/index.html",
+    "type": "page",
+    "category": "education",
+    "date": "2025-01-01"
+  },
+  {
+    "id": "legal",
     "title": "Legal Resources",
-    "summary": "International law and legal frameworks related to Palestine",
-    "url": "/legal/index.html"
+    "content": "legal international law UN resolutions war crimes apartheid genocide ICJ ICC human rights",
+    "url": "/legal/index.html",
+    "type": "page",
+    "category": "legal",
+    "date": "2025-01-01"
   },
   {
-    "type": "diaspora",
-    "slug": "diaspora",
+    "id": "diaspora",
     "title": "Palestinian Diaspora",
-    "summary": "Stories and resources for the Palestinian diaspora community",
-    "url": "/diaspora/index.html"
+    "content": "diaspora refugees communities worldwide Palestinian exile displacement refugee camps",
+    "url": "/diaspora/index.html",
+    "type": "page",
+    "category": "diaspora",
+    "date": "2025-01-01"
   },
   {
-    "type": "education",
-    "slug": "education",
-    "title": "Educational Resources",
-    "summary": "Materials for teachers and students about Palestine",
-    "url": "/education/teachers.html"
+    "id": "movements-women",
+    "title": "Women's Movement",
+    "content": "women feminist movement Palestinian women resistance activism equality gender roles",
+    "url": "/movements/women.html",
+    "type": "page",
+    "category": "movements",
+    "date": "2025-01-01"
   },
   {
-    "type": "country",
-    "slug": "canada",
-    "title": "Canada — Country Profile",
-    "summary": "Canada plans to recognize the State of Palestine in September 2025, subject to certain conditions.",
-    "url": "/countries/view.html?slug=canada"
+    "id": "movements-youth",
+    "title": "Youth Movement",
+    "content": "youth young activists students Palestinian youth resistance education activism",
+    "url": "/movements/youth.html",
+    "type": "page",
+    "category": "movements",
+    "date": "2025-01-01"
   },
   {
-    "type": "country",
-    "slug": "egypt",
-    "title": "Egypt — Country Profile",
-    "summary": "Egypt's official position.",
-    "url": "/countries/view.html?slug=egypt"
+    "id": "movements-labor",
+    "title": "Labor Movement",
+    "content": "labor workers unions trade unions Palestinian labor movement workers rights occupation",
+    "url": "/movements/labor.html",
+    "type": "page",
+    "category": "movements",
+    "date": "2025-01-01"
   },
   {
-    "type": "country",
-    "slug": "france",
-    "title": "France — Country Profile",
-    "summary": "France's official position.",
-    "url": "/countries/view.html?slug=france"
+    "id": "massacres-deir-yassin",
+    "title": "Deir Yassin Massacre",
+    "content": "Deir Yassin massacre 1948 Palestinian civilians Zionist forces atrocities war crimes",
+    "url": "/massacres/deir-yassin.html",
+    "type": "page",
+    "category": "massacres",
+    "date": "2025-01-01"
   },
   {
-    "type": "country",
-    "slug": "germany",
-    "title": "Germany — Country Profile",
-    "summary": "Germany's official position.",
-    "url": "/countries/view.html?slug=germany"
+    "id": "massacres-tantura",
+    "title": "Tantura Massacre",
+    "content": "Tantura massacre 1948 Palestinian village Alexandroni Brigade atrocities war crimes",
+    "url": "/massacres/tantura.html",
+    "type": "page",
+    "category": "massacres",
+    "date": "2025-01-01"
   },
   {
-    "type": "country",
-    "slug": "ireland",
-    "title": "Ireland — Country Profile",
-    "summary": "Ireland's official position.",
-    "url": "/countries/view.html?slug=ireland"
+    "id": "massacres-sabra-shatila",
+    "title": "Sabra and Shatila Massacre",
+    "content": "Sabra Shatila massacre 1982 Lebanon Palestinian refugees Phalangist militia atrocities",
+    "url": "/massacres/sabra-shatila.html",
+    "type": "page",
+    "category": "massacres",
+    "date": "2025-01-01"
   },
   {
-    "type": "country",
-    "slug": "south-africa",
-    "title": "South Africa — Country Profile",
-    "summary": "South Africa's official position.",
-    "url": "/countries/view.html?slug=south-africa"
+    "id": "countries",
+    "title": "Country Profiles",
+    "content": "countries international relations positions Palestine UN voting diplomatic relations",
+    "url": "/countries/index.html",
+    "type": "page",
+    "category": "international",
+    "date": "2025-01-01"
   },
   {
-    "type": "country",
-    "slug": "spain",
-    "title": "Spain — Country Profile",
-    "summary": "Spain's official position.",
-    "url": "/countries/view.html?slug=spain"
+    "id": "journalists",
+    "title": "Journalists Directory",
+    "content": "journalists media reporters Palestine coverage news sources press freedom",
+    "url": "/journalists/index.html",
+    "type": "page",
+    "category": "media",
+    "date": "2025-01-01"
   },
   {
-    "type": "country",
-    "slug": "turkey",
-    "title": "Turkey — Country Profile",
-    "summary": "Turkey's official position.",
-    "url": "/countries/view.html?slug=turkey"
+    "id": "boycott-supporting",
+    "title": "Companies Supporting Israel",
+    "content": "boycott companies supporting Israel BDS movement divestment economic pressure",
+    "url": "/boycott/supporting.html",
+    "type": "page",
+    "category": "boycott",
+    "date": "2025-01-01"
   },
   {
-    "type": "country",
-    "slug": "united-kingdom",
-    "title": "United Kingdom — Country Profile",
-    "summary": "United Kingdom's official position.",
-    "url": "/countries/view.html?slug=united-kingdom"
+    "id": "boycott-supportive",
+    "title": "Companies Supporting Palestine",
+    "content": "companies supporting Palestine BDS friendly businesses ethical investment",
+    "url": "/boycott/supportive.html",
+    "type": "page",
+    "category": "boycott",
+    "date": "2025-01-01"
   },
   {
-    "type": "country",
-    "slug": "united-states",
-    "title": "United States — Country Profile",
-    "summary": "United States' official position.",
-    "url": "/countries/view.html?slug=united-states"
+    "id": "letter-builder",
+    "title": "Letter Builder Tool",
+    "content": "letter builder email contact representatives politicians advocacy write letters Palestine",
+    "url": "/tools/letters.html",
+    "type": "tool",
+    "category": "tools",
+    "date": "2025-01-01"
   },
   {
-    "type": "boycott-supporting",
-    "slug": "hp-inc",
-    "title": "HP Inc.",
-    "summary": "Provides biometric ID systems for Israeli checkpoints that enforce apartheid. Supplies servers to Israeli military prisons holding Palestinian children.",
-    "url": "/boycott/supporting.html#hp-inc"
+    "id": "call-scripts",
+    "title": "Call Scripts Tool",
+    "content": "call scripts phone contact officials representatives advocacy telephone campaigning",
+    "url": "/tools/calls.html",
+    "type": "tool",
+    "category": "tools",
+    "date": "2025-01-01"
   },
   {
-    "type": "boycott-supporting",
-    "slug": "puma",
-    "title": "Puma",
-    "summary": "Sponsors Israel Football Association, which includes teams in illegal West Bank settlements (war crimes under Geneva Conventions).",
-    "url": "/boycott/supporting.html#puma"
+    "id": "embassy-directory",
+    "title": "Embassy Directory Tool",
+    "content": "embassy directory contact diplomatic representatives find embassies consulates locations",
+    "url": "/tools/embassies.html",
+    "type": "tool",
+    "category": "tools",
+    "date": "2025-01-01"
   },
   {
-    "type": "boycott-supporting",
-    "slug": "sodastream",
-    "title": "SodaStream",
-    "summary": "Operated factory in Mishor Adumim settlement (built on stolen Palestinian land) until 2015. Still benefits from settlement economy.",
-    "url": "/boycott/supporting.html#sodastream"
+    "id": "share-card-generator",
+    "title": "Share Card Generator Tool",
+    "content": "share card generator social media graphics Palestine create images download posters",
+    "url": "/tools/share-card.html",
+    "type": "tool",
+    "category": "tools",
+    "date": "2025-01-01"
   },
   {
-    "type": "boycott-supporting",
-    "slug": "caterpillar-inc",
-    "title": "Caterpillar Inc.",
-    "summary": "Supplies D9 bulldozers to IDF, used to demolish 50,000+ Palestinian homes since 1967. Directly enables ethnic cleansing.",
-    "url": "/boycott/supporting.html#caterpillar-inc"
-  },
-  {
-    "type": "boycott-supporting",
-    "slug": "axa",
-    "title": "AXA",
-    "summary": "Invests $100M+ in Israeli banks that fund illegal settlements. Profits from war crimes under ICC Statute Article 8(2)(b)(viii).",
-    "url": "/boycott/supporting.html#axa"
-  },
-  {
-    "type": "boycott-supporting",
-    "slug": "sabra-hummus",
-    "title": "Sabra Hummus",
-    "summary": "Co-owned by Strauss Group, which provides food rations to IDF units committing genocide in Gaza. 50% profits fund occupation.",
-    "url": "/boycott/supporting.html#sabra-hummus"
-  },
-  {
-    "type": "boycott-supporting",
-    "slug": "booking-com",
-    "title": "Booking.com",
-    "summary": "Lists 200+ properties in illegal West Bank settlements, normalizing occupation. Violates UNHRC Resolution 31/36.",
-    "url": "/boycott/supporting.html#booking-com"
-  },
-  {
-    "type": "boycott-supporting",
-    "slug": "elbit-systems",
-    "title": "Elbit Systems",
-    "summary": "Israel's largest arms manufacturer. Supplies 85% of drones and land weapons used in Gaza massacres. Test weapons on Palestinian civilians.",
-    "url": "/boycott/supporting.html#elbit-systems"
-  },
-  {
-    "type": "boycott-supporting",
-    "slug": "ahava",
-    "title": "Ahava",
-    "summary": "Factory in illegal Mitzpe Shalem settlement. Steals Palestinian natural resources per Hague Regulations Article 55.",
-    "url": "/boycott/supporting.html#ahava"
-  },
-  {
-    "type": "boycott-supporting",
-    "slug": "volvo-group",
-    "title": "Volvo Group",
-    "summary": "Provides armored vehicles to IDF used in home demolitions and checkpoint violence. Complicit in crimes against humanity.",
-    "url": "/boycott/supporting.html#volvo-group"
-  },
-  {
-    "type": "boycott-supporting",
-    "slug": "teva-pharmaceutical",
-    "title": "Teva Pharmaceutical",
-    "summary": "Withholds medicines from Palestinian prisoners. Tests drugs on Palestinian detainees without consent (documented by Haaretz).",
-    "url": "/boycott/supporting.html#teva-pharmaceutical"
-  },
-  {
-    "type": "boycott-supporting",
-    "slug": "expedia",
-    "title": "Expedia",
-    "summary": "Lists 150+ hotels in illegal settlements. Profits from war crimes under Rome Statute Article 8(2)(b)(viii).",
-    "url": "/boycott/supporting.html#expedia"
-  },
-  {
-    "type": "boycott-supportive",
-    "slug": "jewish-voice-for-peace",
-    "title": "Jewish Voice for Peace",
-    "summary": "Leading Jewish anti-Zionist group organizing direct actions against Israeli apartheid. Targeted by Zionist smear campaigns.",
-    "url": "/boycott/supportive.html#jewish-voice-for-peace"
-  },
-  {
-    "type": "boycott-supportive",
-    "slug": "bds-movement",
-    "title": "BDS Movement",
-    "summary": "Palestinian-led movement pressuring Israel through economic/cultural boycotts. Banned in 35 US states due to Zionist lobbying.",
-    "url": "/boycott/supportive.html#bds-movement"
-  },
-  {
-    "type": "boycott-supportive",
-    "slug": "addameer-prisoner-support",
-    "title": "Addameer Prisoner Support",
-    "summary": "Documents Israel's torture of Palestinian political prisoners, including 500+ children held without trial.",
-    "url": "/boycott/supportive.html#addameer-prisoner-support"
-  },
-  {
-    "type": "boycott-supportive",
-    "slug": "the-palestine-institute-for-public-diplomacy",
-    "title": "The Palestine Institute for Public Diplomacy",
-    "summary": "Counters Israeli hasbara with facts about apartheid. Exposes war crimes through viral media campaigns.",
-    "url": "/boycott/supportive.html#the-palestine-institute-for-public-diplomacy"
-  },
-  {
-    "type": "boycott-supportive",
-    "slug": "zochrot",
-    "title": "Zochrot",
-    "summary": "Israeli organization teaching about 1948 ethnic cleansing. Maintains database of 530 destroyed Palestinian villages.",
-    "url": "/boycott/supportive.html#zochrot"
-  },
-  {
-    "type": "boycott-supportive",
-    "slug": "middle-east-children-s-alliance",
-    "title": "Middle East Children's Alliance",
-    "summary": "Provides trauma care to children surviving Israeli bombings. Smear campaigns claim they 'support terrorism' for aiding Gaza.",
-    "url": "/boycott/supportive.html#middle-east-children-s-alliance"
-  },
-  {
-    "type": "boycott-supportive",
-    "slug": "al-haq",
-    "title": "Al-Haq",
-    "summary": "Palestinian human rights group providing evidence to ICC. Designated 'terrorist' by Israel in 2021 for exposing apartheid.",
-    "url": "/boycott/supportive.html#al-haq"
-  },
-  {
-    "type": "boycott-supportive",
-    "slug": "students-for-justice-in-palestine",
-    "title": "Students for Justice in Palestine",
-    "summary": "Leads university divestment campaigns. Banned at 30+ US campuses under pressure from Zionist donors.",
-    "url": "/boycott/supportive.html#students-for-justice-in-palestine"
-  },
-  {
-    "type": "boycott-supportive",
-    "slug": "the-palestinian-campaign-for-the-academic-and-cultural-boycott-of-israel",
-    "title": "The Palestinian Campaign for the Academic and Cultural Boycott of Israel",
-    "summary": "Calls for boycotting Israeli academic institutions complicit in apartheid. Blacklisted by Zionist organizations.",
-    "url": "/boycott/supportive.html#the-palestinian-campaign-for-the-academic-and-cultural-boycott-of-israel"
-  },
-  {
-    "type": "boycott-supportive",
-    "slug": "american-muslims-for-palestine",
-    "title": "American Muslims for Palestine",
-    "summary": "Challenges AIPAC's political dominance. Under constant surveillance by pro-Israel groups.",
-    "url": "/boycott/supportive.html#american-muslims-for-palestine"
-  },
-  {
-    "type": "boycott-supportive",
-    "slug": "the-red-nation",
-    "title": "The Red Nation",
-    "summary": "Native American collective drawing parallels between Zionist and settler-colonial violence. Targeted by FBI for protests.",
-    "url": "/boycott/supportive.html#the-red-nation"
-  },
-  {
-    "type": "boycott-supportive",
-    "slug": "labor-for-palestine",
-    "title": "Labor for Palestine",
-    "summary": "Organizes dockworkers to block Israeli arms shipments. Key force behind union divestment from Israel bonds.",
-    "url": "/boycott/supportive.html#labor-for-palestine"
-  },
-  {
-    "type": "journalist",
-    "slug": "fadel-shanaa",
-    "title": "Fadel Shanaa",
-    "summary": "Reuters cameraman killed by Israeli tank shell on April 16, 2008 while filming in clearly marked press vehicle. Footage shows tank crew deliberately targeting him. Shell contained flechettes - anti-personnel weapons banned in civilian areas.",
-    "url": "/journalists/index.html#fadel-shanaa"
-  },
-  {
-    "type": "journalist",
-    "slug": "basil-ibrahim",
-    "title": "Basil Ibrahim",
-    "summary": "Al-Aqsa TV sound engineer killed alongside colleague Mohammed Abu Aisha in targeted airstrike on their car on November 20, 2012. Both wore press insignia. Israel claimed they were 'Hamas operatives' but provided no evidence.",
-    "url": "/journalists/index.html#basil-ibrahim"
-  },
-  {
-    "type": "journalist",
-    "slug": "simon-farhat",
-    "title": "Simon Farhat",
-    "summary": "Palestine Today cameraman killed by Israeli naval artillery while covering fishermen protests on July 9, 2014. Shell tore off both legs; bled out after being denied medical evacuation for 3 hours.",
-    "url": "/journalists/index.html#simon-farhat"
-  },
-  {
-    "type": "journalist",
-    "slug": "ali-al-jabari",
-    "title": "Ali al-Jabari",
-    "summary": "Freelance photojournalist killed by drone strike while documenting aftermath of UN school bombing on July 30, 2014. Second strike killed paramedics attempting to retrieve his body.",
-    "url": "/journalists/index.html#ali-al-jabari"
-  },
-  {
-    "type": "journalist",
-    "slug": "khaled-hamad",
-    "title": "Khaled Hamad",
-    "summary": "Photojournalist for Al-Aqsa TV killed by tank shell while documenting Shujaiya massacre on July 20, 2014. His iconic final photo shows the tank that killed him moments later.",
-    "url": "/journalists/index.html#khaled-hamad"
-  },
-  {
-    "type": "journalist",
-    "slug": "sameh-al-aryan",
-    "title": "Sameh al-Aryan",
-    "summary": "Al-Quds TV correspondent killed alongside his entire production crew (4 journalists) in precision airstrike on media building on August 1, 2014. Israel claimed 'Hamas communications hub' but provided no evidence.",
-    "url": "/journalists/index.html#sameh-al-aryan"
-  },
-  {
-    "type": "journalist",
-    "slug": "nazih-darwazeh",
-    "title": "Nazih Darwazeh",
-    "summary": "Palestinian journalist shot in the head by Israeli sniper during 2014 Nakba Day protests. Wore fluorescent 'PRESS' vest. IDF initially claimed he was 'throwing stones' before video proved otherwise.",
-    "url": "/journalists/index.html#nazih-darwazeh"
-  },
-  {
-    "type": "journalist",
-    "slug": "mahmoud-al-kumi",
-    "title": "Mahmoud al-Kumi",
-    "summary": "Al-Aqsa TV cameraman killed with colleague Hussam Salama in targeted airstrike on their car on November 20, 2012. Both were clearly marked as press. Israel later claimed they were 'Hamas operatives' based on secret evidence.",
-    "url": "/journalists/index.html#mahmoud-al-kumi"
-  },
-  {
-    "type": "article",
-    "slug": "abductions-2008-2023",
-    "title": "Abductions & Detentions of Children (2008–2023)",
-    "summary": "Dataset and charts (2008–2023)",
-    "url": "/features/abductions-2008-2023.html"
-  },
-  {
-    "type": "movement",
-    "slug": "youth",
-    "title": "Palestinian Youth Movement",
-    "summary": "Information and resources about the Palestinian youth movement.",
-    "url": "/movements/youth.html"
-  },
-  {
-    "type": "movement",
-    "slug": "labor",
-    "title": "Palestinian Labor Movement",
-    "summary": "Information and resources about the Palestinian labor movement.",
-    "url": "/movements/labor.html"
-  },
-  {
-    "type": "movement",
-    "slug": "women",
-    "title": "Palestinian Women Movement",
-    "summary": "Information and resources about the Palestinian women movement.",
-    "url": "/movements/women.html"
+    "id": "supporter-badge",
+    "title": "Supporter Badge Tool",
+    "content": "supporter badge embed website show support Palestine HTML code copy paste",
+    "url": "/tools/embed.html",
+    "type": "tool",
+    "category": "tools",
+    "date": "2025-01-01"
   }
 ]
