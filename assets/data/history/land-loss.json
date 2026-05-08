@@ -1,0 +1,120 @@
+{
+  "updated": "2026-05-08",
+  "title": "Palestinian Land Loss and Fragmentation",
+  "note": "These snapshots describe political control, forced displacement, and fragmentation. They are not a simple private land ownership chart.",
+  "snapshots": [
+    {
+      "year": "1917",
+      "label": "Before British partition politics",
+      "palestinianSpace": 96,
+      "colonialOrIsraeliControl": 4,
+      "headline": "Palestinians were the indigenous majority across historic Palestine.",
+      "body": "Palestinian towns, villages, farms, religious sites, and trade networks formed the social geography of the land. Zionist land purchase and settlement existed but did not give Palestinians' homeland to an outside political project.",
+      "details": [
+        "British imperial policy soon began reshaping Palestine without Palestinian consent.",
+        "Palestinian political demands centered self-rule, anti-colonial independence, and protection of land."
+      ],
+      "sources": ["United Nations historical study"]
+    },
+    {
+      "year": "1947",
+      "label": "UN partition proposal",
+      "palestinianSpace": 45,
+      "colonialOrIsraeliControl": 55,
+      "headline": "The UN recommended giving most of Palestine to a Jewish state.",
+      "body": "Partition was proposed despite Palestinians forming the indigenous majority and despite Palestinian rejection of dividing their homeland without consent.",
+      "details": [
+        "The proposed Jewish state was allocated about 55% of Mandatory Palestine.",
+        "Palestinians saw partition as colonial dispossession, not a fair compromise."
+      ],
+      "sources": ["UN General Assembly Resolution 181 context"]
+    },
+    {
+      "year": "1948",
+      "label": "Nakba and state formation",
+      "palestinianSpace": 22,
+      "colonialOrIsraeliControl": 78,
+      "headline": "Israel controlled about 78% of historic Palestine after the Nakba.",
+      "body": "More than 750,000 Palestinians were expelled or fled, hundreds of villages were depopulated or destroyed, and refugees were denied return to homes and land.",
+      "details": [
+        "The remaining Palestinian areas were the West Bank, East Jerusalem, and Gaza Strip.",
+        "Palestinians who remained inside Israel faced military rule until 1966."
+      ],
+      "sources": ["United Nations Question of Palestine"]
+    },
+    {
+      "year": "1967",
+      "label": "Occupation of the remaining 22%",
+      "palestinianSpace": 0,
+      "colonialOrIsraeliControl": 100,
+      "headline": "Israel occupied the West Bank, East Jerusalem, and Gaza Strip.",
+      "body": "The 1967 occupation placed all of historic Palestine under Israeli military or state control while settlement building, land seizure, military orders, and displacement expanded.",
+      "details": [
+        "The occupation added military rule over the remaining Palestinian territories.",
+        "Settlement transfer into occupied territory is prohibited under international law."
+      ],
+      "sources": ["ICJ wall advisory opinion", "UN Security Council resolutions"]
+    },
+    {
+      "year": "1995",
+      "label": "Oslo fragmentation",
+      "palestinianSpace": 18,
+      "colonialOrIsraeliControl": 82,
+      "headline": "Oslo left Palestinians with fragmented limited self-rule.",
+      "body": "The West Bank was divided into Areas A, B, and C. Area C, about 60% of the West Bank, remained under full Israeli control, while Palestinian-administered areas were broken into disconnected enclaves.",
+      "details": [
+        "Area A was not sovereignty; borders, movement, airspace, and resources remained constrained.",
+        "Settlement growth continued after Oslo."
+      ],
+      "sources": ["UN OCHA", "Oslo II area division"]
+    },
+    {
+      "year": "2002",
+      "label": "Wall, closures, and permits",
+      "palestinianSpace": 12,
+      "colonialOrIsraeliControl": 88,
+      "headline": "The wall and permit regime deepened land isolation.",
+      "body": "The wall's route, mostly inside the occupied West Bank, separated Palestinians from farms, schools, hospitals, family networks, and Jerusalem while incorporating settlement blocs.",
+      "details": [
+        "The ICJ found the wall regime contrary to international law in 2004.",
+        "The wall turned land access into a permit question for many Palestinians."
+      ],
+      "sources": ["ICJ wall advisory opinion", "UN OCHA barrier updates"]
+    },
+    {
+      "year": "2026",
+      "label": "Fragmentation, siege, and forced displacement",
+      "palestinianSpace": 8,
+      "colonialOrIsraeliControl": 92,
+      "headline": "Palestinian space is fragmented by settlements, siege, military zones, and displacement.",
+      "body": "By May 2026, Palestinians faced Gaza's devastation and siege, West Bank raids and settlement expansion, East Jerusalem displacement, refugee exile, and a landscape of checkpoints, walls, closed zones, prisons, and permit systems.",
+      "details": [
+        "The point is not only percentage. The lived reality is fragmentation and control over movement, water, building, borders, and return.",
+        "Palestinian resistance continues to insist on liberation, return, and self-determination."
+      ],
+      "sources": ["UN OCHA", "ICJ 2024 advisory opinion"]
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Origins and Evolution of the Palestine Problem",
+      "publisher": "United Nations",
+      "url": "https://www.un.org/unispal/history/"
+    },
+    {
+      "title": "Legal Consequences of the Construction of a Wall in the Occupied Palestinian Territory",
+      "publisher": "International Court of Justice",
+      "url": "https://www.icj-cij.org/case/131"
+    },
+    {
+      "title": "Humanitarian Situation Updates",
+      "publisher": "UN OCHA oPt",
+      "url": "https://www.ochaopt.org/"
+    },
+    {
+      "title": "Legal Consequences arising from the Policies and Practices of Israel in the Occupied Palestinian Territory, including East Jerusalem",
+      "publisher": "International Court of Justice",
+      "url": "https://www.icj-cij.org/case/186"
+    }
+  ]
+}

@@ -1371,6 +1371,172 @@ footer {
     text-decoration: underline;
 }
 
+.history-lede {
+    max-width: 920px;
+    margin: 0 auto 34px;
+    display: grid;
+    gap: 16px;
+}
+
+.history-lede p {
+    color: #ddd;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.history-principles .pathway-card {
+    border-top: 4px solid #ce1126;
+}
+
+.land-loss-header {
+    max-width: 920px;
+    margin: 0 auto 28px;
+    text-align: center;
+}
+
+.land-loss-header p {
+    color: #ddd;
+    line-height: 1.7;
+}
+
+.land-loss-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+
+.land-loss-controls button {
+    min-width: 76px;
+    min-height: 42px;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+    font-weight: 800;
+    cursor: pointer;
+    transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.land-loss-controls button:hover,
+.land-loss-controls button.active {
+    background: #009736;
+    border-color: #009736;
+    transform: translateY(-2px);
+}
+
+.land-loss-panel {
+    display: grid;
+    grid-template-columns: minmax(260px, 0.9fr) minmax(0, 1.1fr);
+    gap: 28px;
+    align-items: stretch;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.land-loss-chart,
+.land-loss-copy {
+    background: #1e1e1e;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.land-loss-chart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.land-loss-bar {
+    height: 72px;
+    display: flex;
+    overflow: hidden;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.land-loss-bar span {
+    display: block;
+    min-width: 0;
+    transition: width 0.35s ease;
+}
+
+.palestinian-space {
+    background: linear-gradient(135deg, #009736, #0bc760);
+}
+
+.control-space {
+    background: repeating-linear-gradient(
+        -45deg,
+        rgba(206, 17, 38, 0.95),
+        rgba(206, 17, 38, 0.95) 10px,
+        rgba(0, 0, 0, 0.72) 10px,
+        rgba(0, 0, 0, 0.72) 20px
+    );
+}
+
+.land-loss-key {
+    display: grid;
+    gap: 10px;
+    margin-top: 18px;
+    color: #ddd;
+    font-size: 0.95rem;
+}
+
+.land-loss-key span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.land-loss-key i {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    border-radius: 3px;
+}
+
+.key-palestinian {
+    background: #009736;
+}
+
+.key-control {
+    background: #ce1126;
+}
+
+.land-loss-copy .eyebrow {
+    color: #00e676;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    margin-bottom: 10px;
+}
+
+.land-loss-copy h3 {
+    color: #fff;
+    margin-bottom: 14px;
+}
+
+.land-loss-copy p,
+.land-loss-copy li {
+    color: #ddd;
+    line-height: 1.7;
+}
+
+.land-loss-copy ul {
+    margin: 16px 0;
+    padding-left: 20px;
+}
+
+.land-loss-sources {
+    max-width: 1080px;
+    margin: 22px auto 0;
+}
+
 .timeline-event {
     display: flex;
     border-left: 3px solid #ce1126;
@@ -1659,6 +1825,31 @@ footer {
 
     .timeline-overview-list.compact {
         max-height: 66svh;
+    }
+
+    .land-loss-panel {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .land-loss-chart,
+    .land-loss-copy {
+        padding: 18px;
+    }
+
+    .land-loss-bar {
+        height: 56px;
+    }
+
+    .land-loss-controls {
+        justify-content: flex-start;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        padding-bottom: 6px;
+    }
+
+    .land-loss-controls button {
+        flex: 0 0 auto;
     }
     
     .timeline-event::before {
