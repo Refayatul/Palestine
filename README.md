@@ -88,8 +88,8 @@ palestine-history/
 ### Quick Start
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/palestine-history.git
-cd palestine-history
+git clone https://github.com/Refayatul/Palestine.git
+cd Palestine
 
 # Open the website locally
 # You can simply open index.html in your browser or use any static file server (e.g., VS Code Live Server).
@@ -156,12 +156,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - Palestinian historians, journalists, and activists whose work informs this project
 - Open source tools and libraries that make this possible
 - Global supporters of Palestinian rights and justice
-
-## 📞 Contact
-For questions, suggestions, or collaboration opportunities:
-
-- **Email:** [your-email@example.com](mailto:your-email@example.com)
-- **GitHub Issues:** [Project Issues](https://github.com/your-username/palestine-history/issues)
 
 > "From the River to the Sea, Palestine Will Be Free"
 > 
