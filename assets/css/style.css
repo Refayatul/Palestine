@@ -1384,6 +1384,14 @@ footer {
     line-height: 1.8;
 }
 
+.eyebrow {
+    color: #00e676;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    margin-bottom: 16px;
+}
+
 .history-principles .pathway-card {
     border-top: 4px solid #ce1126;
 }
