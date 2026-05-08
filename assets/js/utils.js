@@ -1,4 +1,5 @@
 async function fetchJSON(url){
+  if (window.SiteData?.fetchJson) return window.SiteData.fetchJson(url);
   const r = await fetch(url, { cache: 'no-store' });
   if (!r.ok) throw new Error(`Fetch failed: ${url}`);
   return r.json();

@@ -2,12 +2,12 @@
   const root = document.querySelector('[data-land-loss]');
   if (!root) return;
 
-  const escapeHtml = (value = '') => String(value)
+  const escapeHtml = window.SiteData?.escapeHtml || ((value = '') => String(value)
     .replaceAll('&', '&amp;')
     .replaceAll('<', '&lt;')
     .replaceAll('>', '&gt;')
     .replaceAll('"', '&quot;')
-    .replaceAll("'", '&#039;');
+    .replaceAll("'", '&#039;'));
 
   const snapshotButton = (item, index) => `
     <button type="button" class="${index === 0 ? 'active' : ''}" data-land-index="${index}">
@@ -40,9 +40,9 @@
   `;
 
   try {
-    const response = await fetch('/assets/data/history/land-loss.json');
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    const data = await response.json();
+    const data = window.SiteData
+      ? await window.SiteData.fetchDataset('history.landLoss')
+      : await fetch('/assets/data/history/land-loss.json').then((response) => response.json());
 
     root.innerHTML = `
       <div class="land-loss-header">

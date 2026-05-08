@@ -54,6 +54,62 @@ const SITE_MOBILE_NAV_HTML = `
   </ul>
 </div>`;
 
+const SITE_DATASETS = {
+  'history.timeline': '/assets/data/history/timeline-1900-2026.json',
+  'history.page': '/assets/data/history/history-page.json',
+  'history.landLoss': '/assets/data/history/land-loss.json',
+  'history.topics': '/assets/data/history/topics.json',
+  legal: '/assets/data/legal.json',
+  glossary: '/assets/data/glossary.json',
+  faq: '/assets/data/faq.json',
+  myths: '/assets/data/myths.json',
+  journalists: '/assets/data/journalists.json',
+  'boycotts.supporting': '/assets/data/boycotts-supporting.json',
+  'boycotts.supportive': '/assets/data/boycotts-supportive.json',
+  'countries.index': '/assets/data/countries/_index.json',
+  'diaspora.regions': '/assets/data/diaspora/regions.json',
+  'movements.women': '/assets/data/movements/women.json',
+  'movements.youth': '/assets/data/movements/youth.json',
+  'movements.labor': '/assets/data/movements/labor.json',
+  'search.index': '/assets/data/search-index.json',
+  updates: '/assets/data/updates.json'
+};
+
+function escapeHtml(value = '') {
+  return String(value)
+    .replaceAll('&', '&amp;')
+    .replaceAll('<', '&lt;')
+    .replaceAll('>', '&gt;')
+    .replaceAll('"', '&quot;')
+    .replaceAll("'", '&#039;');
+}
+
+async function fetchJson(path) {
+  const response = await fetch(path, { cache: 'no-store' });
+  if (!response.ok) throw new Error(`Unable to load JSON: ${path}`);
+  return response.json();
+}
+
+window.SiteData = {
+  datasets: SITE_DATASETS,
+  escapeHtml,
+  fetchJson,
+  datasetPath(name) {
+    const path = SITE_DATASETS[name];
+    if (!path) throw new Error(`Unknown dataset: ${name}`);
+    return path;
+  },
+  fetchDataset(name) {
+    return fetchJson(this.datasetPath(name));
+  },
+  path(pattern, values = {}) {
+    return Object.entries(values).reduce(
+      (path, [key, value]) => path.replace(`{${key}}`, encodeURIComponent(value)),
+      pattern
+    );
+  }
+};
+
 function siteFooterHtml() {
   return `
 <footer>

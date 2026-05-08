@@ -2,8 +2,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   const containers = document.querySelectorAll('[data-timeline-overview]');
   if (!containers.length) return;
 
-  const dataUrl = '/assets/data/history/timeline-1900-2026.json';
-
   function escapeHtml(value = '') {
     return String(value)
       .replace(/&/g, '&amp;')
@@ -53,9 +51,9 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   try {
-    const response = await fetch(dataUrl);
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    const data = await response.json();
+    const data = window.SiteData
+      ? await window.SiteData.fetchDataset('history.timeline')
+      : await fetch('/assets/data/history/timeline-1900-2026.json').then((response) => response.json());
 
     containers.forEach((container) => {
       const mode = container.dataset.timelineOverview;

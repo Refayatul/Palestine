@@ -2,19 +2,19 @@
   const root = document.querySelector('[data-history-topic]');
   if (!root) return;
 
-  const escapeHtml = (value = '') => String(value)
+  const escapeHtml = window.SiteData?.escapeHtml || ((value = '') => String(value)
     .replaceAll('&', '&amp;')
     .replaceAll('<', '&lt;')
     .replaceAll('>', '&gt;')
     .replaceAll('"', '&quot;')
-    .replaceAll("'", '&#039;');
+    .replaceAll("'", '&#039;'));
 
   const slug = root.dataset.historyTopic || location.pathname.split('/').pop().replace('.html', '');
 
   try {
-    const response = await fetch('/assets/data/history/topics.json');
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    const data = await response.json();
+    const data = window.SiteData
+      ? await window.SiteData.fetchDataset('history.topics')
+      : await fetch('/assets/data/history/topics.json').then((response) => response.json());
     const topic = data.topics[slug];
 
     if (!topic) {

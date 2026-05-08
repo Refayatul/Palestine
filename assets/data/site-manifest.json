@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "updated": "2026-05-08",
+  "description": "Central registry of JSON datasets used by the static Free Palestine site.",
+  "datasets": {
+    "history.timeline": "/assets/data/history/timeline-1900-2026.json",
+    "history.page": "/assets/data/history/history-page.json",
+    "history.landLoss": "/assets/data/history/land-loss.json",
+    "history.topics": "/assets/data/history/topics.json",
+    "legal": "/assets/data/legal.json",
+    "glossary": "/assets/data/glossary.json",
+    "faq": "/assets/data/faq.json",
+    "myths": "/assets/data/myths.json",
+    "journalists": "/assets/data/journalists.json",
+    "boycotts.supporting": "/assets/data/boycotts-supporting.json",
+    "boycotts.supportive": "/assets/data/boycotts-supportive.json",
+    "countries.index": "/assets/data/countries/_index.json",
+    "diaspora.regions": "/assets/data/diaspora/regions.json",
+    "movements.women": "/assets/data/movements/women.json",
+    "movements.youth": "/assets/data/movements/youth.json",
+    "movements.labor": "/assets/data/movements/labor.json",
+    "search.index": "/assets/data/search-index.json",
+    "updates": "/assets/data/updates.json"
+  },
+  "patterns": {
+    "history.year": "/assets/data/history/{year}.json",
+    "country.profile": "/assets/data/countries/{slug}.json",
+    "diaspora.region": "/assets/data/diaspora/{region}.json",
+    "movement.profile": "/assets/data/movements/{movement}.json"
+  }
+}

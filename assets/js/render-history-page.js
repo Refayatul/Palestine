@@ -2,12 +2,12 @@
   const root = document.querySelector('[data-history-page]');
   if (!root) return;
 
-  const escapeHtml = (value = '') => String(value)
+  const escapeHtml = window.SiteData?.escapeHtml || ((value = '') => String(value)
     .replaceAll('&', '&amp;')
     .replaceAll('<', '&lt;')
     .replaceAll('>', '&gt;')
     .replaceAll('"', '&quot;')
-    .replaceAll("'", '&#039;');
+    .replaceAll("'", '&#039;'));
 
   const cards = (items) => items.map((item) => `
     <article class="pathway-card">
@@ -17,9 +17,9 @@
   `).join('');
 
   try {
-    const response = await fetch('/assets/data/history/history-page.json');
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    const data = await response.json();
+    const data = window.SiteData
+      ? await window.SiteData.fetchDataset('history.page')
+      : await fetch('/assets/data/history/history-page.json').then((response) => response.json());
 
     root.innerHTML = `
       <section class="section">
