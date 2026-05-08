@@ -58,6 +58,42 @@ function siteFooterHtml() {
   return `
 <footer>
   <div class="container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Free Palestine</h3>
+        <p>Dedicated to sharing Palestinian history, culture, resistance, resources, and calls for justice, liberation, return, and accountability.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="/index.html#history">History</a></li>
+          <li><a href="/index.html#resistance">Resistance</a></li>
+          <li><a href="/index.html#betrayal">Betrayals</a></li>
+          <li><a href="/index.html#act">Take Action</a></li>
+          <li><a href="/index.html#resources">Resources</a></li>
+          <li><a href="/index.html#culture">Culture</a></li>
+          <li><a href="/index.html#future">Future</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="/myths/index.html">Debunking Myths</a></li>
+          <li><a href="/legal/index.html">Legal Resources</a></li>
+          <li><a href="/diaspora/index.html">Diaspora Information</a></li>
+          <li><a href="/education/teachers.html">Educational Materials</a></li>
+          <li><a href="/movements/women.html">Women's Movement</a></li>
+          <li><a href="/boycott/supporting.html">Boycotts Supporting</a></li>
+          <li><a href="/boycott/supportive.html">Boycotts Supportive</a></li>
+        </ul>
+      </div>
+    </div>
     <div class="footer-bottom">
       <p>&copy; <span id="year">${new Date().getFullYear()}</span> Free Palestine. All rights reserved.</p>
     </div>
@@ -81,9 +117,11 @@ function installSiteChrome(force = false) {
   const nav = document.querySelector('body > nav') || document.querySelector('nav');
   nav?.insertAdjacentHTML('afterend', SITE_MOBILE_NAV_HTML);
 
-  const footerContainer = document.getElementById('footer-container');
-  if (footerContainer) {
-    footerContainer.outerHTML = siteFooterHtml();
+  const footer = document.getElementById('footer-container') || document.querySelector('footer');
+  if (footer) {
+    footer.outerHTML = siteFooterHtml();
+  } else if (document.body) {
+    document.body.insertAdjacentHTML('beforeend', siteFooterHtml());
   }
 }
 
