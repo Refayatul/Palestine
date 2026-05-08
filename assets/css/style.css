@@ -1948,3 +1948,128 @@ footer {
 .mobile-nav.active {
     display: flex;
 }
+
+/* Shared polish */
+main {
+    min-height: 60vh;
+}
+
+.section > .container > p,
+.container.section > p {
+    color: #ddd;
+    line-height: 1.7;
+}
+
+.btn,
+.btn-small,
+.resource-link,
+button,
+input,
+select,
+a {
+    outline-offset: 3px;
+}
+
+.btn:focus-visible,
+.btn-small:focus-visible,
+.resource-link:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+a:focus-visible {
+    outline: 3px solid #00e676;
+}
+
+.resource-card,
+.pathway-card,
+.method,
+.betrayal-item,
+.option,
+.stat-card {
+    overflow-wrap: anywhere;
+}
+
+.resource-card p,
+.pathway-card p,
+.method p,
+.betrayal-item p,
+.option p {
+    line-height: 1.65;
+}
+
+.homepage-pathways .pathway-card,
+.resources-grid .resource-card {
+    min-height: 100%;
+}
+
+.table,
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td,
+table th,
+table td {
+    vertical-align: top;
+}
+
+.table a,
+table a {
+    color: #00e676;
+}
+
+.container.section {
+    width: min(100% - 32px, 1180px);
+}
+
+footer .footer-content {
+    align-items: start;
+}
+
+footer .footer-section p,
+footer .footer-section li {
+    line-height: 1.7;
+}
+
+footer .social-links a {
+    min-width: 40px;
+    min-height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+[data-history-topic] .hero {
+    min-height: 58vh;
+}
+
+[data-history-topic] .resource-card {
+    display: flex;
+    align-items: center;
+}
+
+[data-history-topic] .resource-card p {
+    margin: 0;
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .container.section {
+        width: min(100% - 24px, 1180px);
+    }
+
+    .table,
+    table {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    footer .social-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
