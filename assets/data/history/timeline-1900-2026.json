@@ -1,0 +1,431 @@
+{
+  "updated": "2026-05-08",
+  "scope": "Palestinian history from 1900 through May 2026, written from a Palestinian anti-colonial point of view for a static site.",
+  "note": "This file is intentionally compact. Add more entries rather than hardcoding long history text in HTML.",
+  "periods": [
+    {
+      "id": "pre-nakba",
+      "label": "Before the Nakba",
+      "range": "1900-1947",
+      "summary": "Palestinian society organized through cities, villages, newspapers, unions, schools, farmers, merchants, religious institutions, and anti-colonial resistance while British rule and Zionist colonization reshaped the land without Palestinian consent."
+    },
+    {
+      "id": "nakba",
+      "label": "Nakba and Exile",
+      "range": "1948-1966",
+      "summary": "The Nakba produced mass expulsion, destroyed villages, refugee camps, and military rule over Palestinians who remained inside the new Israeli state."
+    },
+    {
+      "id": "occupation",
+      "label": "Occupation and Fragmentation",
+      "range": "1967-1992",
+      "summary": "Israel occupied the West Bank, Gaza Strip, and East Jerusalem in 1967, then expanded settlements, military orders, imprisonment, land seizures, and movement controls."
+    },
+    {
+      "id": "oslo-siege",
+      "label": "Oslo, Apartheid, and Siege",
+      "range": "1993-2022",
+      "summary": "The Oslo period fragmented Palestinian land and authority while settlements grew. Gaza was placed under blockade, and Palestinians faced repeated military assaults, home demolitions, arrests, and intensified apartheid conditions."
+    },
+    {
+      "id": "genocide-accountability",
+      "label": "Genocide Case and Accountability",
+      "range": "2023-May 2026",
+      "summary": "After October 2023, Gaza faced mass killing, displacement, starvation, destruction of civilian infrastructure, and a continuing struggle over humanitarian access, return, accountability, and Palestinian political freedom."
+    }
+  ],
+  "events": [
+    {
+      "id": "1900-palestinian-life",
+      "date": "1900",
+      "title": "Palestinian society before partition",
+      "period": "pre-nakba",
+      "summary": "Palestine entered the 20th century with established Arab Palestinian cities, villages, farms, religious institutions, schools, newspapers, trade networks, and political life. This matters because Palestinian history did not begin with Zionism or Israel.",
+      "tags": ["society", "culture", "anti-erasure"],
+      "sources": []
+    },
+    {
+      "id": "1917-balfour",
+      "date": "1917-11-02",
+      "title": "Balfour Declaration",
+      "period": "pre-nakba",
+      "summary": "Britain promised support for a Jewish national home in Palestine while Palestinians, the indigenous majority, were not granted political consent over their homeland.",
+      "tags": ["british-rule", "colonialism"],
+      "sources": [
+        {
+          "title": "The Origins and Evolution of the Palestine Problem: 1917-1988",
+          "publisher": "United Nations",
+          "url": "https://www.un.org/unispal/history/"
+        }
+      ]
+    },
+    {
+      "id": "1920-mandate",
+      "date": "1920-1922",
+      "title": "British Mandate system entrenches colonial rule",
+      "period": "pre-nakba",
+      "summary": "The Mandate period placed Palestine under British colonial administration, enabling Zionist immigration and institutions while suppressing Palestinian self-determination.",
+      "tags": ["british-rule", "self-determination"],
+      "sources": [
+        {
+          "title": "Question of Palestine: Mandate history",
+          "publisher": "United Nations",
+          "url": "https://www.un.org/unispal/history/"
+        }
+      ]
+    },
+    {
+      "id": "1936-revolt",
+      "date": "1936-1939",
+      "title": "Great Palestinian Revolt",
+      "period": "pre-nakba",
+      "summary": "Palestinians rose against British rule and Zionist colonization through strikes, armed revolt, rural resistance, and political organizing. Britain crushed the revolt, weakening Palestinian society before 1948.",
+      "tags": ["resistance", "british-rule"],
+      "sources": []
+    },
+    {
+      "id": "1947-partition",
+      "date": "1947-11-29",
+      "title": "UN Partition Plan",
+      "period": "pre-nakba",
+      "summary": "The UN recommended partitioning Palestine without Palestinian consent. From a Palestinian perspective, this internationalized the dispossession of the indigenous majority.",
+      "tags": ["partition", "un"],
+      "sources": [
+        {
+          "title": "UN General Assembly Resolution 181",
+          "publisher": "United Nations",
+          "url": "https://undocs.org/A/RES/181(II)"
+        }
+      ]
+    },
+    {
+      "id": "1948-nakba",
+      "date": "1948",
+      "title": "The Nakba",
+      "period": "nakba",
+      "summary": "More than 700,000 Palestinians were expelled or fled under assault, hundreds of villages were depopulated or destroyed, and refugees were denied return. The Nakba remains a present structure, not only a past event.",
+      "tags": ["nakba", "refugees", "return"],
+      "sources": [
+        {
+          "title": "UN General Assembly Resolution 194",
+          "publisher": "United Nations",
+          "url": "https://undocs.org/A/RES/194(III)"
+        }
+      ]
+    },
+    {
+      "id": "1956-kafr-qasim",
+      "date": "1956-10-29",
+      "title": "Kafr Qasim massacre",
+      "period": "nakba",
+      "summary": "Israeli border police killed Palestinian citizens of Israel in Kafr Qasim during military rule. The massacre is remembered as part of the violence used to control Palestinians who remained after 1948.",
+      "tags": ["massacre", "palestinian-citizens-of-israel"],
+      "sources": []
+    },
+    {
+      "id": "1964-plo",
+      "date": "1964",
+      "title": "Palestine Liberation Organization founded",
+      "period": "nakba",
+      "summary": "The PLO became a central vehicle for Palestinian national representation, linking refugee return, liberation, and self-determination.",
+      "tags": ["plo", "self-determination"],
+      "sources": []
+    },
+    {
+      "id": "1967-occupation",
+      "date": "1967-06",
+      "title": "Occupation of the West Bank, Gaza Strip, and East Jerusalem",
+      "period": "occupation",
+      "summary": "Israel occupied the rest of historic Palestine in 1967, placing Palestinians under military rule and beginning a new stage of settlement expansion, land confiscation, and displacement.",
+      "tags": ["occupation", "settlements"],
+      "sources": [
+        {
+          "title": "Security Council Resolution 242",
+          "publisher": "United Nations",
+          "url": "https://undocs.org/S/RES/242(1967)"
+        }
+      ]
+    },
+    {
+      "id": "1974-unga-3236",
+      "date": "1974-11-22",
+      "title": "UN reaffirms Palestinian self-determination",
+      "period": "occupation",
+      "summary": "UN General Assembly Resolution 3236 reaffirmed the inalienable rights of the Palestinian people, including self-determination, independence, sovereignty, and return.",
+      "tags": ["un", "self-determination", "return"],
+      "sources": [
+        {
+          "title": "UN General Assembly Resolution 3236",
+          "publisher": "United Nations",
+          "url": "https://undocs.org/A/RES/3236(XXIX)"
+        }
+      ]
+    },
+    {
+      "id": "1982-sabra-shatila",
+      "date": "1982-09",
+      "title": "Sabra and Shatila massacre",
+      "period": "occupation",
+      "summary": "Palestinian and Lebanese civilians were massacred in Beirut refugee camps by Israel-allied militia while Israeli forces controlled the area. The massacre remains central to Palestinian memory of exile and impunity.",
+      "tags": ["massacre", "refugees", "lebanon"],
+      "sources": []
+    },
+    {
+      "id": "1987-first-intifada",
+      "date": "1987-12",
+      "title": "First Intifada begins",
+      "period": "occupation",
+      "summary": "A mass Palestinian uprising spread across the occupied territory through strikes, boycotts, neighborhood committees, youth protest, and popular organizing against military rule.",
+      "tags": ["intifada", "popular-resistance"],
+      "sources": []
+    },
+    {
+      "id": "1993-oslo",
+      "date": "1993",
+      "title": "Oslo Accords",
+      "period": "oslo-siege",
+      "summary": "Oslo created limited Palestinian self-rule while leaving occupation, settlements, refugees, Jerusalem, borders, and sovereignty unresolved. For Palestinians, the process entrenched fragmentation rather than liberation.",
+      "tags": ["oslo", "fragmentation"],
+      "sources": []
+    },
+    {
+      "id": "2000-second-intifada",
+      "date": "2000-09",
+      "title": "Second Intifada",
+      "period": "oslo-siege",
+      "summary": "A new uprising erupted after years of failed negotiations, settlement growth, and continuing occupation. Israel responded with overwhelming force, closures, assassinations, and destruction.",
+      "tags": ["intifada", "occupation"],
+      "sources": []
+    },
+    {
+      "id": "2002-wall",
+      "date": "2002",
+      "title": "Separation wall accelerates land fragmentation",
+      "period": "oslo-siege",
+      "summary": "Israel began building the wall deep inside the West Bank, separating Palestinians from land, schools, hospitals, work, and each other. The ICJ later found legal consequences arising from its construction.",
+      "tags": ["wall", "fragmentation"],
+      "sources": [
+        {
+          "title": "Legal Consequences of the Construction of a Wall in the Occupied Palestinian Territory",
+          "publisher": "International Court of Justice",
+          "url": "https://www.icj-cij.org/case/131"
+        }
+      ]
+    },
+    {
+      "id": "2005-bds",
+      "date": "2005-07-09",
+      "title": "Palestinian civil society launches BDS call",
+      "period": "oslo-siege",
+      "summary": "Palestinian civil society called for boycott, divestment, and sanctions until Israel ends occupation, grants full equality to Palestinian citizens of Israel, and respects refugee return.",
+      "tags": ["bds", "solidarity"],
+      "sources": [
+        {
+          "title": "Palestinian Civil Society Call for BDS",
+          "publisher": "BDS Movement",
+          "url": "https://bdsmovement.net/call"
+        }
+      ]
+    },
+    {
+      "id": "2007-gaza-blockade",
+      "date": "2007",
+      "title": "Gaza blockade intensified",
+      "period": "oslo-siege",
+      "summary": "Israel, with Egyptian cooperation at Rafah, imposed a land, sea, and air blockade that trapped Palestinians in Gaza and turned basic life into a controlled humanitarian crisis.",
+      "tags": ["gaza", "blockade", "collective-punishment"],
+      "sources": []
+    },
+    {
+      "id": "2008-cast-lead",
+      "date": "2008-12",
+      "title": "Operation Cast Lead",
+      "period": "oslo-siege",
+      "summary": "Israel's assault on Gaza killed large numbers of Palestinians and devastated civilian infrastructure, reinforcing Gaza's reality of siege and repeated bombardment.",
+      "tags": ["gaza", "war"],
+      "sources": []
+    },
+    {
+      "id": "2014-protective-edge",
+      "date": "2014",
+      "title": "Operation Protective Edge",
+      "period": "oslo-siege",
+      "summary": "A 51-day Israeli assault on Gaza killed Palestinians, destroyed homes, and hit civilian infrastructure, deepening the long-term trauma of siege.",
+      "tags": ["gaza", "war"],
+      "sources": []
+    },
+    {
+      "id": "2018-great-march",
+      "date": "2018-2019",
+      "title": "Great March of Return",
+      "period": "oslo-siege",
+      "summary": "Palestinians in Gaza marched for refugee return and an end to siege. Israeli forces killed and wounded protesters, medics, journalists, and children.",
+      "tags": ["return", "gaza", "popular-resistance"],
+      "sources": []
+    },
+    {
+      "id": "2021-unity-intifada",
+      "date": "2021",
+      "title": "Unity Intifada",
+      "period": "oslo-siege",
+      "summary": "Palestinians across historic Palestine and exile mobilized against Sheikh Jarrah expulsions, attacks on Al-Aqsa, Gaza bombardment, and the fragmentation imposed on Palestinian life.",
+      "tags": ["jerusalem", "unity", "gaza"],
+      "sources": []
+    },
+    {
+      "id": "2023-october-gaza",
+      "date": "2023-10",
+      "title": "Gaza genocide case context begins",
+      "period": "genocide-accountability",
+      "summary": "After 7 October 2023, Israel launched a devastating military campaign in Gaza, imposing mass displacement, bombardment, siege, starvation risk, and destruction across civilian life.",
+      "tags": ["gaza", "genocide", "siege"],
+      "sources": [
+        {
+          "title": "Hostilities in the Gaza Strip and Israel - reported impact",
+          "publisher": "OCHA oPt",
+          "url": "https://www.ochaopt.org/"
+        }
+      ]
+    },
+    {
+      "id": "2023-dec-south-africa",
+      "date": "2023-12-29",
+      "title": "South Africa files ICJ genocide case",
+      "period": "genocide-accountability",
+      "summary": "South Africa brought a case against Israel at the International Court of Justice under the Genocide Convention, placing Palestinian survival in Gaza at the center of international legal proceedings.",
+      "tags": ["icj", "genocide", "accountability"],
+      "sources": [
+        {
+          "title": "Application of the Genocide Convention in the Gaza Strip",
+          "publisher": "International Court of Justice",
+          "url": "https://www.icj-cij.org/case/192"
+        }
+      ]
+    },
+    {
+      "id": "2024-jan-icj",
+      "date": "2024-01-26",
+      "title": "ICJ orders provisional measures",
+      "period": "genocide-accountability",
+      "summary": "The ICJ indicated provisional measures in South Africa v. Israel, ordering Israel to act under the Genocide Convention, prevent and punish incitement, enable humanitarian assistance, and preserve evidence.",
+      "tags": ["icj", "genocide", "law"],
+      "sources": [
+        {
+          "title": "Order of 26 January 2024",
+          "publisher": "International Court of Justice",
+          "url": "https://www.icj-cij.org/node/203447"
+        }
+      ]
+    },
+    {
+      "id": "2024-may-palestine-un",
+      "date": "2024-05-10",
+      "title": "UN General Assembly backs Palestine membership rights",
+      "period": "genocide-accountability",
+      "summary": "The General Assembly determined that the State of Palestine is qualified for UN membership and granted additional participation rights, while Palestine still lacked a General Assembly vote.",
+      "tags": ["un", "statehood", "self-determination"],
+      "sources": [
+        {
+          "title": "A/RES/ES-10/23",
+          "publisher": "United Nations",
+          "url": "https://www.un.org/unispal/document/admission-of-new-members-10may24/"
+        }
+      ]
+    },
+    {
+      "id": "2024-may-rafah-order",
+      "date": "2024-05-24",
+      "title": "ICJ orders measures over Rafah",
+      "period": "genocide-accountability",
+      "summary": "The ICJ issued additional provisional measures, including an order relating to Israel's military offensive in Rafah and humanitarian access.",
+      "tags": ["icj", "rafah", "gaza"],
+      "sources": [
+        {
+          "title": "Order of 24 May 2024",
+          "publisher": "International Court of Justice",
+          "url": "https://www.icj-cij.org/node/204091"
+        }
+      ]
+    },
+    {
+      "id": "2024-july-icj-occupation",
+      "date": "2024-07-19",
+      "title": "ICJ says Israel's continued presence in the occupied territory is unlawful",
+      "period": "genocide-accountability",
+      "summary": "In an advisory opinion, the ICJ found Israel's continued presence in the Occupied Palestinian Territory unlawful and said Israel must end it as rapidly as possible, cease settlement activity, and provide reparation.",
+      "tags": ["icj", "occupation", "settlements"],
+      "sources": [
+        {
+          "title": "Advisory Opinion of 19 July 2024",
+          "publisher": "International Court of Justice",
+          "url": "https://www.icj-cij.org/index.php/node/204160"
+        }
+      ]
+    },
+    {
+      "id": "2024-nov-icc-warrants",
+      "date": "2024-11-21",
+      "title": "ICC issues arrest warrants for Netanyahu and Gallant",
+      "period": "genocide-accountability",
+      "summary": "The International Criminal Court issued arrest warrants for Benjamin Netanyahu and Yoav Gallant in the Situation in the State of Palestine after rejecting Israel's jurisdiction challenges.",
+      "tags": ["icc", "accountability", "gaza"],
+      "sources": [
+        {
+          "title": "ICC arrest warrants announcement",
+          "publisher": "International Criminal Court",
+          "url": "https://www.icc-cpi.int/news/situation-state-palestine-icc-pre-trial-chamber-i-rejects-state-israels-challenges"
+        }
+      ]
+    },
+    {
+      "id": "2025-may-blockade-hunger",
+      "date": "2025-05",
+      "title": "Aid blockade, hunger, and renewed displacement in Gaza",
+      "period": "genocide-accountability",
+      "summary": "OCHA reported that Gaza faced a full aid blockade lasting over nine weeks, rising hunger, shutdowns of community kitchens, attacks affecting hospitals and schools, and large-scale renewed displacement.",
+      "tags": ["gaza", "blockade", "hunger", "displacement"],
+      "sources": [
+        {
+          "title": "Humanitarian Situation Update #286",
+          "publisher": "OCHA oPt",
+          "url": "https://www.ochaopt.org/content/humanitarian-situation-update-286-gaza-strip"
+        },
+        {
+          "title": "Humanitarian Situation Update #292",
+          "publisher": "OCHA oPt",
+          "url": "https://www.ochaopt.org/content/humanitarian-situation-update-292-gaza-strip"
+        }
+      ]
+    },
+    {
+      "id": "2025-oct-ceasefire",
+      "date": "2025-10-10",
+      "title": "Ceasefire enters into effect",
+      "period": "genocide-accountability",
+      "summary": "UN OCHA later reported humanitarian response efforts following a ceasefire that entered into effect on 10 October 2025, while restrictions, destruction, displacement, and aid obstacles continued.",
+      "tags": ["gaza", "ceasefire", "humanitarian"],
+      "sources": [
+        {
+          "title": "Gaza Humanitarian Response Situation Report No. 67",
+          "publisher": "OCHA oPt",
+          "url": "https://www.ochaopt.org/content/gaza-humanitarian-response-situation-report-no-67"
+        }
+      ]
+    },
+    {
+      "id": "2026-may-gaza",
+      "date": "2026-05-01",
+      "title": "Gaza remains displaced, restricted, and under fire",
+      "period": "genocide-accountability",
+      "summary": "As of OCHA's 1 May 2026 report, most people in Gaza remained displaced in poor shelter conditions, largely confined to less than half of Gaza, with ongoing strikes, shelling, gunfire, public health risks, and severe limits on movement.",
+      "tags": ["gaza", "may-2026", "displacement", "humanitarian"],
+      "sources": [
+        {
+          "title": "Humanitarian Situation Report | 1 May 2026",
+          "publisher": "OCHA oPt",
+          "url": "https://www.ochaopt.org/content/humanitarian-situation-report-1-may-2026"
+        }
+      ]
+    }
+  ]
+}

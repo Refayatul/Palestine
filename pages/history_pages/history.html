@@ -8,31 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <nav>
-        <div class="logo">
-            <a href="../../index.html"><span>Free<span>Palestine</span></span></a>
-        </div>
-        <ul class="nav-links">
-            <li><a href="../../index.html">Home</a></li>
-            <li><a href="history.html">History</a></li>
-            <li><a href="../resistance_pages/resistance.html">Resistance</a></li>
-            <li><a href="../betrayals_pages/betrayals.html">Betrayals</a></li>
-            <li><a href="../action_pages/action.html">Take Action</a></li>
-            <li><a href="../../legal/index.html">Legal</a></li>
-        </ul>
-        <div class="hamburger"><i class="fas fa-bars"></i></div>
-    </nav>
-
-    <div class="mobile-nav">
-        <ul>
-            <li><a href="../../index.html">Home</a></li>
-            <li><a href="history.html">History</a></li>
-            <li><a href="../resistance_pages/resistance.html">Resistance</a></li>
-            <li><a href="../betrayals_pages/betrayals.html">Betrayals</a></li>
-            <li><a href="../action_pages/action.html">Take Action</a></li>
-            <li><a href="../../legal/index.html">Legal</a></li>
-        </ul>
-    </div>
+    <header id="nav-container"></header>
 
     <main>
         <section class="hero">
@@ -40,7 +16,7 @@
                 <h1>Palestinian History</h1>
                 <p>Told from the viewpoint of a people facing colonization, exile, occupation, siege, and a continuing struggle for return and liberation.</p>
                 <div class="hero-buttons">
-                    <a class="btn" href="../../history/1948.html">Start With 1948</a>
+                    <a class="btn" href="#timeline-1900-2026">1900-May 2026 Timeline</a>
                     <a class="btn" href="../../legal/index.html">Legal Context</a>
                 </div>
             </div>
@@ -49,28 +25,7 @@
         <section class="section">
             <div class="container">
                 <h2>Core Periods</h2>
-                <div class="homepage-pathways">
-                    <article class="pathway-card">
-                        <h3>Before the Nakba</h3>
-                        <p>Palestinian cities, villages, farms, schools, newspapers, unions, and political life existed before Zionist colonization and British partition plans.</p>
-                        <a class="resource-link" href="early-20th-century.html">Early 20th Century</a>
-                    </article>
-                    <article class="pathway-card">
-                        <h3>The Nakba</h3>
-                        <p>In 1948, hundreds of thousands of Palestinians were expelled or fled under assault, more than 500 localities were depopulated, and refugees were denied return.</p>
-                        <a class="resource-link" href="../../history/1948.html">1948 Timeline</a>
-                    </article>
-                    <article class="pathway-card">
-                        <h3>Occupation Since 1967</h3>
-                        <p>Military rule, settlements, checkpoints, home demolitions, imprisonment, land confiscation, and annexation fragmented Palestinian life.</p>
-                        <a class="resource-link" href="../../history/1967.html">1967 Timeline</a>
-                    </article>
-                    <article class="pathway-card">
-                        <h3>Gaza Under Siege</h3>
-                        <p>Gaza's blockade is collective punishment. Palestinian history cannot be told honestly without naming siege, repeated assaults, and steadfast survival.</p>
-                        <a class="resource-link" href="../../history/2023.html">Recent Timeline</a>
-                    </article>
-                </div>
+                <div class="homepage-pathways" data-timeline-overview="periods"></div>
             </div>
         </section>
 
@@ -99,6 +54,13 @@
 
         <section class="section">
             <div class="container">
+                <h2 id="timeline-1900-2026">Timeline: 1900-May 2026</h2>
+                <div class="timeline-overview-list" data-timeline-overview="events"></div>
+            </div>
+        </section>
+
+        <section class="section section-alt">
+            <div class="container">
                 <h2>What to Remember</h2>
                 <div class="history-stats">
                     <div class="stat-card">
@@ -118,14 +80,9 @@
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <div class="footer-bottom">
-                <p>&copy; <span id="year">2026</span> Free Palestine. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+    <footer id="footer-container"></footer>
 
     <script src="../../assets/js/main.js"></script>
+    <script src="../../assets/js/render-timeline-overview.js"></script>
 </body>
 </html>
