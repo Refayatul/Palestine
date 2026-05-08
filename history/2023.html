@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2023 - War Chronology - Palestine</title>
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/timeline-styles.css">
-    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <script src="/assets/js/main.js" defer></script>
+    <script src="/assets/js/render-history.js" defer></script>
 </head>
-
 <body>
-    <header id="nav-container">
-        <!-- Navigation will be loaded here -->
+    <header>
+        <nav>
+            <!-- Navigation will be dynamically loaded or manually added later -->
+        </nav>
     </header>
-    
     <main>
         <section class="history-timeline-hero">
             <h1>2023</h1>
-            <p id="intro-text">The year 2023 marked the beginning of what many human rights organizations have characterized as genocide in Gaza, following the October 7 resistance operation known as "Al-Aqsa Flood." Israel's response involved a complete siege of the Gaza Strip and an intensive military campaign that has killed over 30,000 Palestinians, including more than 13,000 children. This period represents both the darkest chapter in recent Palestinian history and the emergence of the most powerful global solidarity movement the cause has ever seen.</p>
-            <a href="/pages/history.html" class="btn-small">Back to History Overview</a>
+            <p id="intro-text">Loading introduction...</p>
+            <a href="/pages/history_pages/history.html" class="btn-small">Back to History Overview</a>
         </section>
 
         <section class="timeline-section">
@@ -28,115 +28,8 @@
             </div>
         </section>
     </main>
-
-    <footer id="footer-container">
-        <!-- Footer will be loaded here -->
+    <footer>
+        <!-- Footer will be dynamically loaded or manually added later -->
     </footer>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            <script src="/assets/js/main.js"></script>
-    <script>
-        includeNavFooter();
-
-            // Comprehensive timeline data for 2023 and context
-            const timelineData = [
-                {
-                    date: "2021-2023 - Background Context",
-                    title: "Sheikh Jarrah Crisis and Global Solidarity",
-                    description: "The spark that ignited global attention to Palestine in 2021 came from East Jerusalem's Sheikh Jarrah neighborhood, where Palestinian families faced imminent eviction. Israeli police storm al-Aqsa mosque during Ramadan prayers (May 6, 2021), triggering mass protests. May 2021 uprising ('Unity Intifada') marked unprecedented coordination between Palestinians in West Bank, Gaza, and inside 1948 borders. Israeli military launched airstrikes on Gaza, killing 256 Palestinians including 66 children over 11-day period. Global solidarity movement emerged with #SaveSheikhJarrah trending worldwide. Social media became crucial tool for Palestinians to document Israeli violence. BDS movement gained momentum among younger generations and progressive movements globally.",
-                    category: "background"
-                },
-                {
-                    date: "2021-2022",
-                    title: "Continued Colonization and Legal Developments",
-                    description: "Despite international criticism, Israel continued colonization efforts throughout 2021-2022. Bennett-Lapid government (June 2021) continued settlement expansion at record rates. In 2022 alone, Israel approved over 10,000 new settlement units in occupied West Bank. Nation-State Law increasingly implemented in practice with Palestinian citizens facing greater restrictions. International Criminal Court investigation progressed with Prosecutor Karim Khan announcing February 2022 that he had reasonable grounds to believe war crimes committed. UN General Assembly adopted resolutions condemning Israeli settlement expansion. UN Human Rights Council report (August 2022) concluded Israel committing apartheid against Palestinians. UN report documented systematic violations of international law.",
-                    category: "political"
-                },
-                {
-                    date: "October 7, 2023",
-                    title: "Al-Aqsa Flood Resistance Operation",
-                    description: "Hamas and other Palestinian resistance groups launch coordinated attack on Israeli military and civilian targets. Approximately 1,200 Israelis killed, hostages taken. Operation named 'Al-Aqsa Flood' by Palestinians, referencing historical floods that liberated Jerusalem. Attack described by Israeli officials as 'Black Saturday' and compared to 9/11. Israeli intelligence failures exposed with no warning given to communities. Attack targeted military bases, settlements, and communities near Gaza border. Hamas releases video showing fighters breaching border fence and engaging Israeli forces. International media coverage focuses heavily on Israeli casualties while Palestinian context largely absent.",
-                    category: "military"
-                },
-                {
-                    date: "October 8, 2023",
-                    title: "Complete Siege of Gaza Implemented",
-                    description: "Israeli government declares war on Hamas following October 7 attacks. Prime Minister Benjamin Netanyahu announces complete siege of Gaza Strip. All electricity, water, food, and fuel supplies cut off to 2.3 million Palestinians. Israel destroys power plant supplying 60% of Gaza's electricity. Water treatment facilities cease operation leading to contamination. Fuel shortages affect hospitals, ambulances, and emergency services. Communications infrastructure destroyed cutting Gaza off from outside world. Israel restricts humanitarian aid to minimal levels. UN officials warn of imminent humanitarian catastrophe. International community largely silent on siege implementation.",
-                    category: "siege"
-                },
-                {
-                    date: "October 9-12, 2023",
-                    title: "Initial Aerial Assault Phase",
-                    description: "Israeli military launches intensive aerial bombardment of Gaza Strip. Over 1,000 airstrikes conducted in first 72 hours. Strikes target government buildings, police stations, prisons, universities, mosques, and media offices. Civilian infrastructure including schools, hospitals, and factories destroyed. Power plant further damaged affecting 80% of Gaza's electricity supply. Water treatment facilities bombed contaminating water supply. Over 2,000 Palestinians killed including hundreds of children. UN facilities and humanitarian organizations targeted despite providing coordinates. International community calls for humanitarian corridors as casualties mount.",
-                    category: "military"
-                },
-                {
-                    date: "October 13-20, 2023",
-                    title: "Operation Iron Swords Intensifies",
-                    description: "Israeli military launches ground invasion of Gaza Strip. Over 30,000 troops deployed including special forces units and armored divisions. Armored vehicles and tanks enter densely populated areas. Ground operations target tunnels and resistance strongholds. Israeli forces establish buffer zones by destroying homes and infrastructure. Hamas and resistance groups adapt tactics to urban warfare conditions. Intensive house-to-house fighting in densely populated areas including Gaza City, Khan Younis, and Rafah. Israeli forces use explosive weapons in populated areas causing widespread destruction. Reports of summary executions and extrajudicial killings of civilians emerge.",
-                    category: "military"
-                },
-                {
-                    date: "October 21-November 2023",
-                    title: "Targeting Civilian Infrastructure and Massacres",
-                    description: "Israeli strikes increasingly target civilian infrastructure including flour mills, food storage facilities, and manufacturing plants. UNRWA schools sheltering civilians hit despite providing precise coordinates. Hospitals and medical facilities bombed, overwhelming remaining healthcare capacity. Strikes on government buildings and administrative centers aim to destroy Hamas's governing capacity. Media offices and communication centers destroyed, limiting information flow. Nasser Hospital massacre in Khan Younis kills over 500 patients and medical staff. Al-Shifa Hospital siege and eventual capture becomes symbol of systematic targeting. Reports of mass graves and systematic killing of civilians emerge. Over 10,000 Palestinians killed including thousands of children.",
-                    category: "warcrimes"
-                },
-                {
-                    date: "November-December 2023",
-                    title: "Humanitarian Catastrophe and Starvation",
-                    description: "Medical facilities overwhelmed with casualties exceeding 25,000 wounded. Critical shortage of medical supplies, blood, and equipment. Hospitals forced to operate without electricity or clean water. UN humanitarian convoys blocked or delayed by Israeli forces. Over 1 million Palestinians displaced from homes. Food and water supplies critically low with systematic starvation documented. Sanitation systems collapse due to infrastructure damage. UNICEF reports thousands of children dying from malnutrition and disease. World Food Programme documents over 600,000 Palestinians facing catastrophic hunger. Israeli officials make statements about 'deliberate starvation' of Gaza population.",
-                    category: "humanitarian"
-                },
-                {
-                    date: "December 2023",
-                    title: "International Legal and Diplomatic Response",
-                    description: "South Africa files case at International Court of Justice (ICJ) accusing Israel of genocide under Genocide Convention. UN General Assembly passes resolution demanding humanitarian ceasefire with overwhelming support. International Court of Justice orders provisional measures requiring Israel to prevent genocide. ICC continues investigation into Israeli war crimes with expanded scope. Arab League and Muslim countries increase diplomatic pressure. Global protests erupt in over 100 countries with millions participating. Corporate boycotts increase significantly as BDS movement gains momentum. Universities divest from companies involved in occupation. Cultural boycotts expand with artists canceling performances in Israel.",
-                    category: "international"
-                },
-                {
-                    date: "January 2024",
-                    title: "ICJ Provisional Measures and Ongoing Genocide",
-                    description: "International Court of Justice orders provisional measures requiring Israel to prevent genocide and ensure humanitarian aid to Gaza. Israel continues military operations despite ICJ order. Casualty count exceeds 25,000 Palestinians including over 10,000 children. Over 70,000 Palestinians injured with many lacking medical care. Systematic destruction of infrastructure with UN estimating $20 billion needed for basic reconstruction. Israeli military admits to targeting hospitals and civilian facilities. Statements by Israeli officials increasingly explicit about intent to destroy Gaza. Global solidarity movement reaches unprecedented scale with protests in over 150 countries. International law experts document evidence of genocide including intent to destroy Palestinian population in Gaza.",
-                    category: "legal"
-                },
-                {
-                    date: "January-March 2024",
-                    title: "Regional and Global Implications",
-                    description: "Abraham Accords strain as Jordan, Egypt, and other Arab states face domestic pressure over Israeli violence. Netanyahu government faces criticism for intelligence failures and military preparedness. Israeli society divided between support for government approach and questioning morality of collective punishment. Global solidarity movement challenges traditional media narratives and political discourse. Social media platforms become crucial tools for documenting Israeli war crimes and organizing resistance. Academic institutions implement BDS measures at unprecedented scale. Cultural organizations sever ties with Israeli counterparts. Labor unions adopt boycott resolutions. International institutions exposed as inadequate for preventing genocide and protecting civilians.",
-                    category: "global"
-                },
-                {
-                    date: "Ongoing",
-                    title: "The Ongoing Nakba and Global Resistance",
-                    description: "Events of 2023-2024 represent culmination of ongoing Nakba that began in 1948. Systematic destruction of Gaza, continued colonization of West Bank, and apartheid policies within Israel demonstrate unresolved fundamental conflict. Global solidarity movement represents most powerful support Palestine has ever seen. Widespread rejection of Israeli narratives and embrace of Palestinian perspectives challenge traditional propaganda. Genocide documentation continues with international law experts gathering evidence. Challenge remains translating global solidarity into concrete actions ending Israeli occupation and apartheid. Outcome likely determines future of Palestine and principles of international law, human rights, and self-determination. Palestinian resistance continues despite massive casualties and destruction.",
-                    category: "legacy"
-                }
-            ];
-
-            // Render timeline
-            const timelineContainer = document.getElementById('timeline-container');
-            if (timelineContainer) {
-                timelineData.forEach((event, index) => {
-                    const eventElement = document.createElement('div');
-                    eventElement.className = `timeline-event ${index % 2 === 0 ? 'left' : 'right'}`;
-                    eventElement.innerHTML = `
-                        <div class="timeline-content">
-                            <span class="timeline-date">${event.date}</span>
-                            <h3 class="timeline-title">${event.title}</h3>
-                            <p class="timeline-description">${event.description}</p>
-                            <span class="timeline-category ${event.category}">${event.category.toUpperCase()}</span>
-                        </div>
-                    `;
-                    timelineContainer.appendChild(eventElement);
-                });
-            }
-        });
-    </script>
 </body>
-
 </html>
-
-
-

@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2014 - War Chronology - Palestine</title>
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/timeline-styles.css">
-    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <script src="/assets/js/main.js" defer></script>
+    <script src="/assets/js/render-history.js" defer></script>
 </head>
-
 <body>
-    <header id="nav-container">
-        <!-- Navigation will be loaded here -->
+    <header>
+        <nav>
+            <!-- Navigation will be dynamically loaded or manually added later -->
+        </nav>
     </header>
-    
     <main>
         <section class="history-timeline-hero">
             <h1>2014</h1>
-            <p id="intro-text">The year 2014 marked Israel's devastating Operation Protective Edge against the Gaza Strip, a 50-day military assault that killed over 2,200 Palestinians, including more than 500 children. This conflict was triggered by the kidnapping and murder of three Israeli teenagers in the West Bank and the subsequent killing of Palestinian teenager Mohammed Abu Khdeir in Jerusalem. The assault represented the culmination of intensified siege warfare tactics and systematic collective punishment, with Israel dropping over 5,000 tons of explosives on one of the world's most densely populated areas.</p>
-            <a href="/pages/history.html" class="btn-small">Back to History Overview</a>
+            <p id="intro-text">Loading introduction...</p>
+            <a href="/pages/history_pages/history.html" class="btn-small">Back to History Overview</a>
         </section>
 
         <section class="timeline-section">
@@ -28,151 +28,8 @@
             </div>
         </section>
     </main>
-
-    <footer id="footer-container">
-        <!-- Footer will be loaded here -->
+    <footer>
+        <!-- Footer will be dynamically loaded or manually added later -->
     </footer>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            <script src="/assets/js/main.js"></script>
-    <script>
-        includeNavFooter();
-
-            // Comprehensive timeline data for 2014 and context
-            const timelineData = [
-                {
-                    date: "2007-2014 - Background Context",
-                    title: "Gaza Siege and Political Division",
-                    description: "Following Hamas's takeover of Gaza in 2007, Israel imposes comprehensive blockade controlling all borders, airspace, and maritime access. Egypt cooperates in maintaining siege from its border. West Bank and Gaza Strip become politically separated. Palestinian Authority in West Bank receives international support while Hamas in Gaza faces isolation. Gaza population of 1.8 million confined to 365 square kilometers becomes world's largest open-air prison. UN reports warn Gaza becoming unlivable by 2020.",
-                    category: "background"
-                },
-                {
-                    date: "2008-2009",
-                    title: "Operation Cast Lead Precedent",
-                    description: "Israel's 22-day assault on Gaza kills over 1,400 Palestinians including 300+ children. Massive destruction of infrastructure, homes, and civilian facilities. Use of white phosphorus in populated areas causes severe burns and environmental contamination. Targeting of UN facilities and medical centers draws international condemnation. Goldstone Report documents war crimes and violations of international humanitarian law. Blockade tightened further after operation with restrictions on construction materials and basic supplies.",
-                    category: "military"
-                },
-                {
-                    date: "2009-2012",
-                    title: "Inter-War Deterioration",
-                    description: "Reconstruction efforts severely hampered by Israeli restrictions on building materials. Over 90% of Gaza's water becomes unfit for human consumption. Unemployment reaches nearly 40%. Electricity available for only few hours per day. Rafah crossing with Egypt remains largely closed. Kerem Shalom crossing with Israel subject to strict limitations. Youth population particularly affected by lack of educational and employment opportunities. Political division between Hamas and Fatah deepens with failed reconciliation efforts.",
-                    category: "humanitarian"
-                },
-                {
-                    date: "2012",
-                    title: "Operation Pillar of Defense",
-                    description: "Eight-day military campaign kills 165 Palestinians including over 100 civilians. Triggered by increased rocket fire from Gaza in response to Israeli assassinations of Hamas military leaders. Assassination of Ahmed Jabari, head of Hamas's military wing, sparks escalation. Israel conducts hundreds of airstrikes targeting government buildings, police stations, and militant group offices. Hamas and other groups fire over 1,500 rockets into Israel. Iron Dome defense system intercepts many rockets. Ceasefire brokered by Egypt ends conflict but causes significant damage to Gaza infrastructure.",
-                    category: "military"
-                },
-                {
-                    date: "2013-2014",
-                    title: "Escalating Tensions and Settlement Expansion",
-                    description: "Israeli settlement construction in West Bank reaches record levels with over 600,000 settlers now living in occupied territories. Annexation of Jordan Valley features prominently in Israeli election campaigns. Support for annexing Area C gains traction in Israel. Palestinian political division persists with no meaningful reconciliation. Humanitarian situation in Gaza continues deteriorating with youth unemployment exceeding 60%. International community largely fails to address root causes of conflict.",
-                    category: "political"
-                },
-                {
-                    date: "June 12, 2014",
-                    title: "Kidnapping of Israeli Teenagers",
-                    description: "Three Israeli teenagers kidnapped and murdered in West Bank near Hebron. Israel initially blames Hamas though later evidence suggests different perpetrators. Launches massive arrest campaign targeting hundreds of Palestinians including Hamas members. Increases military presence in West Bank with frequent raids on homes and institutions. Justifies subsequent escalation in Gaza as response to these kidnappings despite lack of direct connection to Gaza-based groups.",
-                    category: "trigger"
-                },
-                {
-                    date: "July 2, 2014",
-                    title: "Mohammed Abu Khdeir Murder",
-                    description: "Palestinian teenager Mohammed Abu Khdeir abducted from East Jerusalem and burned alive by Israeli settlers in apparent 'price tag' revenge attack. Murder sparks outrage across Palestinian communities and leads to protests in Jerusalem. Family members beaten by Israeli police during funeral procession. Death becomes rallying point for Palestinian resistance and contributes to cycle of violence that triggers major escalation.",
-                    category: "trigger"
-                },
-                {
-                    date: "July 7, 2014",
-                    title: "Pre-War Escalation",
-                    description: "Following Abu Khdeir murder and ongoing arrests, rocket fire from Gaza increases. Israel conducts targeted assassinations of Hamas military leaders. Hamas fires rockets into Israel including long-range weapons. Israeli airstrikes on Gaza intensify with daily casualties. Hamas urges restraint but faces pressure from supporters. International community calls for de-escalation as tensions reach breaking point.",
-                    category: "escalation"
-                },
-                {
-                    date: "July 8, 2014",
-                    title: "Operation Protective Edge Begins",
-                    description: "Israel launches major military operation against Gaza Strip at 15:30 local time. Massive aerial bombardment targets over 150 sites simultaneously including government buildings, police stations, and suspected weapons storage facilities. Israeli Air Force conducts over 200 sorties in first hours. Ground forces prepare for potential invasion. No formal declaration of war issued. Justified as response to rocket fire and security threats to Israeli civilians.",
-                    category: "military"
-                },
-                {
-                    date: "July 8-16, 2014",
-                    title: "Intensive Aerial Campaign Phase",
-                    description: "Israeli air campaign targets over 1,300 sites in first week. Strikes hit government ministries, police stations, prisons, universities, mosques, and media offices. Civilian infrastructure including schools, hospitals, and factories destroyed. Power plant damaged, affecting 80% of Gaza's electricity supply. Water treatment facilities bombed, contaminating water supply. Over 1,000 Palestinians killed in aerial phase including 300+ children. UN facilities and humanitarian organizations targeted.",
-                    category: "military"
-                },
-                {
-                    date: "July 17-20, 2014",
-                    title: "Targeting Civilian Infrastructure",
-                    description: "Israeli strikes increasingly target civilian infrastructure including flour mills, food storage facilities, and manufacturing plants. UNRWA schools sheltering civilians hit despite providing precise coordinates to Israeli military. Hospitals and medical facilities bombed, overwhelming remaining healthcare capacity. Strikes on government buildings and administrative centers aim to destroy Hamas's governing capacity. Media offices and communication centers destroyed, limiting information flow. Over 40% of Gaza's population displaced from homes.",
-                    category: "warcrimes"
-                },
-                {
-                    date: "July 21-24, 2014",
-                    title: "Ground Invasion Begins",
-                    description: "Israeli forces begin ground invasion of Gaza Strip, entering from multiple directions. Over 30,000 troops deployed including special forces units and armored divisions. Armored vehicles and tanks enter densely populated areas including Gaza City and Khan Younis. Ground operations target tunnels used for smuggling goods and weapons. Israeli forces establish buffer zones along border by destroying homes and infrastructure. Hamas and resistance groups adapt tactics to urban warfare conditions.",
-                    category: "military"
-                },
-                {
-                    date: "July 25-31, 2014",
-                    title: "Urban Warfare and Massacres",
-                    description: "Intensive house-to-house fighting in densely populated areas including Shujaiya neighborhood where over 100 Palestinians killed in single day. Israeli forces use explosive weapons in populated areas causing widespread destruction. Reports of summary executions and extrajudicial killings of civilians. Massacres in schools and homes, including killing of entire families. Shujaiya neighborhood completely leveled with entire blocks destroyed. Over 1,200 Palestinians killed during ground phase including 200+ children.",
-                    category: "warcrimes"
-                },
-                {
-                    date: "August 1-10, 2014",
-                    title: "Humanitarian Catastrophe Deepens",
-                    description: "Medical facilities overwhelmed with casualties exceeding 10,000 wounded. Critical shortage of medical supplies, blood, and equipment. Hospitals forced to operate without electricity or clean water. UN humanitarian convoys blocked or delayed by Israeli forces. Over 500,000 Palestinians displaced from homes. Food and water supplies critically low. Sanitation systems collapse due to infrastructure damage. International humanitarian organizations document systematic targeting of relief efforts.",
-                    category: "humanitarian"
-                },
-                {
-                    date: "August 11-18, 2014",
-                    title: "International Pressure Mounts",
-                    description: "UN Security Council emergency meetings held as casualties exceed 1,800. International humanitarian organizations document war crimes and violations of international law. Human Rights Watch and Amnesty International publish detailed reports on Israeli violations. Arab League and Muslim countries increase diplomatic pressure. Egypt mediates ceasefire negotiations as humanitarian situation becomes catastrophic. International Court of Justice considers emergency measures to stop violence.",
-                    category: "international"
-                },
-                {
-                    date: "August 19-25, 2014",
-                    title: "Final Assault and Ceasefire",
-                    description: "Israeli forces intensify operations in final days focusing on Rafah and southern Gaza. Hamas declares readiness for long-term ceasefire amid mounting casualties. International pressure for ceasefire becomes overwhelming with threats of ICC investigation. Egyptian-mediated ceasefire agreement reached on August 26. Israel announces unilateral ceasefire but maintains blockade on Gaza. Final death toll exceeds 2,200 Palestinians including 500+ children and 67 Israeli soldiers.",
-                    category: "diplomacy"
-                },
-                {
-                    date: "August 26, 2014",
-                    title: "Ceasefire and Aftermath",
-                    description: "50-day assault ends with Egyptian-brokered ceasefire. Over 2,200 Palestinians killed including 500+ children and 11,000+ injured. 500,000+ displaced from homes. Massive destruction of infrastructure with over 18,000 homes destroyed. 200+ factories and industrial facilities damaged or destroyed. Fishing industry devastated with boats and equipment destroyed. Agricultural areas contaminated by explosives and chemical weapons. Over 5,000 tons of explosives dropped on Gaza Strip. Reconstruction efforts face same restrictions as after Cast Lead.",
-                    category: "aftermath"
-                },
-                {
-                    date: "Post-2014",
-                    title: "Long-term Consequences",
-                    description: "Gaza blockade continues with severe restrictions on movement of people and goods. Reconstruction efforts severely limited by Israeli restrictions on building materials. Palestinian political division between Hamas and Fatah persists. International community largely fails to hold Israel accountable for war crimes. Gaza remains under siege with periodic military escalations. Humanitarian crisis deepens with poverty, unemployment, and lack of basic services. UN reports confirm Gaza approaching complete collapse with youth unemployment exceeding 70%.",
-                    category: "legacy"
-                }
-            ];
-
-            // Render timeline
-            const timelineContainer = document.getElementById('timeline-container');
-            if (timelineContainer) {
-                timelineData.forEach((event, index) => {
-                    const eventElement = document.createElement('div');
-                    eventElement.className = `timeline-event ${index % 2 === 0 ? 'left' : 'right'}`;
-                    eventElement.innerHTML = `
-                        <div class="timeline-content">
-                            <span class="timeline-date">${event.date}</span>
-                            <h3 class="timeline-title">${event.title}</h3>
-                            <p class="timeline-description">${event.description}</p>
-                            <span class="timeline-category ${event.category}">${event.category.toUpperCase()}</span>
-                        </div>
-                    `;
-                    timelineContainer.appendChild(eventElement);
-                });
-            }
-        });
-    </script>
 </body>
-
 </html>
-
-
-

@@ -1,31 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1948 - War Chronology - Palestine</title>
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/timeline-styles.css">
-    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <script src="/assets/js/main.js" defer></script>
+    <script src="/assets/js/render-history.js" defer></script>
 </head>
-
 <body>
-    <!-- Navigation section -->
-    <header id="nav-container">
-        <!-- Navigation will be loaded here -->
+    <header>
+        <nav>
+            <!-- Navigation will be dynamically loaded or manually added later -->
+        </nav>
     </header>
-
     <main>
         <section class="history-timeline-hero">
             <h1>1948</h1>
-            <p id="intro-text">The year 1948 marked the culmination of the Nakba (catastrophe) - the systematic ethnic
-                cleansing of Palestinians that began before the official declaration of the State of Israel. This period
-                saw the displacement of approximately 800,000 Palestinians from 530 villages and communities, the
-                implementation of Plan D (Tochnit Dalet), and the establishment of Israel on the rubble of Palestinian
-                society. The events of 1948 were the result of decades of Zionist colonization efforts, British mandate
-                policies, and the rejection of Palestinian calls for coexistence.</p>
-            <a href="/pages/history.html" class="btn-small">Back to History Overview</a>
+            <p id="intro-text">Loading introduction...</p>
+            <a href="/pages/history_pages/history.html" class="btn-small">Back to History Overview</a>
         </section>
 
         <section class="timeline-section">
@@ -34,130 +28,8 @@
             </div>
         </section>
     </main>
-
-    <!-- Footer section -->
-    <footer id="footer-container">
-        <!-- Footer will be loaded here -->
+    <footer>
+        <!-- Footer will be dynamically loaded or manually added later -->
     </footer>
-
-    <script src="/assets/js/main.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            includeNavFooter();
-
-            // Comprehensive timeline data
-            const timelineData = [
-                {
-                    date: "Pre-1948 - Background Context",
-                    title: "Roots of the Crisis: The Mandate Years",
-                    description: "Even before Palestine was officially declared a British mandate in 1922, British policies and preferential treatment of Zionist colonists created a volatile political climate. The Jewish Yishuv became a proto-state within an existing nation, aiming to establish an exclusive Jewish ethnocracy. Zionist settlers employed a 'logic of elimination' - developing moral justifications and practical means for removing the native Palestinian population. This included denying Palestinian existence with slogans like 'A land without a people for a people without a land.' Despite Zionist settlement efforts, by the end of the mandate they controlled only 5-6% of the land and constituted only a third of the population. Palestinian resistance included the prominent 1936 revolt against both British colonial rule and Zionist settlement.",
-                    category: "background"
-                },
-                {
-                    date: "Historical Context",
-                    title: "Palestinian Diversity and Early Zionist Relations",
-                    description: "Historically, Palestine was a place of refuge for diverse populations including Armenian, Bosnian, and Indian Palestinians who formed an integral part of society. Early Zionist settlers were welcomed by Palestinians who taught them to work the land, despite Zionist views of Palestinians as inferior and uncivilized. The shift occurred when it became clear settlers aimed to become landlords, not equals. Jewish National Fund Chairman Menachem Usishkin's statement that settlers came to be 'landlords' marked this turning point. Zionist leadership sanctioned settlers employing Palestinians, calling Palestinian labor an 'illness' and forming segregated trade unions banning non-Jewish members.",
-                    category: "background"
-                },
-                {
-                    date: "British Reports",
-                    title: "British Colonial Documentation",
-                    description: "As exceptional record-keepers, the British compiled extensive reports on Palestine tensions. The Haycraft report concluded Palestinian actions were motivated by British favoritism toward Zionist settlers, not antisemitism. The Shaw report stated no such tension had existed for nearly a century prior. These colonial documents provide crucial evidence of the root causes of conflict and Palestinian grievances against discriminatory policies.",
-                    category: "background"
-                },
-                {
-                    date: "1919 & 1947",
-                    title: "Partition Plans: From Colonial Ambition to UN Resolution",
-                    description: "The first partition scheme was proposed in 1919 by the World Zionist Organization, claiming all of mandatory Palestine plus parts of Lebanon, Syria, and Transjordan - despite Jews comprising only 2-3% of the population there. The 1947 UN General Assembly Resolution 181 recommended partitioning Palestine, allotting 56% of the land (including most fertile coastal regions) to the Zionist state, though Zionist settlers constituted only a third of the population and had arrived mostly during the 4th and 5th Zionist immigration waves (Aliyot) between 1924-1939. Palestinians rejected this as asking them to give away most of their land to recent settlers.",
-                    category: "political"
-                },
-                {
-                    date: "1947-1948",
-                    title: "Zionist Rejection of Partition in Principle",
-                    description: "Despite public claims of accepting partition, internal Yishuv discussions revealed complete rejection of the concept. David Ben-Gurion stated: 'After the formation of a large army in the wake of the establishment of the state, we will abolish partition and expand to the whole of Palestine.' He wrote privately that 'A Jewish state is not the end but the beginning,' requiring an 'elite army' to settle the rest of Palestine. Chaim Weizmann expected partition to be 'only a temporary arrangement for the next twenty to twenty-five years.'",
-                    category: "political"
-                },
-                {
-                    date: "UN Legal Issues",
-                    title: "The UN's Legal Limitations",
-                    description: "The UN General Assembly resolution was merely a recommendation, not a binding partition. The Security Council could not reach consensus on enforcement, concluding the plan could not be implemented. The UN Special Committee on Palestine admitted that creating a Jewish National Home in Palestine 'runs counter to the principle of self-determination' for Palestinians already living there. The UN had no legal authority to force Palestinians to divide their homeland, making the resolution legally non-binding on the Palestinian people.",
-                    category: "legal"
-                },
-                {
-                    date: "1944-1948",
-                    title: "Development of Plan D (Tochnit Dalet)",
-                    description: "Yigael Yadin began developing Plan D in 1944, adopted in 1948. This plan called for expansion beyond partition borders, with destruction and expulsion of any Palestinian village within these borders that resisted - including cities designated for the Arab Palestinian state like Nazareth, Acre, and Lydda. Ben-Gurion's biographer noted his clear position: 'it would be better that as few a number as possible of Arabs would remain in the territory of the [Jewish] state.' The plan was implemented systematically throughout 1948.",
-                    category: "military"
-                },
-                {
-                    date: "Pre-War Period (1947-1948)",
-                    title: "Ethnic Cleansing Begins Before Arab Intervention",
-                    description: "Massive ethnic cleansing operations began before any regular Arab armies entered Palestine. Approximately 300,000 Palestinians were expelled through these campaigns before the war's official start. These operations included massacres and war crimes even against neutral villages with non-aggression pacts - exemplified by the Deir Yassin massacre, which demonstrated the systematic nature of these operations. This contradicts claims that the Nakba was a byproduct of Arab aggression against Israel.",
-                    category: "nakba"
-                },
-                {
-                    date: "March 1948",
-                    title: "Rejected Peace Initiatives",
-                    description: "The United States sponsored efforts to avoid war, asking the Yishuv to cease military activities and postpone statehood declaration to allow negotiations. Except for King Abdullah of Transjordan, Arab states accepted this initiative. However, Ben-Gurion rejected it, knowing peaceful partition implementation would allow expelled refugees to return and prevent conquest of coveted lands outside the partition plan. Arab states had also secretly offered to absorb refugees - all rejected by Israel to maximize land-grabs.",
-                    category: "political"
-                },
-                {
-                    date: "May 14, 1948",
-                    title: "Unilateral Declaration of Israeli State",
-                    description: "David Ben-Gurion unilaterally declared Israel's establishment while the UN Security Council was still negotiating implementation. This ignored Palestinian overtures for coexistence, including the 1928 Palestinian leadership vote to allow Zionist settlers equal representation despite being a minority, and the 1947 Palestinian proposal for a unitary state for all inhabitants. Zionist leadership consistently rejected coexistence opportunities as they never intended to live as equals in Palestine.",
-                    category: "political"
-                },
-                {
-                    date: "May 15, 1948",
-                    title: "Reluctant Arab Intervention",
-                    description: "Arab armies from Transjordan, Egypt, Syria, Lebanon, and Iraq intervened reluctantly after witnessing massive ethnic cleansing. Inter-Arab rivalries and strategic interests, not eliminationist intent, drove their actions. Jordan sought the West Bank as a stepping stone to Greater Syria, with documented collusion with Israelis to gift parts of the West Bank in exchange for non-interference. Egypt aimed to counter Hashemite power plays. They primarily occupied territories designated for the Palestinian Arab state, avoiding areas designated for the Zionist state.",
-                    category: "military"
-                },
-                {
-                    date: "1948 - Throughout the War",
-                    title: "Full Implementation of Ethnic Cleansing",
-                    description: "Plan D was fully implemented, expanding Israeli control well beyond partition borders. Palestinian resistance was met with systematic expulsion and destruction of communities. The Haganah and other Yishuv forces operated under clear instructions to minimize the Arab population within the Jewish state's territory. This included targeting cities and villages designated for the Arab Palestinian state under the 1947 partition plan, demonstrating the expansionist nature of Zionist objectives.",
-                    category: "nakba"
-                },
-                {
-                    date: "1948 - End of War",
-                    title: "Completion of the Nakba",
-                    description: "By war's end, approximately 800,000 Palestinians were ethnically cleansed from 530 villages and communities. Israel was established on the ruins of Palestinian society. Around 80% of the Palestinian population within the new Israeli borders were expelled. The remaining 20% faced decades of martial law, with their communities turned into segregated, heavily controlled enclaves surrounded by barbed wire. These refugees and their descendants remain scattered worldwide in refugee camps today, still denied their right to return.",
-                    category: "nakba"
-                },
-                {
-                    date: "1949",
-                    title: "Armistice and the Green Line",
-                    description: "Armistice agreements established the Green Line as Israel's de facto borders, though official borders were never declared. The West Bank came under Jordanian control, while the Gaza Strip fell under Egyptian administration. The Green Line marked the territorial gains from Israel's systematic ethnic cleansing operations, not the borders of the 1947 partition plan. This represented the culmination of Zionist territorial ambitions through force rather than negotiation.",
-                    category: "political"
-                },
-                {
-                    date: "1948-1950s",
-                    title: "Continued Operations and Institutionalized Discrimination",
-                    description: "Ethnic cleansing operations continued into the 1950s, years after the war's end. Israel refused Palestinian refugees' right to return home. The early years established the discriminatory legal regime that governs Israel today, with Palestinians who remained living under martial law. This period laid the foundation for Israel's ongoing apartheid system, demonstrating that 1948 was not an aberration but the culmination of systematic colonial policy that continues to this day.",
-                    category: "legacy"
-                }
-            ];
-
-            // Render timeline
-            const timelineContainer = document.getElementById('timeline-container');
-            if (timelineContainer) {
-                timelineData.forEach((event, index) => {
-                    const eventElement = document.createElement('div');
-                    eventElement.className = `timeline-event ${index % 2 === 0 ? 'left' : 'right'}`;
-                    eventElement.innerHTML = `
-                        <div class="timeline-content">
-                            <span class="timeline-date">${event.date}</span>
-                            <h3 class="timeline-title">${event.title}</h3>
-                            <p class="timeline-description">${event.description}</p>
-                            <span class="timeline-category ${event.category}">${event.category.toUpperCase()}</span>
-                        </div>
-                    `;
-                    timelineContainer.appendChild(eventElement);
-                });
-            }
-        });
-    </script>
 </body>
-
 </html>
