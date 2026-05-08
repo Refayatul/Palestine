@@ -1,25 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2021 - War Chronology - Palestine</title>
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/timeline-styles.css">
-    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <script src="/assets/js/main.js" defer></script>
+    <script src="/assets/js/render-history.js" defer></script>
 </head>
-
 <body>
-    <header id="nav-container">
-        <!-- Navigation will be loaded here -->
-    </header>
-    
+    <header id="nav-container"></header>
     <main>
         <section class="history-timeline-hero">
             <h1>2021</h1>
-            <p id="intro-text">The year 2021 marked a pivotal moment in the Palestinian struggle, sparked by Israeli eviction attempts in Sheikh Jarrah, East Jerusalem, which ignited the Gaza conflict known as the Unity Intifada. This period saw unprecedented global solidarity through the BDS movement, the opening of the ICC investigation into Israeli war crimes, and the culmination of years of intensified colonization and systemic discrimination.</p>
-            <a href="/pages/history.html" class="btn-small">Back to History Overview</a>
+            <p id="intro-text">Loading introduction...</p>
+            <a href="/pages/history_pages/history.html" class="btn-small">Back to History Overview</a>
         </section>
 
         <section class="timeline-section">
@@ -28,127 +24,6 @@
             </div>
         </section>
     </main>
-
-    <footer id="footer-container">
-        <!-- Footer will be loaded here -->
-    </footer>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            <script src="/assets/js/main.js"></script>
-    <script>
-        includeNavFooter();
-
-            // Comprehensive timeline data for 2021 and context
-            const timelineData = [
-                {
-                    date: "2014-2020 - Background Context",
-                    title: "Continued Military Assaults and Colonization",
-                    description: "Following Operation Protective Edge (2014), Israel continued periodic military assaults interspersed with ongoing siege conditions preventing Gaza reconstruction. West Bank colonization accelerated under successive Israeli governments with settlement expansion reaching record levels. Trump administration's recognition of Jerusalem as Israel's capital (2017) and pro-Israel policies emboldened annexation efforts. Jordan Valley annexation plans and formalization of Israeli control over Area C signaled shift toward de facto annexation. Palestinian Authority increasingly seen as subcontractor to occupation while facing domestic criticism. Political division between Gaza (Hamas) and West Bank (Fatah) persisted with separate institutions and policies.",
-                    category: "background"
-                },
-                {
-                    date: "2018-2020",
-                    title: "Great March of Return and International Attention",
-                    description: "Beginning March 2018, Great March of Return brought renewed international attention to Gaza's humanitarian crisis. Weekly protests along Gaza-Israel border saw tens of thousands peacefully demanding end to blockade and right of return. Israeli military response was brutal and systematic with snipers killing over 200 protesters and wounding thousands including children and medical personnel. Murder of Palestinian medic Razan Al-Najjar (May 2018) became symbol of Israeli disregard for international humanitarian law. Israel's release of doctored footage attempting to justify her killing backfired, exposing systematic targeting of civilians and medical personnel. These protests pushed Palestinian question back into international headlines.",
-                    category: "resistance"
-                },
-                {
-                    date: "2015-2020",
-                    title: "BDS Movement Growth and Global Solidarity",
-                    description: "BDS (Boycott, Divestment, Sanctions) movement founded in 2005 by over 170 Palestinian NGOs became major force in global solidarity. Movement campaigns for Palestinian rights through international pressure until Israel complies with international law. Three goals: ending occupation and colonization, recognizing rights of Palestinian citizens of Israel, respecting refugee right of return (UN Resolution 194). Inspired by successful anti-Apartheid South Africa campaign. RAND Corporation study estimated BDS could cost Israel 2% of GDP (~$9 billion) by 2030. Major victories included Volkswagen divestment from settlement companies. Movement faced intense smearing campaigns but grew despite accusations.",
-                    category: "international"
-                },
-                {
-                    date: "2017-2020",
-                    title: "Political Developments and Diplomatic Shifts",
-                    description: "Trump administration's 'Deal of the Century' (2020) abandoned Palestinian statehood pretense. Abraham Accords (2020) normalized relations between Israel and UAE, Bahrain, Sudan, Morocco, marginalizing Palestinian cause in regional diplomacy. Nation-State Law (2018) entrenched Israel's identity as Jewish state at expense of democratic character. Palestinian citizens of Israel faced rising racism and discrimination. Palestinian diaspora remained excluded from meaningful political process despite representing majority of Palestinians worldwide. Right of return ignored in diplomatic discussions while Israel's demographic engineering accelerated.",
-                    category: "political"
-                },
-                {
-                    date: "March-May 2021",
-                    title: "Sheikh Jarrah Crisis and Escalation",
-                    description: "Planned evictions of Palestinian families in Sheikh Jarrah neighborhood, East Jerusalem, sparked international concern. Israeli courts ruled in favor of Jewish settler organizations claiming ownership based on Ottoman-era documents. Palestinian families faced displacement from homes lived in for decades. International media coverage increased as residents resisted eviction orders. Protests erupted in Jerusalem and spread globally. Crisis highlighted ongoing colonization of East Jerusalem and systematic displacement of Palestinian residents. Israeli authorities revoked Palestinian residency permits for studying abroad or living outside Jerusalem, part of broader demographic control strategy.",
-                    category: "trigger"
-                },
-                {
-                    date: "May 6-10, 2021",
-                    title: "Al-Aqsa Mosque Confrontations",
-                    description: "Israeli police raid Al-Aqsa Mosque compound during Ramadan, using tear gas, rubber bullets, and stun grenades against worshippers. Over 200 Palestinians injured in clashes. Israeli forces block Muslim worshippers from entering mosque during holiest days of Ramadan. Actions seen as provocative and reminiscent of 2000 Intifada triggers. Hamas calls for evening prayers at mosque to continue despite Israeli restrictions. Tensions escalate as Palestinian youth clash with Israeli forces. International community expresses concern over potential escalation.",
-                    category: "trigger"
-                },
-                {
-                    date: "May 10, 2021",
-                    title: "Escalation and Rocket Fire",
-                    description: "Hamas and Palestinian Islamic Jihad fire rockets into Israel in solidarity with Sheikh Jarrah residents and Al-Aqsa worshippers. Israel responds with airstrikes on Gaza targeting government buildings and weapons storage facilities. Eight Palestinians killed in Israeli airstrikes including children. Israeli airstrikes hit high-rise buildings housing international media and residential towers. Iron Dome intercepts many rockets but some reach Israeli population centers. Gaza power plant damaged affecting electricity supply. Hamas warns of expanding conflict if Israeli aggression continues.",
-                    category: "escalation"
-                },
-                {
-                    date: "May 11-12, 2021",
-                    title: "Intensive Aerial Campaign",
-                    description: "Israeli air campaign intensifies with over 150 airstrikes on first two days. Strikes target government ministries, police stations, prisons, universities, mosques, and media offices. Civilian infrastructure including schools, hospitals, and factories destroyed. Power plant further damaged affecting 80% of Gaza's electricity supply. Water treatment facilities bombed contaminating water supply. Over 65 Palestinians killed including 15 children. UN facilities and humanitarian organizations targeted despite providing coordinates. International community calls for immediate ceasefire as humanitarian crisis worsens.",
-                    category: "military"
-                },
-                {
-                    date: "May 13-14, 2021",
-                    title: "Ground Invasion Threat and ICC Investigation",
-                    description: "Israeli forces mass on Gaza border preparing for potential ground invasion. Defense Minister Benny Gantz threatens 'significant ground maneuver'. International pressure mounts as casualties exceed 100 Palestinians. UN Security Council emergency meetings held. May 14: International Criminal Court opens formal investigation into Israeli crimes in Palestine including war crimes and crimes against humanity. Investigation focuses on 2014 Gaza war, settlement expansion, and current conflict. Israeli authorities continue evictions in Sheikh Jarrah despite international outcry. U.S. Embassy opening in Jerusalem anniversary coincides with escalation.",
-                    category: "military"
-                },
-                {
-                    date: "May 15-16, 2021",
-                    title: "Urban Warfare and Massacres",
-                    description: "Israeli forces conduct targeted assassinations of Hamas military leaders. Strikes on residential buildings kill entire families including children. Al-Jalaa building housing AP and Al Jazeera offices destroyed despite no warning. Israeli forces use explosive weapons in populated areas causing widespread destruction. Reports of summary executions and extrajudicial killings of civilians. Massacres in homes and apartment buildings with entire families killed. Over 190 Palestinians killed including 57 children. Israeli strikes target vital infrastructure including power stations and water facilities.",
-                    category: "warcrimes"
-                },
-                {
-                    date: "May 17-20, 2021",
-                    title: "Humanitarian Catastrophe and Global Protests",
-                    description: "Medical facilities overwhelmed with casualties exceeding 1,200 wounded. Critical shortage of medical supplies, blood, and equipment. Hospitals forced to operate without electricity or clean water. UN humanitarian convoys blocked or delayed by Israeli forces. Over 70,000 Palestinians displaced from homes. Food and water supplies critically low. Sanitation systems collapse due to infrastructure damage. Global protests erupt in dozens of cities worldwide. Social media campaigns #FreePalestine and #GazaUnderAttack trend globally. Corporate boycotts increase as BDS movement gains momentum.",
-                    category: "humanitarian"
-                },
-                {
-                    date: "May 21-25, 2021",
-                    title: "International Pressure and Ceasefire",
-                    description: "UN Security Council emergency meetings intensify as death toll exceeds 230 Palestinians. International humanitarian organizations document war crimes and violations. Human Rights Watch and Amnesty International publish detailed reports. Arab League and Muslim countries increase diplomatic pressure. Egypt mediates ceasefire negotiations as humanitarian situation becomes catastrophic. International Court of Justice considers emergency measures. Biden administration shifts position calling for de-escalation. Social media campaigns pressure corporations and institutions to divest from Israel.",
-                    category: "international"
-                },
-                {
-                    date: "May 21, 2021",
-                    title: "Ceasefire and Aftermath",
-                    description: "Egypt-brokered ceasefire ends 11-day conflict at 02:00 local time. Over 250 Palestinians killed including 66 children and 1,900+ injured. 13 Israeli civilians and 2 soldiers killed. Massive destruction of infrastructure with over 2,000 homes destroyed. 18 multi-story buildings leveled including media offices. Power plant completely destroyed affecting entire Gaza Strip. Over 70,000 displaced from homes. Israeli airstrikes destroy vital infrastructure including water treatment plants and hospitals. Ceasefire holds but underlying issues remain unresolved.",
-                    category: "aftermath"
-                },
-                {
-                    date: "May 2021-Present",
-                    title: "Unity Intifada and Global Solidarity Impact",
-                    description: "Conflict dubbed 'Unity Intifada' reflecting Palestinian unity between Gaza, West Bank, and diaspora. Unprecedented global protests in over 100 cities worldwide. Social media campaigns reach billions of people. Corporate boycotts increase significantly with major brands facing pressure. Universities divest from companies involved in occupation. International solidarity movements gain momentum in Global South. Palestinian narrative gains prominence in mainstream media. ICC investigation continues gathering evidence of war crimes. Sheikh Jarrah evictions temporarily halted but underlying legal challenges persist.",
-                    category: "legacy"
-                }
-            ];
-
-            // Render timeline
-            const timelineContainer = document.getElementById('timeline-container');
-            if (timelineContainer) {
-                timelineData.forEach((event, index) => {
-                    const eventElement = document.createElement('div');
-                    eventElement.className = `timeline-event ${index % 2 === 0 ? 'left' : 'right'}`;
-                    eventElement.innerHTML = `
-                        <div class="timeline-content">
-                            <span class="timeline-date">${event.date}</span>
-                            <h3 class="timeline-title">${event.title}</h3>
-                            <p class="timeline-description">${event.description}</p>
-                            <span class="timeline-category ${event.category}">${event.category.toUpperCase()}</span>
-                        </div>
-                    `;
-                    timelineContainer.appendChild(eventElement);
-                });
-            }
-        });
-    </script>
+    <footer id="footer-container"></footer>
 </body>
-
 </html>
-
-
-

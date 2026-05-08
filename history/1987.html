@@ -1,25 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1987 - War Chronology - Palestine</title>
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/timeline-styles.css">
-    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <script src="/assets/js/main.js" defer></script>
+    <script src="/assets/js/render-history.js" defer></script>
 </head>
-
 <body>
-    <header id="nav-container">
-        <!-- Navigation will be loaded here -->
-    </header>
-    
+    <header id="nav-container"></header>
     <main>
         <section class="history-timeline-hero">
             <h1>1987</h1>
-            <p id="intro-text">The year 1987 marked the beginning of the First Intifada, a spontaneous popular uprising that emerged from two decades of Israeli military occupation following the 1967 war. What started with the December 9 traffic incident near Jabalia refugee camp quickly spread into a mass movement of civil disobedience, general strikes, and popular resistance across the West Bank and Gaza Strip. This period from 1967-1987 established the fundamental dynamics of occupation that persist today: systematic land confiscation, settlement expansion, economic dependency, and comprehensive military control.</p>
-            <a href="/pages/history.html" class="btn-small">Back to History Overview</a>
+            <p id="intro-text">Loading introduction...</p>
+            <a href="/pages/history_pages/history.html" class="btn-small">Back to History Overview</a>
         </section>
 
         <section class="timeline-section">
@@ -28,133 +24,6 @@
             </div>
         </section>
     </main>
-
-    <footer id="footer-container">
-        <!-- Footer will be loaded here -->
-    </footer>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            <script src="/assets/js/main.js"></script>
-    <script>
-        includeNavFooter();
-
-            // Comprehensive timeline data for 1987 and the occupation period
-            const timelineData = [
-                {
-                    date: "1967 - Background Context",
-                    title: "Six-Day War and Occupation Begins",
-                    description: "Israel launches preemptive strike against Egypt, Syria, and Jordan, occupying the West Bank, Gaza Strip, and East Jerusalem. Over 300,000 Palestinians displaced in first weeks of occupation. Military administration imposed on Palestinian population. Israeli forces capture East Jerusalem and immediately begin annexation process, giving Palestinian residents temporary residency status subject to revocation.",
-                    category: "military"
-                },
-                {
-                    date: "1967",
-                    title: "Systematic Control Mechanisms Established",
-                    description: "Israeli military government takes control of daily life for Palestinians, requiring permits for travel, work, education, and family visits. Curfew becomes routine tool of control. Palestinian institutions placed under military supervision. Systematic home demolitions begin for 'military necessity' - clearing areas for military bases, settlements, and infrastructure. Thousands of families displaced, with demolitions used as collective punishment.",
-                    category: "occupation"
-                },
-                {
-                    date: "1967-1968",
-                    title: "Land Confiscation and First Settlements",
-                    description: "Using various legal mechanisms including 'state land' declarations and requisitioning, Israel begins confiscating Palestinian agricultural land and property for settlement construction. Kfar Etzion and other settlements built on land of depopulated Palestinian villages from 1948. Government-sponsored settlement program begins with religious and ideological settlers. Palestinian villages face encroachment from the outset.",
-                    category: "colonization"
-                },
-                {
-                    date: "1968-1970",
-                    title: "Settlement Security and Labor Exploitation",
-                    description: "Israeli military begins routine protection of settlers, including escorting them to work fields and protecting construction sites. Palestinian farmers increasingly unable to access their land near settlements. 35-40% of Palestinian workforce becomes dependent on permits to work inside Israel. Workers face discriminatory wages, dangerous conditions, and constant threat of permit revocation. Economic dependency becomes tool of control.",
-                    category: "colonization"
-                },
-                {
-                    date: "1970-1971",
-                    title: "Movement Restrictions and Repression",
-                    description: "Comprehensive closure policies implemented, requiring permits for travel between towns and cities. Palestinian communities become increasingly isolated. Separation from family members in different areas becomes common hardship. Administrative detention without trial becomes routine practice. House demolitions used as collective punishment - entire families lose homes due to actions of one member. Hundreds of homes demolished annually.",
-                    category: "repression"
-                },
-                {
-                    date: "1972-1973",
-                    title: "Educational Restrictions and War Impact",
-                    description: "Israeli authorities begin closing Palestinian universities and restricting educational institutions. Bir Zeit University faces repeated closures. Students require permits to attend classes. Education viewed as potential threat to occupation. During October war, Palestinians face intensified restrictions, extended curfews lasting weeks, and displacement from homes near military zones. Movement completely restricted. Economic hardship increases dramatically.",
-                    category: "repression"
-                },
-                {
-                    date: "1974-1976",
-                    title: "International Recognition and Land Day",
-                    description: "UN General Assembly grants PLO observer status, marking first international recognition of Palestinian political representation. Resolution affirms Palestinian rights to self-determination and independence. Land Day protests on March 15 mark first organized resistance by Palestinian citizens of Israel against ongoing land confiscations. Israeli police kill six protesters in Arab villages. First organized resistance inside 1948 borders. Land Day becomes annual day of Palestinian resistance.",
-                    category: "political"
-                },
-                {
-                    date: "1977-1979",
-                    title: "Likud Government and Camp David",
-                    description: "Menachem Begin's Likud government adopts aggressive settlement policy, accelerating colonization. Settlements in previously untouched areas like Elon Moreh established. Government subsidies for settlers increase dramatically. Israel unveils systematic settlement plan to establish permanent control over strategic areas including water resources, mountain ridges, and transportation corridors. Camp David negotiations begin, excluding Palestinian representatives. Egypt-Israel peace treaty signed without Palestinian representation. West Bank and Gaza Strip not mentioned in final agreement.",
-                    category: "political"
-                },
-                {
-                    date: "1980-1982",
-                    title: "Economic Strangulation and Lebanon War",
-                    description: "Thousands of dunums of Palestinian agricultural land confiscated for expanding settlements. Communities like Beit Sahour lose significant portions of grazing and farming land. Stringent checkpoint system becomes more stringent with hours-long waits for basic movement. Israel implements policies restricting Palestinian economic development - import restrictions on industrial equipment, export limitations, and permit requirements for business operations. Israel invades Lebanon, besieging Beirut and displacing thousands of Palestinian refugees. PLO leadership forced to evacuate.",
-                    category: "economic"
-                },
-                {
-                    date: "1982-1983",
-                    title: "Sabra and Shatila Massacre",
-                    description: "Phalangist militia, with Israeli knowledge and facilitation, massacres hundreds of Palestinian refugees in Sabra and Shatila camps. Ariel Sharon later found personally responsible by Israeli commission. Deepens Palestinian trauma and resistance. Israel implements policies restricting Palestinian economic development. Import restrictions on industrial equipment, export limitations, and permit requirements for business operations. Palestinian economy becomes increasingly dependent and underdeveloped.",
-                    category: "military"
-                },
-                {
-                    date: "1984-1985",
-                    title: "Settlement Expansion and Early Resistance",
-                    description: "Major construction projects in settlements including roads, water infrastructure, and housing developments. Settlements become permanent fixtures. Palestinian communities face water shortages as settlements receive preferential access. Youth begin organizing protests using stones and Molotov cocktails against Israeli military occupation. Spontaneous demonstrations spread across villages and refugee camps. Marks beginning of popular uprising known as the 'Stones Intifada'.",
-                    category: "resistance"
-                },
-                {
-                    date: "1986",
-                    title: "Increased Military Crackdown",
-                    description: "Israeli military increases presence in Palestinian areas, conducting more raids, arrests of youth and activists, and night raids on homes. Collective punishment measures intensify. Popular committees begin organizing resistance. Stringent checkpoint and permit system makes basic movement nearly impossible. Medical emergencies, family visits, and economic activities severely restricted. Checkpoints become symbols of occupation.",
-                    category: "repression"
-                },
-                {
-                    date: "December 9, 1987",
-                    title: "Jabalia Incident Triggers Intifada",
-                    description: "IDF truck collides with Palestinian vehicle near Jabalia refugee camp, killing four workers (three from Jabalia refugee camp). Palestinians widely believe incident was deliberate. Funeral procession becomes mass demonstration. Spark ignites First Intifada. This traffic incident becomes the catalyst for what had been building resistance over two decades of occupation.",
-                    category: "resistance"
-                },
-                {
-                    date: "December 9, 1987",
-                    title: "First Intifada Erupts",
-                    description: "Mass protests, civil disobedience, boycotts, and popular committees spread across Occupied Territories. General strikes shut down Palestinian commercial life. Israel responds with harsh measures under 'iron fist' policy. New phase of Palestinian resistance begins. The uprising represents something new in Palestinian resistance - a spontaneous, popular uprising that was not directed by political leadership but emerged from the grassroots. Youth become the primary actors in confronting Israeli military forces.",
-                    category: "resistance"
-                },
-                {
-                    date: "1987-1993",
-                    title: "Intifada Impact and Oslo Preparations",
-                    description: "The First Intifada forces international community to take Palestinian struggle more seriously. General strikes shut down Palestinian commercial life, popular committees organize civil disobedience, and youth become primary actors confronting Israeli forces. Demonstrates that despite two decades of occupation, Palestinian resistance cannot be crushed. This uprising would eventually lead to Oslo negotiations, but basic structures of occupation established in these two decades remain largely intact. The Intifada marks transition from scattered resistance to organized popular uprising.",
-                    category: "legacy"
-                }
-            ];
-
-            // Render timeline
-            const timelineContainer = document.getElementById('timeline-container');
-            if (timelineContainer) {
-                timelineData.forEach((event, index) => {
-                    const eventElement = document.createElement('div');
-                    eventElement.className = `timeline-event ${index % 2 === 0 ? 'left' : 'right'}`;
-                    eventElement.innerHTML = `
-                        <div class="timeline-content">
-                            <span class="timeline-date">${event.date}</span>
-                            <h3 class="timeline-title">${event.title}</h3>
-                            <p class="timeline-description">${event.description}</p>
-                            <span class="timeline-category ${event.category}">${event.category.toUpperCase()}</span>
-                        </div>
-                    `;
-                    timelineContainer.appendChild(eventElement);
-                });
-            }
-        });
-    </script>
+    <footer id="footer-container"></footer>
 </body>
-
 </html>
-
-
-

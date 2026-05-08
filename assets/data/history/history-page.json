@@ -1,0 +1,77 @@
+{
+  "updated": "2026-05-08",
+  "intro": [
+    "Palestinian history is not a conflict between equal sides. It is the history of an indigenous people facing British colonial rule, Zionist settlement, the Nakba, refugee exile, military occupation, apartheid, siege, imprisonment, land confiscation, and continuing resistance.",
+    "This page centers Palestinian memory: village names, refugee keys, prison letters, oral histories, labor organizing, women's organizing, student movements, armed and unarmed resistance, culture, and the right of return."
+  ],
+  "principles": [
+    {
+      "title": "Begin Before 1948",
+      "body": "Palestine had cities, villages, farms, schools, newspapers, unions, courts, mosques, churches, markets, and political life before Zionist statehood. Starting the story in 1948 hides the society that was targeted for removal."
+    },
+    {
+      "title": "Name the Nakba as Ongoing",
+      "body": "The Nakba is not only a past event. Its structures continue through refugee denial, village erasure, home demolitions, settlement expansion, permit regimes, siege, and forced displacement."
+    },
+    {
+      "title": "Follow the Land",
+      "body": "Land loss is not only a map color change. It includes confiscation, military zones, settlements, bypass roads, walls, checkpoints, closed areas, zoning rules, and laws that block Palestinians from returning to or building on their land."
+    },
+    {
+      "title": "Treat Resistance as Historical Continuity",
+      "body": "Palestinian resistance has included strikes, revolt, unions, women's committees, prisoner organizing, cultural work, boycotts, diplomacy, documentation, and armed struggle against domination."
+    },
+    {
+      "title": "Center Return and Self-Determination",
+      "body": "Any history that erases refugees, prisoners, Gaza, Jerusalem, Palestinians inside 1948 areas, or the diaspora is incomplete. Return and self-determination remain central Palestinian demands."
+    }
+  ],
+  "themes": [
+    {
+      "title": "Colonial Promises Without Palestinian Consent",
+      "body": "The Balfour Declaration and Mandate system treated Palestine as a territory to be administered and promised by empire, while Palestinians were denied equal political rights over their homeland."
+    },
+    {
+      "title": "Nakba, Refugees, and Destroyed Villages",
+      "body": "In 1948, most Palestinians in the territory that became Israel were expelled or fled under assault. Hundreds of villages were depopulated or destroyed, and refugees were denied return."
+    },
+    {
+      "title": "Military Rule and Fragmentation",
+      "body": "Palestinians who remained inside Israel lived under military rule until 1966. After 1967, Palestinians in the West Bank, Gaza, and East Jerusalem faced occupation, settlements, military courts, and movement controls."
+    },
+    {
+      "title": "Oslo Without Liberation",
+      "body": "The Oslo period created limited Palestinian administrative zones while Israel kept decisive control over borders, settlements, airspace, water, movement, and large parts of the West Bank."
+    },
+    {
+      "title": "Gaza Under Siege",
+      "body": "Gaza's blockade, repeated assaults, and destruction of health, water, housing, education, and food systems are part of the same history of containment and denial of Palestinian freedom."
+    },
+    {
+      "title": "Accountability and International Law",
+      "body": "UN resolutions, the ICJ, human rights investigations, and Palestinian legal advocacy document occupation, apartheid-like systems, settlement illegality, collective punishment, and the right of refugees to return."
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Origins and Evolution of the Palestine Problem: 1917-1988",
+      "publisher": "United Nations",
+      "url": "https://www.un.org/unispal/history/"
+    },
+    {
+      "title": "Legal Consequences of the Construction of a Wall in the Occupied Palestinian Territory",
+      "publisher": "International Court of Justice",
+      "url": "https://www.icj-cij.org/case/131"
+    },
+    {
+      "title": "Advisory Opinion on the Occupied Palestinian Territory",
+      "publisher": "International Court of Justice",
+      "url": "https://www.icj-cij.org/case/186"
+    },
+    {
+      "title": "Occupied Palestinian Territory",
+      "publisher": "UN OCHA",
+      "url": "https://www.ochaopt.org/"
+    }
+  ]
+}

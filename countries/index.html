@@ -18,34 +18,9 @@
   <script src="/assets/js/utils.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
   <script src="/assets/js/search.js"></script>
-  <script>
-  (async function(){
-    const list = await fetchJSON('/assets/data/countries/_index.json');
-    const grid = document.getElementById('countryGrid');
-    const input = document.getElementById('countrySearch');
-    function render(items){
-      grid.innerHTML = items.map(c => `
-        <a class="card" href="/countries/view.html?slug=${encodeURIComponent(c.slug)}">
-          <img src="${c.flag}" alt="${c.name} flag" loading="lazy" style="width:100%;height:auto;border-radius:8px;margin-bottom:8px">
-          <h3>${c.name}</h3>
-          <p class="muted">${c.summary||''}</p>
-        </a>
-      `).join('');
-    }
-    render(list);
-    input.addEventListener('input', e => {
-      const q = e.target.value.toLowerCase().trim();
-      render(list.filter(c => c.name.toLowerCase().includes(q)));
-    });
-  })();
-  </script>
-  <footer id="footer-container"></footer>
 
-  <script src="/assets/js/main.js"></script><script>
-    document.addEventListener('DOMContentLoaded', function() {
-      includeNavFooter();
-    });
-  </script>
+    <footer id="footer-container"></footer>
+    <script src="/assets/js/main.js"></script>
 </body>
 </html>
 

@@ -1,0 +1,209 @@
+{
+  "updated": "2026-05-08",
+  "topics": {
+    "early-20th-century": {
+      "title": "Early 20th Century Palestine",
+      "period": "1900-1935",
+      "summary": "Palestine entered the twentieth century as a living Arab society under Ottoman rule, then British colonial rule. Palestinian politics grew around land defense, anti-colonial independence, newspapers, unions, schools, and resistance to Zionist settlement backed by empire.",
+      "sections": [
+        { "heading": "A Society Already There", "body": "Palestinian cities, villages, ports, farms, religious institutions, schools, and trade networks shaped daily life long before Britain promised the land to another political project." },
+        { "heading": "British Rule and Zionist Colonization", "body": "The Balfour Declaration and Mandate system gave imperial protection to Zionist institutions while Palestinians were denied self-determination in their own homeland." },
+        { "heading": "Land as the Central Question", "body": "Peasant dispossession, absentee landlord sales, British policing, and settlement expansion made land defense a foundation of Palestinian politics." }
+      ],
+      "takeaways": ["Palestinian history does not begin with Israel.", "British policy treated Palestinian consent as secondary.", "Anti-colonial resistance grew from the defense of land, labor, and self-rule."]
+    },
+    "peel-commission": {
+      "title": "Peel Commission Partition Plan",
+      "period": "1937",
+      "summary": "The Peel Commission proposed partition as a colonial solution to a crisis created by British rule and Zionist colonization. Palestinians rejected dividing their homeland without consent.",
+      "sections": [
+        { "heading": "Partition Without Consent", "body": "The plan treated Palestine as territory to be assigned by Britain while Palestinians, the indigenous majority, were not granted control over the decision." },
+        { "heading": "Transfer Logic", "body": "The proposal normalized the idea that Palestinians could be moved for a settler state project. That logic later became central to the Nakba." },
+        { "heading": "Palestinian Response", "body": "Palestinian opposition was part of the wider 1936-1939 revolt against British rule, land loss, repression, and Zionist colonization." }
+      ],
+      "takeaways": ["Partition was a colonial tool, not Palestinian self-determination.", "Transfer ideas predated 1948.", "The revolt connected land, labor, and national liberation."]
+    },
+    "un-partition": {
+      "title": "UN Partition Plan",
+      "period": "1947",
+      "summary": "UN Resolution 181 recommended partitioning Palestine and assigning most of the land to a Jewish state despite Palestinian rejection and despite Palestinians forming the indigenous majority.",
+      "sections": [
+        { "heading": "A Recommendation Against the Majority", "body": "Palestinians saw the plan as an international decision to divide their homeland without their democratic consent." },
+        { "heading": "From Proposal to War", "body": "The partition vote accelerated conflict on the ground, while Zionist military plans and expulsions pushed Palestine toward the Nakba." },
+        { "heading": "Why Palestinians Rejected It", "body": "Rejection was not rejection of coexistence. It was rejection of colonial partition, dispossession, and the denial of equal political rights." }
+      ],
+      "takeaways": ["Partition was not consent-based.", "The plan helped set the stage for mass displacement.", "Palestinian rejection was rooted in anti-colonial politics."]
+    },
+    "nakba": {
+      "title": "The Nakba",
+      "period": "1947-1949",
+      "summary": "The Nakba was the mass expulsion and dispossession of Palestinians during the creation of Israel. More than 750,000 Palestinians became refugees, hundreds of villages were depopulated or destroyed, and return was denied.",
+      "sections": [
+        { "heading": "Expulsion and Flight Under Assault", "body": "Palestinians were forced from cities and villages through military attack, massacres, fear, direct expulsion, and collapse under war conditions." },
+        { "heading": "Destroyed Villages and Stolen Property", "body": "Depopulated villages were razed, renamed, forested over, or repurposed. Refugee property was seized through state law and military control." },
+        { "heading": "Return Remains Central", "body": "The refugee question is not symbolic. It is a continuing claim to homes, land, compensation, memory, and political justice." }
+      ],
+      "takeaways": ["The Nakba is dispossession, not only wartime tragedy.", "Village destruction was a structure of erasure.", "The right of return remains central."]
+    },
+    "nakba-aftermath": {
+      "title": "Nakba and Aftermath",
+      "period": "1948-1966",
+      "summary": "After the Nakba, Palestinians faced refugee exile, military rule inside Israel, land confiscation, family separation, and the systematic denial of return.",
+      "sections": [
+        { "heading": "Refugee Camps and Exile", "body": "Palestinian families rebuilt life in camps across Gaza, the West Bank, Jordan, Lebanon, Syria, and beyond while preserving village memory and return claims." },
+        { "heading": "Military Rule Over Those Who Remained", "body": "Palestinians inside Israel lived under military government until 1966, with movement restrictions, permits, surveillance, and land seizures." },
+        { "heading": "Legalized Confiscation", "body": "Israeli laws transformed Palestinian absence, forced by war and expulsion, into a mechanism for taking homes, farms, and village lands." }
+      ],
+      "takeaways": ["The Nakba continued after 1948.", "Military rule fragmented Palestinian life.", "Refugee return was blocked by force and law."]
+    },
+    "naksa": {
+      "title": "The Naksa",
+      "period": "1967",
+      "summary": "In 1967 Israel occupied the West Bank, Gaza Strip, and East Jerusalem, placing all of historic Palestine under Israeli state or military control and creating another wave of Palestinian displacement.",
+      "sections": [
+        { "heading": "Occupation of the Remaining 22 Percent", "body": "The West Bank, East Jerusalem, and Gaza were brought under military occupation, adding checkpoints, settlements, military orders, prisons, and land seizure." },
+        { "heading": "Jerusalem", "body": "East Jerusalem was annexed in practice, while Palestinian residency, housing, and political life were subjected to revocation, demolition, settlement expansion, and policing." },
+        { "heading": "Another Displacement", "body": "Hundreds of thousands of Palestinians were displaced in 1967, including many who had already been refugees from 1948." }
+      ],
+      "takeaways": ["1967 extended domination over all historic Palestine.", "Occupation is a legal and lived structure.", "Displacement happened again."]
+    },
+    "occupation-intifadas": {
+      "title": "Occupation and Intifadas",
+      "period": "1967-1993",
+      "summary": "Occupation reorganized Palestinian life through settlements, military courts, land confiscation, prisons, and movement controls. The intifadas were mass uprisings against that system.",
+      "sections": [
+        { "heading": "Everyday Military Rule", "body": "Military orders shaped land, work, education, travel, protest, detention, and political organizing." },
+        { "heading": "Settlement Infrastructure", "body": "Settlements, bypass roads, water control, and closed military zones fragmented Palestinian land and privileged settlers over the occupied population." },
+        { "heading": "The First Intifada", "body": "Beginning in 1987, Palestinians organized strikes, boycotts, neighborhood committees, youth mobilization, and civil disobedience against occupation." }
+      ],
+      "takeaways": ["Occupation is a system, not a temporary event.", "Settlements are tools of land control.", "Popular resistance reshaped Palestinian politics."]
+    },
+    "first-intifada": {
+      "title": "First Intifada",
+      "period": "1987-1993",
+      "summary": "The First Intifada was a mass Palestinian uprising rooted in popular committees, strikes, youth resistance, women's organizing, boycotts, and refusal to normalize occupation.",
+      "sections": [
+        { "heading": "Popular Infrastructure", "body": "Committees organized food, education, healthcare, communication, and local protection under conditions of repression." },
+        { "heading": "Women and Labor", "body": "Women's committees, unions, students, and workers helped sustain the uprising beyond street confrontation." },
+        { "heading": "Repression", "body": "Israel responded with curfews, arrests, deportations, home demolitions, beatings, and lethal force." }
+      ],
+      "takeaways": ["The uprising was society-wide.", "Resistance was organized, not spontaneous chaos.", "Popular power forced the world to confront occupation."]
+    },
+    "second-intifada": {
+      "title": "Second Intifada",
+      "period": "2000-2005",
+      "summary": "The Second Intifada erupted after years of failed Oslo promises, settlement growth, military control, and the denial of sovereignty and return.",
+      "sections": [
+        { "heading": "Oslo's Failure", "body": "Oslo created limited administration while settlements expanded and Israel retained control over borders, movement, resources, and security." },
+        { "heading": "Militarized Repression", "body": "Palestinian cities faced invasion, closures, assassinations, mass arrests, and destruction of infrastructure." },
+        { "heading": "The Wall", "body": "Israel began building the wall, mostly inside the occupied West Bank, isolating Palestinian communities and land." }
+      ],
+      "takeaways": ["The uprising came from failed liberation, not failed patience.", "The wall deepened fragmentation.", "Military rule intensified after Oslo."]
+    },
+    "gaza-blockade": {
+      "title": "Gaza Blockade",
+      "period": "2007-present",
+      "summary": "The blockade turned Gaza into a sealed and repeatedly attacked territory, restricting movement, trade, reconstruction, healthcare, fishing, education, and family life.",
+      "sections": [
+        { "heading": "Collective Punishment", "body": "The blockade punishes an entire population for political conditions and has shaped every part of life in Gaza." },
+        { "heading": "Infrastructure Under Siege", "body": "Electricity, water, sewage, hospitals, schools, housing, and industry have been repeatedly damaged while reconstruction is restricted." },
+        { "heading": "Refugees in Gaza", "body": "Most Palestinians in Gaza are refugees or descendants of refugees from towns and villages in historic Palestine." }
+      ],
+      "takeaways": ["Gaza is not naturally isolated; it is sealed by policy.", "Siege is a form of domination.", "Return remains part of Gaza's political identity."]
+    },
+    "cast-lead": {
+      "title": "Operation Cast Lead",
+      "period": "2008-2009",
+      "summary": "Israel's assault on Gaza in 2008-2009 killed large numbers of Palestinians and destroyed homes, police facilities, public buildings, schools, and civilian infrastructure under blockade.",
+      "sections": [
+        { "heading": "Assault Under Blockade", "body": "The attack happened while Gaza was already under siege, meaning civilians had limited ability to flee, rebuild, or access care." },
+        { "heading": "Civilian Infrastructure", "body": "Homes, ministries, schools, medical facilities, and basic services were damaged or destroyed." },
+        { "heading": "Accountability", "body": "Palestinian and international human rights groups documented serious violations and demanded accountability." }
+      ],
+      "takeaways": ["Gaza's wars cannot be separated from siege.", "Civilian life was systematically harmed.", "Impunity enabled later assaults."]
+    },
+    "protective-edge": {
+      "title": "Operation Protective Edge",
+      "period": "2014",
+      "summary": "The 2014 assault on Gaza devastated neighborhoods, killed Palestinians at mass scale, displaced families, and deepened the humanitarian crisis created by blockade.",
+      "sections": [
+        { "heading": "Neighborhood Destruction", "body": "Entire residential areas suffered massive bombardment and shelling, leaving long-term trauma and reconstruction needs." },
+        { "heading": "Displacement", "body": "Families were repeatedly displaced inside a sealed territory where no safe exit existed." },
+        { "heading": "Pattern of Repetition", "body": "The assault showed a recurring pattern: blockade, escalation, destruction, limited reconstruction, and no political freedom." }
+      ],
+      "takeaways": ["Gaza's civilians were trapped.", "Reconstruction without freedom is not recovery.", "The siege made every assault more devastating."]
+    },
+    "great-march": {
+      "title": "Great March of Return",
+      "period": "2018-2019",
+      "summary": "Palestinians in Gaza marched near the fence to demand the right of return and an end to siege. Israeli forces killed and wounded large numbers of demonstrators, medics, journalists, and youth.",
+      "sections": [
+        { "heading": "Return as a Living Demand", "body": "The marches connected Gaza's present siege to the 1948 villages from which many families were expelled." },
+        { "heading": "Civil Protest and Lethal Force", "body": "Demonstrators, journalists, medics, and disabled people were among those killed or permanently injured." },
+        { "heading": "Memory at the Fence", "body": "The fence became a symbol of blocked return, confinement, and refusal to let refugee claims disappear." }
+      ],
+      "takeaways": ["The right of return is not historical nostalgia.", "Siege and refugeehood are connected.", "Palestinian protest was met with severe violence."]
+    },
+    "unity-intifada": {
+      "title": "Unity Intifada",
+      "period": "2021",
+      "summary": "The Unity Intifada linked Palestinians across Gaza, Jerusalem, the West Bank, 1948 areas, refugee camps, and diaspora around a shared rejection of fragmentation.",
+      "sections": [
+        { "heading": "Sheikh Jarrah and Jerusalem", "body": "Forced displacement in Sheikh Jarrah and attacks around al-Aqsa became flashpoints for wider mobilization." },
+        { "heading": "Across Fragmented Geographies", "body": "Palestinians challenged the divisions imposed by borders, IDs, walls, siege, and legal categories." },
+        { "heading": "General Strike", "body": "The strike expressed a unified Palestinian political identity across imposed partitions." }
+      ],
+      "takeaways": ["Fragmentation is a colonial strategy.", "Palestinian unity challenged imposed categories.", "Jerusalem remains central."]
+    },
+    "al-aqsa-flood": {
+      "title": "Al-Aqsa Flood and Gaza Genocide Case",
+      "period": "2023-2026",
+      "summary": "After October 2023, Gaza faced mass killing, displacement, starvation, and destruction. Palestinians and solidarity movements pushed for ceasefire, aid access, accountability, and an end to siege and occupation.",
+      "sections": [
+        { "heading": "Context Before October 2023", "body": "Gaza had already lived under blockade for years, while Palestinians across the West Bank, Jerusalem, and inside Israel faced raids, settlements, prisoners, and dispossession." },
+        { "heading": "Mass Destruction", "body": "Homes, hospitals, universities, schools, water systems, bakeries, archives, mosques, churches, roads, and shelters were devastated." },
+        { "heading": "Accountability", "body": "South Africa's genocide case at the ICJ and global organizing placed Gaza at the center of international legal and political struggle." }
+      ],
+      "takeaways": ["October 2023 cannot be separated from siege and occupation.", "Gaza's destruction targeted the conditions of life.", "Accountability remains urgent."]
+    },
+    "icj-genocide": {
+      "title": "ICJ Genocide Case",
+      "period": "2024-2026",
+      "summary": "South Africa brought a genocide case against Israel at the International Court of Justice. The case became a major legal arena for Gaza, provisional measures, humanitarian access, and accountability.",
+      "sections": [
+        { "heading": "Why the Case Matters", "body": "The case challenged the impunity surrounding mass killing, starvation, displacement, and destruction in Gaza." },
+        { "heading": "Provisional Measures", "body": "The ICJ ordered measures related to preventing genocidal acts, enabling aid, preserving evidence, and later addressing Rafah." },
+        { "heading": "Palestinian Meaning", "body": "For Palestinians, the case did not replace liberation politics, but it gave legal force to demands for protection and accountability." }
+      ],
+      "takeaways": ["International law became a site of struggle.", "Court orders require enforcement.", "Legal accountability and political liberation are connected."]
+    },
+    "sabra-shatila": {
+      "title": "Sabra and Shatila Massacre",
+      "period": "1982",
+      "summary": "Palestinian and Lebanese civilians were massacred in the Sabra and Shatila refugee camps during Israel's invasion of Lebanon, with Israeli forces controlling the surrounding area.",
+      "sections": [
+        { "heading": "Refugee Camps Targeted", "body": "The massacre showed the vulnerability of Palestinian refugees even outside Palestine, where exile did not bring safety." },
+        { "heading": "Responsibility", "body": "The camps were surrounded under Israeli military control, and the massacre became a global symbol of impunity." },
+        { "heading": "Memory", "body": "Sabra and Shatila remain part of Palestinian collective memory of exile, abandonment, and the demand for justice." }
+      ],
+      "takeaways": ["Exile did not protect Palestinians.", "Accountability was obstructed.", "Camp memory remains central to Palestinian history."]
+    },
+    "ongoing-resistance": {
+      "title": "Ongoing Palestinian Resistance",
+      "period": "Present",
+      "summary": "Palestinian resistance continues through land defense, prisoner organizing, culture, boycott, legal advocacy, journalism, mutual aid, protest, and refusal to surrender the right of return.",
+      "sections": [
+        { "heading": "Sumud", "body": "Remaining on the land, rebuilding, farming, teaching, healing, documenting, and preserving memory are forms of resistance." },
+        { "heading": "Prisoners and Families", "body": "Political imprisonment affects nearly every Palestinian community and remains central to organizing." },
+        { "heading": "Global Solidarity", "body": "BDS, student movements, unions, artists, lawyers, and diaspora communities pressure institutions complicit in occupation and apartheid." }
+      ],
+      "takeaways": ["Resistance is broader than one tactic.", "Culture and memory are political.", "Solidarity should follow Palestinian-led demands."]
+    }
+  },
+  "sources": [
+    { "title": "Question of Palestine", "publisher": "United Nations", "url": "https://www.un.org/unispal/" },
+    { "title": "Occupied Palestinian Territory", "publisher": "UN OCHA", "url": "https://www.ochaopt.org/" },
+    { "title": "ICJ: Legal Consequences of the Construction of a Wall", "publisher": "International Court of Justice", "url": "https://www.icj-cij.org/case/131" },
+    { "title": "ICJ: Legal Consequences arising from Israeli Policies and Practices in the OPT", "publisher": "International Court of Justice", "url": "https://www.icj-cij.org/case/186" }
+  ]
+}

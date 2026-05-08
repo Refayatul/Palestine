@@ -1,25 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1967 - War Chronology - Palestine</title>
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/timeline-styles.css">
-    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <script src="/assets/js/main.js" defer></script>
+    <script src="/assets/js/render-history.js" defer></script>
 </head>
-
 <body>
-    <header id="nav-container">
-        <!-- Navigation will be loaded here -->
-    </header>
-    
+    <header id="nav-container"></header>
     <main>
         <section class="history-timeline-hero">
             <h1>1967</h1>
-            <p id="intro-text">The year 1967 marked the beginning of Israel's ongoing military occupation of the West Bank, Gaza Strip, Sinai Peninsula, and Golan Heights. Known as the Naksa (setback) to Palestinians, this war enabled Israel to conquer the remainder of historic Palestine and implement systematic colonization policies. The conflict was preceded by years of Israeli provocations and diplomatic sabotage, contradicting Israel's claims of defensive warfare.</p>
-            <a href="/pages/history.html" class="btn-small">Back to History Overview</a>
+            <p id="intro-text">Loading introduction...</p>
+            <a href="/pages/history_pages/history.html" class="btn-small">Back to History Overview</a>
         </section>
 
         <section class="timeline-section">
@@ -28,121 +24,6 @@
             </div>
         </section>
     </main>
-
-    <footer id="footer-container">
-        <!-- Footer will be loaded here -->
-    </footer>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            <script src="/assets/js/main.js"></script>
-    <script>
-        includeNavFooter();
-
-            // Comprehensive timeline data for 1967
-            const timelineData = [
-                {
-                    date: "Pre-1967 - Background Context",
-                    title: "Post-1948 Consolidation and Provocations",
-                    description: "Following the 1948 Nakba, Israel continued consolidating control through discriminatory ethnocratic laws. The Absentee's Property Law systematically seized Palestinian refugee property, while the Land Acquisitions Law transferred the Palestinian economy to the Israeli state. This dropped settlement costs from $8000 to $1500 per family, subsidizing the Israeli state. Israel skirmished with Jordanian and Egyptian troops along ceasefire lines while refusing to cooperate with UN peacekeeping forces, regularly violating borders and creating provocations.",
-                    category: "background"
-                },
-                {
-                    date: "1956 - Suez Crisis Precedent",
-                    title: "Sinai Campaign and War Preparations",
-                    description: "In 1956, Israel joined Britain and France in attacking Egypt after Nasser nationalized the Suez Canal. Ben Gurion admitted fearing Arab leaders like Nasser who might 'raise their spirits, change their character, and turn them into a fighting nation.' The war was a military success but political defeat, strengthening Nasser's regional position. This experience laid groundwork for Israel's next expansionist war, with Ben Gurion lamenting territories not conquered in 1948.",
-                    category: "background"
-                },
-                {
-                    date: "1964",
-                    title: "Formation of the PLO",
-                    description: "Palestinian refugees organized themselves in tent cities, fighting to return home. Leadership shifted from traditional urban elites to those willing to resist. With Arab League sponsorship, the Palestine Liberation Organization (PLO) emerged as the official representative of the Palestinian people, both in Palestine and diaspora. The PLO's creation is often mistakenly cited as evidence that Palestinian identity was 'invented' in the 1960s.",
-                    category: "political"
-                },
-                {
-                    date: "1966-1967",
-                    title: "Israeli Provocations and Diplomatic Sabotage",
-                    description: "Israel deliberately provoked conflict through disproportionate assaults like the 1966 attack on Samu and frequent unprovoked bombings of Syrian positions. The British ambassador noted Israel's 'deliberately contrived preventive war' tactics. Israel sabotaged all diplomatic attempts to avert war, rejecting Egyptian proposals to resurrect the Mixed Armistice Commission and refusing UN Secretary-General U Thant's mediation efforts. Israeli Minister Mordecai Bentov later admitted: 'This entire story about the danger of extermination was invented and exaggerated after the fact to justify the annexation of new Arab territories.'",
-                    category: "diplomacy"
-                },
-                {
-                    date: "May 1967",
-                    title: "Final Diplomatic Breakdown",
-                    description: "Despite Egyptian flexibility and willingness to include the World Court for arbitration, Israel rejected all diplomatic overtures. High-ranking American diplomats met with Nasser in late May, with plans for Egypt's vice-president to visit Washington within a week for negotiations. Israel launched its surprise attack two days before this meeting, torpedoing diplomatic solutions. US Secretary of State Dean Rusk noted: 'They attacked on a Monday, knowing that on Wednesday the Egyptian vice-president would arrive in Washington to talk about re-opening the Strait of Tiran.'",
-                    category: "diplomacy"
-                },
-                {
-                    date: "June 5, 1967",
-                    title: "Surprise Attack and Rapid Conquest",
-                    description: "Israel launched a sneak attack on Egypt, decimating its air force. Within six days, Israel conquered the West Bank, Gaza Strip, Egyptian Sinai desert, and Syrian Golan Heights. Israel claims these strikes were preemptive self-defense, citing Egyptian forces in Sinai, closure of the Straits of Tiran, and Syrian Golan situation. However, these pretexts mirror those used to justify ethnic cleansing of Palestinian villages with non-aggression pacts in 1948.",
-                    category: "military"
-                },
-                {
-                    date: "1967 - Throughout Occupation",
-                    title: "Ethnic Cleansing Continues",
-                    description: "Similar to 1948, the 1967 war provided cover for additional ethnic cleansing campaigns. Hundreds of thousands of Palestinians were expelled from the West Bank and Gaza Strip. Over 100,000 Syrians were ethnically cleansed from the Golan Heights, with their villages demolished and communities erased. This defeat became known as the Naksa (setback) to Palestinians, crushing regional spirits and marking the beginning of Israel's ongoing military occupation.",
-                    category: "nakba"
-                },
-                {
-                    date: "1967 - Post-War Implementation",
-                    title: "Military Occupation and Colonial Control",
-                    description: "Israel imposed martial law regulations on occupied territories that had been ended inside the Green Line in 1966. The military occupation of the West Bank (including East Jerusalem) and Gaza Strip persists today. Israel ended its martial law for Palestinian villages inside the Green Line only to reimpose it in occupied territories, demonstrating systematic application of colonial control mechanisms perfected since 1948.",
-                    category: "occupation"
-                },
-                {
-                    date: "1967-1968",
-                    title: "The Allon Plan and Settlement Enterprise",
-                    description: "Named after creator Yigal Allon, this plan aimed to permanently seize vast West Bank territories through military installations and settlements. Large Palestinian population centers would receive nominal autonomy or be transferred to Jordanian monarchy. This plan birthed Israel's colonial settlement enterprise in occupied territories. Initially constructed in all 1967-conquered territories (Sinai, Golan, West Bank, Gaza), settlements later concentrated in West Bank and Golan Heights, now home to over 600,000 settlers on stolen land.",
-                    category: "colonization"
-                },
-                {
-                    date: "1967-Present",
-                    title: "Illegal Settlements and International Law Violations",
-                    description: "Over 200 settlements and outposts dot the West Bank and Golan Heights, housing over 600,000 Jewish Israeli settlers on occupied territory. These settlements violate international law, constituting stark violations of Geneva Conventions. Settlement distribution mirrors the Allon Plan's designated seizure zones, representing deliberate 'facts on the ground' changes to enable land theft. The West Bank has become the 'West Bank archipelago' - small Palestinian pockets surrounded by Israeli-controlled zones including military firing ranges and nature reserves.",
-                    category: "colonization"
-                },
-                {
-                    date: "1973",
-                    title: "Yom Kippur War and Regional Shift",
-                    description: "Egypt and Syria launched a coordinated attack to retake occupied territories. Egypt crossed the Suez Canal and overwhelmed Israel's Bar Lev line, while Syria advanced into the Golan Heights. Though Arab forces were ultimately repulsed with US aid, the war demonstrated Israel's vulnerability and shifted regional balance of power. This laid groundwork for Egypt's separate peace with Israel and the eventual Camp David Accords.",
-                    category: "military"
-                },
-                {
-                    date: "1978-1979",
-                    title: "Camp David Accords and Division",
-                    description: "Egypt returned the Sinai Peninsula to Egypt (with stipulations) in exchange for peace, normalization, and recognition of Israel. Israeli settlements in Sinai were dismantled. Egypt became the first Arab state to officially recognize Israel, reorienting toward the US and West. However, Syria retained control of the Golan Heights, with the state of war technically never ending. Israel illegally annexed the Golan Heights and colonized it like the West Bank and East Jerusalem.",
-                    category: "political"
-                },
-                {
-                    date: "1978-Present",
-                    title: "Ongoing Colonization and Oslo Preparations",
-                    description: "Israeli colonization accelerated during peace negotiations as Israelis knew Palestinians wouldn't jeopardize talks desperately needed for state establishment. The Camp David provisions recognizing Palestinian rights and promising autonomy paved the way for secret PLO-Israel negotiations. This new status quo culminated in the Palestinian Intifada and Oslo Accords, allowing PLO leadership to return to Palestine to establish a Palestinian state - discussed in detail in subsequent historical periods.",
-                    category: "legacy"
-                }
-            ];
-
-            // Render timeline
-            const timelineContainer = document.getElementById('timeline-container');
-            if (timelineContainer) {
-                timelineData.forEach((event, index) => {
-                    const eventElement = document.createElement('div');
-                    eventElement.className = `timeline-event ${index % 2 === 0 ? 'left' : 'right'}`;
-                    eventElement.innerHTML = `
-                        <div class="timeline-content">
-                            <span class="timeline-date">${event.date}</span>
-                            <h3 class="timeline-title">${event.title}</h3>
-                            <p class="timeline-description">${event.description}</p>
-                            <span class="timeline-category ${event.category}">${event.category.toUpperCase()}</span>
-                        </div>
-                    `;
-                    timelineContainer.appendChild(eventElement);
-                });
-            }
-        });
-    </script>
+    <footer id="footer-container"></footer>
 </body>
-
 </html>
-
-
-

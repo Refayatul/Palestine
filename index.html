@@ -1,34 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Free Palestine | Justice & Resistance</title>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
     <header id="nav-container"></header>
-
-    <!-- Hero Section -->
+<!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
             <h1>From the River to the Sea,<br>Palestine Will Be Free</h1>
-            <p>76+ years of occupation. Millions displaced. Still resisting.</p>
+            <p>A Palestinian-led resource on the Nakba, occupation, siege, apartheid, resistance, return, and the fight for liberation.</p>
             <div class="hero-buttons">
-                <button id="timelineBtn" class="btn btn-primary">
-                    <i class="fas fa-history"></i> View Timeline
-                </button>
-                <a href="/tools/letters.html" class="btn btn-secondary">
-                    <i class="fas fa-pen-fancy"></i> Take Action
-                </a>
+                <button id="timelineBtn" class="timeline-button btn">View Timeline</button>
+                <button id="joinmovementbtn" class="timeline-button joinmovement-button btn">Join the Movement</button>
             </div>
-        </div>
-        <div class="hero-scroll">
-            <i class="fas fa-chevron-down"></i>
-            <span>Scroll to Learn More</span>
         </div>
     </section>
 
@@ -36,153 +25,29 @@
     <div id="timelinePopup" class="timeline-popup">
         <div class="timeline-popup-content">
             <span class="close-timeline">&times;</span>
-            <h2>Timeline of Palestinian Struggle</h2>
-            <div class="timeline-container">
-                <div class="timeline-event" data-url="pages/history_pages/peel-commission.html">
-                    <div class="event-date">1937</div>
-                    <div class="event-content">
-                        <h3>Peel Commission Partition Plan</h3>
-                        <p>First proposal to partition Palestine, giving Jews 33% of land despite being only 30% of
-                            population.</p>
-                    </div>
-                </div>
-                <div class="timeline-event" data-url="pages/history_pages/un-partition.html">
-                    <div class="event-date">1947</div>
-                    <div class="event-content">
-                        <h3>UN Partition Plan (Resolution 181)</h3>
-                        <p>UN gave 55% of Palestine to Jewish state despite Jews owning only 7% of land and being 33% of
-                            population.</p>
-                    </div>
-                </div>
-                <div class="timeline-event" data-url="pages/history_pages/nakba.html">
-                    <div class="event-date">1948</div>
-                    <div class="event-content">
-                        <h3>The Nakba ("Catastrophe")</h3>
-                        <p>750,000+ Palestinians forcibly expelled from their homes. Over 500 villages destroyed. Israel
-                            established on 78% of historic Palestine.</p>
-                    </div>
-                </div>
-                <div class="timeline-event" data-url="pages/history_pages/naksa.html">
-                    <div class="event-date">1967</div>
-                    <div class="event-content">
-                        <h3>Naksa (Six-Day War)</h3>
-                        <p>Israel occupies remaining 22% of Palestine (West Bank, Gaza, East Jerusalem) and Syrian Golan
-                            Heights. 300,000 more Palestinians displaced.</p>
-                    </div>
-                </div>
-                <div class="timeline-event" data-url="pages/history_pages/sabra-shatila.html">
-                    <div class="event-date">1982</div>
-                    <div class="event-content">
-                        <h3>Sabra and Shatila Massacre</h3>
-                        <p>Israeli-backed Phalange militia kills 3,500 Palestinian refugees in Lebanon under Israeli
-                            military supervision.</p>
-                    </div>
-                </div>
-                <div class="timeline-event" data-url="pages/history_pages/first-intifada.html">
-                    <div class="event-date">1987</div>
-                    <div class="event-content">
-                        <h3>First Intifada</h3>
-                        <p>Mass popular uprising against occupation. Over 1,200 Palestinians killed, mostly unarmed
-                            protesters.</p>
-                    </div>
-                </div>
-                <div class="timeline-event" data-url="pages/history_pages/second-intifada.html">
-                    <div class="event-date">2000</div>
-                    <div class="event-content">
-                        <h3>Second Intifada</h3>
-                        <p>Uprising after Ariel Sharon's provocative visit to Al-Aqsa. 3,000+ Palestinians killed,
-                            extensive destruction.</p>
-                    </div>
-                </div>
-                <div class="timeline-event" data-url="pages/history_pages/gaza-blockade.html">
-                    <div class="event-date">2005</div>
-                    <div class="event-content">
-                        <h3>Gaza Blockade Begins</h3>
-                        <p>Israel imposes land, sea and air siege after Hamas election victory, creating world's largest
-                            open-air prison for 2.3 million Gazans.</p>
-                    </div>
-                </div>
-                <div class="timeline-event" data-url="pages/history_pages/cast-lead.html">
-                    <div class="event-date">2008</div>
-                    <div class="event-content">
-                        <h3>Cast Lead Operation</h3>
-                        <p>22-day Israeli assault kills 1,400+ Gazans, including 300+ children. White phosphorus used on
-                            civilians.</p>
-                    </div>
-                </div>
-                <div class="timeline-event" data-url="pages/history_pages/protective-edge.html">
-                    <div class="event-date">2014</div>
-                    <div class="event-content">
-                        <h3>Protective Edge Operation</h3>
-                        <p>51-day attack kills 2,200+ Gazans (70% civilians), destroys 18,000 homes. UN schools bombed.
-                        </p>
-                    </div>
-                </div>
-                <div class="timeline-event" data-url="pages/history_pages/great-march.html">
-                    <div class="event-date">2018</div>
-                    <div class="event-content">
-                        <h3>Great March of Return</h3>
-                        <p>Peaceful protests at Gaza fence. 223 protesters killed by snipers, including medics and
-                            journalists.</p>
-                    </div>
-                </div>
-                <div class="timeline-event" data-url="pages/history_pages/unity-intifada.html">
-                    <div class="event-date">2021</div>
-                    <div class="event-content">
-                        <h3>Unity Intifada & Sheikh Jarrah</h3>
-                        <p>Nationwide uprising against ethnic cleansing in Jerusalem. 256 Palestinians killed in Gaza
-                            bombing.</p>
-                    </div>
-                </div>
-                <div class="timeline-event" data-url="pages/history_pages/al-aqsa-flood.html">
-                    <div class="event-date">2023</div>
-                    <div class="event-content">
-                        <h3>Al-Aqsa Flood & Gaza Genocide</h3>
-                        <p>After Hamas operation, Israel kills 35,000+ Gazans (70% women/children), destroys all
-                            universities and hospitals.</p>
-                    </div>
-                </div>
-                <div class="timeline-event" data-url="pages/history_pages/icj-genocide.html">
-                    <div class="event-date">2024</div>
-                    <div class="event-content">
-                        <h3>ICJ Genocide Case</h3>
-                        <p>South Africa brings case against Israel at International Court of Justice for genocide in
-                            Gaza.</p>
-                    </div>
-                </div>
-                <div class="timeline-event" data-url="pages/history_pages/ongoing-resistance.html">
-                    <div class="event-date">2025</div>
-                    <div class="event-content">
-                        <h3>Ongoing Resistance</h3>
-                        <p>Despite 76+ years of ethnic cleansing, Palestinians continue their struggle for liberation
-                            and return.</p>
-                    </div>
-                </div>
-            </div>
+            <h2>Timeline: 1900-May 2026</h2>
+            <div class="timeline-overview-list compact" data-timeline-overview="events"></div>
+            <a href="pages/history_pages/history.html#timeline-1900-2026" class="btn-small">Open Full Timeline</a>
         </div>
     </div>
 
     <!-- History Section -->
     <section id="history" class="section">
         <div class="container">
-            <h2>Palestinian History</h2>
+            <h2>Palestinian History, Told From Palestine</h2>
             <div class="history-content">
                 <div class="history-text">
-                    <p>Palestine has a rich history spanning thousands of years, with diverse cultures and civilizations
-                        contributing to its heritage. The region has been home to various peoples including Canaanites,
-                        Israelites, Philistines, Romans, Byzantines, and Arabs.</p>
-                    <p>Modern Palestinian history begins with the Ottoman Empire's rule (1517-1917), followed by the
-                        British Mandate (1917-1948). The establishment of Israel in 1948 marked the beginning of the
-                        Palestinian Nakba (Catastrophe), leading to displacement and ongoing conflict.</p>
+                    <p>Palestine is a homeland with cities, villages, farms, refugee camps, holy places, archives, songs, foodways, family histories, and a people who have refused erasure.</p>
+                    <p>From a Palestinian point of view, the core story is settler colonialism and dispossession: British rule, Zionist colonization, the 1948 Nakba, the 1967 occupation, settlement expansion, Gaza's siege, political imprisonment, exile, and the ongoing demand for return and liberation.</p>
                 </div>
                 <div class="history-stats">
                     <div class="stat-card">
-                        <div class="stat-number">76+</div>
-                        <div class="stat-label">Years of Occupation</div>
+                        <div class="stat-number">78+</div>
+                        <div class="stat-label">Years Since the Nakba</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-number">7M+</div>
-                        <div class="stat-label">Palestinians Worldwide</div>
+                        <div class="stat-number">59+</div>
+                        <div class="stat-label">Years of 1967 Occupation</div>
                     </div>
                     <div class="stat-card">
                         <div class="stat-number">500+</div>
@@ -200,22 +65,46 @@
             <div class="resistance-methods">
                 <div class="method">
                     <i class="fas fa-hand-holding-heart"></i>
-                    <h3>Peaceful Protests</h3>
-                    <p>Great March of Return (2018-2019) – 223 protesters killed by snipers.</p>
-                    <p>Non-violent demonstrations, sit-ins, and marches to raise awareness and demand rights.</p>
+                    <h3>Popular Resistance</h3>
+                    <p>Marches, strikes, sit-ins, village defense committees, prisoner solidarity, and the Great March of Return keep Palestinian demands visible.</p>
+                    <p>These actions center freedom of movement, refugee return, land defense, and an end to military occupation.</p>
                 </div>
                 <div class="method">
                     <i class="fas fa-globe"></i>
-                    <h3>BDS Movement</h3>
-                    <p>Boycott, Divestment, Sanctions – Global economic resistance.</p>
-                    <p>Applying economic pressure on Israel to comply with international law.</p>
+                    <h3>Boycott, Divestment, Sanctions</h3>
+                    <p>BDS is a Palestinian civil society call to pressure institutions that profit from or normalize apartheid and occupation.</p>
+                    <p>It asks people to withdraw money, legitimacy, contracts, and cultural cover from systems that deny Palestinian rights.</p>
                 </div>
                 <div class="method">
                     <i class="fas fa-hashtag"></i>
-                    <h3>Digital Activism</h3>
-                    <p>#FreePalestine trends globally, exposing Israeli war crimes.</p>
-                    <p>Using social media to share information, organize campaigns, and advocate for Palestinian rights.
-                    </p>
+                    <h3>Narrative Resistance</h3>
+                    <p>Palestinians document raids, demolitions, siege, checkpoints, killings, censorship, and everyday survival in real time.</p>
+                    <p>Sharing Palestinian voices challenges propaganda that dehumanizes the colonized and hides state violence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Palestinian Viewpoint Section -->
+    <section class="section">
+        <div class="container">
+            <h2>What This Site Stands For</h2>
+            <div class="homepage-pathways">
+                <div class="pathway-card">
+                    <h3>Return Is a Right</h3>
+                    <p>Palestinian refugees and their descendants have not surrendered the right to return to the homes, towns, and lands from which they were expelled.</p>
+                </div>
+                <div class="pathway-card">
+                    <h3>Occupation Must End</h3>
+                    <p>Military rule, settlements, checkpoints, raids, home demolitions, land theft, and administrative detention are not normal political disputes. They are structures of domination.</p>
+                </div>
+                <div class="pathway-card">
+                    <h3>Gaza Must Be Free</h3>
+                    <p>The siege of Gaza is collective punishment. Palestinians in Gaza deserve open borders, reconstruction, healthcare, education, safety, and political freedom.</p>
+                </div>
+                <div class="pathway-card">
+                    <h3>Apartheid Must Fall</h3>
+                    <p>Any system that grants rights by ethnicity, controls movement, fragments land, and privileges settlers over indigenous Palestinians must be dismantled.</p>
                 </div>
             </div>
         </div>
@@ -229,20 +118,17 @@
                 <div class="betrayal-item">
                     <h3>Western Governments</h3>
                     <p>US/UK veto UN resolutions, fund Israeli military.</p>
-                    <p>Provide unwavering political, economic, and military support to Israel, enabling its occupation
-                        and human rights abuses.</p>
+                    <p>Provide unwavering political, economic, and military support to Israel, enabling its occupation and human rights abuses.</p>
                 </div>
                 <div class="betrayal-item">
                     <h3>Arab Regimes</h3>
                     <p>Normalization deals while occupation continues.</p>
-                    <p>Prioritize political and economic interests over Palestinian rights, normalizing relations with
-                        Israel despite the ongoing occupation.</p>
+                    <p>Prioritize political and economic interests over Palestinian rights, normalizing relations with Israel despite the ongoing occupation.</p>
                 </div>
                 <div class="betrayal-item">
                     <h3>Corporate Media</h3>
                     <p>Dehumanizes Palestinians, spreads propaganda.</p>
-                    <p>Bias reporting, censorship, and the spread of misinformation to justify Israeli actions and
-                        suppress Palestinian voices.</p>
+                    <p>Bias reporting, censorship, and the spread of misinformation to justify Israeli actions and suppress Palestinian voices.</p>
                 </div>
             </div>
         </div>
@@ -257,9 +143,8 @@
                     <i class="fas fa-pen-fancy"></i>
                     <h3>Sign Petitions</h3>
                     <br>
-                    <a href="https://www.amnesty.org/en/petition/demand-a-ceasefire-by-all-parties-to-end-civilian-suffering/"
-                        target="_blank" rel="noopener noreferrer" class="btn-small">Sign Now</a>
-                    <p>Demand governments to pressure Israel to end its violations of international law.</p>
+                    <a href="https://www.amnesty.org/en/petition/demand-a-ceasefire-by-all-parties-to-end-civilian-suffering/" target="_blank" rel="noopener noreferrer" class="btn-small">Sign Now</a>
+                    <p>Demand sanctions, arms embargoes, an end to diplomatic cover, and accountability for crimes against Palestinians.</p>
                 </div>
                 <div class="option">
                     <i class="fas fa-hand-holding-usd"></i>
@@ -269,58 +154,29 @@
                     <div id="donateMenu">
                         <a href="#" class="close">&times;</a>
                         <ul>
-                            <li><a href="https://pcrf1.app.neoncrm.com/forms/gaza-recovery" target="_blank"
-                                    rel="noopener noreferrer">Palestine Children's Relief Fund (PCRF)</a></li>
-                            <li><a href="https://www.islamicreliefcanada.org/emergencies/palestine-appeal"
-                                    target="_blank" rel="noopener noreferrer">Islamic Relief</a></li>
-                            <li><a href="https://www.unrwa.org/donate" target="_blank"
-                                    rel="noopener noreferrer">UNRWA</a></li>
-                            <li><a href="https://www.palestinercs.org/en/Donation" target="_blank"
-                                    rel="noopener noreferrer">Palestine Red Crescent Society</a></li>
-                            <li><a href="https://donate.doctorswithoutborders.org/secure/rr-donate-web" target="_blank"
-                                    rel="noopener noreferrer">Doctors Without Borders</a></li>
-                            <li><a href="https://www.amnesty.org.uk/giving/donate/help-protect-civilians-gaza"
-                                    target="_blank" rel="noopener noreferrer">Amnesty International</a></li>
-                            <li><a href="https://www.oxfamamerica.org/explore/emergencies/gaza-and-israel-emergency-appeal/"
-                                    target="_blank" rel="noopener noreferrer">OXFAM</a></li>
+                            <li><a href="https://pcrf1.app.neoncrm.com/forms/gaza-recovery" target="_blank" rel="noopener noreferrer">Palestine Children's Relief Fund (PCRF)</a></li>
+                            <li><a href="https://www.islamicreliefcanada.org/emergencies/palestine-appeal" target="_blank" rel="noopener noreferrer">Islamic Relief</a></li>
+                            <li><a href="https://www.unrwa.org/donate" target="_blank" rel="noopener noreferrer">UNRWA</a></li>
+                            <li><a href="https://www.palestinercs.org/en/Donation" target="_blank" rel="noopener noreferrer">Palestine Red Crescent Society</a></li>
+                            <li><a href="https://donate.doctorswithoutborders.org/secure/rr-donate-web" target="_blank" rel="noopener noreferrer">Doctors Without Borders</a></li>
+                            <li><a href="https://www.amnesty.org.uk/giving/donate/help-protect-civilians-gaza" target="_blank" rel="noopener noreferrer">Amnesty International</a></li>
+                            <li><a href="https://www.oxfamamerica.org/explore/emergencies/gaza-and-israel-emergency-appeal/" target="_blank" rel="noopener noreferrer">OXFAM</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="option">
-                    <i class="fas fa-share-alt"></i>
-                    <h3>Share & Spread Awareness</h3>
+                    <i class="fas fa-microphone"></i>
+                    <h3>Spread Awareness</h3>
                     <br>
-                    <a href="/tools/share-card.html" class="btn-small">
-                        <i class="fas fa-share"></i> Create Share Card
-                    </a>
-                    <p>Create and share graphics about Palestine on social media to spread awareness.</p>
+                    <a href="#" id="sharePage" class="btn-small">Share</a>
+                    <p>Share Palestinian sources, survivor testimony, historical context, boycott targets, and calls to action in your community.</p>
                 </div>
                 <div class="option">
-                    <i class="fas fa-envelope"></i>
+                    <i class="fas fa-bullhorn"></i>
                     <h3>Contact Representatives</h3>
                     <br>
-                    <a href="/tools/letters.html" class="btn-small">
-                        <i class="fas fa-pen-fancy"></i> Write Letter
-                    </a>
-                    <p>Use our letter builder to contact your elected officials and demand justice for Palestine.</p>
-                </div>
-                <div class="option">
-                    <i class="fas fa-phone"></i>
-                    <h3>Call Officials</h3>
-                    <br>
-                    <a href="/tools/calls.html" class="btn-small">
-                        <i class="fas fa-phone"></i> Get Scripts
-                    </a>
-                    <p>Use our call scripts to contact government officials and demand action on Palestine.</p>
-                </div>
-                <div class="option">
-                    <i class="fas fa-ban"></i>
-                    <h3>Boycott Guide</h3>
-                    <br>
-                    <a href="/boycott/supporting.html" class="btn-small">
-                        <i class="fas fa-ban"></i> View Guide
-                    </a>
-                    <p>Learn which companies to boycott and which to support in the BDS movement.</p>
+                    <a href="pages/action_pages/action.html" id="contactReps" class="btn-small">Contact</a>
+                    <p>Push elected officials to stop funding occupation, stop arming Israel, protect protest rights, and support Palestinian self-determination.</p>
                 </div>
             </div>
         </div>
@@ -335,33 +191,62 @@
                     <div class="resource-icon">
                         <i class="fas fa-book"></i>
                     </div>
-                    <h3>Books</h3>
-                    <p>Essential readings on Palestinian history and the ongoing struggle for justice.</p>
-                    <a href="resources/books.html" class="resource-link">Explore Books</a>
+                    <h3>History Hub</h3>
+                    <p>Start with Palestinian memory: the Nakba, the Naksa, Intifadas, siege, massacres, uprisings, and ongoing resistance.</p>
+                    <a href="pages/history_pages/history.html" class="resource-link">Open History Hub</a>
                 </div>
                 <div class="resource-card">
                     <div class="resource-icon">
                         <i class="fas fa-film"></i>
                     </div>
-                    <h3>Documentaries</h3>
-                    <p>Powerful films that tell the Palestinian story from authentic perspectives.</p>
-                    <a href="resources/documentaries.html" class="resource-link">Watch Now</a>
+                    <h3>Myth Checks</h3>
+                    <p>Short explanations for common claims about Palestine, Zionism, refugees, land ownership, resistance, and international law.</p>
+                    <a href="myths/index.html" class="resource-link">Read Myth Checks</a>
                 </div>
                 <div class="resource-card">
                     <div class="resource-icon">
                         <i class="fas fa-graduation-cap"></i>
                     </div>
-                    <h3>Academic Papers</h3>
-                    <p>Research and scholarly articles on the Palestinian-Israeli conflict.</p>
-                    <a href="resources/papers.html" class="resource-link">Read Papers</a>
+                    <h3>Legal Library</h3>
+                    <p>International law resources, UN material, ICJ and ICC context, and legal tools for naming occupation, apartheid, genocide, and accountability.</p>
+                    <a href="legal/index.html" class="resource-link">Open Legal Library</a>
                 </div>
                 <div class="resource-card">
                     <div class="resource-icon">
                         <i class="fas fa-map-marked-alt"></i>
                     </div>
-                    <h3>Interactive Maps</h3>
-                    <p>Visualize the history of Palestinian displacement and land loss.</p>
-                    <a href="resources/maps.html" class="resource-link">View Maps</a>
+                    <h3>Country Positions</h3>
+                    <p>Track which governments enable Israel through weapons, money, vetoes, silence, normalization, or public relations cover.</p>
+                    <a href="countries/index.html" class="resource-link">Browse Countries</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Start Here Section -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Start Here</h2>
+            <div class="homepage-pathways">
+                <div class="pathway-card">
+                    <h3>Learn the Timeline</h3>
+                    <p>Follow the major events from colonial partition proposals and the Nakba through occupation, uprisings, Gaza assaults, and international court cases.</p>
+                    <a href="history/1948.html" class="resource-link">Begin with 1948</a>
+                </div>
+                <div class="pathway-card">
+                    <h3>Use Classroom Materials</h3>
+                    <p>Teacher and student pages provide structured objectives, activities, reading prompts, and print-friendly learning resources.</p>
+                    <a href="education/teachers.html" class="resource-link">Open Education Kit</a>
+                </div>
+                <div class="pathway-card">
+                    <h3>Support Organized Action</h3>
+                    <p>Find boycott resources, solidarity organizations, campaigns, donation links, and practical ways to pressure institutions complicit in occupation.</p>
+                    <a href="boycott/supporting.html" class="resource-link">Open Boycott Guide</a>
+                </div>
+                <div class="pathway-card">
+                    <h3>Explore Palestinian Communities</h3>
+                    <p>Read about diaspora regions, women, youth, labor, journalists, and the cultural work that keeps Palestinian identity alive across exile and siege.</p>
+                    <a href="diaspora/index.html" class="resource-link">Open Diaspora Hub</a>
                 </div>
             </div>
         </div>
@@ -374,8 +259,7 @@
             <div class="testimonial-slider">
                 <div class="testimonial">
                     <div class="testimonial-content">
-                        <p>"The Palestinian people have shown incredible resilience in the face of occupation. Their
-                            struggle for justice and dignity continues to inspire the world."</p>
+                    <p>"Palestinian resilience is not passive survival. It is organizing, memory, refusal, return, and the insistence that no power can erase a people."</p>
                         <div class="testimonial-author">
                             <div class="author-name">Dr. Leila Khaled</div>
                             <div class="author-title">Palestinian Activist</div>
@@ -384,8 +268,7 @@
                 </div>
                 <div class="testimonial">
                     <div class="testimonial-content">
-                        <p>"We will not be erased. Our history, our culture, our rights - these are not negotiable.
-                            Palestine lives in every heartbeat of our people."</p>
+                        <p>"We will not be erased. Our history, our culture, our rights - these are not negotiable. Palestine lives in every heartbeat of our people."</p>
                         <div class="testimonial-author">
                             <div class="author-name">Ahmed Fouad Alkhatib</div>
                             <div class="author-title">Palestinian-American Writer</div>
@@ -394,8 +277,7 @@
                 </div>
                 <div class="testimonial">
                     <div class="testimonial-content">
-                        <p>"The international community must recognize that what is happening in Gaza constitutes
-                            genocide. We cannot remain silent while children are being killed."</p>
+                    <p>"Gaza is not a humanitarian footnote. It is the sharpest proof that occupation, siege, and impunity must be confronted directly."</p>
                         <div class="testimonial-author">
                             <div class="author-name">Dr. Randa Fahmy</div>
                             <div class="author-title">Human Rights Advocate</div>
@@ -412,33 +294,24 @@
             <h2>Palestinian Culture & Heritage</h2>
             <div class="culture-content">
                 <div class="culture-text">
-                    <p>Palestinian culture is rich and diverse, with traditions that span centuries. From traditional
-                        embroidery (tatreez) to olive harvesting, Palestinian heritage is deeply connected to the land.
-                    </p>
-                    <p>Music, poetry, and storytelling play vital roles in preserving Palestinian identity. The dabke
-                        dance, traditional foods like maqluba and musakhan, and hospitality are central to Palestinian
-                        social life.</p>
+                    <p>Palestinian culture is resistance against erasure. Tatreez, olive harvests, village names, keys, poetry, dabke, cuisine, archives, and family stories carry a map that colonization tried to destroy.</p>
+                    <p>Culture keeps the homeland present in refugee camps, diaspora communities, prisons, besieged neighborhoods, and every place Palestinians rebuild life after displacement.</p>
                 </div>
                 <div class="culture-highlights">
                     <div class="highlight">
                         <i class="fas fa-music"></i>
                         <h3>Traditional Music</h3>
-                        <p>Explore the rich musical heritage of Palestine</p>
+                        <p>Preserve songs of harvest, exile, steadfastness, prisoners, martyrs, and return</p>
                     </div>
                     <div class="highlight">
                         <i class="fas fa-utensils"></i>
                         <h3>Cuisine</h3>
-                        <p>Discover authentic Palestinian dishes and recipes</p>
+                        <p>Protect food memory tied to villages, seasons, olive oil, zaatar, bread, and family tables</p>
                     </div>
                     <div class="highlight">
                         <i class="fas fa-theater-masks"></i>
                         <h3>Arts & Crafts</h3>
-                        <p>Learn about traditional Palestinian crafts and art</p>
-                    </div>
-                    <div class="highlight">
-                        <i class="fas fa-pray"></i>
-                        <h3>Religious Heritage</h3>
-                        <p>Explore the sacred sites and religious significance of Palestine</p>
+                        <p>Read tatreez, posters, murals, keys, and visual art as records of land and struggle</p>
                     </div>
                 </div>
             </div>
@@ -451,30 +324,24 @@
             <h2>The Future of Palestine</h2>
             <div class="future-content">
                 <div class="future-vision">
-                    <h3>Vision for a Free Palestine</h3>
-                    <p>A future where Palestinians can live with dignity, freedom, and justice. Where refugees can
-                        return to their ancestral homes and where all people in the region can coexist peacefully.</p>
+                    <h3>Liberation, Return, Accountability</h3>
+                    <p>A free Palestine means the right of return, an end to occupation and siege, Palestinian sovereignty from the river to the sea, freedom for prisoners, protection of land and holy places, and accountability for those who carried out or enabled oppression.</p>
                 </div>
                 <div class="future-goals">
                     <div class="goal-card">
                         <i class="fas fa-handshake"></i>
-                        <h3>Peaceful Coexistence</h3>
-                        <p>Building bridges between communities through dialogue and understanding</p>
+                        <h3>Right of Return</h3>
+                        <p>Defending refugees' right to go home and restoring Palestinian presence to erased villages and cities</p>
                     </div>
                     <div class="goal-card">
                         <i class="fas fa-seedling"></i>
-                        <h3>Environmental Justice</h3>
-                        <p>Protecting Palestinian land and natural resources from destruction</p>
+                        <h3>Land Back</h3>
+                        <p>Protecting Palestinian land, water, farms, homes, archives, and sacred places from confiscation and destruction</p>
                     </div>
                     <div class="goal-card">
                         <i class="fas fa-graduation-cap"></i>
-                        <h3>Education & Empowerment</h3>
-                        <p>Supporting Palestinian youth through education and leadership development</p>
-                    </div>
-                    <div class="goal-card">
-                        <i class="fas fa-home"></i>
-                        <h3>Right of Return</h3>
-                        <p>Ensuring Palestinian refugees can return to their ancestral homes and lands</p>
+                        <h3>Self-Determination</h3>
+                        <p>Supporting Palestinian political, cultural, economic, and educational power without colonial control</p>
                     </div>
                 </div>
             </div>
@@ -486,34 +353,41 @@
         <div class="container">
             <h2>Historical Gallery</h2>
             <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1559628376-f2b5e8d6b0c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                        alt="Palestinian Heritage" loading="lazy">
+                <figure class="gallery-item">
+                    <img src="assets/images/Faris _Odeh_Gaza_2nd_indifada.jpg" alt="Faris Odeh confronting an Israeli tank during the Second Intifada in Gaza" loading="lazy">
                     <div class="gallery-overlay">
-                        <div class="gallery-text">Palestinian Heritage</div>
+                        <figcaption class="gallery-text">
+                            <strong>Second Intifada</strong>
+                            <span>Faris Odeh became a symbol of Palestinian youth facing military occupation in Gaza.</span>
+                        </figcaption>
                     </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                        alt="Olive Trees and Land" loading="lazy">
+                </figure>
+                <figure class="gallery-item">
+                    <img src="assets/images/Fawzi_al_Juneidi_2017OWB.jpg" alt="Fawzi al-Juneidi detained by Israeli soldiers in Hebron in 2017" loading="lazy">
                     <div class="gallery-overlay">
-                        <div class="gallery-text">Olive Trees & Land</div>
+                        <figcaption class="gallery-text">
+                            <strong>Children Under Occupation</strong>
+                            <span>Fawzi al-Juneidi's detention in Hebron showed the daily violence Palestinian children face.</span>
+                        </figcaption>
                     </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1590845947670-c009801ffa74?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                        alt="Palestinian Culture" loading="lazy">
+                </figure>
+                <figure class="gallery-item">
+                    <img src="assets/images/ISRAEL-PALESTINIANS-PROTESTS-FLAG-1920x776.jpg" alt="A Palestinian flag raised during a protest" loading="lazy">
                     <div class="gallery-overlay">
-                        <div class="gallery-text">Palestinian Culture</div>
+                        <figcaption class="gallery-text">
+                            <strong>Flag of Return</strong>
+                            <span>The Palestinian flag remains a public claim to land, memory, liberation, and return.</span>
+                        </figcaption>
                     </div>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                        alt="Palestinian Youth" loading="lazy">
+                </figure>
+                <figure class="gallery-item gallery-text-card">
                     <div class="gallery-overlay">
-                        <div class="gallery-text">Palestinian Youth</div>
+                        <figcaption class="gallery-text">
+                            <strong>Visual Memory</strong>
+                            <span>This gallery now uses project-held Palestine-related images instead of generic stock photos. Add more verified photos to <code>assets/images</code> to expand it.</span>
+                        </figcaption>
                     </div>
-                </div>
+                </figure>
             </div>
         </div>
     </section>
@@ -522,11 +396,6 @@
     <footer id="footer-container"></footer>
 
     <script src="./assets/js/main.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            includeNavFooter();
-        });
-    </script>
+    <script src="./assets/js/render-timeline-overview.js"></script>
 </body>
-
 </html>
