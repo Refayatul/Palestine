@@ -129,7 +129,10 @@ window.includeNavFooter = () => {
   installSiteChrome(true);
   bindMobileNavigation();
 };
+
+function initSite() {
 installSiteChrome();
+bindMobileNavigation();
 
 const pageUrl = encodeURIComponent(window.location.href);
 const pageTitle = encodeURIComponent(document.title);
@@ -207,8 +210,6 @@ function bindMobileNavigation() {
     });
   }
 }
-
-bindMobileNavigation();
 
 // Smooth scroll for in-page links.
 document.addEventListener('click', (event) => {
@@ -315,3 +316,10 @@ if (contactLink) {
 
 const year = document.getElementById('year');
 if (year) year.textContent = new Date().getFullYear();
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initSite, { once: true });
+} else {
+  initSite();
+}
